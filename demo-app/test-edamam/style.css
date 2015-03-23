@@ -1,0 +1,82 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	
+}
+
+h1{
+	text-align: center;
+	font-size: 1.8em;
+	color: salmon;
+}
+
+h3{
+	color: grey;
+}
+
+p{
+	font-size:0.9em;
+	font-weight: bold;
+	color: grey;
+}
+
+a{	
+	display: inline-block;
+	background: salmon;
+	color: white;
+	text-decoration: none;
+	padding:5px 10px;
+}
+ 
+a:hover{
+	background: darkgrey;
+}
+
+
+
+
+form{
+	text-align: center;
+	width: 100%;
+	padding:5px 10px;
+}
+
+form input{
+ 	width: 100%;
+	padding:5px 10px;
+}
+
+ul{
+	padding-top:40px;
+	list-style: none;
+}
+
+
+ul li{
+	margin-bottom:40px;
+	text-align: center;
+}
+
+ul li img{
+	margin-bottom:10px;
+} 
+
+ul li h3{
+	margin-bottom:10px;
+}
+
+ul li p{
+
+}
+
+
+ul li a{
+	margin-top:20px;
+}
+
+
