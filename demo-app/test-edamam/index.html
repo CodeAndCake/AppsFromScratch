@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Edamam</title>
 	<meta name="Author" content=""/>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+    
+
 </head>
 <body>
-    <p>What's in your fridge?</p>
+    <h1>What's in your fridge?</h1>
     <form action="">
         <input placeholder="e.g. banana" name="q" autofocus>
     </form>
@@ -32,22 +34,21 @@
             
             var inputValue = $('input[name=q]').val()
             
-            var url = 'https://edamam-recipe-search-and-diet-v1.p.mashape.com/search?_app_id=eb226d7e&_app_key=7ee6a159a3cbe0001fc3f1ce01a305a6'
+            var url = 'https://api.edamam.com/search'
             
             var data = 
             {
-                'q': inputValue
+                _app_id: '602e4c99',
+                _app_key: 'badc73a4282fd038b7547e9c5854a2d6',
+                q: inputValue
             }
             
             $.ajax(
-            {
+            {   
                 url: url,
+                dataType: 'jsonp',
                 data: data,
-                headers:
-                {
-                    "X-Mashape-Key": "B3b6H9Oblnmsh9qIm9B6FUI685tUp16X4zmjsnqhGS2fyRL5fN",
-                    "Accept": "application/json"
-                },
+               
                 success: function(result)
                 {
 	               console.log(result)
@@ -72,7 +73,13 @@
         <li>
             <img src="<%= image %>">
             <h3><%= label %></%></h3>
-            <a href="<%= url %>">link ></a>
+
+            <p>Cooking Time: <%= cookingTime %> mins</p>
+            <p>level: <%= level %></p>
+            <p>rating: <%= rating %></p>
+           
+
+            <a href="<%= url %>">Click here to see more</a>
         </li>
     </script>
 
