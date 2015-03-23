@@ -40,7 +40,7 @@
 
             $message.html('Just a sec...').fadeIn()
             
-            var recipeTemplate = _.template($('#recipe-item').html())
+            // var recipeTemplate = _.template($('#recipe-item').html())
             
             var inputValue = $('input[name=q]').val()
             
@@ -69,13 +69,28 @@
                     {
                         var recipe = hit.recipe
                         console.log(recipe)
-                        var li = recipeTemplate(recipe)
+                        // var li = recipeTemplate(recipe)
+                        var li = getRecipeListItem(recipe)
+
+                        
+
                         $ul.append(li)
-                    })
-                   
+                    })                  
                 }
             })
         })
+
+        function getRecipeListItem(recipe)
+        {
+            var li = "<li>"
+                + "<img src=" + recipe.image + ">"
+                + "<h3>" + recipe.label + "</h3>"
+                + "<p>This recipe is <b>" + recipe.level + "</b> and will take you " + recipe.totalTime + " minutes to prepare.</p>"
+                + "<a href=" + recipe.url + " target=_blank>Let's make this recipe</a>"
+                + "</li>"
+
+            return li    
+        }
     
     
     </script>
@@ -83,14 +98,13 @@
     <script id="recipe-item" type="text/template">
         <li>
             <img src="<%= image %>">
-            <h3><%= label %></%></h3>
+            <h3><%= label %></h3>
 
-            <p>Cooking Time: <%= cookingTime %> mins</p>
-            <p>level: <%= level %></p>
-            <p>rating: <%= rating %></p>
+            <p>This recipe is <b><%= level %></b> and will take you <%= totalTime %> minutes to prepare.</p>
+            
            
 
-            <a href="<%= url %>">Click here to see more</a>
+            <a href="<%= url %>" target="_blank">Let's make this recipe</a>
         </li>
     </script>
 
