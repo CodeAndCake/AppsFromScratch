@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Edamam</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p>What's in your fridge?</p>
+    <form action="">
+        <input placeholder="e.g. banana" name="q" autofocus>
+    </form>
+    
+    <ul>
+        
+    </ul>
+    
+    <script src="jquery.min.js"></script>
+    <script src="underscore.js"></script>
+    
+    <script>
+    
+        var $form = $('form'),
+            $ul = $('ul')
+        
+        $form.on('submit', function(event)
+        {
+            event.preventDefault()
+            
+            var recipeTemplate = _.template($('#recipe-item').html())
+            
+            var inputValue = $('input[name=q]').val()
+            
+            var url = 'https://edamam-recipe-search-and-diet-v1.p.mashape.com/search?_app_id=eb226d7e&_app_key=7ee6a159a3cbe0001fc3f1ce01a305a6'
+            
+            var data = 
+            {
+                'q': inputValue
+            }
+            
+            $.ajax(
+            {
+                url: url,
+                data: data,
+                headers:
+                {
+                    "X-Mashape-Key": "B3b6H9Oblnmsh9qIm9B6FUI685tUp16X4zmjsnqhGS2fyRL5fN",
+                    "Accept": "application/json"
+                },
+                success: function(result)
+                {
+	               console.log(result)
+                   
+                   
+                    result.hits.forEach(function(hit)
+                    {
+                        var recipe = hit.recipe
+                        console.log(recipe)
+                        var li = recipeTemplate(recipe)
+                        $ul.append(li)
+                    })
+                   
+                }
+            })
+        })
+    
+    
+    </script>
+    
+    <script id="recipe-item" type="text/template">
+        <li>
+            <img src="<%= image %>">
+            <h3><%= label %></%></h3>
+            <a href="<%= url %>">link ></a>
+        </li>
+    </script>
+
+</body>
+</html>
