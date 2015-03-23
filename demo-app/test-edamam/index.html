@@ -19,6 +19,8 @@
     <form action="">
         <input placeholder="e.g. banana" name="q" autofocus>
     </form>
+
+    <p id="message">hello</p>
     
     <ul>
         
@@ -29,11 +31,14 @@
     <script>
     
         var $form = $('form'),
-            $ul = $('ul')
+            $ul = $('ul'),
+            $message = $('#message')
         
         $form.on('submit', function(event)
         {
             event.preventDefault()
+
+            $message.html('Just a sec...').fadeIn()
             
             var recipeTemplate = _.template($('#recipe-item').html())
             
@@ -56,8 +61,9 @@
                
                 success: function(result)
                 {
-	               console.log(result)
-                   
+                    console.log(result)
+
+                    $message.fadeOut()
                    
                     result.hits.forEach(function(hit)
                     {
