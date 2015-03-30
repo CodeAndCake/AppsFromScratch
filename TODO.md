@@ -1,3 +1,9 @@
+# Intro to APIs
+
+[Gender API](https://gender-api.com) is a super-simple GET request that returns a JSON object telling us whether a name is male or female.
+
+Could be used for some sort of *hello world* thing, with a form where you input your name and then it does something gender-related...
+
 # Karate kid
 
 - tell our students that we’re going to use Mr. Miyagi’s method: "mop the floor"!
