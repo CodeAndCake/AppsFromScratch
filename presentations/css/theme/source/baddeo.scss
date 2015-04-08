@@ -1,0 +1,356 @@
+/**
+ * A simple theme for reveal.js presentations.
+ * 
+ * This theme is Copyright (C) 2013 Matteo Menapace, http://baddeo.com. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2013 Hakim El Hattab, http://hakim.se
+ */
+
+// Include theme-specific fonts
+
+/* @font-face {
+	font-family: 'League Gothic';
+	src: url('../../lib/font/league_gothic-webfont.eot');
+	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'Museo700';
+	src: url('../../lib/font/museosans_700-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo300';
+	src: url('../../lib/font/museosans_300-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Caecilia';
+	src: url('../../lib/font/caecilialtstd-roman-webfont.woff') format('woff');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// colours
+$yellow: 		#fdeeca;
+$dark-blue: 	#00334c;
+$blue: 			#0095D7;
+$white: 		#fff;
+$ochre: 		#fdeeca;
+$red: 			#d91a21;
+$navy: 			#00334c; 				$navy-rgba: rgba(0, 51, 76, 0.2); 
+$navy-grey:		#98abb5;
+$green:			#7fbf42; /*#7FBF42;*/	$dark-green: #00733F;
+$purple: 		#52283B; 				$light-purple: #8A7279;
+$orange: 		#FF8036;
+$pink: 			#F5367C; // #FF5E99;
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Caecilia', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$mainColor: $dark-blue;
+$mainFontSize: 36px;
+
+// headings
+$headingFont: 'Museo700', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headingColor: $mainColor;
+$headingTextShadow: none;
+// $headingTextTransform: none;
+$headingTextTransform: uppercase;
+$headingLineHeight: 1.1em;
+
+// $backgroundColor: #fff;
+
+// links
+$linkColor: $blue;
+$linkColorHover: darken( $linkColor, 20% );
+
+// text selection
+$selectionBackgroundColor: $mainColor;
+$selectionColor: $yellow;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+/* OVERRIDES */
+
+	body 
+	{
+		background-color: transparent;
+		// background: url('http://baddeo.com/stylesheets/images/body_background.png');
+		background: url('../../img/like-pattern.png');	
+	}
+
+	.reveal
+	{
+		h1 
+		{ 
+			font-size: 3em; 
+
+			&.highlight
+			{
+				font-size: 5em;
+			}
+		}
+		
+		h2 
+		{ 
+			font-size: 2em;
+		}
+
+		h2, h3
+		{
+			font-family: 'Museo300', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+			b
+			{
+				font-family: 'Museo700', 'Helvetica Neue', Helvetica, Arial, sans-serif
+			}
+		}
+
+		p
+		{
+			margin-bottom: 0.6em;
+		}
+		
+		.progress
+		{
+			// background: $yellow;
+			background: rgba($blue, 0.2); // rgba(0, 0, 0, 0.2);
+			height: 12px;
+			top: 0;
+		}
+
+		.controls 
+		{
+			div
+			{
+				transition: 0.3s all; 
+				&.enabled
+				{
+					opacity: 1;
+				}
+			}
+		}
+
+		.slides
+		{
+			section
+			{
+				.quiet
+				{
+					opacity: 0.2;
+				}
+
+				.fragment
+				{
+					opacity: 0;
+
+					&.visible
+					{
+						&.quiet
+						{
+							opacity: 0.2;
+						}
+					}
+				}
+
+				.blue,
+				.highlight
+				{
+					color: $blue;
+				}
+
+
+
+				img
+				{
+					border: none;
+					// box-shadow: 0 0 24px rgba($blue, 0.3);
+					box-shadow: none;
+					background: transparent;
+				}
+
+				.rounded
+				{
+					border-radius: 120px;
+				}
+			} 
+		} 
+
+		pre
+		{
+			box-shadow: none;
+			width: auto;
+			// margin: 0;
+			margin: 0 -4%;
+			font-size: 1.3em;
+			line-height: 1;
+
+			code
+			{
+				padding: 0 12px;
+				background: rgba($blue, 0.1);
+				color: inherit;
+				border-radius: 24px;
+				transition: 0.6s background ease;
+				max-height: 100%;
+				word-wrap: break-word;
+				font-family: 'Museo700';
+				word-spacing: 0.1em;
+				letter-spacing: 0.03em;
+
+				&:focus
+				{
+					outline: 0;
+					background: rgba($blue, 0.2);
+				}
+
+				.tag
+				{
+					color: $blue;
+
+					.title
+					{
+						color: $dark-blue;
+					}
+
+					.attribute
+					{
+						// color: $dark-green;
+						// color: $light-purple;
+						// color: $purple;
+						// color: $pink;
+						// color: $yellow;
+						// color: $green;
+						// color: $orange;
+						color: $blue;
+					}
+
+					.value
+					{
+						// color: $dark-green;
+						// color: $green;
+						// color: $purple;
+						// color: $yellow;
+						// color: $blue;
+						// color: $orange;
+						color: $pink;
+					}
+				}
+
+				&.css
+				{
+					.tag
+					{
+						color: $dark-blue;
+					}
+
+					.class,
+					.attr_selector
+					{
+						color: $pink;
+					}
+
+					.rules
+					{
+						color: $blue;
+
+						.rule
+						{
+							.attribute
+							{
+								color: $dark-blue;
+							}
+
+							.value
+							{
+								color: $dark-blue;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.attribution
+		{
+			font-size: 0.23em;
+		}
+	}
+
+	a, 
+	a:hover
+	{
+		transition: 0.3s all;
+	}
+
+	.lowercase
+	{
+		text-transform: lowercase !important;
+	}
+
+/* UTILS */
+
+	// from http://blog.frankmtaylor.com/2012/01/23/html5-contenteditable-and-css/
+	[contenteditable]:active,
+	[contenteditable]:focus
+	{
+		border:none;
+		outline:none;
+	} 
+
+/* .HAS-CODE */
+
+	.reveal .has-code 
+	{
+		pre
+		{
+			text-align: center;
+		}
+
+		code
+		{
+			background: transparent;
+			font-size: 1.5em;
+		}
+	}
+
+	.reveal pre code .tag .title 
+	{
+		color: inherit;
+	}
+
+	.pseudo-code
+	{
+		text-transform: none !important;
+
+		b
+		{
+			color: $blue;
+		}
+
+		.value 
+		{
+			color: $pink;
+		}
+	}	

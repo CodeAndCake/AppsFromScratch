@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Slide Notes</title>
+		<link rel="stylesheet" type="text/css" href="notes.css">
+	</head>
+
+	<body>
+
+		<div id="wrap-current-slide" class="slides">
+			<iframe src="../../index.html" width="1280" height="1024" id="current-slide"></iframe>
+		</div>
+
+		<div id="wrap-next-slide" class="slides">
+			<iframe src="../../index.html" width="640" height="512" id="next-slide"></iframe>
+			<span>UPCOMING</span>
+		</div>
+		<div id="notes"></div>
+
+		<script src="../../plugin/markdown/showdown.js"></script>
+		<script>
+			window.addEventListener( 'load', function() {
+
+				(function( window, undefined ) {
+					var notes = document.getElementById( 'notes' ),
+						currentSlide = document.getElementById( 'current-slide' ),
+						nextSlide = document.getElementById( 'next-slide' );
+
+					window.addEventListener( 'message', function( event ) {
+						var data = JSON.parse( event.data );
+						// No need for updating the notes in case of fragment changes
+						if ( data.notes !== undefined) {
+							if( data.markdown ) {
+								notes.innerHTML = (new Showdown.converter()).makeHtml( data.notes );
+							}
+							else {
+								notes.innerHTML = data.notes;
+							}
+						}
+
+						// Showing and hiding fragments
+						if( data.fragment === 'next' ) {
+							currentSlide.contentWindow.Reveal.nextFragment();
+						}
+						else if( data.fragment === 'prev' ) {
+							currentSlide.contentWindow.Reveal.prevFragment();
+						}
+						else {
+							// Update the note slides
+							currentSlide.contentWindow.Reveal.slide( data.indexh, data.indexv );
+							nextSlide.contentWindow.Reveal.slide( data.nextindexh, data.nextindexv );
+						}
+
+					}, false );
+
+				})( window );
+
+			}, false );
+
+		</script>
+	</body>
+</html>

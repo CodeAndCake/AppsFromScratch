@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*
+
+	If you haven't installed SASS, then do it (learn how to at http://sass-lang.com/install)
+
+	Open a Terminal window and navigate to the root folder for this repo, then..
+
+	sass --watch presentation/deck/plugin/notes/:presentation/deck/plugin/notes --style expanded
+
+*/
+/* GENERAL */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+body {
+  font-family: 'Helvetica Neue', Helvetica, -apple-system-font, Arial, sans-serif;
+  font-weight: 200;
+  margin: 24px;
+}
+
+/* NOTES */
+#notes {
+  font-size: 24px;
+  clear: both;
+}
+#notes p {
+  margin-top: 0;
+}
+#notes ul {
+  margin: 0 0 18px 0;
+  padding-left: 30px;
+}
+#notes ul li {
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 6px;
+}
+#notes ul li:before {
+  content: "☐";
+  font-size: 1.5em;
+  line-height: 0;
+  position: absolute;
+  top: 12px;
+  left: -33px;
+}
+#notes code, #notes pre {
+  font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+#notes code {
+  padding: 2px 4px;
+  font-size: 15px;
+  border-radius: 6px;
+  background-color: #d3e8d0;
+  border: 1px solid #a3cf9d;
+}
+#notes pre {
+  background-color: #d3e8d0;
+  border: 1px solid #a3cf9d;
+  border-radius: 6px;
+  display: block;
+  padding: 18px;
+  margin: 0 0 18px;
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+#notes pre code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+#notes del {
+  opacity: 0.5;
+}
+
+/* SLIDES */
+#wrap-current-slide,
+#wrap-next-slide {
+  float: left;
+  overflow: hidden;
+}
+
+#wrap-current-slide {
+  width: 640px;
+  height: 512px;
+}
+
+#wrap-next-slide {
+  width: 448px;
+  height: 358px;
+  margin: 0 0 0 24px;
+}
+
+#current-slide,
+#next-slide {
+  width: 1280px;
+  height: 1024px;
+  border: none;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+#current-slide {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+#next-slide {
+  -webkit-transform: scale(0.35);
+  -moz-transform: scale(0.35);
+  -ms-transform: scale(0.35);
+  -o-transform: scale(0.35);
+  transform: scale(0.35);
+}
+
+.slides {
+  position: relative;
+  margin-bottom: 24px;
+  border: 1px solid #dddddd;
+  background: #dddddd;
+}
+.slides span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  padding: 6px;
+  color: black;
+  background: #dddddd;
+}
