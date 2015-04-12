@@ -38,21 +38,44 @@ a:hover{
 }
 
 
+.topnavi{
+	width: 100%;
+	position: fixed;
+	background: white;
+	padding-bottom:20px;
+	
+ }
 
 
-form{
+.topnavi form{
 	text-align: center;
 	width: 100%;
 	padding:5px 10px;
 }
 
-form input{
+.topnavi form input{
  	width: 100%;
 	padding:5px 10px;
 }
 
+#message{
+	display: table;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+
+#message p{
+	display: table-cell;
+	vertical-align: middle;
+	
+}	
+
 ul{
-	padding-top:40px;
+
+	padding-top:180px;
 	list-style: none;
 }
 
