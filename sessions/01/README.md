@@ -1,9 +1,8 @@
-# Session 1
-
-
 # Apps from scratch
 
 This course is about getting **creative** with **code**.
+
+Getting familiar with how coders work day to day, and experiencing the **design and development process** first-hand. How to take an idea from zero to working prototype. 
 
 For many of you, this will be a **memorable day**. You'll write your **first line of code**, and in a few weeks you'll have made **your very own app**, from scratch!
 
@@ -16,12 +15,12 @@ We're not here to talk at you, but to work with you and we want you to **work to
 
 **No computer scientists**, learned code by ourselves and built a career on it.
 
-* Yuki: studied art, now develops software at a post-production company (working on films like The Gladiator)
+* Yuki: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (started by Ridley Scott, working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team and clients
 * Matteo: studied graphic design, built apps and games for the BBC and the Science Museum, now teaches at Ravensbourne
 
 We're both curious and passionate about sharing our knowledge.
 
-We believe **everyone can learn to code** and that's why we're here today.
+We believe **everyone can learn to code** and that's why we're here today. We want to help you find your direction and accelerate your learning process.
 
 
 ## Introduce each other
@@ -45,19 +44,12 @@ So, we will have **lunch break** at around 12:00 for 1 hour, aiming to wrap up b
 
 ## Roadmap
 
-### Day one
-
-Setting the foundations: getting familiar with code (introducing two languages, **HTML & CSS**) and learning how to code the layout for an app.
-
-Key questions: 
-* What is *code*? 
-* How do you learn to code?
-
 ### Day 1
 
 Setting the foundations: getting familiar with code (introducing two languages, **HTML & CSS**) and learning how to code the layout for an app.
 
 Key questions: 
+
 * What is *code*? 
 * How do you learn to code?
 
@@ -66,6 +58,7 @@ Key questions:
 Stepping up a notch: set things in motion (introducing **JavaScript**) and learning how to use data from the Web in your code.
 
 Key questions: 
+
 * Where is *data*? 
 * How do you harness is?
 
@@ -73,23 +66,26 @@ Key questions:
 
 Learning how to visualise your ideas, sketch out possible solutions (introducing the **wireframing** method) and start a conversation with your team.
 
-Key questions: 
+Key questions:
+ 
 * What is an *app*? 
 * How do you design one?
 
 ### Day 4
 
-Translating your wireframes into code: how to quickly **prototype and test** your app.
+Translating your wireframes into code: how to quickly **prototype and test** your app. Introducing *behaviour-driven-development*.
 
 Key questions: 
+
 * What does your app do? 
 * How do you *test* it?
 
 ### Day 5
 
-Polising up and presenting your prototypes.
+Polishing up and presenting your prototypes.
 
 Key questions: 
+
 * What is your app value? 
 * How do you communicate it?
 
@@ -226,7 +222,7 @@ _BBC homepage example > disable CSS to show what code does what_
 Today we're going to focus on HTML & CSS
 
 
-## Let's code
+# Let's code
 
 Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
 
