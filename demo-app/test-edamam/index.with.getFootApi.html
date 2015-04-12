@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Edamam</title>
+	<meta name="Author" content=""/>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="//localhost:55567/livereload.js?snipver=1"></script>
+    <script src="jquery.min.js"></script>
+    <script src="../vendor/getFootApi.jquery.js"></script>
+
+</head>
+<body>
+    
+    <div class="topnavi">
+        <h1>What's in your fridge?</h1>
+        <form action="">
+            <input placeholder="e.g. banana" name="input" autofocus>
+        </form>
+    </div>
+
+    <div id="message">
+        <p>hello</p>
+    </div>
+    
+    <ul></ul>
+    
+        
+    
+    <script>
+      
+
+        var $form = $('form');
+        var $ul = $('ul');
+        var $message = $('#message');
+        
+        $form.on('submit', function(_event){
+
+            _event.preventDefault();
+
+            $message.html('<p>Just a sec...</p>').fadeIn();
+
+            $ul.empty();
+            
+            var inputValue = $('input[name=input]').val();
+ 
+            getFootApi(inputValue, function(_result){
+
+                $message.fadeOut();
+
+                result.hits.forEach(function(hit){
+                    var recipe = hit.recipe;
+                    var li = getRecipeListItem(recipe);
+                    $ul.append(li);
+                });
+
+            });
+        });
+
+        function getRecipeListItem(recipe){
+            var li = "<li>"
+                + "<img src=" + recipe.image + ">"
+                + "<h3>" + recipe.label + "</h3>"
+                + "<p>This recipe is <b>" + recipe.level + "</b> and will take you " + recipe.totalTime + " minutes to prepare.</p>"
+                + "<a href=" + recipe.url + " target=_blank>Let's make this recipe</a>"
+                + "</li>";
+
+            return li;  
+        }
+    
+    
+    </script>
+     
+</body>
+</html>
