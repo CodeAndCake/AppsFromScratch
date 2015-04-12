@@ -1,10 +1,17 @@
 /* #SPOT */
-
-	#spot h2, #spot .differences-group
+	
+	#spot h1,
+	#spot h2, 
+	#spot .differences-group
 	{
 		position: absolute;
 		width: 100%;
 		top: -150px;
+	}
+
+	#spot h1
+	{
+		top: 220px;
 	}
 
 	#spot .differences-group

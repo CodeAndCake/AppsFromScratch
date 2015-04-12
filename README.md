@@ -6,13 +6,13 @@ Working on hands-on briefs, you will learn the principles of programming and get
 
 # Plan
 
-Session	| Date			| Concepts				| Practice
--------	| -------------	| --------------------	| ------------------------------
-[1](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-01.md)		| Sat Apr 18th 	| What is code? How do you learn to code?  | HTML & CSS
-[2](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-02.md)		| Sat Apr 25th 	| What is programming? Where is data?  | JavaScript
-[3](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-03.md)		| Sat May 2nd 	| What is design? What is an *app*? | Wireframes & behaviour-driven development 
-[4](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-04.md)		| Sat May 9th 	| How does your app work? | Hacking ideas into a prototype 
-[5](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-05.md)		| Sat May 23rd 	| How does your app look?  | Prototyping and presenting ideas
+Day	| Concepts	| Practice
+---	| --------	| ---------
+[1](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/01/README.md)		| What is *code*? <br/>How do you learn to code?  | HTML & CSS
+[2](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/02/README.md)		| Where is *data*? <br/>How do you harness is?  | JavaScript & APIs
+[3](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/03/README.md)		| What is an *app*? <br/>How do you design one?  | Wireframes & behaviour-driven development 
+[4](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/04/README.md)		| What does your app do? <br/>How do you *test* it? | Hacking ideas into a prototype 
+[5](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/05/README.md)		| What is your app value? <br/>How do you communicate it? | Prototyping and presenting ideas
 
 # Learning goals
 
