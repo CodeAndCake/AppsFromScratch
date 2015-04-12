@@ -53,7 +53,7 @@ Key questions:
 * What is *code*? 
 * How do you learn to code?
 
-### Day one
+### Day 1
 
 Setting the foundations: getting familiar with code (introducing two languages, **HTML & CSS**) and learning how to code the layout for an app.
 
@@ -61,30 +61,63 @@ Key questions:
 * What is *code*? 
 * How do you learn to code?
 
+### Day 2
 
-[1]		|  <br/>  | HTML & CSS
-[2](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-02.md)		| Where is *data*? <br/>How do you harness is?  | JavaScript & APIs
-[3](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-03.md)		| What is an *app*? <br/>How do you design one?  | Wireframes & behaviour-driven development 
-[4](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-04.md)		| What does your app do? <br/>How do you *test* it? | Hacking ideas into a prototype 
-[5](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-05.md)		| What is your app value? <br/>How do you communicate it? | Prototyping and presenting ideas
+Stepping up a notch: set things in motion (introducing **JavaScript**) and learning how to use data from the Web in your code.
+
+Key questions: 
+* Where is *data*? 
+* How do you harness is?
+
+### Day 3
+
+Learning how to visualise your ideas, sketch out possible solutions (introducing the **wireframing** method) and start a conversation with your team.
+
+Key questions: 
+* What is an *app*? 
+* How do you design one?
+
+### Day 4
+
+Translating your wireframes into code: how to quickly **prototype and test** your app.
+
+Key questions: 
+* What does your app do? 
+* How do you *test* it?
+
+### Day 5
+
+Polising up and presenting your prototypes.
+
+Key questions: 
+* What is your app value? 
+* How do you communicate it?
+
 
 
 ## What is code?
 
-Can you think of examples of words with `code` in them? (*Morse code*, *post code*, *dress code*...)
+Can you fill in the blanks?
 
-Code existed before computers.
+Think of words with `code` in them? (*Morse code*, *post code*, *dress code*...)
 
-Code is about **communication**. If I want to talk to my **grandma**, I need to use Italian. To communicate with you, I use English. To **talk to a computer**, I use..
+Code existed **before computers**.
+
+Code is about
+*   transmitting information
+*   giving instructions
+*   **communication**
+
+If I want to talk to my **grandma**, I need to use Italian. To communicate with you, I use English. To **talk to a computer**, I use..
 
 It's **instructions** to a computer: extremely powerful, fundamentally thick.
 
 ### Thick machines
 
-Imagine a computer is your most pedantic **friend**: 
+Imagine a computer is your most picky/pedantic **friend**: 
 
-* **break down** every step
-* be **precise**
+* **break down** every step, in order
+* be extremely **precise**
 * it will take you **literally**
 
 
@@ -103,27 +136,32 @@ PEOPLE are **good at writing code**.
 
 ## How do you learn to code?
 
+Remember how you learned your first language as a child?
+
 Like **learning a new language**, **translating** your ideas into code.
 
 **Today** you're going to learn **2 new languages**.
 
-A bit of **grammar** and **vocabulary**, and mostly you can learn by **copying**.
-
+<!-- A bit of **grammar** and **vocabulary**, and mostly you can learn by **copying**. -->
 
 ## Copy + hack
 
-To learn typography, you copy and **edit** fonts. 
+You learned your first language by copying people around you..
+
+<!-- To learn typography, you copy and **edit** fonts. 
 
 To become a pattern cutter, you **deconstruct** and copy good garments.
 
 To make things on the Web, you **inspect** and copy good websites.
 
-_Show Facebook > Inspect Element_
+_Show Facebook > Inspect Element_ -->
 
 **Today** you're going to **copy us** for a bit, then **hack** what you've copied into something **new**.
 
 
 ## Your brief
+
+**Learn by doing**
 
 Make an app that helps people **make lunch**.
 
@@ -141,13 +179,21 @@ Then you will explore the **potential of the Web** as an open platform for you t
 
 ## What is the Web?
 
+We're building our app using Web technology.. so what is *the Web*?
+
 The Web is not the Internet. If the Internet is a global **brain** (infrastructure), the Web is all the **memories and thoughts** that run on top of it.
 
-Super-short history of the Web.
+Super-short history:
 
-The WWW started as a way of **linking** academic documents together, over **2 computers in Switzerland**. 
+* The Internet started as a military project shortly after WW2. Fearing a soviet nuclear attack, the American army designed a **resilient de-centralised network**: if one *node* goes down, communication can still happen between the other nodes.
 
-TBL → **hypertext + Internet = WWW**, he specified a set of **rules** (HTTP) for computers to exchange documents over the Internet, and a standard **format** for these documents (HTML). 
+* Internet expands beyond the military and is adopted by business and academia. People start sending *emails*. 
+
+* The WWW started as a way of **linking** academic documents together, over **2 computers in Switzerland**. 
+
+* Tim Berners Lee (TBL): "Wouldn't it be great if I could have all my research data always **available** on this computer, and people can just fetch it from there, rather than me having to send emails? In fact, wouldn't it be great if **all the information in the World** could be always available? If every piece of data had an **address** where we can find it, like we find people at certain addresses?"
+
+* TBL: **hypertext + Internet = WWW**, he specified a set of **rules** (HTTP) for computers to exchange documents over the Internet, and a standard **format** for these documents (HTML). 
 
 
 ## How does it WWWork?
@@ -177,15 +223,12 @@ JS → behaviour and logic
 
 _BBC homepage example > disable CSS to show what code does what_
 
-
-
+Today we're going to focus on HTML & CSS
 
 
 ## Let's code
 
-* Go online
-* Find [CodePen](http://codepen.io/)
-* Sign up 
+Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
 
 
 
