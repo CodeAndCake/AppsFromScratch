@@ -90,6 +90,7 @@ How about this?
 ## APIs 
 
 * Data from the Web
+* Don't care what it looks like, just give me the data (see [The interface layer](https://medium.com/bridge-collection/the-interface-layer-when-design-commoditizes-tech-e7017872173a)) and I'll make it work and look proper
 * URLs to get and send data, examples
 
 	* Google
