@@ -1,19 +1,72 @@
-# Presentation
+# Session 1
 
-## Apps from scratch
+
+# Apps from scratch
 
 This course is about getting **creative** with **code**.
 
-For many of you, this will be a **memorable day**! You'll write your **first line of code**, and in a few weeks you'll have made **your very own app**, from **scratch**!
+For many of you, this will be a **memorable day**. You'll write your **first line of code**, and in a few weeks you'll have made **your very own app**, from scratch!
 
-Exciting, **fun**!
+It's going to be **challenging** and we want to make sure that you also have **fun**!
 
-*On a practical note*, we will have lunch **break** at around 12:00 (1 hour), aiming to wrap up by 3pm.
+We're not here to talk at you, but to work with you and we want you to **work together** and help each other.
 
 
 ## Two words about ourselves
 
-**No computer scientists**.
+**No computer scientists**, learned code by ourselves and built a career on it.
+
+* Yuki: studied art, now develops software at a post-production company (working on films like The Gladiator)
+* Matteo: studied graphic design, built apps and games for the BBC and the Science Museum, now teaches at Ravensbourne
+
+We're both curious and passionate about sharing our knowledge.
+
+We believe **everyone can learn to code** and that's why we're here today.
+
+
+## Introduce each other
+
+We want this session to be **informal** and relaxed, so if you have any questions at any time just ask. We're also going to ask you many **questions**!
+
+We'd like you to introduce yourself to your neighbour, and then we'll ask you to introduce each other to the rest of the group.
+
+1. A bit about yourself
+* Why are you on this course?
+* What is your experience with coding so far?
+
+You can jot down the answers on post-its and we'll then stick them on the wall...
+
+
+## When is lunch?
+
+Research shows that people focus much better when they know what time they're going to eat..
+
+So, we will have **lunch break** at around 12:00 for 1 hour, aiming to wrap up by 3pm.
+
+## Roadmap
+
+### Day one
+
+Setting the foundations: getting familiar with code (introducing two languages, **HTML & CSS**) and learning how to code the layout for an app.
+
+Key questions: 
+* What is *code*? 
+* How do you learn to code?
+
+### Day one
+
+Setting the foundations: getting familiar with code (introducing two languages, **HTML & CSS**) and learning how to code the layout for an app.
+
+Key questions: 
+* What is *code*? 
+* How do you learn to code?
+
+
+[1]		|  <br/>  | HTML & CSS
+[2](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-02.md)		| Where is *data*? <br/>How do you harness is?  | JavaScript & APIs
+[3](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-03.md)		| What is an *app*? <br/>How do you design one?  | Wireframes & behaviour-driven development 
+[4](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-04.md)		| What does your app do? <br/>How do you *test* it? | Hacking ideas into a prototype 
+[5](https://github.com/matteomenapace/apps-from-scratch/blob/master/sessions/session-05.md)		| What is your app value? <br/>How do you communicate it? | Prototyping and presenting ideas
 
 
 ## What is code?
@@ -133,3 +186,15 @@ _BBC homepage example > disable CSS to show what code does what_
 * Go online
 * Find [CodePen](http://codepen.io/)
 * Sign up 
+
+
+
+
+* HTML
+* CSS
+* Nice-to-have Normalize.css
+* Nice-to-have Font Awesome Icons 
+* Nice-to-have Google Fonts
+
+
+

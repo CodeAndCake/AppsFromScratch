@@ -42,3 +42,76 @@ Explain functions with `makeTea( howMuchSugar, withMilk )`
 
 
 
+
+# Session 2
+
+1. What is programming? 
+* Where is data?
+
+## Principles of programming
+
+* Program the teachers (robot game)
+* Breaking down the brief: what can the app do for us? (computational thinking)
+* Variables
+* Functions
+* Logic
+
+### Natural vs Programming languages 
+
+* `the cat drinks milk` English 
+* `de kat drinkt melk` Dutch
+* `die Katze trinkt Milch` German 
+* `il gatto beve latte` Italian 
+
+Can you see a pattern here?
+
+How about this?
+
+* `cat.drink(milk)` JavaScript (written by an English-speaking human)
+
+* Meet the `console`
+
+
+    var cat = { ... }
+    cat.drink = function(beverage) { ... }
+	...
+	var milk = ...
+	...
+	cat.drink(milk)
+
+## Let's code
+
+* Meet jQuery
+* quick win: make something appear and disappear from the page
+* second quick win: add an event listener to a button, or to the form submit
+* get input values
+
+
+## APIs 
+
+* Data from the Web
+* URLs to get and send data, examples
+
+	* Google
+	* Facebook (www vs graph)
+	* Gender-api
+	* Edamam
+	* Mashape?
+
+## Let's code
+
+* Integrate the Edamam API, or are we using Mashape?
+
+* Meet github, copy-paste code
+
+	getFoodFromAPI('apple', function(data){
+
+		if () {} // defo
+
+		// loop (bonus)	
+
+	})
+
+
+
+
