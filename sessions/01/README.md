@@ -230,14 +230,51 @@ Today we're going to focus on HTML & CSS
 
 Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
 
+### HTML
 
+1. Set up the HTML box (hide the JS and CSS boxes)
+* Explain `body` and `head` 
+* Write all the content of our app 
+* `h1` (useful for Google Fonts)
+* `form`
+* `input`
+* Difference between `value` and `placeholder`
+* Add `name` attributes
+* `button type="submit"` with the same content of the `h1` to explain the concept of **markup**
+* Show Google Search at this point to explain how forms work 
+* `p`
 
+### CSS intro
 
-* HTML
-* CSS
-* Nice-to-have Normalize.css
-* Nice-to-have Font Awesome Icons 
-* Nice-to-have Google Fonts
+Useful to show **selectors** and hide the `p`
+
+1. `h1` centred
+* `p`
+
+        p
+		{
+		  display: none;
+		}
+
+### Dress code
+
+* `color`
+* `background`
+* `font-size`
+* `font-weight`
+* `width`
+* `margin`
+* `padding`
+* tranparency
+* `border-radius`
+
+* Style **fonts**, using [Google Fonts](https://www.google.com/fonts)
+* Make the app look proper on a phone. Google `how to stop phone zooming out pages`
+* Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/) 
+* Add the app to your phone's **home screen**
+ 
+         <link rel="apple-touch-icon" href="http://i.imgur.com/ln9kdl3.png">		
+
 
 
 
