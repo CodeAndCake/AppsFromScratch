@@ -16,6 +16,3 @@ This is a human-readable summary of (and not a substitute for) the [license](LIC
 *   **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the [same license](https://wiki.creativecommons.org/FAQ#If_I_derive_or_adapt_material_offered_under_a_Creative_Commons_license.2C_which_CC_license.28s.29_can_I_use.3F) as the original.  
 
 *   **No additional restrictions** — You may not apply legal terms or [technological measures](https://wiki.creativecommons.org/License_Versions#Application_of_effective_technological_measures_by_users_of_CC-licensed_works_prohibited) that legally restrict others from doing anything the license permits. 
-
-
-[credit]: If supplied, you must provide the name of the creator and attribution parties, a copyright notice, a license notice, a disclaimer notice, and a link to the material.
