@@ -8,8 +8,8 @@
 Let's pretend I'm a **robot** and you have to **code me**.
 
 * **Mission**: find an object in the room, pick it up.
-* I only understand these **commands**: `walk(steps)` and `turn(degrees)`
-* I can asnwer **questions**, only with a `yes` or `no`
+* I only understand these **commands**: `walk(steps)`, `turn(degrees)` and `grab(thing)`
+* I can hear, but can only say `yes` or `no`
 
 People usually start by giving you very *specific instructions* (eg: walk 3 steps, turn 45 degrees, walk 2 steps..): **remote-controlling**
 
