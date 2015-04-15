@@ -43,3 +43,13 @@ Check this out http://www.google.co.uk/goodtoknow/web/jargon
 # Wacky ideas
 
 - *Treasure hunt* GeoLocation app that changes colour (from cold to hot) depending on how far you are from your *treasure*
+
+# Reading list
+
+- [ ] https://medium.com/@dustinteractive/8-reasons-every-designer-should-build-an-app-f222e3d3dc6c
+
+# Day one
+
+- [x] The Web is not the Internet
+- [ ] The [matrix-like WWW](http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)?
+- [ ] How do we introduce the food app?
