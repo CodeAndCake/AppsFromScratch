@@ -20,19 +20,38 @@ We're not here to talk at you, but to work with you and we want you to **work to
 
 ## Two words about ourselves
 
-**No computer scientists**, learned code by ourselves and built a career on it.
 
-* Yuki: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (started by Ridley Scott, working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team and clients
+* Yuki: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team
 
+
+There are about 10 team.
 <yuki>
 
-	Matteo has studied graphic design. He has built various social platforms and educational games for the BBC, Science Museum and now teaches at Ravensborne.  
+	Matteo has studied **graphic design**. He has built various **social platforms** and **educational games** for the **BBC**, **Science Museum** and then now **teaches at Ravensborne.**  
  	
+
+ 	I'm doing this course also to learn. It's been one of the challenge for me to **break down** the technical idea into something more **friendly**. I'm here to learn a **way to communicate** with ???.
+
+ 	Matteo came to ask me if I'm interested in doing this course and I was very excited!
+
+ 	So please point out if I'm talking gibberish.
+
 
 </yuki>
 
 
+**No computer scientists**, learned code by ourselves and built a career on it.
+
+
 We're both curious and passionate about sharing our knowledge.
+
+<yuki>
+	
+	Since Matteo and I started in programming, we ve been sharing ideas and technics.
+
+ 	Development is about **community and sharing**. The reason we can stand where we are now is because of the people who contribute to the comunity for free.
+ 
+</yuki>
 
 We believe **everyone can learn to code** and that's why we're here today. We want to help you find your direction and accelerate your learning process.
 
@@ -41,7 +60,31 @@ We believe **everyone can learn to code** and that's why we're here today. We wa
 
 We want this session to be **informal** and relaxed, so if you have any questions at any time just ask. We're also going to ask you many **questions**!
 
-We'd like you to introduce yourself to your neighbour, and then we'll ask you to introduce each other to the rest of the group.
+
+
+
+
+
+
+Maybe pause here?
+
+
+
+
+<yuki>
+
+	I think this is great oppotunity to share and get to know new people. So please don't hesitate, we are always up for beers!
+
+
+	
+	We'd like you to introduce yourself to your neighbour. 
+	
+
+
+	We'll ask you to introduce each other to the rest of the group.
+</yuki>
+
+
 
 1. A bit about yourself
 * Why are you on this course?
@@ -75,6 +118,11 @@ Key questions:
 
 * Where is *data*? 
 * How do you harness is?
+
+<yuki>
+	
+	what is API (example)
+</yuki>
 
 ### Day 3
 
