@@ -66,7 +66,7 @@ We want this session to be **informal** and relaxed, so if you have any question
 
 
 
-Maybe pause here?
+Maybe pause here and mingle?
 
 
 
@@ -84,6 +84,11 @@ Maybe pause here?
 	We'll ask you to introduce each other to the rest of the group.
 </yuki>
 
+
+
+<yuki>
+	Prepare stickie notes
+</yuki>
 
 
 1. A bit about yourself
@@ -110,6 +115,10 @@ Key questions:
 * What is *code*? 
 * How do you learn to code?
 
+<yuki>
+	learn by doing
+</yuki>
+
 ### Day 2
 
 Stepping up a notch: set things in motion (introducing **JavaScript**) and learning how to use data from the Web in your code.
@@ -120,22 +129,45 @@ Key questions:
 * How do you harness is?
 
 <yuki>
-	
-	what is API (example)
+	Maybe ask question if they know what is API
+
+
+	what is API:
+
+	 A software company releases its API to the public so that other software developers can design products that are powered by its service. For example, Amazon.com released its API so that Web site developers could more easily access Amazon's product information. 
+
+	 API is a software-to-software interface, not a user interface. With APIs, applications talk to each other without any user knowledge or intervention.
+
+	 When you buy movie tickets online and enter your credit card information, the movie ticket Web site uses an API to send your credit card information to a remote application that verifies whether your information is correct. Once payment is confirmed, the remote application sends a response back to the movie ticket Web site saying it's OK to issue the tickets.
 </yuki>
 
 ### Day 3
 
 Learning how to visualise your ideas, sketch out possible solutions (introducing the **wireframing** method) and start a conversation with your team.
 
+<yuki>
+	Also impact mapping?
+</yuki>
+
 Key questions:
  
 * What is an *app*? 
 * How do you design one?
 
+
+<yuki>
+	Designing app isn't just about making it look pretty.
+	(Maybe showing philippe starck lemon squeezer? or show it in day 3?)
+	It's to understand the users who potentialy interact with your app and how to deliver your message to them best possible way.
+</yuki>
+
 ### Day 4
 
 Translating your wireframes into code: how to quickly **prototype and test** your app. Introducing *behaviour-driven-development*.
+
+<yuki>
+	Maybe not BDD? might be to technical.
+</yuki>
 
 Key questions: 
 
