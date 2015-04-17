@@ -215,6 +215,10 @@ Imagine a computer is your most picky/pedantic **friend**:
 
 COMPUTERS → **Computing** (calculating very fast, comparing quantities), **repeating** (boring) tasks endlessly, **executing** instructions, **storing** data. 
 
+<yuki>
+	computers doesn't make mistakes
+</yuki>
+
 ### What are you good at?	
 
 PEOPLE → **Spotting patterns** (connecting the dots), thinking **outside the box**, **inventing** new tools and new ways to use old **tools**.
@@ -229,6 +233,16 @@ PEOPLE are **good at writing code**.
 Remember how you learned your first language as a child?
 
 Like **learning a new language**, **translating** your ideas into code.
+
+<yuki>
+	code has **vocabulary and grammer** just like other languages.
+	baby start to learn language by listening (not understanding).
+	So don't worry too much about understanding. When the time comes, it will come to you naturally.
+	What's important is speaking and repeating. If try more and more, it gets easier and easier.
+
+	We will show you what it can be done. 
+
+</yuki>
 
 **Today** you're going to learn **2 new languages**.
 
