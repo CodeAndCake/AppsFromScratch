@@ -79,8 +79,6 @@
                         // var li = recipeTemplate(recipe)
                         var li = getRecipeListItem(recipe)
 
-                        
-
                         $ul.append(li)
                     })                  
                 }
@@ -98,22 +96,9 @@
 
             return li    
         }
-    
-    
+        
     </script>
-    
-    <script id="recipe-item" type="text/template">
-        <li>
-            <img src="<%= image %>">
-            <h3><%= label %></h3>
 
-            <p>This recipe is <b><%= level %></b> and will take you <%= totalTime %> minutes to prepare.</p>
-            
-           
-
-            <a href="<%= url %>" target="_blank">Let's make this recipe</a>
-        </li>
-    </script>
 
 </body>
 </html>
