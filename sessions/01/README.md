@@ -8,17 +8,47 @@ For many of you, this will be a **memorable day**. You'll write your **first lin
 
 It's going to be **challenging** and we want to make sure that you also have **fun**!
 
+
+<yuki>
+I'd like to note that the half of development process is about **discussing the ideas** and **colaborating as a team** rather than sitting in front of computer all the time so we would like to go through with you, how to get the idea into app with **the method** that we have been practicing to get best out of it day to day.   
+</yuki>
+ 
+
 We're not here to talk at you, but to work with you and we want you to **work together** and help each other.
 
+ 
 
 ## Two words about ourselves
 
+
+* Yuki: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team.
+
+<yuki>
+
+Matteo has studied **graphic design**. He has built various **social platforms** and **educational games** for the **BBC**, **Science Museum** and then now **teaches at Ravensborne.**  
+ 	
+
+I'm doing this course also to learn. It's been one of the challenge for me to **break down** the technical idea into something more **friendly**. I'm here to learn a **way to communicate** with ???.
+
+Matteo came to ask me if I'm interested in doing this course and I was very excited!
+
+So please point out if I'm talking gibberish.
+
+</yuki>
+
+
 **No computer scientists**, learned code by ourselves and built a career on it.
 
-* Yuki: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (started by Ridley Scott, working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team and clients
-* Matteo: studied graphic design, built apps and games for the BBC and the Science Museum, now teaches at Ravensbourne
 
 We're both curious and passionate about sharing our knowledge.
+
+<yuki>
+	
+Since Matteo and I started in programming, we ve been sharing ideas and technics.
+
+Development is about **community and sharing**. The reason we can stand where we are now is because of the people who contribute to the comunity for free.
+ 
+</yuki>
 
 We believe **everyone can learn to code** and that's why we're here today. We want to help you find your direction and accelerate your learning process.
 
@@ -27,7 +57,27 @@ We believe **everyone can learn to code** and that's why we're here today. We wa
 
 We want this session to be **informal** and relaxed, so if you have any questions at any time just ask. We're also going to ask you many **questions**!
 
-We'd like you to introduce yourself to your neighbour, and then we'll ask you to introduce each other to the rest of the group.
+
+
+
+
+
+
+Maybe pause here?
+
+
+
+
+<yuki>
+
+I think this is great opportunity to share and get to know new people. So please don't hesitate, we are always up for beers!
+	
+We'd like you to introduce yourself to your neighbour. 
+
+We'll ask you to introduce each other to the rest of the group.
+</yuki>
+
+
 
 1. A bit about yourself
 * Why are you on this course?
@@ -61,6 +111,10 @@ Key questions:
 
 * Where is *data*? 
 * How do you harness is?
+
+<yuki>
+what is API (example)
+</yuki>
 
 ### Day 3
 
@@ -229,47 +283,68 @@ Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
 ### HTML
 
 1. Set up the HTML box (hide the JS and CSS boxes)
-* Explain `body` and `head` 
-* Write all the content of our app 
+* Write title and description without HTML tags 
 * `h1` (useful for Google Fonts)
-* `form`
-* `input`
+* `p`, a couple of them
+* `input`, different types
 * Difference between `value` and `placeholder`
-* Add `name` attributes
-* `button type="submit"` with the same content of the `h1` to explain the concept of **markup**
-* Show Google Search at this point to explain how forms work 
-* `p`
+* Add a `button` 
 
 ### CSS intro
 
 Useful to show **selectors** and hide the `p`
 
-1. `h1` centred
-* `p`
-
-        p
-		{
-		  display: none;
-		}
-
-### Dress code
-
+* `h1` centred
 * `color`
+
+Save and open **Debug** view.
+
+Introduce **Web Inspector**, HTML and CSS tabs.
+
+Introduce colour picker (maybe pick a colour from Facebook). Everything is lost on *page refresh* so need to copy-paste into our code.
+
 * `background`
+
+Introduce [Kuler](https://color.adobe.com)
+
+* `background-image`
+* `background-size: cover;`
+* CSS comments
+* `background-repeat: no-repeat;` and may have to add `html {height: 100%;}`
 * `font-size`
 * `font-weight`
-* `width`
-* `margin`
-* `padding`
-* tranparency
-* `border-radius`
+* [Google Fonts](https://www.google.com/fonts)
+* Style `input` and `button`
+	* `width: 90%; padding: 5%;`
+	* `width: calc(100% - 1em); padding: .5em;`
+	* `border: none;`
+	* `border-radius`
+	* `margin`
+	
+### Back to HTML	
+	
+```
+<ul>
+  <li>
+    <h2>recipe title</h2>
+    <img>
+    <p>Ingredients, description, more info?</p>
+    <a>Link to full recipe</a>  
+  </li>
+</ul>
+```
 
-* Style **fonts**, using [Google Fonts](https://www.google.com/fonts)
+### Final touches
+
+* Transparency?
+
+* Media queries?
+
 * Make the app look proper on a phone. Google `how to stop phone zooming out pages`
 * Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/) 
 * Add the app to your phone's **home screen**
  
-         <link rel="apple-touch-icon" href="http://i.imgur.com/ln9kdl3.png">		
+`<link rel="apple-touch-icon" href="blabla.png">`		
 
 
 
