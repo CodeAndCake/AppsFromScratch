@@ -114,5 +114,30 @@ How about this?
 	})
 
 
+### Things to keep in mind
+
+* `script` at the end of body
+* don't use forms..
+* `src` is not `scr`
+* explain `forEach`
+* ingredients is not ingrediAnt	
+
+
+### Choc
+
+https://github.com/matteomenapace/choc
+
+```
+var counter = 0
+var people = ["Matteo","Yuki","Eb","Brian","Renata"]
+var total = people.length
+while (counter < total) {
+  var person = people[counter]
+  console.log(person)
+  counter = counter + 1
+}
+```
+
+
 
 
