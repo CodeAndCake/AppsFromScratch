@@ -121,6 +121,31 @@ What variables, functions and logic do you use in your everyday life (even if yo
 
 Think about the [robot game](#robot-time): which variables, functions and logic did we use?
 
+<!-- ```js
+
+var degrees = 1;
+var steps = 1;
+var target = "coin";
+
+function grab(object) {
+	...
+}
+
+function walk(steps) {
+	...
+}
+
+function turn(degrees) {
+	...
+}
+
+if (canYouSee(target)) {
+	// walk towards it
+	...
+}
+
+``` -->
+
 
 
 # Let's code
