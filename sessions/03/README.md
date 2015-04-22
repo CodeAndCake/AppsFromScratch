@@ -20,5 +20,5 @@ Interesting [analogy to electric motors](http://bogost.com/writing/blog/what_is_
 
 ## Teamwork
 * Introduce BDD to break down app behaviour
-* https://habber.makes.org/thimble/LTEyNTgyMjU0MDg=/user-centered-design-sprint
+* [UX design sprint from Mozilla](https://habber.makes.org/thimble/LTEyNTgyMjU0MDg=/user-centered-design-sprint)
 * Wireframing

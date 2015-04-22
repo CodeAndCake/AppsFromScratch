@@ -13,5 +13,5 @@ function getRecipeListItem(recipe)
         + "<a href=" + recipe.url + " target=_blank>Let's make this recipe</a>"
         + "</li>"
 
-    return li    
+    return li
 }
