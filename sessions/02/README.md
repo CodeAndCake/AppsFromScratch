@@ -1,10 +1,6 @@
-
-
-- [ ] in the last episode.. HTML + CSS recap (with *spot the difference*?)
-- [ ] what's JS again? Powerful, a bit harder
+<!-- - [x] in the last episode.. HTML + CSS recap (with *spot the difference*?) -->
 
 - [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract)
-
 
 # Apps from scratch, day 2
 
@@ -21,8 +17,10 @@ Do *coding* and *programming* mean the same thing?
 
 [What's an algorithm?](http://www.bbc.co.uk/guides/z3whpv4#zyfwjxs)
 
-* Computers can code
-* Computers can't program. People can
+* Computers can code.
+* Computers can't program. People can.
+
+### Programming languages
 
 Last week we learned how to create the **visual elements** of a Web product (site, page, app etc) using **HTML** + **CSS**. 
 
@@ -36,7 +34,48 @@ To set things in motion, to have a truly interactive experience, we need another
 
 HTML and CSS are coding languages.
 
-JavaScript is a programming language.
+JavaScript is a programming language (together with PHP, Python, Ruby, C, Java and many others).
+
+
+
+### Natural vs programming languages 
+
+* `the cat drinks milk` English 
+* `de kat drinkt melk` Dutch
+* `die Katze trinkt Milch` German 
+* `il gatto beve latte` Italian 
+
+Can you see a pattern here? A *subject* performing an *action* on an *object*. No matter which language, the structure is the same.
+
+That structure is what we call **grammar**, the rules defining how you can put words together in order to communicate anything.
+
+`drinks milk the cat` wouldn't work as a meaningful sentence, even though the components are the same.
+
+1. `drinks`
+* Who? `the cat`
+* What? `milk`
+
+If we know the meaning of each component...
+
+... and we know the rules that define the relationships between such components (*grammar*)...
+
+... then we can build the meaning of the whole sentence.
+
+<!--  
+
+	Inspiring talk from Ajit Narayan about abstraction, language, grammar, speech and a visual grammar engine
+
+	http://avazapp.com/freespeech/
+
+	http://www.ted.com/talks/ajit_narayanan_a_word_game_to_communicate_in_any_language/transcript?language=en
+
+  -->
+
+Imagine you read this sentence in a language you don't speak. You can still try and make sense of it, by comparing it to a language you know. This process of *trying to make sense* is very important in programming.
+
+How about this language?
+
+`cat.drink(milk)` JavaScript (written by an English-speaking human)
 
 
 
@@ -65,6 +104,7 @@ We can then make them their code more *abstract* and *flexible* with **logic** a
 (The idea is to engage people with an [easy task](http://pss.sagepub.com/content/early/2012/08/31/0956797612446024.abstract) before we challenge them with a demanding one)-->
 	
 
+
 ### Principles of Programming (POP)
 
 There are lots of programming languages, and they share the same core principles, and the same **building blocks**: 
@@ -79,22 +119,8 @@ What variables, functions and logic do you use in your everyday life (even if yo
 * **Functions** get out of bed, check weather (on you phone, on TV..), check calendar
 * **Logic** if sunny then wear sunglasses, if rainy then take umbrella
 
-<!--Think about the robot game: which variables, functions and logic did we use?-->
+Think about the [robot game](#robot-time): which variables, functions and logic did we use?
 
-### Natural vs programming languages 
-
-* `the cat drinks milk` English 
-* `de kat drinkt melk` Dutch
-* `die Katze trinkt Milch` German 
-* `il gatto beve latte` Italian 
-
-Can you see a pattern here? A *subject* performing an *action* on an *object*. No matter which language, the structure is the same.
-
-Imagine you read this sentence in a language you don't speak. You can still try and make sense of it, by comparing it to a language you know. This process of *trying to make sense* is very important in programming.
-
-How about this language?
-
-`cat.drink(milk)` JavaScript (written by an English-speaking human)
 
 
 # Let's code
@@ -181,7 +207,7 @@ Functions are useful to **make code reusable**. For instance, the action of *dri
 
 > [jQuery](https://jquery.com/) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
 
-You probably know jQuery because of its *plugins* (image slider, Masonry..) and maybe you've tried to mess around with those a bit.
+You may have heard of jQuery because of its *plugins* (image sliders, date pickers, colour pickers, form validators, image uploaders..) and maybe you've tried to mess around with those a bit.
 
 jQuery uses CSS-like selectors, so for example if you want to manipulate a `h1` element in your page, you can do it like this
 
@@ -193,7 +219,9 @@ which is the equivalent of telling the browser to `select all h1 elements in the
 
 ### Making stuff happen on demand
 
-This is where *programming* languages show how much more powerful than coding languages like HTML and CSS. Programming has something to do with the *future*, you're defining instructions and behaviour that will happen in the future, if and when something specific happens.
+This is what makes *programming* languages so much more powerful than coding languages like HTML and CSS. 
+
+Programming has something to do with the *future*: you define instructions and *behaviour* that will happen in the future, *if* and *when* something specific happens.
 
 For example, we want a certain element in the page to hide only when we click on a certain button. Using jQuery, we can do it like this
 
@@ -225,39 +253,39 @@ Using its *editor*, make these happen:
 
 
 
+# Back to the brief
 
-# Back to brief
+<!-- back to the future joke -->
 
 > Make an app that helps people **make lunch**. The app must take a human **input** (eg: search keywords), use **data from the Web**, and then present a human-readable **output** (eg: list of recipes)
 
 1. Break down the problem
 * Code it
 
+
 ### 1. Break down the problem
 
-That is, design the algorithm
+That is, design the *algorithm*
 
 1. The user
 2. The HTML character
 3. The JS character
 4. The API character
 
-We play it out
+We need four volunteers (and post-its)
 
 
 ### 2. Code the algorithm
 
-
-
-* capture input into var
-* console log it
-* add listener to button
-* introduce GitHub
-* introduce JSON
-* copy-paste the API wrapper
-* console log results
-* while loop
-* template
+1. Capture `input` value into `var`
+* `console.log` it
+* Add listener to `button`
+* Introduce GitHub
+* Introduce JSON
+* Copy-paste the API wrapper
+* `console.log` results
+* `while` loop (Choc demo)
+* Template
 
 
 
@@ -287,13 +315,7 @@ We play it out
 
 
 
-### Things to keep in mind
 
-* `script` at the end of body
-* don't use forms..
-* `src` is not `scr`
-* `forEach` is hard to understand
-* ingredients is not ingrediAnt	
 
 
 ### Choc
