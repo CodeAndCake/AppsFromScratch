@@ -1,3 +1,13 @@
+.dark-blue
+{
+	color: #00334c !important;
+}
+
+.lowercase
+{
+	text-transform: lowercase;
+}
+
 /* #SPOT */
 	
 	#spot h1,
@@ -171,7 +181,6 @@
 	{
 		float: right;
 	}
-
 
 /* TOPIC */
 
