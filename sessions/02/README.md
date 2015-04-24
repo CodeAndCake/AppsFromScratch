@@ -30,6 +30,19 @@ Do *coding* and *programming* mean the same thing?
 * Computers can code.
 * Computers can't program. People can.
 
+
+### Programming is a **way of thinking**
+
+Before we learn how to *code* a program, we should learn how to *think* about problems and solutions.
+
+**Computational thinking** 
+
+* Not thinking like computers. Do computers think anyway? 
+* Solving problems for **people**, using **code**.
+
+It is about using code creatively to solve real-world problems, to **break down behaviours** in specific and precise ways that can be communicated to other people, and eventually to computers.
+
+
 ### Programming languages
 
 Last week we learned how to create the **visual elements** of a Web product (site, page, app etc) using **HTML** + **CSS**. 
@@ -769,7 +782,7 @@ Whenever you have *raw data* that needs to be *dressed up*.
 
 ### Why?
 
-Separation of concerns. Data > presentation
+[**Separation of concerns**](http://en.wikipedia.org/wiki/Separation_of_concerns): keep *data* separated from its *presentation*.
 
 ### How?
 
