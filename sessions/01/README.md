@@ -1,5 +1,10 @@
 # Apps from scratch
 
+* Have you made an app before?
+* Have you used an app before?
+* Have you tried to learn code before?
+
+
 This course is about getting **creative** with **code**.
 
 Getting familiar with how coders work day to day, and experiencing the **design and development process** first-hand. How to take an idea from zero to working prototype. 
