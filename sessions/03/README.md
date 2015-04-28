@@ -18,7 +18,38 @@ From [Gatekeeper and the rise of the total Apple consumer](http://www.molleindus
 
 Interesting [analogy to electric motors](http://bogost.com/writing/blog/what_is_an_app/#comment-1666)
 
-## Teamwork
-* Introduce BDD to break down app behaviour
+
+## Teamwork Process
+Idea is just idea without communication. 
+
+##### 1. Research
+* Card sorting [https://www.captechconsulting.com/blogs/tools-for-the-ux-architect-card-sort](https://www.captechconsulting.com/blogs/tools-for-the-ux-architect-card-sort)
+* Mental models
+
 * [UX design sprint from Mozilla](https://habber.makes.org/thimble/LTEyNTgyMjU0MDg=/user-centered-design-sprint)
+
+
+##### 2. Sketch first thought
+* Impact Mapping
+* Paper prototyping
 * Wireframing
+* Experience map
+
+##### 3. Collaborate
+
+Other team, specialist, users
+
+
+
+##### 4. Prototype & test
+Process of understanding the product by trial and error 
+
+##### 5. Learn & iterate
+Analyse 
+
+##### 6. Launch & learn more
+It's not end of the process. Users have wide audience in age group and disability
+User doesn't come to the site to see your pretty design 
+
+ 
+
