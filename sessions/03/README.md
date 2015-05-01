@@ -1,15 +1,117 @@
 # Session 3
 
-1. What is design? 
-* What is an *app*?
+### AM
+
+1. [Debugging](#debugging)
+* [Challenge](#debugging-challenge)!
+* [Recipes app](#recipes-app)
+
+### [PM](#afternoon)
+
+1. What is design?
+* Brainstorming
+* Who are your users (speed interviews)
+* Impact maps
+* Wireframing
+
+
+
+# Debugging
+
+Why *debugging*? So the [story goes](http://en.wikipedia.org/wiki/Debugging#Origin): one morning Grace Hopper found an actual bug stuck in one of the relays of a computer she was working on...
+
+![](assets/grace-moth.jpg)
+
+When programming, things don't always go as expected.
+
+Imagine yourself as a *scientist*: you formulate a **hypothesis** about how the computer is going to interpret and execute your code. When you test that code, your hypothesis doesn't yield the results you're expecting.
+
+For example, you're expecting a `function` to be triggered when someone clicks a `button`. When you click that button, nothing happens.. or even worst, the button click trigger works for you but not for your friend / colleague / client!
+
+What to do?
+
+### 1. Find a way to reproduce the problem
+
+What are the steps required to make the bug **happen consistently**? 
+	
+Is there any particular hardware / software configuration for the bug to surface? Eg: it only happens on iOS devices, or Internet Explorer 9
+	
+### 2. Track down the origin of the problem
+
+You may have to simplify your code, for instance creating a reduced version of your program with only a few lines from the original source code, where the bug still happens.
+	
+This **removes complexity** and prevents us from being side-tracked by unrelated issues.
+	
+### 3. Study the problem
+
+This is the crucial part. No matter which language you're programming in, it's essential to have a strategy for *seeing the state* of your program when it executes.
+	
+If you use JavaScript and debug your code in a Web browser, you can use the [Console](http://webmasters.stackexchange.com/a/77337) and [breakpoints](https://developer.chrome.com/devtools/docs/javascript-debugging) to see the state of your program. 
+	
+* If you have a **syntax error**, the Console will tell you where that error is (file name and line number), as well as a semi-useful indication of what the error may be
+```
+Uncaught SyntaxError: Unexpected end of input       main.js:5
+```	
+
+* If you have a **data error**, the Console will tell you where that error is (file name and line number), as well as a semi-useful indication of what the error may be
+```
+Uncaught ReferenceError: jQuery is not defined       main.js:25
+```	
+
+* If you have a **conceptual error** (nothing is technically wrong but things are not happening as expected) you can use `console.log(someVariable)` and/or [**breakpoints**](https://developer.chrome.com/devtools/docs/javascript-debugging) to see if the program is hitting a certain point of execution, and if your program is being fed the expected data.
+
+![](assets/javascript-debugging-overview.jpg)
+
+
+
+### 4. Ask Google
+
+See if someone else had (and hopefully fixed) the same problem.
+
+The more **specific** you are about your problem, the more **relevant** results you should find. Especially on places like [StackOverflow](http://stackoverflow.com).
+
+### 5. Lather, rinse and repeat	
+
+
+# Debugging challenge
+
+Your turn!
+
+Go to [this pen on CodePen](http://codepen.io/baddeo/pen/YXPpwV?editors=001) and **fork** it (a fork is like a photocopy, for code).
+
+[![](assets/jquery-challenge.jpg)](http://codepen.io/baddeo/pen/YXPpwV?editors=001)
+
+1. Open the *debug* version of your forked pen
+2. Right-click anywhere on that page, choose *Inspect Element*
+3. Click [**Console**](http://webmasters.stackexchange.com/a/77337) from the panel that will pop up
+
+There are **6 challenges** for you to solve!
+
+
+
+
+# Recipes app
+
+Let's finish the [recipes app](http://codepen.io/baddeo/pen/XbrRRp?editors=001)
+
+What's missing:
+
+1. Search for recipes using an [API](../02/README.md#apis)
+* [Loop through](../sessions/02/README.md#loops) the results from the API
+* [Display recipes](../sessions/02/README.md#templating)
+* [BONUS] Clear previous search results 
+* [BONUS] Tell people [something is happening]([visibility of system status](http://www.nngroup.com/articles/ten-usability-heuristics/)) after they hit the *Search* button
+* anything else?
 
 
 
 
 
-# Morning
 
-Finish the recipes app
+
+
+
+
 
 # Afternoon
 
@@ -83,22 +185,24 @@ Finish the recipes app
 
 
 
-### Notes
 
-<!--* Ideas generation and pitches
+<!--
+### Notes
+* Ideas generation and pitches
 * List app ideas
 * Vote for ideas (on a spreadsheet)
 * Form groups (use an app that connects to the spreadsheet to suggest groups?)
 - [ ] Brainswarming
-- [ ] Ideas from @stef-->
+- [ ] Ideas from @stef
 
 - [ ] [What is an app?](http://bogost.com/blog/what_is_an_app), where an app is like a music tune, a small thing compared to a record
 
-> Referring to applications as *apps* is not just a branding technique but a necessary linguistic reduction to conceptualize a lesser type of application. A little piece of software that sits in its little sandbox and doesn’t try to compete with the overarching platform.
+> Referring to applications as *apps* is not just a branding technique but a necessary linguistic reduction to conceptualise a lesser type of application. A little piece of software that sits in its little sandbox and doesn’t try to compete with the overarching platform.
 
 From [Gatekeeper and the rise of the total Apple consumer](http://www.molleindustria.org/blog/gatekeeper-and-the-rise-of-the-total-apple-consumer/)
 
-Interesting [analogy to electric motors](http://bogost.com/writing/blog/what_is_an_app/#comment-1666)
+Interesting [analogy to electric motors](http://bogost.com/writing/blog/what_is_an_app/#comment-1666) 
+-->
 
 
 ## Teamwork Process
