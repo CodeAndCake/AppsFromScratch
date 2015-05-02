@@ -199,8 +199,6 @@ Users have wide audience in age group and disability
 	* What is your goal?
 	* Who is your audience? 
 	* What is the key issue you are addressing? 
-	<!--* What is the key issue you are addressing?-->
-	<!--* What causes it? -->
 	
 * **Brainstorming** helps you to work with peers to kickstart an idea or concept for a design.
 
@@ -208,7 +206,7 @@ Users have wide audience in age group and disability
 * **Impact mapping** helps you to focus on the goal you are trying archive by mapping out the cause and effect.
 
 
-* **Wireframing** act as blueprints for app implementation. skelton of end product
+* **Wireframing** act as blueprints for app implementation, the skeleton of end product
 
 
 * **User testing** allows you to explore your assumptions and see what improvements need to be made to your design.
