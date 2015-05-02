@@ -153,7 +153,7 @@ What's missing:
 * **Impact mapping** helps you to focus on the goal you are trying archive by mapping out the cause and effect.
 
 
-* **Wireframing** act as blueprints for app implementation
+* **Wireframing** act as blueprints for app implementation. skelton of end product
 
 
 * **User testing** allows you to explore your assumptions and see what improvements need to be made to your design.
