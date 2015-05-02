@@ -119,8 +119,8 @@ What's missing:
 
 1. (15m) [Presentation ](#presentation)
 2. (5m) Form groups of 2 people
-3. (20m) [Choose a theme](#choose-a-theme) and brainstorm ideas around it
-4. (30m) [Who are your users](#who-are-your-users): interview other groups about your theme
+3. (20m) [Choose a theme, Choose a goal](#choose-a-theme) and brainstorm ideas around it
+4. (30m) [Who are your users](#who-are-your-users): interview other groups about your goal
 5. (20m) ![Impact maps](http://www.boost.co.nz/blog/wp-content/uploads/2014/09/2014-09-17-15.02.35.jpg)
 6. (30m) [Wireframes](#speed-sketch-your-ideas)
 
@@ -128,6 +128,62 @@ What's missing:
 
 
 ## Presentation
+
+
+#### 1. What is app design?
+
+
+
+#### 2. UX/UI design, the same thing?
+
+UI is like the seat of your car.
+UX is the experience you get from that seat.
+
+
+UX design is about effectively addressing the needs and circumstances of your users, to produce interfaces that are comfortable and even joyful to use.
+
+#### 3. What is good design?
+
+Even though it looks gorgeous, it's not doing well what is made for. 
+It's good example of bad user experience design.
+
+
+#### 4. How to make good design?
+
+
+#### 5. Process break down
+
+
+Research - Mapping out and breaking down whats really needed. Know about different users.
+
+
+Sketch first thought - Sketch using pen and paper, write down the senarios and the journey.
+
+
+Collaborate - Ask other team, specialist, users, your idea. More brain is better than one.
+
+
+Prototype & test
+Process of understanding the product by trial and error.
+
+
+Iterate
+Do more prototyping & testing 
+
+
+Launch & learn more
+It's not end of the process.
+Users have wide audience in age group and disability
+
+ 
+
+
+  
+
+
+
+## Note
+
 
 * What is design?
 
