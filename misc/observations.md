@@ -50,9 +50,49 @@ Slide to explain that every jQuery line is made of two parts, separated by `.`:
 
 Using [this pen](http://codepen.io/baddeo/pen/jPEMrG) in conjunction with the Console worked better than using [jQuery Fundamentals](http://jqfundamentals.com/chapter/traversing-manipulating)
 
-- [ ] Yuki to dump console log here
 
-### Idea
+```js
+jQuery
+	jquery-c152c51c4dda93382a3ae51e8a5ea45d.js:14 function (e,t){return new it.fn.init(e,t)}
+jQuery("h3")
+	[]
+jQuery("checkbox")
+	[]
+jQuery("button")
+	[]
+jQuery("select")
+	[]
+jQuery("input")
+	[, ]
+jQuery("checkbox")
+	[]
+jQuery("#my_checkbox")
+	[]
+jQuery("li")
+	[, , ]
+jQuery("li.special")
+	[]
+jQuery("input.mySecretPassword")
+	[]
+jQuery("input[type=text]")
+	[]
+jQuery("input[id=my_checkbox]")
+	[]
+$("h3")
+	[]
+$("h3").html("Matteo was here")
+	[]
+$("h3").css("color", "red")
+	[]
+$("h3").css("background", "salmon")
+	[]
+$("h3").css("background", "rgb(255,255,0)")
+	[]
+```
+
+
+
+### IDEA
 
 Give people some code to fix, which they can use as example for their own app.
 
@@ -61,5 +101,44 @@ Useful to get familiar with the Console and learn the practice of **debugging**
 * mismatching names between function definition and call
 * jQuery library not linked?
 * repetition that can be improved with a function
+
+
+# Session 3
+
+### AM
+
+1. Debugging
+* Challenge
+* Recipes app [DIDN'T DO]
+
+### PM
+
+1. What is design?
+* Brainstorming 
+* Who are your users
+* Impact maps [DIDN'T DO]
+* Wireframing [DIDN'T DO, assigned as homework]
+
+### Programming skills
+
+1. Don't type: copy-paste
+2. Google is your friend
+3. Try again (and again) until it works
+4. It's OK: you're not going to break anything
+
+### jQuery challenge
+
+People found it challenging and it took the most part of 2 hours. We tried to not spoonfeed solutions but rather show how we would define the problem, inspect it, search for it and then try solutions out.
+
+Alicia asked for another jQuery challenge to keep practicing during the week, so that she doesn't forget. She felt like she forgot many things from one week to the other, and that she had a vague idea of things we've done/shown before but wasn't comfortable using them. 
+
+#### It's like being a **scientist** and making small experiments
+
+
+Sometimes overcomplicating the solution. Perhaps we need to **stress that the solution is straightforward** most of the times. And that it's better to try and test every step: small change > test > observe > small change > test > observe...
+
+
+
+
 
 
