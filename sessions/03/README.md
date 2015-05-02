@@ -8,7 +8,7 @@
 
 ### [PM](#afternoon)
 
-1. What is design?
+1. [What is design?](#what-is-design)
 * [Brainstorming](#choose-a-theme)
 * [Who are your users](#who-are-your-users) (speed interviews)
 * Impact maps
@@ -130,11 +130,13 @@ What's missing:
 ## Presentation
 
 
-#### 1. What is app design?
+### 1. What is design?
 
+**Design** is a response to an inquiry or a problem
 
+People don't come to your site/app to see your pretty "design" 
 
-#### 2. UX/UI design, the same thing?
+### 2. UX/UI design, the same thing?
 
 UI is like the seat of your car.
 UX is the experience you get from that seat.
@@ -142,54 +144,51 @@ UX is the experience you get from that seat.
 
 UX design is about effectively addressing the needs and circumstances of your users, to produce interfaces that are comfortable and even joyful to use.
 
-#### 3. What is good design?
+
+![](assets/cooker ui.jpg)
+![](assets/washing machine ui.jpg) 
+
+
+### 3. What is good design?
 
 Even though it looks gorgeous, it's not doing well what is made for. 
-It's good example of bad user experience design.
+Hot Bertaa good example of bad user experience design.
+
+![](assets/Hot-Bertaa.png)
+
+### 4. How to make good design?
+
+	
+
+### 5. Process break down
 
 
-#### 4. How to make good design?
+#### Research
+Mapping out and breaking down whats really needed. Know about different users.
 
 
-#### 5. Process break down
+#### Sketch
+Sketch using pen and paper, write down the senarios and the journey.
 
 
-Research - Mapping out and breaking down whats really needed. Know about different users.
+#### Collaborate 
+
+Ask other team, specialist, users, your idea. More brain is better than one.
 
 
-Sketch first thought - Sketch using pen and paper, write down the senarios and the journey.
-
-
-Collaborate - Ask other team, specialist, users, your idea. More brain is better than one.
-
-
-Prototype & test
+#### Prototype & test
 Process of understanding the product by trial and error.
 
 
-Iterate
+#### Iterate
 Do more prototyping & testing 
 
 
-Launch & learn more
+#### Launch & learn more
 It's not end of the process.
 Users have wide audience in age group and disability
 
- 
 
-
-  
-
-
-
-## Note
-
-
-* What is design?
-
-	* **Design** is a response to an inquiry or a problem
-	* Bad design examples?
-	* People don't come to your site/app to see your pretty "design" 
 
 * Have a clear, **step-by-step process** to help you through the creation of your app
 
@@ -353,7 +352,7 @@ Printable wireframing templates from [InterfaceSketch](http://www.interfacesketc
 From [Gatekeeper and the rise of the total Apple consumer](http://www.molleindustria.org/blog/gatekeeper-and-the-rise-of-the-total-apple-consumer/)
 
 Interesting [analogy to electric motors](http://bogost.com/writing/blog/what_is_an_app/#comment-1666) 
--->
+
 
 
 ## Teamwork Process
@@ -369,11 +368,9 @@ Idea is just idea without communication.
 [Online stickies](http://note.ly/)
 
 ##### 2. Sketch first thought
-<!--* Issue Mapping-->
+
 * Impact Mapping
-<!--* Paper prototyping-->
 * Wireframing
-<!--* Experience map-->
 
 ##### 3. Collaborate
 
@@ -392,5 +389,5 @@ User doesn't come to the site to see your pretty design
 
  
  
-
+-->
 
