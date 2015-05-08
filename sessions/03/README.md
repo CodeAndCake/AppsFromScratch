@@ -267,27 +267,6 @@ The more you know about your community and potential audience, the more you can 
 
 # Speed-sketch your ideas
 
-<!--Is *this* a wireframe?
-
-![](https://raw.githubusercontent.com/RavensbourneWebMedia/WEB14204/master/sessions/assets/wireframe-example.png)
-
-Is *this* a wireframe?
-
-![](https://raw.githubusercontent.com/RavensbourneWebMedia/WEB14204/master/sessions/assets/not-a-wireframe-example.jpg)
-
-Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
-
-* Wireframes are about **communicating your ideas**.
-
-* They are about **content**, **context** and **interaction**. 
-
-	Use real content, not *lorem ipsum*. 
-
-* They're NOT about style. 
-
-	When wireframing, don't worry about colours, graphics and typography. -->
-
-
 * The goal is to get something down on paper, but not get too caught up in the details. 
 
 * This is to help visualise some of your ideas. 

@@ -9,7 +9,7 @@
 
 ### PM
 
-* MM Wireframes
+* [Wireframes](#wireframes)
 * MM Prototypes
 
 
@@ -147,10 +147,52 @@ An example with BBC website:
 
 # Wireframes
 
-2 options
+Is *this* a wireframe?
 
-1. with code: Bootstrap or Foundation, maybe using the [Divshot](https://divshot.com/features) tool, [Layout It](http://www.layoutit.com/), [Jetstrap](https://jetstrap.com/)
-2. without code: using Moqups or Balsamiq
+![](assets/wireframe-example.png)
+
+Is *this* a wireframe?
+
+![](assets/not-a-wireframe-example.jpg)
+
+Is *this* a wireframe?
+
+![](assets/wireframe-bullshit.jpg)
+
+Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
+
+* Wireframes are about **communicating your ideas**.
+
+* They are about **content**, **context** and **interaction**. 
+
+	Use **real content**, not *lorem ipsum*. 
+
+* They're NOT about style. 
+
+	When wireframing, don't worry about colours, graphics and typography. 
+
+
+
+### Wireframes *with code*
+
+> Standing on the shoulders of giants...
+
+or
+
+> Don't reinvent the wheel
+
+Meet [Bootstrap](http://getbootstrap.com/), a framework to build mobile-first Web-apps and sites. It comes with a set of common *building blocks* to quickly put together interfaces
+
+[![](assets/bootstrap.png)](http://getbootstrap.com/)
+
+You can use [Divshot](https://divshot.com/features), [Layout It](http://www.layoutit.com/) or [Jetstrap](https://jetstrap.com/) to create Bootstrap-based, clickable wireframes.
+
+### Wireframes *sans code* 
+
+Using [Moqups](https://moqups.com/)
+
+[![](assets/moqups.gif)](https://moqups.com)
+
 
 # Prototyping
 
