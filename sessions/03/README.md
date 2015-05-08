@@ -11,7 +11,6 @@
 1. [What is design?](#what-is-design)
 * [Brainstorming](#choose-a-theme)
 * [Who are your users](#who-are-your-users) (speed interviews)
-* Impact maps
 * [Wireframing](#speed-sketch-your-ideas)
 
 
@@ -115,28 +114,24 @@ What's missing:
 
 
 
-# Afternoon
+<!--# Afternoon
 
 1. (15m) [Presentation ](#presentation)
 2. (5m) Form groups of 2 people
 3. (20m) [Choose a theme, Choose a goal](#choose-a-theme) and brainstorm ideas around it
 4. (30m) [Who are your users](#who-are-your-users): interview other groups about your goal
-5. (20m) ![Impact maps](http://www.boost.co.nz/blog/wp-content/uploads/2014/09/2014-09-17-15.02.35.jpg)
-6. (30m) [Wireframes](#speed-sketch-your-ideas)
+5. (30m) [Wireframes](#speed-sketch-your-ideas)-->
 
 
 
 
-## Presentation
-
-
-### 1. What is design?
+# What is design?
 
 **Design** is a response to an inquiry or a problem
 
 People don't come to your site/app to see your pretty "design" 
 
-### 2. UX/UI design, the same thing?
+### UX/UI design: same thing?
 
 UI is like the seat of your car.
 UX is the experience you get from that seat.
@@ -149,73 +144,60 @@ UX design is about effectively addressing the needs and circumstances of your us
 ![](assets/washing machine ui.jpg) 
 
 
-### 3. What is good design?
+### What is good design?
 
 Even though it looks gorgeous, it's not doing well what is made for. 
 Hot Bertaa good example of bad user experience design.
 
 ![](assets/Hot-Bertaa.png)
 
-### 4. How to make good design?
+### How to make good design?
 
-	
-
-### 5. Process break down
-
+Have a clear, **step-by-step process** to help you through the creation of your app
 
 #### Research
-Mapping out and breaking down whats really needed. Know about different users.
 
+**Thinking through** your ideas in detail helps identify potential problems, gaps in your knowledge, and assumptions before you dive into code.
 
+Taking the time to step back and think about **audience** and explore **multiple ideas** will lead to a more successful solution
+	
+* What is your goal?
+* Who is your audience? 
+* What is the key issue you are addressing? 
+	
 #### Sketch
-Sketch using pen and paper, write down the senarios and the journey.
 
+**Brainstorming** helps you to work with peers to kickstart an idea or concept for a design.
+
+<!--**Impact mapping** helps you to focus on the goal you are trying archive by mapping out the cause and effect.-->
+
+Sketch using pen and paper, write down different scenarios and *user journeys*.
 
 #### Collaborate 
 
-Ask other team, specialist, users, your idea. More brain is better than one.
+Ask other team, specialist, users, your idea. 
 
+More brains are better than one.
 
 #### Prototype & test
+
 Process of understanding the product by trial and error.
+
+**User testing** allows you to explore your assumptions and see what improvements need to be made to your design.
 
 
 #### Iterate
+
 Do more prototyping & testing 
 
 
 #### Launch & learn more
+
 It's not end of the process.
-Users have wide audience in age group and disability
 
 
 
-* Have a clear, **step-by-step process** to help you through the creation of your app
-
-* **Thinking through** your ideas in detail helps identify potential problems, gaps in your knowledge, and assumptions before you dive into code.
-
-	Taking the time to step back and think about **audience** and explore **multiple ideas** will lead to a more successful solution
-	
-	* What is your goal?
-	* Who is your audience? 
-	* What is the key issue you are addressing? 
-	
-* **Brainstorming** helps you to work with peers to kickstart an idea or concept for a design.
-
-
-* **Impact mapping** helps you to focus on the goal you are trying archive by mapping out the cause and effect.
-
-
-* **Wireframing** act as blueprints for app implementation, the skeleton of end product
-
-
-* **User testing** allows you to explore your assumptions and see what improvements need to be made to your design.
-
-
-
-
-
-## Choose a theme
+# Choose a theme
 
 A theme is something that you are passionate about, an issue that needs your help, or a problem that you notice in your community that resonates with you.
 
@@ -231,7 +213,7 @@ Start **brainstorming** some project ideas with your partner.
 
 
 
-## Who are your users?
+# Who are your users?
 
 ### Good practices for interviewing
 
@@ -283,7 +265,7 @@ The more you know about your community and potential audience, the more you can 
 
 
 
-## Speed-sketch your ideas
+# Speed-sketch your ideas
 
 <!--Is *this* a wireframe?
 
