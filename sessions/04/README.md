@@ -185,7 +185,9 @@ Meet [Bootstrap](http://getbootstrap.com/), a framework to build mobile-first We
 
 [![](assets/bootstrap.png)](http://getbootstrap.com/)
 
-You can use [Divshot](https://divshot.com/features), [Layout It](http://www.layoutit.com/) or [Jetstrap](https://jetstrap.com/) to create Bootstrap-based, clickable wireframes.
+[Divshot](https://architect.divshot.com/) and [Jetstrap](https://jetstrap.com/) are drag&drop interface builders based on Bootstrap, which you can use to make clickable wireframes.
+
+<!-- Later on, you can export those wireframes into HTML&CSS and start building your app on those-->
 
 ### Wireframes *sans code* 
 
@@ -217,11 +219,8 @@ Doing this **rapidly and iteratively** ensures that you're moving in the right d
 ### Do
 
 1. **Work collaboratively** with users, teammates and stakeholders while prototyping. Apart from giving valuable feedback, they also gain a sense of **ownership** of the final product.
-
 * When creating interactive high-fidelity prototypes and simulations, build in **realistic delays** (for instance, for screen refreshing or moving through steps of a transaction), so that users do not expect instant response times from the final product.
-
 * Avoid *prototype creep* by **setting expectations** for the process, including ones affecting the purpose, fidelity, scope and duration. Remind everyone, including yourself, that rapid prototyping is a **means to an end**, not an end in itself.
-
 * Begin every prototype review session with the disclaimer that **this is just a prototype**, a mock-up, not the actual solution. This reminds users that this is a **work in progress**, it encourages feedback, and in the case of high-fidelity prototypes, it prevents users from mistaking it for a working solution.
 
 <!--* **Reuse, reuse, reuse**. For computer-based prototyping, this means saving reusable templates, stencils, patterns and widgets for future projects.-->
@@ -229,11 +228,8 @@ Doing this **rapidly and iteratively** ensures that you're moving in the right d
 ### Don't
 
 1. **Don't be a perfectionist**. In most cases, rapid prototyping does not have to be 100% perfect, just **good enough** to give everyone a common understanding.
-
 * **Don't prototype everything**. Most of the time, you shouldn't have to. A good rule of thumb is to focus on the **20% of the functionality that will be used 80% of the time**, key functionality that will be used most often. 
-
 * Don't take every change or request that comes out of a prototype review as a new requirement. Rapid prototyping helps capture missed requirements, but these new requirements should be evaluated carefully. Some may be implemented, while others are pushed to a future release.
-
 * Don't begin prototype review sessions without **clear guidelines for feedback**. Be very specific about the type of feedback you are looking for. (Are the steps logically arranged? Is the navigation clear and intuitive?) If not, be prepared for `I don't like the blue in the header` or `Can't we use this font instead?` or `Can you make this bigger, bolder, in red and flashing?`
 
 <!--* Don't prototype features or functionality that cannot be implemented. When in doubt, confirm with developers before starting.
