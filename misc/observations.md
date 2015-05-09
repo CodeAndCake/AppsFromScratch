@@ -128,7 +128,7 @@ Useful to get familiar with the Console and learn the practice of **debugging**
 
 ### jQuery challenge
 
-People found it challenging and it took the most part of 2 hours. We tried to not spoonfeed solutions but rather show how we would define the problem, inspect it, search for it and then try solutions out.
+People found it challenging and it took the most part of 2 hours. We tried to not *spoonfeed* solutions but rather show how we would define the problem, inspect it, search for it and then try solutions out.
 
 Alicia asked for another jQuery challenge to keep practicing during the week, so that she doesn't forget. She felt like she forgot many things from one week to the other, and that she had a vague idea of things we've done/shown before but wasn't comfortable using them. 
 
@@ -139,6 +139,27 @@ Sometimes overcomplicating the solution. Perhaps we need to **stress that the so
 
 
 
+# Session 4
+
+### Impact mapping
+
+Spent more than 2 hours on impact mapping and didn't get time to do user stories. Which is fine, impact maps seems more needed at this stage for people than user stories. It seems to be an easier and less formal method.
+
+Need to have a **good example** of an impact map, to bridge theory (questions: why? who? how? what?) and practice.
+
+Perhaps also a **bad example**?
+
+Asking for an idea from the audience and live-mapping it is risky and it takes time, yet useful :)
+
+### What people want
+
+Some people are just interested in *coding*, they are not here to learn design or business methods.
+
+Others ask about the challenges of making an app, eg `what are the downsides?`
+
+`How many developers are involved in making an app?`.. having a personal story to tell is important
+
+`What languages are you coding in?`
 
 
 
