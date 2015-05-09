@@ -2,8 +2,7 @@
 
 ### AM
 
-* YK Impact mapping: mini-presentation 
-* YK Impact mapping: exercise
+* [Impact mapping](#impact-mapping)
 * [User stories](#user-stories)
 * [Your (user) stories](#your-stories)
 
@@ -20,34 +19,51 @@ Intro to GitHub and collaborative workflows?-->
 - [ ] http://zurb.com/building-blocks-->
 
 
-# [Impact mapping](http://impactmapping.org/drawing.php)
+# Impact mapping
 
-Impact mapping is a strategic planning technique.
+As developers, we tend to focus (or get bogged down) on features.
 
-An impact map is a visualisation of scope and underlying assumptions, created collaboratively. 
+But in order for your idea to succeed, you have to step back and make sure that you think not about the features but about the **impacts** of the software that affects people's behaviour.
 
-It is a mind-map grown during a discussion facilitated by answering the following four questions:
+Impact mapping is a way of visualising connections between *goals*, relevant people called *actors*, the impacts to their behaviours, and the *features* of the product called *deliverables*.
 
-#### Why?
-The centre of an impact map answers the most important question: Why are we doing this? This is the goal we are trying to achieve.
+> Maximum impact by minimum software
 
-#### Who?
-The first branch of an impact map provides answers to the following questions: Who can produce the desired effect? Who can obstruct it? Who are the consumers or users of our product? Who will be impacted by it? These are the actors who can influence the outcome.
-
-#### How?
-The second branch level of an impact map sets the actors in the perspective of our business goal. It answers the following questions: How should our actors' behaviour change? How can they help us to achieve the goal? How can they obstruct or prevent us from succeeding? These are the impacts that we're trying to create.
-
-#### What?
-Once we have the first three questions answered, we can talk about scope. The third branch level of an impact map answers the following question: What can we do, as an organisation or a delivery team, to support the required impacts? These are the deliverables, software features and organisational activities.
+[Watch this video](https://www.youtube.com/watch?v=RznIi2WkJb0)
 
 
+[Impact mapping](http://impactmapping.org/drawing.php)
+ is a **strategic planning technique**.
+
+An impact map is a visualisation of scope and underlying assumptions, created **collaboratively**. 
 
 ![](assets/map.png)
+
+It is a **mind-map** grown during a discussion facilitated by answering the following four questions:
+
+#### Why?
+
+The centre of an impact map answers the most important question: **Why are we doing this?** This is the **goal** we are trying to achieve.
+
+#### Who?
+
+The first branch of an impact map provides answers to the following questions: Who can **produce** the desired effect? Who can **obstruct** it? Who are the **users** of our product? Who will be **impacted** by it? These are the **actors** who can influence the outcome.
+
+#### How?
+
+The second branch level of an impact map sets the actors in the perspective of our business goal. It answers the following questions: **How should our actors' behaviour change?** How can they help us to achieve the goal? How can they obstruct or prevent us from succeeding? These are the impacts that we're trying to create.
+
+#### What?
+
+Once we have the first three questions answered, we can talk about scope. The third branch level of an impact map answers the following question: What can we do, as an organisation or a delivery team, to support the required impacts? These are the **deliverables**, software **features** and organisational **activities**.
+
 ![](assets/im_example.png)
 
-1. [ ] Example: app-related (Ripple)
-2.  Exercise: pick one of the students goals and do the mapping together
-3. Students do their maps in pairs 
+### All together now
+
+Go to [GoConqr](https://www.goconqr.com/) and sign up.
+
+In pairs, create an impact map for your product / app idea.
  
 
 
@@ -109,14 +125,14 @@ As a `who?`, I want to `what?`, so that `why?` [`when`]
 
 ### How do you write user stories?
 
-1. Brainstorm and jot down **players** in the **system**, eg: visitor, potential customer, new customer, customer, system admin, developer, content editor
-* For each player, jot down **actions** s/he may want to do, eg: read about the service, get contact details, find info about opening times.. 
+1. Brainstorm and jot down **actors** in the **system**, eg: visitor, potential customer, new customer, customer, system admin, developer, content editor
+* For each actor, jot down **actions** s/he may want to do, eg: read about the service, get contact details, find info about opening times.. 
 * For each action think about `before I do that, I need to` chains.
 * Separate actions between **tasks** (intermediate in a chain) and **goals** (end of chain) 
-* Map actions to players (one action could be assigned to more than one player)
-* Write a user story for each action assigned to a player, from the player perspective.
+* Map actions to actors (one action could be assigned to more than one actor)
+* Write a user story for each action assigned to a actor, from the actor's perspective.
 * **WHO and WHAT are required**, WHY and WHEN are optional
-* Organise actions that the system **must / could / shouldn't** allows players to do
+* Organise actions that the system **must / could / shouldn't** allows actors to do
 
 
 ### Your stories
@@ -230,7 +246,7 @@ Doing this **rapidly and iteratively** ensures that you're moving in the right d
 1. **Don't be a perfectionist**. In most cases, rapid prototyping does not have to be 100% perfect, just **good enough** to give everyone a common understanding.
 * **Don't prototype everything**. Most of the time, you shouldn't have to. A good rule of thumb is to focus on the **20% of the functionality that will be used 80% of the time**, key functionality that will be used most often. 
 * Don't take every change or request that comes out of a prototype review as a new requirement. Rapid prototyping helps capture missed requirements, but these new requirements should be evaluated carefully. Some may be implemented, while others are pushed to a future release.
-* Don't begin prototype review sessions without **clear guidelines for feedback**. Be very specific about the type of feedback you are looking for. (Are the steps logically arranged? Is the navigation clear and intuitive?) If not, be prepared for `I don't like the blue in the header` or `Can't we use this font instead?` or `Can you make this bigger, bolder, in red and flashing?`
+* Don't begin prototype review sessions without **clear guidelines for feedback**. Be very specific about the type of feedback you are looking for. `Are the steps logically arranged? Is the navigation clear and intuitive?` If not, be prepared for `I don't like the blue in the header` or `Can't we use this font instead?` or `Can you make this bigger, bolder, in red and flashing?`
 
 <!--* Don't prototype features or functionality that cannot be implemented. When in doubt, confirm with developers before starting.
 -->
