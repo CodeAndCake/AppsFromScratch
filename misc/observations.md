@@ -141,6 +141,8 @@ Sometimes overcomplicating the solution. Perhaps we need to **stress that the so
 
 # Session 4
 
+> Making an app is not about throwing an idea at a bunch of developers, come back after two months and see what they came up with... **communication** throughout the process is key. How do we ensure that we are **on the same page**? Impact mapping, user stories..
+
 ### Impact mapping
 
 Spent more than 2 hours on impact mapping and didn't get time to do user stories. Which is fine, impact maps seems more needed at this stage for people than user stories. It seems to be an easier and less formal method.
@@ -157,7 +159,9 @@ Some people are just interested in *coding*, they are not here to learn design o
 
 Others ask about the challenges of making an app, eg `what are the downsides?`
 
-`How many developers are involved in making an app?`.. having a personal story to tell is important
+> Communication breakdown, scope creep..
+
+`How many developers are involved in making an app?`.. having a personal story to tell is important.
 
 `What languages are you coding in?`
 
