@@ -1,5 +1,10 @@
 # Session 4
 
+Key questions: 
+
+* What does your app do? 
+* How do you *test* it?
+
 ### AM
 
 * [Impact mapping](#impact-mapping)

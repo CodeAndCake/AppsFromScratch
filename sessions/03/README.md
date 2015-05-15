@@ -1,5 +1,11 @@
 # Apps from scratch, day 3
 
+Key questions:
+ 
+* What is an *app*? 
+* How do you *design* one?
+
+
 ### AM
 
 1. [Debugging](#debugging)
@@ -8,7 +14,7 @@
 
 ### [PM](#afternoon)
 
-1. [What is design?](#what-is-design)
+* [What is design?](#what-is-design)
 * [Brainstorming](#choose-a-theme)
 * [Who are your users](#who-are-your-users) (speed interviews)
 * [Wireframing](#speed-sketch-your-ideas)
