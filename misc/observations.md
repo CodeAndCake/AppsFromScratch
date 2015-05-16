@@ -153,6 +153,15 @@ Perhaps also a **bad example**?
 
 Asking for an idea from the audience and live-mapping it is risky and it takes time, yet useful :)
 
+### Wireframing
+
+Good example should include actual content, including images
+
+This image is misleading
+![](../sessions/04/assets/wireframe-example.png)
+Need to add images and profile pictures, not boxes with crosses.
+
+
 ### What people want
 
 Some people are just interested in *coding*, they are not here to learn design or business methods.
