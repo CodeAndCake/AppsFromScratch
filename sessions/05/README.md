@@ -10,7 +10,7 @@ Key questions:
 
 * [Designing behaviours](#designing-behaviours)
 * [Telling the user story](#telling-the-user-story)
-* [Wireframing](#wireframing) and [prototyping]
+* [Wireframing](#wireframing) and [prototyping](#prototyping)
 
 ### PM
 
@@ -105,6 +105,12 @@ Think about the **3-4 key pages** that communicate what's unique about your app 
 
 Use [Moqups](https://moqups.com) or [Divshot](https://architect.divshot.com) to create your wireframes
 
+# Prototyping
+
+We'll show you hot to use [Invision](http://invisionapp.com), to link your wireframes and set them in motion.
+
+Your prototypes will communicate how your app works, and offer a springboard for conversations with developers, designers, collaborators, investors...
+
 
 # Presentations
 
@@ -116,3 +122,21 @@ Use [Moqups](https://moqups.com) or [Divshot](https://architect.divshot.com) to 
 
 
 # Wrap up
+
+1. Understand the role of the three key **technologies** of the Web: *HTML*, *CSS* and *JS*. 
+
+2. Googling problems  is not *cheating*
+	
+	> Google is your friend
+3. Copy-pasting code is not *cheating*
+
+	> Good coders type, great coders copy-paste
+4. Unpack the **design process**: iterative, collaborative
+   
+   > Try again (and again) until it works.
+5. **It's OK**. You're not going to break anything
+6. Analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
+7. Create **proof-of-concept prototypes** for Web applications
+
+
+We'd like to hear your **feedback**, it helps us improve this course!
