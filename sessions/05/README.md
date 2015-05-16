@@ -97,6 +97,8 @@ Don't present *features*. Tell a *story*.
 	* What *actions* does she take? 
 	* What are their *results*?
 
+![](assets/story.png)
+
 # Wireframing
 
 See last session's [notes on wireframing](../04/README.md#wireframes)
