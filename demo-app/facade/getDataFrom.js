@@ -1,7 +1,7 @@
 // Example
 // getDataFrom(url).then(function(){});
 
-var getData = function (url){
+var getDataFrom = function (url){
 
 	$.getJSON(url, function(result){
 		
@@ -13,7 +13,7 @@ var getData = function (url){
 
 }
 
-getData.prototype.then = function (callback) {
+getDataFrom.prototype.then = function (callback) {
 
 	this.callback = callback;
 	
