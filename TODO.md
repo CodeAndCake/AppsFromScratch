@@ -53,3 +53,9 @@ Check this out http://www.google.co.uk/goodtoknow/web/jargon
 - [x] The Web is not the Internet
 - [ ] The [matrix-like WWW](http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)?
 - [ ] How do we introduce the food app?
+
+# Interesting material
+
+### From Creative Coding on FutureLearn
+* [IF → THEN statements IRL](https://www.futurelearn.com/courses/creative-coding/2/steps/35857)
+* [QUIZ for logic (conditional) operators](https://www.futurelearn.com/courses/creative-coding/2/steps/35862/questions/3)
