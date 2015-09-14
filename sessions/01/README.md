@@ -1,5 +1,7 @@
 # Apps from scratch
 
+<!-- Show of hands -->
+
 * Have you made an app before?
 * Have you used an app before?
 * Have you tried to learn code before?
@@ -9,61 +11,42 @@ This course is about getting **creative** with **code**.
 
 Getting familiar with how coders work day to day, and experiencing the **design and development process** first-hand. How to take an idea from zero to working prototype. 
 
-For many of you, this will be a **memorable day**. You'll write your **first line of code**, and in a few weeks you'll have made **your very own app**, from scratch!
+For many of you, this will be a **memorable day**. You'll write your **first line of code**, and in a few weeks you'll have made **your own app**, from scratch!
 
 It's going to be **challenging** and we want to make sure that you also have **fun**!
 
+- [ ] Stress that this is an introductory course, inevitably there are parts of the process that we won't cover (such as how to market your app or package it for a specific market)
 
-
-> Half of development process is about **discussing the ideas** and **collaborating as a team** rather than sitting in front of computer all the time so we would like to go through with you, how to get the idea into app with **the method** that we have been practicing to get best out of it day to day.   
+<!-- > Half of development process is about **discussing the ideas** and **collaborating as a team** rather than sitting in front of computer all the time so we would like to go through with you, how to get the idea into app with **the method** that we have been practicing to get best out of it day to day.  --> 
  
-
 We're not here to talk at you, but to work with you and we want you to **work together** and help each other.
-
- 
 
 ## Two words about ourselves
 
+- **Yuki**: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team.
 
-Yuki: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team.
+- **Matteo** studied graphic design. He built social platforms and educational games for the BBC, Science Museum and now teaches at Ravensbourne.  
 
-> Matteo studied **graphic design**. He built various **social platforms** and **educational games** for the **BBC**, **Science Museum** and now **teaches at Ravensbourne.**  
+- **Aimee** studied fashion design, makes clothes and websites. She is the *jargon buster*, the bridge between beginners and professional coders.
 
-> I'm doing this course also to learn. It's been one of the challenge for me to **break down** the technical idea into something more **friendly**. I'm here to learn a **way to communicate** with ???.
+**No computer scientists**, we all learned code by ourselves through experimenting and tinkering, 
 
-> Matteo came to ask me if I'm interested in doing this course and I was very excited!
-
-> So please point out if I'm talking gibberish.
-
-**No computer scientists**, learned code by ourselves and built a career on it.
-
-
-We're both curious and passionate about sharing our knowledge.
-
-> Since Matteo and I started in programming, we've been sharing ideas and technics.
-
-> Development is about **community and sharing**. The reason we can stand where we are now is because of the people who contribute to the community for free.
-
-We believe **everyone can learn to code** and that's why we're here today. We want to help you find your direction and accelerate your learning process.
+We want to show you that it's easy to get started and anyone can give it a go!
 
 
 ## Introduce each other
 
-We want this session to be **informal** and relaxed, so if you have any questions at any time just ask. We're also going to ask you many **questions**!
+We want this course to be **informal** and relaxed, so if you have any questions at any time just ask. We're also going to ask you many **questions**!
 
-> I think this is great opportunity to share and get to know new people. So please don't hesitate, we are always up for beers!
-	
-> We'd like you to introduce yourself to your neighbour. 
-
-> We'll ask you to introduce each other to the rest of the group.
-
-
+We'd like you to introduce yourself to your neighbour. Then we'll ask you to introduce each other to the rest of the group.
 
 1. A bit about yourself
 * Why are you on this course?
 * What is your experience with coding so far?
 
 You can jot down the answers on post-its and we'll then stick them on the wall...
+
+<!-- make sure we ask questions to the people that are being introduced! -->
 
 
 ## When is lunch?
@@ -72,54 +55,186 @@ Research shows that people focus much better when they know what time they're go
 
 So, we will have **lunch break** at around 12:00 for 1 hour, aiming to wrap up by 3pm.
 
+
+## GitHub
+
+- [ ] All the course material is here...
+
+
+
 ## Roadmap
 
-### Day 1
+### Week 1
 
-Setting the foundations: getting familiar with code (introducing two languages, **HTML & CSS**) and learning how to code the layout for an app.
+* Get to know each other
+* Discuss: what is an app, how do we use them, how do we start building one?
+* Introduction to HTML and CSS: create your app home screen
+
+<!--Setting the foundations: getting familiar with code (introducing two languages, **HTML & CSS**) and learning how to code the layout for an app.
 
 Key questions: 
 
 * What is *code*? 
-* How do you learn to code?
+* How do you learn to code?-->
 
-### Day 2
+### Week 2
 
-Stepping up a notch: set things in motion (introducing **JavaScript**) and learning how to use data from the Web in your code.
+* Work together to generate, spec out and test your ideas
+* UX research: interview people (aka users)
+* Introduction to JavaScript: connect your app to an online database
+
+<!--Stepping up a notch: set things in motion (introducing **JavaScript**) and learning how to use data from the Web in your code.
 
 Key questions: 
 
 * Where is *data*? 
-* How do you harness is?
+* How do you harness is?-->
 
-### Day 3
+### Week 3
 
-Learning how to visualise your ideas, sketch out possible solutions (introducing the **wireframing** method) and start a conversation with your team.
+* Interface design: sketch out your app’s pages
+* Learn how to use digital wireframing tools
+* Mark up your wireframes with HTML and CSS
+ 
+<!--Learning how to visualise your ideas, sketch out possible solutions (introducing the **wireframing** method) and start a conversation with your team.
 
 Key questions:
  
 * What is an *app*? 
-* How do you design one?
+* How do you design one?-->
 
-### Day 4
+### Week 4
 
-Translating your wireframes into code: how to quickly **prototype and test** your app. Introducing *behaviour-driven-development*.
+* Review your wireframes collaboratively
+* JavaScript: learn about variables, functions and loops
+* Code your app with JavaScript
+
+<!--Translating your wireframes into code: how to quickly **prototype and test** your app. Introducing *behaviour-driven-development*.
 
 Key questions: 
 
 * What does your app do? 
-* How do you *test* it?
+* How do you *test* it?-->
 
-### Day 5
+### Week 5
 
-Polishing up and presenting your prototypes.
+* Make!
+* Test!
+* Tweak! Repeat...
+
+<!--Polishing up and presenting your prototypes.
 
 Key questions: 
 
 * What is your app value? 
-* How do you communicate it?
+* How do you communicate it?-->
+
+### Week 6
+
+* Finalise  and present your app prototype
+* Celebrate your achievements!
+* Take away resources to continue on your app-making journey
 
 
+
+
+
+
+
+
+
+
+
+## What is an app?
+
+Let's sketch a **working definition** of *app*.
+
+How do you explain what an app is to someone or something who's never seen/used one, like an *alien*?
+
+Pretending one of us is the *alien*, let's ask some obvious questions. If people answer with jargon (eg: *software* or *download*) then we ask them to expand on their meaning.
+
+* **Where** do you find apps?
+* Can you buy apps? Who sells them?
+* **Who makes** apps?
+* **Who uses** apps? Why?
+* What does an app **look like**?  
+* How do you **interact** with an app? Do you speak into your phone, do you shake it etc?
+* What are apps useful for? How do they **serve** people who *download* them?
+* **How often** do people use apps? Would you download an app if you need it only once or twice?
+
+There is no clear-cut definition of *app*.
+
+For the sake of this course, we like to think of apps as **small digital tools** that are connected to the Web.
+
+To use an analogy, if a website is like a *book*, which you use to find and consume information, an app is closer to a *hammer*, which you use to make something with.
+
+<!--![](http://www.issip.org/wp-content/uploads/2014/10/Depositphotos_17177253_original1.jpg)-->
+
+![](http://pngimg.com/upload/hammer_PNG3890.png)
+
+Apps generally have a specific function, or a small set of functions. They are not trying to do everything.
+
+![](http://www.thisiswhyimbroke.com/images/ultimate-swiss-army-knife1.jpg)
+
+
+What apps do you use most? 
+
+And do you know what they have in common? Let us tell you...
+
+### Key concepts
+
+1. **Interface**
+* **Logic**
+* **Data**
+
+
+### Breaking down apps
+
+Form groups of 2-3 people, choose one app that you are all familiar with and analyse it using this framework:
+
+1. What is the main **purpose** of the app?
+* **When** do people need this app? Be specific.
+* List the *verbs* of the app, ie what **actions** does the app allow you to do. Think about possible verbs that are not part of the app, and why it may be that you're not allowed to perform those actions.
+* What **input** does the app require from you?  
+* Where does the app's **data** come from? Who creates it?
+* What does the app do with that data (ie what's the app **logic**)?
+* What **output** does the app produce?
+
+<!-- 10-15 minutes in groups, then 15-20 minutes review, and then it should be lunch break -->
+
+
+<!--
+
+> The shortened slang term for a computer or smart phone application.
+
+From the [American Dialect Society](http://www.americandialect.org/woty/all-of-the-words-of-the-year-1990-to-present#2010) Word of the Year 2010 
+
+A small piece of software that has one specific function...
+
+
+> The days of the software office suite are giving way to a new era of individual units, each purpose-built for a specific function...
+
+From  [What is an app?](http://bogost.com/blog/what_is_an_app), where an app is like a music tune, a small thing compared to a record
+
+> Referring to applications as *apps* is not just a branding technique but a necessary linguistic reduction to conceptualise a lesser type of application. A little piece of software that sits in its little sandbox and doesn’t try to compete with the overarching platform.
+
+From [Gatekeeper and the rise of the total Apple consumer](http://www.molleindustria.org/blog/gatekeeper-and-the-rise-of-the-total-apple-consumer/)
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 
 ## What is code?
 
@@ -168,19 +283,13 @@ Like **learning a new language**, **translating** your ideas into code.
 
 **Today** you're going to learn **2 new languages**.
 
-<!-- A bit of **grammar** and **vocabulary**, and mostly you can learn by **copying**. -->
+
 
 ## Copy + hack
 
 You learned your first language by copying people around you..
 
-<!-- To learn typography, you copy and **edit** fonts. 
 
-To become a pattern cutter, you **deconstruct** and copy good garments.
-
-To make things on the Web, you **inspect** and copy good websites.
-
-_Show Facebook > Inspect Element_ -->
 
 **Today** you're going to **copy us** for a bit, then **hack** what you've copied into something **new**.
 
@@ -194,13 +303,7 @@ Make an app that helps people **make lunch**.
 The app must take in some human **input**, use **code** to manipulate it, and then present a human-readable **output**.
 
 
-<!-- ## Today
 
-You will make an **app**.  
-
-We will show you a few **coding tricks** and we'll lay the **foundations** of your app together. 
-
-Then you will explore the **potential of the Web** as an open platform for you to **express your creativity**. -->
 
 
 ## What is the Web?
@@ -251,6 +354,7 @@ _BBC homepage example > disable CSS to show what code does what_
 
 Today we're going to focus on HTML & CSS
 
+-->
 
 # Let's code
 
@@ -320,8 +424,4 @@ Introduce [Kuler](https://color.adobe.com)
 * Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/) 
 * Add the app to your phone's **home screen**
  
-`<link rel="apple-touch-icon" href="blabla.png">`		
-
-
-
-
+`<link rel="apple-touch-icon" href="blabla.png">`
