@@ -366,62 +366,82 @@ Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
 * Write title and description without HTML tags 
 * `h1` (useful for Google Fonts)
 * `p`, a couple of them
-* `input`, different types
-* Difference between `value` and `placeholder`
+* `select` and `option`
 * Add a `button` 
 
 ### CSS intro
 
-Useful to show **selectors** and hide the `p`
-
-* `h1` centred
-* `color`
-
-Save and open **Debug** view.
-
-Introduce **Web Inspector**, HTML and CSS tabs.
-
-Introduce colour picker (maybe pick a colour from Facebook). Everything is lost on *page refresh* so need to copy-paste into our code.
-
-* `background`
-
-Introduce [Kuler](https://color.adobe.com)
-
+1. Show **Selectors** with *quick wins*
+	* Hide `p`
+	* `h1` centred
+* Save and open **Debug** view.
+* Introduce **Web Inspector**, HTML and CSS tabs.
 * `background-image`
-* `background-size: cover;`
-* CSS comments
-* `background-repeat: no-repeat;` and may have to add `html {height: 100%;}`
-* `font-size`
-* `font-weight`
-* [Google Fonts](https://www.google.com/fonts)
-* Style `input` and `button`
-	* `width: 90%; padding: 5%;`
-	* `width: calc(100% - 1em); padding: .5em;`
+	* `background-size: cover;`
+	* `background-repeat: no-repeat;` and may have to add `html {height: 100%;}`
+* CSS **comments** 
+* Typography
+	* `font-size`
+	* `font-weight`
+	* [Google Fonts](https://www.google.com/fonts)
+* Style `select` and `button`
 	* `border: none;`
 	* `border-radius`
 	* `margin`
-	
-### Back to HTML	
-	
-```
-<ul>
-  <li>
-    <h2>recipe title</h2>
-    <img>
-    <p>Ingredients, description, more info?</p>
-    <a>Link to full recipe</a>  
-  </li>
-</ul>
-```
+	* `padding`
+* Colours
+	* Web inspector colour picker (maybe pick a colour from Facebook). Everything is lost on *page refresh* so need to copy-paste into our code.
+	* `background`
+	* `color`
+	* `border-color`
+	* Check out [Kuler](https://color.adobe.com) and/or [Flat UI colors](https://flatuicolors.com/) for inspirations
 
 ### Final touches
 
-* Transparency?
+* Media queries
 
-* Media queries?
+	```css
+	/* if the screen is larger than 600px..  */
+	@media (min-width: 600px) {
+	  body {
+	    max-width: 600px;
+	    margin: auto;
+	    font-size: 1em;
+	  }
+	}
+	```
+* Icons using [FontAwesome](https://fortawesome.github.io/Font-Awesome/)
+
+	```css
+	.dropdown
+	{
+	  position: relative;
+	}
+	.dropdown:after
+	{
+	  content: "\f063";
+	  font-family: FontAwesome;
+	  position: absolute;
+	  top: .75em;
+	  right: .75em;
+	  font-size: 2em;
+	  pointer-events: none;
+	  color: salmon;
+	}
+	```
+
 
 * Make the app look proper on a phone. Google `how to stop phone zooming out pages`
+
 * Make the app **full screen**. Google `how to hide address bar in mobile browser` and you should find [this tutorial](http://www.html5rocks.com/en/mobile/fullscreen/) 
+
 * Add the app to your phone's **home screen**
  
-`<link rel="apple-touch-icon" href="blabla.png">`
+	`<link rel="apple-touch-icon" href="blabla.png">`
+	
+* Transparency?	
+	
+* Take inspiration from these fancy demos by Codrops:
+	* [Custom select elements](http://tympanus.net/codrops/2014/07/10/inspiration-for-custom-select-elements/)
+	* [Minimal form interface](http://tympanus.net/codrops/2014/04/01/minimal-form-interface)
+	* [Natural language form](http://tympanus.net/codrops/2013/05/21/natural-language-form-with-custom-input-elements)
