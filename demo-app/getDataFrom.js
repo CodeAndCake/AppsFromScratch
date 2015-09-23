@@ -1,7 +1,7 @@
 // Example
 // getDataFrom(url).then(function(){});
 
-var getDataFrom = function (url){
+var getDataFrom = function (url) {
 
 	$.getJSON(url, function(result){
 		
