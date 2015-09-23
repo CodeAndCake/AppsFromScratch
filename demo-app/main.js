@@ -1,110 +1,174 @@
-console.log("main.js up and running");
+// Load data and store it in the app memory
+
+	var data = [] // let's create an empty array
+
+	// build the spreadsheet URL
+	// see the manual here https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en
+	var key = '1BGkw8j2gas0j1V_JQhE5QLRROoExNfv_Yk74Dri6shg' // the spreasheet unique identifier
+	var worksheet = '1' // the first worksheet
+	var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + worksheet + '/public/values?alt=json'
+
+	console.log(spreadsheetURL)
+
+	loadData(spreadsheetURL, storeData)
+
+	function loadData (url, successFunction) {
+
+		// perform an asynchronous data request using jQuery
+		// asynchronous means we're asking for data NOW but don't know WHEN it'll come back (not immediately)
+		// AJAX stands for Asynchronous JavaScript And XML (don't worry about it)
+		// learn more about it at https://api.jquery.com/jQuery.ajax
+		$.ajax({
+
+			// send the request to the url
+			url: url,
+
+			// we want to receive JSON, which is a JavaScript data format
+			dataType: 'json',
+			
+			// what to do when the API responds with some data
+			success: function(responseJSON)  {
+				// at this point we can call the callback function
+				successFunction(responseJSON)            
+			}
+		})
+	}
+
+	function storeData (json) {
+
+		// from the whole json object, we only want to extract certain bits
+
+		// first we isolate the list of spreadsheet rows
+		var rows = json.feed.entry
+
+		// then we loop through the rows and extract the info we need
+
+			// while loop
+			/*var counter = 0;
+			var total = rows.length;
+
+			while (counter < total) {
+
+				var row = rows[counter]
+				var person = extractPerson(row)
+				data.push(person) // store this in the main data array
+
+				// increment the counter
+				// to avoid infinite loops
+				counter = counter + 1;
+			}*/
+
+			// for loop
+			rows.forEach(function(row)
+			{
+				var person = extractPerson(row)
+				data.push(person) // store this in the main data array
+			})
+
+		console.log(data)
+	}
+
+	function extractPerson (row) {
+
+		var person = {
+			name: row.gsx$name.$t,
+			likesPets: row.gsx$likespets.$t
+		}
+
+		return person
+	}
+
+// Capture user input
+
+	function getSelectedOption() {
+
+		var selectedOption = $('select option:selected').val()
+		return selectedOption
+	}
+
+// Filter and sort data according to user choices
+
+	function filterData(data, option) {
+
+		var filteredData = [] // an empty array
+
+		// loop through data 
+		data.forEach(function(person) {
+
+			if (option == 'Keep my pet')
+			{
+				// add rows to filteredData only if likesPets is 'yes'
+				// we wouldn't give our pet to someone who dislikes them would we?
+				if (person.likesPets == 'yes') {
+					filteredData.push(person)
+				}	
+			}	
+		})
+
+		return filteredData
+	}
+
+	function sortData(data, option) {
+
+		var sortedData = [] // an empty array
+
+		if (option == 'Keep my pet')
+		{
+			// we don't need to sort the data
+			return data
+		}	
+
+		return sortedData
+	}
+
+// Display filtered+sorted data
+
+	function displayData (data) {
+
+		// loop through data 
+		data.forEach(function(person) {
+
+			// use the template function to get a list item
+			var li = getPersonListItem(person)
+		
+			// append the list item to our HTML
+			$('ul').append(li)
+
+		})
+	}
+
+	// this function is like an HTML sausage machine
+	// pass in some person data
+	// and it will return an HTML list item wrapped around that data
+	function getPersonListItem (person) {
+
+		// create a variable to store the HTML code
+		// we put the static (non variable) bits in speech marks
+		// and the variable bits outside of speech marks
+		var li = "<li>"
+			+ "<h3>" + person.name + "</h3>"
+			+ "</li>"
+
+		return li 
+	}
 
 
-// use jQuery to select the button
-// "listen" for when the button is clicked
-$("button").on("click", searchForRecipes)
+// When should we kick off the whole thing? 
+// When people click on the button	
 
-function searchForRecipes() {
+	// use jQuery to select the button
+	// 'listen' for when the button is clicked
+	$('button').on('click', function() {
 
-    // create a variable
-    // select the input using jQuery
-    // use the val() function to get the input value
-    var searchInput = $('input[type="text"]').val();
-    console.log(searchInput);
-    
-    // use this function to search for recipes on the Edamam API
-    // pass in the value that the user has typed in
-    // once we get something back from the API, run the displayRecipes function
-    getRecipesFromAPI(searchInput, displayRecipes);
+		// get user input
+		var selectedOption = getSelectedOption()
 
-}
+		// filter and then sort the data
+		var filteredData = filterData(data, selectedOption)
+		var sortedData = sortData(filteredData, selectedOption)
 
-function displayRecipes(responseJSON) {
+		console.log(sortedData)
 
-    console.log(responseJSON);
-    
-    var hitsArray = responseJSON.hits;
-    var counter = 0;
-    var total = hitsArray.length;
-    
-    while(counter < total) {
-        
-        var hit = hitsArray[counter];
-        var recipe = hit.recipe;
-        console.log(recipe);
-        
-        // use the template function to get a list item
-        var li = getRecipeListItem(recipe);
-        
-        // append the list item to our HTML
-        $("ul").append(li);
-        
-        // increment the counter
-        // to avoid infinite loops
-        counter = counter + 1;
-    }
-
-}
-
-
-
-
-// https://www.mashape.com/edamam/recipe-search-and-diet
-// The Edamam Recipe Search API lets you search over 1.5 million recipes from 500+ top web recipe sources
-
-// this function takes in a phrase to search (searchString)..
-// ..and a function to execute when we receive data from the API (callbackFunction)
-function getRecipesFromAPI(searchString, callbackFunction) {
-
-    // this is the API endpoint, which means the URL to which our search request is sent
-    var apiEndpoint = 'https://api.edamam.com/search';
-
-    // we're sending some data with our request
-    var apiData = {
-        // the app ID and key work like a library card 
-        // every time we're borrowing some data from Edamam (the API service provider)
-        // we use these to let Edamam know it's us
-        _app_id: '602e4c99',
-        _app_key: 'badc73a4282fd038b7547e9c5854a2d6',
-        // q stands for query, and it's the search term for an ingredient or a recipe
-        q: searchString
-    }
-
-    // perform an asynchronous HTTP (Ajax) request using jQuery
-    // learn more about it at https://api.jquery.com/jQuery.ajax
-    // $ is a shortcut for jQuery
-    $.ajax({
-        // send the request to the API endpoint
-        url: apiEndpoint,
-        // the request data we're sending
-        data: apiData,
-        // we want to receive a JSON object
-        dataType: 'jsonp',
-
-        // what to do when the API responds with some data
-        success: function(responseJSON)  {
-            // at this point we can call the callback function
-            callbackFunction(responseJSON);              
-        }
-    })
-}
-
-
-// this function is like an HTML sausage machine
-// pass in some recipe data
-// and it will return an HTML list item wrapped around that data
-function getRecipeListItem(recipe)
-{
-    // create a variable to store the HTML code
-    // we put the static (non variable) bits in speech marks
-    // and the variable bits outside of speech marks
-    var li = "<li>"
-        + "<img src=" + recipe.image + ">"
-        + "<h3>" + recipe.label + "</h3>"
-        + "<p>This recipe is <b>" + recipe.level + "</b> and will take you " + recipe.totalTime + " minutes to prepare.</p>"
-        + "<a href=" + recipe.url + " target=_blank>Let's make this recipe</a>"
-        + "</li>"
-
-    return li    
-}
+		// display filtered+sorted data
+		displayData(sortedData)
+	})

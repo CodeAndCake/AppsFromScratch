@@ -1,4 +1,7 @@
-<!-- - [x] in the last episode.. HTML + CSS recap (with *spot the difference*?) -->
+- [ ] `while` or recursive function?
+- [ ] `storeData`
+- [ ] `sortData`
+- [ ] `getPersonListItem`	
 
 <!--- [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract)-->
 
@@ -142,7 +145,7 @@ What variables, functions and logic do you use in your everyday life (even if yo
 
 * **Variables** weather (sunny, cloudy, warm, cold..), date, location.. 
 * **Functions** get out of bed, check weather (on you phone, on TV..), check calendar
-* **Logic** if sunny then wear sunglasses, if rainy then take umbrella
+* **Logic** if sunny then wear sunglasses, if rainy then take an umbrella
 
 Think about the [robot game](#robot-time): which variables, functions and logic did we use?
 
@@ -164,9 +167,15 @@ function turn(degrees) {
 	...
 }
 
+function canYouSee(target) {
+	...
+}
+
 if (canYouSee(target)) {
 	// walk towards it
 	...
+} else {
+	// turn and check again
 }
 
 ``` -->
@@ -421,27 +430,150 @@ Also: Google is your friend :)
 
 # Back to the brief
 
-<!-- back to the future joke -->
+> Make an app that helps people sort through heaps of data to **find who/what they are looking for** (eg: people in their community to do something together).
 
-> Make an app that helps people **make lunch**. The app must take a human **input** (eg: search keywords), use **data from the Web**, and then present a human-readable **output** (eg: list of recipes)
+First we'll break down the problem into smaller tasks, *specifying* for each task who does what and when. This process is what **designing algorithms** is about. 
 
-1. Break down the problem
-* Code it
-
+Once we have a good understanding of how our app will behave, we can **code** those algorithms.
 
 ### 1. Break down the problem
 
-That is, design the *algorithm*
+We need four volunteers (and post-its). 
 
-1. The user
-2. The HTML character
-3. The JS character
-4. The API character
+1. The user (talks only to HTML)
+2. The HTML character (talks only to the user, on request)
+3. The JS character (can talk to both HTML and API)
+4. The API character (talks only to JS, on request)
 
-We need four volunteers (and post-its)
+HTML and JS are siblings or colleagues (they are part of the same app) so they should stand closer, maybe hold hands :)
+
+Let's play out the app behaviour. 
+
+Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?
+
+<!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
+
+1. Load data and store it in the app memory
+* Capture user input
+* Filter and sort data according to user choices
+* Display filtered+sorted data
+
+### 2. Code the algorithms
+
+1. **Load data and store it in the app memory**
+	
+	* We need to know where to load data from, that is we need a **URL**. You can think of it as the address or phone number of your data..
+	
+	* Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
+	
+		```js
+		var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + worksheet + '/public/values?alt=json'
+		```
+	
+	See the [manual here](https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en)
+	
+	* Copy-paste the URL into a new browser tab to check if it works and what data we're receiving from it
+	
+	* Integrate [this helper function](../../demo-app/loadData.js) to load data from a URL (we don't have to reinvent the wheel)
+	
+	* *Call* `loadData` and tell it where to ask for data (`spreadsheetURL`) and what to do once data is loaded (`storeData`)
+		```js
+		loadData(spreadsheetURL, storeData)
+		```
+	* Flesh out `storeData` (introducing [arrays](#arrays) and [loops](#loops))
+	
+	* Extract row data
+	
+	```js
+	function extractPerson (row) {
+
+		var person = {
+			name: row.gsx$name.$t,
+			likesPets: row.gsx$likespets.$t
+		}
+
+		return person
+	}
+	```
+	
+2. Capture user input
+
+	* We can use jQuery to get the selected option. Let's try it in the console first
+	
+	```js
+	$('select') // will grab the whole dropdown element
+	$('select option:selected') // will grab the selected option from the dropdown
+	$('select option:selected').val() // will return only the value (or text) for the selected option
+	```
+	
+	* Let's create a reusable function to get the selected option
+	
+	```js
+	function getSelectedOption() {
+
+		var selectedOption = $('select option:selected').val()
+		return selectedOption
+	}
+	```
+	
+	* **When** do we need to capture the selected option? When one presses the `button`.
+	
+	Let's teach our app to do that
+	
+	```js
+	$('button').on('click', function() {
+		var selectedOption = getSelectedOption()
+		// and then we need to sort, filter and display data
+	})
+	```
+
+3. Filter and sort data according to user choices
+
+	```js
+	function filterData(data, option) {
+
+		var filteredData = [] // an empty array
+		
+		// loop through data
+		data.forEach(function(person) {
+			
+			// depending on option, we add rows to filteredData
+			// for example, if option is "Keep my pet" we add rows to filteredData only if person.likesPets is 'yes'
+			// we wouldn't give our pet to someone who dislikes them would we?
+			
+			if (option == 'Keep my pet') {
+				if (person.likesPets == 'yes') {
+					filteredData.push(person)
+				}	
+			}
+			// TODO check the other options..
+		})
+
+		return filteredData
+	}
+	```
+
+4. Display filtered+sorted data
+ 
+	```js
+	function displayData (data) {
+
+		// loop through data 
+		data.forEach(function(person) {
+
+			// use the template function to get a list item
+        	var li = getPersonListItem(person)
+        
+        	// append the list item to our HTML
+        	$('ul').append(li)
+
+		})
+	}
+	```
 
 
-### 2. Code the algorithm
+
+<!--
 
 1. Capture `input` value into `var`
 * `console.log` it
@@ -452,6 +584,51 @@ We need four volunteers (and post-its)
 * `console.log` results
 * `while` loop (Choc demo)
 * Template
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -710,12 +887,6 @@ Data APIs work with URLs. We can use URLs to **GET data** and **POST data**.
 	[https://www.google.co.uk/search**?q=banana**](https://www.google.co.uk/search?q=banana)
 	
 	We add `q=your+search+terms` to the URL and Google will return results for those terms
-
-* To **GET data** from Facebook
-	
-	[https://**graph**.facebook.com/**RavensbourneUK**](https://graph.facebook.com/RavensbourneUK)
-	
-	We swap `www` for `graph` and Facebook will return a data object about the person or page we requested
 	
 * To **GET data** from the [Gender API](https://gender-api.com)
 
@@ -724,50 +895,6 @@ Data APIs work with URLs. We can use URLs to **GET data** and **POST data**.
 * Many more APIs on [MashAPE](https://www.mashape.com) 
 
 Every API is slightly different in syntax (which is why you have to read their manual), but the core method is the same: sending and receiving data via URLs
-
-<!--Data APIs vs service APIs-->
-
-```js
-// https://www.mashape.com/edamam/recipe-search-and-diet
-// The Edamam Recipe Search API lets you search over 1.5 million recipes from 500+ top web recipe sources
-
-// this function takes in a phrase to search (searchString)..
-// ..and a function to execute when we receive data from the API (callbackFunction)
-function getRecipesFromAPI(searchString, callbackFunction) {
-
-	// this is the API endpoint, which means the URL to which our search request is sent
-	var apiEndpoint = 'https://api.edamam.com/search';
-
-	// we're sending some data with our request
-	var apiData = {
-		// the app ID and key work like a library card 
-		// every time we're borrowing some data from Edamam (the API service provider)
-		// we use these to let Edamam know it's us
-		_app_id: '602e4c99',
-		_app_key: 'badc73a4282fd038b7547e9c5854a2d6',
-		// q stands for query, and it's the search term for an ingredient or a recipe
-		q: searchString
-	}
-
-	// perform an asynchronous HTTP (Ajax) request using jQuery
-	// learn more about it at https://api.jquery.com/jQuery.ajax
-	// $ is a shortcut for jQuery
-	$.ajax({
-		// send the request to the API endpoint
-		url: apiEndpoint,
-		// the request data we're sending
-		data: apiData,
-		// we want to receive a JSON object
-		dataType: 'jsonp',
-		
-		// what to do when the API responds with some data
-		success: function(responseJSON)  {
-			// at this point we can call the callback function
-			callbackFunction(responseJSON);              
-		}
-	})
-}
-```
 
 ## Arrays
 
@@ -805,16 +932,16 @@ var animals = ["antelope", "zebra", "cat", "dog"];
 APIs often return arrays of **objects**
 
 ```js
-var recipes = [
+	var people = [
 	{
-		name: 'Banana bread',
-		ingredients: [ ... ],
-		picture: 'http://example.com/banana-bread.jpg'
+		name: 'Aimee',
+		likesPets: 'yes',
+		picture: 'http://example.com/aimee.jpg'
 	},
 	{
-		name: 'Banana fritters',
-		ingredients: [ ... ],
-		picture: 'http://example.com/banana-fritters.png'
+		name: 'Yuki',
+		likesPets: 'no',
+		picture: 'http://example.com/yuki.png'
 	}
 ];
 // the list could go on
@@ -910,20 +1037,17 @@ Whenever you have *raw data* that needs to be *dressed up*.
 
 ```js
 // this function is like an HTML sausage machine
-// pass in some recipe data
+// pass in some person data
 // and it will return an HTML list item wrapped around that data
-function getRecipeListItem(recipe)
-{
+function getPersonListItem (person) {
+
 	// create a variable to store the HTML code
-	// we put the static (non variable) bits in speech marks
-	// and the variable bits outside of speech marks
+    // we put the static (non variable) bits in speech marks
+    // and the variable bits outside of speech marks
     var li = "<li>"
-        + "<img src=" + recipe.image + ">"
-        + "<h3>" + recipe.label + "</h3>"
-        + "<p>This recipe is <b>" + recipe.level + "</b> and will take you " + recipe.totalTime + " minutes to prepare.</p>"
-        + "<a href=" + recipe.url + " target=_blank>Let's make this recipe</a>"
+        + "<h3>" + person.name + "</h3>"
         + "</li>"
 
-    return li    
+    return li 
 }
 ```
