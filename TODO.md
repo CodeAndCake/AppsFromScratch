@@ -13,7 +13,6 @@ Could be used for some sort of *hello world* thing, with a form where you input 
 
 - [ ] Try sorting with http://isotope.metafizzy.co/sorting.html
 - [ ] Find alternative & inspiring datasets that people can hack (check this out http://www.nesta.org.uk/publications/data-good), eg London Air pollution data?
-- [ ] Step-by-step how to build the demo (tutorial)
 
 # Jargon buster
 
@@ -40,19 +39,14 @@ In no particular order
 
 Check this out http://www.google.co.uk/goodtoknow/web/jargon
 
-# Wacky ideas
-
-- *Treasure hunt* GeoLocation app that changes colour (from cold to hot) depending on how far you are from your *treasure*
 
 # Reading list
 
 - [ ] https://medium.com/@dustinteractive/8-reasons-every-designer-should-build-an-app-f222e3d3dc6c
 
-# Day one
+# Day 1
 
-- [x] The Web is not the Internet
-- [ ] The [matrix-like WWW](http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)?
-- [ ] How do we introduce the food app?
+- [ ] Use [Google Tone](https://chrome.google.com/webstore/detail/google-tone/nnckehldicaciogcbchegobnafnjkcne?hl=en) to share URLs between us
 
 # Interesting material
 
