@@ -356,6 +356,31 @@ Today we're going to focus on HTML & CSS
 
 -->
 
+
+
+# Your brief
+
+> Make an app that helps people sort through heaps of data to **find who/what they are looking for**.
+
+**The *who/what* is up to you**. People may be looking for other people in their community to do something together, or they may be looking for food recipes, places to go, books to read, films to watch.. 
+
+We'll show you how to create structured data (aka a **database**) using a tool you are probably familiar with: a **spreadsheet**. Later on you can change the data to make your app serve your own purposes.
+
+No matter which data the app uses, its **mechanics** will be the same:
+
+1. **Load data** from an online database (a spreadsheet in our case)
+* Capture **user inputs**, when they click on buttons, type into text boxes or choose from a dropdown menu etc.
+* **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
+* Present a human-readable **output** 
+
+<!---->
+
+- [ ] Sketch
+- [ ] Start building the database
+
+Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
+
+
 # Let's code
 
 Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
@@ -426,7 +451,6 @@ Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
 	  right: .75em;
 	  font-size: 2em;
 	  pointer-events: none;
-	  color: salmon;
 	}
 	```
 
