@@ -170,11 +170,11 @@ To use an analogy, if a website is like a *book*, which you use to find and cons
 
 <!--![](http://www.issip.org/wp-content/uploads/2014/10/Depositphotos_17177253_original1.jpg)-->
 
-![](http://pngimg.com/upload/hammer_PNG3890.png)
+![](assets/hammer.png)
 
 Apps generally have a specific function, or a small set of functions. They are not trying to do everything.
 
-![](http://www.thisiswhyimbroke.com/images/ultimate-swiss-army-knife1.jpg)
+![](assets/swiss-army-knife.jpg)
 
 
 What apps do you use most? 
