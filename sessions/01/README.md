@@ -13,11 +13,13 @@ Getting familiar with how coders work day to day, and experiencing the **design 
 
 For many of you, this will be a **memorable day**. You'll write your **first line of code**, and in a few weeks you'll have made **your own app**, from scratch!
 
+We're going to show you the **basics** and together we'll create an app **template** that you can then customise. The app template will connect to an online database to load data, and manipulate it in response to user inputs. 
+
+Using **HTML**, **CSS** and **JavaScript**!
+
+This is an introductory course, inevitably there are parts of the process that we won't cover (such as how to market your app or package it for a specific market).
+
 It's going to be **challenging** and we want to make sure that you also have **fun**!
-
-- [ ] Stress that this is an introductory course, inevitably there are parts of the process that we won't cover (such as how to market your app or package it for a specific market)
-
-<!-- > Half of development process is about **discussing the ideas** and **collaborating as a team** rather than sitting in front of computer all the time so we would like to go through with you, how to get the idea into app with **the method** that we have been practicing to get best out of it day to day.  --> 
  
 We're not here to talk at you, but to work with you and we want you to **work together** and help each other.
 
@@ -151,6 +153,8 @@ Let's sketch a **working definition** of *app*.
 
 How do you explain what an app is to someone or something who's never seen/used one, like an *alien*?
 
+<!--![](assets/et.png)-->
+
 Pretending one of us is the *alien*, let's ask some obvious questions. If people answer with jargon (eg: *software* or *download*) then we ask them to expand on their meaning.
 
 * **Where** do you find apps?
@@ -170,7 +174,7 @@ To use an analogy, if a website is like a *book*, which you use to find and cons
 
 <!--![](http://www.issip.org/wp-content/uploads/2014/10/Depositphotos_17177253_original1.jpg)-->
 
-![](assets/hammer.png)
+![](assets/whisk.png)
 
 Apps generally have a specific function, or a small set of functions. They are not trying to do everything.
 
