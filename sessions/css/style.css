@@ -130,135 +130,6 @@
 		left: 60%;
 	}
 
-/* #HTML */
-
-	#html code
-	{	
-		font-size: 1em;
-	}
-
-	#html pre
-	{
-		position: relative;
-		top: -210px;
-		margin-bottom: 20px;
-	}
-
-	#html img
-	{
-		position: relative;
-		top: 185px;
-		width: 130px;
-	}
-
-/* WTF */
-
-	#wtf h1 .highlight:first-child
-	{
-		float: left;
-	}
-
-	#wtf h1 .highlight:last-child
-	{
-		float: right;
-	}
-
-/* POP */
-	
-	#pop h2
-	{
-		width: 66%;
-		margin: auto;
-		clear: both;
-	}
-
-	#pop h2 .highlight
-	{
-		float: left;
-	}
-
-	#pop h2 b
-	{
-		float: right;
-	}
-
-/* TOPIC */
-
-	#topic iframe
-	{
-		border: 1px solid whitesmoke;
-		background: white;
-		transform: scale(1.3);
-		position: relative;
-		top: 60px;
-		/*height: 366px;*/
-	}
-
-	#topic iframe.left
-	{
-		left: -70px;
-	}
-
-	#topic iframe.right
-	{
-		right: -70px;
-	}
-
-/* FLASH ANIMATION */
-
-	@-webkit-keyframes flash {
-		0%, 50%, 100% {opacity: 1;}	
-		25%, 75% {opacity: 0;}
-	}
-
-	@-moz-keyframes flash {
-		0%, 50%, 100% {opacity: 1;}	
-		25%, 75% {opacity: 0;}
-	}
-
-	@-ms-keyframes flash {
-		0%, 50%, 100% {opacity: 1;}	
-		25%, 75% {opacity: 0;}
-	}
-
-	@-o-keyframes flash {
-		0%, 50%, 100% {opacity: 1;}	
-		25%, 75% {opacity: 0;}
-	}
-
-	@keyframes flash {
-		0%, 50%, 100% {opacity: 1;}	
-		25%, 75% {opacity: 0;}
-	}
-
-	.flash,
-	.flash-slow,
-	.flash-slower 
-	{
-		-webkit-animation-name: flash;
-		-moz-animation-name: flash;
-		-ms-animation-name: flash;
-		-o-animation-name: flash;
-		animation-name: flash;
-
-		-webkit-animation-iteration-count: infinite; 
-	}
-
-	.flash
-	{
-		-webkit-animation-duration: 2s; 
-	}
-
-	.flash-slow
-	{
-		-webkit-animation-duration: 2.5s; 
-	}
-
-	.flash-slower
-	{
-		-webkit-animation-duration: 3s; 
-	}
-
 /* DATE */
 
 	.date h3
@@ -269,4 +140,12 @@
 	.date h3 span.highlight
 	{
 		float: right;
+	}
+
+/* ET */
+
+	#app-what img 
+	{
+		position: absolute;
+		bottom: -110%;
 	}
