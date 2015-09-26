@@ -363,7 +363,7 @@ Today we're going to focus on HTML & CSS
 
 # Your brief
 
-> Make an app that helps people sort through heaps of data to **find who/what they are looking for**.
+### Make an app that helps people sort through heaps of data to **find who/what they are looking for**.
 
 **The *who/what* is up to you**. People may be looking for other people in their community to do something together, or they may be looking for food recipes, places to go, books to read, films to watch.. 
 
@@ -383,11 +383,13 @@ Here's an initial sketch of how the app may look and work
 
 ### Data
 
-We'll show you how to create structured data (aka a **database**) using a tool you are probably familiar with: a **spreadsheet**. Later on you can change the data to make your app serve your own purposes.
+We'll show you how to create structured data (aka a **database**) using a tool you are probably familiar with: a **spreadsheet**. No scary formula or data crunching though. 
 
-Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
+Later on you can change the data to make your app serve your own purposes!
 
+> Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
 
+> We'll share the link to the spreadsheet with you in class. Email us if you haven't received it.
 
 
 # Let's code
