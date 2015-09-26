@@ -170,7 +170,7 @@ There is no clear-cut definition of *app*.
 
 For the sake of this course, we like to think of apps as **small digital tools** that are connected to the Web.
 
-To use an analogy, if a website is like a *book*, which you use to find and consume information, an app is closer to a *hammer*, which you use to make something with.
+To use an analogy, if a website is like a *book*, which you use to find and consume information, an app is closer to a *whisk*, which you use to make something with.
 
 <!--![](http://www.issip.org/wp-content/uploads/2014/10/Depositphotos_17177253_original1.jpg)-->
 
