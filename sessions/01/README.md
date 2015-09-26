@@ -23,7 +23,7 @@ It's going to be **challenging** and we want to make sure that you also have **f
  
 We're not here to talk at you, but to work with you and we want you to **work together** and help each other.
 
-## Two words about ourselves
+### Two words about ourselves
 
 - **Yuki**: studied art, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company (working on films like The Gladiator). He's designing and building software that makes work easier and more efficient for the team.
 
@@ -36,7 +36,7 @@ We're not here to talk at you, but to work with you and we want you to **work to
 We want to show you that it's easy to get started and anyone can give it a go!
 
 
-## Introduce each other
+### Introduce each other
 
 We want this course to be **informal** and relaxed, so if you have any questions at any time just ask. We're also going to ask you many **questions**!
 
@@ -51,20 +51,15 @@ You can jot down the answers on post-its and we'll then stick them on the wall..
 <!-- make sure we ask questions to the people that are being introduced! -->
 
 
-## When is lunch?
+### When is lunch?
 
 Research shows that people focus much better when they know what time they're going to eat..
 
 So, we will have **lunch break** at around 12:00 for 1 hour, aiming to wrap up by 3pm.
 
 
-## GitHub
 
-- [ ] All the course material is here...
-
-
-
-## Roadmap
+# Roadmap
 
 ### Week 1
 
@@ -138,6 +133,12 @@ Key questions:
 * Take away resources to continue on your app-making journey
 
 
+### GitHub
+
+All the course material is here: 
+[**github.com/CodeAndCake/AppsFromScratch**](https://github.com/CodeAndCake/AppsFromScratch) 
+
+Including notes from each session, exercises, sample code, presentations and links to learn more!
 
 
 
@@ -145,9 +146,7 @@ Key questions:
 
 
 
-
-
-## What is an app?
+# What is an app?
 
 Let's sketch a **working definition** of *app*.
 
@@ -368,8 +367,6 @@ Today we're going to focus on HTML & CSS
 
 **The *who/what* is up to you**. People may be looking for other people in their community to do something together, or they may be looking for food recipes, places to go, books to read, films to watch.. 
 
-We'll show you how to create structured data (aka a **database**) using a tool you are probably familiar with: a **spreadsheet**. Later on you can change the data to make your app serve your own purposes.
-
 No matter which data the app uses, its **mechanics** will be the same:
 
 1. **Load data** from an online database (a spreadsheet in our case)
@@ -377,16 +374,20 @@ No matter which data the app uses, its **mechanics** will be the same:
 * **Sort data** according to user choices, for instance filtering out data that doesn't match their choices
 * Present a human-readable **output** 
 
-<!---->
+
+### Interface
 
 Here's an initial sketch of how the app may look and work
 
 [![](assets/demo-app-moqups.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
 
+### Data
 
-- [ ] Start building the database
+We'll show you how to create structured data (aka a **database**) using a tool you are probably familiar with: a **spreadsheet**. Later on you can change the data to make your app serve your own purposes.
 
 Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
+
+
 
 
 # Let's code
