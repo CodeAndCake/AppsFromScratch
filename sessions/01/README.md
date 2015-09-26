@@ -379,7 +379,11 @@ No matter which data the app uses, its **mechanics** will be the same:
 
 <!---->
 
-- [ ] Sketch
+Here's an initial sketch of how the app may look and work
+
+[![](assets/demo-app-moqups.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
+
+
 - [ ] Start building the database
 
 Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
