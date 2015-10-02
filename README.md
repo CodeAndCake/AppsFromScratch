@@ -1,8 +1,6 @@
-# Apps from scratch
-
 <!--Start prototyping and building apps using HTML, CSS and JavaScript in this 24-hour (6 weekly sessions) introductory course. -->
 
-**Learn to design and code apps!**
+### Learn to design and code apps!
 
 Working from a hands-on brief, you will write your first line of code and in a few weeks you will have made your own app.
 
