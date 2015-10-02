@@ -1,29 +1,44 @@
+<!--
 - [ ] `while` or recursive function?
 - [ ] `storeData`
 - [ ] `sortData`
 - [ ] `getPersonListItem`	
+-->
 
 <!--- [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract)-->
 
 # Apps from scratch, day 2
 
-1. [What is programming?](#programming-vs-coding) 
-* Where is data?
+1. How long does it take to make an app? 
+* [What is **programming**?](#programming-vs-coding)
+* Introduction to **JavaScript**: connect your app to an online database 
+* Work together to generate, spec out and test your **ideas** 
+* **UX research**: interview people (aka users)
 
-#### [Building blocks](#programming-building-blocks)
 
-* [Variables](#variables)
-* [Objects](#objects)
-* [Functions](#functions)
-* [APIs](#apis)
-* [Arrays](#arrays)
-* [Loops](#loops)
-* [Templating](#templating)
+### **How long** does it take to make an **app**?
+
+This course is 24 hours long, ie **3 working days**.
+
+The point of this course is to *introduce* you to the app-making **process** and **tools**
+
+* **CodePen**: free online code editor, live preview
+* **Spreadsheet**: simpler database, accessible online
+* **HTML**, **CSS** and **JavaScript**: universal languages, entry point to more specialised ones (and useful to know for other jobs!)
+* **GitHub repository**: industry-standard collaborative version-control system
+
+In 3 days we may not get an app on the App Store, but don't lose heart. 
+
+In 3 days you will **get started** with design and code and by the end you will:
+
+* have a solid foundation to continue learning
+* have first-hand experience of the design and development process
+* feel confident speaking about your ideas with other designers, developers and product managers
 
 
 # Programming vs coding
 
-Do *coding* and *programming* mean the same thing?
+### Do *coding* and *programming* mean the same thing?
 
 * Coding: writing code
 * Programming: designing a list of instructions to get something done (aka **algorithm**) and then coding such instructions
@@ -33,18 +48,16 @@ Do *coding* and *programming* mean the same thing?
 * Computers can code.
 * Computers can't program. People can.
 
-
 ### Programming is a **way of thinking**
 
 Before we learn how to *code* a program, we should learn how to *think* about problems and solutions.
 
-**Computational thinking** 
+### **Computational thinking** 
 
 * Not thinking like computers. Do computers think anyway? 
 * Solving problems for **people**, using **code**.
 
 It is about using code creatively to solve real-world problems, to **break down behaviours** in specific and precise ways that can be communicated to other people, and eventually to computers.
-
 
 ### Programming languages
 
@@ -62,8 +75,7 @@ HTML and CSS are coding languages.
 
 JavaScript is a programming language (together with PHP, Python, Ruby, C, Java and many others).
 
-
-
+<!--
 ### Natural vs programming languages 
 
 * `the cat drinks milk` English 
@@ -87,6 +99,7 @@ If we know the meaning of each component...
 
 ... then we can build the meaning of the whole sentence.
 
+-->
 <!--  
 
 	Inspiring talk from Ajit Narayan about abstraction, language, grammar, speech and a visual grammar engine
@@ -95,15 +108,13 @@ If we know the meaning of each component...
 
 	http://www.ted.com/talks/ajit_narayanan_a_word_game_to_communicate_in_any_language/transcript?language=en
 
-  -->
+-->
 
-Imagine you read this sentence in a language you don't speak. You can still try and make sense of it, by comparing it to a language you know. This process of *trying to make sense* is very important in programming.
+<!--Imagine you read this sentence in a language you don't speak. You can still try and make sense of it, by comparing it to a language you know. This process of *trying to make sense* is very important in programming.
 
 How about this language?
 
-`cat.drink(milk)` JavaScript (written by an English-speaking human)
-
-
+`cat.drink(milk)` JavaScript (written by an English-speaking human)-->
 
 ### Robot time!
 
@@ -129,8 +140,6 @@ We can then make them their code more *abstract* and *flexible* with **logic** a
 	
 (The idea is to engage people with an [easy task](http://pss.sagepub.com/content/early/2012/08/31/0956797612446024.abstract) before we challenge them with a demanding one)-->
 	
-
-
 ### Principles of Programming (PoP)
 
 There are lots of programming languages: JavaScript, Python, C, C++, Objective-C, Java, Ruby. 
@@ -179,254 +188,6 @@ if (canYouSee(target)) {
 }
 
 ``` -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Let's code
-
-Go to [this pen on CodePen](http://codepen.io/baddeo/pen/jPEMrG?editors=100) and ***fork** it* (a fork is like a photocopy, for code).
-
-We learned how to use the browser **Inspector** to see what's going on behind the scenes of any Web page, and study its HTML and CSS.
-
-We can do the same with JavaScript:
-
-1. Open the [debug version of this pen](http://s.codepen.io/baddeo/debug/jPEMrG)
-2. Right-click anywhere on that page, choose *Inspect Element*
-3. Click [**Console**](http://webmasters.stackexchange.com/a/77337) from the panel that will pop up
-
-![](assets/console.png)
-
-> It's like having a chat with your browser. Instead of English you'll write in JavaScript, the *native language* of your browser.
-
-It's important to stress that the Console is a **testing tool**, not a development tool. It's very useful to have an immediate response from the browser, to quickly test code (as well as testing our assumptions). But we write our actual programs in a code editor like CodePen (or [Sublime](http://www.sublimetext.com), [Brackets](http://brackets.io) etc).
-
-Before we write our app's JS code, let's get familiar with some of the [programming building blocks](#programming-building-blocks) by playing around with them for a bit in the Console. 
-
-
-### Manipulating HTML with JS
-
-A common scenario: we want to change the appearance of one or  more elements in our page *after* the user has clicked on another element (eg: turn an input box red if they made a mistake, or show a "success" message if everything went well). 
-
-CSS won't cut it, because CSS rules are applied when the page loads, and they can't change **dynamically** (when something happens *after* the page has loaded).
-
-We need JavaScript for this job.
-
-To *manipulate* HTML elements:
-
-1. We need to tell JS **what** to manipulate, ie we need to  *select* some element(s)
-2. Then we can tell JS **how** we want to manipulate the selected element(s), ie what *function* we want JS to apply to them
-
-
-#### 1. Selecting HTML elements
-
-We can use *native* JavaScript ways to select HTML elements, such as `document.getElementById('mystery-checkbox')`, or `document.getElementByTagName('button')` 
-
-A bit of a mouthful.
-
-We can use a tool called [jQuery](https://jquery.com) to write less code, more efficiently.
-
-##### Meet jQuery
-
-> [jQuery](https://jquery.com) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
-
-You may have heard of jQuery because of its *plugins* (image sliders, date pickers, colour pickers, form validators, image uploaders..) and maybe you've tried to mess around with those a bit.
-
-jQuery is open-source, **free** to download and use! [More than 60% of the top 10k websites globally use jQuery](http://trends.builtwith.com/javascript/jQuery).  
-
-jQuery uses **CSS-like selectors**, so for example if you want to manipulate a `button` element in your page, you can do it like this
-
-```js
-jQuery("button")
-// notice the capital Q
-// or..
-$("button")
-// $ is a shortcut for jQuery
-``` 
-... which is the equivalent of telling the browser to `select all h3 elements in the page` (similar to CSS)
-
-Let's type the following in the Console
-
-`$("h3")`
-
-..and then learn how to select other elements.
-
-
-#### 2. Applying functions to selected HTML elements
-
-Once we know how to instruct jQuery to get hold of elements in our HTML, we can tell jQuery to do something with them.
-
-```js
-$("button").hide();
-$("button").show();
-```
-
-[jQuery manual](http://api.jquery.com) (aka *API documentation*)
-
-
-### Making stuff happen on demand
-
-This is what makes *programming* languages so much more powerful than coding languages like HTML and CSS. 
-
-Programming has something to do with the *future*: you define instructions and *behaviour* that will happen in the future, *if* and *when* something specific happens.
-
-For example, we want an element in the page to hide only *when* we click on a button. Using jQuery, we can do it like this
-
-```js
-// $ is a shortcut for jQuery
-// jQuery("button") is the same as $("button")
-// select the button, and make it run the function doSomething when a "click" happens
-$("button").on("click", doSomething);
-
-// define the doSomething function
-function doSomething() {
-	$("h3").hide();
-}
-```
-
-<!--
-
-```javascript
-hello
-	Uncaught ReferenceError: hello is not defined
-"hello"
-	"hello"
-```
-
-Difference between words with **speech marks** (the browser simply parrots them) and words without speech marks 
-
-```javascript	
-var salutation = "hello"
-	undefined
-salutation
-	"hello"
-salutation = "hej"
-	"hej"
-salutation
-	"hej"
-```
-
-Using **variables** to get the browser to remember things.
-
-```javascript	
-alert("ciao")
-	undefined
-alert(salutation)
-	undefined
-prompt("How do you say hello in your language?")
-	"ciao"
-var userSalutation = prompt("How do you say hello?")
-	undefined
-userSalutation
-	"hola"
-```
-
-The browser can perform certain actions (aka **functions**) natively, like humans can natively breath, eg: `alert` and `prompt` 
-
-We can also teach the browser how to do stuff, by **defining our own functions**
-	
-```javascript	
-cat
-	Uncaught ReferenceError: cat is not defined
-var cat = {}
-	undefined
-cat.name = "Bill"
-	"Bill"
-cat
-	Object {name: "Bill"}
-```
-
-**Objects** are useful to keep things organised.
-
-```javascript	
-cat.meow = function(){ alert("MEOOOOOOW") }
-	function (){ alert("MEOOOOOOW") }
-cat.meow()
-	undefined
-cat.drink = function(beverage){ alert("I am drinking " + beverage) }
-	function (beverage){ alert("I am drinking " + beverage) }
-cat.drink("milk")
-	undefined
-cat.drink("tea")
-	undefined
-cat.drink("beer")
-	undefined
-```
-
-We can add pretty much anything to objects, including functions.
-
-Functions are useful to **make code reusable**. For instance, the action of *drinking* remains the same, no matter what you are drinking.-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Challenge
-
-<!--Go to jQuery Fundamentals and learn about [jQuery HTML manipulation](http://jqfundamentals.com/chapter/traversing-manipulating).
-
-[![](assets/jQuery-Fundamentals-editor.png)](http://jqfundamentals.com/chapter/traversing-manipulating)-->
-
-If you haven't done so already, go to [codepen.io/baddeo/pen/jPEMrG](http://codepen.io/baddeo/pen/jPEMrG?editors=100) and *fork it*.
-
-Make the following happen:
-
-1. Make the `h3` disappear (aka `hide`...)
-* Make the `h3` appear (aka...)
-* Make the dropdown menu (aka `select`) disappear 
-* Change the content of `h3` to whatever you like
-* Change the content of the `li` currently saying `CSS` to whatever you like (hint: what's `special` about that `li`?)
-* Untick the `checkbox`
-* Capture the `value` of the password input field and `alert` it
-* Change the content of `h3` to be the `value` of the password input field
-
-Remember: first you need to get jQuery to **select** the element(s) you are after (`$("what you want to select")`), then you **apply** some function to your selection (`.someFunctionName(parameter1, parameter2 etc)`)
-
-Also: Google is your friend :)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Back to the brief
 
@@ -571,8 +332,6 @@ Question: Should JS load data immediately or wait for user input? That is, shoul
 	}
 	```
 
-
-
 <!--
 
 1. Capture `input` value into `var`
@@ -585,469 +344,3 @@ Question: Should JS load data immediately or wait for user input? That is, shoul
 * `while` loop (Choc demo)
 * Template
 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Programming building blocks
-
-## Variables
-
-### When?
-
-Whenever you want a computer to **remember something**.
-
-### Why?
-
-Variables are useful because they let us write programs without knowing the data which will flow through them.
-
-```js
-// we don't know their name just yet, but we can define how to greet them
-function greet(name) {
-	alert("Hello " + name + "!");
-}
-// we store their name in a variable
-var userName = prompt("What's your name?");
-// and then we greet them using that variable
-greet(userName);
-```
-
-### How?
-
-To use a variable, we must 
-
-1. *declare* it: give it a **label**, let the computer know about the variable
-
-	`var myName;`
-2. *assign* it: give it a **value**, let the computer know what *value* we are storing in the variable
-
-	`myName = "Matteo";`
-
-#### How do we name them? 
-
-* Variable names should be **clear and meaningful**: `myName` is better than `n` or `name` 
-* Variable names should begin with letters, `$` or `_` and only contain letters, numbers, `$` and `_`
-* Variable names are **case sensitive**, which means that `myName` is different to `myname` or `MyName` or `MYNAME`
-* Variable names cannot be multiple words, so you can use [*camel case*](http://en.wikipedia.org/wiki/CamelCase) for  variables like `userTelephoneNumber`, instead of `usertelephonenumber`.
-
-
-## Objects
-
-### When?
-
-Whenever you want to store **related values** together.
-
-### Why?
-
-**Objects** are useful to keep things organised.
-
-### How?
-
-To create an object, we *declare* a variable as usual, and then we use *curly brackets* to surround **key-value** property pairs:
-
-```js
-var objectName = { 
-  propertyName: propertyValue,
-  propertyName: propertyValue,
-  ...
-};
-```
-
-For example
-
-```js
-var cat = 
-{
-	name: "Bruno",
-	age: 2,
-	meow: function() { 
-		alert("MEOOOOOOW"); 
-	},
-	drink: function(beverage) { 
-		alert("I am drinking " + beverage); 
-	}
-}
-```
-
-#### How do we access them?
-
-An object is not useful unless we can look inside it and grab the values of its properties. 
-
-We can do that in two ways:
-
-1. using *dot notation*, where we write the name of the variable, followed by a `.` and then the property name
-
-	`cat.name`
-	
-2. using *bracket notation*, where we write the variable name, then *square brackets* with the property name in speech marks
-
-	`cat["name"]`
-
-#### How do we change them?
-
-We can change the values of the object properties at any time during a program, using the *dot* or *bracket* notation.
-
-`cat.name = "Bob";`
-
-We can also add entirely new properties!
-
-`cat.colour = "brown";`
-
-## Functions
-
-### When?
-
-Whenever we want a computer to **do something**, like capturing an input, making a calculation, comparing data, answering a question, sending data, requesting data, drawing stuff on screen... anything.
-
-### Why?
-
-Functions are useful to **make code reusable and flexible**. For instance, the action of *drinking* remains the same, no matter what you are drinking.
-
-```js
-cat.drink = function(beverage) { 
-	alert("I am drinking " + beverage); 
-}
-// let the cat drink various drinks
-cat.drink("milk");
-cat.drink("tea");
-cat.drink("beer");
-```
-
-### How?
-
-To use a function, we must
-
-1. *declare* it: give it a **name** and teach the computer about the **steps** required to perform that action
-
-	```js
-	function meow() {
-		alert("MEOOOOOOW");
-	}
-	``` 
-2. *call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets*	
-
-	```js
-	meow();
-	// and again
-	meow();
-	```
-
-### Arguments
-
-`meow()` is a **reusable** function. How can we make it **flexible**?
-
-```js
-function meow(message) {
-	alert("MEOOOOOOW " + message);
-}
-// different messages
-meow("I'm hungry");
-meow("I need a nap");
-``` 
-
-The `message` is a **parameter**, that is a [variable](#variables) which lives inside the `meow` function.
-
-`I'm hungry` and `I need a nap` are called **arguments** ([don't argue, that's what they're called](http://programmers.stackexchange.com/questions/186293/why-are-actual-parameters-called-arguments)) and they are the actual values that we *pass* to a function.
-
-### What happens in a function, stays in a function
-
-There's another powerful thing we can do with functions: we can use them to take in some values, compute them, and then return a new value.
-
-```js
-function areYouAnAdult(age) {
-  var answer;
-  if (age < 18) answer = "no";
-  else answer = "yes";
-  return answer;
-};
-```
-
-`return` does two things: 
-
-1. it gives a value back to whoever asked for it 
-2. it immediately exits the function
-
-```js
-areYouAnAdult(16); // returns "no"
-areYouAnAdult(23); // returns "yes"
-```
-
-Without `return` we wouldn't know the answer!
-
-## APIs
-
-*Application Programming Interface*... wtf?
-
-### When?
-
-Whenever you want to use to use *3rd party* **data**, **software** or **hardware**.
-
-For example, if you want to embed a map to your app you can use the [Google Maps API](https://developers.google.com/maps), instead of programming a whole new mapping system from scratch.
-
-If you want to add a Twitter feed to your page you can use the [Twitter API](https://dev.twitter.com/rest/tools/console).
-
-If you want to use geographical information about  your users, you can use the [HTML5 geolocation API](http://www.w3schools.com/html/html5_geolocation.asp)
-
-### Why?
-
-> Instead of reinventing the wheel, you can borrow someone else's wheel...
-
-APIs work a bit like a library: 
-
-1. You go to the library **API provider**
-* You get a library card **API key**
-* You borrow books **data** using your API key
-* If you don't play by the rules, the librarian will prevent you from getting more books.
-
-For companies, providing APIs is beneficial for:
-
-* **branding**, eg getting a *Like* button on many other sites
-* **control**, eg Twitter control which data you can use from it, how much of it and how you can manipulate it 
-* **service improvement**, eg TFL published APIs for their transport data and developers created apps that help people plan their journeys more efficiently (which is good for TFL too)
-
-### How?
-
-You will have to **read the manual**.
-
-Data APIs work with URLs. We can use URLs to **GET data** and **POST data**.
-
-> Like calling a *function* over the Web..
-
-<!--* Data from the Web
-* Don't care what it looks like, just give me the data (see [The interface layer](https://medium.com/bridge-collection/the-interface-layer-when-design-commoditizes-tech-e7017872173a)) and I'll make it work and look proper
-* 
-* URLs to get and send data, examples-->
-
-
-* To **GET data** from Google Search
-
-	[https://www.google.co.uk/search**?q=banana**](https://www.google.co.uk/search?q=banana)
-	
-	We add `q=your+search+terms` to the URL and Google will return results for those terms
-	
-* To **GET data** from the [Gender API](https://gender-api.com)
-
-	[https://gender-api.com/**get?name=matteo**](https://gender-api.com/get?name=matteo)
-
-* Many more APIs on [MashAPE](https://www.mashape.com) 
-
-Every API is slightly different in syntax (which is why you have to read their manual), but the core method is the same: sending and receiving data via URLs
-
-## Arrays
-
-### When?
-
-When you want to store a list of things that have the **same data structure**.
-
-Data APIs often return **lists** of objects (a list of recipes, a list of photos, a list of posts etc).
-
-Each object contains different data, but has the same data structure.
-
-### Why?
-
-It's useful to have **consistent data structures** when you need to compare a lot of values quickly.
-
-We may want to compare them so that we can sort them (eg the most popular picture, or the recipe with the shortest preparation time).
-
-### How?
-
-To create an array, we declare a variable like we always do, but then we surround our list of values with *square brackets* and separate each value with a comma.
-
-To create an array of **numbers**
-```js
-var primeNumbers = [2, 3, 5, 7, 11, 13]; 
-// the list goes on but we stop here
-```
-
-We can store any sort of JavaScript value in an array, not just numbers. Here's an example where we make an array of **strings**
-
-```js
-var animals = ["antelope", "zebra", "cat", "dog"]; 
-// the list could go on
-```
-
-APIs often return arrays of **objects**
-
-```js
-	var people = [
-	{
-		name: 'Aimee',
-		likesPets: 'yes',
-		picture: 'http://example.com/aimee.jpg'
-	},
-	{
-		name: 'Yuki',
-		likesPets: 'no',
-		picture: 'http://example.com/yuki.png'
-	}
-];
-// the list could go on
-```
-
-#### How long?
-
-To know how long an array is, we can use its `length` property
-
-`recipes.length`
-
-#### How do we access them?
-
-To access a particular value in an array, we use its **index**, which represents its *position* in the array. 
-
-The first index in an array is `0`, so if we want to access the first element in an array, we specify the name of the array variable, then `0` in *square brackets*
-
-```js
-var animals = ["antelope", "zebra", "cat", "dog"]; 
-
-animals[0] // "antelope"
-animals[2] // "cat"
-```
-
-The **zero-based indexing** is one of the most confusing aspects of arrays for new programmers :scream_cat:
-
-#### How do we change them?
-
-To change a value
-
-```js 
-animals[1] = "crocodile";
-```
-
-We can also add entirely new values to them, using the `push()` function
-
-```js 
-animals.push("penguin");
-```
-
-
-## Loops
-
-### When?
-
-Whenever you want to take some action for every element in an array.
-
-### Why?
-
-Instead of writing (almost) the same code over and over, we can use a loop to **iterate through each element** in the array.
-
-### How?
-
-Loops are super-common in programming.
-
-```js
-var people = ["Danny","Chris","George","John","Paul","Ringo"];
-var counter = 0;
-var total = people.length;
-while (counter < total) {
-  var person = people[counter];
-  console.log(person);
-  counter = counter + 1;
-}
-```
-
-There are four ingredients to a loop:
-
-1. An `array`
-2. A `counter` variable, to keep track of the array element we're manipulating at each iteration of the loop
-3. A `while` statement, which keeps checking for a condition (in this case, whether the counter is smaller than the total number of elements in the array)
-
-	**While the condition is `true`** the computer will execute the code block inside `{ ... }`
-
-4. Don't forget to **increment** the `counter` at the end of the loop, otherwise you'd get a dreaded **infinite loop** (and your browser would probably crash).
-
-[![](assets/choc.png)](http://s.codepen.io/yukik/debug/oXNaMo)
-
-
-
-
-## Templating
-
-### When?
-
-Whenever you have *raw data* that needs to be *dressed up*. 
-
-### Why?
-
-[**Separation of concerns**](http://en.wikipedia.org/wiki/Separation_of_concerns): keep *data* separated from its *presentation*.
-
-### How?
-
-```js
-// this function is like an HTML sausage machine
-// pass in some person data
-// and it will return an HTML list item wrapped around that data
-function getPersonListItem (person) {
-
-	// create a variable to store the HTML code
-    // we put the static (non variable) bits in speech marks
-    // and the variable bits outside of speech marks
-    var li = "<li>"
-        + "<h3>" + person.name + "</h3>"
-        + "</li>"
-
-    return li 
-}
-```
