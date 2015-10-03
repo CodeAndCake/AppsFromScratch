@@ -152,8 +152,9 @@ UX design is about effectively addressing the needs and circumstances of your us
 
 ### What is good design?
 
-Even though it looks gorgeous, it's not doing well what is made for. 
-Hot Bertaa good example of bad user experience design.
+Even though it looks gorgeous, it's not doing well what is made for.
+ 
+Hot Berta is good example of bad user experience design.
 
 ![](assets/Hot-Bertaa.png)
 
@@ -181,7 +182,7 @@ Sketch using pen and paper, write down different scenarios and *user journeys*.
 
 #### Collaborate 
 
-Ask other team, specialist, users, your idea. 
+Ask other team, specialist, users. 
 
 More brains are better than one.
 

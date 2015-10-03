@@ -12,8 +12,11 @@
 1. How long does it take to make an app? 
 * [What is **programming**?](#programming-vs-coding)
 * Introduction to **JavaScript**: connect your app to an online database 
-* Work together to generate, spec out and test your **ideas** 
-* **UX research**: interview people (aka users)
+* Work together to [generate, spec out and test your **ideas**](#choose-a-theme) 
+* **UX research**: [interview people (aka users)](#who-are-your-users)
+
+<!--* [Wireframing](#speed-sketch-your-ideas)-->
+
 
 
 ### **How long** does it take to make an **app**?
@@ -346,3 +349,89 @@ Let's play out the app behaviour.
 * `while` loop (Choc demo)
 * Template
 -->
+
+
+
+# Choose a theme
+
+A theme is something that you are passionate about, an issue that needs your help, or a problem that you notice in your community that resonates with you.
+
+Example: *Create an app that helps your community learn about or contribute to {your project}.*
+
+Start **brainstorming** some project ideas with your partner.
+ 
+* Keep it simple and focus on solving a **single need**.
+* **Don't spend too long** on any one idea because you will have time to further discuss your ideas later.
+* Stay with the theme you choose.
+* Share a few ideas with each other now and take note of them for later.
+
+
+
+
+# Who are your users?
+
+### Good practices for interviewing
+
+1. **Plan**: prepare a script, know what to ask, and who to ask.
+2. Recruit **strangers**. Because [homophily](http://en.wikipedia.org/wiki/Homophily)
+3. [IF POSSIBLE] Go to **their place**, in a space where they're comfortable, best if the space where they use the product(s) you want to test / talk about. Let them show you around.
+4. Easier if you interview **pairs** of users: they'll be less anxious.
+5. **Listen**. Don't talk about yourself.
+6. Be comfortable with **silence**: give people time and space to answer your question.
+7. Be ready to **be challenged** and improvise.
+8. Avoid **leading questions**. Try not to bias your interviewees.
+
+	bad > `How much do you love using FB?`
+	
+	good > `Tell me about your most recent FB experience` (more concrete & memorable)
+	
+9. Avoid **closed questions**.
+
+	bad > `Do you order A, B or C?`
+	
+	good > `How do you choose food when going out?`
+	
+10. Try **casual requests** instead of questions. For instance, instead of asking `How do you store your photos?` consider asking them to show you how they store photos.
+    
+   
+   
+<!--Question examples:
+
+* How did you first learn about `insert your topic`?
+* How were you motivated to become involved in `insert your topic`?
+* Tell me more about that experience. What do you remember most about it?
+* (if the user has started telling you about a relevant experience) What did you enjoy most? What didn't you enjoy about it?
+* What kinds of problems do you or your community commonly see in your experience? Have you thought about how you would solve it?   --> 
+    
+### Interview analysis
+
+* Take 5 minute to write 4-5 important observations on post-its notes about what people said and place them on the wall.
+* What are the common themes you see emerge?
+* What are the common problems you heard/observed?
+* Did any of the findings make you start to think differently about your community and the problems you may have already been designing for?
+
+You should now understand a little more about how interviewing your potential app users can be helpful and have some tools to help you go out interview your community. 
+
+It takes some practice, but don't let that slow you down! 
+
+**Repeat this activity with new potential users.** 
+
+The more you know about your community and potential audience, the more you can respond by creating something valuable for them.
+
+
+
+# Speed-sketch your ideas
+
+* The goal is to get something down on paper, but not get too caught up in the details. 
+
+* This is to help visualise some of your ideas. 
+
+* Don't overthink the ideas or censor your thoughts. 
+
+* The quality of your drawings and handwriting doesn't matter either.
+
+![](http://www.interfacesketch.com/previews/web-browser-template.png)
+
+![](http://www.interfacesketch.com/previews/iphone6.png)
+
+Printable wireframing templates from [InterfaceSketch](http://www.interfacesketch.com)
