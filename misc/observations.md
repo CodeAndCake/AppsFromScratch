@@ -6,7 +6,7 @@
 
 * Introduce the mindset of ***seeing behind the scenes***, having a way to understand what's going on so that we can hack/fix it.
 
-# Session 1
+# Day 1
 
 ### What went well
 
@@ -37,5 +37,27 @@
 -->
 
 
+# Day 2
 
+### What went well
+
+* Having multiple lecturer let them think that it's not just one way but gave them multiple perspectives.
+* Engaged by the playful demonstration
+* Felt involved with team work. 
+* Didn't feel scared to say things.
+* Balance between coding practice and process learning is well balanced
+
+
+### Areas for improvement
+
+* Being open space could distract them when there are someone talking outside class.
+* It would be nice if the tables are easier to move around.
+* Want to try something easier which is more rewarding (possibly something more visual or sound, playful)
+
+### Action points
+
+* Find fun activities for end of day
+* How to market your app and idea? (Find where we can direct them to another resources)
+* Resources / links: jQuery courses etc.
+* JS library: how do you know if thats good library?
 
