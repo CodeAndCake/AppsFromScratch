@@ -43,21 +43,23 @@ In 3 days you will **get started** with design and code and by the end you will:
 * Coding: writing code
 * Programming: designing a list of instructions to get something done (aka **algorithm**) and then coding such instructions
 
-[What's an algorithm?](http://www.bbc.co.uk/guides/z3whpv4#zyfwjxs)
+<!--[What's an algorithm?](http://www.bbc.co.uk/guides/z3whpv4#zyfwjxs)
 
 * Computers can code.
-* Computers can't program. People can.
+* Computers can't program. People can.-->
 
-### Programming is a **way of thinking**
+### Programming requires us to **think** in a certain way
 
 Before we learn how to *code* a program, we should learn how to *think* about problems and solutions.
 
 ### **Computational thinking** 
 
-* Not thinking like computers. Do computers think anyway? 
-* Solving problems for **people**, using **code**.
+<!--* Not thinking like computers. Do computers think anyway? -->
 
-It is about using code creatively to solve real-world problems, to **break down behaviours** in specific and precise ways that can be communicated to other people, and eventually to computers.
+* Solving problems for **people**, using **code**.
+* Thinking about solutions and breaking them down into **step-by-step instructions**.
+
+<!--It is about using code creatively to solve real-world problems, to **break down behaviours** in specific and precise ways that can be communicated to other people, and eventually to computers.-->
 
 ### Programming languages
 
@@ -140,7 +142,7 @@ We can then make them their code more *abstract* and *flexible* with **logic** a
 	
 (The idea is to engage people with an [easy task](http://pss.sagepub.com/content/early/2012/08/31/0956797612446024.abstract) before we challenge them with a demanding one)-->
 	
-### Principles of Programming (PoP)
+### Principles of Programming
 
 There are lots of programming languages: JavaScript, Python, C, C++, Objective-C, Java, Ruby. 
 
@@ -203,14 +205,14 @@ We need four volunteers (and post-its).
 
 1. The user (talks only to HTML)
 2. The HTML character (talks only to the user, on request)
-3. The JS character (can talk to both HTML and API)
-4. The API character (talks only to JS, on request)
+3. The JS character (can talk to both HTML and database)
+4. The database character (talks only to JS, on request)
 
 HTML and JS are siblings or colleagues (they are part of the same app) so they should stand closer, maybe hold hands :)
 
 Let's play out the app behaviour. 
 
-Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?
+<!--Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?-->
 
 <!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
 
