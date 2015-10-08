@@ -25,11 +25,11 @@
 
 			// we want to receive JSON, which is a JavaScript data format
 			dataType: 'json',
-			
+
 			// what to do when the API responds with some data
 			success: function(responseJSON)  {
 				// at this point we can call the callback function
-				successFunction(responseJSON)            
+				successFunction(responseJSON)
 			}
 		})
 	}
@@ -46,6 +46,7 @@
 		// while loop
 		var counter = 0;
 		var total = rows.length;
+
 
 		while (counter < total) {
 
@@ -65,7 +66,7 @@
 		// 	data.push(person) // store this in the main data array
 		// })
 
-		console.log(data)
+		console.log(peoplesList)
 	}
 
 	function extractPerson (row) {
@@ -92,7 +93,7 @@
 
 		var filteredData = [] // an empty array
 
-		// loop through data 
+		// loop through data
 		var counter = 0;
 		var total = peoplesList.length;
 
@@ -104,10 +105,10 @@
 				// we wouldn't give our pet to someone who dislikes them would we?
 				if (person.likesPets == 'yes') {
 					filteredData.push(person)
-				}	
+				}
 			}
 		}
-		
+
 
 		return filteredData
 	}
@@ -120,7 +121,7 @@
 		{
 			// we don't need to sort the data
 			return data
-		}	
+		}
 
 		return sortedData
 	}
@@ -129,22 +130,22 @@
 
 	function displayData (data) {
 
-		// loop through data 
+		// loop through data
 		var counter = 0;
 		var total = data.length;
 
 		while (counter < total) {
-			
+
 			var person = data[counter];
-			
+
  			var li = getPersonListItem(person)
-		
+
 			// append the list item to our HTML
 			$('ul').append(li)
-			
+
 			counter += 1;
 		}
-	 
+
 	}
 
 	// this function is like an HTML sausage machine
@@ -159,12 +160,12 @@
 			+ "<h3>" + person.name + "</h3>"
 			+ "</li>"
 
-		return li 
+		return li
 	}
 
 
-// When should we kick off the whole thing? 
-// When people click on the button	
+// When should we kick off the whole thing?
+// When people click on the button
 
 	// use jQuery to select the button
 	// 'listen' for when the button is clicked
