@@ -1,6 +1,6 @@
 // Load data and store it in the app memory
 
-	var data = [] // let's create an empty array
+	var peoplesList = [] // let's create an empty array
 
 	// build the spreadsheet URL
 	// see the manual here https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en
@@ -34,36 +34,36 @@
 		})
 	}
 
-	function storeData (json) {
+	function storeData (jsonFile) {
 
 		// from the whole json object, we only want to extract certain bits
 
-		// first we isolate the list of spreadsheet rows
-		var rows = json.feed.entry
+		// first we select the list of spreadsheet rows
+		var rows = jsonFile.feed.entry
 
 		// then we loop through the rows and extract the info we need
 
-			// while loop
-			/*var counter = 0;
-			var total = rows.length;
+		// while loop
+		var counter = 0;
+		var total = rows.length;
 
-			while (counter < total) {
+		while (counter < total) {
 
-				var row = rows[counter]
-				var person = extractPerson(row)
-				data.push(person) // store this in the main data array
+			var row = rows[counter]
+			var person = extractPerson(row)
+			peoplesList.push(person) // store this in the main data array
 
-				// increment the counter
-				// to avoid infinite loops
-				counter = counter + 1;
-			}*/
+			// increment the counter
+			// to avoid infinite loops
+			counter = counter + 1;
+		}
 
-			// for loop
-			rows.forEach(function(row)
-			{
-				var person = extractPerson(row)
-				data.push(person) // store this in the main data array
-			})
+		// for loop
+		// rows.forEach(function(row)
+		// {
+		// 	var person = extractPerson(row)
+		// 	data.push(person) // store this in the main data array
+		// })
 
 		console.log(data)
 	}
@@ -78,7 +78,7 @@
 		return person
 	}
 
-// Capture user input
+	// Capture user input
 
 	function getSelectedOption() {
 
@@ -86,24 +86,28 @@
 		return selectedOption
 	}
 
-// Filter and sort data according to user choices
+	// Filter and sort data according to user choices
 
 	function filterData(data, option) {
 
 		var filteredData = [] // an empty array
 
 		// loop through data 
-		data.forEach(function(person) {
+		var counter = 0;
+		var total = peoplesList.length;
 
-			if (option == 'Keep my pet')
+		while (counter < total) {
+ 			if (option == 'Keep my pet')
 			{
+				var person = peoplesList[counter];
 				// add rows to filteredData only if likesPets is 'yes'
 				// we wouldn't give our pet to someone who dislikes them would we?
 				if (person.likesPets == 'yes') {
 					filteredData.push(person)
 				}	
-			}	
-		})
+			}
+		}
+		
 
 		return filteredData
 	}
@@ -126,15 +130,21 @@
 	function displayData (data) {
 
 		// loop through data 
-		data.forEach(function(person) {
+		var counter = 0;
+		var total = data.length;
 
-			// use the template function to get a list item
-			var li = getPersonListItem(person)
+		while (counter < total) {
+			
+			var person = data[counter];
+			
+ 			var li = getPersonListItem(person)
 		
 			// append the list item to our HTML
 			$('ul').append(li)
-
-		})
+			
+			counter += 1;
+		}
+	 
 	}
 
 	// this function is like an HTML sausage machine
@@ -164,7 +174,7 @@
 		var selectedOption = getSelectedOption()
 
 		// filter and then sort the data
-		var filteredData = filterData(data, selectedOption)
+		var filteredData = filterData(peoplesList, selectedOption)
 		var sortedData = sortData(filteredData, selectedOption)
 
 		console.log(sortedData)
