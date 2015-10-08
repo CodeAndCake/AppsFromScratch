@@ -1,4 +1,4 @@
-// Load data and store it in the app memory
+    // Load data and store it in the app memory
 
 	var peoplesList = [] // let's create an empty array
 
@@ -10,7 +10,29 @@
 
 	console.log(spreadsheetURL)
 
-	loadData(spreadsheetURL, storeData)
+    // When should we kick off the whole thing?
+    // When people click on the button
+
+    // use jQuery to select the button
+    // 'listen' for when the button is clicked
+    $('button').on('click', function() {
+
+        // get user input
+        var selectedOption = getSelectedOption()
+
+        // filter and then sort the data
+        var filteredData = filterList(peoplesList,  selectedOption)
+        var sortedData = sortList(filteredData,  selectedOption)
+
+        console.log(sortedData)
+        // display filtered+sorted data
+        displayData(sortedData)
+
+    })
+
+
+    loadData(spreadsheetURL, storeData)
+
 
 	function loadData (url, successFunction) {
 
@@ -89,7 +111,7 @@
 
 	// Filter and sort data according to user choices
 
-	function filterData(data, option) {
+	function filterList(data, option) {
 
 		var filteredData = [] // an empty array
 
@@ -107,13 +129,15 @@
 					filteredData.push(person)
 				}
 			}
+
+            counter = counter + 1;
 		}
 
 
 		return filteredData
 	}
 
-	function sortData(data, option) {
+	function sortList(data, option) {
 
 		var sortedData = [] // an empty array
 
@@ -126,24 +150,24 @@
 		return sortedData
 	}
 
-// Display filtered+sorted data
+    // Display filtered+sorted data
 
 	function displayData (data) {
 
 		// loop through data
 		var counter = 0;
-		var total = data.length;
+		var total = data.length
 
 		while (counter < total) {
 
-			var person = data[counter];
+			var person = data[counter]
 
  			var li = getPersonListItem(person)
 
 			// append the list item to our HTML
 			$('ul').append(li)
 
-			counter += 1;
+			counter = counter + 1
 		}
 
 	}
@@ -164,22 +188,4 @@
 	}
 
 
-// When should we kick off the whole thing?
-// When people click on the button
 
-	// use jQuery to select the button
-	// 'listen' for when the button is clicked
-	$('button').on('click', function() {
-
-		// get user input
-		var selectedOption = getSelectedOption()
-
-		// filter and then sort the data
-		var filteredData = filterData(peoplesList, selectedOption)
-		var sortedData = sortData(filteredData, selectedOption)
-
-		console.log(sortedData)
-
-		// display filtered+sorted data
-		displayData(sortedData)
-	})
