@@ -1,6 +1,6 @@
     // Load data and store it in the app memory
 
-	var peoplesList = [] // let's create an empty array
+	var peopleList = [] // let's create an empty array
 
 	// build the spreadsheet URL
 	// see the manual here https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en
@@ -21,7 +21,7 @@
         var selectedOption = getSelectedOption()
 
         // filter people by user selection
-        var filteredList = getFilterList(peoplesList,  selectedOption)
+        var filteredList = getFilteredList(peopleList,  selectedOption)
 
         // sort people by user selection
         var sortedList = getSortedList(filteredList,  selectedOption)
@@ -75,7 +75,7 @@
 
 			var row = rows[counter]
 			var person = extractPerson(row)
-			peoplesList.push(person) // store this in the main data array
+			peopleList.push(person) // store this in the main data array
 
 			// increment the counter
 			// to avoid infinite loops
@@ -89,7 +89,7 @@
 		// 	data.push(person) // store this in the main data array
 		// })
 
-		console.log(peoplesList)
+		console.log(peopleList)
 	}
 
 	function extractPerson (row) {
@@ -110,20 +110,20 @@
 		return selectedOption
 	}
 
-	// Filter and sort data according to user choices
+	// Filter and sort fromList according to user choices
 
-	function getFilterList(data, option) {
+	function getFilteredList(fromList, filterCriteria) {
 
 		var filteredList = [] // an empty array
 
-		// loop through data
+		// loop through fromList
 		var counter = 0;
-		var total = peoplesList.length;
+		var total = fromList.length;
 
 		while (counter < total) {
- 			if (option == 'Keep my pet')
+ 			if (filterCriteria == 'Keep my pet')
 			{
-				var person = peoplesList[counter];
+				var person = fromList[counter];
 				// add rows to filteredList only if likesPets is 'yes'
 				// we wouldn't give our pet to someone who dislikes them would we?
 				if (person.likesPets == 'yes') {
@@ -138,14 +138,14 @@
 		return filteredList
 	}
 
-	function getSortedList(list, option) {
+	function getSortedList(fromList, sortCriteria) {
 
 		var sortedList = [] // an empty array
 
-		if (option == 'Keep my pet')
+		if (sortCriteria == 'Keep my pet')
 		{
-			// we don't need to sort the list
-			return list
+			// we don't need to sort the fromList
+			return fromList
 		}
 
 		return sortedList
