@@ -21,12 +21,12 @@
         var selectedOption = getSelectedOption()
 
         // filter and then sort the data
-        var filteredData = filterList(peoplesList,  selectedOption)
-        var sortedData = sortList(filteredData,  selectedOption)
+        var filteredList = filterList(peoplesList,  selectedOption)
+        var sortedList = sortList(filteredList,  selectedOption)
 
-        console.log(sortedData)
+        console.log(sortedList)
         // display filtered+sorted data
-        displayData(sortedData)
+        displayList(sortedList)
 
     })
 
@@ -113,7 +113,7 @@
 
 	function filterList(data, option) {
 
-		var filteredData = [] // an empty array
+		var filteredList = [] // an empty array
 
 		// loop through data
 		var counter = 0;
@@ -123,10 +123,10 @@
  			if (option == 'Keep my pet')
 			{
 				var person = peoplesList[counter];
-				// add rows to filteredData only if likesPets is 'yes'
+				// add rows to filteredList only if likesPets is 'yes'
 				// we wouldn't give our pet to someone who dislikes them would we?
 				if (person.likesPets == 'yes') {
-					filteredData.push(person)
+					filteredList.push(person)
 				}
 			}
 
@@ -134,33 +134,33 @@
 		}
 
 
-		return filteredData
+		return filteredList
 	}
 
-	function sortList(data, option) {
+	function sortList(list, option) {
 
-		var sortedData = [] // an empty array
+		var sortedList = [] // an empty array
 
 		if (option == 'Keep my pet')
 		{
-			// we don't need to sort the data
-			return data
+			// we don't need to sort the list
+			return list
 		}
 
-		return sortedData
+		return sortedList
 	}
 
-    // Display filtered+sorted data
+    // Display filtered+sorted list
 
-	function displayData (data) {
+	function displayList (list) {
 
-		// loop through data
+		// loop through list
 		var counter = 0;
-		var total = data.length
+		var total = list.length
 
 		while (counter < total) {
 
-			var person = data[counter]
+			var person = list[counter]
 
  			var li = getPersonListItem(person)
 
