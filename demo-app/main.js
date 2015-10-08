@@ -20,11 +20,12 @@
         // get user input
         var selectedOption = getSelectedOption()
 
-        // filter and then sort the data
-        var filteredList = filterList(peoplesList,  selectedOption)
-        var sortedList = sortList(filteredList,  selectedOption)
+        // filter people by user selection
+        var filteredList = getFilterList(peoplesList,  selectedOption)
 
-        console.log(sortedList)
+        // sort people by user selection
+        var sortedList = getSortedList(filteredList,  selectedOption)
+
         // display filtered+sorted data
         displayList(sortedList)
 
@@ -111,7 +112,7 @@
 
 	// Filter and sort data according to user choices
 
-	function filterList(data, option) {
+	function getFilterList(data, option) {
 
 		var filteredList = [] // an empty array
 
@@ -137,7 +138,7 @@
 		return filteredList
 	}
 
-	function sortList(list, option) {
+	function getSortedList(list, option) {
 
 		var sortedList = [] // an empty array
 
