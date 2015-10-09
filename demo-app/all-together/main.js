@@ -31,9 +31,7 @@
 
     })
 
-
     loadData(spreadsheetURL, storeData)
-
 
 	function loadData (url, successFunction) {
 
