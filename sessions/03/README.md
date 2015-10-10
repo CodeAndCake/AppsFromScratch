@@ -1,132 +1,128 @@
 # Apps from scratch, day 3
 
-Key questions:
+1. **JavaScript**: [get our app to display data](#lets-code)
+* [What is good design?]()  
+* [Designing behaviours](#designing-behaviours) 
+* [Wireframing](#wireframes)
+
+
+# Let's code
+
+> Make an app that helps people sort through heaps of data to **find who/what they are looking for** (eg: people in their community to do something together).
+
+### 1. Break down the problem
+
+1. Load data and store it in the app memory
+* Capture user input
+* Filter and sort data according to user choices
+* Display filtered+sorted data
+
+### 2. Code the algorithms
+
+1. **Load data and store it in the app memory**
+	
+	* We need to know where to load data from, that is we need a **URL**. You can think of it as the address or phone number of your data..
+	
+	* Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
+	
+		```js
+		var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + worksheet + '/public/values?alt=json'
+		```
+	
+	See the [manual here](https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en)
+	
+	* Copy-paste the URL into a new browser tab to check if it works and what data we're receiving from it
+	
+	* Integrate [loadData function](../../demo-app/loadData.js) to load data from a URL (we don't have to reinvent the wheel)
+	
+	* *Call* `loadData` and tell it where to ask for data (`spreadsheetURL`) and what to do once data is loaded (`getPeopleList`)
+		```js
+		loadData(spreadsheetURL, getPeopleList)
+		```
+	* Integrate [getPeopleList function](../../demo-app/getPeopleList.js)
+	
+		Introducing [arrays](#arrays) and [loops](#loops)
+	
+2. Capture user input
+
+	* We can use jQuery to get the selected option. Let's try it in the console first
+	
+	```js
+	$('select') // will grab the whole dropdown element
+	$('select option:selected') // will grab the selected option from the dropdown
+	$('select option:selected').val() // will return only the value (or text) for the selected option
+	```
+	
+	* Let's create a reusable function to get the selected option
+	
+	```js
+	function getSelectedOption() {
+
+		var selectedOption = $('select option:selected').val()
+		return selectedOption
+	}
+	```
+	
+	* **When** do we need to capture the selected option? When one presses the `button`.
+	
+	Let's teach our app to do that
+	
+	```js
+	$('button').on('click', function() {
+		var selectedOption = getSelectedOption()
+		// and then we need to sort, filter and display data
+	})
+	```
+
+3. Filter and sort data according to user choices
+
+	```js
+	function filterData(data, option) {
+
+		var filteredData = [] // an empty array
+		
+		// loop through data
+		data.forEach(function(person) {
+			
+			// depending on option, we add rows to filteredData
+			// for example, if option is "Keep my pet" we add rows to filteredData only if person.likesPets is 'yes'
+			// we wouldn't give our pet to someone who dislikes them would we?
+			
+			if (option == 'Keep my pet') {
+				if (person.likesPets == 'yes') {
+					filteredData.push(person)
+				}	
+			}
+			// TODO check the other options..
+		})
+
+		return filteredData
+	}
+	```
+
+4. Display filtered+sorted data
  
-* What is an *app*? 
-* How do you *design* one?
+	```js
+	function displayData (data) {
 
+		// loop through data 
+		data.forEach(function(person) {
 
-### AM
+			// use the template function to get a list item
+        	var li = getPersonListItem(person)
+        
+        	// append the list item to our HTML
+        	$('ul').append(li)
 
-1. [Debugging](#debugging)
-* [Challenge](#debugging-challenge)!
-* [Recipes app](#recipes-app)
-
-### [PM](#afternoon)
-
-* [What is design?](#what-is-design)
-* [Brainstorming](#choose-a-theme)
-* [Who are your users](#who-are-your-users) (speed interviews)
-* [Wireframing](#speed-sketch-your-ideas)
-
-
-
-
-
-# Debugging
-
-Why *debugging*? So the [story goes](http://en.wikipedia.org/wiki/Debugging#Origin): one morning Grace Hopper found an actual bug stuck in one of the relays of a computer she was working on...
-
-![](assets/grace-moth.jpg)
-
-When programming, things don't always go as expected.
-
-Imagine yourself as a *scientist*: you formulate a **hypothesis** about how the computer is going to interpret and execute your code. When you test that code, your hypothesis doesn't yield the results you're expecting.
-
-For example, you're expecting a `function` to be triggered when someone clicks a `button`. When you click that button, nothing happens.. or even worst, the button click trigger works for you but not for your friend / colleague / client!
-
-What to do?
-
-### 1. Find a way to reproduce the problem
-
-What are the steps required to make the bug **happen consistently**? 
-	
-Is there any particular hardware / software configuration for the bug to surface? Eg: it only happens on iOS devices, or Internet Explorer 9
-	
-### 2. Track down the origin of the problem
-
-You may have to simplify your code, for instance creating a reduced version of your program with only a few lines from the original source code, where the bug still happens.
-	
-This **removes complexity** and prevents us from being side-tracked by unrelated issues.
-	
-### 3. Study the problem
-
-This is the crucial part. No matter which language you're programming in, it's essential to have a strategy for *seeing the state* of your program when it executes.
-	
-If you use JavaScript and debug your code in a Web browser, you can use the [Console](http://webmasters.stackexchange.com/a/77337) and [breakpoints](https://developer.chrome.com/devtools/docs/javascript-debugging) to see the state of your program. 
-	
-* If you have a **syntax error**, the Console will tell you where that error is (file name and line number), as well as a semi-useful indication of what the error may be
-```
-Uncaught SyntaxError: Unexpected end of input       main.js:5
-```	
-
-* If you have a **data error**, the Console will tell you where that error is (file name and line number), as well as a semi-useful indication of what the error may be
-```
-Uncaught ReferenceError: jQuery is not defined       main.js:25
-```	
-
-* If you have a **conceptual error** (nothing is technically wrong but things are not happening as expected) you can use `console.log(someVariable)` and/or [**breakpoints**](https://developer.chrome.com/devtools/docs/javascript-debugging) to see if the program is hitting a certain point of execution, and if your program is being fed the expected data.
-
-![](assets/javascript-debugging-overview.jpg)
-
-
-
-### 4. Ask Google
-
-See if someone else had (and hopefully fixed) the same problem.
-
-The more **specific** you are about your problem, the more **relevant** results you should find. Especially on places like [StackOverflow](http://stackoverflow.com).
-
-### 5. Lather, rinse and repeat	
-
-
-# Debugging challenge
-
-Your turn!
-
-Go to [this pen on CodePen](http://codepen.io/baddeo/pen/YXPpwV?editors=001) and **fork** it (a fork is like a photocopy, for code).
-
-[![](assets/jquery-challenge.jpg)](http://codepen.io/baddeo/pen/YXPpwV?editors=001)
-
-1. Open the *debug* version of your forked pen
-2. Right-click anywhere on that page, choose *Inspect Element*
-3. Click [**Console**](http://webmasters.stackexchange.com/a/77337) from the panel that will pop up
-
-There are **6 challenges** for you to solve!
-
-
-
-
-# Recipes app
-
-Let's finish the [recipes app](http://codepen.io/baddeo/pen/XbrRRp?editors=001)
-
-What's missing:
-
-1. Search for recipes using an [API](../02/README.md#apis)
-* [Loop through](../sessions/02/README.md#loops) the results from the API
-* [Display recipes](../sessions/02/README.md#templating)
-* [BONUS] Clear previous search results 
-* [BONUS] Tell people [something is happening]([visibility of system status](http://www.nngroup.com/articles/ten-usability-heuristics/)) after they hit the *Search* button
-* anything else?
+		})
+	}
+	```
 
 
 
 
 
 
-
-
-
-
-
-<!--# Afternoon
-
-1. (15m) [Presentation ](#presentation)
-2. (5m) Form groups of 2 people
-3. (20m) [Choose a theme, Choose a goal](#choose-a-theme) and brainstorm ideas around it
-4. (30m) [Who are your users](#who-are-your-users): interview other groups about your goal
-5. (30m) [Wireframes](#speed-sketch-your-ideas)-->
 
 
 
@@ -204,89 +200,132 @@ It's not end of the process.
 
 
 
-# Choose a theme
-
-A theme is something that you are passionate about, an issue that needs your help, or a problem that you notice in your community that resonates with you.
-
-Example: *Create an app that helps your community learn about or contribute to {your project}.*
-
-Start **brainstorming** some project ideas with your partner.
- 
-* Keep it simple and focus on solving a **single need**.
-* **Don't spend too long** on any one idea because you will have time to further discuss your ideas later.
-* Stay with the theme you choose.
-* Share a few ideas with each other now and take note of them for later.
 
 
 
 
-# Who are your users?
 
-### Good practices for interviewing
 
-1. **Plan**: prepare a script, know what to ask, and who to ask.
-2. Recruit **strangers**. Because [homophily](http://en.wikipedia.org/wiki/Homophily)
-3. [IF POSSIBLE] Go to **their place**, in a space where they're comfortable, best if the space where they use the product(s) you want to test / talk about. Let them show you around.
-4. Easier if you interview **pairs** of users: they'll be less anxious.
-5. **Listen**. Don't talk about yourself.
-6. Be comfortable with **silence**: give people time and space to answer your question.
-7. Be ready to **be challenged** and improvise.
-8. Avoid **leading questions**. Try not to bias your interviewees.
+# Designing behaviours
 
-	bad > `How much do you love using FB?`
+Not just interfaces.
+
+We deal with interfaces, tools and devices, but what we design, ultimately, are **human behaviours**. 
+
+We design means to **enforce**, **prevent** or **facilitate** behaviours.
+
+### Persuasive interfaces
+
+[![](http://goodui.org/images/idea009.png)](http://goodui.org/#9 "Telling who it's for instead of targeting everyone")
+
+[![](http://goodui.org/images/idea004.png)](http://goodui.org/#4 "Social proof > testimonials")
+
+[![](http://goodui.org/images/idea018.png)](http://goodui.org/#18 "Benefit Buttons instead of just task based ones")
+
+[![](http://goodui.org/images/idea007.png)](http://goodui.org/#7 "Recommending instead of showing equal choices")
+
+[![](http://goodui.org/images/idea030.png)](http://goodui.org/#30 "Loss Aversion instead of emphasizing gains")
+
+[![](http://goodui.org/images/idea035.png)](http://goodui.org/#35 "Urgency instead of timelessness")
+
+[![](http://goodui.org/images/idea036.png)](http://goodui.org/#36 "Scarcity instead of abundance")
+
+[![](http://goodui.org/images/idea041.png)](http://goodui.org/#41 "Anchoring instead of starting with the price")
+
+[![](http://goodui.org/images/idea044.png)](http://goodui.org/#44 "Smaller Commitments instead of one big one")
+
+
+### Engaging interfaces
+
+[![](http://goodui.org/images/idea048.png)](http://goodui.org/#48 "Natural Language instead of dry text")
+
+[![](http://goodui.org/images/idea013.png)](http://goodui.org/#13 "Just enough input > gradual engagement")
+
+[![](http://goodui.org/images/idea037.png)](http://goodui.org/#37 "Recognition instead of recall")
+
+[![](http://goodui.org/images/idea014.png)](http://goodui.org/#14 "Exposing Options instead of hiding them")
+
+[![](http://goodui.org/images/idea033.png)](http://goodui.org/#33 "Inline Validation instead of out-of-context errors")
+
+[![](http://goodui.org/images/idea025.png)](http://goodui.org/#25 "Designing For Zero Data instead of just data heavy cases.")
+
+[![](http://goodui.org/images/idea053.png)](http://goodui.org/#53 "Useful Calculations instead of asking to do math")
+
+[![](http://goodui.org/images/idea008.png)](http://goodui.org/#8 "Undos instead of prompting for confirmation")
+
+[![](http://goodui.org/images/idea052.png)](http://goodui.org/#52 "Thanking instead of simply confirming completion")
+
+[![](http://goodui.org/images/idea058.png)](http://goodui.org/#58 "Set Collections instead of independent items")
+
+[![](http://goodui.org/images/idea023.png)](http://goodui.org/#23 "Fewer Borders instead of wasting attention")
+
+[![](http://goodui.org/images/idea047.png)](http://goodui.org/#47 "Icon Labels instead of opening for interpretation")
+
+Also, check out animated examples of design patterns at [UseYourInterface](http://useyourinterface.com)
+
+
+
+
+
+
+
+
+
+
+
+# Wireframes
+
+Is *this* a wireframe?
+
+![](assets/wireframe-example2.png)
+
+Is *this* a wireframe?
+
+![](assets/not-a-wireframe-example.jpg)
+
+Is *this* a wireframe?
+
+![](assets/wireframe-bullshit.jpg)
+
+Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
+
+* Wireframes are about **communicating your ideas**.
+
+* They are about **content**, **context** and **interaction**. 
+
+	Use **real content**, not *lorem ipsum*. 
 	
-	good > `Tell me about your most recent FB experience` (more concrete & memorable)
+	**Words** are key. [Interface design is copywriting](https://gettingreal.37signals.com/ch09_Copywriting_is_Interface_Design.php)
 	
-9. Avoid **closed questions**.
+	Think about **button labels**, how do you label user actions: is it `Share` or `Post` or `Publish` or `Say it!` or `Broadcast` for instance?  
 
-	bad > `Do you order A, B or C?`
-	
-	good > `How do you choose food when going out?`
-	
-10. Try **casual requests** instead of questions. For instance, instead of asking `How do you store your photos?` consider asking them to show you how they store photos.
-    
-   
-   
-<!--Question examples:
+* They're **NOT about style**. 
 
-* How did you first learn about `insert your topic`?
-* How were you motivated to become involved in `insert your topic`?
-* Tell me more about that experience. What do you remember most about it?
-* (if the user has started telling you about a relevant experience) What did you enjoy most? What didn't you enjoy about it?
-* What kinds of problems do you or your community commonly see in your experience? Have you thought about how you would solve it?   --> 
-    
-### Interview analysis
-
-* Take 5 minute to write 4-5 important observations on post-its notes about what people said and place them on the wall.
-* What are the common themes you see emerge?
-* What are the common problems you heard/observed?
-* Did any of the findings make you start to think differently about your community and the problems you may have already been designing for?
-
-You should now understand a little more about how interviewing your potential app users can be helpful and have some tools to help you go out interview your community. 
-
-It takes some practice, but don't let that slow you down! 
-
-**Repeat this activity with new potential users.** 
-
-The more you know about your community and potential audience, the more you can respond by creating something valuable for them.
+	When wireframing, don't worry about *colours*, *graphics* and *typography*. 
 
 
 
-# Speed-sketch your ideas
+### Wireframes *with code*
 
-* The goal is to get something down on paper, but not get too caught up in the details. 
+> Standing on the shoulders of giants...
 
-* This is to help visualise some of your ideas. 
+or
 
-* Don't overthink the ideas or censor your thoughts. 
+> Don't reinvent the wheel
 
-* The quality of your drawings and handwriting doesn't matter either.
+Meet [Bootstrap](http://getbootstrap.com/), a framework to build mobile-first Web-apps and sites. It comes with a set of common *building blocks* to quickly put together interfaces
 
-![](http://www.interfacesketch.com/previews/web-browser-template.png)
+[![](assets/bootstrap.png)](http://getbootstrap.com/)
 
-![](http://www.interfacesketch.com/previews/iphone6.png)
+[Divshot](https://architect.divshot.com/) and [Jetstrap](https://jetstrap.com/) are drag&drop interface builders based on Bootstrap, which you can use to make clickable wireframes.
 
-Printable wireframing templates from [InterfaceSketch](http://www.interfacesketch.com) 
+<!-- Later on, you can export those wireframes into HTML&CSS and start building your app on those-->
+
+### Wireframes *sans code* 
+
+Using [Moqups](https://moqups.com/)
+
+[![](assets/moqups.gif)](https://moqups.com)
 
 
 
@@ -302,58 +341,13 @@ Printable wireframing templates from [InterfaceSketch](http://www.interfacesketc
 
 
 
-<!--
-### Notes
-* Ideas generation and pitches
-* List app ideas
-* Vote for ideas (on a spreadsheet)
-* Form groups (use an app that connects to the spreadsheet to suggest groups?)
-- [ ] Brainswarming
-- [ ] Ideas from @stef
-
-- [ ] [What is an app?](http://bogost.com/blog/what_is_an_app), where an app is like a music tune, a small thing compared to a record
-
-> Referring to applications as *apps* is not just a branding technique but a necessary linguistic reduction to conceptualise a lesser type of application. A little piece of software that sits in its little sandbox and doesn’t try to compete with the overarching platform.
-
-From [Gatekeeper and the rise of the total Apple consumer](http://www.molleindustria.org/blog/gatekeeper-and-the-rise-of-the-total-apple-consumer/)
-
-Interesting [analogy to electric motors](http://bogost.com/writing/blog/what_is_an_app/#comment-1666) 
 
 
 
-## Teamwork Process
-Idea is just idea without communication. 
-
-##### 1. Research
-* Card sorting [https://www.captechconsulting.com/blogs/tools-for-the-ux-architect-card-sort](https://www.captechconsulting.com/blogs/tools-for-the-ux-architect-card-sort)
-* Mental models [http://www.uxforthemasses.com/example-ux-docs/](http://www.uxforthemasses.com/example-ux-docs/)
-
-* [UX design sprint from Mozilla](https://habber.makes.org/thimble/LTEyNTgyMjU0MDg=/user-centred-design-sprint)
-
-
-[Online stickies](http://note.ly/)
-
-##### 2. Sketch first thought
-
-* Impact Mapping
-* Wireframing
-
-##### 3. Collaborate
-
-Other team, specialist, users
 
 
 
-##### 4. Prototype & test
-Process of understanding the product by trial and error 
 
 
-##### 5. Launch & learn more
-It's not end of the process. 
-Users have wide audience in age group and disability
-User doesn't come to the site to see your pretty design 
 
- 
- 
--->
 
