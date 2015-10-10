@@ -1,7 +1,7 @@
 # Apps from scratch, day 3
 
 1. **JavaScript**: [get our app to display data](#lets-code)
-* [What is good design?]()  
+* [What is good design?](#what-is-design)  
 * [Designing behaviours](#designing-behaviours) 
 * [Wireframing](#wireframes)
 
@@ -277,15 +277,17 @@ Also, check out animated examples of design patterns at [UseYourInterface](http:
 
 Is *this* a wireframe?
 
+![](assets/wireframe-bullshit.jpg)
+
+Is *this* a wireframe?
+
 ![](assets/wireframe-example2.png)
 
 Is *this* a wireframe?
 
 ![](assets/not-a-wireframe-example.jpg)
 
-Is *this* a wireframe?
 
-![](assets/wireframe-bullshit.jpg)
 
 Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
 
@@ -304,7 +306,7 @@ Just like a map is an abstraction of a place that helps us describe its location
 	When wireframing, don't worry about *colours*, *graphics* and *typography*. 
 
 
-
+<!--
 ### Wireframes *with code*
 
 > Standing on the shoulders of giants...
@@ -317,7 +319,7 @@ Meet [Bootstrap](http://getbootstrap.com/), a framework to build mobile-first We
 
 [![](assets/bootstrap.png)](http://getbootstrap.com/)
 
-[Divshot](https://architect.divshot.com/) and [Jetstrap](https://jetstrap.com/) are drag&drop interface builders based on Bootstrap, which you can use to make clickable wireframes.
+[Divshot](https://architect.divshot.com/) and [Jetstrap](https://jetstrap.com/) are drag&drop interface builders based on Bootstrap, which you can use to make clickable wireframes.-->
 
 <!-- Later on, you can export those wireframes into HTML&CSS and start building your app on those-->
 
