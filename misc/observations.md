@@ -6,6 +6,11 @@
 
 * Introduce the mindset of ***seeing behind the scenes***, having a way to understand what's going on so that we can hack/fix it.
 
+* **Research** task on competitor apps 
+
+* Working knowledge of a Mac is desired, otherwise here's a cheatsheet with common **shortcuts**.
+
+
 # Day 1
 
 ### What went well
@@ -29,12 +34,6 @@
 * Use `head` and `body`
 * Explain Mac shortcuts (copy, paste, scroll etc)
 * Slide to **manage expectations** after introductions
-
-<!--
-### What went well
-### Areas for improvement
-### Action points
--->
 
 
 # Day 2
@@ -60,4 +59,32 @@
 * How to market your app and idea? (Find where we can direct them to another resources)
 * Resources / links: jQuery courses etc.
 * JS library: how do you know if thats good library?
+
+
+# Day 3
+
+### What went well
+
+* Hot Berta is a good example of bad design
+* GoodUI examples and discussion that followed
+* Wireframes (good and bad) examples
+
+### Areas for improvement
+
+* Be realistic about how much new coding concepts one can take in a couple of hours.  
+
+### Action points
+
+* Swap coding session from AM to PM, so that we avoid late-comers to get lost
+* Code indentation (tidiness) is important
+* Codepen JS hint?
+* **Research** task on competitor apps 
+* Write out JS functions on post-its and work out together which order they will be put together. Then split people up into groups and get them to write the code that makes the app work
+
+
+<!--
+### What went well
+### Areas for improvement
+### Action points
+-->
 
