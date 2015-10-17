@@ -82,6 +82,25 @@
 * Write out JS functions on post-its and work out together which order they will be put together. Then split people up into groups and get them to write the code that makes the app work
 
 
+# Day 4
+
+### What went well
+
+* Wireframes presentations: students gave and received valuable comments, which showed they are applying their design thinking and put what they've been learning into practice.
+* Feedback was very honest. Plenty of suggestions and no back-patting or false flattery.
+* Students were really open to taking on board and integrating feedback.
+* Starting at 10:30 allowed us more time to prepare the room (which is always a dump when we arrive)
+
+### Areas for improvement
+
+* Time management: we didn't realise how long it would take people to do competitor research and presenting ideas.
+* Moderation: need to balance discussion between business ideas and design / execution.
+
+### Action points
+
+* Give structure to the presentations, eg list questions that people need to cover
+* Guide research process: user-testing other apps
+
 <!--
 ### What went well
 ### Areas for improvement
