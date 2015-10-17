@@ -1,5 +1,29 @@
 # Session 4
 
+
+
+# Example of JS Library
+
+
+[http://threejs.org/](http://threejs.org/)   
+http://pixijs.github.io/examples/   
+http://greensock.com/products/   
+
+http://auduno.github.io/clmtrackr/examples/clm_emotiondetection.html
+
+
+
+
+What is Library and what is frame work?
+
+
+Also https://unity3d.com/
+
+Also https://developer.leapmotion.com/
+
+
+
+
 Key questions: 
 
 * What does your app do? 
