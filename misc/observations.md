@@ -6,7 +6,7 @@
 
 * Introduce the mindset of ***seeing behind the scenes***, having a way to understand what's going on so that we can hack/fix it.
 
-* **Research** task on competitor apps 
+* **Research** task on competitor apps
 
 * Working knowledge of a Mac is desired, otherwise here's a cheatsheet with common **shortcuts**.
 
@@ -15,10 +15,10 @@
 
 ### What went well
 
-* Great atmosphere - open space room, table arrangement in U-shape, a few plants 
+* Great atmosphere - open space room, table arrangement in U-shape, a few plants
 * Getting to know each other - students introduced one another, friendly dynamic
 * Great opening conversation getting excited about apps and the future of technology
-* Asking the students questions as a way to get them thinking and coming up with solutions and reasons 
+* Asking the students questions as a way to get them thinking and coming up with solutions and reasons
 
 ### Areas for improvement
 
@@ -42,7 +42,7 @@
 
 * Having multiple lecturer let them think that it's not just one way but gave them multiple perspectives.
 * Engaged by the playful demonstration
-* Felt involved with team work. 
+* Felt involved with team work.
 * Didn't feel scared to say things.
 * Balance between coding practice and process learning is well balanced
 
@@ -71,27 +71,37 @@
 
 ### Areas for improvement
 
-* Be realistic about how much new coding concepts one can take in a couple of hours.  
+* Be realistic about how much new coding concepts one can take in a couple of hours.
 
 ### Action points
 
 * Swap coding session from AM to PM, so that we avoid late-comers to get lost
 * Code indentation (tidiness) is important
 * Codepen JS hint?
-* **Research** task on competitor apps 
+* **Research** task on competitor apps
 * Write out JS functions on post-its and work out together which order they will be put together. Then split people up into groups and get them to write the code that makes the app work
 
 
-# Day 3
+
+# Day 4
 
 ### What went well
 
- 
+* Wireframes presentations: students gave and received valuable comments, which showed they are applying their design thinking and put what they've been learning into practice.
+* Feedback was very honest. Plenty of suggestions and no back-patting or false flattery.
+* Students were really open to taking on board and integrating feedback.
+* Starting at 10:30 allowed us more time to prepare the room (which is always a dump when we arrive)
+
 ### Areas for improvement
 
-* Be realistic about how much new coding concepts one can take in a couple of hours.  
+* Time management: we didn't realise how long it would take people to do competitor research and presenting ideas.
+* Moderation: need to balance discussion between business ideas and design / execution.
 
 ### Action points
+
+* Give structure to the presentations, eg list questions that people need to cover
+* Guide research process: user-testing other apps
+
 <!--
 ### What went well
 ### Areas for improvement
