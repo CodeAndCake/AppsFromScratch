@@ -1,7 +1,7 @@
-function getPeopleList (jsonFile) 
+function getPeopleList (jsonFile)
 {
 	// we'll store a list of people in this variable
-	var peopleList = [] 
+	var peopleList = []
 
 	// from the whole json file, we only want to extract certain bits
 	// first we select the list of spreadsheet rows, and put it in a variable
@@ -11,11 +11,11 @@ function getPeopleList (jsonFile)
 	var counter = 0
 	var total = rows.length
 	// while loop
-	while (counter < total) 
+	while (counter < total)
 	{
 		var row = rows[counter]
 
-		var person = 
+		var person =
 		{
 			name: row.gsx$name.$t,
 			likesPets: row.gsx$likespets.$t

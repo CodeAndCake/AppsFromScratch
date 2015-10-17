@@ -82,6 +82,16 @@
 * Write out JS functions on post-its and work out together which order they will be put together. Then split people up into groups and get them to write the code that makes the app work
 
 
+# Day 3
+
+### What went well
+
+ 
+### Areas for improvement
+
+* Be realistic about how much new coding concepts one can take in a couple of hours.  
+
+### Action points
 <!--
 ### What went well
 ### Areas for improvement

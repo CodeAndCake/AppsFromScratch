@@ -1,190 +1,243 @@
-    // Load data and store it in the app memory
+var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/1BGkw8j2gas0j1V_JQhE5QLRROoExNfv_Yk74Dri6shg/1/public/values?alt=json'
 
-	var peopleList = [] // let's create an empty array
+var peopleList
 
-	// build the spreadsheet URL
-	// see the manual here https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en
-	var key = '1BGkw8j2gas0j1V_JQhE5QLRROoExNfv_Yk74Dri6shg' // the spreasheet unique identifier
-	var worksheet = '1' // the first worksheet
-	var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + worksheet + '/public/values?alt=json'
 
-	console.log(spreadsheetURL)
+// execute loadData
+loadData(spreadsheetURL, useData)
 
-    // When should we kick off the whole thing?
-    // When people click on the button
+// when the user clicks the button...
+$('button').on('click', function(){
+    // get user input
+    var selectedOption = getSelectedOption()
 
-    // use jQuery to select the button
-    // 'listen' for when the button is clicked
-    $('button').on('click', function() {
+    // filter people by user selection
+    var filteredList = getFilteredList(peopleList,  selectedOption)
 
-        // get user input
-        var selectedOption = getSelectedOption()
+    // sort people by user selection
+    var sortedList = getSortedList(filteredList,  selectedOption)
+     // display filtered+sorted data
 
-        // filter people by user selection
-        var filteredList = getFilteredList(peopleList,  selectedOption)
+    displayList($('#result'), sortedList)
 
-        // sort people by user selection
-        var sortedList = getSortedList(filteredList,  selectedOption)
+})
 
-        // display filtered+sorted data
-        displayList(sortedList)
+// define what to do with the loaded data
+function useData(jsonFile) {
+  peopleList = getPeopleList(jsonFile)
+}
 
+// FUNCTIONS from https://github.com/CodeAndCake/AppsFromScratch/blob/v2/demo-app
+
+/*
+
+    Use this function to fetch data from a URL.
+
+    Inputs
+
+        1. url: it's the address of the data you want to fetch, for example "https://gender-api.com/get?name=matteo"
+
+        2. successFunction: a function to execute when we receive data (it may take a few seconds before we receive something)
+
+    Requirements
+
+        This function relies on jQuery, so make sure jQuery is included in your document, eg:
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+*/
+
+function loadData (url, successFunction) {
+
+    // perform an asynchronous data request using jQuery
+    // asynchronous means we're asking for data NOW but don't know WHEN it'll come back (not immediately)
+    // AJAX stands for Asynchronous JavaScript And XML (don't worry about it)
+    // learn more about it at https://api.jquery.com/jQuery.ajax
+    $.ajax({
+
+        // send the request to the url
+        url: url,
+
+        // we want to receive JSON, which is a JavaScript data format
+        dataType: 'json',
+
+        // what to do when the API responds with some data
+        success: function(responseJSON)  {
+            // at this point we can call the callback function
+            successFunction(responseJSON)
+        }
     })
+}
 
-    loadData(spreadsheetURL, storeData)
+function getPeopleList (jsonFile) {
+    // we'll store a list of people in this variable
+    var peopleList = []
 
-	function loadData (url, successFunction) {
+    // from the whole json file, we only want to extract certain bits
+    // first we select the list of spreadsheet rows, and put it in a variable
+    var rows = jsonFile.feed.entry
 
-		// perform an asynchronous data request using jQuery
-		// asynchronous means we're asking for data NOW but don't know WHEN it'll come back (not immediately)
-		// AJAX stands for Asynchronous JavaScript And XML (don't worry about it)
-		// learn more about it at https://api.jquery.com/jQuery.ajax
-		$.ajax({
+    // then we loop through the rows and extract the info we need
+    var counter = 0
+    var total = rows.length
+    // while loop
+    while (counter < total)
+    {
+        var row = rows[counter]
 
-			// send the request to the url
-			url: url,
+        var person =
+        {
+            name: row.gsx$name.$t,
+            likesPets: row.gsx$likespets.$t,
+            bodyStrength: row.gsx$bodystrength.$t,
+            bakingSkills: row.gsx$bakingskills.$t,
+            diySkills: row.gsx$diyskills.$t,
+            // etc.. you do it :)
+        }
 
-			// we want to receive JSON, which is a JavaScript data format
-			dataType: 'json',
+        peopleList.push(person) // store this in the main data array
 
-			// what to do when the API responds with some data
-			success: function(responseJSON)  {
-				// at this point we can call the callback function
-				successFunction(responseJSON)
-			}
-		})
-	}
+        // increment the counter
+        // to avoid infinite loops
+        counter = counter + 1
+    }
 
-	function storeData (jsonFile) {
+    return peopleList
+}
 
-		// from the whole json object, we only want to extract certain bits
+function getSelectedOption() {
 
-		// first we select the list of spreadsheet rows
-		var rows = jsonFile.feed.entry
+    var selectedOption = $('select option:selected').val()
+    return selectedOption
+}
 
-		// then we loop through the rows and extract the info we need
+// Filter and sort fromList according to user choices
 
-		// while loop
-		var counter = 0;
-		var total = rows.length;
+function getFilteredList(fromList, filterCriteria)
+{
+
+    var filteredList = [] // an empty array
+
+    // loop through fromList
+    var counter = 0;
+    var total = fromList.length;
+
+    while (counter < total)
+    {
+        // grab the current person from the list and store into a variable
+        var person = fromList[counter];
+
+        if (filterCriteria == 'Keep my pet')
+        {
+            // add rows to filteredList only if likesPets is 'yes'
+            // we wouldn't give our pet to someone who dislikes them would we?
+            if (person.likesPets == 'yes')
+            {
+                // "push" is JavaScript's lingo for "add to a list"
+                filteredList.push(person)
+            }
+        }
+        else if (filterCriteria == 'Bake a cake')
+        {
+            // add rows to filteredList only if bakingSkills is bigger than 3
+            if (person.bakingSkills > 3)
+            {
+                // "push" is JavaScript's lingo for "add to a list"
+                filteredList.push(person)
+            }
+        }
+        else if (filterCriteria == 'Move my piano')
+        {
+            // you do it :)
+        }
+
+        counter = counter + 1;
+    }
+
+    return filteredList
+}
+
+function getSortedList(fromList, sortCriteria)
+{
+
+    var sortedList = [] // an empty array
+
+    // loop through fromList
+    var counter = 0;
+    var total = fromList.length;
+
+    while (counter < total)
+    {
+        // grab the current person from the list and store into a variable
+        var person = fromList[counter];
+
+        if (sortCriteria == 'Keep my pet')
+        {
+            // we don't need to sort the fromList
+            return fromList
+        }
+        else if (sortCriteria == 'Bake a cake')
+        {
+            // we sort the list by the bakingSkills value
+            return fromList.sort(function(personA, personB){
+                return personA.bakingSkills - personB.bakingSkills;
+            });
+        }
+        else if (sortCriteria == 'Move my piano')
+        {
+            // you do it :)
+        }
+
+        counter = counter + 1;
+    }
+
+    return sortedList
+}
+
+function displayList (container, list) {
+
+    // loop through list
+    var counter = 0;
+    var total = list.length;
+
+    var totalFoundContainer = $('#total_found', container);
+    var listContainer = $('#list', container);
+
+    listContainer.empty();
+
+     while (counter < total) {
+
+        var person = list[counter]
+
+        var li = "<li>" + "<h3>" + person.name + "</h3>" + "</li>"
+
+        // append the list item to our HTML
+        listContainer.append(li)
+
+        counter = counter + 1
+    }
+
+    if(total == 0){
+
+        totalFoundContainer.html('No result found');
+
+    }else if(total == 1){
+
+        totalFoundContainer.html('1 person found');
+
+    }else{
+
+        totalFoundContainer.html( total + ' people found');
+
+    }
+
+    container.addClass('active');
+
+}
 
 
-		while (counter < total) {
-
-			var row = rows[counter]
-			var person = extractPerson(row)
-			peopleList.push(person) // store this in the main data array
-
-			// increment the counter
-			// to avoid infinite loops
-			counter = counter + 1;
-		}
-
-		// for loop
-		// rows.forEach(function(row)
-		// {
-		// 	var person = extractPerson(row)
-		// 	data.push(person) // store this in the main data array
-		// })
-
-		console.log(peopleList)
-	}
-
-	function extractPerson (row) {
-
-		var person = {
-			name: row.gsx$name.$t,
-			likesPets: row.gsx$likespets.$t
-		}
-
-		return person
-	}
-
-	// Capture user input
-
-	function getSelectedOption() {
-
-		var selectedOption = $('select option:selected').val()
-		return selectedOption
-	}
-
-	// Filter and sort fromList according to user choices
-
-	function getFilteredList(fromList, filterCriteria) {
-
-		var filteredList = [] // an empty array
-
-		// loop through fromList
-		var counter = 0;
-		var total = fromList.length;
-
-		while (counter < total) {
- 			if (filterCriteria == 'Keep my pet')
-			{
-				var person = fromList[counter];
-				// add rows to filteredList only if likesPets is 'yes'
-				// we wouldn't give our pet to someone who dislikes them would we?
-				if (person.likesPets == 'yes') {
-					filteredList.push(person)
-				}
-			}
-
-            counter = counter + 1;
-		}
 
 
-		return filteredList
-	}
 
-	function getSortedList(fromList, sortCriteria) {
-
-		var sortedList = [] // an empty array
-
-		if (sortCriteria == 'Keep my pet')
-		{
-			// we don't need to sort the fromList
-			return fromList
-		}
-
-		return sortedList
-	}
-
-    // Display filtered+sorted list
-
-	function displayList (list) {
-
-		// loop through list
-		var counter = 0;
-		var total = list.length
-
-		while (counter < total) {
-
-			var person = list[counter]
-
- 			var li = getPersonListItem(person)
-
-			// append the list item to our HTML
-			$('ul').append(li)
-
-			counter = counter + 1
-		}
-
-	}
-
-	// this function is like an HTML sausage machine
-	// pass in some person data
-	// and it will return an HTML list item wrapped around that data
-	function getPersonListItem (person) {
-
-		// create a variable to store the HTML code
-		// we put the static (non variable) bits in speech marks
-		// and the variable bits outside of speech marks
-		var li = "<li>"
-			+ "<h3>" + person.name + "</h3>"
-			+ "</li>"
-
-		return li
-	}
 
 
 
