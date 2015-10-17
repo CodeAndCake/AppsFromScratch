@@ -7,7 +7,7 @@
 
 # Questions
 
-### How much do you need to know about how a *car* works, in order to *drive* it?
+### How much do you need to know about a **car**, in order to **drive** it?
 
 In most cases, you just need to know what pedals to push, what levers to operate, what buttons to press and what knobs to turn.
 
@@ -15,7 +15,7 @@ In other words, you can drive a car just by knowing how to use its **interface**
 
 <!--Unless you are a mechanic or had an accident -->
 
-### How much do you need to know about how a *computer program* works, in order to *code* it?
+### How much do you need to know about a **computer program**, in order to **code** it?
 
 You do not always need to know how a script or program works, as long as you know:
 
