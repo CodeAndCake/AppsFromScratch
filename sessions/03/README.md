@@ -129,22 +129,19 @@
 
 # What is design?
 
-**Design** is a response to an inquiry or a problem
+**Design** is a response to an inquiry or a problem.
 
-People don't come to your site/app to see your pretty "design" 
+People don't come to your site/app to see your pretty design. 
 
 ### UX/UI design: same thing?
 
 UI is like the seat of your car.
 UX is the experience you get from that seat.
 
-
-UX design is about effectively addressing the needs and circumstances of your users, to produce interfaces that are comfortable and even joyful to use.
-
+>UX design is about effectively addressing the needs and circumstances of your users, to produce interfaces that are comfortable and even joyful to use.
 
 ![](assets/cooker ui.jpg)
 ![](assets/washing machine ui.jpg) 
-
 
 ### What is good design?
 
@@ -188,22 +185,13 @@ Process of understanding the product by trial and error.
 
 **User testing** allows you to explore your assumptions and see what improvements need to be made to your design.
 
-
 #### Iterate
 
-Do more prototyping & testing 
-
+Do more prototyping & testing. 
 
 #### Launch & learn more
 
 It's not end of the process.
-
-
-
-
-
-
-
 
 
 # Designing behaviours
@@ -234,7 +222,6 @@ We design means to **enforce**, **prevent** or **facilitate** behaviours.
 
 [![](http://goodui.org/images/idea044.png)](http://goodui.org/#44 "Smaller Commitments instead of one big one")
 
-
 ### Engaging interfaces
 
 [![](http://goodui.org/images/idea048.png)](http://goodui.org/#48 "Natural Language instead of dry text")
@@ -264,15 +251,6 @@ We design means to **enforce**, **prevent** or **facilitate** behaviours.
 Also, check out animated examples of design patterns at [UseYourInterface](http://useyourinterface.com)
 
 
-
-
-
-
-
-
-
-
-
 # Wireframes
 
 Is *this* a wireframe?
@@ -286,8 +264,6 @@ Is *this* a wireframe?
 Is *this* a wireframe?
 
 ![](assets/not-a-wireframe-example.jpg)
-
-
 
 Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
 
@@ -328,28 +304,3 @@ Meet [Bootstrap](http://getbootstrap.com/), a framework to build mobile-first We
 Using [Moqups](https://moqups.com/)
 
 [![](assets/moqups.gif)](https://moqups.com)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

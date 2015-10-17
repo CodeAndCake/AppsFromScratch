@@ -1,3 +1,85 @@
+# Apps from scratch, day 4
+
+1. [Questions](#questions) about computers, people and the **interfaces** in between
+* [Wireframing](#wireframing) (*user* interfaces)
+* [Prototyping with code](#prototyping-with-code) (*programming* interfaces)
+
+
+# Questions
+
+### How much do you need to know about a **car**, in order to **drive** it?
+
+In most cases, you just need to know what pedals to push, what levers to operate, what buttons to press and what knobs to turn.
+
+In other words, you can drive a car just by knowing how to use its **interface**.
+
+<!--Unless you are a mechanic or had an accident -->
+
+### How much do you need to know about a **computer program**, in order to **code** it?
+
+You do not always need to know how a script or program works, as long as you know:
+
+1. How to **ask** it do do something
+* How to process its **response** 
+
+In other words, you can code a computer program if you know how to use its **interface**.
+
+<!--In our experience as coders, we have learned it's not always necessary to know how everything works, in order to code something.
+
+The questions you can ask and the format of the answers form what coders call an *API*.-->
+
+### Have you heard of APIs before?
+
+[**A**pplication **P**rogramming **I**nterface](https://en.wikipedia.org/wiki/Application_programming_interface).
+
+An API **exposes** parts of a system and **determines** how we (programmers) can interact with them to accomplish our (programming) goals. 
+
+### The parts of a system which are *programmable* have an API 
+
+An API tells us *which* parts of a system are exposed, and *how* we are allowed to tinker with them. 
+
+A **programming language** can be understood as an API, in the sense that it's the tool between us and programming a computer. 
+
+
+# Wireframing
+
+1. See what's out there
+* Wireframe your app idea 
+* Review it with class
+
+### Before you design a {XYZ}, you may want to see how others are doing it.
+
+Pick 3 apps that are relevant to your app idea (inspiring interfaces, similar business model etc.) and discuss them with your group.
+
+You can take inspiration from [useronboard.com](http://www.useronboard.com/onboarding-teardowns/).
+
+### Wireframing with the user in mind
+
+Your wireframes shouldn't present *features*. They should tell a *story*.
+
+1. **WHO** 
+
+	* Think about a realistic *protagonist*
+	* Give her a name
+ 	* Make her relatable
+2. **WHERE** and **WHEN** 
+
+	Think about a scenario
+3. **HOW** 
+
+	What are the *feelings* of your protagonist?
+4. **WHAT** 
+
+	* What *actions* does she take? 
+	* What are their *results*?
+
+![](assets/story.png)
+
+
+# Prototyping with code
+
+
+<!--
 # Session 4
 
 
@@ -41,11 +123,7 @@ Key questions:
 * [Rapid prototyping](#rapid-prototyping)
 
 
-<!--
-Coding front-end of groups apps
-Intro to GitHub and collaborative workflows?-->
-<!--
-- [ ] http://zurb.com/building-blocks-->
+
 
 
 # Impact mapping
@@ -124,8 +202,6 @@ In one sentence, a user story encapsulates
 * **When** does s/he want it?  
 * **Why** is it valuable to the her?
 
-<!-- https://imgflip.com/memegenerator/What-Do-We-Want-3 -->
-
 
 > Who are we?
 ![](assets/who-are-we.png)
@@ -174,7 +250,7 @@ As a `who?`, I want to `what?`, so that `why?` [`when`]
 
 
 
-<!--### BDD
+### BDD
  
 1. In order to [benefit]
 2. As a [Role]
@@ -185,7 +261,7 @@ An example with BBC website:
 
 1. As a user of BBC website
 2. I want to have a web page for every TV brand of the BBC
-3. So that I can get all the information about my favourite Brand-->
+3. So that I can get all the information about my favourite Brand
 
 
 
@@ -236,7 +312,7 @@ Meet [Bootstrap](http://getbootstrap.com/), a framework to build mobile-first We
 
 [Divshot](https://architect.divshot.com/) and [Jetstrap](https://jetstrap.com/) are drag&drop interface builders based on Bootstrap, which you can use to make clickable wireframes.
 
-<!-- Later on, you can export those wireframes into HTML&CSS and start building your app on those-->
+
 
 ### Wireframes *sans code* 
 
@@ -272,7 +348,7 @@ Doing this **rapidly and iteratively** ensures that you're moving in the right d
 * Avoid *prototype creep* by **setting expectations** for the process, including ones affecting the purpose, fidelity, scope and duration. Remind everyone, including yourself, that rapid prototyping is a **means to an end**, not an end in itself.
 * Begin every prototype review session with the disclaimer that **this is just a prototype**, a mock-up, not the actual solution. This reminds users that this is a **work in progress**, it encourages feedback, and in the case of high-fidelity prototypes, it prevents users from mistaking it for a working solution.
 
-<!--* **Reuse, reuse, reuse**. For computer-based prototyping, this means saving reusable templates, stencils, patterns and widgets for future projects.-->
+**Reuse, reuse, reuse**. For computer-based prototyping, this means saving reusable templates, stencils, patterns and widgets for future projects.
 
 ### Don't
 
@@ -281,11 +357,12 @@ Doing this **rapidly and iteratively** ensures that you're moving in the right d
 * Don't take every change or request that comes out of a prototype review as a new requirement. Rapid prototyping helps capture missed requirements, but these new requirements should be evaluated carefully. Some may be implemented, while others are pushed to a future release.
 * Don't begin prototype review sessions without **clear guidelines for feedback**. Be very specific about the type of feedback you are looking for. `Are the steps logically arranged? Is the navigation clear and intuitive?` If not, be prepared for `I don't like the blue in the header` or `Can't we use this font instead?` or `Can you make this bigger, bolder, in red and flashing?`
 
-<!--* Don't prototype features or functionality that cannot be implemented. When in doubt, confirm with developers before starting.
--->
+
+Don't prototype features or functionality that cannot be implemented. When in doubt, confirm with developers before starting.
 
 
-<!--
+
+
 ### Which tools?
 
 Each prototyping tool has its own feature set and strengths. Based on your needs and the requirements of your project(s), evaluate which tool would be most appropriate:
@@ -311,7 +388,6 @@ Each prototyping tool has its own feature set and strengths. Based on your needs
 * [Framer](http://framerjs.com)  [Mac only] for slick animations
 * [Blocs](http://blocsapp.com) [Mac only] interface builder for Bootstrap
 * [Divshot](https://divshot.com/features), online interface builder for Bootstrap
--->
 
 
 
@@ -324,3 +400,5 @@ Using [Invision](http://invisionapp.com), let's start prototyping two user flows
 * a problematic scenario, aka *edge case* or *unhappy path* (of your choice, depending on gaps you have identified in your user stories)
 
 Produce prototypes that address [your user stories](#your-stories).
+
+-->
