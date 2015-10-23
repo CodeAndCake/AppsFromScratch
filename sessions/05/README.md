@@ -1,3 +1,33 @@
+# Apps from scratch, day 5
+
+
+1. [Inspirations](#inspirations): cool stuff built with JS
+* JS challenge
+* 
+
+# Inspirations
+
+
+# JS challenge
+
+Add an option to the dropdown and code the app's behaviour in response to the new option.
+
+May have to add new data to the spreadsheet. Or a new sheet.
+
+
+- [ ] Add a search functionality
+- [ ] Aimee can help with HTML and CSS
+
+
+<!--
+
+1. [Questions](#questions) about computers, people and the **interfaces** in between
+* [Wireframing](#wireframing) (*user* interfaces)
+* [Prototyping with code](#prototyping-with-code) (*programming* interfaces)
+
+
+
+
 # Session 5
 
 Key questions: 
@@ -113,34 +143,5 @@ We'll show you hot to use [Invision](http://invisionapp.com), to link your wiref
 
 Your prototypes will communicate how your app works, and offer a springboard for conversations with developers, designers, collaborators, investors...
 
+-->
 
-# Presentations
-
-* Mention *competitors*
-* Mention *market* and *business opportunities*
-* Talk about *customer research* (remember [interviews](../03/README.md#who-are-your-users)?)
-* Tell us the story of your user (through a [prototype]())
-* Talk about *impact*
-
-
-# Wrap up
-
-1. Understand the role of the three key **technologies** of the Web: *HTML*, *CSS* and *JS*. 
-
-2. Googling problems  is not *cheating*
-	
-	> Google is your friend
-3. Copy-pasting code is not *cheating*
-
-	> Good coders type, great coders copy-paste
-4. Unpack the **design process**: iterative, collaborative
-   
-   > Try again (and again) until it works.
-5. **It's OK**. You're not going to break anything
-6. Analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
-7. Create **proof-of-concept prototypes** for Web applications
-
-
-We'd like to hear your **feedback**, it helps us improve this course!
-
-[tinyurl.com/mvje4c8](http://tinyurl.com/mvje4c8)
