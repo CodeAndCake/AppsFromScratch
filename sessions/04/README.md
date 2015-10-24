@@ -93,7 +93,9 @@ http://greensock.com/products/
 
 http://auduno.github.io/clmtrackr/examples/clm_emotiondetection.html
 
-
+audio form 
+http://airtightinteractive.com/demos/js/reactive/
+http://googlechrome.github.io/web-audio-samples/samples/audio/visualizer-live.html
 
 
 What is Library and what is frame work?

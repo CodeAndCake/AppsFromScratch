@@ -2,6 +2,44 @@ var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/1BGkw8j2gas0j1V
 
 var peopleList
 
+// let's use jQuery to select the #search input field 
+// and store it in a variable (so that we can re-use it later)
+// # is for id
+var searchField = $('#search'); 
+searchField.on('keypress', function(){
+	
+	// let's capture the text from the input box
+	// store it in the userInput variable	
+	var userInput = searchField.val();
+	
+	// let's apply the JS filter function to peopleList
+	// to return only people whose data contains the text from the input box
+	var searchResults = peopleList.filter(function(person){
+		
+		// from a person (structured JS Object)
+		// we extract all the values (name, likesPets, etc.)
+		// and add them to a string
+		// this process is called "flattening"
+		var flattenedValues = '';
+		for (property in person) {
+			var value = person[property]
+			flattenedValues += ' ' + value;
+ 		}
+ 		// let's see if our search pattern (userInput) is contained in the flattenedValues string
+ 		var searchPattern = new RegExp(userInput,'ig');
+ 		// we use the JS test function for this
+ 		// http://www.w3schools.com/jsref/jsref_regexp_test.asp
+ 		var contains = flattenedValues.test(searchPattern); 		
+ 		console.log('Does "' + flattenedValues + '" contains "' + userInput + '"? ' + contains)
+ 		return contains
+	});
+	
+	console.log(searchResults);
+	// finally, we spit out the searchResults 
+	// using the displayList function
+	// so that users can see
+	displayList($('#result'), searchResults)
+});
 
 // execute loadData
 loadData(spreadsheetURL, useData)
@@ -24,6 +62,7 @@ $('button').on('click', function(){
 
 // define what to do with the loaded data
 function useData(jsonFile) {
+	console.log('data loaded!')
   peopleList = getPeopleList(jsonFile)
 }
 
@@ -83,8 +122,8 @@ function getPeopleList (jsonFile) {
     while (counter < total)
     {
         var row = rows[counter]
-
-        var person =
+        
+         var person =
         {
             name: row.gsx$name.$t,
             likesPets: row.gsx$likespets.$t,
@@ -100,7 +139,7 @@ function getPeopleList (jsonFile) {
         // to avoid infinite loops
         counter = counter + 1
     }
-
+    console.log('peopleList ready!')
     return peopleList
 }
 
