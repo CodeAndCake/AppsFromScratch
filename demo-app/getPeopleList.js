@@ -15,11 +15,14 @@ function getPeopleList (jsonFile)
 	{
 		var row = rows[counter]
 
-		var person =
-		{
-			name: row.gsx$name.$t,
-			likesPets: row.gsx$likespets.$t
-		}
+		var person = {} // an empty object
+        // let's stuff the person with data from the json
+        person.name = row.gsx$name.$t
+        person.likesPets = row.gsx$likespets.$t
+        person.bodyStrength = row.gsx$bodystrength.$t
+        person.bakingSkills = row.gsx$bakingskills.$t
+        person.diySkills = row.gsx$diyskills.$t
+        // etc.. you do it :)
 
 		peopleList.push(person) // store this in the main data array
 
