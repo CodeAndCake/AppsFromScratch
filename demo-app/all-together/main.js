@@ -29,7 +29,7 @@ searchField.on('keypress', function(){
  		var searchPattern = new RegExp(userInput,'ig');
  		// we use the JS test function for this
  		// http://www.w3schools.com/jsref/jsref_regexp_test.asp
- 		var contains = flattenedValues.test(searchPattern); 		
+ 		var contains = searchPattern.test(flattenedValues); 		
  		console.log('Does "' + flattenedValues + '" contains "' + userInput + '"? ' + contains)
  		return contains
 	});
@@ -81,8 +81,7 @@ function useData(jsonFile) {
     Requirements
 
         This function relies on jQuery, so make sure jQuery is included in your document, eg:
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-
+ 
 */
 
 function loadData (url, successFunction) {
