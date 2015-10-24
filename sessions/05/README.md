@@ -1,22 +1,54 @@
 # Apps from scratch, day 5
 
-
 1. [Inspirations](#inspirations): cool stuff built with JS
-* JS challenge
-* 
+* [JS challenge](#js-challenge)
+* [Prototype](#prototyping) one component of your app
+
 
 # Inspirations
+
+Some cool stuff built with JS (100% Web technologies)!
+
+[Emotion detection  
+	![](assets/emotions.png)](http://auduno.github.io/clmtrackr/examples/clm_emotiondetection.html)
+
+[Audio (from mic) visualiser
+![](assets/noise-viz.png)](http://googlechrome.github.io/web-audio-samples/samples/audio/visualizer-live.html)
+
+[3D London Tube map    
+	![](assets/tube-map.png)](http://brunoimbrizi.com/experiments/#/07)
+
+[Cyber-attacks map  
+	![](assets/cyber-attacks.png)](http://map.norsecorp.com/)
+
+[Social media activity map  
+	![](assets/social-media.png)](http://wearedata.watchdogs.com/start.php?locale=en-EN&city=london)
+
+<!--
+
+[http://threejs.org/](http://threejs.org/)   
+http://pixijs.github.io/examples/   
+http://greensock.com/products/   
+
+audio form 
+http://airtightinteractive.com/demos/js/reactive/
+
+-->
 
 
 # JS challenge
 
-Add an option to the dropdown and code the app's behaviour in response to the new option.
+Add an `option` to the dropdown and code the app's behaviour in response to the new option.
 
-May have to add new data to the spreadsheet. Or a new sheet.
+You may have to add new data to the spreadsheet. 
 
 
-- [ ] Add a search functionality
-- [ ] Aimee can help with HTML and CSS
+# Prototyping
+
+
+
+
+<!--- [ ] Aimee can help with HTML and CSS-->
 
 
 <!--
