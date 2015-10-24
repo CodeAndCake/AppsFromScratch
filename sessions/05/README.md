@@ -1,7 +1,7 @@
 # Apps from scratch, day 5
 
 1. [Inspirations](#inspirations): cool stuff built with JS
-* [JS challenge](#js-challenge)
+* [JS challenge](#challenge)
 * [Prototype](#prototyping) one component of your app
 
 
@@ -36,7 +36,7 @@ http://airtightinteractive.com/demos/js/reactive/
 -->
 
 
-# JS challenge
+# Challenge!
 
 Add an `option` to the dropdown and code the app's behaviour in response to the new option.
 
