@@ -1,22 +1,54 @@
 # Apps from scratch, day 5
 
-
 1. [Inspirations](#inspirations): cool stuff built with JS
-* JS challenge
-* 
+* [JS challenge](#challenge)
+* [Prototype](#prototyping) one component of your app
+
 
 # Inspirations
 
+Some cool stuff built with JS (100% Web technologies)!
 
-# JS challenge
+[Emotion detection  
+	![](assets/sad-face.png)](http://auduno.github.io/clmtrackr/examples/clm_emotiondetection.html)
 
-Add an option to the dropdown and code the app's behaviour in response to the new option.
+[Audio (from mic) visualiser
+![](assets/noise-viz.png)](http://googlechrome.github.io/web-audio-samples/samples/audio/visualizer-live.html)
 
-May have to add new data to the spreadsheet. Or a new sheet.
+[3D London Tube map    
+	![](assets/tube-map.png)](http://brunoimbrizi.com/experiments/#/07)
+
+[Cyber-attacks map  
+	![](assets/cyber-attacks.png)](http://map.norsecorp.com/)
+
+[Social media activity map  
+	![](assets/social-media.png)](http://wearedata.watchdogs.com/start.php?locale=en-EN&city=london)
+
+<!--
+
+[http://threejs.org/](http://threejs.org/)   
+http://pixijs.github.io/examples/   
+http://greensock.com/products/   
+
+audio form 
+http://airtightinteractive.com/demos/js/reactive/
+
+-->
 
 
-- [ ] Add a search functionality
-- [ ] Aimee can help with HTML and CSS
+# Challenge!
+
+Add an `option` to the dropdown and code the app's behaviour in response to the new option.
+
+You may have to add new data to the spreadsheet. 
+
+
+# Prototyping
+
+
+
+
+<!--- [ ] Aimee can help with HTML and CSS-->
 
 
 <!--
