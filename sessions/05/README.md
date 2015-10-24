@@ -38,6 +38,8 @@ http://airtightinteractive.com/demos/js/reactive/
 
 # Challenge!
 
+[Fork this pen](http://codepen.io/yukik/full/wKyVoZ/)!
+
 Add an `option` to the dropdown and code the app's behaviour in response to the new option.
 
 You may have to add new data to the spreadsheet. 
