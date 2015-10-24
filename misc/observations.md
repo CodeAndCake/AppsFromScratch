@@ -82,7 +82,6 @@
 * Write out JS functions on post-its and work out together which order they will be put together. Then split people up into groups and get them to write the code that makes the app work
 
 
-
 # Day 4
 
 ### What went well
@@ -101,6 +100,43 @@
 
 * Give structure to the presentations, eg list questions that people need to cover
 * Guide research process: user-testing other apps
+
+
+# Day 5
+
+### What went well
+
+* Inspiring projects made with Web tech sparked conversation and set a positive tone for the day: *JavaScript is cool* 
+* JS challenge gave people a practice ground
+
+### Areas for improvement
+
+* Copy this JS into your CodePen but keep your HTML and CSS
+
+### Action points
+
+* NEXT SESSION:
+	* Show inspiring resources for CSS (eg: css-tricks.com)
+	* Demo how to code the `tap on search results to reveal more info` interaction
+	* Include images to make the app more engaging
+* FUTURE: Use the [TfL API](https://api-portal.tfl.gov.uk/docs)
+
+
+
+# Day 6
+
+### What went well
+
+
+
+### Areas for improvement
+
+
+
+### Action points
+
+
+
 
 <!--
 ### What went well
