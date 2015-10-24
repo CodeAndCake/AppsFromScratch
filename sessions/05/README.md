@@ -10,7 +10,7 @@
 Some cool stuff built with JS (100% Web technologies)!
 
 [Emotion detection  
-	![](assets/emotions.png)](http://auduno.github.io/clmtrackr/examples/clm_emotiondetection.html)
+	![](assets/sad-face.png)](http://auduno.github.io/clmtrackr/examples/clm_emotiondetection.html)
 
 [Audio (from mic) visualiser
 ![](assets/noise-viz.png)](http://googlechrome.github.io/web-audio-samples/samples/audio/visualizer-live.html)
