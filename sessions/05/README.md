@@ -38,11 +38,18 @@ http://airtightinteractive.com/demos/js/reactive/
 
 # Challenge!
 
-[Fork this pen](http://codepen.io/yukik/full/wKyVoZ/)!
+1. [Fork this pen](http://codepen.io/baddeo/full/JYpgwL)!
+* Add an `option` to the dropdown. 
+ 
+	You may have to add new data to the *spreadsheet* (aka the database).   
+* Code the app's behaviour in response to the new option.
 
-Add an `option` to the dropdown and code the app's behaviour in response to the new option.
+	There are 3 functions you will need to hack:
+	
+	* `getPeopleList`
+	* `getFilteredList`
+	* `getSortedList`
 
-You may have to add new data to the spreadsheet. 
 
 
 # Prototyping
