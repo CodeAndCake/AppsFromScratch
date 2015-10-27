@@ -12,6 +12,9 @@
 
 * Advertise on Facebook! See [this post](https://www.facebook.com/baddeo/posts/10153016996871222)...
 
+* [Flow](https://flowhub.io/) for visual programming?
+
+
 # Day 1
 
 ### What went well
