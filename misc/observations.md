@@ -10,6 +10,7 @@
 
 * Working knowledge of a Mac is desired, otherwise here's a cheatsheet with common **shortcuts**.
 
+* Advertise on Facebook! See [this post](https://www.facebook.com/baddeo/posts/10153016996871222)...
 
 # Day 1
 
