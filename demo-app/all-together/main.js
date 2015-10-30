@@ -259,15 +259,17 @@ function getSortedList(fromList, sortCriteria)
 
 function displayList (container, list) 
 {
-    // loop through list
-    var counter = 0;
     var total = list.length;
-
     var totalFoundContainer = $('#total_found');
-    var listContainer = $('#list');
+    if (total == 0)  totalFoundContainer.html('No result found');
+    else if (total == 1)totalFoundContainer.html('1 person found');
+    else totalFoundContainer.html( total + ' people found');
 
+    var listContainer = $('#list');
     listContainer.empty()
 
+    // loop through list
+    var counter = 0;
     while (counter < total) 
     {
         var person = list[counter]
@@ -275,9 +277,10 @@ function displayList (container, list)
         var listItem = $(getListItem(person))
 
         // when someone clicks on the list item..
-        listItem.on('click', function(person){
-            displayDetails($('#page2 .container'), person)
-        }.bind(this, person))
+        // execute the function onListItemClick
+        // and "bind" it to the current person
+        // otherwise it would display the wrong person's data
+        listItem.on('click', onListItemClick.bind(this, person))
 
         // append = add at the end..
         listContainer.append(listItem)
@@ -285,26 +288,21 @@ function displayList (container, list)
         counter = counter + 1
     }
 
-    if (total == 0)
-    {
-        totalFoundContainer.html('No result found');
-    } 
-    else if (total == 1)
-    {
-        totalFoundContainer.html('1 person found');
-    } 
-    else 
-    {
-        totalFoundContainer.html( total + ' people found');
-    }
-
     container.addClass('active');
+}
+
+function onListItemClick(person)
+{
+    var detailsContainer = $('#page2 .container')
+    displayDetails(detailsContainer, person)
 }
 
 function displayDetails(container, person)
 {
-    // reset the content
-    container.html(getPersonDetails(person))
+    var personDetails = getDetails(person)
+
+    // make the container display personDetails
+    container.html(personDetails)
 
     $('#page_slider').addClass('details_view')
 }
@@ -322,7 +320,7 @@ function getListItem(person)
     return li        
 }
 
-function getPersonDetails(person)
+function getDetails(person)
 {
     // this function creates some nice HTML around the person's data
     var html  = "<h2>" 
@@ -331,11 +329,3 @@ function getPersonDetails(person)
 
     return html        
 }
-
-
-
-
-
-
-
-
