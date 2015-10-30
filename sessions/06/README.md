@@ -13,6 +13,23 @@
 * Talk about *customer research* (remember [interviews](../03/README.md#who-are-your-users)?)
 * Tell us the story of your user
 
+# Resources
+
+* [Codecademy](https://www.codecademy.com/)
+	
+	> Free online courses to learn just about any web language you like!
+* [CSS-Tricks](https://css-tricks.com/)
+
+	> Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
+* [Smashing Magazine](http://www.smashingmagazine.com/)
+
+	> Online magazine focused on coding and web development, covering techniques, coding languages, mobile, design, graphics and WordPress
+* [Niice](https://niice.co/)
+
+	> A design search engine, drawing results from [Behance](https://www.behance.net/), [Dribble](https://dribbble.com/) and [Designspiration](http://designspiration.net/). Great if you're in need of some design inspiration!
+* [Panda App](https://usepanda.com/app/#/)
+
+	> Another great source of inspiration pulling results from various sources like [Designernews](https://www.designernews.co/), [Dribble](https://dribbble.com/), [Behance](https://www.behance.net/) and [siteInspire](http://www.siteinspire.com/)
 
 # Achievements!
 
