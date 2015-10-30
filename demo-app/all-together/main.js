@@ -69,14 +69,14 @@ function searchPeopleList(inputText)
         for (property in person) 
         {
             var value = person[property]
-            flattenedValues += ' ' + value;
+            flattenedValues += value + ' ';
         }
         // let's see if our search pattern (userInput) is contained in the flattenedValues string
         var searchPattern = new RegExp(inputText,'ig');
         // we use the JS test function for this
         // http://www.w3schools.com/jsref/jsref_regexp_test.asp
         var contains = searchPattern.test(flattenedValues);         
-        console.log('Does "' + flattenedValues + '" contains "' + inputText + '"? ' + contains)
+        console.log('Does "' + flattenedValues + '" contain "' + inputText + '"? ' + contains)
         return contains
     });
   
