@@ -7,7 +7,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: .8em;
     font-weight: 300;
-    padding: .5em;
+    padding: 0;
+    margin: 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -144,17 +145,17 @@ button {
 
 #page1,
 #page2 {
-    padding: 20px;
+    padding: 1em;
     overflow-y: auto;
     flex: 1;
 }
 
-.container{
-	top:0;
-	right:0;
-	bottom:0
-	left:0;
+.container {
+    top: 0;
+    right: 0;
+    bottom: 0 left: 0;
 }
+
 
 /* MEDIA QUERIES */
 
@@ -167,43 +168,41 @@ button {
         margin: auto;
         font-size: 1em;
     }
-    
-    .profile{
-    	max-width: 400px;
-    
+    .profile {
+        max-width: 400px;
     }
 }
 
-#back{
-	display: block;
-	width: auto;
-
-}
-.profile{
-	padding-top:20px;
-	width: 100%;
-	margin:0 auto;
-}
-.profile img{
-	width: 100%;
-	margin-bottom:20px;
+#back {
+    display: block;
+    width: auto;
 }
 
-.profile .title{
-	font-weight: 700;
-	font-size: 2em;
-	margin-bottom:20px;
+.profile {
+    padding-top: .5em;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.profile .description{
-	font-weight: 300;
-	font-size: 2em;
-	margin-bottom: 40px;
+.profile img {
+    width: 100%;
+    margin-bottom: .5em;
 }
 
-.profile #submit{
-	
+.profile .title {
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: .5em;
 }
+
+.profile .description {
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.profile #submit {}
+
 
 /*end of media query*/
 
