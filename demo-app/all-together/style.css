@@ -117,14 +117,14 @@ button {
 
 #list {
     list-style: none;
-}
-
-#list li {
-    margin: 0;
     padding: 0;
 }
 
-#list li h3 {}
+#list li {
+    cursor: pointer;
+}
+
+/*#list li h3 {}*/
 
 
 /* DETAILS PAGE*/
@@ -198,10 +198,8 @@ button {
 .profile .description {
     font-weight: 300;
     font-size: 2em;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
 }
-
-.profile #submit {}
 
 
 /*end of media query*/
@@ -239,5 +237,9 @@ input {
 }
 
 .search:after {
+    color: #2ecc71;
+}
+
+#list li {
     color: #2ecc71;
 }
