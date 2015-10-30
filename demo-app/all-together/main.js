@@ -275,9 +275,9 @@ function displayList (container, list)
         var listItem = $(getListItem(person))
 
         // when someone clicks on the list item..
-        listItem.on('click', function(){
+        listItem.on('click', function(person){
             displayDetails($('#page2 .container'), person)
-        })
+        }.bind(this, person))
 
         // append = add at the end..
         listContainer.append(listItem)
