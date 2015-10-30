@@ -259,24 +259,28 @@ function getSortedList(fromList, sortCriteria)
 
 function displayList (container, list) 
 {
-
     // loop through list
     var counter = 0;
     var total = list.length;
 
-    var totalFoundContainer = $('#total_found', container);
-    var listContainer = $('#list', container);
+    var totalFoundContainer = $('#total_found');
+    var listContainer = $('#list');
 
-    listContainer.empty();
+    listContainer.empty()
 
     while (counter < total) 
     {
         var person = list[counter]
 
-        var li = "<li>" + "<h3>" + person.name + "</h3>" + "</li>"
+        var listItem = $(getListItem(person))
 
-        // append the list item to our HTML
-        listContainer.append(li)
+        // when someone clicks on the list item..
+        listItem.on('click', function(){
+            displayDetails($('#page2 .container'), person)
+        })
+
+        // append = add at the end..
+        listContainer.append(listItem)
 
         counter = counter + 1
     }
@@ -295,6 +299,37 @@ function displayList (container, list)
     }
 
     container.addClass('active');
+}
+
+function displayDetails(container, person)
+{
+    // reset the content
+    container.html(getPersonDetails(person))
+
+    $('#page_slider').addClass('details_view')
+}
+
+function getListItem(person)
+{
+    // this function creates some nice HTML around the person's data
+    // li = List Item
+    var li  = "<li>" 
+                + "<h3>" 
+                    + person.name 
+                + "</h3>" 
+            + "</li>"
+
+    return li        
+}
+
+function getPersonDetails(person)
+{
+    // this function creates some nice HTML around the person's data
+    var html  = "<h2>" 
+                + person.name 
+              + "</h3>" 
+
+    return html        
 }
 
 
