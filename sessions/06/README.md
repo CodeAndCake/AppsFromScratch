@@ -1,3 +1,11 @@
+# Apps from scratch, day 6
+
+1. Code the details screen (from search results) 
+* [Presentations](#presentations)
+* Resources to continue your app-making journey
+* [Celebrations](#celebrations) :cake:
+
+
 # Presentations
 
 * Mention *competitors*
@@ -6,11 +14,13 @@
 * Tell us the story of your user
 
 
-# Wrap up
+# Celebrations
+
+What can you *take away* from this course?
 
 1. Understand the role of the three key **technologies** of the Web: *HTML*, *CSS* and *JS*. 
 
-2. Googling problems  is not *cheating*
+2. Googling problems is not *cheating*
 	
 	> Google is your friend
 3. Copy-pasting code is not *cheating*
@@ -24,6 +34,6 @@
 7. Create **proof-of-concept prototypes** for Web applications
 
 
-We need your **feedback**, it helps us improve this course!
+We need your **feedback**, it will hugely help us improve this course!
 
 ### [tinyurl.com/o8qknkg](http://tinyurl.com/o8qknkg)
