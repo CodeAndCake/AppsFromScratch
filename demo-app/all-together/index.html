@@ -91,6 +91,10 @@
     /* COLOURS */
 
     body {
+    	
+    	margin:0;
+    	padding: 0;
+    	
         background-color: #ecf0f1;
         color: #34495e;
     }
@@ -136,35 +140,82 @@
     #list li h3{
 
     }
+    
+    #page_slider{
+/*    	margin-left: -100px;
+*/    	position: absolute;
+    	top:0;
+    	width: 200%;
+    	bottom:0;
+    	
+    	display: flex;
+    	
+    	transition: margin-left .4s ease-out;
+    	-webkit-transition: margin-left .4s ease-out;
+    }
+    
+    #page_slider.details_view{
+    	 margin-left: -100%;
+
+    }
+    
+    #page1, #page2{
+    	padding:20px;
+    	overflow-y: auto;
+    	flex: 1;
+    	/*position: absolute;
+    	top:0;
+    	width: 100%;
+    	bottom:0;*/
+    	 
+    }
+    
+    #page2{
+    	/* margin-left: 100%;*/
+    }
     </style>
 </head>
 
 <body>
-    <h1>I'd like someone to...</h1>
+	
+	<div id="page_slider" class="details_view">
+	
+		<div id="page1">
+			<h1>I'd like someone to...</h1>
+			
+			<input id="search" type="text">
+			<div class="dropdown">
+				<select>
+					<option>Keep my pet</option>
+					<option>Bake a cake</option>
+					<option>Move my piano</option>
+				</select>
+			</div>
+			<button>Find</button>
+
+			<div id="result">
+
+				<p id="total_found"></p>
+
+				<ul id="list">
+
+				</ul>
+			</div>
+
+			<div id="get_started">
+				<p>Swap skills and time with people in your community!</p>
+				<p>Just choose an activity to get started.</p>
+			</div>
+		</div>
+		
+		<div id="page2">
+			hey
+		</div>
+		
+	</div>
+	
+	
     
-    <input id="search" type="text">
-    <div class="dropdown">
-        <select>
-            <option>Keep my pet</option>
-            <option>Bake a cake</option>
-            <option>Move my piano</option>
-        </select>
-    </div>
-    <button>Find</button>
-
-    <div id="result">
-
-        <p id="total_found"></p>
-
-        <ul id="list">
-
-        </ul>
-    </div>
-
-    <div id="get_started">
-        <p>Swap skills and time with people in your community!</p>
-        <p>Just choose an activity to get started.</p>
-    </div>
 
 
   <!--   <footer>Made by Aimee, Yuki and Matteo in London</footer> -->
