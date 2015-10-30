@@ -167,8 +167,43 @@ button {
         margin: auto;
         font-size: 1em;
     }
+    
+    .profile{
+    	max-width: 400px;
+    
+    }
 }
 
+#back{
+	display: block;
+	width: auto;
+
+}
+.profile{
+	padding-top:20px;
+	width: 100%;
+	margin:0 auto;
+}
+.profile img{
+	width: 100%;
+	margin-bottom:20px;
+}
+
+.profile .title{
+	font-weight: 700;
+	font-size: 2em;
+	margin-bottom:20px;
+}
+
+.profile .discription{
+	font-weight: 300;
+	font-size: 2em;
+	margin-bottom: 40px;
+}
+
+.profile #submit{
+	
+}
 
 /*end of media query*/
 
