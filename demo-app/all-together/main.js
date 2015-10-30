@@ -315,16 +315,14 @@ function getListItem(person)
         Return something like this:
 
         <li>
-            <h3>Aimee</h3>
+            <h2>Aimee</h2>
         </li>
     */
 
     // li = List Item
-    var li  = "<li>" 
-                + "<h3>" 
-                    + person.name 
-                + "</h3>" 
-            + "</li>"        
+    var li  = '<li>' 
+            + '<h2>' + person.name + '</h2>' 
+            + '</li>'        
 
     return li        
 }
@@ -336,22 +334,19 @@ function getDetails(person)
 
         Return something like this:
 
+        <h2>Yuki</h2>
         <img src="http://cdn.themill.com/media/00000010245.jpg">
-        <div class="title">
-            Long time baker and food writer
-        </div>
         <div class="description">
             I make cakes for parties and special occasion. Contact me about your next cake!
         </div>
         <button id="submit">Message Yuki now</button>
     */
 
-    var html  = "<h2>" 
-                + person.name 
-              + "</h3>" 
+    var details = '<h2>' + person.name  + '</h2>' 
+                // + '<img src="' + person.image +'>' 
+                + '<button id="message">Message ' + person.name + ' now</button>' 
 
-
-    return html        
+    return details        
 }
 
 $('#back').on('click', function()
