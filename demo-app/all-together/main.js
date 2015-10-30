@@ -2,45 +2,6 @@ var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/1BGkw8j2gas0j1V
 
 var peopleList
 
-// let's use jQuery to select the #search input field 
-// and store it in a variable (so that we can re-use it later)
-// # is for id
-var searchField = $('#search'); 
-searchField.on('keypress', function(){
-	
-	// let's capture the text from the input box
-	// store it in the userInput variable	
-	var userInput = searchField.val();
-	
-	// let's apply the JS filter function to peopleList
-	// to return only people whose data contains the text from the input box
-	var searchResults = peopleList.filter(function(person){
-		
-		// from a person (structured JS Object)
-		// we extract all the values (name, likesPets, etc.)
-		// and add them to a string
-		// this process is called "flattening"
-		var flattenedValues = '';
-		for (property in person) {
-			var value = person[property]
-			flattenedValues += ' ' + value;
- 		}
- 		// let's see if our search pattern (userInput) is contained in the flattenedValues string
- 		var searchPattern = new RegExp(userInput,'ig');
- 		// we use the JS test function for this
- 		// http://www.w3schools.com/jsref/jsref_regexp_test.asp
- 		var contains = searchPattern.test(flattenedValues); 		
- 		console.log('Does "' + flattenedValues + '" contains "' + userInput + '"? ' + contains)
- 		return contains
-	});
-	
-	console.log(searchResults);
-	// finally, we spit out the searchResults 
-	// using the displayList function
-	// so that users can see
-	displayList($('#result'), searchResults)
-});
-
 // execute loadData
 loadData(spreadsheetURL, useData)
 
@@ -57,34 +18,100 @@ $('button').on('click', function(){
      // display filtered+sorted data
 
     displayList($('#result'), sortedList)
-
 })
 
 // define what to do with the loaded data
-function useData(jsonFile) {
-	console.log('data loaded!')
-  peopleList = getPeopleList(jsonFile)
+function useData(jsonFile) 
+{
+    console.log('data loaded!')
+    peopleList = getPeopleList(jsonFile)
+}
+
+// let's use jQuery to select the #search input field 
+// and store it in a variable (so that we can re-use it later)
+// # is for id
+var searchField = $('input[type=search]');
+searchField.on('keypress keyup', function(){    
+    // let's capture the text from the input box
+    // store it in the userInput variable   
+    var userInput = searchField.val();
+    
+    if(userInput == '')
+    {
+        // empty the display list
+    }
+    else
+    {  
+        var searchResults = searchPeopleList(userInput);
+        // var searchResults = searchPeopleListByYesOrNo(userInput);
+
+        // console.log(searchResults);
+        // finally, we spit out the searchResults 
+        // using the displayList function
+        // so that users can see
+        var resultsContainer = $('#result')
+        displayList(resultsContainer, searchResults)
+    }
+
+});
+
+function searchPeopleList(inputText)
+{
+    // let's apply the JS filter function to peopleList
+    // to return only people whose data contains the text from the input box
+    var searchResults = peopleList.filter(function(person){
+        
+        // from a person (structured JS Object)
+        // we extract all the values (name, likesPets, etc.)
+        // and add them to a string
+        // this process is called "flattening"
+        var flattenedValues = '';
+        for (property in person) 
+        {
+            var value = person[property]
+            flattenedValues += ' ' + value;
+        }
+        // let's see if our search pattern (userInput) is contained in the flattenedValues string
+        var searchPattern = new RegExp(inputText,'ig');
+        // we use the JS test function for this
+        // http://www.w3schools.com/jsref/jsref_regexp_test.asp
+        var contains = searchPattern.test(flattenedValues);         
+        console.log('Does "' + flattenedValues + '" contains "' + inputText + '"? ' + contains)
+        return contains
+    });
+  
+    return searchResults;
+}
+
+function searchPeopleListByYesOrNo(text)
+{
+    var searchResults = peopleList.filter(function(person)
+    {
+        // console.log(person);
+        var termMatch = false;
+        
+        for (var prop in person)
+        {
+            var searchPattern = new RegExp(text,'ig');
+        
+            termMatched = searchPattern.test(prop); 
+          
+            if(person[prop] == "1" && termMatched)
+            {
+                termMatch = true;
+            }
+        }
+        return termMatch;
+    
+    });
+  
+    return searchResults;
 }
 
 // FUNCTIONS from https://github.com/CodeAndCake/AppsFromScratch/blob/v2/demo-app
 
-/*
-
-    Use this function to fetch data from a URL.
-
-    Inputs
-
-        1. url: it's the address of the data you want to fetch, for example "https://gender-api.com/get?name=matteo"
-
-        2. successFunction: a function to execute when we receive data (it may take a few seconds before we receive something)
-
-    Requirements
-
-        This function relies on jQuery, so make sure jQuery is included in your document, eg:
- 
-*/
-
-function loadData (url, successFunction) {
+function loadData (url, successFunction) 
+{
 
     // perform an asynchronous data request using jQuery
     // asynchronous means we're asking for data NOW but don't know WHEN it'll come back (not immediately)
@@ -106,7 +133,8 @@ function loadData (url, successFunction) {
     })
 }
 
-function getPeopleList (jsonFile) {
+function getPeopleList (jsonFile) 
+{
     // we'll store a list of people in this variable
     var peopleList = []
 
@@ -122,15 +150,14 @@ function getPeopleList (jsonFile) {
     {
         var row = rows[counter]
         
-         var person =
-        {
-            name: row.gsx$name.$t,
-            likesPets: row.gsx$likespets.$t,
-            bodyStrength: row.gsx$bodystrength.$t,
-            bakingSkills: row.gsx$bakingskills.$t,
-            diySkills: row.gsx$diyskills.$t,
-            // etc.. you do it :)
-        }
+        var person = {} // an empty object
+        // let's stuff the person with data from the json
+        person.name = row.gsx$name.$t
+        person.likesPets = row.gsx$likespets.$t
+        person.bodyStrength = row.gsx$bodystrength.$t
+        person.bakingSkills = row.gsx$bakingskills.$t
+        person.diySkills = row.gsx$diyskills.$t
+        // etc.. you do it :)
 
         peopleList.push(person) // store this in the main data array
 
@@ -142,13 +169,12 @@ function getPeopleList (jsonFile) {
     return peopleList
 }
 
-function getSelectedOption() {
+function getSelectedOption() 
+{
 
     var selectedOption = $('select option:selected').val()
     return selectedOption
 }
-
-// Filter and sort fromList according to user choices
 
 function getFilteredList(fromList, filterCriteria)
 {
@@ -231,7 +257,8 @@ function getSortedList(fromList, sortCriteria)
     return sortedList
 }
 
-function displayList (container, list) {
+function displayList (container, list) 
+{
 
     // loop through list
     var counter = 0;
@@ -242,8 +269,8 @@ function displayList (container, list) {
 
     listContainer.empty();
 
-     while (counter < total) {
-
+    while (counter < total) 
+    {
         var person = list[counter]
 
         var li = "<li>" + "<h3>" + person.name + "</h3>" + "</li>"
@@ -254,22 +281,20 @@ function displayList (container, list) {
         counter = counter + 1
     }
 
-    if(total == 0){
-
+    if (total == 0)
+    {
         totalFoundContainer.html('No result found');
-
-    }else if(total == 1){
-
+    } 
+    else if (total == 1)
+    {
         totalFoundContainer.html('1 person found');
-
-    }else{
-
+    } 
+    else 
+    {
         totalFoundContainer.html( total + ' people found');
-
     }
 
     container.addClass('active');
-
 }
 
 
