@@ -293,7 +293,7 @@ function displayList (container, list)
 
 function onListItemClick(person)
 {
-    var detailsContainer = $('#page2 .container')
+    var detailsContainer = $('#page2 .profile')
     displayDetails(detailsContainer, person)
 }
 
@@ -309,23 +309,52 @@ function displayDetails(container, person)
 
 function getListItem(person)
 {
-    // this function creates some nice HTML around the person's data
+    /*
+        This function creates some nice HTML around the person's data
+
+        Return something like this:
+
+        <li>
+            <h3>Aimee</h3>
+        </li>
+    */
+
     // li = List Item
     var li  = "<li>" 
                 + "<h3>" 
                     + person.name 
                 + "</h3>" 
-            + "</li>"
+            + "</li>"        
 
     return li        
 }
 
 function getDetails(person)
 {
-    // this function creates some nice HTML around the person's data
+    /*
+        This function creates some nice HTML around the person's data
+
+        Return something like this:
+
+        <img src="http://cdn.themill.com/media/00000010245.jpg">
+        <div class="title">
+            Long time baker and food writer
+        </div>
+        <div class="description">
+            I make cakes for parties and special occasion. Contact me about your next cake!
+        </div>
+        <button id="submit">Message Yuki now</button>
+    */
+
     var html  = "<h2>" 
                 + person.name 
               + "</h3>" 
 
+
     return html        
 }
+
+$('#back').on('click', function()
+{
+   $('#page_slider').removeClass('details_view') 
+})
