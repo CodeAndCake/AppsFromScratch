@@ -1,13 +1,79 @@
 # Apps from scratch, day 6
 
-1. Code the `details` screen
-* [Presentations](#presentations)
+1. [Code](#challenge) the `details` screen
+* [Pitch](#presentations) your ideas and prototypes
 * Resources to continue your app-making journey
-* [Celebrations](#celebrations) :cake:
+* [Celebrate](#celebrations)! :cake:
 
-# JS challenge
 
-Code the `details` screen
+# Challenge!
+
+**GOAL** Code the `details` screen
+
+1. [Fork this pen](http://codepen.io/baddeo/full/JYpgwL)!
+* Take a look at the **HTML** and notice the new structure:
+	```html
+	<div id="page_slider">
+  		<div id="page1">
+  			...
+  		</div>
+  		<div id="page2">
+  			...
+  		</div>
+	</div> 
+	```
+	
+	`#page1` is the initial screen users will interact with
+	
+	`#page2` is where you are going to display details about a person / mentor / tool etc.
+	
+	`#page_slider` **wraps** `#page1` and `#page2`
+* The *sliding* effect is a **CSS** trick:
+
+	```css
+	#page_slider {
+  		width: 200%;
+  		transition: margin-left .2s ease-out;
+	}
+	
+	#page_slider.details_view {
+  		margin-left: -100%;
+	}
+	```
+	
+	`#page_slider` (aka the *wrapper*) is set to be 200% wide, so that it can accommodate 2 "pages". 
+	
+	When we want to display the details page `#page2`, we can use **JavaScript** to add the class `details_view`, which sets the `margin-left` to -100%, effectively sliding the wrapper half-way to the left.
+* Add new data to the **spreadsheet** (aka the *database*) so that each row has a `picture` URL, and some `description`.
+
+	For example:
+	
+	* `name` > `Yuki`
+	* `picture` > `http://cdn.themill.com/media/00000010245.jpg`
+	* `description` > `Expert baker and food writer` 
+  
+* In **JavaScript**, there are some functions you will need to hack:
+	
+	* `displayList`
+	
+		```js
+		var listItem = $(getListItem(person))
+
+      // when someone clicks on the list item..
+      // execute the function onListItemClick
+      // and "bind" it to the current person
+      // otherwise it would display the wrong person's data
+      listItem.on('click', onListItemClick.bind(this, person))
+
+      // append = add at the end..
+      listContainer.append(listItem)
+     ```   
+	* `getListItem`
+	* `onListItemClick`
+	* `getDetails`
+	* `displayDetails`
+
+``
 
 # Presentations
 
