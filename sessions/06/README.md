@@ -223,7 +223,7 @@ Use **examples** and **stories** from your experience. They will make your point
 	
 * [Pttrns](http://pttrns.com/)
 
-	> See how other mobile designers colve UX problems for things like calculators, calendars, search and more
+	> See how other mobile designers solve UX problems for things like calculators, calendars, search and more
 	
 * [WTF Mobile Web](http://wtfmobileweb.com/)
 
