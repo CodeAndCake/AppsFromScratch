@@ -159,11 +159,11 @@ Use **examples** and **stories** from your experience. They will make your point
 
 * [Codecademy](https://www.codecademy.com/)
 	
-	> Free online courses to learn just about any web language you like!
+	> Free online courses to learn just about any coding language you like!
 
 * [Dash](https://dash.generalassemb.ly/)
 
-	> Free online courses to get you going in HTML, CSS and a little Javascript
+	> Free online courses to get you going in HTML, CSS and a little JavaScript
 	
 * [CSS-Tricks](https://css-tricks.com/)
 
@@ -183,7 +183,7 @@ Use **examples** and **stories** from your experience. They will make your point
 	
 * [Panda App](https://usepanda.com/app/#/)
 
-	> Another great source of inspiration pulling results from various sources like [Designernews](https://www.designernews.co/), [Dribble](https://dribbble.com/), [Behance](https://www.behance.net/) and [siteInspire](http://www.siteinspire.com/)
+	> Another great source of inspiration pulling results from various sources like [DesigneNnews](https://www.designernews.co/), [Dribble](https://dribbble.com/), [Behance](https://www.behance.net/) and [SiteInspire](http://www.siteinspire.com/)
 
 * [GoodUI](http://goodui.org/)
 
@@ -199,7 +199,7 @@ Use **examples** and **stories** from your experience. They will make your point
 	
 * [HackDesign](https://hackdesign.org/lessons)
 
-	> Lessons in design
+	> Learn how to design digital products, with lessons spanning from typography to UX (user experience).
 	
 * [Noun Project](https://thenounproject.com)
 
@@ -215,11 +215,11 @@ Use **examples** and **stories** from your experience. They will make your point
 	
 * [JS for cats](http://jsforcats.com/)
 
-	> Introduction to Javascript..."So easy your human companion could do it too!"
+	> Introduction to JavaScript..."So easy your human companion could do it too!" :scream_cat:
 	
 * [Random User Generator](https://randomuser.me/)
 
-	> Random users for you to populate your app prototype spreadsheet
+	> Random users for you to populate your app prototypes
 	
 * [Pttrns](http://pttrns.com/)
 
