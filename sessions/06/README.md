@@ -1,7 +1,7 @@
 # Apps from scratch, day 6
 
 1. [Code](#challenge) the `details` screen
-* [Pitch](#presentations) your ideas and prototypes
+* [Pitch](#pitch) your ideas and prototypes
 * [Resources](#resources) to continue your app-making journey
 * [Celebrate](#celebrations)! :cake:
 
@@ -73,11 +73,11 @@
 	* `displayDetails`
 	
 
-# Presentations
+# Pitch
 
 Pitch your idea and show your prototype!
 
-You can use Google Slides, or [slides.com](http://slides.com) to put together a quick presentation.
+You can use Google Slides, or [slides.com](http://slides.com), to put together a quick presentation.
 
 ### Presentation tips
 
@@ -87,11 +87,11 @@ Generally, people remember **2-3 ideas** from a talk. Which ones you want them t
 
 #### **PLANNING** 
 
-Don't try to explain everything. Pick out 2-3 **key ideas** from your topic and explain them in the simplest way you can. 
+Don't try to explain everything. Pick out 2-3 **key ideas** and explain them in the simplest way you can. 
 
 #### **INTRO** 
 
-Explain the *background* of your talk and give a quick *summary* of what you're going to talk about. People will pay more attention if they have a sense of what's coming next
+Explain the *background* of your talk and give a quick *summary* of what you're going to talk about. People will pay more attention if they have a sense of what's coming next.
 
 #### **SLIDES** are not a necessity. 
 
