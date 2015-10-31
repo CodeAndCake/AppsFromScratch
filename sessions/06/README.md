@@ -1,12 +1,12 @@
 # Apps from scratch, day 6
 
-1. [Code](#challenge) the `details` screen
+1. [Code](#code) the `details` screen
 * [Pitch](#pitch) your ideas and prototypes
 * [Resources](#resources) to continue your app-making journey
 * [Celebrate](#celebrations)! :cake:
 
 
-# Challenge!
+# Code!
 
 **GOAL** Code the `details` screen
 
@@ -73,7 +73,7 @@
 	* `displayDetails`
 	
 
-# Pitch
+# Pitch!
 
 Pitch your idea and show your prototype!
 
