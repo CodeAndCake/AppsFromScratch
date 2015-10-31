@@ -228,9 +228,7 @@ Use **examples** and **stories** from your experience. They will make your point
 	> What not to do!
 	
 
-# Achievements!
-
-Over the course of 24 hours you have...
+# 15 things you've achieved in 24 hours!
 
 
 1. Unpacked the **design process**: iterative, collaborative
@@ -268,7 +266,7 @@ Over the course of 24 hours you have...
 15. Overseen the whole process of app prototyping whilst creating **proof-of-concept prototypes** for Web applications
 
 
-...Job well done!
+**...Job well done!**
 
 
 # Let's celebrate!
