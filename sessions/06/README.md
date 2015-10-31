@@ -2,7 +2,7 @@
 
 1. [Code](#challenge) the `details` screen
 * [Pitch](#presentations) your ideas and prototypes
-* Resources to continue your app-making journey
+* [Resources](#resources) to continue your app-making journey
 * [Celebrate](#celebrations)! :cake:
 
 
@@ -75,10 +75,57 @@
 
 # Presentations
 
+Pitch your idea and show your prototype!
+
+You can use Google Slides, or [slides.com](http://slides.com) to put together a quick presentation.
+
+### Presentation tips
+
+#### **FACT** 
+
+Generally, people remember **2-3 ideas** from a talk. Which ones you want them to remember? 
+
+#### **PLANNING** 
+
+Don't try to explain everything. Pick out 2-3 **key ideas** from your topic and explain them in the simplest way you can. 
+
+#### **INTRO** 
+
+Explain the *background* of your talk and give a quick *summary* of what you're going to talk about. People will pay more attention if they have a sense of what's coming next
+
+#### **SLIDES** are not a necessity. 
+
+Ask yourself: is a slideshow the most effective way to communicate this? **How else** could I get this point across?
+	
+For instance, asking your audience a few *open* questions, getting them to play a game, break them out into small groups to discuss a scenario..
+
+#### **SLIDES AGAIN**	 
+
+If you *must* use slides, then:
+	
+* One **point** per slide.
+	
+* Don't cram long texts in your slides. Keep them down to a few *keywords* and one image or two..
+
+#### **DELIVERY** 
+
+Don't read out slides. 
+
+It's distracting both for you and for your audience.
+
+#### **TOP TIP** 
+
+Use **examples** and **stories** from your experience. They will make your points more **relatable**: more interesting to listen to and easier to learn.
+
+### Your turn
+
+* Mention *market* and *business opportunities*  
 * Mention *competitors*
-* Mention *market* and *business opportunities*
 * Talk about *customer research* (remember [interviews](../03/README.md#who-are-your-users)?)
-* Tell us the story of your user
+* Tell us the **story** of your user
+
+![](assets/story.png)
+
 
 # Resources
 
@@ -153,7 +200,6 @@ Over the course of 24 hours you have...
 # Let's celebrate!
 
 And remember...
-
 
 1. Googling problems is not *cheating*
 	
