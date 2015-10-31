@@ -151,27 +151,75 @@ Use **examples** and **stories** from your experience. They will make your point
 * [Codecademy](https://www.codecademy.com/)
 	
 	> Free online courses to learn just about any web language you like!
+
+* [Dash](https://dash.generalassemb.ly/)
+
+	> Free online courses to get you going in HTML, CSS and a little Javascript
+	
 * [CSS-Tricks](https://css-tricks.com/)
 
 	> Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
+	
 * [Smashing Magazine](http://www.smashingmagazine.com/)
 
 	> Online magazine focused on coding and web development, covering techniques, coding languages, mobile, design, graphics and WordPress
+	
+* [Creative Bloq](http://www.creativebloq.com/)
+	
+	> Online magazine providing inspiration for graphic design, web design, 3D art and more
+
 * [Niice](https://niice.co/)
 
 	> A design search engine, drawing results from [Behance](https://www.behance.net/), [Dribble](https://dribbble.com/) and [Designspiration](http://designspiration.net/). Great if you're in need of some design inspiration!
+	
 * [Panda App](https://usepanda.com/app/#/)
 
 	> Another great source of inspiration pulling results from various sources like [Designernews](https://www.designernews.co/), [Dribble](https://dribbble.com/), [Behance](https://www.behance.net/) and [siteInspire](http://www.siteinspire.com/)
 
-* [ ] [GoodUI]
-* [ ] [UserOnboard]
-* [ ] [CodeWars]
-* [ ] [Dash]
-* [ ] [HackDesign](https://hackdesign.org)
-* [ ] [Noun Project](https://thenounproject.com)
-* [ ] [Colour Contrast check](http://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)
-* [ ] [JS for cats](http://jsforcats.com/)
+* [GoodUI](http://goodui.org/)
+
+	> Extensive list of good design patterns for user interfaces
+	
+* [UserOnboard](https://www.useronboard.com/)
+
+	> Teardowns of major apps - a great reference for designing your interfaces
+	
+* [CodeWars](http://www.codewars.com/about)
+
+	> Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
+	
+* [HackDesign](https://hackdesign.org/lessons)
+
+	> Lessons in design
+	
+* [Noun Project](https://thenounproject.com)
+
+	> Huge database of beautiful icons to use in your app
+	
+* [Colour Contrast check](http://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)
+
+	> Tool to check the readability of your colours, ensuring they're easy on the eyes
+	
+* [Abobe Color CC](https://color.adobe.com/create/color-wheel/)
+
+	> Great tool to design your colour palettes
+	
+* [JS for cats](http://jsforcats.com/)
+
+	> Introduction to Javascript..."So easy your human companion could do it too!"
+	
+* [Random User Generator](https://randomuser.me/)
+
+	> Random users for you to populate your app prototype spreadsheet
+	
+* [Pttrns](http://pttrns.com/)
+
+	> See how other mobile designers colve UX problems for things like calculators, calendars, search and more
+	
+* [WTF Mobile Web](http://wtfmobileweb.com/)
+
+	> What not to do!
+	
 
 # Achievements!
 
