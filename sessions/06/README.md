@@ -51,7 +51,6 @@
 	* `name` > `Yuki`
 	* `picture` > `http://cdn.themill.com/media/00000010245.jpg`
 	* `description` > `Expert baker and food writer` 
-  
 * In **JavaScript**, there are some functions you will need to hack:
 	
 	* `displayList`
@@ -72,8 +71,7 @@
 	* `onListItemClick`
 	* `getDetails`
 	* `displayDetails`
-
-``
+	
 
 # Presentations
 
