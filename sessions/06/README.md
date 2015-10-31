@@ -1,10 +1,13 @@
 # Apps from scratch, day 6
 
-1. Code the details screen (from search results) 
+1. Code the `details` screen
 * [Presentations](#presentations)
 * Resources to continue your app-making journey
 * [Celebrations](#celebrations) :cake:
 
+# JS challenge
+
+Code the `details` screen
 
 # Presentations
 
@@ -30,6 +33,15 @@
 * [Panda App](https://usepanda.com/app/#/)
 
 	> Another great source of inspiration pulling results from various sources like [Designernews](https://www.designernews.co/), [Dribble](https://dribbble.com/), [Behance](https://www.behance.net/) and [siteInspire](http://www.siteinspire.com/)
+
+* [ ] [GoodUI]
+* [ ] [UserOnboard]
+* [ ] [CodeWars]
+* [ ] [Dash]
+* [ ] [HackDesign](https://hackdesign.org)
+* [ ] [Noun Project](https://thenounproject.com)
+* [ ] [Colour Contrast check](http://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)
+* [ ] [JS for cats](http://jsforcats.com/)
 
 # Achievements!
 
