@@ -51,7 +51,7 @@
 	* `name` > `Yuki`
 	* `image` > `http://cdn.themill.com/media/00000010245.jpg`
 	* `description` > `Expert baker and food writer` 
-* In **JavaScript**, there are some functions you will need to hack:
+* In **JS**, there are some functions you will need to hack:
 	
 	In `function getPeopleList`:
 		
@@ -62,7 +62,7 @@
 	person.image = row.gsx$image.$t
 	// and do the same for the description
 	```
-* In `function displayList`:
+* In **JS**, `function displayList`:
 		
 	Find and **delete** the lines where `li` is created and appended to `listContainer` 
 	```js
@@ -83,18 +83,20 @@
      // append = add at the end..
      listContainer.append(listItem)
     ``` 
-* Copy and paste the following functions from our pen into your pen, at the bottom of the JS panel
+* In **JS**, *copy-paste* the following functions from our pen into your pen, at the bottom of the JS panel
        
 	* `function getListItem`
 	* `function onListItemClick`
 	* `function getDetails`
 	* `function displayDetails`
-	* ```js
-		$('#back').on('click', function()
-		{
-		   $('#page_slider').removeClass('details_view') 
-		})
-		```
+* In **JS**, *copy-paste* the code below at the bottom of the JS panel
+	
+	```js
+	$('#back').on('click', function()
+	{
+	   $('#page_slider').removeClass('details_view') 
+	})
+	```
 	
 
 # Pitch!
