@@ -89,7 +89,13 @@
 	* `function getListItem`
 	* `function onListItemClick`
 	* `function getDetails`
-	* `function displayDetails`
+	* `function displayDetails`	
+	* ```js
+		$('#back').on('click', function()
+		{
+		   $('#page_slider').removeClass('details_view') 
+		})
+		```
 	
 
 # Pitch!
