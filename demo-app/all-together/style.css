@@ -156,6 +156,27 @@ button {
     bottom: 0 left: 0;
 }
 
+#back {
+    width: auto;
+}
+
+.profile {
+    padding-top: .5em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile img {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+.profile .description {
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -172,35 +193,6 @@ button {
         max-width: 400px;
     }
 }
-
-#back {
-    display: block;
-    width: auto;
-}
-
-.profile {
-    padding-top: .5em;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.profile img {
-    width: 100%;
-    margin-bottom: .5em;
-}
-
-.profile .title {
-    font-weight: 700;
-    font-size: 2em;
-    margin-bottom: .5em;
-}
-
-.profile .description {
-    font-weight: 300;
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
 
 /*end of media query*/
 
