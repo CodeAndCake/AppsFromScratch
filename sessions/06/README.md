@@ -138,12 +138,17 @@ Use **examples** and **stories** from your experience. They will make your point
 * [Codecademy](https://www.codecademy.com/)
 	
 	> Free online courses to learn just about any web language you like!
+* [Dash](https://dash.generalassemb.ly/)
+
+	> Free online courses to get you going in HTML, CSS and a little Javascript
 * [CSS-Tricks](https://css-tricks.com/)
 
 	> Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
 * [Smashing Magazine](http://www.smashingmagazine.com/)
 
 	> Online magazine focused on coding and web development, covering techniques, coding languages, mobile, design, graphics and WordPress
+* [Creative Bloq](http://www.creativebloq.com/)
+	> Online magazine providing inspiration for graphic design, web design, 3D art and more
 * [Niice](https://niice.co/)
 
 	> A design search engine, drawing results from [Behance](https://www.behance.net/), [Dribble](https://dribbble.com/) and [Designspiration](http://designspiration.net/). Great if you're in need of some design inspiration!
