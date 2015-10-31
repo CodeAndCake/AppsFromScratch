@@ -49,18 +49,28 @@
 	For example:
 	
 	* `name` > `Yuki`
-	* `picture` > `http://cdn.themill.com/media/00000010245.jpg`
+	* `image` > `http://cdn.themill.com/media/00000010245.jpg`
 	* `description` > `Expert baker and food writer` 
 * In **JavaScript**, there are some functions you will need to hack:
 	
 	* `function getPeopleList`
 		
+		Find the line where the `person` object is filled with data from the spreadsheet 
 		```js
+		person.name = row.gsx$name.$t
+		// add the line below to add the image data to the person
 		person.image = row.gsx$image.$t
-		// etc...
+		// and do the same for the description
 		```
 	* `function displayList`
-	
+		
+		Find and **delete** the lines where `li` is created and appended to `listContainer` 
+		```js
+		var li = '<li>' + person.name + '</li>'
+     listContainer.append(li)
+     ```
+		
+		Add the lines below
 		```js
 		var listItem = $(getListItem(person))
 
@@ -72,7 +82,10 @@
 
       // append = add at the end..
       listContainer.append(listItem)
-     ```   
+     ``` 
+   
+   Copy and paste the following functions from our pen into your pen, at the bottom of the JS panel
+       
 	* `function getListItem`
 	* `function onListItemClick`
 	* `function getDetails`
