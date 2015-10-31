@@ -54,8 +54,10 @@
 * In **JavaScript**, there are some functions you will need to hack:
 	
 	* `function getPeopleList`
+		
 		```js
 		person.image = row.gsx$image.$t
+		// etc...
 		```
 	* `function displayList`
 	
