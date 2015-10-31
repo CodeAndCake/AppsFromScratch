@@ -15,7 +15,7 @@
 	```html
 	<div id="page_slider">
   		<div id="page1">
-  			...
+  			... all your current HTML here
   		</div>
   		<div id="page2">
   			...
@@ -53,7 +53,11 @@
 	* `description` > `Expert baker and food writer` 
 * In **JavaScript**, there are some functions you will need to hack:
 	
-	* `displayList`
+	* `function getPeopleList`
+		```js
+		person.image = row.gsx$image.$t
+		```
+	* `function displayList`
 	
 		```js
 		var listItem = $(getListItem(person))
@@ -67,10 +71,10 @@
       // append = add at the end..
       listContainer.append(listItem)
      ```   
-	* `getListItem`
-	* `onListItemClick`
-	* `getDetails`
-	* `displayDetails`
+	* `function getListItem`
+	* `function onListItemClick`
+	* `function getDetails`
+	* `function displayDetails`
 	
 
 # Pitch!
