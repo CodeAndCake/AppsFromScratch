@@ -12,8 +12,6 @@
 
 * Advertise on Facebook! See [this post](https://www.facebook.com/baddeo/posts/10153016996871222)...
 
-* [Flow](https://flowhub.io/) for visual programming?
-
 
 # Day 1
 
@@ -131,13 +129,22 @@
 
 ### What went well
 
-
+* Celebrations: cupcakes and juice
+* Collaborative debugging
+* Sharing resources
 
 ### Areas for improvement
 
-
+* Coding session was disjointed, as a result of us making things up as we go along. People had to delete stuff, fiddly.
+* **JS** file with ~400 lines is confusing for *anyone*. We had to do it this way because [CodePen](https://codepen.io) (the Web-based code editor we used throughout the course) doesn't allow  more than 1 file per language. Next time we can migrate to [Thimble](https://thimble.mozilla.org)
+* Final **presentations** should be more informal, just gathering around the computers with a cupcake and showing each other the apps we made.
+* Presentations in general could be more informal.
+* Using [building blocks](http://zurb.com/building-blocks), rather than building things from scratch, can be useful for learners that may just want to get a general understanding of  coding practices, but are more interested in prototyping ideas rather than labouring over the details.
 
 ### Action points
+
+* Check out [Ionic](https://creator.ionic.io) and [Flow](https://flowhub.io/) for visual programming?
+* Get people familiar and comfortable with the **JS Console**
 
 
 
