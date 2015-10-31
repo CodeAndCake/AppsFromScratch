@@ -8,7 +8,9 @@
 
 # Code!
 
-**GOAL** Code the `details` screen
+**GOAL** To code the `details` screen, where users can view more info about a person (or destination, tool etc.) and then *contact* the person or *go back* to the `main` screen.
+
+![](assets/details.gif)
 
 1. [Fork this pen](http://codepen.io/baddeo/full/JYpgwL)!
 * Take a look at the **HTML** and notice the new structure:
@@ -41,7 +43,7 @@
 	}
 	```
 	
-	`#page_slider` (aka the *wrapper*) is set to be 200% wide, so that it can accommodate 2 "pages". 
+	`#page_slider` (aka the *wrapper*) is set to be `200%` wide, so that it can accommodate 2 "pages". 
 	
 	When we want to display the details page `#page2`, we can use **JavaScript** to add the class `details_view`, which sets the `margin-left` to -100%, effectively sliding the wrapper half-way to the left.
 * Add new data to the **spreadsheet** (aka the *database*) so that each row has a `picture` URL, and some `description`.
