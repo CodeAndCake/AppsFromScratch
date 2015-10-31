@@ -53,43 +53,42 @@
 	* `description` > `Expert baker and food writer` 
 * In **JavaScript**, there are some functions you will need to hack:
 	
-	* `function getPeopleList`
+	In `function getPeopleList`:
 		
-		Find the line where the `person` object is filled with data from the spreadsheet 
-		```js
-		person.name = row.gsx$name.$t
-		// add the line below to add the image data to the person
-		person.image = row.gsx$image.$t
-		// and do the same for the description
-		```
-	* `function displayList`
+	Find the line where the `person` object is filled with data from the spreadsheet 
+	```js
+	person.name = row.gsx$name.$t
+	// add the line below to add the image data to the person
+	person.image = row.gsx$image.$t
+	// and do the same for the description
+	```
+* In `function displayList`:
 		
-		Find and **delete** the lines where `li` is created and appended to `listContainer` 
-		```js
-		var li = '<li>' + person.name + '</li>'
-     listContainer.append(li)
-     ```
-		
-		Add the lines below
-		```js
-		var listItem = $(getListItem(person))
+	Find and **delete** the lines where `li` is created and appended to `listContainer` 
+	```js
+	var li = '<li>' + person.name + '</li>'
+    listContainer.append(li)
+    ```
+	
+	Add the lines below
+	```js
+	var listItem = $(getListItem(person))
 
-      // when someone clicks on the list item..
-      // execute the function onListItemClick
-      // and "bind" it to the current person
-      // otherwise it would display the wrong person's data
-      listItem.on('click', onListItemClick.bind(this, person))
+     // when someone clicks on the list item..
+     // execute the function onListItemClick
+     // and "bind" it to the current person
+     // otherwise it would display the wrong person's data
+     listItem.on('click', onListItemClick.bind(this, person))
 
-      // append = add at the end..
-      listContainer.append(listItem)
-     ``` 
-   
-   Copy and paste the following functions from our pen into your pen, at the bottom of the JS panel
+     // append = add at the end..
+     listContainer.append(listItem)
+    ``` 
+* Copy and paste the following functions from our pen into your pen, at the bottom of the JS panel
        
 	* `function getListItem`
 	* `function onListItemClick`
 	* `function getDetails`
-	* `function displayDetails`	
+	* `function displayDetails`
 	* ```js
 		$('#back').on('click', function()
 		{
