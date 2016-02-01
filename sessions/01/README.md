@@ -480,3 +480,10 @@ Go to [CodePen](https://codepen.io/signup/free) and sign up for the free account
 	* [Custom select elements](http://tympanus.net/codrops/2014/07/10/inspiration-for-custom-select-elements/)
 	* [Minimal form interface](http://tympanus.net/codrops/2014/04/01/minimal-form-interface)
 	* [Natural language form](http://tympanus.net/codrops/2013/05/21/natural-language-form-with-custom-input-elements)
+
+
+### License
+
+[![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License ](http://creativecommons.org/licenses/by-nc-sa/4.0)

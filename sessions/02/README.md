@@ -435,3 +435,10 @@ The more you know about your community and potential audience, the more you can 
 ![](http://www.interfacesketch.com/previews/iphone6.png)
 
 Printable wireframing templates from [InterfaceSketch](http://www.interfacesketch.com)
+
+
+### License
+
+[![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License ](http://creativecommons.org/licenses/by-nc-sa/4.0)
