@@ -8,21 +8,23 @@ You will experience the design and development process first-hand, and get to kn
 
 This course is a great starting point in your app-making journey.
 
-<!--Suitable for people who have never written a line of code, this course will guide you through the design, prototype and development process that leads to the creation of a web-based application.
+<!--
+Suitable for people who have never written a line of code, this course will guide you through the design, prototype and development process that leads to the creation of a web-based application.
 
-Working on hands-on briefs, you will learn the principles of programming and get familiar with the fabrics of the Web (HTML, CSS, JavaScript and APIs).-->
+Working on hands-on briefs, you will learn the principles of programming and get familiar with the fabrics of the Web (HTML, CSS, JavaScript and APIs).
+-->
 
 
-# Plan
+# What's the plan?
 
 When	| What	
 ---	| ----	
-[Day 1](sessions/01/README.md)		| Get to know each other <br>Discuss: what is an app, how do we use them, how do we start building one? <br>Introduction to HTML and CSS: create your app home screen
-[Day 2](sessions/02/README.md)		| Work together to generate, spec out and test your ideas <br>UX research: interview people (aka users) <br>Introduction to JavaScript: connect your app to an online database
-[Day 3](sessions/03/README.md)		| Interface design: sketch out your app’s pages <br>Learn how to use digital wireframing tools <br>Mark up your wireframes with HTML and CSS 
-[Day 4](sessions/04/README.md)		| Review your wireframes collaboratively <br>JavaScript: learn about variables, functions and loops <br>Code your app with JavaScript 
-[Day 5](sessions/05/README.md)		| Make! <br>Test! <br>Tweak! Repeat...
-[Day 6](sessions/06/README.md)		| Finalise  and present your app prototype <br>Celebrate your achievements! <br>Take away resources to continue on your app-making journey
+[Day 1<br>![](sessions/img/day-1.jpg)](sessions/01/README.md)	| On the first day we discuss key concepts around apps (interface, logic, data) and start making with HTML & CSS.
+[Day 2<br>![](sessions/img/day-2.jpg)](sessions/02/README.md)		| We work together to generate, spec out and test your app ideas. Then start programming with JavaScript.
+[Day 3<br>![](sessions/img/day-3.jpg)](sessions/03/README.md)		| You'll apply your research to sketch out how your app looks and behaves on paper. Then you'll make digital wireframes.
+[Day 4<br>![](sessions/img/day-4.jpg)](sessions/04/README.md)		| You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
+[Day 5<br>![](sessions/img/day-5.jpg)](sessions/05/README.md)		| You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
+[Day 6<br>![](sessions/img/day-6.jpg)](sessions/06/README.md)		| Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
 
 
 # Learning goals
