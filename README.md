@@ -77,20 +77,21 @@ When	| What
 
 # Learning goals
 
-By the end of this course you will be able to:
+1. Appreciate how digital products work and how they are made. Understand the different uses of **HTML**, **CSS** and **JavaScript**.
+* Get hands-on **coding practice**: follow tutors' demonstrations and integrate ready-made blocks of code in your work.
+* Apply your understanding and **experiment** on your own: refine, test and *debug* your code.
+* Feel confident **searching** for solutions to design challenges and coding issues.
 
-1. Discuss **app ideas** in terms of *interface*, *logic* and *data* with designers and developers.
-* **Visualise interaction flows** with analog (paper) and digital tools.
-* Break down **behaviour** (including human behaviour) into *algorithms*, that is steps and routines that can be coded.  
-* Explain the differences between **HTML**, **CSS** and **JavaScript** in terms of purpose and syntax.
-* Integrate *ready-made* blocks of code in your own project.  
+<!--
 * Identify **bugs** (unexpected behaviours in apps or code errors) using tools to *inspect* apps and come up with possible explanations.
-* Evaluate online resources when **searching** for solutions to design challenges and coding issues.
 * Create **proof-of-concept prototypes** for Web apps, which manipulate data from online databases and/or **APIs**.
-
-<!--1. Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*. 
+* Discuss **app ideas** in terms of *interface*, *logic* and *data* with designers and developers.
+* **Visualise interaction flows** with analog (paper) and digital tools.
+* Break down **behaviour** (including human behaviour) into *algorithms*, that is step-by-step instructions that can be coded.  
+* Understand the role of the three pillar **technologies** of the Web: *HTML*, *CSS* and *JS*. 
 * Understand how **data APIs** work (HTTP requests, API keys, URL parameters) and hook up one (or more) APIs to your Web application.
-* Critically analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.-->
+* Critically analyse the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
+-->
 
 
 ### License
