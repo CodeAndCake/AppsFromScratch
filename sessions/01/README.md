@@ -1,3 +1,12 @@
+<!--
+
+* !important manage expectations, eg: How long does it take to make an app (show some examples from apps we made, like MeBooks.. and then Pinboard.in)? This course is 3 days.. what can we do with this time?
+* 4 blocks of tables for 4 teams (ish)
+* smaller group discussions (with post-its and markers) and the "report" to the larger group
+* explain prototyping tools like Firebase
+
+-->
+
 # Apps from scratch
 
 <!-- Show of hands -->
