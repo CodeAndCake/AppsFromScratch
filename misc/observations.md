@@ -4,7 +4,7 @@
 
 * Highlight the importance of **searching** for solutions online (*Google is your friend*, StackOverflow) and being able to **scan** results.
 
-* Introduce the mindset of ***seeing behind the scenes***, having a way to understand what's going on so that we can hack/fix it.
+* Introduce the mindset of **seeing behind the scenes**, having a way to understand what's going on so that we can hack/fix it.
 
 * **Research** task on competitor apps
 
@@ -28,7 +28,7 @@
 * Using visual cues to move conversations forward
 * Need to emphasise that we are teaching simplified templates for prototyping purposes - managing expectations
 * Need to explain that the app-building process is extensive and takes a lot of work, a long process
-* Emphasise how important it is to be able to build great, fully thought through prototypes to be able to have informed conversations with designers, developers, partners etc
+* Emphasise how important it is to build great, fully thought-through prototypes to be able to have informed conversations with designers, developers, partners etc
 
 ### Action points
 
@@ -122,7 +122,6 @@
 	* Demo how to code the `tap on search results to reveal more info` interaction
 	* Include images to make the app more engaging
 * FUTURE: Use the [TfL API](https://api-portal.tfl.gov.uk/docs)
-
 
 
 # Day 6
