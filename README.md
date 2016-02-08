@@ -67,12 +67,12 @@ Working on hands-on briefs, you will learn the principles of programming and get
 
 When	| What	
 ---	| ----	
-[Day 1<br>![](sessions/img/day-1.jpg)](sessions/01/README.md)	| On the first day we discuss key concepts around apps (interface, logic, data) and start making with HTML & CSS.
-[Day 2<br>![](sessions/img/day-2.jpg)](sessions/02/README.md)		| We work together to generate, spec out and test your app ideas. Then start programming with JavaScript.
-[Day 3<br>![](sessions/img/day-3.jpg)](sessions/03/README.md)		| You'll apply your research to sketch out how your app looks and behaves on paper. Then you'll make digital wireframes.
-[Day 4<br>![](sessions/img/day-4.jpg)](sessions/04/README.md)		| You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
-[Day 5<br>![](sessions/img/day-5.jpg)](sessions/05/README.md)		| You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
-[Day 6<br>![](sessions/img/day-6.jpg)](sessions/06/README.md)		| Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
+[![](sessions/img/day-1.jpg)](sessions/01)	| On the first day we discuss key concepts around apps (interface, logic, data) and start making with HTML & CSS.
+[![](sessions/img/day-2.jpg)](sessions/02)		| We work together to generate, spec out and test your app ideas. Then start programming with JavaScript.
+[![](sessions/img/day-3.jpg)](sessions/03)		| You'll apply your research to sketch out how your app looks and behaves on paper. Then you'll make digital wireframes.
+[![](sessions/img/day-4.jpg)](sessions/04)		| You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
+[![](sessions/img/day-5.jpg)](sessions/05)		| You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
+[![](sessions/img/day-6.jpg)](sessions/06)		| Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
 
 
 # Learning goals
