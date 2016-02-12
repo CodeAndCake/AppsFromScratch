@@ -7,10 +7,13 @@
 
 <!--- [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract)-->
 
-# Apps from scratch, day 2
+# Coding and app-making for beginners 
 
-1. How long does it take to make an app? 
-* [What is **programming**?](#programming-vs-coding)
+### Day 2
+
+<!-- 1. How long does it take to make an app? -->
+
+1. [What is **programming**?](#programming-vs-coding)
 * Introduction to **JavaScript**: connect your app to an online database 
 * Work together to [generate, spec out and test your **ideas**](#choose-a-theme) 
 * **UX research**: [interview people (aka users)](#who-are-your-users)
@@ -19,24 +22,7 @@
 
 
 
-### **How long** does it take to make an **app**?
 
-This course is 24 hours long, ie **3 working days**.
-
-The point of this course is to *introduce* you to the app-making **process** and **tools**
-
-* **CodePen**: free online code editor, live preview
-* **Spreadsheet**: simpler database, accessible online
-* **HTML**, **CSS** and **JavaScript**: universal languages, entry point to more specialised ones (and useful to know for other jobs!)
-* **GitHub repository**: industry-standard collaborative version-control system
-
-In 3 days we may not get an app on the App Store, but don't lose heart. 
-
-In 3 days you will **get started** with design and code and by the end you will:
-
-* have a solid foundation to continue learning
-* have first-hand experience of the design and development process
-* feel confident speaking about your ideas with other designers, developers and product managers
 
 
 # Programming vs coding

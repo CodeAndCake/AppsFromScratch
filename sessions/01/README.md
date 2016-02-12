@@ -7,13 +7,40 @@
 
 -->
 
-# Apps from scratch
+# Coding and app-making for beginners
 
-<!-- Show of hands -->
+<!-- 
+### Hands up if you...
 
-* Have you made an app before?
-* Have you used an app before?
-* Have you tried to learn code before?
+* Have made an app before
+* Have used an app before
+* Have tried to learn code before
+
+is this useful? 
+-->
+
+### **How long** does it take to make an **app**?
+
+This course is 24 hours long, ie **3 working days**.
+
+The point of this course is to *introduce* you to the app-making **process** and **tools**
+
+* **Thimble**: free online code editor, live preview
+* **Firebase**: real-time database, excellent for prototyping
+* **HTML**, **CSS** and **JavaScript**: universal languages, entry point to more specialised ones (and useful to know for other jobs!)
+* **GitHub repository**: industry-standard collaborative version-control system
+
+In 3 days we may not get an app on the App Store, but don't lose heart. 
+
+In 3 days you will **get started** with design and code and by the end you will:
+
+* have a solid foundation to continue learning
+* have first-hand experience of the design and development process
+* feel confident speaking about your ideas with other designers, developers and product managers
+
+
+
+<!---->
 
 
 This course is about getting **creative** with **code**.
