@@ -1,42 +1,10 @@
 /**
  * A simple theme for reveal.js presentations.
  * 
- * This theme is Copyright (C) 2013 Matteo Menapace, http://baddeo.com. It is MIT licensed.
+ * This theme is Copyright (C) 2016 Matteo Menapace, http://twitter.com/baddeo It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2013 Hakim El Hattab, http://hakim.se
  */
-/* @font-face {
-	font-family: 'League Gothic';
-	src: url('../../lib/font/league_gothic-webfont.eot');
-	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
-		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
-		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
-
-	font-weight: normal;
-	font-style: normal;
-} */
-@font-face {
-  font-family: 'Museo700';
-  src: url("../../lib/font/museosans_700-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo300';
-  src: url("../../lib/font/museosans_300-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Caecilia';
-  src: url("../../lib/font/caecilialtstd-roman-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*#7FBF42;*/
+@import url(https://fonts.googleapis.com/css?family=Lekton:400,400italic,700);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -46,16 +14,16 @@ body {
 }
 
 .reveal {
-  font-family: "Caecilia", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 36px;
+  font-family: "Lekton", -apple-system, sans-serif;
+  font-size: 10vmin;
   font-weight: 200;
   letter-spacing: -0.02em;
-  color: #00334c;
+  color: #4d4d4d;
 }
 
 ::selection {
-  color: #fdeeca;
-  background: #00334c;
+  color: white;
+  background: #4d4d4d;
   text-shadow: none;
 }
 
@@ -69,11 +37,11 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #00334c;
-  font-family: "Museo700", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.1em;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  color: #4d4d4d;
+  font-family: "Lekton", -apple-system, sans-serif;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: none;
   text-shadow: none;
 }
 
@@ -85,7 +53,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #0095d7;
+  color: #FF2E83;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -95,14 +63,14 @@ body {
 }
 
 .reveal a:not(.image):hover {
-  color: #004e71;
+  color: #c70051;
   text-shadow: none;
   border: none;
 }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #00608b;
+  background: #e1005b;
 }
 
 /*********************************************
@@ -111,7 +79,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #00334c;
+  border: 4px solid #4d4d4d;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
@@ -122,7 +90,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #0095d7;
+  border-color: #FF2E83;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
 
@@ -131,38 +99,38 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #0095d7;
+  border-right-color: #FF2E83;
 }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #0095d7;
+  border-left-color: #FF2E83;
 }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #0095d7;
+  border-bottom-color: #FF2E83;
 }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #0095d7;
+  border-top-color: #FF2E83;
 }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #004e71;
+  border-right-color: #c70051;
 }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #004e71;
+  border-left-color: #c70051;
 }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #004e71;
+  border-bottom-color: #c70051;
 }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #004e71;
+  border-top-color: #c70051;
 }
 
 /*********************************************
@@ -173,7 +141,7 @@ body {
 }
 
 .reveal .progress span {
-  background: #0095d7;
+  background: #FF2E83;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -184,37 +152,62 @@ body {
 /* OVERRIDES */
 body {
   background-color: transparent;
-  background: url("../../img/like-pattern.png");
+  background-image: linear-gradient(to bottom, #f3f8f8 1px, transparent 1px);
+  background-size: 1px 5vmin;
 }
 
-.reveal h1 {
-  font-size: 3em;
-}
-.reveal h1.highlight {
-  font-size: 5em;
-}
-.reveal h2 {
-  font-size: 2em;
-}
-.reveal h2, .reveal h3 {
-  font-family: 'Museo300', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.reveal h2 b, .reveal h3 b {
-  font-family: "Museo700", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.reveal p {
-  margin-bottom: 0.6em;
-}
 .reveal .progress {
-  background: rgba(0, 149, 215, 0.2);
-  height: 12px;
-  top: 0;
+  background: rgba(255, 213, 0, 0.1);
+  height: 1.665vmin;
+  bottom: 0;
+}
+.reveal .progress span {
+  background: #ffd500;
 }
 .reveal .controls div {
   transition: 0.3s all;
 }
 .reveal .controls div.enabled {
   opacity: 1;
+}
+.reveal .slides {
+  width: 90vw !important;
+}
+.reveal .slides section .highlight {
+  color: #FF2E83;
+}
+.reveal .slides section h1, .reveal .slides section h2, .reveal .slides section h3 {
+  text-shadow: none;
+  margin-bottom: 5vmin;
+}
+.reveal .slides section h1 {
+  font-weight: 700;
+  font-size: 15vmin;
+  color: #2A3333;
+}
+.reveal .slides section h1.highlight {
+  font-size: 20vmin;
+}
+.reveal .slides section h2 {
+  font-size: 10vmin;
+}
+.reveal .slides section h3 {
+  font-size: 7.5vmin;
+  margin-bottom: 10vmin;
+}
+.reveal .slides section h2, .reveal .slides section h3 {
+  font-family: "Lekton", -apple-system, sans-serif;
+  font-weight: 400;
+}
+.reveal .slides section h2 b, .reveal .slides section h3 b {
+  font-weight: 700;
+  color: #2A3333;
+}
+.reveal .slides section p {
+  margin-bottom: 2.5vmin;
+}
+.reveal .slides section .fa {
+  font-weight: normal;
 }
 .reveal .slides section .quiet {
   opacity: 0.2;
@@ -225,71 +218,63 @@ body {
 .reveal .slides section .fragment.visible.quiet {
   opacity: 0.2;
 }
-.reveal .slides section .blue,
-.reveal .slides section .highlight {
-  color: #0095d7;
-}
 .reveal .slides section img {
   border: none;
   box-shadow: none;
   background: transparent;
 }
-.reveal .slides section .rounded {
-  border-radius: 120px;
-}
-.reveal pre {
+.reveal .slides section pre {
   box-shadow: none;
   width: auto;
   margin: 0 -4%;
   font-size: 1.3em;
   line-height: 1;
 }
-.reveal pre code {
+.reveal .slides section pre code {
   padding: 0 12px;
-  background: rgba(0, 149, 215, 0.1);
+  background: rgba(77, 77, 77, 0.1);
   color: inherit;
   border-radius: 24px;
   transition: 0.6s background ease;
   max-height: 100%;
   word-wrap: break-word;
-  font-family: 'Museo700';
   word-spacing: 0.1em;
   letter-spacing: 0.03em;
 }
-.reveal pre code:focus {
+.reveal .slides section pre code:focus {
   outline: 0;
-  background: rgba(0, 149, 215, 0.2);
+  background: rgba(77, 77, 77, 0.2);
 }
-.reveal pre code .tag {
-  color: #0095d7;
+.reveal .slides section pre code .tag {
+  color: #0095D7;
 }
-.reveal pre code .tag .title {
+.reveal .slides section pre code .tag .title {
   color: #00334c;
 }
-.reveal pre code .tag .attribute {
-  color: #0095d7;
+.reveal .slides section pre code .tag .attribute {
+  color: #0095D7;
 }
-.reveal pre code .tag .value {
-  color: #f5367c;
+.reveal .slides section pre code .tag .value {
+  color: #FF2E83;
 }
-.reveal pre code.css .tag {
+.reveal .slides section pre code.css .tag {
   color: #00334c;
 }
-.reveal pre code.css .class,
-.reveal pre code.css .attr_selector {
-  color: #f5367c;
+.reveal .slides section pre code.css .class,
+.reveal .slides section pre code.css .attr_selector {
+  color: #FF2E83;
 }
-.reveal pre code.css .rules {
-  color: #0095d7;
+.reveal .slides section pre code.css .rules {
+  color: #0095D7;
 }
-.reveal pre code.css .rules .rule .attribute {
+.reveal .slides section pre code.css .rules .rule .attribute {
   color: #00334c;
 }
-.reveal pre code.css .rules .rule .value {
+.reveal .slides section pre code.css .rules .rule .value {
   color: #00334c;
 }
-.reveal .attribution {
-  font-size: 0.23em;
+.reveal .slides section .attribution {
+  font-size: 0.2rem;
 }
 
 a,
@@ -314,7 +299,7 @@ a:hover {
 }
 .reveal .has-code code {
   background: transparent;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .reveal pre code .tag .title {
@@ -325,8 +310,10 @@ a:hover {
   text-transform: none !important;
 }
 .pseudo-code b {
-  color: #0095d7;
+  color: #0095D7;
 }
 .pseudo-code .value {
-  color: #f5367c;
+  color: #FF2E83;
 }
+
+/*# sourceMappingURL=baddeo.css.map */

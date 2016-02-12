@@ -1,46 +1,11 @@
 /**
  * A simple theme for reveal.js presentations.
  * 
- * This theme is Copyright (C) 2013 Matteo Menapace, http://baddeo.com. It is MIT licensed.
+ * This theme is Copyright (C) 2016 Matteo Menapace, http://twitter.com/baddeo It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2013 Hakim El Hattab, http://hakim.se
  */
 
-// Include theme-specific fonts
-
-/* @font-face {
-	font-family: 'League Gothic';
-	src: url('../../lib/font/league_gothic-webfont.eot');
-	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
-		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
-		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
-
-	font-weight: normal;
-	font-style: normal;
-} */
-
-@font-face {
-	font-family: 'Museo700';
-	src: url('../../lib/font/museosans_700-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Museo300';
-	src: url('../../lib/font/museosans_300-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Caecilia';
-	src: url('../../lib/font/caecilialtstd-roman-webfont.woff') format('woff');
-
-	font-weight: normal;
-	font-style: normal;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Lekton:400,400italic,700);
 
 // Default mixins and settings -----------------
 @import "../template/mixins";
@@ -48,41 +13,63 @@
 // ---------------------------------------------
 
 // colours
-$yellow: 		#fdeeca;
-$dark-blue: 	#00334c;
-$blue: 			#0095D7;
-$white: 		#fff;
-$ochre: 		#fdeeca;
-$red: 			#d91a21;
-$navy: 			#00334c; 				$navy-rgba: rgba(0, 51, 76, 0.2); 
-$navy-grey:		#98abb5;
-$green:			#7fbf42; /*#7FBF42;*/	$dark-green: #00733F;
-$purple: 		#52283B; 				$light-purple: #8A7279;
-$orange: 		#FF8036;
-$pink: 			#F5367C; // #FF5E99;
+
+$yellow: 				#fdeeca;
+$dark-blue: 		#00334c;
+$blue: 					#0095D7;
+$ochre: 				#fdeeca;
+$red: 					#d91a21;
+$navy: 					#00334c; 			 
+$navy-grey:			#98abb5;
+$green:					#7fbf42; 				
+$purple: 				#52283B; 				
+$orange: 				#FF8036;
+
+
+// https://flatuicolors.com/
+$carrotOrange: 	#e67e22;
+$darkTurquoise: #16a085;
+$turquoise: 		#1abc9c;  
+$emerald:			 	#2ecc71;
+$orange: 				rgb(243, 156, 18);
+$midnightBlue: 	rgb(44, 62, 80);
+$pumpkin: 			rgb(211, 84, 0);
+
+// from https://codeyourapp.club
+$grey: 					#4d4d4d;
+$darkGrey: 			#2A3333;
+$almostWhite: 	#f3f8f8;
+
+$yellow: 				#ffd500;
+$pink: 					#FF2E83; // #de2872;
+
+// units
+$unit: 5vmin; // 5vh;
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Caecilia', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$mainColor: $dark-blue;
-$mainFontSize: 36px;
+$mainFont: 'Lekton', -apple-system, sans-serif;
+$mainColor: $grey;
+$accentColor: $pink;
+$mainFontSize: $unit * 2;
 
 // headings
-$headingFont: 'Museo700', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headingFont: $mainFont;
 $headingColor: $mainColor;
 $headingTextShadow: none;
-// $headingTextTransform: none;
-$headingTextTransform: uppercase;
-$headingLineHeight: 1.1em;
+$headingTextTransform: none;
+$headingLineHeight: 1;
+$headingLetterSpacing: 0;
 
-// $backgroundColor: #fff;
+// progress bar
+$progressColour: $yellow;
 
 // links
-$linkColor: $blue;
+$linkColor: $accentColor;
 $linkColorHover: darken( $linkColor, 20% );
 
 // text selection
 $selectionBackgroundColor: $mainColor;
-$selectionColor: $yellow;
+$selectionColor: white;
 
 
 
@@ -96,48 +83,22 @@ $selectionColor: $yellow;
 	body 
 	{
 		background-color: transparent;
-		// background: url('http://baddeo.com/stylesheets/images/body_background.png');
-		background: url('../../img/like-pattern.png');	
+		background-image: linear-gradient(to bottom, $almostWhite 1px,transparent 1px);
+		background-size: 1px $unit;
 	}
 
 	.reveal
 	{
-		h1 
-		{ 
-			font-size: 3em; 
-
-			&.highlight
-			{
-				font-size: 5em;
-			}
-		}
-		
-		h2 
-		{ 
-			font-size: 2em;
-		}
-
-		h2, h3
-		{
-			font-family: 'Museo300', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-			b
-			{
-				font-family: 'Museo700', 'Helvetica Neue', Helvetica, Arial, sans-serif
-			}
-		}
-
-		p
-		{
-			margin-bottom: 0.6em;
-		}
-		
 		.progress
 		{
-			// background: $yellow;
-			background: rgba($blue, 0.2); // rgba(0, 0, 0, 0.2);
-			height: 12px;
-			top: 0;
+			background: rgba($progressColour, 0.1); 
+			height: $unit * .333;
+			bottom: 0;
+
+			span
+			{
+				background: $progressColour;
+			} 
 		}
 
 		.controls 
@@ -154,8 +115,69 @@ $selectionColor: $yellow;
 
 		.slides
 		{
+			width: 90vw !important;
+			// height: 100% !important;
+			// zoom: 1 !important;
+			
 			section
 			{
+				.highlight
+				{
+					color: $accentColor;
+				}
+
+				h1, h2, h3
+				{
+					text-shadow: none;
+					margin-bottom: $unit;
+				}
+				
+				h1 
+				{ 
+					font-weight: 700;
+					font-size: $unit * 3;
+					color: $darkGrey;
+
+					&.highlight
+					{
+						font-size: $unit * 4;
+					}
+				}
+				
+				h2 
+				{ 
+					font-size: $unit * 2;
+				}
+
+				h3 
+				{ 
+					font-size: $unit * 1.5;
+					margin-bottom: $unit * 2;
+				}
+
+				h2, h3
+				{
+					font-family: $headingFont;
+					font-weight: 400;
+
+					b
+					{
+						font-weight: 700;
+						color: $darkGrey;
+					}
+				}
+
+				p
+				{
+					margin-bottom: $unit * .5;
+				}
+
+				// icons (font awesome)
+				.fa 
+				{
+					font-weight: normal;
+				}
+
 				.quiet
 				{
 					opacity: 0.2;
@@ -174,14 +196,6 @@ $selectionColor: $yellow;
 					}
 				}
 
-				.blue,
-				.highlight
-				{
-					color: $blue;
-				}
-
-
-
 				img
 				{
 					border: none;
@@ -190,112 +204,107 @@ $selectionColor: $yellow;
 					background: transparent;
 				}
 
-				.rounded
+				pre
 				{
-					border-radius: 120px;
-				}
-			} 
-		} 
+					box-shadow: none;
+					width: auto;
+					// margin: 0;
+					margin: 0 -4%;
+					font-size: 1.3em;
+					line-height: 1;
 
-		pre
-		{
-			box-shadow: none;
-			width: auto;
-			// margin: 0;
-			margin: 0 -4%;
-			font-size: 1.3em;
-			line-height: 1;
-
-			code
-			{
-				padding: 0 12px;
-				background: rgba($blue, 0.1);
-				color: inherit;
-				border-radius: 24px;
-				transition: 0.6s background ease;
-				max-height: 100%;
-				word-wrap: break-word;
-				font-family: 'Museo700';
-				word-spacing: 0.1em;
-				letter-spacing: 0.03em;
-
-				&:focus
-				{
-					outline: 0;
-					background: rgba($blue, 0.2);
-				}
-
-				.tag
-				{
-					color: $blue;
-
-					.title
+					code
 					{
-						color: $dark-blue;
-					}
+						padding: 0 12px;
+						background: rgba($grey, 0.1);
+						color: inherit;
+						border-radius: 24px;
+						transition: 0.6s background ease;
+						max-height: 100%;
+						word-wrap: break-word;
+						// font-family: 'Museo700';
+						word-spacing: 0.1em;
+						letter-spacing: 0.03em;
 
-					.attribute
-					{
-						// color: $dark-green;
-						// color: $light-purple;
-						// color: $purple;
-						// color: $pink;
-						// color: $yellow;
-						// color: $green;
-						// color: $orange;
-						color: $blue;
-					}
-
-					.value
-					{
-						// color: $dark-green;
-						// color: $green;
-						// color: $purple;
-						// color: $yellow;
-						// color: $blue;
-						// color: $orange;
-						color: $pink;
-					}
-				}
-
-				&.css
-				{
-					.tag
-					{
-						color: $dark-blue;
-					}
-
-					.class,
-					.attr_selector
-					{
-						color: $pink;
-					}
-
-					.rules
-					{
-						color: $blue;
-
-						.rule
+						&:focus
 						{
-							.attribute
+							outline: 0;
+							background: rgba($grey, 0.2);
+						}
+
+						.tag
+						{
+							color: $blue;
+
+							.title
 							{
 								color: $dark-blue;
+							}
+
+							.attribute
+							{
+								// color: $dark-green;
+								// color: $light-purple;
+								// color: $purple;
+								// color: $pink;
+								// color: $yellow;
+								// color: $green;
+								// color: $orange;
+								color: $blue;
 							}
 
 							.value
 							{
+								// color: $dark-green;
+								// color: $green;
+								// color: $purple;
+								// color: $yellow;
+								// color: $blue;
+								// color: $orange;
+								color: $pink;
+							}
+						}
+
+						&.css
+						{
+							.tag
+							{
 								color: $dark-blue;
+							}
+
+							.class,
+							.attr_selector
+							{
+								color: $pink;
+							}
+
+							.rules
+							{
+								color: $blue;
+
+								.rule
+								{
+									.attribute
+									{
+										color: $dark-blue;
+									}
+
+									.value
+									{
+										color: $dark-blue;
+									}
+								}
 							}
 						}
 					}
 				}
-			}
-		}
 
-		.attribution
-		{
-			font-size: 0.23em;
-		}
+				.attribution
+				{
+					font-size: 0.2rem;
+				}
+			} 
+		} 
 	}
 
 	a, 
@@ -331,7 +340,7 @@ $selectionColor: $yellow;
 		code
 		{
 			background: transparent;
-			font-size: 1.5em;
+			font-size: 1.5rem;
 		}
 	}
 

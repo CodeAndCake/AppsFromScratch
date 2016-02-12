@@ -147,5 +147,10 @@
 	#app-what img 
 	{
 		position: absolute;
-		bottom: -110%;
+		bottom: -140%;
+	}
+
+	#not-good-app img
+	{
+		width: 50%;
 	}
