@@ -9,6 +9,8 @@
 
 # Coding and app-making for beginners
 
+## Day 1
+
 ### When is lunch?
 
 Research shows that people focus much better when they know what time they're going to eat...
@@ -63,6 +65,13 @@ We're not here to talk at you, but to work with you and we want you to **work to
 
 -->
 
+### GitHub
+
+All the course material is here: 
+[**github.com/CodeAndCake/AppsFromScratch**](https://github.com/CodeAndCake/AppsFromScratch) 
+
+Including notes from each session, exercises, sample code, presentations and links to learn more!
+
 # Roadmap
 
 When	| What	
@@ -73,13 +82,6 @@ When	| What
 ![](../img/day-4.jpg) | You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
 ![](../img/day-5.jpg) | You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
 ![](../img/day-6.jpg) | Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
-
-### GitHub
-
-All the course material is here: 
-[**github.com/CodeAndCake/AppsFromScratch**](https://github.com/CodeAndCake/AppsFromScratch) 
-
-Including notes from each session, exercises, sample code, presentations and links to learn more!
 
 
 # What is an app?
@@ -129,7 +131,8 @@ Apps generally have a specific function, or a small set of functions. They are n
 
 This is *not* a good app. It is not **usable**, even though all the tools it features could be usable (and possibly useful) on their own.
 
-### **How long** does it take to make an **app**?
+
+# **How long** does it take to make an **app**?
 
 This course is 24 hours long, ie **3 working days**.
 
