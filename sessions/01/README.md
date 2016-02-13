@@ -217,7 +217,7 @@ Here's an initial sketch of how the app may look and work.
 
 ### Data
 
-We'll show you how to create structured data (aka a **database**). 
+We'll show you how to create structured data, aka a **database**. 
 
 No scary formula or data crunching though! 
 
@@ -232,17 +232,157 @@ We'll also show you that you don't need to write all this code from scratch. The
 
 # Let's code
 
-Go to [thimble.mozilla.org](https://thimble.mozilla.org) and sign up for the free account.
+> Good coders don't type. They **copy-paste**.
 
-### HTML
+Before we start coding, make sure you're familiar with the most important keyboard shortcuts for a good coder.
 
-1. `h1` (useful for Google Fonts)
-* `p`, a couple of them
-* `select` and `option`
-* Add a `button` 
-* Publish your work so far
+### Copy
 
-### CSS intro
+Mac <kbd>cmd</kbd> + <kbd>c</kbd>
+
+PC <kbd>ctrl</kbd> + <kbd>c</kbd>
+
+### Cut & copy
+
+Mac <kbd>cmd</kbd> + <kbd>x</kbd>
+
+PC <kbd>ctrl</kbd> + <kbd>x</kbd>
+
+Very useful when you want to *move* one block of code from one place to another.
+
+### Paste
+
+Mac <kbd>cmd</kbd> + <kbd>v</kbd>
+
+PC <kbd>ctrl</kbd> + <kbd>v</kbd>
+
+
+## HTML & CSS crash course
+
+We're going to learn how to:
+
+* Write HTML to **structure** your app interface 
+	* Create several types of **text** (paragraphs, headings)
+	* Create **inputs** (dropdowns, buttons, text boxes)
+	* Create **links** to other Web pages
+	* Add **images**
+	 
+* Write CSS to **style** your app interface
+	* Design your app **typography**
+	* Set your app **colours**
+
+## Step by step
+
+Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and sign up (it's free). 
+
+Then log in and click on `Start a project from scratch`.
+
+### 1. Content first
+
+> Content first, style later!
+
+It's good practice to build the **HTML** first, and then make it _stylish_ with CSS.
+
+#### HTML skeleton
+
+Thimble created an HTML skeleton for us, containing the basic **building blocks**: `html`, `head` and `body` tags.
+
+Every HTML document, at the bare bones, needs to have this structure
+
+```html
+<!doctype html>
+<html>
+	<head>
+		...
+	</head>
+	<body>
+		...
+	</body>
+</html>	
+```
+
+#### Head
+
+In the `head` we can change the `title`.  
+	
+Later, we'll add links to external resources like *stylesheets* and *meta* information.
+
+What you put in the `head` is not visible to the user.
+
+#### Body
+
+In the `body` you put all the interface elements that are visible to the user.
+
+#### Headings
+
+Inside the body, add a **heading** (`h1`) and a **sub-heading** (`h2`). These will be the most important pieces of information of your app's main page.
+
+```html
+<body>
+	<h1>Your app name</h2>
+	<h2>What it does</h2>
+</body>
+```
+
+#### Paragraphs
+
+Explain people how your app works, and what you want them to do first.  
+
+```html
+<body>
+	...
+	<p>Swap skills and time with people in your community!</p>
+  	<p>Just choose an activity to get started.</p>
+</body>
+```
+
+`p` is for *paragraph*, of course.
+
+#### Dropdown
+
+This is the first interactive element of your app.
+
+It's a set of `options` that people can choose from.
+
+```html
+<body>
+	...
+	<select>
+    <option>Keep my pet</option>
+    <option>Bake a cake</option>
+    <option>Move my piano</option>
+  </select>
+</body>
+```
+
+#### Button
+
+What do you think is the HTML code to make a button?
+
+It's `<button>` :)
+
+```html
+<body>
+	...
+	<button>Find</button>
+</body>
+```
+
+#### Hyperlinks
+
+You can add **hyperlinks** to our content using the `a` element (`a` is for *anchor*).
+	
+```html
+<a href="http://example.com">the clickable text</a>
+```
+
+### Publish your project
+
+We're down with HTML for today!
+
+Now click `Publish` to see how your app looks so far.
+
+### CSS
 
 1. Show **selectors** with *quick wins*
 	* Hide `p`
