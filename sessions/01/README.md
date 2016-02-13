@@ -278,7 +278,7 @@ Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and sign up (it's free
 
 Then log in and click on `Start a project from scratch`.
 
-### 1. Content first
+### Content first
 
 > Content first, style later!
 
@@ -405,7 +405,7 @@ We're done with HTML for today!
 
 Now click `Publish` to see how your app looks so far. :+1:
 
-### 2. Style later
+### Style later
 
 Now the fun part: **CSS**!
 
@@ -517,7 +517,7 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 	}
 	```
 	
-	Then you can set more specific rules for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
+Then you can set more specific rules for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
 	
 * `font-family` 
 * `font-size`
