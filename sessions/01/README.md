@@ -90,19 +90,21 @@ How do you explain what an app is to someone or something who's never seen/used 
 
 ![](assets/et.png)
 
+### Your turn
+
 Form small teams (max 4 people).
 
 Pretending one of you is the *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
 
-If people answer with jargon (eg: *software* or *download*) then we ask them to expand on their meaning.
+If people answer with jargon, like *software* or *download*, then we ask them to explain those too to your *alien*.
 
 * **Where** do you find apps?
 * What does an app **look like**?  
 * How do you **interact** with an app? Do you speak to it, do you shake it etc?
 * **Who makes** apps?
-* What are apps **made of**?
+* What are apps **made out of**?
 * **Who uses** apps? Why?
-* What are apps useful for? How do they **serve** people who use them?
+* What are apps useful for? What can you do with apps? How do they **serve** people who use them?
 * **How often** do people use apps? 
 
 <!--
