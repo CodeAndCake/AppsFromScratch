@@ -283,9 +283,29 @@ Then log in and click on `Start a project from scratch`.
 
 It's good practice to build the **HTML** first, and then make it _stylish_ with CSS.
 
+#### HTML basics
+
+HTML is a *markup* language, which you use to *mark content up*. 
+
+Essentially, you wrap content inside bits of code called tags.
+
+`<tag> content </tag>`
+
+The bits of code inside angle brackets `<` and `>` are instructions for the computer:
+
+* They describe the content they wrap 
+* Define where it starts `<tag>`
+* Define where it ends `</tag>`
+
+For example, this is how you wrap a paragraph of text in `p` tags:
+
+`<p> This is a paragraph. </p>`
+
+`p` stands for *paragraph*, of course.
+
 #### HTML skeleton
 
-Thimble created an HTML skeleton for us, containing the basic **building blocks**: `html`, `head` and `body` tags.
+Thimble created an HTML skeleton for you, containing the basic **building blocks**: `html`, `head` and `body` tags.
 
 Every HTML document, at the bare bones, needs to have this structure
 
@@ -303,9 +323,9 @@ Every HTML document, at the bare bones, needs to have this structure
 
 #### Head
 
-In the `head` we can change the `title`.  
+In the `head` you can change the `title`.  
 	
-Later, we'll add links to external resources like *stylesheets* and *meta* information.
+Later, you'll add links to external resources like *stylesheets* and *meta* information.
 
 What you put in the `head` is not visible to the user.
 
@@ -326,7 +346,7 @@ Inside the body, add a **heading** (`h1`) and a **sub-heading** (`h2`). These wi
 
 #### Paragraphs
 
-Explain people how your app works, and what you want them to do first.  
+Explain how your app works, and what you want people to do first.  
 
 ```html
 <body>
@@ -336,7 +356,7 @@ Explain people how your app works, and what you want them to do first.
 </body>
 ```
 
-`p` is for *paragraph*, of course.
+`p` is for *paragraph*, [ça va sans dire](https://en.wiktionary.org/wiki/%C3%A7a_va_sans_dire) :fr:
 
 #### Dropdown
 
@@ -370,28 +390,168 @@ It's `<button>` :)
 
 #### Hyperlinks
 
-You can add **hyperlinks** to our content using the `a` element (`a` is for *anchor*).
+You can add **hyperlinks** to our content using the `a` element.
 	
 ```html
 <a href="http://example.com">the clickable text</a>
 ```
 
+`a` is for *anchor* :anchor:
+
 ### Publish your project
 
-We're down with HTML for today!
+We're done with HTML for today!
 
-Now click `Publish` to see how your app looks so far.
+Now click `Publish` to see how your app looks so far. :+1:
 
-### CSS
+### 2. Style later
 
-1. Show **selectors** with *quick wins*
-	* Hide `p`
-	* `h1` centred
-* Introduce **Web Inspector**, HTML and CSS tabs.
+Now the fun part: **CSS**!
+
+There's a `link` in the `head` of your app which points to a CSS file called **style.css**. This is where you add your own styles.
+
+```html
+<link rel="stylesheet" href="css/style.css">
+```
+
+You can have more than just one CSS file, and we'll show you how it's good practice to work on several small files rather than one long document you may get lost into.
+
+#### CSS basics
+
+You use CSS to style HTML.
+
+CSS looks and works differently than HTML. 
+
+```css
+selector
+{
+	property: value;
+	property: value;
+}
+```
+
+The part before the curly brackets `{` and `}` is the **selector**.
+
+In CSS you can select multiple HTML elements in one go.
+
+For example, to select all paragraphs you can write
+
+```css
+p
+{
+	/* your styles for paragraph here */
+}
+```
+
+CSS **properties** define how HTML elements are displayed.
+
+The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
+
+For example...
+
+```css
+p
+{
+	color: green;
+}
+```
+
+... will turn *every* paragraph in your HTML green.
+
+#### Play around a bit
+
+Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
+
+* change the `color` of your `h1` or `h2` elements
+* align some elements to the `center` (*google* how to do it)
+* hide some elements
+* change the `background-color` of the whole page 
+
+What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
+
+#### Search for solutions! 
+
+Part of learning to code and being a coder is searching for answers, every day. You don't need to remember everything and you don't need to learn everything immediately. 
+
+**All the answers can be found on the Web! As coders, we must get used to searching online for solutions.**
+
+#### Inspect websites you like
+
+Did you know, you can see the code which has created every site on the Web? You can use the **Web Inspector** to do this. It's like x-ray specs for websites.
+
+Go to a website (any website) and right-click anywhere on that page, then select `Inspect` (or `Inspect Element` in some browsers).
+
+On the **left panel** of the `Elements` tab you can see all the HTML code for the page you're inspecting. By clicking on an HTML element you'll reveal all the CSS applied to it, on the **right panel**.
+
+You can also play with this code and change the way your favourite websites look (but don't worry, your changes won't affect how other people are experiencing that site). :scream:
+
+Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
+
+#### Fonts
+
+Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout. 
+
+You can grab a free **font** from [Google Fonts](https://www.google.com/fonts): 
+
+1. Pick a typeface you like
+* Click on `Quick-use` (the button with an arrow pointing to the right).
+* Choose which font weights you want to use
+* Grab the `link` code for it and paste it in your app's `head` in Thimble. 
+
+	Where? Before `style.css`
+
+	```html
+	<head>
+		...
+		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>	
+	```
+* Give some ground rules to our app, by applying them to the `body` element. 
+
+	```css
+	body
+	{
+		font-family: 'Lato', sans-serif;
+	}
+	```
+	
+	Then you can set the rules for headings, paragraphs and bold elements.
+	
+#### Background images
+
+You could add a background image to your app.
+
+```css
+body
+{
+	background-image: url(http://example.com/image.jpg);
+}
+```
+
+You can upload your own image files to Thimble (if they're smaller than 3MB), or use images from the Web (provided they're licensed for re-use).
+
+By default background-images *tile*, but we want them to take up the whole available screen space, without losing their aspect ratio (no squashing). 
+
+We can achieve that with `background-size`. This property can take various values: pixel sizes, percentages, and then a couple of interesting keywords. 
+
+* `contain` will scale the image so as to be as large as possible providing that it is **contained** within the background positioning area. 
+* `cover` instead, will scale the image, this time to be as large as possible so that the background positioning area is completely **covered** by the background image.
+
+Add `background-size: cover;` to the `body` rule.
+```css
+body
+{
+	background-image: url(http://example.com/image.jpg);
+ 	background-size: cover;
+}
+```	
+
+<!--* Introduce **Web Inspector**, HTML and CSS tabs.
 * `background-image`
 	* `background-size: cover;`
 	* `background-repeat: no-repeat;` and may have to add `html {height: 100%;}`
-* CSS **comments** 
+* CSS **comments**
 * Typography
 	* `font-size`
 	* `font-weight`
@@ -407,7 +567,7 @@ Now click `Publish` to see how your app looks so far.
 	* `color`
 	* `border-color`
 	* Check out [Kuler](https://color.adobe.com) and/or [Flat UI colors](https://flatuicolors.com/) for inspirations
-
+ -->
 <!--
 ### Final touches
 
