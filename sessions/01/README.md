@@ -270,6 +270,7 @@ We're going to learn how to:
 * Write CSS to **style** your app interface
 	* Design your app **typography**
 	* Set your app **colours**
+	* **Search** for code online and integrate what you find in your project (that's what coders do most of the time!)
 
 ## Step by step
 
@@ -447,7 +448,7 @@ CSS **properties** define how HTML elements are displayed.
 
 The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
 
-For example...
+For example ...
 
 ```css
 p
@@ -507,7 +508,7 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 		<link rel="stylesheet" href="css/style.css">
 	</head>	
 	```
-* Give some ground rules to our app, by applying them to the `body` element. 
+* Define the font for the `body` element (all other elements will inherit it). 
 
 	```css
 	body
@@ -516,11 +517,23 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 	}
 	```
 	
-	Then you can set the rules for headings, paragraphs and bold elements.
+	Then you can set more specific rules for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
+	
+* `font-family` 
+* `font-size`
+* `font-weight`
+* `font-style`
+* `line-height`
+* `letter-spacing`
+* `word-spacing`
+* `text-align`
+* `text-decoration`
+* `text-transform`
+* `text-indent`	
 	
 #### Background images
 
-You could add a background image to your app.
+You could add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
 
 ```css
 body
