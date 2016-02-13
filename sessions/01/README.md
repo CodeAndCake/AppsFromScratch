@@ -496,15 +496,15 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 
 1. Pick a typeface you like
 * Click on `Quick-use` (the button with an arrow pointing to the right).
-* Choose which font weights you want to use
-* Grab the `link` code for it and paste it in your app's `head` in Thimble. 
+* Choose the font styles you want to use
+* Grab the `link` code for it and paste it in your app `head` in Thimble. 
 
 	Where? Before `style.css`
 
 	```html
 	<head>
 		...
-		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
 	</head>	
 	```
