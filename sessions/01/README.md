@@ -497,7 +497,7 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 1. Pick a typeface you like
 * Click on `Quick-use` (the button with an arrow pointing to the right).
 * Choose the font styles you want to use
-* Grab the `link` code for it and paste it in your app `head` in Thimble. 
+* Copy the `link` code for it and paste it in your app `head` in Thimble. 
 
 	Where? Before `style.css`
 
@@ -508,7 +508,7 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 		<link rel="stylesheet" href="css/style.css">
 	</head>	
 	```
-* Define the font for the `body` element (all other elements will inherit it). 
+* In `style.css`, define the font for the `body` element (all other elements will inherit it). 
 
 	```css
 	body
