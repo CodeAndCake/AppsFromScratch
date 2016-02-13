@@ -36,7 +36,8 @@ We'd like you to introduce yourself to your neighbour. Then we'll ask you to int
 1. A bit about yourself
 * How did you hear about this course?
 * Why are you on this course?
-* What is your experience with coding so far?
+
+<!--* What is your experience with coding so far?-->
 
 You can jot down the answers on post-its and we'll then stick them on the wall...
 
@@ -87,18 +88,30 @@ Let's sketch a **working definition** of *app*.
 
 How do you explain what an app is to someone or something who's never seen/used one, like an *alien*?
 
-<!--![](assets/et.png)-->
+![](assets/et.png)
 
-Pretending one of us is the *alien*, let's ask some obvious questions. If people answer with jargon (eg: *software* or *download*) then we ask them to expand on their meaning.
+Form small teams (max 4 people).
+
+Pretending one of you is the *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
+
+If people answer with jargon (eg: *software* or *download*) then we ask them to expand on their meaning.
 
 * **Where** do you find apps?
-* Can you buy apps? Who sells them?
-* **Who makes** apps?
-* **Who uses** apps? Why?
 * What does an app **look like**?  
-* How do you **interact** with an app? Do you speak into your phone, do you shake it etc?
-* What are apps useful for? How do they **serve** people who *download* them?
-* **How often** do people use apps? Would you download an app if you need it only once or twice?
+* How do you **interact** with an app? Do you speak to it, do you shake it etc?
+* **Who makes** apps?
+* What are apps **made of**?
+* **Who uses** apps? Why?
+* What are apps useful for? How do they **serve** people who use them?
+* **How often** do people use apps? 
+
+<!--
+* Can you buy apps? Who sells them?
+* Would you download an app if you need it only once or twice?
+-->
+After 10-15 minutes, we'll have a group conversation all together.
+
+### What is an app, then?
 
 There is no clear-cut definition of *app*.
 
@@ -123,13 +136,15 @@ The point of this course is to *introduce* you to the app-making **process** and
 * **HTML**, **CSS** and **JavaScript**: universal languages, entry point to more specialised ones (and useful to know for other jobs!)
 * **GitHub repository**: industry-standard collaborative version-control system
 
+This is an introductory course, inevitably there are parts of the process that we won't cover (such as how to market your app or package it for a specific market).
+
 <!-- In 3 days we may not get an app on the App Store, but don't lose heart! -->
 
-In 3 days you will **get started** with design and code and by the end you will:
+In 3 days you will **get started with coding** and by the end you will:
 
 * have a solid foundation to continue learning
 * have first-hand experience of the design and development process
-* feel confident speaking about your ideas with other designers, developers and product managers
+* feel confident speaking about your ideas with other designers, coders and product managers
 
 <!--### What apps do you use most? 
 
