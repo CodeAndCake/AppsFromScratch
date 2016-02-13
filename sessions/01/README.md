@@ -123,7 +123,9 @@ To use an analogy, if a website is like a *book*, which you use to find and cons
 
 Apps generally have a specific function, or a small set of functions. They are not trying to do everything.
 
-![](assets/swiss-army-knife.jpg)
+![](assets/swiss-army-knife.png)
+
+This is *not* a good app. It is not **usable**, even though all the tools it features could be usable (and possibly useful) on their own.
 
 ### **How long** does it take to make an **app**?
 
