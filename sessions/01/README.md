@@ -154,20 +154,40 @@ In 3 days you will **get started with coding** and by the end you will:
 
 And do you know what they have in common? Let us tell you...-->
 
-### Key concepts
-
-1. **Interface**, that is the part(s) of the app you interact with (touch, read, click)
-* **Data**
-* **Logic**
-
 
 # Breaking down apps
 
-Form groups of 2-3 people, choose one app that you are all familiar with and analyse it using this framework:
+### Key concepts
+
+#### Interface
+
+The parts of the app you directly interact with (touch, read, click, speak to etc.)
+
+A good interface must be *usable* and should align to a user's *mental models* (how does s/he expect the interface to work). 
+
+#### Data
+
+The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*). 
+
+Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location apps stream...
+
+#### Logic
+
+The **coded rules** that determine how the app interface reacts to your *inputs*, how it manipulates data and how it presents it to you (*output*).
+
+At its core, the logic building block of an app is a statement that sounds like `if this, then that`, eg: `if you click on this button, the app will show you this section`.
+
+Many `if this then that` blocks can build quite complex behaviours.
+
+### Your turn
+
+Form small groups (max 4 people).
+
+Choose one app that you are all familiar with and analyse it using this framework:
 
 1. What is the main **purpose** of the app?
 * **When** do people need this app? Be specific.
-* List the *verbs* of the app, ie what **actions** does the app allow you to do. Think about possible verbs that are not part of the app, and why it may be that you're not allowed to perform those actions.
+* Looking at the app **interface**, list the *verbs* of the app, ie what **actions** does the app allow you to do. Think about possible verbs that are not part of the app, and why it may be that you're not allowed to perform those actions.
 * What **input** does the app require from you?  
 * Where does the app's **data** come from? Who creates it?
 * What does the app do with that data (ie what's the app **logic**)?
@@ -191,15 +211,23 @@ No matter which data the app uses, its **logic** will be the same:
 
 ### Interface
 
-Here's an initial sketch of how the app may look and work
+Here's an initial sketch of how the app may look and work.
 
 [![](assets/demo-app-moqups.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
 
 ### Data
 
-We'll show you how to create structured data (aka a **database**). No scary formula or data crunching though. 
+We'll show you how to create structured data (aka a **database**). 
 
-Later on you can change the data to make your app serve your own purposes!
+No scary formula or data crunching though! 
+
+Later on you can change the data to make your app serve your own purposes.
+
+### Logic
+
+We'll teach you how to use JavaScript to assign *behaviour* to your interface, coding logic like `if you click this button, then do XYZ`.
+
+We'll also show you that you don't need to write all this code from scratch. There are plenty of ready-made code *libraries* that you can use in your own project. No need to reinvent the wheel!
 
 
 # Let's code
