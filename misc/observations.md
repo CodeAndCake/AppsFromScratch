@@ -41,12 +41,11 @@ Idea for next session 1 presentation:
 	
 		```html
 		✅ <p>Read me</p>
-		☑️ <a>Click me</a>
+		✅ <a>Click me</a>
 		❌ <a>Click me<a/>
-		✔️ <a href="http://copy.it">Click me</a>
+		✅ <a href="http://copy.it">Click me</a>
 		❌ <a> href="http://copy.it"Click me</a>
 		```
-		:white_check_mark:
 		
 	* Learn by **making**
 * Your **brief**: make an app that...
