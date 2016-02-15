@@ -40,12 +40,13 @@ Idea for next session 1 presentation:
 	* Spot the difference (**patterns**) with a few HTML and CSS examples?
 	
 		```html
-		✔️ <p>Read me</p>
-		✔️ <a>Click me</a>
+		✅ <p>Read me</p>
+		☑️ <a>Click me</a>
 		❌ <a>Click me<a/>
 		✔️ <a href="http://copy.it">Click me</a>
 		❌ <a> href="http://copy.it"Click me</a>
 		```
+		:white_check_mark:
 		
 	* Learn by **making**
 * Your **brief**: make an app that...
