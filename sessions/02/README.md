@@ -1,8 +1,19 @@
 <!--
-- [ ] `while` or recursive function?
-- [ ] `storeData`
-- [ ] `sortData`
-- [ ] `getPersonListItem`	
+
+var me = {} // an empty object
+var me = new Person() // or a class?
+
+// let's stuff the object with data
+me.name = 'Matteo' // String
+me.likesPets = true // Boolean, true or false
+me.bodyStrength = 3 // Number, between 0 and 5
+me.bakingSkills = 4 // Number, between 0 and 5
+me.diySkills = 2 // Number, between 0 and 5
+me.image = 'http://api.randomuser.me/portraits/men/33.jpg' // String, a URL eg: https://example.com/selfie.jpg
+me.about = 'A short blurb about yourself' // String
+
+database.push(me)
+
 -->
 
 <!--- [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract)-->
