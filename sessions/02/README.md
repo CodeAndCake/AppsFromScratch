@@ -227,6 +227,8 @@ Play around with those three CSS properties to tweak your app's layout!
 
 # UX research
 
+Before you start designing your app, it's good practice to analyse some existing apps - your potential competitors. This can help you understand your users and how other designers have tackled a problem. You can bet that those products have been tested over and over, so most likely you'll come across useful ideas to consider in your design.
+
 ### Key concepts
 
 #### Interface
@@ -258,6 +260,7 @@ Form small groups (max 4 people).
 Choose one app that you are all familiar with and analyse it using this framework:
 
 1. What is the main **purpose** of the app?
+* **Who** is it for? Be specific, apps are not "for everyone".
 * **When** do people need this app? Be specific.
 * Looking at the app **interface**, list the *verbs* of the app, ie what **actions** does the app allow you to do. Think about possible verbs that are not part of the app, and why it may be that you're not allowed to perform those actions.
 * What **input** does the app require from you?  
