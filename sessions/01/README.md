@@ -527,7 +527,7 @@ Then you can set more specific rules for headings, paragraphs and bold elements.
 	
 #### Background images
 
-You could add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
+You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
 
 ```css
 body
@@ -554,15 +554,14 @@ body
 }
 ```	
 
-<!--* Introduce **Web Inspector**, HTML and CSS tabs.
-* `background-image`
-	* `background-size: cover;`
-	* `background-repeat: no-repeat;` and may have to add `html {height: 100%;}`
+<!--
+
+* Introduce **Web Inspector**, HTML and CSS tabs.
+
+
+
 * CSS **comments**
-* Typography
-	* `font-size`
-	* `font-weight`
-	* [Google Fonts](https://www.google.com/fonts)
+
 * Style `select` and `button`
 	* `border: none;`
 	* `border-radius`
