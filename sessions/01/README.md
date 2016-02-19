@@ -1,15 +1,22 @@
 <!--
 
-* !important manage expectations, eg: How long does it take to make an app (show some examples from apps we made, like MeBooks.. and then Pinboard.in)? This course is 3 days.. what can we do with this time?
-* 4 blocks of tables for 4 teams (ish)
-* smaller group discussions (with post-its and markers) and the "report" to the larger group
-* explain prototyping tools like Firebase
+- [x] !important manage expectations, eg: How long does it take to make an app (show some examples from apps we made, like MeBooks.. and then Pinboard.in)? This course is 3 days.. what can we do with this time?
+- [x] 4 blocks of tables for 4 teams (ish)
+- [x] smaller group discussions (with post-its and markers) and the "report" to the larger group
+- [ ] explain prototyping tools like Firebase
 
 -->
 
 # Coding and app-making for beginners
 
 ## Day 1
+
+1. Welcome & introductions 
+* [The plan for this course](#what-is-the-plan)
+* Group discussion: [what is an app?](#what-is-an-app)
+* [Key concepts](#key-concepts): interface, data and logic
+* [Your project brief](#your-brief)
+* [Workshop](#lets-code): HTML & CSS
 
 ### When is lunch?
 
@@ -72,7 +79,7 @@ All the course material is here:
 
 Including notes from each session, exercises, sample code, presentations and links to learn more!
 
-# Roadmap
+# What is the plan?
 
 When	| What	
 ---	| ----	
