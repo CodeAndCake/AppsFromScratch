@@ -1,4 +1,6 @@
-# Apps from scratch, day 4
+# Coding and app-making for beginners 
+
+## Day 4
 
 1. [Questions](#questions) about computers, people and the **interfaces** in between
 * [Wireframing](#wireframing) (*user* interfaces)

@@ -1,4 +1,6 @@
-# Apps from scratch, day 6
+# Coding and app-making for beginners 
+
+## Day 6
 
 1. [Code](#code) the `details` screen
 * [Pitch](#pitch) your ideas and prototypes

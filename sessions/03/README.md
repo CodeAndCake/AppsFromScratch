@@ -1,4 +1,6 @@
-# Apps from scratch, day 3
+# Coding and app-making for beginners 
+
+## Day 3
 
 1. **JavaScript**: [get our app to display data](#lets-code)
 * [What is good design?](#what-is-design)  

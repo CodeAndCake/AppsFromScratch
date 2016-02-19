@@ -1,4 +1,6 @@
-# Apps from scratch, day 5
+# Coding and app-making for beginners 
+
+## Day 5
 
 1. [Inspirations](#inspirations): cool stuff built with JS
 * [JS challenge](#challenge)
