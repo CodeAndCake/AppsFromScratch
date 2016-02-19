@@ -57,5 +57,78 @@ Idea for next session 1 presentation:
 * If there's time, **analyse** an app in small groups.
 * Zunch!	
 		
-	 
+
+# Day 2
+
+### What went well
+
+* 
+
+### Areas for improvement
+
+*
+
+### Action points	
+
+* 	
+		
+
+# Day 3
+
+### What went well
+
+* 
+
+### Areas for improvement
+
+*
+
+### Action points	
+
+* 	
+		
+
+# Day 4
+
+### What went well
+
+* 
+
+### Areas for improvement
+
+*
+
+### Action points	
+
+* 	
+		
+
+# Day 5
+
+### What went well
+
+* 
+
+### Areas for improvement
+
+*
+
+### Action points	
+
+* 	
+		
+
+# Day 6
+
+### What went well
+
+* 
+
+### Areas for improvement
+
+*
+
+### Action points	
+
+* 
    
