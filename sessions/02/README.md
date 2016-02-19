@@ -62,11 +62,11 @@ Different **languages**, separate [**concerns**](http://en.wikipedia.org/wiki/Se
 
 Think of a group of people working together, eg to make a car, a newspaper, a website, to provide education. What are the different *roles* and *concerns* of these people?
 
-#### 1. **HTML** → content and structure  
+##### 1. **HTML** → content and structure  
 
-#### 2. **CSS** → style and design 
+##### 2. **CSS** → style and design 
 
-#### 3. **JS** → data and logic
+##### 3. **JS** → data and logic
 
 ## Step by step
 
@@ -227,7 +227,9 @@ Play around with those three CSS properties to tweak your app's layout!
 
 # UX research
 
-Before you start designing your app, it's good practice to analyse some existing apps - your potential competitors. This can help you understand your users and how other designers have tackled a problem. You can bet that those products have been tested over and over, so most likely you'll come across useful ideas to consider in your design.
+Before you start designing your app, it's good practice to **analyse some existing apps** - your potential competitors. 
+
+This can help you understand your users and how other designers have tackled a problem. You can bet that those products have been tested over and over, so most likely you'll come across **useful ideas** to consider in your design.
 
 ### Key concepts
 
@@ -344,11 +346,11 @@ Last week we learned how to build interfaces using **HTML** + **CSS**.
 
 To set things in motion, to have a truly interactive experience, we need another ingredient: **JavaScript**.
 
-#### 1. **HTML** → content and structure  
+##### 1. **HTML** → content and structure  
 
-#### 2. **CSS** → style and design 
+##### 2. **CSS** → style and design 
 
-#### 3. **JS** → behaviour and logic
+##### 3. **JS** → behaviour and logic
 
 HTML and CSS are coding languages.
 
