@@ -42,12 +42,11 @@
 
 ### What went well
 
-* Having multiple lecturer let them think that it's not just one way but gave them multiple perspectives.
+* Having many lecturers to communicate that "there isn't just one way" and gave them multiple perspectives.
 * Engaged by the playful demonstration
 * Felt involved with team work.
 * Didn't feel scared to say things.
 * Balance between coding practice and process learning is well balanced
-
 
 ### Areas for improvement
 
