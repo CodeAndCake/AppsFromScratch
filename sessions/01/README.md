@@ -79,6 +79,7 @@ All the course material is here:
 
 Including notes from each session, exercises, sample code, presentations and links to learn more!
 
+
 # What is the plan?
 
 When	| What	
@@ -138,8 +139,7 @@ Apps generally have a specific function, or a small set of functions. They are n
 
 This is *not* a good app. It is not **usable**, even though all the tools it features could be usable (and possibly useful) on their own.
 
-
-# **How long** does it take to make an **app**?
+### **How long** does it take to make an **app**?
 
 This course is 24 hours long, ie **3 working days**.
 
@@ -188,22 +188,6 @@ The **coded rules** that determine how the app interface reacts to your *inputs*
 At its core, the logic building block of an app is a statement that sounds like `if this, then that`, eg: `if you click on this button, the app will show you this section`.
 
 Many `if this then that` blocks can build quite complex behaviours.
-
-### Your turn
-
-Form small groups (max 4 people).
-
-Choose one app that you are all familiar with and analyse it using this framework:
-
-1. What is the main **purpose** of the app?
-* **When** do people need this app? Be specific.
-* Looking at the app **interface**, list the *verbs* of the app, ie what **actions** does the app allow you to do. Think about possible verbs that are not part of the app, and why it may be that you're not allowed to perform those actions.
-* What **input** does the app require from you?  
-* Where does the app's **data** come from? Who creates it?
-* What does the app do with that data (ie what's the app **logic**)?
-* What **output** does the app produce?
-
-<!-- 10-15 minutes in groups, then 15-20 minutes review, and then it should be lunch break -->
 
 
 # Your brief
