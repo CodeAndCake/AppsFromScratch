@@ -1,5 +1,12 @@
 <!--
 
+- [ ] FontAwesome? https://fortawesome.github.io/Font-Awesome/get-started/
+- [ ] Homework: now that you have an initial understanding of how the app looks (HTML&CSS) and works (JS+database) start thinking about how you could make it your own. Is it going to be an app to find music, tools, books? What would you like it to be?
+
+-->
+
+<!--
+
 var me = {} // an empty object
 var me = new Person() // or a class?
 
@@ -13,23 +20,250 @@ me.image = 'http://api.randomuser.me/portraits/men/33.jpg' // String, a URL eg: 
 me.about = 'A short blurb about yourself' // String
 
 database.push(me)
+-->
+
+<!--
+From v2, day 2:
+
+### Areas for improvement
+
+* Try something easier which is more rewarding (possibly something more visual or sound, playful)
+
+### Action points
+
+* Find fun activities for end of day
+* How to market your app and idea? (Find where we can direct them to resources)
+* Resources / links: jQuery courses etc.
+* JS library: how do you know if thats good library?
 
 -->
 
-<!--- [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract)-->
+
 
 # Coding and app-making for beginners 
 
-### Day 2
+## Day 2
 
-<!-- 1. How long does it take to make an app? -->
+[Last week](../01) we started building your app's **interface** with HTML and CSS. 
 
-1. [What is **programming**?](#programming-vs-coding)
-* Introduction to **JavaScript**: connect your app to an online database 
-* Work together to [generate, spec out and test your **ideas**](#choose-a-theme) 
-* **UX research**: [interview people (aka users)](#who-are-your-users)
+Today we'll look at its **data** (using an online *database*) and the **JavaScript logic** that will glue together interface and data.
 
-<!--* [Wireframing](#speed-sketch-your-ideas)-->
+1. [Workshop](#workshop): HTML & CSS recap.
+* [Group task](#ux-research): UX research.
+* [What is **programming**](#programming-vs-coding)?
+* Meet **JavaScript**: connect your app to an online database. 
+
+
+# Workshop
+
+### HTML & CSS recap
+
+Different **languages**, separate [**concerns**](http://en.wikipedia.org/wiki/Separation_of_concerns#HTML.2C_CSS.2C_JavaScript).
+
+Think of a group of people working together, eg to make a car, a newspaper, a website, to provide education. What are the different *roles* and *concerns* of these people?
+
+#### 1. **HTML** → content and structure  
+
+#### 2. **CSS** → style and design 
+
+#### 3. **JS** → data and logic
+
+## Step by step
+
+Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in. Then open your project from last week. 
+
+Your app HTML structure is inside `index.html`. 
+
+The CSS style is in another file `style.css` which is linked to the HTML with a `link` inside the `head` in `index.html`.
+
+<!-- 01#html--css-crash-course -->
+
+### Styling interactive elements
+
+#### Dropdown
+
+To style your dropdown, you first need to know how it's called in HTML: `select`
+
+In `style.css` add a new CSS block:
+
+```css
+select
+{
+	background-color: red; 
+}
+```
+
+This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour. 
+
+In Thimble, if you right-click on `red` and then `Quick Edit` a colour picker will pop up. Now you can choose between 16 million colours!
+
+![](assets/quick-edit.png)
+
+You could also make it `transparent`.
+
+Remember how to change the **colour of texts**? It's `color`.
+
+```css
+select
+{
+	background-color: red; 
+	color: white;
+}
+```
+
+Last week you integrated a font from [Google Fonts](https://www.google.com/fonts) into your app, which turned everything into your chosen font. Or did it? 
+
+The dropdown and buttons are still in the standard browser font.
+
+How do you **change the font** of your dropdown? It's `font-family`.
+
+```css
+select
+{
+	background-color: red; 
+	color: white;
+	font-family: 'Lekton'; /* 'Lekton' is our favourite font, you choose your own from https://www.google.com/fonts */
+}
+```
+
+Currently the dropdown looks too small and its text is not **comfortable to read**. How do you change that?
+
+```css
+select
+{
+	...
+	font-size: 30px;
+}
+```
+
+Adjust the `font-size` to suit your app content.
+
+#### Button
+
+Add a new CSS block that targets the `button`: 
+
+```css
+button
+{
+	border: none;
+	background-color: red; 
+}
+```
+
+Change the `color` to match your design. It's good practice to make all *interactive* interface elements consistently coloured, and prominent.
+
+Now you can apply some of the styles from the dropdown to the `button`. 
+
+How do you make **rounded corners**? With `border-radius`.
+
+```css
+button
+{
+	...
+	border-radius:10px;
+}
+```
+
+Nice. It looks a bit squished though. We can use `padding` to add some space between the button text and its border.
+
+```css
+button
+{
+	...
+  	padding: 10px;
+}
+```
+
+### Button states
+
+As an interactive element, a `button` should respond to user interactions, through its look and feel. 
+
+For example, when you roll over a button, it's good practice for it to change its appearance, acknowledging that *something is happening*.
+
+Add a new CSS block that targets the `hover` state of your `button`: 
+
+```css
+button:hover
+{
+	color: black;
+}
+```
+
+Now when you roll over the button, its text will turn black.
+
+### Smooth transitions
+
+Currently the text colour flashes from the normal state to the `hover` state.
+
+You can make that transition smooth, using the `transition` CSS property
+
+```css
+button
+{
+	transition: 0.6s;
+}
+```
+
+`s` stands for seconds.
+
+### Thinking inside the **box**
+
+Imagine that there is an **invisible box** around every HTML element. 
+
+Your browser likes to put code into boxes, boxes inside boxes inside boxes inside boxes...
+
+Each HTML box has:
+
+* margin
+* border
+* padding
+
+![](assets/box-model.gif)
+
+
+# UX research
+
+### Key concepts
+
+#### Interface
+
+The parts of the app you directly interact with (touch, read, click, speak to etc.)
+
+A good interface must be *usable* and should align to a user's *mental models* (how does s/he expect the interface to work). 
+
+#### Data
+
+The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*). 
+
+Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location apps stream...
+
+#### Logic
+
+The **coded rules** that determine how the app interface reacts to your *inputs*, how it manipulates data and how it presents it to you (*output*).
+
+At its core, the logic building block of an app is a statement that sounds like `if this, then that`, eg: `if you click on this button, the app will show you this section`.
+
+Many `if this then that` blocks can build quite complex behaviours.
+
+### Your turn
+
+<!-- Competitor analysis -->
+
+Form small groups (max 4 people).
+
+Choose one app that you are all familiar with and analyse it using this framework:
+
+1. What is the main **purpose** of the app?
+* **When** do people need this app? Be specific.
+* Looking at the app **interface**, list the *verbs* of the app, ie what **actions** does the app allow you to do. Think about possible verbs that are not part of the app, and why it may be that you're not allowed to perform those actions.
+* What **input** does the app require from you?  
+* Where does the app's **data** come from? Who creates it?
+* What does the app do with that data (ie what's the app **logic**)?
+* What **output** does the app produce?
+
+<!-- 10-15 minutes in groups, then 15-20 minutes review, and then it should be lunch break -->
+
+
 
 
 
@@ -119,6 +353,8 @@ How about this language?
 `cat.drink(milk)` JavaScript (written by an English-speaking human)-->
 
 ### Robot time!
+
+<!--- [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract) -->
 
 Let's pretend I'm a **robot** and you have to **program me**.
 
@@ -349,89 +585,17 @@ Let's play out the app behaviour.
 
 
 
-# Choose a theme
-
-A theme is something that you are passionate about, an issue that needs your help, or a problem that you notice in your community that resonates with you.
-
-Example: *Create an app that helps your community learn about or contribute to {your project}.*
-
-Start **brainstorming** some project ideas with your partner.
- 
-* Keep it simple and focus on solving a **single need**.
-* **Don't spend too long** on any one idea because you will have time to further discuss your ideas later.
-* Stay with the theme you choose.
-* Share a few ideas with each other now and take note of them for later.
 
 
 
 
-# Who are your users?
-
-### Good practices for interviewing
-
-1. **Plan**: prepare a script, know what to ask, and who to ask.
-2. Recruit **strangers**. Because [homophily](http://en.wikipedia.org/wiki/Homophily)
-3. [IF POSSIBLE] Go to **their place**, in a space where they're comfortable, best if the space where they use the product(s) you want to test / talk about. Let them show you around.
-4. Easier if you interview **pairs** of users: they'll be less anxious.
-5. **Listen**. Don't talk about yourself.
-6. Be comfortable with **silence**: give people time and space to answer your question.
-7. Be ready to **be challenged** and improvise.
-8. Avoid **leading questions**. Try not to bias your interviewees.
-
-	bad > `How much do you love using FB?`
-	
-	good > `Tell me about your most recent FB experience` (more concrete & memorable)
-	
-9. Avoid **closed questions**.
-
-	bad > `Do you order A, B or C?`
-	
-	good > `How do you choose food when going out?`
-	
-10. Try **casual requests** instead of questions. For instance, instead of asking `How do you store your photos?` consider asking them to show you how they store photos.
-    
-   
-   
-<!--Question examples:
-
-* How did you first learn about `insert your topic`?
-* How were you motivated to become involved in `insert your topic`?
-* Tell me more about that experience. What do you remember most about it?
-* (if the user has started telling you about a relevant experience) What did you enjoy most? What didn't you enjoy about it?
-* What kinds of problems do you or your community commonly see in your experience? Have you thought about how you would solve it?   --> 
-    
-### Interview analysis
-
-* Take 5 minute to write 4-5 important observations on post-its notes about what people said and place them on the wall.
-* What are the common themes you see emerge?
-* What are the common problems you heard/observed?
-* Did any of the findings make you start to think differently about your community and the problems you may have already been designing for?
-
-You should now understand a little more about how interviewing your potential app users can be helpful and have some tools to help you go out interview your community. 
-
-It takes some practice, but don't let that slow you down! 
-
-**Repeat this activity with new potential users.** 
-
-The more you know about your community and potential audience, the more you can respond by creating something valuable for them.
 
 
 
-# Speed-sketch your ideas
 
-* The goal is to get something down on paper, but not get too caught up in the details. 
 
-* This is to help visualise some of your ideas. 
 
-* Don't overthink the ideas or censor your thoughts. 
 
-* The quality of your drawings and handwriting doesn't matter either.
-
-![](http://www.interfacesketch.com/previews/web-browser-template.png)
-
-![](http://www.interfacesketch.com/previews/iphone6.png)
-
-Printable wireframing templates from [InterfaceSketch](http://www.interfacesketch.com)
 
 
 ### License
