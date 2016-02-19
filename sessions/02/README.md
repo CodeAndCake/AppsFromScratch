@@ -84,7 +84,7 @@ The CSS style is in another file `style.css` which is linked to the HTML with a 
 
 To style your dropdown, you first need to know how it's called in HTML: `select`
 
-In `style.css` add a new CSS block:
+In `style.css` add a new CSS block
 
 ```css
 select
@@ -101,7 +101,7 @@ In Thimble, if you right-click on `red` and then `Quick Edit` a colour picker wi
 
 You could also make it `transparent`.
 
-Remember how to change the **colour of texts**? It's `color`.
+Remember how to change the **colour of texts**? It's `color` :us:
 
 ```css
 select
@@ -115,7 +115,7 @@ Last week you integrated a font from [Google Fonts](https://www.google.com/fonts
 
 The dropdown and buttons are still in the standard browser font.
 
-How do you **change the font** of your dropdown? It's `font-family`.
+How do you **change the font** of your dropdown? It's `font-family`
 
 ```css
 select
@@ -126,7 +126,7 @@ select
 }
 ```
 
-Currently the dropdown looks too small and its text is not **comfortable to read**. How do you change that?
+Currently the dropdown looks too small and its text is not **comfortable to read**. How do you fix that?
 
 ```css
 select
@@ -138,9 +138,11 @@ select
 
 Adjust the `font-size` to suit your app content.
 
+Btw `px` stands for *pixels*, which are the little dots that make up the screen. If you go close enough to your computer screen, you'll start seeing the pixels.
+
 #### Button
 
-Add a new CSS block that targets the `button`: 
+Add a new CSS block that targets the `button` 
 
 ```css
 button
@@ -150,7 +152,7 @@ button
 }
 ```
 
-Change the `color` to match your design. It's good practice to make all *interactive* interface elements consistently coloured, and prominent.
+Change the `color` to match your design. It's good practice to style all *interactive* interface elements the same **colour and prominent**.
 
 Now you can apply some of the styles from the dropdown to the `button`. 
 
@@ -176,11 +178,11 @@ button
 
 ### Button states
 
-As an interactive element, a `button` should respond to user interactions, through its look and feel. 
+As an interactive element, a `button` should respond to user interactions, through its look & feel. 
 
 For example, when you roll over a button, it's good practice for it to change its appearance, acknowledging that *something is happening*.
 
-Add a new CSS block that targets the `hover` state of your `button`: 
+Add a new CSS block that targets the `hover` state of your `button` 
 
 ```css
 button:hover
@@ -195,7 +197,7 @@ Now when you roll over the button, its text will turn black.
 
 Currently the text colour flashes from the normal state to the `hover` state.
 
-You can make that transition smooth, using the `transition` CSS property
+You can make that transition smooth using the `transition` CSS property
 
 ```css
 button
@@ -214,11 +216,13 @@ Your browser likes to put code into boxes, boxes inside boxes inside boxes insid
 
 Each HTML box has:
 
-* margin
-* border
-* padding
+* `margin`
+* `border`
+* `padding`
 
 ![](assets/box-model.gif)
+
+Play around with those three CSS properties to tweak your app's layout!
 
 
 # UX research
