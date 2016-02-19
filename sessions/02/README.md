@@ -265,43 +265,79 @@ Choose one app that you are all familiar with and analyse it using this framewor
 * What does the app do with that data (ie what's the app **logic**)?
 * What **output** does the app produce?
 
-<!-- 10-15 minutes in groups, then 15-20 minutes review, and then it should be lunch break -->
-
-
-
-
-
-
+<!-- 10-15 minutes in groups, then 15-20 minutes review, and then it should zunch! -->
 
 
 # Programming vs coding
 
-### Do *coding* and *programming* mean the same thing?
+### Do **coding** and **programming** mean the same thing?
 
-* Coding: writing code
-* Programming: designing a list of instructions to get something done (aka **algorithm**) and then coding such instructions
+* *Coding*: writing code
+* *Programming*: designing a list of instructions to get something done (aka **algorithm**) and then coding such instructions
 
-<!--[What's an algorithm?](http://www.bbc.co.uk/guides/z3whpv4#zyfwjxs)
+[What's an algorithm?](http://www.bbc.co.uk/guides/z3whpv4#zyfwjxs)
 
 * Computers can code.
-* Computers can't program. People can.-->
+* Computers can't program. People can.
 
-### Programming requires us to **think** in a certain way
+#### Programming requires us to **think** in a certain way
 
 Before we learn how to *code* a program, we should learn how to *think* about problems and solutions.
 
-### **Computational thinking** 
+#### **Computational thinking** 
 
 <!--* Not thinking like computers. Do computers think anyway? -->
 
-* Solving problems for **people**, using **code**.
-* Thinking about solutions and breaking them down into **step-by-step instructions**.
+* Solving problems for **people** using **code**.
+* Breaking down complex ideas into smaller chunks and designing **step-by-step instructions** to tackle each task.
 
-<!--It is about using code creatively to solve real-world problems, to **break down behaviours** in specific and precise ways that can be communicated to other people, and eventually to computers.-->
+### Robot time!
+
+<!--- Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract) -->
+
+Let's pretend I'm a **robot** and you have to **program me**.
+
+[![](assets/robot.png)](https://thenounproject.com/term/driven/62030/)
+
+* **Mission**: find an object in the room, pick it up
+
+* I only understand these **commands**: 
+ 
+	`walk(steps)`
+	
+	`turn(degrees)` 
+ 	
+ 	`grab(thing)`
+
+* I can listen, but can only answer `yes` or `no`
+
+<!--People usually start by giving you very *specific instructions* (eg: walk 3 steps, turn 45 degrees, walk 2 steps..): **remote-controlling**
+
+We can then make them their code more *abstract* and *flexible* with **logic** and **functions**.
+	
+(The idea is to engage people with an [easy task](http://pss.sagepub.com/content/early/2012/08/31/0956797612446024.abstract) before we challenge them with a demanding one)-->
+	
+## Principles of Programming
+
+There are lots of programming languages: JavaScript, Python, C, C++, Objective-C, Swift, Java, Ruby. 
+
+They share the same core principles, and the same **building blocks**: 
+
+1. **Variables** to store data 
+* **Functions** to define reusable sets of instructions
+* **Logic** to make choices `if this then that`
+
+What variables, functions and logic do you use in your everyday life (even if you don't call them so)?
+
+* **Variables** weather (sunny, cloudy, warm, cold etc), date, location... 
+* **Functions** get out of bed, check the weather (on your phone, looking outside), check your calendar, make tea...
+* **Logic** `if sunny then wear sunglasses`, `if rainy then take an umbrella`
+
+Think about the [robot game](#robot-time): which variables, functions and logic did we use?
 
 ### Programming languages
 
-Last week we learned how to create the **visual elements** of a Web product (site, page, app etc) using **HTML** + **CSS**. 
+Last week we learned how to build interfaces using **HTML** + **CSS**.
 
 To set things in motion, to have a truly interactive experience, we need another ingredient: **JavaScript**.
 
@@ -340,6 +376,7 @@ If we know the meaning of each component...
 ... then we can build the meaning of the whole sentence.
 
 -->
+
 <!--  
 
 	Inspiring talk from Ajit Narayan about abstraction, language, grammar, speech and a visual grammar engine
@@ -354,53 +391,11 @@ If we know the meaning of each component...
 
 How about this language?
 
-`cat.drink(milk)` JavaScript (written by an English-speaking human)-->
+`cat.drink(milk)` JavaScript (written by an English-speaking human)
+-->
 
-### Robot time!
-
-<!--- [ ] Robot: first [reacting](http://worrydream.com/LearnableProgramming/#react) then [abstracting](http://worrydream.com/LearnableProgramming/#abstract) -->
-
-Let's pretend I'm a **robot** and you have to **program me**.
-
-[![](assets/robot.png)](https://thenounproject.com/term/driven/62030/)
-
-* **Mission**: find an object in the room, pick it up
-
-* I only understand these **commands**: 
- 
-	`walk(steps)`
-	
-	`turn(degrees)` 
- 	
- 	`grab(thing)`
-
-* I can hear, but can only say `yes` or `no`
-
-<!--People usually start by giving you very *specific instructions* (eg: walk 3 steps, turn 45 degrees, walk 2 steps..): **remote-controlling**
-
-We can then make them their code more *abstract* and *flexible* with **logic** and **functions**.
-	
-(The idea is to engage people with an [easy task](http://pss.sagepub.com/content/early/2012/08/31/0956797612446024.abstract) before we challenge them with a demanding one)-->
-	
-### Principles of Programming
-
-There are lots of programming languages: JavaScript, Python, C, C++, Objective-C, Java, Ruby. 
-
-They share the same core principles, and the same **building blocks**: 
-
-1. **Variables** to store data 
-* **Functions** to define reusable sets of instructions
-* **Logic** to make choices `if this then that`
-
-What variables, functions and logic do you use in your everyday life (even if you don't call them so)?
-
-* **Variables** weather (sunny, cloudy, warm, cold..), date, location.. 
-* **Functions** get out of bed, check weather (on you phone, on TV..), check calendar
-* **Logic** if sunny then wear sunglasses, if rainy then take an umbrella
-
-Think about the [robot game](#robot-time): which variables, functions and logic did we use?
-
-<!-- ```js
+<!-- 
+```js
 
 var degrees = 1;
 var steps = 1;
@@ -429,7 +424,8 @@ if (canYouSee(target)) {
 	// turn and check again
 }
 
-``` -->
+``` 
+-->
 
 # Back to the brief
 
