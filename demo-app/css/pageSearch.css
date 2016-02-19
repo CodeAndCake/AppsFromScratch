@@ -1,0 +1,16 @@
+.results {
+  display: none;
+}
+
+.results.active {
+  display: block;
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.results ul li {
+  cursor: pointer;
+}

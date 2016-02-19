@@ -1,0 +1,20 @@
+.back {
+  width: auto;
+}
+
+.person  {
+  padding-top: .5em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.person img {
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.person .about {
+  font-weight: 300;
+  font-size: 2em;
+  margin-bottom: 1em;
+}

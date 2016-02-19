@@ -1,0 +1,33 @@
+/*body
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}*/
+
+article
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  overflow: hidden;
+
+  width: 200%;
+  transition: margin-left .2s ease-out;
+}
+
+article.profile 
+{
+  margin-left: -100%;
+}
+
+#pageSearch,
+#pageProfile 
+{
+  padding: 1em;
+  overflow-y: auto;
+  flex: 1;
+}

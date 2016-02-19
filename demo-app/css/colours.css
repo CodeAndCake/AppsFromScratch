@@ -1,0 +1,44 @@
+body 
+{
+  background-color: rgba(236, 240, 241,1.0);
+  color: rgb(52, 73, 94);
+}
+
+h1 
+{
+  color: rgb(52, 73, 94);
+}
+
+button 
+{
+  background: rgba(211, 84, 0,1.0);
+  color: white;
+}
+
+select 
+{
+  background: white;
+  border-color: rgba(211, 84, 0,1.0);
+  color: rgb(52, 73, 94);
+}
+
+.dropdown:after 
+{
+  color: rgba(211, 84, 0,1.0);
+}
+
+input 
+{
+  color: rgb(52, 73, 94);
+  border-color: rgba(211, 84, 0,1.0);
+}
+
+.search:after 
+{
+  color: rgba(211, 84, 0,1.0);
+}
+
+.results ul li 
+{
+  color: rgba(211, 84, 0,1.0);
+}
