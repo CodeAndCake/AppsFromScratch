@@ -473,11 +473,15 @@ Let's load Aimee into browser.
 ```
 // Try type in following command into the Console
 
-aimee.version
-aimee.image
-aimee.likesFood
-aimee.hasACat
-aimee.walk()
+aimee.version   
+   
+aimee.image   
+   
+aimee.likesFood   
+   
+aimee.hasACat   
+   
+aimee.walk()   
 
 
 // Let's get Aimee talking
@@ -487,7 +491,8 @@ aimee.speak("I am Aimee!")
 
 // Let's change the voice
 
-aimee.getVoices()
+aimee.getVoices()   
+
 aimee.speak("Io sono Aimee!", "Google italiano")
 
 ```
