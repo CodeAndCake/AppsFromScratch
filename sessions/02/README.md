@@ -463,15 +463,15 @@ Now that you're familiar with the basic building blocks of JS ([variables](#vari
 
 ### Let's interact with Aimee   
    
-Console is where you can talk Javascript with your browser.   
-Let's load Aimee into browser.
+The Console is where you can talk JavaScript with your browser.   
+Let's load Aimee into the browser.
    
-1. First copy Aimee code from this page: https://github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js   
-2. Then paste into Console on your browser.
+1. First copy the Aimee code from this page: https://github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js   
+2. Then paste it into the Console on your browser.
 3. Now Aimee is loaded!   
 
 ```
-// Try type in following command into the Console
+// Try type in the following commands into the Console
 
 aimee.version   
    
@@ -494,6 +494,7 @@ aimee.speak("I am Aimee!")
 aimee.getVoices()   
 
 aimee.speak("Io sono Aimee!", "Google italiano")
+
 
 ```
 
