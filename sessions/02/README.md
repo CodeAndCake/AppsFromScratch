@@ -457,11 +457,29 @@ You can see how functions **make code reusable**. For instance, the action of *d
 
 <!-- @yukikdev insert your chatterbox fun stuff here :) -->
 
+Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects)), keep in mind that the Console is the **most useful tool** when you develop JS code and you want to quickly test it. Every JS developer uses it, every day!
+
 ### Meet the database
 
-Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects))
+So far you have stored and manipulated *data* in your browser. 
 
-[bit.ly/firebaseChat](https://d157rqmxrxj6ey.cloudfront.net/baddeo/31051/)
+However, this is not a scalable solution. What if your **data grows bigger** than the average browser memory? What if you want more people to access that data at **the same time**? What if your app needs to store **confidential information**? What if your app needs to do heavy **data crunching** and you can't rely on the average browser power?
+
+For all those reasons, having a database is a solution.
+
+#### Firebase
+
+We're going to use a cloud-based real-time database called [Firebase](https://www.firebase.com). There are several other solutions, including building your own database, however we chose Firebase because of its performance, features and good documentation. 
+
+Many companies use Firebase to rapidly prototype app ideas, without investing time and money on database infrastructure and software.
+
+<!-- (acquired by Google in 2014) -->
+
+Let's learn how Firebase works, before you integrate it into your app: using Chrome, go to [bit.ly/firebaseChat](https://d157rqmxrxj6ey.cloudfront.net/baddeo/31051/) and follow the instructions :)
+
+[![](assets/firebase-challenge.jpg)](https://d157rqmxrxj6ey.cloudfront.net/baddeo/31051/)
+
+<!-- Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>. -->
 
 
 # Back to the brief
