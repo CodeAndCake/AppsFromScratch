@@ -95,11 +95,9 @@ select
 
 This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour. 
 
-In Thimble, if you right-click on `red` and then `Quick Edit` a colour picker will pop up. Now you can choose between 16 million colours!
+In Thimble, if you right-click on `red` and then `Quick Edit` a colour picker will pop up. Now you can choose between 16 million colours! You could also make it `transparent`.
 
 ![](assets/quick-edit.png)
-
-You could also make it `transparent`.
 
 Remember how to change the **colour of texts**? It's `color` :us:
 
