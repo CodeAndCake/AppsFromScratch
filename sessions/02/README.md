@@ -455,23 +455,18 @@ You can add pretty much anything to objects, including functions.
 
 You can see how functions **make code reusable**. For instance, the action of *drinking* remains the same, no matter what you are drinking.
 
-<!-- @yukikdev insert your chatterbox fun stuff here :) -->
-
-Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects)), keep in mind that the Console is the **most useful tool** when you develop JS code and you want to quickly test it. Every JS developer uses it, every day!
-
-
-
-### Let's interact with Aimee   
+### Let's interact with *Aimee*   
    
-The Console is where you can talk JavaScript with your browser.   
-Let's load Aimee into the browser.
+The Console is where you can talk JavaScript with your browser.  
+
+Let's load *Aimee* into the browser.
    
-1. First copy the Aimee code from this page: https://github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js   
+1. First copy the Aimee code from this page: [github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js)   
 2. Then paste it into the Console on your browser.
 3. Now Aimee is loaded!   
 
-```
-// Try type in the following commands into the Console
+```javascript
+// Try and type in the following commands into the Console
 
 aimee.version   
    
@@ -494,12 +489,9 @@ aimee.speak("I am Aimee!")
 aimee.getVoices()   
 
 aimee.speak("Io sono Aimee!", "Google italiano")
-
-
 ```
 
-
-
+Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects)), keep in mind that the Console is the **most useful tool** when you develop JS code and you want to quickly test it. Every JS developer uses it, every day!
 
 ### Meet the database
 
