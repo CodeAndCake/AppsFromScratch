@@ -95,11 +95,9 @@ select
 
 This will turn your dropdown's **background** red. Go ahead and change that to your favourite colour. 
 
-In Thimble, if you right-click on `red` and then `Quick Edit` a colour picker will pop up. Now you can choose between 16 million colours!
+In Thimble, if you right-click on `red` and then `Quick Edit` a colour picker will pop up. Now you can choose between 16 million colours! You could also make it `transparent`.
 
 ![](assets/quick-edit.png)
-
-You could also make it `transparent`.
 
 Remember how to change the **colour of texts**? It's `color` :us:
 
@@ -455,7 +453,41 @@ You can add pretty much anything to objects, including functions.
 
 You can see how functions **make code reusable**. For instance, the action of *drinking* remains the same, no matter what you are drinking.
 
-<!-- @yukikdev insert your chatterbox fun stuff here :) -->
+### Let's interact with *Aimee*   
+   
+The Console is where you can talk JavaScript with your browser.  
+
+Let's load *Aimee* into the browser.
+   
+1. First copy the Aimee code from this page: [github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js)   
+2. Then paste it into the Console on your browser.
+3. Now Aimee is loaded!   
+
+```javascript
+// Try and type in the following commands into the Console
+
+aimee.version   
+   
+aimee.image   
+   
+aimee.likesFood   
+   
+aimee.hasACat   
+   
+aimee.walk()   
+
+
+// Let's get Aimee talking
+
+aimee.speak("I am Aimee!")
+
+
+// Let's change the voice
+
+aimee.getVoices()   
+
+aimee.speak("Io sono Aimee!", "Google italiano")
+```
 
 Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects)), keep in mind that the Console is the **most useful tool** when you develop JS code and you want to quickly test it. Every JS developer uses it, every day!
 
