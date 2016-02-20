@@ -43,6 +43,13 @@ var aimee = {
         speechSynthesis.speak(msg);
 
     },
+    
+    waitAndDo: function(action){
+    	setTimeout(function () {
+    		action.call(this);
+    	}, 5000);
+    	
+    },
 
     getVoices: function() {
 
