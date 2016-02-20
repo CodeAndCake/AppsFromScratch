@@ -273,7 +273,7 @@ Choose one app that you are all familiar with and analyse it using this framewor
 <!-- 10-15 minutes in groups, then 15-20 minutes review, and then it should zunch! -->
 
 
-# Programming vs coding
+# Coding vs programming 
 
 ### Do **coding** and **programming** mean the same thing?
 
@@ -465,11 +465,11 @@ So far you have stored and manipulated *data* in your browser.
 
 However, this is not a scalable solution. What if your **data grows bigger** than the average browser memory? What if you want more people to access that data at **the same time**? What if your app needs to store **confidential information**? What if your app needs to do heavy **data crunching** and you can't rely on the average browser power?
 
-For all those reasons, having a database is a solution.
+For all those reasons, using a database is part of the solution.
 
 #### Firebase
 
-We're going to use a cloud-based real-time database called [Firebase](https://www.firebase.com). There are several other solutions, including building your own database, however we chose Firebase because of its performance, features and good documentation. 
+We're going to use a cloud-based real-time database service called [Firebase](https://www.firebase.com). There are several other solutions, including building your own database, however we chose Firebase because of its performance, features and good documentation. 
 
 Many companies use Firebase to rapidly prototype app ideas, without investing time and money on database infrastructure and software.
 
@@ -488,9 +488,10 @@ Let's learn how Firebase works, before you integrate it into your app: using Chr
 
 <!--(eg: people in their community to do something together).-->
 
-First we'll break down the brief into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
+Remember the [computational thinking](#computational-thinking) method?
 
-Once we have a good understanding of how our app will behave, we can **code** those algorithms.
+1. First we'll break down the brief into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
+* Once we have a good understanding of how our app will behave, we can **code** those algorithms.
 
 ### 1. Break down the brief
 
@@ -516,6 +517,9 @@ Let's play out the app behaviour.
 
 ### 2. Code the algorithms
 
+Next week ;)
+
+<!--
 1. **Load data and store it in the app memory**
 	
 	* We need to know where to load data from, that is we need a **URL**. You can think of it as the address or phone number of your data..
@@ -622,6 +626,7 @@ Let's play out the app behaviour.
 		})
 	}
 	```
+-->
 
 <!--
 
@@ -634,21 +639,8 @@ Let's play out the app behaviour.
 * `console.log` results
 * `while` loop (Choc demo)
 * Template
+
 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### License
