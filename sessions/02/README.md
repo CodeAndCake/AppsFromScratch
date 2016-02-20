@@ -459,6 +459,30 @@ You can see how functions **make code reusable**. For instance, the action of *d
 
 Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects)), keep in mind that the Console is the **most useful tool** when you develop JS code and you want to quickly test it. Every JS developer uses it, every day!
 
+
+
+### Let's interact with Aimee bot   
+   
+The difference between Html CSS and Javascript is that 
+
+```
+// Try type in following command into the Console
+
+aimee.version
+aimee.image
+aimee.likesFood
+aimee.hasACat
+aimee.walk()
+aimee.speak("I am Aimee!")
+
+aimee.getVoices()
+aimee.speak("Io sono Aimee!", "Google italiano")
+
+```
+
+
+
+
 ### Meet the database
 
 So far you have stored and manipulated *data* in your browser. 
