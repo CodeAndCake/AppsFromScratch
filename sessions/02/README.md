@@ -461,9 +461,14 @@ Now that you're familiar with the basic building blocks of JS ([variables](#vari
 
 
 
-### Let's interact with Aimee bot   
+### Let's interact with Aimee   
    
-The difference between Html CSS and Javascript is that 
+Console is where you can talk Javascript with your browser.   
+Let's load Aimee into browser.
+   
+1. First copy Aimee code from this page: https://github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js   
+2. Then paste into Console on your browser.
+3. Now Aimee is loaded!   
 
 ```
 // Try type in following command into the Console
