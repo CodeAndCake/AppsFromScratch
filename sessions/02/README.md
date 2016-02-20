@@ -241,17 +241,17 @@ A good interface must be *usable* and should align to a user's *mental models* (
 
 #### Data
 
-The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*). 
+The *fuel* of an app, the raw ingredients that the interface presents to you (**output**). 
 
-Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location apps stream...
+Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location apps stream etc (**input**).
 
 #### Logic
 
-The **coded rules** that determine how the app interface reacts to your *inputs*, how it manipulates data and how it presents it to you (*output*).
+The **coded rules** that determine how the app interface reacts to your *inputs*, how it manipulates data and what *output* it presents to you.
 
 At its core, the logic building block of an app is a statement that sounds like `if this, then that`, eg: `if you click on this button, the app will show you this section`.
 
-Many `if this then that` blocks can build quite complex behaviours.
+Many `if this then that` blocks can build complex, seemingly *magic* behaviours.
 
 ### Your turn
 
@@ -344,7 +344,7 @@ Think about the [robot game](#robot-time): which variables, functions and logic 
 
 Last week we learned how to build interfaces using **HTML** + **CSS**.
 
-To set things in motion, to have a truly interactive experience, we need another ingredient: **JavaScript**.
+To set things in motion, to have a truly interactive experience, we need another language: **JavaScript**.
 
 ##### 1. **HTML** → content and structure  
 
@@ -354,93 +354,127 @@ To set things in motion, to have a truly interactive experience, we need another
 
 HTML and CSS are coding languages.
 
-JavaScript is a programming language (together with PHP, Python, Ruby, C, Java and many others).
+JavaScript is a programming language (together with PHP, Python, Ruby, Java and many others).
 
-<!--
-### Natural vs programming languages 
+### Meet JS 
 
-* `the cat drinks milk` English 
-* `de kat drinkt melk` Dutch
-* `die Katze trinkt Milch` German 
-* `il gatto beve latte` Italian 
+**JavaScript lives in every browser**. You don't need to install anything, it's already there.
 
-Can you see a pattern here? A *subject* performing an *action* on an *object*. No matter which language, the structure is the same.
+We'll use the [**JavaScript Console**](http://webmasters.stackexchange.com/a/77337) to learn with a few basic JS tricks.
 
-That structure is what we call **grammar**, the rules defining how you can put words together in order to communicate anything.
+Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>.
 
-`drinks milk the cat` wouldn't work as a meaningful sentence, even though the components are the same.
+![](assets/console.png)
 
-1. `drinks`
-* Who? `the cat`
-* What? `milk`
+Using the Console is like having a chat with your browser. As long as you talk JS, the browser will talk back to you.
 
-If we know the meaning of each component...
+```javascript
+hello
+	Uncaught ReferenceError: hello is not defined
+"hello"
+	"hello"
+```
 
-... and we know the rules that define the relationships between such components (*grammar*)...
+Notice the difference between words with **speech marks** (the browser interprets them as *strings* and just parrots them) and words without speech marks... 
 
-... then we can build the meaning of the whole sentence.
+### Variables
 
--->
+```javascript	
+var greeting = "hello"
+	undefined
+greeting
+	"hello"
+greeting = "hej"
+	"hej"
+greeting
+	"hej"
+```
 
-<!--  
+You can use **variables** to get the browser to remember things.
 
-	Inspiring talk from Ajit Narayan about abstraction, language, grammar, speech and a visual grammar engine
+### Functions
 
-	http://avazapp.com/freespeech/
+The browser can perform certain *actions* natively, like humans can natively breath.
 
-	http://www.ted.com/talks/ajit_narayanan_a_word_game_to_communicate_in_any_language/transcript?language=en
+```javascript	
+alert("ciao")
+	undefined
+alert(greeting)
+	undefined
+prompt("How do you say hello in your language?")
+	"ciao"
+var userName = prompt("What's your name?")
+	undefined
+var userAge = prompt("How old are you?")
+	undefined
+```
 
--->
+These actions are called **functions**.
 
-<!--Imagine you read this sentence in a language you don't speak. You can still try and make sense of it, by comparing it to a language you know. This process of *trying to make sense* is very important in programming.
+Functions are useful to **make code reusable**.
 
-How about this language?
+You can also teach the browser how to do stuff, by **defining your own functions**
+	
+### Objects	
+	
+```javascript	
+cat
+	Uncaught ReferenceError: cat is not defined
+var cat = {}
+	undefined
+cat.name = "Bill"
+	"Bill"
+cat
+	Object {name: "Bill"}
+cat.favouriteDrink = "herbal tea"
+	"herbal tea"
+```
 
-`cat.drink(milk)` JavaScript (written by an English-speaking human)
--->
+**Objects** are useful to keep things organised.
 
-<!-- 
-```js
+If a *variable* is like a *jar* that contains one thing, an *object* is like a *fridge* which stores many things in a more/less organised way.
 
-var degrees = 1;
-var steps = 1;
-var target = "coin";
+```javascript	
+cat.meow = function(){ alert("MEOOOOOOW") }
+	function (){ alert("MEOOOOOOW") }
+cat.meow()
+	undefined
+cat.drink = function(beverage){ alert("I am drinking " + beverage) }
+	function (beverage){ alert("I am drinking " + beverage) }
+cat.drink("milk")
+	undefined
+cat.drink("tea")
+	undefined
+cat.drink("beer")
+	undefined
+cat.drink(cat.favouriteDrink)
+	undefined	
+```
 
-function grab(object) {
-	...
-}
+You can add pretty much anything to objects, including functions.
 
-function walk(steps) {
-	...
-}
+You can see how functions **make code reusable**. For instance, the action of *drinking* remains the same, no matter what you are drinking.
 
-function turn(degrees) {
-	...
-}
+<!-- @yukikdev insert your chatterbox fun stuff here :) -->
 
-function canYouSee(target) {
-	...
-}
+### Meet the database
 
-if (canYouSee(target)) {
-	// walk towards it
-	...
-} else {
-	// turn and check again
-}
+Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions)*)
 
-``` 
--->
+[bit.ly/firebaseChat](https://d157rqmxrxj6ey.cloudfront.net/baddeo/31051/)
+
 
 # Back to the brief
 
-> Make an app that helps people sort through heaps of data to **find who/what they are looking for** (eg: people in their community to do something together).
+### Make an app that helps people sort through heaps of data to **find who/what they are looking for** 
 
-First we'll break down the problem into smaller tasks, *specifying* for each task who does what and when. This process is what **designing algorithms** is about. 
+<!--(eg: people in their community to do something together).-->
+
+First we'll break down the brief into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
 
 Once we have a good understanding of how our app will behave, we can **code** those algorithms.
 
-### 1. Break down the problem
+### 1. Break down the brief
 
 We need four volunteers (and post-its). 
 
@@ -457,10 +491,10 @@ Let's play out the app behaviour.
 
 <!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
 
-1. Load data and store it in the app memory
-* Capture user input
-* Filter and sort data according to user choices
-* Display filtered+sorted data
+1. **Load data** and store it in the app *memory*
+* Capture **user input**
+* **Filter and sort data** according to user choices
+* **Output** filtered+sorted data
 
 ### 2. Code the algorithms
 
@@ -468,13 +502,9 @@ Let's play out the app behaviour.
 	
 	* We need to know where to load data from, that is we need a **URL**. You can think of it as the address or phone number of your data..
 	
-	* Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
-	
 		```js
 		var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + worksheet + '/public/values?alt=json'
 		```
-	
-	See the [manual here](https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en)
 	
 	* Copy-paste the URL into a new browser tab to check if it works and what data we're receiving from it
 	
