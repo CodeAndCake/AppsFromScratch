@@ -377,7 +377,7 @@ hello
 
 Notice the difference between words with **speech marks** (the browser interprets them as *strings* and just parrots them) and words without speech marks... 
 
-### Variables
+#### Variables
 
 ```javascript	
 var greeting = "hello"
@@ -392,7 +392,7 @@ greeting
 
 You can use **variables** to get the browser to remember things.
 
-### Functions
+#### Functions
 
 The browser can perform certain *actions* natively, like humans can natively breath.
 
@@ -415,7 +415,7 @@ Functions are useful to **make code reusable**.
 
 You can also teach the browser how to do stuff, by **defining your own functions**
 	
-### Objects	
+#### Objects	
 	
 ```javascript	
 cat
@@ -459,7 +459,7 @@ You can see how functions **make code reusable**. For instance, the action of *d
 
 ### Meet the database
 
-Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions)*)
+Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects))
 
 [bit.ly/firebaseChat](https://d157rqmxrxj6ey.cloudfront.net/baddeo/31051/)
 
