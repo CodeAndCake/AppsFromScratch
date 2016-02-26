@@ -1,8 +1,13 @@
 AM:
 
-- [ ] 30 minutes **wake-up activity**: 4 volunteers thingy (see day 2 notes towards the end `Back to the brief`)
-- [ ] 1 hour **coding**: connect to DB & push data to it
+- [x] 30 minutes **wake-up activity**: 4 volunteers thingy (see day 2 notes towards the end `Back to the brief`)
+- [x] JS recap, yay!
+- [x] JS demo: introduce `functions` and `if`, get people to use them in their Thimble apps
+- [ ] 1 hour **coding**: connect to DB & push data to it (repurpose v2)
 - [ ] early lunch if this is taking longer than 1 hour
+
+PM:
+
 - [ ] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
 
 	* With these ingredients: dropdown, database, filter logic etc...
@@ -11,21 +16,24 @@ AM:
 	
 		1. How do you display the results coming back from the db (aka *search results section*)?
 		* When people click / tap on a result, what do you display (aka *single result section*)?
-
-PM:
-
-- [ ] JS demo: introduce `functions` and `if`, get people to use them in their Thimble apps
 - [ ] *Don't reinvent the wheel*: introduce coding libraries, talk about them but we don't need to use them (jQuery, Backbone, P5.js, D3.js, Aframe for VR etc.)
 - [ ] **Not another demo**: give them written instructions to integrate code at their own pace (life of a programmer)
 - [ ] bonus challenge?
+
 
 # Coding and app-making for beginners 
 
 ## Day 3
 
-[Last week](../02) we ... 
+[Last week](../02) we covered some **HTML and CSS**, styling our first screen with fancy buttons and dropdowns.
 
-Today we'll ...
+We also discussed programming-vs-coding and took a look at JavaScript (aka **JS**) for the first time. 
+
+We used the JS **Console** to speak with our browser, creating alerts and started storing information in boxes called variables.
+
+But don't worry if it all seems a little blurry one week on...
+
+Today we'll break down the brief, cover some JavaScript and push data to our **database**.
 
 <!--
 1. [Workshop](#workshop): HTML & CSS recap.
@@ -35,6 +43,173 @@ Today we'll ...
 -->
 
 
+# Back to the brief
+
+### Make an app that helps people sort through heaps of data to **find who/what they are looking for** 
+
+<!--(eg: people in their community to do something together).-->
+
+Remember the [computational thinking](../02#computational-thinking) method?
+
+1. First we'll break down the brief into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
+* Once we have a good understanding of how our app will behave, we can **code** those algorithms.
+
+### 1. Break down the brief
+
+We need four volunteers (and post-its). 
+
+1. The user (talks only to HTML)
+2. The HTML character (talks only to the user, on request)
+3. The JS character (can talk to both HTML and database)
+4. The database character (talks only to JS, on request)
+
+HTML and JS are siblings or colleagues (they are part of the same app) so they should stand closer, maybe hold hands :)
+
+Let's play out the app behaviour. 
+
+<!--Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?-->
+
+<!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
+
+1. **Load data** and store it in the app *memory*
+* Capture **user input**
+* **Filter and sort data** according to user choices
+* **Output** filtered+sorted data
+
+
+# JavaScript recap
+
+JavaScript can look a little scary at first. 
+
+Let's remind ourselves of some key *tools*, before we dig into our app code.
+
+### Variables
+
+Variables are like *boxes* where we can store data. To create a variable, we write
+
+```javascript
+var  = 
+```
+		
+Let's give it a name and put something inside it
+
+```javascript
+var fruit = "apple";
+```
+
+Now our variable is called `fruit` and it has an `apple` inside it.
+
+### Comparing data
+
+JavaScript is particularly good at comparing data. Say we wanted to know whether there was a `pear` in our `fruit` variable:
+
+```javascript
+fruit == "pear"
+```
+
+In English, this would translate to: if the stuff inside `fruit` is equal to `pear`, then spit out `true`. And if not, spit out `false`.
+
+Notice this subtle but important difference:
+
+1. `=` is to store data
+*  `==` is to check if two things are the same
+
+### Console
+
+[Last week](../02#meet-js) we played around with JS using the browser Console.
+
+We don't normally write JS in the Console. Instead, we write our JS programs in a code editor like Thimble (or [Sublime](http://www.sublimetext.com), [Brackets](http://brackets.io) etc) and store them as `.js` files. 
+
+The Console is an essential **testing tool** for people who write JavaScript. Why do we need it? Because JS is *invisible*.
+
+When we write HTML and CSS, we can see the results of our code rendered by the browser. 
+
+**JS instead doesn't show up on the page**! It does a lot of stuff behind the scenes (like loading, sorting, storing and comparing data) which we can't see. 
+
+Yet, it is very useful when writing JS, to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
+
+Using the Console, we can make JS *visible*. In other words, we can get JS to leave some *traces* inside the Console.
+
+For example, we can use the Console to check what's inside our `fruit` variable by writing this...
+
+```javascript
+console.log(fruit);
+```
+
+... which will display what's inside `fruit` inside the Console.
+
+Still puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly what the error is and where to find it. 
+
+### IF THIS THEN THAT
+	
+We may want our browser to do different things for us depending on the result of our comparision. For instance:
+
+```javascript
+if (fruit == "pear") {
+	console.log("There's a pear in here!")
+} else {
+	console.log("No pears in here, better luck next time!")
+};
+```
+		
+So, to be clear, if our fruit variable has `pear` inside, the Console will say "There's a pear in here!". But if there is no `pear` inside our `fruit` variable, it will say "No pears in here, better luck next time!".
+
+This is really handy for searching through databases. For instance, when you search for something on Google, they use *if statements* to sort through all the millions of pages to find results that match your search words.
+
+### Functions
+	
+Functions are sets of instructions, packaged nicely for us to use over an over. 
+
+Functions make code **reusable**. For instance, you could make a function to teach a *robot* how to `drink` something. The steps required to perform a drinking task remain the same, no matter what the robot is drinking.
+
+```javascript
+robot.drink("tea");
+robot.drink("water");
+robot.drink("coffee");
+``` 
+
+Remember, you use functions of sorts everyday to do 'simple' tasks. For instance, to make tea.
+
+If there was a function for making tea, it might look like this
+
+```javascript
+function makeTea() {   
+	check for teabags   
+	fill the kettle   
+	boil the water   
+	get a clean cup   
+	put teabag in the cup   
+	etc...  
+}
+```
+
+It would be exhausting for us to have to say out loud all of those individual steps every time we wanted to ask someone for a cup of tea!
+
+Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many data entries.
+
+We might create a function like this to do that job
+
+```javascript
+function checkForPears (fruit) {
+	if (fruit == "pear") {
+		console.log("There's a pear in here!")
+	} else {
+		console.log("No pears in here, better luck next time!")
+	};
+}
+```
+
+We have packaged our instructions into a function, which means we don't have to type out all that code everytime we want to search through variables. All we need to type is this:
+
+```javascript
+var fruit = "orange";
+checkForPears(fruit);
+```
+
+Because we have no `pear` in this `fruit` variable, it will log "No pears in here, better luck next time!".
+
+
+# Now for our database!
 
 
 
