@@ -364,6 +364,18 @@ Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd>
 
 ![](assets/console.png)
 
+We don't normally write JS in the Console. Instead, we write our JS programs in a code editor like Thimble (or [Sublime](http://www.sublimetext.com), [Brackets](http://brackets.io) etc) and store them as `.js` files. 
+
+The Console is an essential **testing tool** for people who write JavaScript. Why do we need it? Because JS is *invisible*.
+
+When we write HTML and CSS, we can see the results of our code rendered by the browser. 
+
+**JS instead doesn't show up on the page**! It does a lot of stuff behind the scenes (like loading, sorting, storing and comparing data) which we can't see. 
+
+Yet, it is very useful when writing JS, to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
+
+Using the Console, we can make JS *visible*. In other words, we can get JS to leave some *traces* inside the Console.
+
 Using the Console is like having a chat with your browser. As long as you talk JS, the browser will talk back to you.
 
 ```javascript
