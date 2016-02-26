@@ -1,3 +1,43 @@
+AM:
+
+- [ ] 30 minutes **wake-up activity**: 4 volunteers thingy (see day 2 notes towards the end `Back to the brief`)
+- [ ] 1 hour **coding**: connect to DB & push data to it
+- [ ] early lunch if this is taking longer than 1 hour
+- [ ] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
+
+	* With these ingredients: dropdown, database, filter logic etc...
+	* Come up with an app *recipe*!
+	* **Wireframe two screens** and present them:
+	
+		1. How do you display the results coming back from the db (aka *search results section*)?
+		* When people click / tap on a result, what do you display (aka *single result section*)?
+
+PM:
+
+- [ ] JS demo: introduce `functions` and `if`, get people to use them in their Thimble apps
+- [ ] *Don't reinvent the wheel*: introduce coding libraries, talk about them but we don't need to use them (jQuery, Backbone, P5.js, D3.js, Aframe for VR etc.)
+- [ ] **Not another demo**: give them written instructions to integrate code at their own pace (life of a programmer)
+- [ ] bonus challenge?
+
+# Coding and app-making for beginners 
+
+## Day 3
+
+[Last week](../02) we ... 
+
+Today we'll ...
+
+<!--
+1. [Workshop](#workshop): HTML & CSS recap.
+* [Group task](#ux-research): UX research.
+* [What is **programming**](#programming-vs-coding)?
+* Meet **JavaScript**: connect your app to an online database. 
+-->
+
+
+
+
+
 <!--
 
 - [ ] Now that people have experienced HTML, CSS and JS we could ask them to start thinking about their OWN app (user research)
@@ -104,14 +144,12 @@ Printable wireframing templates from [InterfaceSketch](http://www.interfacesketc
 
 
 
--->
 
 
 
 
-# Coding and app-making for beginners 
 
-## Day 3
+
 
 1. **JavaScript**: [get our app to display data](#lets-code)
 * [What is good design?](#what-is-design)  
@@ -282,7 +320,7 @@ Taking the time to step back and think about **audience** and explore **multiple
 
 **Brainstorming** helps you to work with peers to kickstart an idea or concept for a design.
 
-<!--**Impact mapping** helps you to focus on the goal you are trying archive by mapping out the cause and effect.-->
+
 
 Sketch using pen and paper, write down different scenarios and *user journeys*.
 
@@ -395,7 +433,7 @@ Just like a map is an abstraction of a place that helps us describe its location
 	When wireframing, don't worry about *colours*, *graphics* and *typography*. 
 
 
-<!--
+
 ### Wireframes *with code*
 
 > Standing on the shoulders of giants...
@@ -408,15 +446,16 @@ Meet [Bootstrap](http://getbootstrap.com/), a framework to build mobile-first We
 
 [![](assets/bootstrap.png)](http://getbootstrap.com/)
 
-[Divshot](https://architect.divshot.com/) and [Jetstrap](https://jetstrap.com/) are drag&drop interface builders based on Bootstrap, which you can use to make clickable wireframes.-->
+[Divshot](https://architect.divshot.com/) and [Jetstrap](https://jetstrap.com/) are drag&drop interface builders based on Bootstrap, which you can use to make clickable wireframes.
 
-<!-- Later on, you can export those wireframes into HTML&CSS and start building your app on those-->
 
 ### Wireframes *sans code* 
 
 Using [Moqups](https://moqups.com/)
 
 [![](assets/moqups.gif)](https://moqups.com)
+
+-->
 
 
 ### License
