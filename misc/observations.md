@@ -73,26 +73,40 @@ Idea for next session 1 presentation:
 
 ### Areas for improvement
 
+#### HTML & CSS
+
 * HTML & CSS recap took 1.5 hours, and left no time for UX research
-* Before coding demonstrations, disclaime: 'if you're stuck at all then raise your hand and we'll come round to help out, we don't always spot you otherwise!'
-* CSS specific - use border: solid 2px red; instead of border-width: 2px, border-color: etc.
+* Before coding demonstrations, disclaimer: *if you're stuck at all then raise your hand and we'll come round to help out, we don't always spot you otherwise!*
+* CSS specific - use `border: solid 2px red;` instead of `border-width: 2px; border-color: green;` etc.
+* Harpinder suggested a **CSS cheatsheet** with common properties (there are many online we could point them to)
+
+#### Light activities for the start of the day
+
 * We can start with a group activity to wake people up and get them talking (also while late-comers are trickling in, and we can't start coding without them really)
-* From 11-11.30am we should start discussions and slightly less important stuff so that we can get started immediately - more time for critical demonstrations once the late-comers arrive
+* From 11:00 - 11:30 we should start discussions and slightly less important stuff so that we can get started immediately - more time for critical demonstrations once the late-comers arrive
 * It's ok to have an **early lunch**!
+
+#### Facilitator tips
+
 * **Smile** more :simple_smile: 
 * **Stand up** when doing coding demonstrations and walk around a bit - send your voice across the whole room, moving from table to table, quizzing them a bit.
 * Remember to talk UPWARDS, rather then down towards your screen 
 * It may be helpful for the non-leading facilitators to chip in as well and give an overview of what we're doing, telling funny anecdote or just remind people of why we're doing this.
-* Harpinder suggested a CSS cheatsheet with common properties
-* When we use the console we must clarify that we aren't working directly on their apps but rather doing an exercise to become familiar with JS.
-* aimee.js was a bit confusing - coming away from the console to github, lost some people
-* Note, our displays look a bit different on PC
+
+#### The dreaded Console
+
+* When we use the **Console** we must clarify that we aren't working directly on their apps but rather doing an exercise to become familiar with JS.
+* Console demo: people didn't get the Terminal reference,  objects and functions could have been explained a bit more (demo a couple of times, then ask students to **repeat on their own** and solidify their learning)
+* [aimee.js](https://github.com/CodeAndCake/AppsFromScratch/tree/v3/sessions/02#lets-interact-with-aimee) was confusing, lost some people coming away from the Console to github. We could turn it into a Thimble project, with `aimee.js` preloaded
+
+* Note, our displays look a bit different on PC (?)
 
 ### Action points	
 
-* Mozilla Thimble emails not sent! What to do in this scenario? 	- get students to export and email their projects to themselves JUST INCASE
+* Mozilla Thimble emails not sent! What to do in this scenario? 	- get students to export and email their projects to themselves JUST IN CASE (this is sorted now, see https://github.com/mozilla/login.webmaker.org/issues/374)
 * Swap UX research and HTML+CSS recap. 
-* Laptop trolley always electrocutes me when I bring it in and out of the lift.
+* Laptop trolley always **electrocutes** me when I bring it in and out of the lift.
+* Create a **shared document for sharing links**, a sort of copy-paste bin for coding demos (because you can't expect people to type in long URL like `github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js`).
 		
 
 # Day 3
