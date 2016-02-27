@@ -111,7 +111,7 @@ When we write HTML and CSS, we can see the results of our code rendered by the b
 
 **JS instead doesn't show up on the page**! It does a lot of stuff behind the scenes (like loading, sorting, storing and comparing data) which we can't see. 
 
-Yet, it is very useful when writing JS, to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
+When writing JS, it is very useful to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
 
 Using the Console, we can make JS *visible*. In other words, we can get JS to leave some *traces* inside the Console.
 
