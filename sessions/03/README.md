@@ -81,7 +81,12 @@ Let's play out the app behaviour.
 
 JavaScript can look a little scary at first. 
 
-Let's remind ourselves of some key *tools*, before we dig into our app code.
+Let's remind ourselves of some key *tools*, before we dig into our app code:
+
+1. [variables](#variables)
+* the [Console](#console)
+* [if statements](#if-this-then-that)
+* [functions](#functions)
 
 ### Variables
 
@@ -275,7 +280,7 @@ It's `fruit`, a [variable](#variables) which lives inside the `checkForPears` fu
 `I'm hungry` and `I need a nap` are called **arguments** ([don't argue, that's what they're called](http://programmers.stackexchange.com/questions/186293/why-are-actual-parameters-called-arguments)) and they are the actual values that we *pass* to a function.
 -->
 
-### What happens in a function, stays in a function
+#### What happens in a function, stays in a function
 
 There's another powerful thing we can do with functions: we can use them to take in some values, *compute* them, and then *return* a new value.
 
