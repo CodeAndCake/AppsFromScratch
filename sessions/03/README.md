@@ -99,6 +99,22 @@ var fruit = "apple";
 
 Now our variable is called `fruit` and it has an `apple` inside it.
 
+<!--
+#### How to use a variable
+
+To use a variable, we must 
+
+1. *declare* it: give it a **label**
+* *assign* it: give it a **value**
+-->
+
+#### How do we name variables? 
+
+* Variable names should be **clear and meaningful**: `fruit` is better than `f`
+* Variable names should begin with letters, `$` or `_` and only contain letters, numbers, `$` and `_`
+* Variable names are **case sensitive**, which means that `myFruit` is different to `myfruit` or `MyFruit` or `MYFRUIT`
+* Variable names cannot have spaces, so you can use [*camel case*](http://en.wikipedia.org/wiki/CamelCase) for variables like `userTelephoneNumber`, which is easier to read than `usertelephonenumber`.
+
 ### Comparing data
 
 JavaScript is particularly good at comparing data. Say we wanted to know whether there was a `pear` in our `fruit` variable:
@@ -138,11 +154,11 @@ console.log(fruit);
 
 ... which will display what's inside `fruit` inside the Console.
 
-Still puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly what the error is and where to find it. 
+Still puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly *what* the *error* is and *where* to find it. 
 
-### IF THIS THEN THAT
+### If *this* then *that*
 	
-We may want our browser to do different things for us depending on the result of our comparision. For instance:
+We may want our browser to do different things for us depending on the result of a comparison. For instance:
 
 ```javascript
 if (fruit == "pear") {
@@ -152,42 +168,48 @@ if (fruit == "pear") {
 };
 ```
 		
-So, to be clear, if our fruit variable has `pear` inside, the Console will say "There's a pear in here!". But if there is no `pear` inside our `fruit` variable, it will say "No pears in here, better luck next time!".
+So, if our `fruit` variable has `pear` inside, the Console will say `There's a pear in here!`. But if there is no `pear` inside our `fruit` variable, it will say `No pears in here, better luck next time!`.
 
-This is really handy for searching through databases. For instance, when you search for something on Google, they use *if statements* to sort through all the millions of pages to find results that match your search words.
+This is really handy for searching through databases. For instance, when you search for something on Google, they use lots of *if statements* to sort through all the millions of pages to find results that match your search words.
 
 ### Functions
 	
 Functions are sets of instructions, packaged nicely for us to use over an over. 
 
-Functions make code **reusable**. For instance, you could make a function to teach a *robot* how to `drink` something. The steps required to perform a drinking task remain the same, no matter what the robot is drinking.
+Functions make code **reusable**. 
+
+<!--
+For instance, you could make a function to teach a *robot* how to `drink` something. The steps required to perform a drinking task remain the same, no matter what the robot is drinking.
 
 ```javascript
 robot.drink("tea");
 robot.drink("water");
 robot.drink("coffee");
 ``` 
+-->
 
-Remember, you use functions of sorts everyday to do 'simple' tasks. For instance, to make tea.
+Remember, you use functions of sorts everyday to do simple tasks. For instance, to make tea!
 
-If there was a function for making tea, it might look like this
+A function for making tea might look like this (not actual JS, just the logical steps)
 
 ```javascript
-function makeTea() {   
-	check for teabags   
-	fill the kettle   
-	boil the water   
-	get a clean cup   
-	put teabag in the cup   
-	etc...  
+function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {   
+	1. check for teabags of whichTea type   
+	2. fill the kettle   
+	3. boil the water   
+	4. get a clean cup   
+	5. put teabag in the cup 
+	6. if howMuchSugar is more than zero, and we have sugar, then add sugar to the cup
+	7. if howMuchMilk is more than zero, and we have milk, then add milk to the cup  
+	8. return the tea! 
 }
 ```
-
+ 
 It would be exhausting for us to have to say out loud all of those individual steps every time we wanted to ask someone for a cup of tea!
 
-Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many data entries.
+Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many data points.
 
-We might create a function like this to do that job
+We can *declare* a function like this to do that job
 
 ```javascript
 function checkForPears (fruit) {
@@ -199,17 +221,90 @@ function checkForPears (fruit) {
 }
 ```
 
-We have packaged our instructions into a function, which means we don't have to type out all that code everytime we want to search through variables. All we need to type is this:
+We have packaged our instructions into a function, which means we don't have to type out all that code every time we want to search through variables. 
+
+<!--All we need to type is this:-->
 
 ```javascript
-var fruit = "orange";
-checkForPears(fruit);
+var myFavouriteFruit = "orange";
+checkForPears(myFavouriteFruit);
 ```
 
-Because we have no `pear` in this `fruit` variable, it will log "No pears in here, better luck next time!".
+Because we have no `pear` in `myFavouriteFruit`, the Console will log `No pears in here, better luck next time!`.
+
+So, to use a function you must
+
+1. *declare* it: give it a **name** and teach the computer all the **steps** required to perform it
+
+	```javascript
+	function checkForPears (fruit) {
+		if (fruit == "pear") {
+			console.log("There's a pear in here!")
+		} else {
+			console.log("No pears in here, better luck next time!")
+		};
+	}
+	```
+2. *call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
+
+	```javascript
+	checkForPears("orange");
+	```
+	
+In between *round brackets* `()` we can pass one or more *variables* to the function.
+	
+```javascript
+checkForPears("banana");
+checkForPears("coconut");
+checkForPears("plum");
+var lastFruitInTheFridge = "kiwi";
+checkForPears(lastFruitInTheFridge);
+```
+	
+The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `fruit`.
+
+Variables inside a function are very useful, because they make the function **reusable**.
+
+<!--
+### Arguments
+
+`checkForPears` is a **reusable** function. What makes it **flexible**?
+
+It's `fruit`, a [variable](#variables) which lives inside the `checkForPears` function.
+
+`I'm hungry` and `I need a nap` are called **arguments** ([don't argue, that's what they're called](http://programmers.stackexchange.com/questions/186293/why-are-actual-parameters-called-arguments)) and they are the actual values that we *pass* to a function.
+-->
+
+### What happens in a function, stays in a function
+
+There's another powerful thing we can do with functions: we can use them to take in some values, *compute* them, and then *return* a new value.
+
+```js
+function areYouAnAdult(age) {
+	var answer;
+	if (age < 18) {
+	 	answer = "no";
+	} else {
+	 	answer = "yes";
+	} 
+	return answer;
+};
+```
+
+`return` does two things: 
+
+1. it gives a value back
+2. it immediately exits the function
+
+```js
+areYouAnAdult(16); // returns "no"
+areYouAnAdult(23); // returns "yes"
+```
+
+Without `return` we wouldn't know the answer!
 
 
-# Now for our database!
+# Now onto our database!
 
 
 
