@@ -525,12 +525,10 @@ Let's learn how Firebase works, before you integrate it into your app: using Chr
 
 <!-- Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>. -->
 
-
+<!--
 # Back to the brief
 
 ### Make an app that helps people sort through heaps of data to **find who/what they are looking for** 
-
-<!--(eg: people in their community to do something together).-->
 
 Remember the [computational thinking](#computational-thinking) method?
 
@@ -550,10 +548,6 @@ HTML and JS are siblings or colleagues (they are part of the same app) so they s
 
 Let's play out the app behaviour. 
 
-<!--Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?-->
-
-<!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
-
 1. **Load data** and store it in the app *memory*
 * Capture **user input**
 * **Filter and sort data** according to user choices
@@ -562,6 +556,7 @@ Let's play out the app behaviour.
 ### 2. Code the algorithms
 
 Next week ;)
+-->
 
 <!--
 1. **Load data and store it in the app memory**
