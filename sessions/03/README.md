@@ -9,7 +9,7 @@
 
 PM:
 
-- [x ] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
+- [x] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
 
 	* With these ingredients: dropdown, database, filter logic etc...
 	* Come up with an app *recipe*!
@@ -17,13 +17,6 @@ PM:
 	
 		1. How do you display the results coming back from the db (aka *search results section*)?
 		* When people click / tap on a result, what do you display (aka *single result section*)?
-- [ ] *Don't reinvent the wheel*: introduce coding libraries, talk about them but we don't need to use them (jQuery, Backbone, P5.js, D3.js, Aframe for VR etc.)
-- [ ] **Not another demo**: give them written instructions to integrate code at their own pace (life of a programmer)
-	
-	- add jQuery to `head`
-	- create new JS file with function that returns selected dropdown's option
-	- call that function when you click the button! 
-	- [ ] bonus challenge?
 
 -->
 

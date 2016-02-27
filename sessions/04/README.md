@@ -1,6 +1,80 @@
+### The plan!
+
+AM: 
+
+- **30 minutes** 
+
+	JS recap: quickly *variables* and *objects*, then `database` to push data to the `demo-app` db via *Console*:
+ 
+	```javascript
+	var person = {
+	  about: "A BLURB ABOUT YOU",
+	  bakingSkills: 5,
+	  bodyStrength: 3,
+	  diySkills: 4,
+	  image: "http://api.randomuser.me/portraits/women/27.jpg",
+	  likesPets: true,
+	  name: "YOUR NAME"
+	}
+	database.push(person);
+	```
+	
+	- [ ] write up the steps 
+	
+- **1.5 hour** 
+
+	On your own / with your group: go back to your wireframes, create your own Firebase app and using the technique we demoed (above), push data to your own db.
+ 	
+	Even if you're working on the same idea as a group, it's in your interest to build your individual db on Firebase and your individual prototype on Thimble (so you'll end up with several variations of the same idea).
+	
+	- [ ] create step-by-step guide for setting up a Firebase thingy
+	- [ ] some guidance on how to design a database (what is the *unit* of data, what are the *properties* that will be filterable, what other properties would be nice to have)
+
+PM:
+
+- **30 minutes** 
+
+	*Don't reinvent the wheel*: introduce **coding libraries**, talk about them but we don't need to use them (jQuery, Backbone, P5.js, D3.js, Aframe for VR etc.)
+
+	- [ ] Intro: why are libraries useful?
+	- [ ] for each library we talk about: main purpose companies who use it, cool examples
+
+- **1 hour** 
+
+	[jQuery challenge](https://d157rqmxrxj6ey.cloudfront.net/yukikumagai/37771): load data and display it in the HTML
+
+	- [ ] create step-by-step guide
+
+- **30 minutes** 
+
+	TO BE DECIDED
+
+
+<!--
+<link href="fuck.css">
+
+<img src="fuck.jpg">
+
+<script src="fuck.js"/>
+ 
+why the fuck?
+-->
+
+<!-- 
+**Not another demo**: give them written instructions to integrate code at their own pace (life of a programmer)
+	
+	- add jQuery to `head`
+	- create new JS file with function that returns selected dropdown's option
+	- call that function when you click the button! 
+	- [ ] bonus challenge?	
+-->
+
+
 # Coding and app-making for beginners 
 
 ## Day 4
+
+<!--
 
 1. [Questions](#questions) about computers, people and the **interfaces** in between
 * [Wireframing](#wireframing) (*user* interfaces)
@@ -15,8 +89,6 @@ In most cases, you just need to know what pedals to push, what levers to operate
 
 In other words, you can drive a car just by knowing how to use its **interface**.
 
-<!--Unless you are a mechanic or had an accident -->
-
 ### How much do you need to know about a **computer program**, in order to **code** it?
 
 You do not always need to know how a script or program works, as long as you know:
@@ -25,10 +97,6 @@ You do not always need to know how a script or program works, as long as you kno
 * How to process its **response** 
 
 In other words, you can code a computer program if you know how to use its **interface**.
-
-<!--In our experience as coders, we have learned it's not always necessary to know how everything works, in order to code something.
-
-The questions you can ask and the format of the answers form what coders call an *API*.-->
 
 ### Have you heard of APIs before?
 
@@ -42,7 +110,8 @@ An API tells us *which* parts of a system are exposed, and *how* we are allowed 
 
 A **programming language** can be understood as an API, in the sense that it's the tool between us and programming a computer. 
 
-
+-->
+<!--
 # Wireframing
 
 1. See what's out there
@@ -76,9 +145,7 @@ Your wireframes shouldn't present *features*. They should tell a *story*.
 	* What are their *results*?
 
 ![](assets/story.png)
-
-
-# Prototyping with code
+-->
 
 
 <!--
