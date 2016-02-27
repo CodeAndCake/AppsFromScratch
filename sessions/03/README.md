@@ -1,14 +1,15 @@
-AM:
 
-- [x] 30 minutes **wake-up activity**: 4 volunteers thingy (see day 2 notes towards the end `Back to the brief`)
+<!--AM:
+
 - [x] JS recap, yay!
 - [x] JS demo: introduce `functions` and `if`, get people to use them in their Thimble apps
+- [x] 30 minutes **wake-up activity**: 4 volunteers thingy (see day 2 notes towards the end `Back to the brief`)
 - [ ] 1 hour **coding**: connect to DB & push data to it (repurpose v2)
 - [ ] early lunch if this is taking longer than 1 hour
 
 PM:
 
-- [ ] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
+- [x ] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
 
 	* With these ingredients: dropdown, database, filter logic etc...
 	* Come up with an app *recipe*!
@@ -24,7 +25,7 @@ PM:
 	- call that function when you click the button! 
 	- [ ] bonus challenge?
 
-
+-->
 # Coding and app-making for beginners 
 
 ## Day 3
@@ -110,7 +111,7 @@ When we write HTML and CSS, we can see the results of our code rendered by the b
 
 **JS instead doesn't show up on the page**! It does a lot of stuff behind the scenes (like loading, sorting, storing and comparing data) which we can't see. 
 
-Yet, it is very useful when writing JS, to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
+When writing JS, it is very useful to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
 
 Using the Console, we can make JS *visible*. In other words, we can get JS to leave some *traces* inside the Console.
 
@@ -180,8 +181,8 @@ Likewise, if we want to search through lots of variables to see if there's a `pe
 We can *declare* a function like this to do that job
 
 ```javascript
-function checkForPears (fruit) {
-	if (fruit == "pear") {
+function checkForPears (objectToCheck) {
+	if (objectToCheck == "pear") {
 		console.log("There's a pear in here!")
 	} else {
 		console.log("No pears in here, better luck next time!")
@@ -205,8 +206,8 @@ So, to use a function you must
 1. *declare* it: give it a **name** and teach the computer all the **steps** required to perform it
 
 	```javascript
-	function checkForPears (fruit) {
-		if (fruit == "pear") {
+	function checkForPears (objectToCheck) {
+		if (objectToCheck == "pear") {
 			console.log("There's a pear in here!")
 		} else {
 			console.log("No pears in here, better luck next time!")
@@ -229,7 +230,7 @@ var lastFruitInTheFridge = "kiwi";
 checkForPears(lastFruitInTheFridge);
 ```
 	
-The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `fruit`.
+The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `objectToCheck`.
 
 Variables inside a function are very useful, because they make the function **reusable**.
 
@@ -400,35 +401,72 @@ The JS code above, in plain English:
 At this point, we can use the Console to check if `peopleList` has been loaded with data.
 
 
+# Recipe for apps
+
+By now, we all should have an idea of the *ingredients* we'll use to create our app prototypes.
+
+We've used **dropdowns**, created a **database** and added **filter logic** to sort through our data and make it accessible.
+
+How can we all use these same *ingredients* to create different apps that serve different purposes? What is the **potential** for apps using these *ingredients*?
+
+### Challenge
+
+With our ingredients in mind, come up with an app *recipe*!
+
+
 # Wireframes
 
-Is *this* a wireframe?
+Before they write any code, designers and developers **visualise** their ideas through *wireframes*.
+
+#### Is *this* a wireframe?
 
 ![](assets/wireframe-bullshit.jpg)
 
-Is *this* a wireframe?
-
-![](assets/wireframe-example2.png)
-
-Is *this* a wireframe?
+#### Is *this* a wireframe?
 
 ![](assets/not-a-wireframe-example.jpg)
 
+#### Is *this* a wireframe?
+
+![](assets/wireframe-example2.png)
+
+![](assets/wireframe-example.png)
+
+#### Is *this* a wireframe?
+
+![](assets/wireframes-paper.jpg)
+
+#### Wireframes are like maps
+
 Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
 
-* Wireframes are about **communicating your ideas**.
+#### Wireframes are tools to **communicate your ideas**.
 
-* They are about **content**, **context** and **interaction**. 
+Depending on what stage your idea is at, your wireframes will be more or less detailed.
 
-	Use **real content**, not *lorem ipsum*. 
+In any case, wireframes shouldn't look *finished*.
+
+Paper wireframes get **more feedback** that digital ones, because people are less afraid to touch them, move them around, scribble notes on them. They don't look finished.
+
+####  Wireframes are about **content**, **context** and **interaction**. 
+
+* Use **real content**, never *lorem ipsum*. 
 	
-	**Words** are key. [Interface design is copywriting](https://gettingreal.37signals.com/ch09_Copywriting_is_Interface_Design.php)
+* **Words** are key. [Interface design is copywriting](https://gettingreal.37signals.com/ch09_Copywriting_is_Interface_Design.php)
 	
-	Think about **button labels**, how do you label user actions: is it `Share` or `Post` or `Publish` or `Say it!` or `Broadcast` for instance?  
+* Think about **button labels**, how do you label user actions: is it `Share` or `Post` or `Publish` or `Say it!` or `Broadcast` for instance?  
 
-* They're **NOT about style**. 
+#### Wireframes are **NOT about style**. 
 
-	When wireframing, don't worry about *colours*, *graphics* and *typography*. 
+When wireframing, don't worry about *colours*, *graphics* and *typography*.
+
+### Your turn!
+
+**Wireframe two screens** and present them:
+
+1. How do you **display the results** coming back from the db (aka *search results section*)?
+* When people click / tap on a result, what do you display (aka *single result section*)?
+
 
 
 
