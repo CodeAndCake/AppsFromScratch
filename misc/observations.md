@@ -113,15 +113,20 @@ Idea for next session 1 presentation:
 
 ### What went well
 
-* 
+* Recap was really useful
 
 ### Areas for improvement
 
-*
+* Wireframing in the morning? Doesn't necessarily have to come after the database and functions - ideas can come first 
+* Discussion around app ideas - not clear what the purpose was and was too long which then lead into them working on their apps 
+* Clear distinctions between group discussion generating ideas and the brief - group discussion is for motivation and brainstorming
+* Working individually on the brief - make it clear
+
 
 ### Action points	
 
-* 	
+* Need to plan more in advance so that we are all in agreement about the day's plan - agree between us on day's plan before jumping into the detail of specific
+* Prepare faster
 		
 
 # Day 4

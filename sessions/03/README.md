@@ -513,10 +513,17 @@ When wireframing, don't worry about *colours*, *graphics* and *typography*.
 
 ### Your turn!
 
-**Wireframe two screens** and present them:
+On the paper template, **wireframe three interfaces** and present them:
 
-1. How do you **display the results** coming back from the db (aka *search results section*)?
-* When people click / tap on a result, what do you display (aka *single result section*)?
+1. The interface with the **filter criteria** (aka *input section*)
+* The interface that **displays the results** coming back from the db (aka *search results section*)
+* The interface triggered when people click / tap on a result (aka *single result section*)
+
+You can download more wireframing templates from [Interface Sketch](http://www.interfacesketch.com).
+
+[![](http://www.interfacesketch.com/previews/generic-smartphones.png)](http://www.interfacesketch.com)
+
+
 
 
 
