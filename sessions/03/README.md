@@ -1,4 +1,5 @@
-AM:
+
+<!--AM:
 
 - [x] JS recap, yay!
 - [x] JS demo: introduce `functions` and `if`, get people to use them in their Thimble apps
@@ -8,7 +9,7 @@ AM:
 
 PM:
 
-- [ ] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
+- [x ] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
 
 	* With these ingredients: dropdown, database, filter logic etc...
 	* Come up with an app *recipe*!
@@ -24,7 +25,7 @@ PM:
 	- call that function when you click the button! 
 	- [ ] bonus challenge?
 
-
+-->
 # Coding and app-making for beginners 
 
 ## Day 3
