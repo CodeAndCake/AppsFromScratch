@@ -26,6 +26,7 @@ PM:
 	- [ ] bonus challenge?
 
 -->
+
 # Coding and app-making for beginners 
 
 ## Day 3
@@ -48,6 +49,7 @@ Today we'll start from those concepts, and put them into practice by connecting 
 Let's remind ourselves of some key *tools*, before we dig into your app code:
 
 1. [variables](#variables)
+* [objects](#objects)
 * the [Console](#console)
 * [if statements](#if-this-then-that)
 * [functions](#functions)
@@ -83,6 +85,60 @@ To use a variable, we must
 * Variable names should begin with letters, `$` or `_` and only contain letters, numbers, `$` and `_`
 * Variable names are **case sensitive**, which means that `myFruit` is different to `myfruit` or `MyFruit` or `MYFRUIT`
 * Variable names cannot have spaces, so you can use [*camel case*](http://en.wikipedia.org/wiki/CamelCase) for variables like `userTelephoneNumber`, which is easier to read than `usertelephonenumber`.
+
+### Objects
+
+**Objects** are a special type of *variable*, useful to keep things organised.
+
+To create an object, we *declare* a variable as usual, and then we use *curly brackets* to surround **key-value** property pairs:
+
+```js
+var objectName = { 
+  propertyName: propertyValue,
+  propertyName: propertyValue,
+  ...
+};
+```
+
+For example:
+
+```js
+var cat = 
+{
+	name: "Bruno",
+	age: 2,
+	meow: function () { 
+		alert("MEOOOOOOW"); 
+	},
+	drink: function ( beverage ) { 
+		alert("I am drinking " + beverage); 
+	}
+}
+```
+
+#### How do we access them?
+
+An object is not useful unless we can look inside it and grab the values of its properties. 
+
+We can do that in two ways:
+
+1. using *dot notation*, where we write the name of the variable, followed by a `.` and then the property name
+
+	`cat.name`
+	
+2. using *bracket notation*, where we write the variable name, then *square brackets* with the property name in speech marks
+
+	`cat["name"]`
+
+#### How do we change them?
+
+We can change the values of the object properties at any time during a program, using the *dot* or *bracket* notation.
+
+`cat.name = "Bob";`
+
+We can also add entirely new properties!
+
+`cat.colour = "brown";`
 
 ### Comparing data
 
