@@ -343,13 +343,15 @@ We need to know where to load data from, that is we need a **URL**. You can thin
 > Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the database.
 -->
 
+In `app.js`, you can store that URL as a *variable*:
+
 ```javascript
 var databaseURL = 'https://appsfromscratch.firebaseio.com/demo-app'
 ```
 
 Your browser can do [many things out-of-the-box](https://developer.mozilla.org/en/docs/Web/API), for instance: giving you scarily accurate geolocation coordinates, playing audios and vides, doing maths, convert text into voices etc. Yet your browser doesn't know how Firebase works, because Firebase doesn't come pre-installed. 
 
-Before you can use Firebase in your app, you must install the Firebase JS *library*. Do that by adding the following `script` into the `head`, just before the `script` pointing to `app.js`
+Before you can use Firebase in your app, you must **install the Firebase JS library**. Do that by adding the following `script` to the `head` in `index.html`, just before the `script` pointing to `app.js`
 
 ```html
 <head>
@@ -359,11 +361,43 @@ Before you can use Firebase in your app, you must install the Firebase JS *libra
 </head>
 ```
 
-TBC!
+Now that your browser knows what Firebase is and how it works, you can create a `database` *variable* as a new instance of `Firebase` and point it to our own `databaseURL`. 
+
+In `app.js`:
 
 ```javascript
-var database = new Firebase(databaseURL)
+var database = new Firebase(databaseURL);
 ```
+
+Then create another *variable* to store only the data you need in your app.
+
+```javascript
+var peopleList = []; // an empty list, for now 
+```
+
+Next you can instruct `database` to load data and store it in `peopleList`:
+
+```javascript
+// load data, see the Firebase manual https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
+database.on('child_added', function(child) 
+{
+	var personData = child.val() 
+  // "push" is JavaScript's lingo for "add to a list"
+  peopleList.push(personData) 
+})
+```
+
+The JS code above, in plain English:
+
+* Hey database!
+* For each *child*, do the following steps:
+
+	1. Create a variable `personData` and store the value of `child` in it
+	*  Add `personData` to `peopleList`
+	* Repeat until you've gone through all the *children*
+* Thanks!
+ 
+At this point, we can use the Console to check if `peopleList` has been loaded with data.
 
 
 # Wireframes
