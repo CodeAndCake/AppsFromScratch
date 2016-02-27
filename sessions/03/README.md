@@ -181,8 +181,8 @@ Likewise, if we want to search through lots of variables to see if there's a `pe
 We can *declare* a function like this to do that job
 
 ```javascript
-function checkForPears (fruit) {
-	if (fruit == "pear") {
+function checkForPears (objectToCheck) {
+	if (objectToCheck == "pear") {
 		console.log("There's a pear in here!")
 	} else {
 		console.log("No pears in here, better luck next time!")
@@ -206,8 +206,8 @@ So, to use a function you must
 1. *declare* it: give it a **name** and teach the computer all the **steps** required to perform it
 
 	```javascript
-	function checkForPears (fruit) {
-		if (fruit == "pear") {
+	function checkForPears (objectToCheck) {
+		if (objectToCheck == "pear") {
 			console.log("There's a pear in here!")
 		} else {
 			console.log("No pears in here, better luck next time!")
@@ -230,7 +230,7 @@ var lastFruitInTheFridge = "kiwi";
 checkForPears(lastFruitInTheFridge);
 ```
 	
-The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `fruit`.
+The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `objectToCheck`.
 
 Variables inside a function are very useful, because they make the function **reusable**.
 
