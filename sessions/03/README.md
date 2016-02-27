@@ -116,7 +116,7 @@ var cat =
 }
 ```
 
-#### How do we access them?
+#### How do we access objects?
 
 An object is not useful unless we can look inside it and grab the values of its properties. 
 
@@ -130,7 +130,7 @@ We can do that in two ways:
 
 	`cat["name"]`
 
-#### How do we change them?
+#### How do we change objects?
 
 We can change the values of the object properties at any time during a program, using the *dot* or *bracket* notation.
 
@@ -447,11 +447,13 @@ database.on('child_added', function(child)
 The JS code above, in plain English:
 
 * Hey database!
+
 * For each *child*, do the following steps:
 
-	1. Create a variable `personData` and store the value of `child` in it
+	* Create a variable `personData` and store the value of `child` in it
 	*  Add `personData` to `peopleList`
 	* Repeat until you've gone through all the *children*
+
 * Thanks!
  
 At this point, we can use the Console to check if `peopleList` has been loaded with data.
