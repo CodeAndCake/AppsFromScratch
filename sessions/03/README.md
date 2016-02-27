@@ -18,70 +18,33 @@ PM:
 		* When people click / tap on a result, what do you display (aka *single result section*)?
 - [ ] *Don't reinvent the wheel*: introduce coding libraries, talk about them but we don't need to use them (jQuery, Backbone, P5.js, D3.js, Aframe for VR etc.)
 - [ ] **Not another demo**: give them written instructions to integrate code at their own pace (life of a programmer)
-- [ ] bonus challenge?
+	
+	- add jQuery to `head`
+	- create new JS file with function that returns selected dropdown's option
+	- call that function when you click the button! 
+	- [ ] bonus challenge?
 
 
 # Coding and app-making for beginners 
 
 ## Day 3
 
-[Last week](../02) we covered some **HTML and CSS**, styling our first screen with fancy buttons and dropdowns.
+[Last week](../02) we learned some **HTML and CSS**, styling our first screen with fancy buttons and dropdowns.
 
-We also discussed programming-vs-coding and took a look at JavaScript (aka **JS**) for the first time. 
+We also discussed *programming-vs-coding* and took a look at JavaScript (aka **JS**) for the first time. 
 
-We used the JS **Console** to speak with our browser, creating alerts and started storing information in boxes called variables.
+We used the JS **Console** to "speak" with our browser, introducing the building blocks of programming: *variables*, *functions* and *objects*.
 
 But don't worry if it all seems a little blurry one week on...
 
-Today we'll break down the brief, cover some JavaScript and push data to our **database**.
-
-<!--
-1. [Workshop](#workshop): HTML & CSS recap.
-* [Group task](#ux-research): UX research.
-* [What is **programming**](#programming-vs-coding)?
-* Meet **JavaScript**: connect your app to an online database. 
--->
-
-
-# Back to the brief
-
-### Make an app that helps people sort through heaps of data to **find who/what they are looking for** 
-
-<!--(eg: people in their community to do something together).-->
-
-Remember the [computational thinking](../02#computational-thinking) method?
-
-1. First we'll break down the brief into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
-* Once we have a good understanding of how our app will behave, we can **code** those algorithms.
-
-### 1. Break down the brief
-
-We need four volunteers (and post-its). 
-
-1. The user (talks only to HTML)
-2. The HTML character (talks only to the user, on request)
-3. The JS character (can talk to both HTML and database)
-4. The database character (talks only to JS, on request)
-
-HTML and JS are siblings or colleagues (they are part of the same app) so they should stand closer, maybe hold hands :)
-
-Let's play out the app behaviour. 
-
-<!--Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?-->
-
-<!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
-
-1. **Load data** and store it in the app *memory*
-* Capture **user input**
-* **Filter and sort data** according to user choices
-* **Output** filtered+sorted data
+Today we'll start from those concepts, and put them into practice by connecting your app to an online **database**.
 
 
 # JavaScript recap
 
-JavaScript can look a little scary at first. 
+<!--JavaScript can look a little scary at first.--> 
 
-Let's remind ourselves of some key *tools*, before we dig into our app code:
+Let's remind ourselves of some key *tools*, before we dig into your app code:
 
 1. [variables](#variables)
 * the [Console](#console)
@@ -197,7 +160,7 @@ Remember, you use functions of sorts everyday to do simple tasks. For instance, 
 
 A function for making tea might look like this (not actual JS, just the logical steps)
 
-```javascript
+```
 function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {   
 	1. check for teabags of whichTea type   
 	2. fill the kettle   
@@ -309,165 +272,123 @@ areYouAnAdult(23); // returns "yes"
 Without `return` we wouldn't know the answer!
 
 
-# Now onto our database!
+# Back to the brief
+
+### Make an app that helps people sort through heaps of data to **find who/what they are looking for** 
+
+<!--(eg: people in their community to do something together).-->
+
+Remember the [computational thinking](../02#computational-thinking) method?
+
+1. First we'll break down the brief into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
+* Once we have a good understanding of how our app will behave, we can **code** those algorithms.
+
+## First: break down the brief
+
+We need four volunteers (and post-its). 
+
+1. The **user** (talks only to HTML)
+2. The **HTML** character (talks only to the user, on request)
+3. The **JS** character (can talk to both HTML and database)
+4. The **database** character (talks only to JS, on request)
+
+HTML and JS are siblings or colleagues (they are part of the same app) so they should stand closer, maybe hold hands :)
+
+Let's play out the app behaviour. 
+
+<!--Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?-->
+
+<!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
+
+1. **Load data** and store it in the app *memory*
+* Capture **user input**
+* **Filter and sort data** according to user choices
+* **Output** filtered+sorted data
+
+
+## Then: code the algorithms
+
+Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in. Then open your project from last week. 
+
+Create a new file and call it `app.js`.
+
+Like with CSS, we need to tell `index.html` to load our JS file.
+
+In the `head` of `index.html`, add a `script` and point it to `app.js` like so:
+
+```html
+<head>
+	...
+	<script src="app.js"></script>
+</head>
+```	
+
+Now that your JS file is connected to `index.html` you can write your JS code in `app.js`. The browser will read and execute it every time you load/refresh your app.
+
+<!-- Do a console.log first -->
+
+### 1. Load data and store it in the app memory
+
+We're going to use a cloud-based real-time **database** service called [Firebase](https://www.firebase.com). There are several other solutions, including building your own database, however we chose Firebase because of its performance, features and good documentation. 
+
+Many companies use Firebase to rapidly prototype app ideas, without investing time and money on database infrastructure and software.
+
+#### *Where* is our data?
+	
+We need to know where to load data from, that is we need a **URL**. You can think of it as the address or phone number of your data.
+
+[appsfromscratch.firebaseio.com/demo-app](https://appsfromscratch.firebaseio.com/demo-app)
+
+<!--
+> Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the database.
+-->
+
+```javascript
+var databaseURL = 'https://appsfromscratch.firebaseio.com/demo-app'
+```
+
+Your browser can do [many things out-of-the-box](https://developer.mozilla.org/en/docs/Web/API), for instance: giving you scarily accurate geolocation coordinates, playing audios and vides, doing maths, convert text into voices etc. Yet your browser doesn't know how Firebase works, because Firebase doesn't come pre-installed. 
+
+Before you can use Firebase in your app, you must install the Firebase JS *library*. Do that by adding the following `script` into the `head`, just before the `script` pointing to `app.js`
+
+```html
+<head>
+	...
+	<script src="app.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+</head>
+```
+
+TBC!
+
+```javascript
+var database = new Firebase(databaseURL)
+```
+
+
+
+
+
 
 
 
 <!--
-
-- [ ] Now that people have experienced HTML, CSS and JS we could ask them to start thinking about their OWN app (user research)
-
-# Choose a theme
-
-A theme is something that you are passionate about, an issue that needs your help, or a problem that you notice in your community that resonates with you.
-
-Example: *Create an app that helps your community learn about or contribute to {your project}.*
-
-Start **brainstorming** some project ideas with your partner.
- 
-* Keep it simple and focus on solving a **single need**.
-* **Don't spend too long** on any one idea because you will have time to further discuss your ideas later.
-* Stay with the theme you choose.
-* Share a few ideas with each other now and take note of them for later.
-
-
-
-
-
-
-
-
-
-# Who are your users?
-
-### Good practices for interviewing
-
-1. **Plan**: prepare a script, know what to ask, and who to ask.
-2. Recruit **strangers**. Because [homophily](http://en.wikipedia.org/wiki/Homophily)
-3. [IF POSSIBLE] Go to **their place**, in a space where they're comfortable, best if the space where they use the product(s) you want to test / talk about. Let them show you around.
-4. Easier if you interview **pairs** of users: they'll be less anxious.
-5. **Listen**. Don't talk about yourself.
-6. Be comfortable with **silence**: give people time and space to answer your question.
-7. Be ready to **be challenged** and improvise.
-8. Avoid **leading questions**. Try not to bias your interviewees.
-
-	bad > `How much do you love using FB?`
 	
-	good > `Tell me about your most recent FB experience` (more concrete & memorable)
+See the [manual here](https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en)
+
+* Copy-paste the URL into a new browser tab to check if it works and what data we're receiving from it
+
+* Integrate [loadData function](../../demo-app/loadData.js) to load data from a URL (we don't have to reinvent the wheel)
+
+* *Call* `loadData` and tell it where to ask for data (`spreadsheetURL`) and what to do once data is loaded (`getPeopleList`)
+	```js
+	loadData(spreadsheetURL, getPeopleList)
+	```
+* Integrate [getPeopleList function](../../demo-app/getPeopleList.js)
+
+	Introducing [arrays](#arrays) and [loops](#loops)	
 	
-9. Avoid **closed questions**.
-
-	bad > `Do you order A, B or C?`
 	
-	good > `How do you choose food when going out?`
-	
-10. Try **casual requests** instead of questions. For instance, instead of asking `How do you store your photos?` consider asking them to show you how they store photos.
-    
-   
-   
-Question examples:
-
-* How did you first learn about `insert your topic`?
-* How were you motivated to become involved in `insert your topic`?
-* Tell me more about that experience. What do you remember most about it?
-* (if the user has started telling you about a relevant experience) What did you enjoy most? What didn't you enjoy about it?
-* What kinds of problems do you or your community commonly see in your experience? Have you thought about how you would solve it?   
-
-
-
-    
-### Interview analysis
-
-* Take 5 minute to write 4-5 important observations on post-its notes about what people said and place them on the wall.
-* What are the common themes you see emerge?
-* What are the common problems you heard/observed?
-* Did any of the findings make you start to think differently about your community and the problems you may have already been designing for?
-
-You should now understand a little more about how interviewing your potential app users can be helpful and have some tools to help you go out interview your community. 
-
-It takes some practice, but don't let that slow you down! 
-
-**Repeat this activity with new potential users.** 
-
-The more you know about your community and potential audience, the more you can respond by creating something valuable for them.
-
-
-
-
-
-
-
-
-# Speed-sketch your ideas
-
-* The goal is to get something down on paper, but not get too caught up in the details. 
-
-* This is to help visualise some of your ideas. 
-
-* Don't overthink the ideas or censor your thoughts. 
-
-* The quality of your drawings and handwriting doesn't matter either.
-
-![](http://www.interfacesketch.com/previews/web-browser-template.png)
-
-![](http://www.interfacesketch.com/previews/iphone6.png)
-
-Printable wireframing templates from [InterfaceSketch](http://www.interfacesketch.com)
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. **JavaScript**: [get our app to display data](#lets-code)
-* [What is good design?](#what-is-design)  
-* [Designing behaviours](#designing-behaviours) 
-* [Wireframing](#wireframes)
-
-
-# Let's code
-
-> Make an app that helps people sort through heaps of data to **find who/what they are looking for** (eg: people in their community to do something together).
-
-### 1. Break down the problem
-
-1. Load data and store it in the app memory
-* Capture user input
-* Filter and sort data according to user choices
-* Display filtered+sorted data
-
-### 2. Code the algorithms
-
-1. **Load data and store it in the app memory**
-	
-	* We need to know where to load data from, that is we need a **URL**. You can think of it as the address or phone number of your data..
-	
-	* Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the spreadsheet.
-	
-		```js
-		var spreadsheetURL = 'https://spreadsheets.google.com/feeds/list/' + key + '/' + worksheet + '/public/values?alt=json'
-		```
-	
-	See the [manual here](https://developers.google.com/gdata/samples/spreadsheet_sample?hl=en)
-	
-	* Copy-paste the URL into a new browser tab to check if it works and what data we're receiving from it
-	
-	* Integrate [loadData function](../../demo-app/loadData.js) to load data from a URL (we don't have to reinvent the wheel)
-	
-	* *Call* `loadData` and tell it where to ask for data (`spreadsheetURL`) and what to do once data is loaded (`getPeopleList`)
-		```js
-		loadData(spreadsheetURL, getPeopleList)
-		```
-	* Integrate [getPeopleList function](../../demo-app/getPeopleList.js)
-	
-		Introducing [arrays](#arrays) and [loops](#loops)
 	
 2. Capture user input
 
@@ -677,35 +598,7 @@ We design means to **enforce**, **prevent** or **facilitate** behaviours.
 Also, check out animated examples of design patterns at [UseYourInterface](http://useyourinterface.com)
 
 
-# Wireframes
 
-Is *this* a wireframe?
-
-![](assets/wireframe-bullshit.jpg)
-
-Is *this* a wireframe?
-
-![](assets/wireframe-example2.png)
-
-Is *this* a wireframe?
-
-![](assets/not-a-wireframe-example.jpg)
-
-Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
-
-* Wireframes are about **communicating your ideas**.
-
-* They are about **content**, **context** and **interaction**. 
-
-	Use **real content**, not *lorem ipsum*. 
-	
-	**Words** are key. [Interface design is copywriting](https://gettingreal.37signals.com/ch09_Copywriting_is_Interface_Design.php)
-	
-	Think about **button labels**, how do you label user actions: is it `Share` or `Post` or `Publish` or `Say it!` or `Broadcast` for instance?  
-
-* They're **NOT about style**. 
-
-	When wireframing, don't worry about *colours*, *graphics* and *typography*. 
 
 
 
