@@ -366,7 +366,35 @@ var database = new Firebase(databaseURL)
 ```
 
 
+# Wireframes
 
+Is *this* a wireframe?
+
+![](assets/wireframe-bullshit.jpg)
+
+Is *this* a wireframe?
+
+![](assets/wireframe-example2.png)
+
+Is *this* a wireframe?
+
+![](assets/not-a-wireframe-example.jpg)
+
+Just like a map is an abstraction of a place that helps us describe its location and geography, **wireframes are abstractions** of the **structure** of an interactive system and the **relationships** between its components.
+
+* Wireframes are about **communicating your ideas**.
+
+* They are about **content**, **context** and **interaction**. 
+
+	Use **real content**, not *lorem ipsum*. 
+	
+	**Words** are key. [Interface design is copywriting](https://gettingreal.37signals.com/ch09_Copywriting_is_Interface_Design.php)
+	
+	Think about **button labels**, how do you label user actions: is it `Share` or `Post` or `Publish` or `Say it!` or `Broadcast` for instance?  
+
+* They're **NOT about style**. 
+
+	When wireframing, don't worry about *colours*, *graphics* and *typography*. 
 
 
 
