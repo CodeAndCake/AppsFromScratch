@@ -14,6 +14,12 @@
 	var people = [];
 	people.push(person);
 	
+	var ref = new Firebase("https://dinosaur-facts.firebaseio.com/dinosaurs");
+ref.orderByChild("height").on("child_added", function(snapshot) {
+  console.log(snapshot.key() + " was " + snapshot.val().height + " meters tall");
+});
+
+
 	var filtered = filterList(people, "");
 */
 function filterList (completeList, filterCriteria)
