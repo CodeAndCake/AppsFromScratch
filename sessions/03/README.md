@@ -1,5 +1,8 @@
+<!--
 
-<!--AM:
+### The plan!
+
+AM:
 
 - [x] JS recap, yay!
 - [x] JS demo: introduce `functions` and `if`, get people to use them in their Thimble apps
@@ -52,7 +55,7 @@ Let's remind ourselves of some key *tools*, before we dig into your app code:
 Variables are like *boxes* where we can store data. To create a variable, we write
 
 ```javascript
-var  = 
+var
 ```
 		
 Let's give it a name and put something inside it
@@ -454,16 +457,29 @@ At this point, we can use the Console to check if `peopleList` has been loaded w
 
 # Recipe for apps
 
-By now, we all should have an idea of the *ingredients* we'll use to create our app prototypes.
+By now, we all should have an idea of the *ingredients* we'll use to create our app prototypes:
 
-We've used **dropdowns**, created a **database** and added **filter logic** to sort through our data and make it accessible.
-
-How can we all use these same *ingredients* to create different apps that serve different purposes? What is the **potential** for apps using these *ingredients*?
+* **input interface**, that is *dropdowns*, *text fields*, *buttons* etc.
+* a **database** 
+* some **filter logic** to sort through our data and make it accessible
 
 ### Challenge
 
-With our ingredients in mind, come up with an app *recipe*!
+How can we use these same *ingredients* to create different apps that serve different purposes? What is the **potential** for apps using these *ingredients*?
 
+With those *ingredients* in mind, come up with an app *recipe*!
+
+1. Brainstorm a few ideas, no matter how whacky they are and jot them down (a few words or a sentence per idea).
+* Pick your favourite idea, and consider:
+
+	* What is the **data unit**? 
+	
+		For example, in our demo app the *data unit* is a person and in the database we're storing people's profiles. If you're making a recipes app, the *data unit* will be a recipe.  
+
+	* What pieces of information will your *data unit* feature? Which one of them will be used to filter & sort through heaps of data? 
+	
+		For example, in our demo app for each person we're storing `name`, `blurb`, `profile picture`, `likesPets` (which will help us filter data for the *I'd like someone to keep my pet* option), `bakingSkills` (which will help us filter data for the *I'd like someone to bake a cake* option) etc.
+	
 
 # Wireframes
 
