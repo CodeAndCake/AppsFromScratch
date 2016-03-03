@@ -2,64 +2,108 @@
 
 AM: 
 
-- **30 minutes** 
+- If you haven't done so already, sign up for a Firebase account and then copy-paste your *username / email* into the [Copy-paste document](https://bit.ly/copyPasteCodeYourApp)
 
-	JS recap: quickly *variables* and *objects*, then `database` to push data to the `demo-app` db via *Console*:
+- **0.5 hour** [Matteo]
+
+	Recap: 
+	
+	* Spot *variables* and *objects* and *functions* in your code from last week
+	* Read through the code line by line, ask them to write comments so that they have an English "translation" of the JS they wrote 
+	* Explain Firebase ready-made functions, like `.on()` and `.val()`, and *events* like `child_added` (RTFM)
+	
+	* PRACTICE Use `database` to send data to the `demo-app` db via *Console*:
  
 	```javascript
 	var person = {
-	  about: "A BLURB ABOUT YOU",
-	  bakingSkills: 5,
-	  bodyStrength: 3,
-	  diySkills: 4,
-	  image: "http://api.randomuser.me/portraits/women/27.jpg",
-	  likesPets: true,
-	  name: "YOUR NAME"
+		name: "YOUR NAME",
+	  	about: "A BLURB ABOUT YOU",
+	  	bakingSkills: 5, // from 0 to 5
+	  	bodyStrength: 3, // from 0 to 5
+	  	diySkills: 4, // from 0 to 5
+	  	image: "http://api.randomuser.me/portraits/women/27.jpg", 
+	  	likesPets: true // true or false
 	}
 	database.push(person);
 	```
 	
-	- [ ] write up the steps 
+	<!-- What is an API? http://qr.ae/RUOovV -->
 	
-- **1.5 hour** 
+- **1 hour** [Aimee]
 
-	On your own / with your group: go back to your wireframes, create your own Firebase app and using the technique we demoed (above), push data to your own db.
+	CSS selectors for `class` and `id` 
+	
+	```css
+	.text-centred	
+	{
+		text-align: center;
+	}
+	.clickable
+	{
+		cursor: pointer;
+	}
+	```
+	
+	Mention **indentation**. It's not OCD. It's actually really useful to have tidy code, makes it easier to read and spot mistakes (such as missing brackets, one of the most common beginner mistakes).
+	
+	Then make a list with some placeholder items and style it (in the afternoon we'll show you how to populate that list with actual data from `database` using JS). This is industry-standard practice.
+	
+PM:	
+
+- **0.5 hour** [Yuki]
+
+	*Don't reinvent the wheel*: introduce **coding libraries**, talk about them but we don't need to use them (jQuery, Backbone, P5.js, D3.js, Aframe for VR etc.)
+
+	- [ ] Intro: why are libraries useful?
+	- [ ] Demo: JS with and without jQuery (Yuki)
+	- [ ] For each library we talk about: main purpose companies who use it, cool examples
+	
+<!-- 
+Material to look at 
+
+* https://github.com/RavensbourneWebMedia/Web-development-workshop/blob/2015/sessions/week-10.md#meet-jquery 
+* http://jqfundamentals.com/chapter/jquery-basics
+-->
+	
+- **1 hour** [Matteo and Aimee]
+
+	How to use jQuery: 
+	
+	1. select, eg: `$('ul')` 
+	* call functions on your selection, like `.append("<p>hi</p>")`
+	* explain joining strings, eg: `"<li>" + data.name + "</li>"`
+
+	 Challenge: display the data loaded from `database` in the `ul`
+	 
+	 Extra challenge for the fast ones: animations on how the list appears ([animate.css](https://daneden.github.io/animate.css/))
+	
+	- [ ] create step-by-step guide
+
+<!-- 	 	
+- **1 hour** 
+
+	jQuery to display data from `database`
+	
+-->
+
+<!--- **1.5 hour** 
+
+	On your own / with your group: create your own Firebase app and using the technique we demoed (above), push data to your own db.
  	
 	Even if you're working on the same idea as a group, it's in your interest to build your individual db on Firebase and your individual prototype on Thimble (so you'll end up with several variations of the same idea).
 	
 	- [ ] create step-by-step guide for setting up a Firebase thingy
 	- [ ] some guidance on how to design a database (what is the *unit* of data, what are the *properties* that will be filterable, what other properties would be nice to have)
 
-PM:
+-->
 
-- **30 minutes** 
-
-	*Don't reinvent the wheel*: introduce **coding libraries**, talk about them but we don't need to use them (jQuery, Backbone, P5.js, D3.js, Aframe for VR etc.)
-
-	- [ ] Intro: why are libraries useful?
-	- [ ] for each library we talk about: main purpose companies who use it, cool examples
-
-- **1 hour** 
-
-	[jQuery challenge](https://d157rqmxrxj6ey.cloudfront.net/yukikumagai/37771): load data and display it in the HTML
-
-	- [ ] create step-by-step guide
-
-- **30 minutes** 
-
-	TO BE DECIDED
-
-
-Yuki:
-
-- [ ] take [sorting and filtering functions from demo-app](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app) and create versions of those functions that work with [Firebase API queries](https://www.firebase.com/docs/web/api/query/)
 
 <!--
 <link href="fuck.css">
 
 <img src="fuck.jpg">
 
-<script src="fuck.js"/>
+<script src="fuck.js"></script>
  
 why the fuck?
 -->
