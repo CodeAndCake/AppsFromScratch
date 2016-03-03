@@ -1,6 +1,5 @@
-
-// First let's store all the elements we need from Html
-
+// First let's store all the interface elements we need from HTML in an object
+// We are using jQuery ($) to select stuff from HTML
 var html = {
 	pageWrapper: $('article'),
 	pageSearch: $('#pageSearch'),
@@ -16,10 +15,9 @@ var html = {
 };
 
 // Let's connect to the database
-
 var database = new Firebase('https://appsfromscratch.firebaseio.com/demo-app');
 
-// Here we define search functionality
+// Here we define the search functionality
 
 var pageSearchFunctionality = {
 	
@@ -32,10 +30,10 @@ var pageSearchFunctionality = {
  		var selectedDropdownOption = html.dropDown.val();
 		
 		// Here is the way to get the data from the database
- 		database.orderByChild("height").on("child_added", function(responce) {
+ 		database.orderByChild("height").on("child_added", function(response) {
  			
- 			var data = responce.val();
- 			var key = responce.key();
+ 			var data = response.val();
+ 			var key = response.key();
 
    			personButton = $('<li id="' + key + '">' 
 	 			+ '<h2>' + data.name + '</h2>' 
