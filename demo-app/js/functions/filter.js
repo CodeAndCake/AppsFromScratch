@@ -1,21 +1,3 @@
-/*
-	Example Usage:
-	
-	var person = {
-	  about: "A BLURB ABOUT YOU",
-	  bakingSkills: 5,
-	  bodyStrength: 3,
-	  diySkills: 4,
-	  image: "http://api.randomuser.me/portraits/women/27.jpg",
-	  likesPets: true,
-	  name: "YOUR NAME"
-	}
-	
-	var people = [];
-	people.push(person);
-	
-	var filtered = filterList(people, "");
-*/
 function filterList (completeList, filterCriteria)
 {
   var filteredList = [] // an empty list

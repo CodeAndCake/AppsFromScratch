@@ -38,10 +38,10 @@ $findButton.on('click', function()
   var selectedOption = $('option:selected', $dropDown).val()
 
   // filter people by user selection
-  var filteredList = getFilteredList(peopleList, selectedOption)
+  var filteredList = filterList(peopleList, selectedOption)
 
   // sort people by user selection
-  var sortedList = getSortedList(filteredList, selectedOption)
+  var sortedList = sortList(filteredList, selectedOption)
   
   // and show the results
   showList(sortedList)
@@ -61,7 +61,7 @@ $searchInput.on('keypress keyup', function()
   else
   {
     var searchResults = searchList(peopleList, text)
-    /* var searchResults = searchListByYesOrNo(peopleList, text) */
+    // var searchResults = searchListByYesOrNo(peopleList, text) 
     // console.log(searchResults)
     // finally, we spit out the searchResults 
     // using the showList function

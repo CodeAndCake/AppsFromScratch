@@ -1,4 +1,4 @@
-function getSortedList (completeList, sortCriteria)
+function sortList (completeList, sortCriteria)
 {
   var sortedList = [] // an empty array
 
