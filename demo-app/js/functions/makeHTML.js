@@ -30,14 +30,14 @@ function makeListHTML (list)
 function makeListItemHTML (person, index)
 {
   /*
-        This function creates some nice HTML around the person's data
+    This function creates some nice HTML around the person's data
 
-        Return something like this:
+    Return something like this:
 
-        <li>
-            <h2>Aimee</h2>
-        </li>
-    */
+    <li>
+      <h2>Aimee</h2>
+    </li>
+  */
 
   // li = List Item
   var li  = '<li id="' + index + '">' 
@@ -50,17 +50,17 @@ function makeListItemHTML (person, index)
 function makePersonHTML (person)
 {
   /*
-        This function creates some nice HTML around the person's data
+    This function creates some nice HTML around the person's data
 
-        Return something like this:
+    Return something like this:
 
-        <h2>Yuki</h2>
-        <img src="http://cdn.themill.com/media/00000010245.jpg">
-        <div class="about">
-            I make cakes for parties and special occasion. Contact me about your next cake!
-        </div>
-        <button id="submit">Message Yuki now</button>
-    */
+    <h2>Yuki</h2>
+    <img src="http://cdn.themill.com/media/00000010245.jpg">
+    <div class="about">
+        I make cakes for parties and special occasion. Contact me about your next cake!
+    </div>
+    <button id="submit">Message Yuki now</button>
+  */
 
   var html = '<h2>' + person.name  + '</h2>' 
   + '<img src="' + person.image + '">' 
