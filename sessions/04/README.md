@@ -286,7 +286,107 @@ If your code is not indented, it can be *really easy* to miss out a bracket or s
 There is no right or wrong way, use whichever way you find more comfortable to read.
 
 
+# Making a list
 
+So far your interface features only **input** elements and some text. 
+
+Last week, you started *wireframing* how the **output** elements could look. In other words, how your interface would display a **list of results** from the database.
+
+It's common practice to *mock up* interfaces with *placeholder data*, and then hook them up with *real data*.
+
+So this is what we'll do:
+
+1. Before lunch, mock up a list of results with HTML and CSS
+* After lunch, learn how to use JS to display real data inside that list. 
+
+<!-- Last week, you created an empty list `peopleList = []` in JavaScript. Using the Firebase function `val()`, you stored each child's data inside a variable `personData` and then pushed (or stored) them into the empty `peopleList`. 
+
+Next, you'll get to know lists in HTML. This is where your users search results will be displayed. The search results will contain data from `peopleList`. -->
+
+#### Your turn
+
+<!--Create a list with some placeholder items and style them.-->
+
+1. Create an unordered list, aka `ul`
+
+	```html
+	<ul>
+	</ul>
+	```
+* Create some empty list items `li` inside your `ul`
+
+	```html
+	<ul>
+		<li></li>
+		<li></li>
+	</ul>
+	```
+* Put some placeholder content inside your list - think about what you want your search results to display. In this example we've added an image `img`, a heading `h2` and a short paragraph `p`.
+
+
+	```html
+	<ul>
+		<li>
+			<img src="">
+	        <h2>Matteo</h2>
+	        <p>I like coding and baking</p>
+		</li>
+		<li>
+			<img src="">
+	        <h2>Yuki</h2>
+	        <p>I like coding and coffee</p>
+		</li>
+		<li>
+			<img src="">
+	        <h2>Aimee</h2>
+	        <p>I like cats and plants</p>
+		</li>
+	</ul>
+	```
+* Style your list by targeting the elements in CSS. As we discussed earlier, you can do this by adding classes for similar items. For example:
+
+	```html
+	<ul>
+		<li>
+			<img class="thumbnail" src="">
+	        <h2>Matteo</h2>
+	        <p class="short-blurb">I like coding and baking</p>
+		</li>
+		<li>
+			<img class="thumbnail" src="">
+	        <h2>Yuki</h2>
+	        <p class="short-blurb">I like coding and coffee</p>
+		</li>
+		<li>
+			<img class="thumbnail" src="">
+	        <h2>Aimee</h2>
+	        <p class="short-blurb">I like cats and plants</p>
+		</li>
+	</ul>
+	```
+
+	How would you target that class in your CSS?
+	
+	```css
+	.thumbnail
+	{
+		width: 50px;
+	}
+	```
+
+	In CSS, there's another way to target elements **nested** inside other elements:
+
+
+	```css
+	li img
+	{
+		width: 50px;
+	}
+	```
+	
+	Here, the rule is for all images `img` inside list items `li`.
+	
+	Remember, if you don't know how to style your element, Google may have the answers!
 
 
 <!--
