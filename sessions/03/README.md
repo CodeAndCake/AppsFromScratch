@@ -27,15 +27,13 @@ PM:
 
 ## Day 3
 
-[Last week](../02) we learned some **HTML and CSS**, styling our first screen with fancy buttons and dropdowns.
+[Last week](../02) you learned some **HTML and CSS**, styling your first screen with fancy buttons and dropdowns.
 
-We also discussed *programming-vs-coding* and took a look at JavaScript (aka **JS**) for the first time. 
-
-We used the JS **Console** to "speak" with our browser, introducing the building blocks of programming: *variables*, *functions* and *objects*.
+We also discussed *programming-vs-coding* and took a look at JavaScript (aka **JS**) for the first time. We used the JS **Console** to "speak" with our browser, introducing the building blocks of programming: *variables*, *functions* and *objects*.
 
 But don't worry if it all seems a little blurry one week on...
 
-Today we'll start from those concepts, and put them into practice by connecting your app to an online **database**.
+**Today** we'll start from those concepts, and put them into practice by connecting your app to an online **database**.
 
 
 # JavaScript recap
