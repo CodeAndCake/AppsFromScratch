@@ -203,6 +203,275 @@ Don't worry, you won't break anything!
 <!-- https://www.firebase.com/docs/web/guide/saving-data.html -->
 
 
+# Be specific!
+
+So far in your CSS experiments, you changed the *look and feel* of the different parts of your HTML. 
+
+You changed headings using `h1`, paragraphs  with `p`, buttons with `button` and dropdowns with `select`.
+
+In your CSS file, you can see something like this:
+
+```css
+p 
+{
+	color: #25008c;
+	font-size: 20px;
+	text-align: center;
+	/* this is a CSS comment */
+}
+```
+
+The block of CSS code inside curly brackets `{}` applies to every paragraph `p` in your HTML file. 
+
+### `class` attribute
+
+Targeting your elements by simply using their tag name (like `p`, `h1` and so on) has worked fine up until now.
+
+But... 
+
+* What if you want to apply different styles to your paragraphs `p`?
+* What if some of the same styles are applied to several elements, and you find you're repeating yourself?
+
+<!--You can use `class` to target your elements more specifically and create different appearances for the same *type* of element.--> 
+
+In HTML you can use `class` to *classify* your elements, and in CSS you can target those elements to give them different styles. 
+
+In your HTML opening tags, add in `class="  "` with your own class names inside the `" "`. You can **add as many classes as you want**, separated by a space:
+
+```html
+<p class="text-centered special-text">Swap skills or time with people in your area</p>
+<p class="text-centered">Just pick an option from the dropdown to get started</p>
+``` 
+
+Above, there are two classes added to the first `p` - `text-centred` and `special-text`.
+
+You could call them whatever you like, for example `cute cat`: **class names are entirely up to you**. However, it makes sense to give them descriptive short names.
+
+In CSS, target these classes using a dot `.` before the class name, like so:
+
+```css
+.text-centred
+{
+	text-align: center;
+}
+
+.special-text
+{
+	color: pink;
+}
+```
+
+Now you can use `text-centred` to centre other elements instead of having to create or add the style `text-align: center;` to every single element you want centred. 
+
+```html
+<h1 class="text-centred">I'd like someone to...</h1>
+```
+
+Likewise the second class `special-text` can be used to turn the text inside any element pink.
+
+Classes are useful for **shared rules**.
+
+### `id` attribute
+
+Whilst classes are used for shared rules, sometimes it's important to **get super, super specific**!
+
+Adding an `id` is like giving an element a name of its own. 
+
+For example, if `animal` were an HTML element, you could write something like this:
+
+```html
+<animal class="mammal dog" id="Sparky"></animal>
+<animal class="mammal cat" id="Bruno"></animal>
+```
+
+As you can see, the two `animals` share a class `mammal` and have other, more specific classes: `dog` and `cat`. Their **unique** name is inside the `id` attribute.
+
+<!--In the dog world, a dog is the `element`, its `class` could be dalmatian and it's `id` could be Sparky.-->
+
+Giving an element a unique `id` allows you to style it differently from any other instances of the same element on the page. It is important that no two elements on the same HTML have the same `id`. In other words, `id` must be unique. 
+
+```html
+<p class="text-centered" id="instructions">Just pick an option from the dropdown to get started</p>
+```
+
+In CSS, target ids using a hash `#` before the id name, like so:
+
+```css
+#instructions
+{
+	color: black;
+}
+```
+
+Ids are the most powerful CSS selectors: the styles you apply to them override all other styles.
+
+
+# Indent it
+
+One of the most common beginner mistakes is missing brackets.
+
+How do you make it easier to read your code and spot such mistakes? 
+
+With **indentation**!
+
+Use the <kbd>tab</kbd> key (to the left of the letter <kbd>Q</kbd> on your keyboard) to push lines of code inwards for tidy, legible code.
+
+Compare the two examples of HTML below. Which is easier to read?
+
+```html
+	<body>
+<h1>Short title</h1>
+<p>In this example, we have a relatively long paragraph. With longer content inside our element, we want to make it as easy as possible to differentiate between our code and our content. If we don't indent our code, you can see how it becomes harder to spot where our p element starts and where it ends.</p>
+<p>Indentation is also useful to spot errors in our code such as missing brackets or unclosed tags.</p><p>A good practice is to have both the opening and closing tags of the element aligned, with the inner content indented on a new line.</p></body>
+```
+
+```html
+<body>
+	<h1>Short title</h1>
+	<p>
+		In this example, we have a relatively long paragraph. With longer content inside our element, we want to make it as easy as possible to differentiate between our code and our content. If we don't indent our code, you can see how it becomes harder to spot where our p element starts and where it ends.
+	</p>
+	<p>
+		Indentation is also useful to spot errors in our code such as missing brackets or unclosed tags.
+	</p>
+	<p>
+		A good practice is to have both the opening and closing tags of the element aligned, with the content indented on a new line.
+	</p>
+</body>	
+```
+
+In CSS, the *best practices* are much debated. On the whole, it's essential to open and close your brackets `{}`, then inside them on a new line, place your *indented* styles like so:
+
+```css
+.text-centred {
+	text-align: center;
+}
+```
+
+Or so:
+
+```css
+.text-centred
+{
+	text-align: center;
+}
+```
+
+How **NOT** to do it:
+
+```css
+.text-centred{text-align: center;}
+```
+
+If your code is not indented, it can be *really easy* to miss out a bracket or semi-colon, then spend half an hour trying to figure out why the page is broken!
+
+There is no right or wrong way, use whichever way you find more comfortable to read.
+
+
+# Making a list
+
+So far your interface features only **input** elements and some text. 
+
+Last week, you started *wireframing* how the **output** elements could look. In other words, how your interface would display a **list of results** from the database.
+
+It's common practice to *mock up* interfaces with *placeholder data*, and then hook them up with *real data*.
+
+So this is what we'll do:
+
+1. Before lunch, mock up a list of results with HTML and CSS
+* After lunch, learn how to use JS to display real data inside that list. 
+
+<!-- Last week, you created an empty list `peopleList = []` in JavaScript. Using the Firebase function `val()`, you stored each child's data inside a variable `personData` and then pushed (or stored) them into the empty `peopleList`. 
+
+Next, you'll get to know lists in HTML. This is where your users search results will be displayed. The search results will contain data from `peopleList`. -->
+
+#### Your turn
+
+<!--Create a list with some placeholder items and style them.-->
+
+1. Create an unordered list, aka `ul`
+
+	```html
+	<ul>
+	</ul>
+	```
+* Create some empty list items `li` inside your `ul`
+
+	```html
+	<ul>
+		<li></li>
+		<li></li>
+	</ul>
+	```
+* Put some placeholder content inside your list - think about what you want your search results to display. In this example we've added an image `img`, a heading `h2` and a short paragraph `p`.
+
+
+	```html
+	<ul>
+		<li>
+			<img src="">
+	        <h2>Matteo</h2>
+	        <p>I like coding and baking</p>
+		</li>
+		<li>
+			<img src="">
+	        <h2>Yuki</h2>
+	        <p>I like coding and coffee</p>
+		</li>
+		<li>
+			<img src="">
+	        <h2>Aimee</h2>
+	        <p>I like cats and plants</p>
+		</li>
+	</ul>
+	```
+* Style your list by targeting the elements in CSS. As we discussed earlier, you can do this by adding classes for similar items. For example:
+
+	```html
+	<ul>
+		<li>
+			<img class="thumbnail" src="">
+	        <h2>Matteo</h2>
+	        <p class="short-blurb">I like coding and baking</p>
+		</li>
+		<li>
+			<img class="thumbnail" src="">
+	        <h2>Yuki</h2>
+	        <p class="short-blurb">I like coding and coffee</p>
+		</li>
+		<li>
+			<img class="thumbnail" src="">
+	        <h2>Aimee</h2>
+	        <p class="short-blurb">I like cats and plants</p>
+		</li>
+	</ul>
+	```
+
+	How would you target that class in your CSS?
+	
+	```css
+	.thumbnail
+	{
+		width: 50px;
+	}
+	```
+
+	In CSS, there's another way to target elements **nested** inside other elements:
+
+
+	```css
+	li img
+	{
+		width: 50px;
+	}
+	```
+	
+	Here, the rule is for all images `img` inside list items `li`.
+	
+	Remember, if you don't know how to style your element, Google may have the answers!
+
+
+
 <!--
 
 1. [Questions](#questions) about computers, people and the **interfaces** in between
