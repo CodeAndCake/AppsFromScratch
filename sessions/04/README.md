@@ -122,6 +122,114 @@ why the fuck?
 
 ## Day 4
 
+
+
+# CSS selectors
+
+So far in your CSS experiments, you changed the *look and feel* of the different parts of your HTML. 
+
+You changed headings using `h1`, paragraphs  with `p`, buttons with `button` and dropdowns with `select`.
+
+In your CSS file, you can see something like this:
+
+```css
+p 
+{
+	color: #25008c;
+	font-size: 20px;
+	text-align: center;
+	/* this is a CSS comment */
+}
+```
+
+The block of CSS code inside curly brackets `{}` applies to every paragraph `p` in your HTML file. 
+
+### Class attribute
+
+Targeting your elements by simply using their tag name (like `p`, `h1` and so on) has worked fine up until now.
+
+But... 
+
+* What if you want to apply different styles to your paragraphs `p`?
+* What if some of the same styles are applied to several elements, and you find you're repeating yourself?
+
+<!--You can use `class` to target your elements more specifically and create different appearances for the same *type* of element.--> 
+
+In HTML you can use `class` to *classify* your elements, and in CSS you can target those elements to give them different styles. 
+
+In your HTML opening tags, add in `class="  "` with your own class names inside the `" "`. You can **add as many classes as you want**, separated by a space:
+
+```html
+<p class="text-centered special-text">Swap skills or time with people in your area</p>
+<p class="text-centered">Just pick an option from the dropdown to get started</p>
+``` 
+
+Above, there are two classes added to the first `p` - `text-centred` and `special-text`.
+
+You could call them whatever you like, for example `cute cat`: **class names are entirely up to you**. However, it makes sense to give them descriptive short names.
+
+In CSS, target these classes using a dot `.` before the class name, like so:
+
+```css
+.text-centred
+{
+	text-align: center;
+}
+
+.special-text
+{
+	color: pink;
+}
+```
+
+Now you can use `text-centred` to centre other elements instead of having to create or add the style `text-align: center;` to every single element you want centred. 
+
+```html
+<h1 class="text-centred">I'd like someone to...</h1>
+```
+
+Likewise the second class `special-text` can be used to turn the text inside any element pink.
+
+Classes are useful for **shared rules**.
+
+### Id attribute
+
+Whilst classes are used for shared rules, sometimes it's important to **get super, super specific**!
+
+Adding an `id` is like giving an element a name of its own. 
+
+For example, if `animal` were an HTML element, you could write something like this:
+
+```html
+<animal class="mammal dog" id="Sparky"></animal>
+<animal class="mammal cat" id="Bruno"></animal>
+```
+
+As you can see, the two `animals` share a class `mammal` and have other, more specific classes: `dog` and `cat`. Their **unique** name instead is inside the `id` attribute.
+
+
+<!--In the dog world, a dog is the `element`, its `class` could be dalmatian and it's `id` could be Sparky.-->
+
+Giving an element a unique `id` allows you to style it differently from any other instances of the same element on the page. It is important that no two elements on the same HTML have the same `id`. In other words, `id` must be unique. 
+
+```html
+<p class="text-centered" id="instructions">Just pick an option from the dropdown to get started</p>
+```
+
+In CSS, target ids using a hash `#` before the id name, like so:
+
+```css
+#instructions
+{
+	color: black;
+}
+```
+
+Ids are the most powerful CSS selectors: the styles you apply to them override all other styles.
+
+
+
+
 <!--
 
 1. [Questions](#questions) about computers, people and the **interfaces** in between
