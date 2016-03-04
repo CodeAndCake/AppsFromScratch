@@ -228,6 +228,65 @@ In CSS, target ids using a hash `#` before the id name, like so:
 Ids are the most powerful CSS selectors: the styles you apply to them override all other styles.
 
 
+# Indentation
+
+Indentation is really useful to keep your code tidy, making it easier to read and spot mistakes (such as missing brackets, one of the most common beginner mistakes).
+
+Use the <kbd>tab</kbd> key (to the left of the letter <kbd>Q</kbd> on your keyboard) to push lines of code inwards for tidy, legible code.
+
+Compare the two examples of HTML below. Which is easier to read?
+
+```html
+	<body>
+<h1>Short title</h1>
+<p>In this example, we have a relatively long paragraph. With longer content inside our element, we want to make it as easy as possible to differentiate between our code and our content. If we don't indent our code, you can see how it becomes harder to spot where our p element starts and where it ends.</p>
+<p>Indentation is also useful to spot errors in our code such as missing brackets or unclosed tags.</p><p>A good practice is to have both the opening and closing tags of the element aligned, with the inner content indented on a new line.</p></body>
+```
+
+```html
+<body>
+	<h1>Short title</h1>
+	<p>
+		In this example, we have a relatively long paragraph. With longer content inside our element, we want to make it as easy as possible to differentiate between our code and our content. If we don't indent our code, you can see how it becomes harder to spot where our p element starts and where it ends.
+	</p>
+	<p>
+		Indentation is also useful to spot errors in our code such as missing brackets or unclosed tags.
+	</p>
+	<p>
+		A good practice is to have both the opening and closing tags of the element aligned, with the content indented on a new line.
+	</p>
+</body>	
+```
+
+In CSS, the *best practices* are much debated. On the whole, it's essential to open and close your brackets `{}`, then inside them on a new line, place your *indented* styles like so:
+
+```css
+.text-centred {
+	text-align: center;
+}
+```
+
+Or so:
+
+```css
+.text-centred
+{
+	text-align: center;
+}
+```
+
+How **NOT** to do it:
+
+```css
+.text-centred{text-align: center;}
+```
+
+If your code is not indented, it can be *really easy* to miss out a bracket or semi-colon, then spend half an hour trying to figure out why the page is broken!
+
+There is no right or wrong way, use whichever way you find more comfortable to read.
+
+
+
 
 
 <!--
