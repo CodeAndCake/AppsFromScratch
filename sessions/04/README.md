@@ -2,8 +2,6 @@
 
 AM: 
 
-- If you haven't done so already, sign up for a Firebase account and then copy-paste your *username / email* into the [Copy-paste document](https://bit.ly/copyPasteCodeYourApp)
-
 - **0.5 hour** [Matteo]
 
 	Recap: 
@@ -121,6 +119,8 @@ why the fuck?
 # Coding and app-making for beginners 
 
 ## Day 4
+
+If you haven't already, **sign up for a Firebase account** at [firebase.com](https://www.firebase.com/). Then copy-paste your *username / email* into the [bit.ly/copyPasteCodeYourApp](https://bit.ly/copyPasteCodeYourApp).
 
 <!--
 
