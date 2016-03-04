@@ -25,7 +25,7 @@ AM:
 	database.push(person);
 	```
 	
-	<!-- What is an API? http://qr.ae/RUOovV -->
+	What is an API? http://qr.ae/RUOovV
 	
 - **1 hour** [Aimee]
 
