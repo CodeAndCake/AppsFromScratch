@@ -137,7 +137,7 @@ Then you'll start using **jQuery**, one of the most popular JS *libraries* (that
 
 Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in. Then open your project from last week. 
 
-### Spot the usual suspects
+<!--### Spot the usual suspects-->
 
 In `app.js` can you spot *variables*, *objects* and *functions*?
 
@@ -196,6 +196,8 @@ You can use your browser Console (open it on your Thimble app window) to try out
 
 ```js
 database.
+// Complete the line above... 
+// Which Firebase function goes after the dot?
 ```
 
 Don't worry, you won't break anything!
@@ -205,9 +207,9 @@ Don't worry, you won't break anything!
 
 # Be specific!
 
-So far in your CSS experiments, you changed the *look and feel* of the different parts of your HTML. 
+So far in your CSS experiments you changed the look & feel of the different parts of your HTML. 
 
-You changed headings using `h1`, paragraphs  with `p`, buttons with `button` and dropdowns with `select`.
+You *selected* headings using `h1`, paragraphs  with `p`, buttons with `button` and dropdowns with `select`.
 
 In your CSS file, you can see something like this:
 
@@ -225,11 +227,11 @@ The block of CSS code inside curly brackets `{}` applies to every paragraph `p` 
 
 ### `class` attribute
 
-Targeting your elements by simply using their tag name (like `p`, `h1` and so on) has worked fine up until now.
+Targeting your elements by simply using their name (like `p`, `h1` and so on) has worked fine up until now.
 
 But... 
 
-* What if you want to apply different styles to your paragraphs `p`?
+* What if you want to apply different styles to different paragraphs `p`?
 * What if some of the same styles are applied to several elements, and you find you're repeating yourself?
 
 <!--You can use `class` to target your elements more specifically and create different appearances for the same *type* of element.--> 
@@ -239,13 +241,13 @@ In HTML you can use `class` to *classify* your elements, and in CSS you can targ
 In your HTML opening tags, add in `class="  "` with your own class names inside the `" "`. You can **add as many classes as you want**, separated by a space:
 
 ```html
-<p class="text-centered special-text">Swap skills or time with people in your area</p>
-<p class="text-centered">Just pick an option from the dropdown to get started</p>
+<p class="text-centered special-text" > Swap skills or time with people in your area </p>
+<p class="text-centered" > Just pick an option from the dropdown to get started </p>
 ``` 
 
 Above, there are two classes added to the first `p` - `text-centred` and `special-text`.
 
-You could call them whatever you like, for example `cute cat`: **class names are entirely up to you**. However, it makes sense to give them descriptive short names.
+You could call them whatever you like: **class names are entirely up to you**. However, it makes sense to give them descriptive short names.
 
 In CSS, target these classes using a dot `.` before the class name, like so:
 
@@ -280,8 +282,8 @@ Adding an `id` is like giving an element a name of its own.
 For example, if `animal` were an HTML element, you could write something like this:
 
 ```html
-<animal class="mammal dog" id="Sparky"></animal>
-<animal class="mammal cat" id="Bruno"></animal>
+<animal class="mammal dog" id="Sparky" > </animal>
+<animal class="mammal cat" id="Bruno" > </animal>
 ```
 
 As you can see, the two `animals` share a class `mammal` and have other, more specific classes: `dog` and `cat`. Their **unique** name is inside the `id` attribute.
@@ -291,7 +293,7 @@ As you can see, the two `animals` share a class `mammal` and have other, more sp
 Giving an element a unique `id` allows you to style it differently from any other instances of the same element on the page. It is important that no two elements on the same HTML have the same `id`. In other words, `id` must be unique. 
 
 ```html
-<p class="text-centered" id="instructions">Just pick an option from the dropdown to get started</p>
+<p class="text-centered" id="instructions" > Just pick an option from the dropdown to get started </p>
 ```
 
 In CSS, target ids using a hash `#` before the id name, like so:
@@ -410,17 +412,12 @@ Next, you'll get to know lists in HTML. This is where your users search results 
 	<ul>
 		<li>
 			<img src="">
-	        <h2>Matteo</h2>
-	        <p>I like coding and baking</p>
-		</li>
-		<li>
-			<img src="">
-	        <h2>Yuki</h2>
+	        <h2>Jo</h2>
 	        <p>I like coding and coffee</p>
 		</li>
 		<li>
 			<img src="">
-	        <h2>Aimee</h2>
+	        <h2>Mo</h2>
 	        <p>I like cats and plants</p>
 		</li>
 	</ul>
@@ -431,17 +428,12 @@ Next, you'll get to know lists in HTML. This is where your users search results 
 	<ul>
 		<li>
 			<img class="thumbnail" src="">
-	        <h2>Matteo</h2>
-	        <p class="short-blurb">I like coding and baking</p>
-		</li>
-		<li>
-			<img class="thumbnail" src="">
-	        <h2>Yuki</h2>
+	        <h2>Jo</h2>
 	        <p class="short-blurb">I like coding and coffee</p>
 		</li>
 		<li>
 			<img class="thumbnail" src="">
-	        <h2>Aimee</h2>
+	        <h2>Mo</h2>
 	        <p class="short-blurb">I like cats and plants</p>
 		</li>
 	</ul>
