@@ -30,7 +30,7 @@
 Idea for next session 1 presentation:
 
 1. Welcome, introductions and plan, then:
-* **What is code?** Get people to shout out some ideas and keywords, like *instructions*, *rules*, *data* etc.
+* **What is code?** Get people to shout out some ideas and keywords, like *instructions*, *rules*, *data* etc. See [this for inspirations](https://github.com/RavensbourneWebMedia/Web-Design-principles/tree/2015/sessions/08#what-is-code).
 * How do you **learn to code**? Introduce the `mantras`:
 
 	* How did you learn your first natural language? By **copying** people around you, trying out things and see what reactions you get
