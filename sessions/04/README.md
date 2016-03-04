@@ -132,6 +132,77 @@ We'll also introduce two magic words that you'll sprinkle across HTML, CSS and J
 
 Then you'll start using **jQuery**, one of the most popular JS *libraries* (that is, collections of code to accomplish common programming tasks, generally free) to display data from Firebase in your app's interface. 
 
+
+# JavaScript recap
+
+Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in. Then open your project from last week. 
+
+### Spot the usual suspects
+
+In `app.js` can you spot *variables*, *objects* and *functions*?
+
+### Commenting your code to make sense of it
+
+Let's read through your JS code line by line, and write comments so that you have an English *translation* of the JS you wrote. 
+
+In JS you can write a comment using double-slash `//`
+
+```javascript
+// this is a JavaScript comment
+var databaseURL = 'https://appsfromscratch.firebaseio.com/demo-app'
+``` 
+
+Translating JS into your own plain-English comments will help you make sense of your code. Even after years of JS development, and despite English not being our mother tongue, we find reading English much easier than JS :)
+
+### Firebase said so
+
+When using a service like Firebase, we need to follow some of *their* rules and conventions, which are all explained in their code *manual*, aka the **docs**: [firebase.com/docs](https://www.firebase.com/docs)
+
+For example, Firebase provides us with a `.val()` function to extract data *objects* from what they call a `child`.
+
+It wouldn't work if we tried a different function name, like `.value()` or `giveMeTheData()`.
+
+**A large part of a coder's work is reading docs** (or if you're like us, *skimming through* them) to learn how the services you are using are meant to be handled. This is no different than a plumber reading a boiler's manual before she works on it. 
+
+> Remember: you are not expected to know how everything works! 
+
+Instead of stuffing your head with specific code instructions, you can learn how to quickly find what you need in the docs, and apply it to your code. 
+
+What often determines the success of a tech startup like Firebase is how their code is documented. If it has good docs, then more developers are going to use it.
+
+#### Your turn
+
+Let's see if you can find out how to upload new data to a Firebase database. 
+
+In particular, we want to add an *object* to our existing *list* of people at `https://appsfromscratch.firebaseio.com/demo-app`. 
+
+The *object* looks like this:
+
+```javascript
+var person = {
+	name: "YOUR NAME",
+  	about: "A BLURB ABOUT YOURSELF",
+  	bakingSkills: 5, // from 0 to 5
+  	bodyStrength: 3, // from 0 to 5
+  	diySkills: 4, // from 0 to 5
+  	image: "http://api.randomuser.me/portraits/women/27.jpg", 
+  	likesPets: true // true or false
+}
+```
+
+Open the Firebase docs 	[firebase.com/docs](https://www.firebase.com/docs) and see if you can find **which function** you need.
+
+You can use your browser Console (open it on your Thimble app window) to try out different solutions. 
+
+```js
+database.
+```
+
+Don't worry, you won't break anything!
+
+<!-- https://www.firebase.com/docs/web/guide/saving-data.html -->
+
+
 <!--
 
 1. [Questions](#questions) about computers, people and the **interfaces** in between
