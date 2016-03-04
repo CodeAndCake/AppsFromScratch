@@ -1,45 +1,3 @@
-<!--
-
-- [ ] FontAwesome? https://fortawesome.github.io/Font-Awesome/get-started/
-- [ ] Homework: now that you have an initial understanding of how the app looks (HTML&CSS) and works (JS+database) start thinking about how you could make it your own. Is it going to be an app to find music, tools, books? What would you like it to be?
-
--->
-
-<!--
-
-var me = {} // an empty object
-var me = new Person() // or a class?
-
-// let's stuff the object with data
-me.name = 'Matteo' // String
-me.likesPets = true // Boolean, true or false
-me.bodyStrength = 3 // Number, between 0 and 5
-me.bakingSkills = 4 // Number, between 0 and 5
-me.diySkills = 2 // Number, between 0 and 5
-me.image = 'http://api.randomuser.me/portraits/men/33.jpg' // String, a URL eg: https://example.com/selfie.jpg
-me.about = 'A short blurb about yourself' // String
-
-database.push(me)
--->
-
-<!--
-From v2, day 2:
-
-### Areas for improvement
-
-* Try something easier which is more rewarding (possibly something more visual or sound, playful)
-
-### Action points
-
-* Find fun activities for end of day
-* How to market your app and idea? (Find where we can direct them to resources)
-* Resources / links: jQuery courses etc.
-* JS library: how do you know if thats good library?
-
--->
-
-
-
 # Coding and app-making for beginners 
 
 ## Day 2
@@ -51,7 +9,7 @@ Today we'll look at its **data** (using an online *database*) and the **JavaScri
 1. [Workshop](#workshop): HTML & CSS recap.
 * [Group task](#ux-research): UX research.
 * [What is **programming**](#programming-vs-coding)?
-* Meet **JavaScript**: connect your app to an online database. 
+* Meet **JavaScript**. 
 
 
 # Workshop
