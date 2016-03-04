@@ -122,6 +122,16 @@ why the fuck?
 
 If you haven't already, **sign up for a Firebase account** at [firebase.com](https://www.firebase.com/). Then copy-paste your *username / email* into the [bit.ly/copyPasteCodeYourApp](https://bit.ly/copyPasteCodeYourApp).
 
+[Last week](../03) you learned how to use **JS** to connect your app to an online **database**, load **data** and store it in your app's memory.
+
+You also started **wireframing** different app *recipes* using the same basic *ingredients*: interface inputs, a database and some filtering logic.
+
+**Today** we'll begin by recapping your JS code which *loads* data from Firebase, and we'll learn how to *upload* new data to Firebase.
+
+We'll also introduce two magic words that you'll sprinkle across HTML, CSS and JS: `class` and `id`!
+
+Then you'll start using **jQuery**, one of the most popular JS *libraries* (that is, collections of code to accomplish common programming tasks, generally free) to display data from Firebase in your app's interface. 
+
 <!--
 
 1. [Questions](#questions) about computers, people and the **interfaces** in between
