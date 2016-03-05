@@ -55,7 +55,124 @@ PM:
 	- [ ] Intro: why are libraries useful?
 	- [ ] Demo: JS with and without jQuery (Yuki)
 	- [ ] For each library we talk about: main purpose companies who use it, cool examples
-	
+
+
+
+### Don't reinvent the wheel - Introduction to libraries   
+
+First let's take a look at code without any libraries. The Javascript code below prints out 'Hello everybody!' into the '#container' element.
+
+```
+<html>
+  <head>  
+  </head>
+  <body>
+
+    <div id="container"></div>
+    
+    <script>
+
+      var container = document.getElementById('container');
+      var hello = document.createElement('p');
+      hello.classList.add('pink');
+      hello.innerHTML = 'Hello everybody!';     
+      container.appendChild(hello);
+
+    </script>
+    
+  </body>
+</html>
+```
+
+Next, let's see the code below with jQuery library. Do you see how it can shorten the code you write to archive the same gaol?
+
+```
+<html>
+  <head>  
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  </head>
+  <body>
+
+    <div id="container"></div>
+    
+    <script>
+
+        $('#container').append('<p class="pink">Hello everybody!</p>');
+
+    </script>
+    
+  </body>
+</html>
+```
+
+jQuery library is a DOM(Document Object Model) manipulation library. In another words, it's made easier for you to manipulate HTML with Javascript. jQuery is useful when you want to add, remove and change the HTML elements. Here is some of useful functions:
+
+```
+// add CSS class definition to the selected element
+$('#container').addClass('blue');
+
+// remove CSS class definition to the selected element
+$('#container').removeClass('blue');
+
+// it removes CSS class if present otherwise removes from selected element. Useful for accordion effect.
+$('#container').toggleClass('blue');
+
+// Removes all the HTML inside the selected element
+$('#container').empty();
+
+// Removes selected element
+$('#container').remove();
+
+// Similar to 'append' function. Replaces the content with the parameter you pass inside the brackets 
+$('#container').html('<p>Hello!</p>');
+
+```
+
+jQuery is also useful to add behaviour to elements.
+
+```
+function onClick(){
+    $('#container').addClass('blue');
+}
+
+$('#container').on('click', onClick);
+```
+   
+##### A little bit about Licensing - Free Software and Open Source?
+
+jQuery is licensed under MIT. So as a lot of libraries you find online are MIT licensed.    
+   
+**MIT license**:   
+   
+Originating at the Massachusetts Institute of Technology. permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
+   
+   
+   
+Wordpress is GPL licensed.
+   
+**The GPL(General Public License) and Copyleft**:   
+   
+Copyleft, an obvious play on copyright allows you to, not only make your work free (as in speech), but to ensure that any modified versions will also be free.
+   
+   
+   
+##### More libraries!   
+   
+There are millions of libraries out there. Here are some of them used in the industry.   
+   
+- [Bootstrap](http://getbootstrap.com/) Ready made components
+- [Greensock](https://greensock.com/) Animation Library
+- [Google Material Design](http://www.getmdl.io/index.html) Design template
+   
+Some of other advanced libraries:   
+   
+- [p5.js](http://p5js.org/gallery/) Advanced drawing library 
+- [three.js](http://threejs.org) 3D rendering library
+- [aframe](https://aframe.io/examples/showcase/sky/) 360 VR library
+   
+
+
+
 <!-- 
 Material to look at 
 
