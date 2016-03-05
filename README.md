@@ -69,8 +69,8 @@ When	| What
 ---	| ----	
 [![](sessions/img/day-1.jpg)](sessions/01)	| On the first day we discuss key concepts around apps (interface, logic, data) and start making with HTML & CSS.
 [![](sessions/img/day-2.jpg)](sessions/02)		| We continue building interfaces with HTML & CSS and work together to analyse popular apps. Then start programming with JavaScript.
-![](sessions/img/day-3.jpg)[](sessions/03)		| You'll apply your research to sketch out how your app looks and behaves on paper. Then you'll make digital wireframes.
-![](sessions/img/day-4.jpg)[](sessions/04)		| You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
+[![](sessions/img/day-3.jpg)](sessions/03)		| You'll apply your research to sketch out how your app looks and behaves on paper. Then you'll make digital wireframes.
+[![](sessions/img/day-4.jpg)](sessions/04)		| You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
 ![](sessions/img/day-5.jpg)[](sessions/05)		| You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
 ![](sessions/img/day-6.jpg)[](sessions/06)		| Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
 
