@@ -453,6 +453,120 @@ Next, you'll get to know lists in HTML. This is where your users search results 
 	Remember, if you don't know how to style your element, Google may have the answers!
 
 
+# Don't reinvent the wheel 
+
+Let's take a look at this example. The JavaScript code below prints out `Hello everybody!` into the `#container` element.
+
+```html
+<html>
+  <head>  
+  </head>
+  <body>
+
+    <div id="container"></div>
+    
+    <script>
+
+      var container = document.getElementById('container');
+      var hello = document.createElement('p');
+      hello.classList.add('pink');
+      hello.innerHTML = 'Hello everybody!';     
+      container.appendChild(hello);
+
+    </script>
+    
+  </body>
+</html>
+```
+
+Here's another example, using a thing called **jQuery**. Do you see how it shortens the code to achieve the same goal?
+
+```html
+<html>
+  <head>  
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  </head>
+  <body>
+
+    <div id="container"></div>
+    
+    <script>
+
+        $('#container').append('<p class="pink">Hello everybody!</p>');
+
+    </script>
+    
+  </body>
+</html>
+```
+
+Libraries are **collections of pre-written functions**, which you use to avoid re-writing the same code over and over.   
+   
+jQuery is a DOM (Document Object Model) manipulation library. In another words, it makes it easier for you to manipulate HTML with JavaScript. 
+   
+jQuery is useful when you want to add, remove and change the HTML elements. Here are some useful functions:
+
+```js
+// Add CSS class definition to the selected element
+$('#container').addClass('blue');
+
+// Remove CSS class definition from the selected element
+$('#container').removeClass('blue');
+
+// Remove CSS class if it's already there. Otherwise add it to the element. 
+$('#container').toggleClass('blue');
+
+// Remove all the HTML inside the selected element
+$('#container').empty();
+
+// Remove the selected element
+$('#container').remove();
+
+// Similar to 'append' function. Replace the content with the parameter you put inside the brackets 
+$('#container').html('<p>Hello!</p>');
+```
+
+jQuery is also useful to add behaviour to elements.
+
+```js
+function onClick(){
+    $('#container').addClass('blue');
+}
+
+$('#container').on('click', onClick);
+```
+   
+### A little bit about Licensing - Free Software and Open Source
+
+jQuery is licensed under MIT. A lot of libraries you find online are MIT licensed.    
+   
+**MIT license**   
+   
+Originating at the Massachusetts Institute of Technology. Permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
+   
+WordPress is GPL licensed.
+   
+**The GPL(General Public License) and Copyleft**   
+   
+Copyleft, an obvious play on copyright allows you to, not only make your work free (as in speech), but to ensure that any modified versions will also be free.
+   
+### More libraries!   
+   
+There are millions of libraries out there. 
+
+Here are some of the most popular in the industry:
+   
+- [Bootstrap](http://getbootstrap.com/) Ready-made interface components
+- [Greensock](https://greensock.com/) Animation Library
+- [Google Material Design](http://www.getmdl.io/index.html) Design template
+   
+Some other advanced libraries:   
+   
+- [p5.js](http://p5js.org/gallery/) Advanced drawing library 
+- [three.js](http://threejs.org) 3D rendering library
+- [aframe](https://aframe.io/examples/showcase/sky/) 360 VR library
+
+
 # Meet jQuery
 
 ![](assets/john-resig.jpg)
