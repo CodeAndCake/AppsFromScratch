@@ -34,7 +34,7 @@ AM:
 	CSS selectors for `class` and `id` 
 	
 	```css
-	.text-centred	
+	.textCentred	
 	{
 		text-align: center;
 	}
@@ -232,35 +232,35 @@ In HTML you can use `class` to *classify* your elements, and in CSS you can targ
 In your HTML opening tags, add in `class="  "` with your own class names inside the `" "`. You can **add as many classes as you want**, separated by a space:
 
 ```html
-<p class="text-centered special-text" > Swap skills or time with people in your area </p>
-<p class="text-centered" > Just pick an option from the dropdown to get started </p>
+<p class="textCentred specialText" > Swap skills or time with people in your area </p>
+<p class="textCentred" > Just pick an option from the dropdown to get started </p>
 ``` 
 
-Above, there are two classes added to the first `p` - `text-centred` and `special-text`.
+Above, there are two classes added to the first `p` - `textCentred` and `specialText`.
 
 You could call them whatever you like: **class names are entirely up to you**. However, it makes sense to give them descriptive short names.
 
 In CSS, target these classes using a dot `.` before the class name, like so:
 
 ```css
-.text-centred
+.textCentred
 {
 	text-align: center;
 }
 
-.special-text
+.specialText
 {
 	color: pink;
 }
 ```
 
-Now you can use `text-centred` to centre other elements instead of having to create or add the style `text-align: center;` to every single element you want centred. 
+Now you can use `textCentred` to centre other elements instead of having to create or add the style `text-align: center;` to every single element you want centred. 
 
 ```html
-<h1 class="text-centred">I'd like someone to...</h1>
+<h1 class="textCentred">I'd like someone to...</h1>
 ```
 
-Likewise the second class `special-text` can be used to turn the text inside any element pink.
+Likewise the second class `specialText` can be used to turn the text inside any element pink.
 
 Classes are useful for **shared rules**.
 
@@ -284,7 +284,7 @@ As you can see, the two `animals` share a class `mammal` and have other, more sp
 Giving an element a unique `id` allows you to style it differently from any other instances of the same element on the page. It is important that no two elements on the same HTML have the same `id`. In other words, `id` must be unique. 
 
 ```html
-<p class="text-centered" id="instructions" > Just pick an option from the dropdown to get started </p>
+<p class="textCentred" id="instructions" > Just pick an option from the dropdown to get started </p>
 ```
 
 In CSS, target ids using a hash `#` before the id name, like so:
@@ -336,7 +336,7 @@ Compare the two examples of HTML below. Which is easier to read?
 In CSS, the *best practices* are much debated. On the whole, it's essential to open and close your brackets `{}`, then inside them on a new line, place your *indented* styles like so:
 
 ```css
-.text-centred {
+.textCentred {
 	text-align: center;
 }
 ```
@@ -344,7 +344,7 @@ In CSS, the *best practices* are much debated. On the whole, it's essential to o
 Or so:
 
 ```css
-.text-centred
+.textCentred
 {
 	text-align: center;
 }
@@ -353,7 +353,7 @@ Or so:
 How **NOT** to do it:
 
 ```css
-.text-centred{text-align: center;}
+.textCentred{text-align: center;}
 ```
 
 If your code is not indented, it can be *really easy* to miss out a bracket or semi-colon, then spend half an hour trying to figure out why the page is broken!
