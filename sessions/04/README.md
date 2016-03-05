@@ -173,15 +173,14 @@ Open the Console (open it on your Thimble app window).
 Create an *object* that looks like this:
 
 ```javascript
-var person = {
-	name: "YOUR NAME",
-  	about: "A BLURB ABOUT YOURSELF",
-  	bakingSkills: 5, // from 0 to 5
-  	bodyStrength: 3, // from 0 to 5
-  	diySkills: 4, // from 0 to 5
-  	image: "http://api.randomuser.me/portraits/women/27.jpg", 
-  	likesPets: true // true or false
-}
+var person = {}
+person.name = "YOUR NAME"
+person.about = "A BLURB ABOUT YOURSELF"
+person.bakingSkills = 5 // from 0 to 5
+person.bodyStrength = 3 // from 0 to 5
+person.diySkills = 4 // from 0 to 5
+person.image = "http://api.randomuser.me/portraits/women/27.jpg" 
+person.likesPets = true // true or false, meaning "yes" or "no"
 ```
 
 Open the Firebase docs 	[firebase.com/docs](https://www.firebase.com/docs) and see if you can find **which function** you need.
