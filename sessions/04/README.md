@@ -479,7 +479,7 @@ The [first version of jQuery](http://ejohn.org/files/jquery-original.html) was w
 
 ### What is jQuery for?
 
-jQuery makes it easier to **select** HTML elements and *manipulate* them, for example hiding, showing, moving around and changing the content of a bunch of HTML elements.
+jQuery makes it easy to **select** HTML elements and *manipulate* them, for example hiding, showing, moving around and changing the content of a bunch of HTML elements.
 
 <!--
 > [jQuery](https://jquery.com) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
@@ -498,7 +498,7 @@ jQuery('h1')
 // notice the lowercase j and capital Q in jQuery
 ``` 
 
-...which is the equivalent of telling your browser to `select all h1 elements in the HTML` (same as CSS).
+...which is the equivalent of telling your browser to `select all h1 elements in the HTML`.
 
 You can then apply functions that **manipulate** those selected elements. 
 
@@ -527,7 +527,7 @@ There's a saying that goes like this:
 
 > A good programmer is a lazy programmer.
 
-In practical terms, it means that programmers like their shortcuts. 
+In practical terms, it means that programmers really like their shortcuts. 
 
 There's a shortcut for jQuery too, and it's `$`
 
@@ -535,7 +535,7 @@ There's a shortcut for jQuery too, and it's `$`
 
 ### Making stuff happen on demand
 
-This is what makes *programming* languages so much more powerful than coding languages like HTML and CSS. 
+This is what makes *programming* languages (like JS) so much more powerful than *markup* languages (like HTML). 
 
 Programming has something to do with the *future*: you define instructions and *behaviour* that will happen in the future, *if* and *when* something specific happens.
 
@@ -557,10 +557,96 @@ function hideHeading() {
 button.on('click', hideHeading);
 ```
 
+### Creating HTML on demand
+
+One of the most common tasks you use JS for, is to **grab data** (from a database, from user inputs, from elsewhere on the Web...) and **inject it** somewhere in the HTML. 
+
+For example, an app like GMail uses JS to grab data from a mail server and inject it in the HTML page that displays your inbox. Facebook grabs data from your "friends" and injects it in your timeline.
+
+The *end-user* rarely sees *raw* data. Rather, they see data *wrapped* inside HTML.
+
+#### How to wrap data
+
+Imagine you want to greet users by name when they log in to your app.
+
+The HTML for that could be something like
+
+```html
+<p id="greeting">Good morning John!</p>
+```
+
+If you had only 1 user and we knew their name, then you could *hard-code* that name in your HTML. But in the more likely case that you have many users, you don't want to have a special page for each one of them!
+
+Instead, you can store the user name in a *variable*, and use JS to *inject* the variable in that greeting paragraph.
+
+```js
+var userName = user.get('name'); // imagine the user data comes from a database
+var greetingParagraph = $('#greeting');
+var greetingText = 'Good morning ' + userName + '!';
+greetingParagraph.text( greetingText );
+```
+
+Notice how we split the greeting text into 3 parts:
+
+1. `'Good morning '` is a non-variable bit
+*  `userName` is the *variable* part
+*  `'!'` is another non-variable bit at the end of the sentence
+
+To string these parts together into one sentence, we use `+` (this is technically called *string concatenation*):
+
+```js
+var greetingText = 'Good morning ' + userName + '!';
+```
+
+#### How to inject data
+
+To **change** the content of an HTML element selected with jQuery, you can use the `.text( )` function like we did above:
+
+```js
+greetingParagraph.text( greetingText );
+```
+
+What if you want to **add** something to an existing HTML element, without changing what's already there?
+
+In that case, you can use the `.append( )` jQuery function (which will add whatever you pass into the function *at the end* of the selected element) or the `.prepend( )` jQuery function (which will add whatever you pass into the function *at the beginning* of the selected element).
+
+For example, if you want to add a note about the weather to your greeting text, you could do it like this
+
+```js
+...
+var weather = 'sunny'; // imagine we got this data from a weather service like BBC Weather
+var weatherText = ' Today is going to be ' + weather;
+greetingParagraph.append( weatherText );
+```
+
+### Your turn
+
+In our demo app, we grab data from Firebase. 
+
+Your next **challenge** is to wrap that data inside `li` elements and then inject it in the `ul`.
+
+1. To use jQuery you need to load it into your HTML. Go to [jquery.com/download](http://jquery.com/download) and download **jQuery 2.x**. 
+* Check the `head` of your `index.html` to see how you can include the jQuery file in there. Hint: there are already two `.js` files in the `head`.
+* Using jQuery, select the `ul` (unordered list) and store it in a *variable*.
+* In the morning, you added some *placeholder* `li` (list item) elements inside the `ul`. Looking at each list item, which parts are *variable* and which are fixed? With that in mind, use JS to create list items with data from `database` in them.
+* *Append* the list items to `ul`.
+
+
+<!--
+- [ ] 1. select, eg: `$('ul')` 
+	* call functions on your selection, like `.append("<p>hi</p>")`
+	* explain joining strings, eg: `"<li>" + data.name + "</li>"`
+
+	 Challenge: display the data loaded from `database` in the `ul`
+	 Extra challenge: experiment with some CSS animations
+-->
+
+
+<!--
 Learn more about [how jQuery works](http://learn.jquery.com/about-jquery/how-jquery-works).
 
 [jQuery Fundamentals](http://jqfundamentals.com) is an interactive guide to get comfortable working through common problems you'll be called upon to solve using jQuery.
-
+-->
 
 <!--
 
