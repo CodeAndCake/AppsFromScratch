@@ -135,7 +135,7 @@ In `app.js` can you spot *variables*, *objects* and *functions*?
 
 Let's read through your JS code line by line, and write comments so that you have an English *translation* of the JS you wrote. 
 
-In JS you can write a comment using double-slash `//`
+In JS you can write a comment using double forward-slash `//`
 
 ```javascript
 // this is a JavaScript comment
@@ -166,7 +166,11 @@ Let's see if you can find out how to upload new data to a Firebase database.
 
 In particular, we want to add an *object* to our existing *list* of people at `https://appsfromscratch.firebaseio.com/demo-app`. 
 
-The *object* looks like this:
+We will use the JS Console to try out different solutions. In *real life* you would have a form to collect user data, but it's quicker to *simulate* things in the Console.
+
+Open the Console (open it on your Thimble app window). 
+
+Create an *object* that looks like this:
 
 ```javascript
 var person = {
@@ -181,8 +185,6 @@ var person = {
 ```
 
 Open the Firebase docs 	[firebase.com/docs](https://www.firebase.com/docs) and see if you can find **which function** you need.
-
-You can use your browser Console (open it on your Thimble app window) to try out different solutions. 
 
 ```js
 database.
