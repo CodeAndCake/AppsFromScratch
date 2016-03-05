@@ -463,6 +463,104 @@ Next, you'll get to know lists in HTML. This is where your users search results 
 	Remember, if you don't know how to style your element, Google may have the answers!
 
 
+# Meet jQuery
+
+![](assets/john-resig.jpg)
+
+<!-- John Resig, jQuery and the Open Source Process by Andreas Dantz on Flickr https://www.flickr.com/photos/szene/6227426946 -->
+
+The [first version of jQuery](http://ejohn.org/files/jquery-original.html) was written in 2006 by a guy called John Resig. He noticed how he was using the same JS functions over and over, across different projects. So he put together a JS toolkit, aka a *library*, and since it was working well for him, he decided to share it with the NYC Web dev community, and then with the rest of the WWW. Over the years, jQuery has been peer-reviewed and enhanced by thousands of developers. It is currently the [the most popular JavaScript library](http://trends.builtwith.com/javascript) on the Web, with ~78% of the top 1 million websites using it! 
+
+[![](assets/jQuery.png)](https://jquery.com)
+
+> John made a point of listening carefully to the *community* and incorporating feedback from those interactions which made both the code and *documentation* better.
+
+<!-- https://blog.jquery.com/2016/01/14/ten-years-of-jquery-and-beyond/ -->
+
+### What is jQuery for?
+
+jQuery makes it easier to **select** HTML elements and *manipulate* them, for example hiding, showing, moving around and changing the content of a bunch of HTML elements.
+
+<!--
+> [jQuery](https://jquery.com) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+-->
+
+<!--You may have heard of jQuery because of its *plugins* (image sliders, date pickers, colour pickers, form validators, image uploaders..) and maybe you've tried to mess around with those a bit.-->
+
+### How does it work?
+
+jQuery uses CSS-like **selectors**.
+
+For example, if you want to select all `h1` elements in your HTML, you can do it like this
+
+```js
+jQuery('h1')
+// notice the lowercase j and capital Q in jQuery
+``` 
+
+...which is the equivalent of telling your browser to `select all h1 elements in the HTML` (same as CSS).
+
+You can then apply functions that **manipulate** those selected elements. 
+
+For example, if you want to hide all `h1` elements in your HTML, you can do it like this
+
+```js
+jQuery('h1').hide()
+``` 
+
+So to recap:
+
+1. Select
+* Manipulate 
+
+It's common practice to store a jQuery selection in a *variable*, and then use that variable throughout your code. That way you don't have to select the same HTML elements over and over again.
+
+```js
+var h1 = jQuery('h1');
+h1.hide();
+h1.fadeIn();
+```
+
+### Dollar$
+
+There's a saying that goes like this: 
+
+> A good programmer is a lazy programmer.
+
+In practical terms, it means that programmers like their shortcuts. 
+
+There's a shortcut for jQuery too, and it's `$`
+
+`$('h1')` achieves the same as `jQuery('h1')`, and it saves you 5 key strokes!
+
+### Making stuff happen on demand
+
+This is what makes *programming* languages so much more powerful than coding languages like HTML and CSS. 
+
+Programming has something to do with the *future*: you define instructions and *behaviour* that will happen in the future, *if* and *when* something specific happens.
+
+For example, if you want a certain element to `hide` only when we `click` on a certain button. Using jQuery, you can do it like this
+
+```js
+// select the button element(s)
+var button = $('button');
+
+// select the h1 element(s)
+var h1 = $('h1');
+
+// define a function that hides h1
+function hideHeading() {
+	h1.hide();
+}
+
+// when someone clicks the button, execute the hideHeading function
+button.on('click', hideHeading);
+```
+
+Learn more about [how jQuery works](http://learn.jquery.com/about-jquery/how-jquery-works).
+
+[jQuery Fundamentals](http://jqfundamentals.com) is an interactive guide to get comfortable working through common problems you'll be called upon to solve using jQuery.
+
 
 <!--
 
