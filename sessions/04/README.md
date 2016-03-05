@@ -60,7 +60,7 @@ PM:
 
 ### Don't reinvent the wheel - Introduction to libraries   
 
-First let's take a look at code without any libraries. The Javascript code below prints out 'Hello everybody!' into the '#container' element.
+First let's take a look at this example. The JavaScript code below prints out 'Hello everybody!' into the '#container' element.
 
 ```
 <html>
@@ -84,7 +84,7 @@ First let's take a look at code without any libraries. The Javascript code below
 </html>
 ```
 
-Next, let's see the code below with jQuery library. Do you see how it can shorten the code you write to archive the same gaol?
+Next, let's see the code below with **jQuery**. Do you see how it can shorten the code you write to achieve the same goal?
 
 ```
 <html>
@@ -105,16 +105,20 @@ Next, let's see the code below with jQuery library. Do you see how it can shorte
 </html>
 ```
 
-jQuery library is a DOM(Document Object Model) manipulation library. In another words, it's made easier for you to manipulate HTML with Javascript. jQuery is useful when you want to add, remove and change the HTML elements. Here is some of useful functions:
+Libraries are collecitons of pre written functions to avoid having to re-write the same code over and over.   
+   
+jQuery library is a DOM(Document Object Model) manipulation library. In another words, it makes it easier for you to manipulate HTML with JavaScript. 
+   
+jQuery is useful when you want to add, remove and change the HTML elements. Here are some useful functions:
 
 ```
 // add CSS class definition to the selected element
 $('#container').addClass('blue');
 
-// remove CSS class definition to the selected element
+// Remove CSS class definition from the selected element
 $('#container').removeClass('blue');
 
-// it removes CSS class if present otherwise removes from selected element. Useful for accordion effect.
+// Remove CSS class if it's already there. Otherwise adds it to the element. 
 $('#container').toggleClass('blue');
 
 // Removes all the HTML inside the selected element
@@ -123,7 +127,7 @@ $('#container').empty();
 // Removes selected element
 $('#container').remove();
 
-// Similar to 'append' function. Replaces the content with the parameter you pass inside the brackets 
+// Similar to 'append' function. Replaces the content with the parameter you put inside the brackets 
 $('#container').html('<p>Hello!</p>');
 
 ```
@@ -140,11 +144,11 @@ $('#container').on('click', onClick);
    
 ##### A little bit about Licensing - Free Software and Open Source?
 
-jQuery is licensed under MIT. So as a lot of libraries you find online are MIT licensed.    
+jQuery is licensed under MIT. A lot of libraries you find online are MIT licensed.    
    
 **MIT license**:   
    
-Originating at the Massachusetts Institute of Technology. permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
+Originating at the Massachusetts Institute of Technology. Permissive software license. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
    
    
    
