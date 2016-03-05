@@ -133,15 +133,33 @@ Idea for next session 1 presentation:
 
 ### What went well
 
-* 
+* Recap in general is working well.
+
+* Commenting code as a recap exercise was useful to spot areas / concepts to clarify. They were also more open about what they didn't understand.
+
+* Firebase challenge was useful, even though it took much longer than expected (1 hour instead of 0.5). Could be fleshed out a bit more, step-by-step. Maybe we shouldn't show them the whole API functions list, but encourage them to use the *guide* 
 
 ### Areas for improvement
 
-*
+* No need to waste 0.5 hours setting people up on Firebase
+
+* Creating an object with the syntax `var o = { a: 1, b: "c" }` was confusing, better to use `var o = {}; o.a = 1; o.b = "c";` even though it's longer to type out. The second method uses a familiar syntax and reinforces the *dot notation*
+
+* Many people wrote their `database.push( stuff )` in Thimble, which meant pushing data every time the page got refreshed. How can we prevent this? Maybe instead of using Thimble we can paste the `person` object in the copy-paste document for them to use.
+
+* Reinforce that the Console is `your JS playground`. You're not going to break anything.
+
+* Maybe the morning challenge could be a pre-built form with a bit of jQuery that builds the `person` object, eg: `person.name = $('input#name').val()`, and the only bit missing is `database.somethingSomething( person )` and your task is working out which Firebase function to use.
+
+* Didn't have time do to `id`, `class` and indentation in the morning. CSS seems to always take longer than planned because people like to tinker with styling. Maybe we should do all the HTML and CSS in day 1 and 2 (possibly 3), including the search results, and then do solid JS for a couple of sessions. Avoid mixings.
+
+* camelCase for `class` and `id`
+
+* *Don't reinvent the wheel* example had too much complexity that got people distracted. `Why is it not pink?` `What is a div?` `Where do you load that?` Maybe we could drive the point of libraries home by showing something like the [date picker](https://jqueryui.com/datepicker/)
 
 ### Action points	
 
-* 	
+* 	[Quiz time](https://github.com/RavensbourneWebMedia/Web-development-workshop/tree/2016/sessions/04#quiz-time) with Team A and Team 1
 		
 
 # Day 5
