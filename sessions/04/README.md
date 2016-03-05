@@ -1,3 +1,5 @@
+<!--
+
 ### The plan!
 
 AM: 
@@ -56,13 +58,6 @@ PM:
 	- [ ] Demo: JS with and without jQuery (Yuki)
 	- [ ] For each library we talk about: main purpose companies who use it, cool examples
 	
-<!-- 
-Material to look at 
-
-* https://github.com/RavensbourneWebMedia/Web-development-workshop/blob/2015/sessions/week-10.md#meet-jquery 
-* http://jqfundamentals.com/chapter/jquery-basics
--->
-	
 - **1 hour** [Matteo and Aimee]
 
 	How to use jQuery: 
@@ -77,11 +72,6 @@ Material to look at
 	
 	- [ ] create step-by-step guide
 
-<!-- 	 	
-- **1 hour** 
-
-	jQuery to display data from `database`
-	
 -->
 
 <!--- **1.5 hour** 
