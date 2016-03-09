@@ -15,67 +15,77 @@ var html = {
 };
 
 // Let's connect to the database
-var database = new Firebase('https://appsfromscratch.firebaseio.com/demo-app');
+var databaseURL = 'https://appsfromscratch.firebaseio.com/demo-app';
+var database = new Firebase(databaseURL);
 
-// Here we define the search functionality
+// Let's add behaviour to the page elements
+html.findButton.on('click', onFindButtonClick);
+html.backButton.on('click', onBackButtonClick);
 
-function onFindButtonClick (){
+// FUNCTIONS!
+function onFindButtonClick () {
 		
-	// We should clear the previous search result if there is alreay
+	// We should first clear any previous search results
 	if(html.results.length > 0) html.results.empty();
 	
 	// Get the value from the dropdown 		
 	var selectedDropdownOption = html.dropDown.val();
-	
-	
-	
 
-	// Here is the way to get the data from the database
-	database.orderByChild("height").on("child_added", function(response) {
+	console.log('onFindButtonClick ' + selectedDropdownOption);
+
+	// Let's define how we want the data to be filtered...
+	if (selectedDropdownOption == 'Keep my pet') 
+	{
+		// ???
+	}	
+	else if (selectedDropdownOption == 'Bake a cake') 
+	{
+		database.orderByChild('bakingSkills').on('child_added', onChildAdded);
+	} 
+	else if (selectedDropdownOption == 'Move my piano') 
+	{
+		database.orderByChild('diySkills').on('child_added', onChildAdded);
+	}
+
+	// ... then ask the database for data
+	function onChildAdded (response) {
 			
+		var person = response.val();
 
-		var data = response.val();
-
-		personButton = $('<li>' 
-			+ '<h2>' + data.name + '</h2>' 
+		var personHTML = $('<li>' 
+			+ '<h2>' + person.name + '</h2>' 
 			+ '</li>');
 		
-		personButton.data("person", data);
+		// store the person in the button
+		personHTML.data("person", person);
 			
-		personButton.on('click', function(){
+		personHTML.on('click', function(){
 
-			onResultClick($(this).data("person"));
+			var person = $(this).data("person")
+			onResultClick(person);
 
 		});
 			
-		html.results.append(personButton);
-		html.results.addClass('active');
-	});
+		html.results.append(personHTML);
+	}
 		
 }
 	
- 
- 	
-function onResultClick (data){
+function onResultClick (data) {
    		
-	var profileHtml = $('<h2>' + data.name  + '</h2>' 
+	var profileHTML = $('<h2>' + data.name  + '</h2>' 
 		+ '<img src="' + data.image + '">' 
 		+ '<div class="about">' + data.about + '</div>'
 		+ '<button id="message">Message ' + data.name + ' now</button>');
  		
- 	html.person.html(profileHtml);
+ 	html.person.html(profileHTML);
  		
  	html.pageWrapper.addClass('profile');
  }
  	
-function onBackButtonClick (){
+function onBackButtonClick () {
  	html.pageWrapper.removeClass('profile');
 }
-
-// Let's add initial behavior to the page elements
-
-html.findButton.on('click', onFindButtonClick);
-html.backButton.on('click', onBackButtonClick);
  
 
  
