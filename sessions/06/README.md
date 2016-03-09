@@ -1,6 +1,17 @@
+### Plan
+
+- build your own database
+- remix the demo-app & code your own app
+
+
+
 # Coding and app-making for beginners 
 
 ## Day 6
+
+
+
+
 
 1. [Code](#code) the `details` screen
 * [Pitch](#pitch) your ideas and prototypes

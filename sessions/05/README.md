@@ -1,6 +1,37 @@
+### Plan
+
+AM:
+ 
+- [ ] 0.5 hour
+
+	[Quiz time](https://github.com/RavensbourneWebMedia/Web-development-workshop/tree/2016/sessions/04#quiz-time) with Team A and Team 1
+
+- [ ] 1 hour
+
+	Breakpoint tool
+	
+	Displaying data (we started last week but it didn't work so let's do that again properly) how to create a string of HTML out of a data object and append it in your HTML
+
+PM:
+
+- [ ] 1 hour
+
+	Filter data
+	
+	Integrate pre-written functions with an emphasis on what to customise
+
+- [ ] 0.5 hour
+
+	Fun, lightweight activity: CSS / start creating your own database
 
 
-[Jquery challenge by codecademy](https://www.codecademy.com/learn/jquery)
+
+
+
+
+http://www.unheap.com
+
+[jQuery challenge by Codecademy](https://www.codecademy.com/learn/jquery)
 
 Yuki:
 
@@ -14,6 +45,9 @@ Yuki:
 
 ## Day 5
 
+
+
+<!--
 1. [Inspirations](#inspirations): cool stuff built with JS
 * [JS challenge](#challenge)
 * [Prototype](#prototyping) one component of your app
@@ -38,17 +72,6 @@ Some cool stuff built with JS (100% Web technologies)!
 [Social media activity map  
 	![](assets/social-media.png)](http://wearedata.watchdogs.com/start.php?locale=en-EN&city=london)
 
-<!--
-
-[http://threejs.org/](http://threejs.org/)   
-http://pixijs.github.io/examples/   
-http://greensock.com/products/   
-
-audio form 
-http://airtightinteractive.com/demos/js/reactive/
-
--->
-
 
 # Challenge!
 
@@ -68,7 +91,7 @@ http://airtightinteractive.com/demos/js/reactive/
 
 # Prototyping
 
-
+-->
 
 
 <!--- [ ] Aimee can help with HTML and CSS-->
