@@ -85,7 +85,7 @@ function showList (list)
 
   // add behaviour to the list items
   $('li', $resultsList).on('click', function()
-                           {
+  {
     var personId = $(this).attr('id')
     var person = list[personId]
     showProfile(person)
