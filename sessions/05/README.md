@@ -1,3 +1,7 @@
+
+
+[Jquery challenge by codecademy](https://www.codecademy.com/learn/jquery)
+
 Yuki:
 
 - [ ] take [sorting and filtering functions from demo-app](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app) and create versions of those functions that work with [Firebase API queries](https://www.firebase.com/docs/web/api/query/)
