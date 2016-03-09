@@ -191,3 +191,9 @@ Idea for next session 1 presentation:
 
 * 
    
+   
+# General
+
+Next time, let's aim to finish the demo-app in 4 days and have 2 days to build their own app (and database). We can achieve that by cutting some *chit-chat* on day 1 (start coding in the morning) and wireframing and ideation on day 3. 
+
+We could also do all the HTML and CSS first, and then introduce JS. Mixing them up seems a bit confusing.
