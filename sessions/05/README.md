@@ -7,7 +7,9 @@ AM:
 	[Quiz time](https://github.com/RavensbourneWebMedia/Web-development-workshop/tree/2016/sessions/04#quiz-time) with Team A and Team 1
 
 - [ ] 1 hour
-
+	
+	Move `script` elements to the end of the `body`
+	
 	Breakpoint tool
 	
 	Displaying data (we started last week but it didn't work so let's do that again properly) how to create a string of HTML out of a data object and append it in your HTML
