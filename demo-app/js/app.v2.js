@@ -19,57 +19,63 @@ var database = new Firebase('https://appsfromscratch.firebaseio.com/demo-app');
 
 // Here we define the search functionality
 
-var pageSearchFunctionality = {
+function onFindButtonClick (){
+		
+	// We should clear the previous search result if there is alreay
+	if(html.results.length > 0) html.results.empty();
 	
-	onFindButtonClick: function(){
-		
-		// We should clear the previous search result if there is alreay
-		if(html.results.length > 0) html.results.empty();
-		
-		// Get the value from the dropdown 		
- 		var selectedDropdownOption = html.dropDown.val();
-		
-		// Here is the way to get the data from the database
- 		database.orderByChild("height").on("child_added", function(response) {
- 			
- 			var data = response.val();
- 			var key = response.key();
+	// Get the value from the dropdown 		
+	var selectedDropdownOption = html.dropDown.val();
+	
+	
+	
 
-   			personButton = $('<li id="' + key + '">' 
-	 			+ '<h2>' + data.name + '</h2>' 
-	 			+ '</li>');
-   			
-  			personButton.on('click', pageSearchFunctionality.onResultClick.bind(this, data));
-  			
- 			html.results.append(personButton);
- 			html.results.addClass('active');
- 			
-  		});
- 		
- 	},
+	// Here is the way to get the data from the database
+	database.orderByChild("height").on("child_added", function(response) {
+			
+
+		var data = response.val();
+
+		personButton = $('<li>' 
+			+ '<h2>' + data.name + '</h2>' 
+			+ '</li>');
+		
+		personButton.data("person", data);
+			
+		personButton.on('click', function(){
+
+			onResultClick($(this).data("person"));
+
+		});
+			
+		html.results.append(personButton);
+		html.results.addClass('active');
+	});
+		
+}
+	
+ 
  	
- 	onResultClick: function(data){
+function onResultClick (data){
    		
- 		var profileHtml = $('<h2>' + data.name  + '</h2>' 
-	 		+ '<img src="' + data.image + '">' 
-	 		+ '<div class="about">' + data.about + '</div>'
-	 		+ '<button id="message">Message ' + data.name + ' now</button>');
+	var profileHtml = $('<h2>' + data.name  + '</h2>' 
+		+ '<img src="' + data.image + '">' 
+		+ '<div class="about">' + data.about + '</div>'
+		+ '<button id="message">Message ' + data.name + ' now</button>');
  		
- 		html.person.html(profileHtml);
+ 	html.person.html(profileHtml);
  		
- 		html.pageWrapper.addClass('profile');
- 	},
+ 	html.pageWrapper.addClass('profile');
+ }
  	
- 	onBackButtonClick: function(){
- 		html.pageWrapper.removeClass('profile');
- 	},
- 	
-};
+function onBackButtonClick (){
+ 	html.pageWrapper.removeClass('profile');
+}
 
 // Let's add initial behavior to the page elements
 
-html.findButton.on('click', pageSearchFunctionality.onFindButtonClick);
-html.backButton.on('click', pageSearchFunctionality.onBackButtonClick);
+html.findButton.on('click', onFindButtonClick);
+html.backButton.on('click', onBackButtonClick);
  
 
  
