@@ -1,10 +1,10 @@
-function makeTotalFoundHTML (list)
+/*function makeTotalFoundHTML (list)
 {
   var total = list.length
   if (total == 0) return 'No result found'
   else if (total == 1) return '1 person found'
   else return total + ' people found'
-}
+}*/
 
 function makeListHTML (list) 
 {

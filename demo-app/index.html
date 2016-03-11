@@ -3,74 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>I'm looking for someone to...</title>
-    
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/formElements.css">
-    <link rel="stylesheet" href="css/colours.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/pageSearch.css">
-    <link rel="stylesheet" href="css/pageProfile.css">
-    <link rel="stylesheet" href="css/mediaQueries.css">
-    
+    <title>Community skills swap</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <article>
-      <section id="pageSearch" class="page active">
-        <h1>I'd like someone to…</h1>
-       <!--  <div class="search">
-          <input type="search">
-        </div> -->
-        <div class="dropdown">
-          <select>
-            <option>Keep my pet</option>
-            <option>Bake a cake</option>
-            <option>Move my piano</option>
-            <option disabled>Clean Ravensbourne</option>
-          </select>
-        </div>
-        <button>Find</button>
-        <div class="results">
-          <p class="total"></p>
-          <ul>
-          </ul>
-        </div>
-        <div class="getStarted">
-          <p>Swap skills and time with people in your community!</p>
-          <p>Just choose an activity to get started.</p>
-        </div>
-      </section>
-      <section id="pageProfile" class="page">
-        <button class="back">
-          <i class="fa fa-arrow-left"></i> Back
-        </button>
-        <div class="person">
-          <h2>Yuki</h2>
-          <img src="http://cdn.themill.com/media/00000010245.jpg">
-          <div class="about">
-            Expert baker and food writer
-          </div>
-          <button class="callToAction">Message Yuki now</button>
-        </div>
-      </section>
-    </article>
-
-    <!-- load JS libraries -->
-    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
-    <script src="js/libraries/jquery.js"></script>
-    <!-- then load our app code -->
-    <script src="js/app.v2.js"></script>
     
-    <!-- load JS functions -->
-    <!-- <script src="js/functions/filter.js"></script>
-    <script src="js/functions/search.js"></script>
-    <script src="js/functions/sort.js"></script>
-    <script src="js/functions/makeHTML.js"></script> -->
+    <section id="home">
+    
+      <!-- h1 is for the first heading -->
+      <h1>I'd like someone to...</h1>
 
-    <!-- load the app code that binds them all together -->
-    <!-- <script src="js/app.js"></script> -->
+      <!-- Yuki, please finish this dropdown-->
+      <select>
+        <option value="bakingSkills">Bake a cake</option>
+        <option value="bodyStrength">Move my furniture</option>
+        <option value="likesPets">Keep my pet</option>
+        <option>Go for a walk</option>
+      </select>
+
+      <button>
+        Find!
+      </button>
+
+      <ul>
+        <!-- <li>
+          <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+          <h2>
+            Yuki
+          </h2>
+        </li>
+
+        <li>
+          <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+          <h2>
+            Yuki
+          </h2>
+          
+        </li> -->
+      </ul>
+
+      <p>Swap skills or time with people in your area</p>
+      <p>Just pick an option from the dropdown to get started</p>
+      <p>
+        Made in London by Yuki, <a href="https://twitter.com/aimeebethmj">Aimee</a> and <a href="https://twitter.com/baddeo">Matteo</a>
+      </p>
+      
+    </section>
+      
+      
+    <section id="detail">
+
+      <a id="back">Back</a>
+
+      <div id="person">
+        <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+        <h2>
+          Yuki
+        </h2>
+        <p>
+          I like coding and coffee
+        </p>
+        <a class="contactButton">Contact Yuki</a>
+      </div>
+    </section>
+
+      
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script src="js/functions/filter.js"></script>
+    <script src="js/functions/makeHTML.js"></script>
+    <script src="js/app.js"></script>
+
   </body>
 </html>
