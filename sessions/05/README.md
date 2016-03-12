@@ -33,7 +33,7 @@ PM:
 
 http://www.unheap.com
 
-[jQuery challenge by Codecademy](https://www.codecademy.com/learn/jquery)
+[jQuery challenge by Codecademy](https://www.codecademy.com/learn/jQuery)
 
 Yuki:
 
@@ -238,23 +238,24 @@ This saves you rewriting your functions for every single person, place, or artis
 <!--  LOOP INTERACTIVE DEMONSTRATION  -->
 
 
-#### JQuery
+#### jQuery
 
-JQuery is a useful library of prewritten functions (sets of intructions and actions).
+jQuery is a useful library of prewritten functions (sets of intructions and actions).
 
-Many common functions are nicely packaged in JQuery to save us time!
+Many common functions are nicely packaged in jQuery to save us time!
 
 For your app, you'll need to know a couple of things:
 
-* You can use JQuery to select parts of your HTML
-* You can use JQuery to perform `functions` on those selected parts
+* You can use jQuery to select parts of your HTML
+* You can use jQuery to perform `functions` on those selected parts
 
-Using JQuery in your code can look like this:
+Using jQuery in your code can look like this:
 
 
-<!--   JQUERY GRAPHIC   -->
+<!--   jQuery GRAPHIC   -->
+![alt text](assets/jQuery.png "Arrays")
 
-In order to use JQuery we must load it in our HTML document. Remember how you loaded Firebase in your HTML document `head`? Using `<script></script>` tags - we need to load JQuery in the same way.
+In order to use jQuery we must load it in our HTML document. Remember how you loaded Firebase in your HTML document `head`? Using `<script></script>` tags - we need to load jQuery in the same way.
 
 In the document `<head>` under 
 
@@ -374,7 +375,7 @@ $findButton.on('click', function(){
   // get user input
   var selectedOption = $dropDown.val() // this is jQuery val()
 ```
-1. Select the `dropdown` with JQuery `$`
+1. Select the `dropdown` with jQuery `$`
 2. Get the value of the clicked `option` (for example the option 'Look after my pet')
 3. Save that value in a variable `var` named `selectedOption`
 
