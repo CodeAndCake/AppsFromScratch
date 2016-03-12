@@ -30,7 +30,7 @@ PM:
 
 
 
-
+<!--
 http://www.unheap.com
 
 [jQuery challenge by Codecademy](https://www.codecademy.com/learn/jquery)
@@ -38,6 +38,7 @@ http://www.unheap.com
 Yuki:
 
 - [ ] take [sorting and filtering functions from demo-app](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app) and create versions of those functions that work with [Firebase API queries](https://www.firebase.com/docs/web/api/query/)
+-->
 
 
 
@@ -46,6 +47,26 @@ Yuki:
 # Coding and app-making for beginners 
 
 ## Day 5
+
+[Last week](../04) you tinkered with HTML & CSS and learned how to *upload* new data to Firebase via the JS Console.
+
+Now that our database is ripe with data, we can **filter** that data in response to user **inputs** and display it in the app **interface**.
+
+**Today** we're going to start with a [quiz](#quiz-time) to recap HTML, CSS and JS. 
+
+Then you'll dive into JS, getting hands-on with **jQuery**. We will give you some pre-written code to copy-paste and integrate into your apps.
+
+Today is about mastering **the art of copy-paste**. To become a good coder you don't need to "speak" JavaScript (or whatever other programming language). Instead, you should learn how to:
+
+1. **Search** for solutions online 
+* **Skim** through results
+* **Copy-paste** relevant results into your code
+* **Adapt** the pasted code to your app (changing *variable* names, tweaking *functions* etc).
+
+When writing code, it's important to let go of any fear of making **mistakes**. Embrace mistakes, take them as an opportunity to learn. When something unexpected happens, try to avoid thinking `What have I done wrong?`. Instead ask yourself `Why did the computer not behave as I expected?`. Come up with a possible answer and then test it.
+
+We will show you some tools and tricks to make the process of spotting mistakes and testing solutions (aka **debugging**) very efficient.
+
 
 
 
