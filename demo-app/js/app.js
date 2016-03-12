@@ -29,7 +29,7 @@ $('button').on('click', function(){
   console.log(peopleList);
 
   // filter people by user selection
-  var resultsList = filterAndSortList(peopleList, selectedOption, [3, 4, 5]);
+  var resultsList = filterAndSortList(peopleList, selectedOption, [4, 5]);
 
   // and show the results
   showList(resultsList)

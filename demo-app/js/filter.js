@@ -67,9 +67,10 @@ function filterAndSortList(completeList, selectedOption, criterias) {
 
         			}
 
-        		});
+                });
 
-                return (founded != undefined);
+                // returns true if there was an item founded meeting the criterias
+                return founded != undefined;
 
         	}else{
 
@@ -78,38 +79,17 @@ function filterAndSortList(completeList, selectedOption, criterias) {
         			var min = 4;
         			var max = 5;
 
-        			if (value >= min && value <= max) {
-
-        				return true;
-
-        			} else {
-
-        				return false;
-
-        			}
-
+        			return value >= min && value <= max;
 
         		}
 
-
         	}
-
-
-
 
         }
 
         if (typeof value == 'boolean') {
 
-            if (value == true) {
-
-                return true;
-
-            } else {
-
-                return false;
-
-            }
+            return value;
 
         }
 
