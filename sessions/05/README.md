@@ -336,13 +336,79 @@ https://www.khanacademy.org/computing/computer-programming/html-css-js/html-css-
 http://tonyfreed.com/blog/top_javascript_interview_question_2015
 -->
 
-# TODO
+# Let's code!
 
-- [ ] wrap everything in `<section id="home"> </section>`
-- [ ] create another section for `details`
+<!--- [ ] wrap everything in `<section id="home"> </section>`
+- [ ] create another section for `details`-->
+
+### Sections
+
+Your app prototype will have two screens:
+
+1. **Home** screen with dropdown menu, `Find` button and search results
+* **Details** screen for each item in the search results 
+
+Let's finish off the home screen interface.
+
+Wrap all the code you've written in your HTML `<body> </body>` tags inside a `<section> </section>`
+
+```html
+...
+<body>
+	<section>
+		<h1>I'd like someone to...<h1>
+		<select>
+		      <option>Bake a cake</option>
+		      <option>Move my furniture</option>
+		      <option>Keep my pet</option>
+		</select>
+		<!--etc etc...-->
+	</section>
+</body>
+```
+
+Give the new `section` an `id="home"`
+
+```html
+<section id="home">
+	<!-- etc etc...-->
+</section>
+``` 
+
+Underneath the new `<section id="home"> ... </section>` create a new section `<section id="details"> ... </section>`
+
+Inside `<section id="details"> ... </section>` create a new `<div id="person"></div>`. This will be the *details* screen, where a selected person's profile will be displayed.
+
+Last week you created an unordered list `ul` with list items inside `li`. Within those we put an image `img`, heading 2 `h2` and a paragraph `p`.
+
+We're going to use that `img`, `h2` and `p` in our `#details` section. Copy the `img`, `h2` and `p` from the `li` you created last week and paste them inside `<div id="person"></div>`.
 
 	```html
-	<section id="detail">
+	<section id="details">
+
+     <div id="person">
+       <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+       <h2>
+         Yuki
+       </h2>
+       <p>
+         I like coding and coffee
+       </p>
+
+     </div>
+   </section>
+   ```
+   
+ Your user may want to move back and forth between the `#home` and `#details` screen. For that you'll need a `Back` button!
+ 
+ Add in `<a id="back">Back</a>` above `<div id="person">`.
+ 
+ The user will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Yuki</a>`
+
+Your `<section id="details"></section>`  will look something like this:
+
+	```html
+	<section id="details">
 
      <a id="back">Back</a>
 
@@ -359,8 +425,35 @@ http://tonyfreed.com/blog/top_javascript_interview_question_2015
    </section>
    ```
 
+### Values!
+
+Scroll back up to your `select` dropdown menu. In each opening `option` tag, add in `value=" "`
+
+```html
+<select>
+     <option value=" ">Bake a cake</option>
+     <option value=" ">Move my furniture</option>
+     <option value=" ">Keep my pet</option>
+</select>
+```
+
+The `value` attribute will contain the property which relates to the selected option - the exact spelling you use in your database. For example, if the user selects `Bake a cake`, the property which matches that need is `bakingSkills`.
+
+Make sure to double-check the database for the exact property names, otherwise your JS code will not work!
+
+```html
+<select>
+     <option value="bakingSkills">Bake a cake</option>
+     <option value="bodyStrength">Move my furniture</option>
+     <option value="likesPets">Keep my pet</option>
+</select>
+```
+
+### Move JS to the bottom of the document
+
+
 - [ ] take JS out of `head` and paste it into `body`
-- [ ] add `value` attributes to `option` elements
+
 
 
 <!-- LUNCH! -->
