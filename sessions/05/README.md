@@ -413,7 +413,7 @@ Your `<section id="details"></section>`  will look something like this:
     <a id="back">Back</a>
 
     <div id="person">
-      <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+      <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832">
       <h2>
         Yuki
       </h2>
