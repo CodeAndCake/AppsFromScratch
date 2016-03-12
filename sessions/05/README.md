@@ -193,22 +193,23 @@ In JavaScript, these lists are called `arrays`. You store data in `arrays` much 
 For example, create an array in the console like this:
 
 ```javascript
-	var shoppingList = ['tofu', 'coconut milk', 'chilli', 'limes'];
+	var shoppingList = ['chilli', 'avocado', 'lime'];
 ``` 
 
 You can check what's in each position. Instead of starting with number 1, `arrays` automatically always start with 0.
 
-Tofu is at position 0, coconut milk is postion 1, chilli 2 and limes 3.
+Chilli is at position 0, avocado is postion 1 and lime is at position 2.
 
  Written like this: 
 
-`shoppingList[0]` the value at position 0 in `shoppingList` is tofu. 
+`shoppingList[0]` the value at position 0 in `shoppingList` is chilli. 
 
-`shoppingList[1]` the value at position 1 is coconut milk.
+`shoppingList[1]` the value at position 1 is avocado.
 
-`shoppingList[2]` the value at position 2 is chilli...etc.
+`shoppingList[2]` the value at position 2 is lime.
 
 <!--   ARRAY GRAPHIC   -->
+![alt text](assets/arrays.png "Arrays")
 
 Arrays have some handy features such as the `length` property - it returns the length of the list.
 
