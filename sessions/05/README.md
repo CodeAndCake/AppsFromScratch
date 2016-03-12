@@ -68,6 +68,153 @@ When writing code, it's important to let go of any fear of making **mistakes**. 
 We will show you some tools and tricks to make the process of spotting mistakes and testing solutions (aka **debugging**) very efficient.
 
 
+# Quiz time!
+
+### HTML
+
+1. The latest version of HTML is `HTML6` 
+
+	- [ ] true 
+	- [ ] false
+	<!-- False. The current and last version of HTML is 5, and since then the numbering system has been dropped so there won't be any HTML6, just like there isn't an English4, English5 etc. HTML is a living, constantly evolving language-->
+* EVERY HTML **element** has an opening **tag** (eg: `<a href="http://example.com">`) and a closing **tag** (eg: `</a>`)
+
+	```html
+	<a href="http://example.com"> Click me! </a>   
+	```
+	
+	- [ ] true 
+	- [ ] false
+	<!-- Almost true. Some elements like <img> and <input> don't need a closing tag, because they can't have any other element nested in them-->
+* All **attributes** for an HTML elements MUST go both in the opening and closing tags
+	
+	```html
+	<a href="http://example.com"> Click me! </a id="no-spaces-in-between"> 
+	```
+	
+	- [ ] true 
+	- [ ] false
+	<!-- False. Attributes go only in the opening tag-->
+*  In an HTML document every `id` **attribute** MUST be unique
+	
+	```html
+    <p id="main-content">...</p>
+    <div id="main-content">...</div>
+    ```
+	
+	- [ ] true 
+	- [ ] false
+	<!-- True. -->
+* An HTML **element** can have more than one `class`
+	
+	```html
+	<p class="highlight question">...</p>
+	```
+	
+	- [ ] true 
+	- [ ] false
+	<!-- True. -->
+* A valid HTML document MUST have a `head` and a `body` elements wrapped in a `html` element
+	
+	- [ ] true 
+	- [ ] false
+	<!-- True. -->
+* What is wrong with this HTML code?
+	
+	```html
+	<p> class="highlight question" ...</p>
+	```
+	<!-- Attributes, such as class="highlight question", must be inside the opening tag, so 
+	
+	<p class="highlight question"> 
+	-->
+* What is wrong with this HTML code?
+	
+	```html
+	<script> src="app.js" </script>
+	```
+	<!-- Same as above. Attributes, such as src="app.js", must be inside the opening tag, so 
+	
+	<script src="app.js"> 
+	-->
+
+### CSS
+
+1. Where is best to put styling instructions? 
+
+	- [ ] `<link rel="stylesheet" href="path/to/your-style.css">`
+	- [ ] `<p style="color:red;">This bloody text</p>`
+	<!-- Better to link to a <link> to a separate CSS document, to keep things tidy. Separation of concerns. -->
+* Every CSS file has to end in `.css`
+	
+	- [ ] true 
+	- [ ] false
+	<!-- True. -->
+* What's wrong with this CSS code? 
+
+	```css
+   <p> { color: red; }
+   ```     
+   <!-- You don't use angle brackets < and > in CSS, so
+   
+   p { color: red; } 
+   -->
+* What's wrong with this CSS code? 
+
+	```css
+  	p { colour: red; }      
+	```
+	<!-- International English (American) spelling, so
+   
+   p { color: red; } -->
+* What's wrong with this CSS code? 
+
+	```css
+    p { color red; }  
+   ```
+   <!-- Missing colon between color and red, so
+   
+   p { color: red; } -->     
+* These two CSS declarations achieve the same effect       
+  
+  	```css             
+	p { color: red; }  
+	 
+	p 
+	{ 
+	 	color: red; 
+	}
+	```	
+   	
+	- [ ] true 
+	- [ ] false 
+	<!-- True. However we find the second easier to read and recommend using this convention: every CSS rule on a separate line -->    
+* The `#` symbol is a shortcut for
+
+	- [ ] `class`
+	- [ ] `element`
+	- [ ] `id`
+	<!-- id -->
+* A CSS rule must be terminated by 
+
+	- [ ]  `.` period
+	- [ ]  `!` exclamation mark
+	- [ ]  `;` semi-colon
+	- [ ]  `:` colon	
+	<!-- semi-colon -->
+* `style1.css` is loaded and applied before `style2.css`	
+	```html
+	<head>
+    	<link href="style1.css" rel="stylesheet">
+    	<link href="style2.css" rel="stylesheet">
+	</head> 
+	```		
+	 	
+	- [ ] true 
+	- [ ] false 
+	<!-- True. The browser loads and applies CSS sequentially. So if you have CSS rules that apply to the same element, then the last one will take precedence. -->
+
+
 
 
 <!--
