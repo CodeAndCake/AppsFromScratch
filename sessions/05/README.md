@@ -383,47 +383,47 @@ Last week you created an unordered list `ul` with list items inside `li`. Within
 
 We're going to use that `img`, `h2` and `p` in our `#details` section. Copy the `img`, `h2` and `p` from the `li` you created last week and paste them inside `<div id="person"></div>`.
 
-	```html
-	<section id="details">
+```html
+<section id="details">
 
-     <div id="person">
-       <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
-       <h2>
-         Yuki
-       </h2>
-       <p>
-         I like coding and coffee
-       </p>
-
-     </div>
-   </section>
-   ```
+   <div id="person">
+     <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+     <h2>
+       Yuki
+     </h2>
+     <p>
+       I like coding and coffee
+     </p>
+   </div>
    
- Your user may want to move back and forth between the `#home` and `#details` screen. For that you'll need a `Back` button!
+</section>
+```
+   
+Your users may want to move back and forth between the `#home` and `#details` screen. For that you'll need a `Back` button!
  
- Add in `<a id="back">Back</a>` above `<div id="person">`.
+Add in `<a id="back">Back</a>` above `<div id="person">`.
  
- The user will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Yuki</a>`
+Your users will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Yuki</a>`
 
 Your `<section id="details"></section>`  will look something like this:
 
-	```html
-	<section id="details">
+```html
+<section id="details">
 
-     <a id="back">Back</a>
+    <a id="back">Back</a>
 
-     <div id="person">
-       <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
-       <h2>
-         Yuki
-       </h2>
-       <p>
-         I like coding and coffee
-       </p>
-       <a class="contactButton">Contact Yuki</a>
-     </div>
-   </section>
-   ```
+    <div id="person">
+      <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+      <h2>
+        Yuki
+      </h2>
+      <p>
+        I like coding and coffee
+      </p>
+      <a class="contactButton">Contact Yuki</a>
+    </div>
+</section>
+```
 
 ### Values!
 
@@ -451,9 +451,17 @@ Make sure to double-check the database for the exact property names, otherwise y
 
 ### Move JS to the bottom of the document
 
+As we learned in the quiz, it's better to place your `<script></script>` elements at the end of `body`.
 
-- [ ] take JS out of `head` and paste it into `body`
+**Cut** all the `script` elements out of the `head` and **paste** them at the end of `body`, like so
 
+```html
+		...
+		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    	<script src="app.js"></script>
+	</body>
+</html>	
+``` 
 
 
 <!-- LUNCH! -->
