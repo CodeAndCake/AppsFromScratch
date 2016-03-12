@@ -226,7 +226,7 @@ function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {
  
 It would be exhausting for us to have to say out loud all of those individual steps every time we wanted to ask someone for a cup of tea!
 
-Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many data points.
+Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many pieces of data.
 
 We can *declare* a function like this to do that job
 

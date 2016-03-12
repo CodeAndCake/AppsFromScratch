@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Lekton:400,400italic,700);
+
+body {
+  font-family: 'Lekton', sans-serif;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  color: #0412b2;
+  font-size: 20px;
+  /* this is a CSS comment */
+}
+
+h1 {
+  color: #0412b2;
+  font-size: 40px;
+  margin-bottom: 50px;
+/*  background-color: #85c999; */
+  /*  I lifted this colour from  BBC News! */
+}
+
+select {
+  background-color: transparent;
+  font-size: 25px;
+  border-width: 4px;
+  border-color: #da01a5;
+  font-family: 'Lekton', sans-serif;
+  display: block;
+  margin: 20px auto;
+}
+
+button 
+{
+  display: block;
+  background-color: #da01a5;
+  color: white;
+  border: none;
+  font-size: 25px;
+  font-family: 'Lekton', sans-serif;
+  margin: 30px auto 50px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button:hover
+{
+  background-color: #f4faf8;
+  transition:.5s;
+  
+}
+
+select, button
+{
+  cursor: pointer; 
+}
+
+ul
+{
+  padding: 0;
+}
+
+li
+{
+  list-style: none;
+}
+
+.profile-pic
+{
+  max-width: 120px;
+  border-radius: 60px;
+  display: block;
+  margin: auto;
+}

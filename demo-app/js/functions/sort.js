@@ -20,7 +20,7 @@ function sortList (completeList, sortCriteria)
     {
       // we sort the list by the bakingSkills value
       // in descending order (big numbers first)
-      return completeList.sort(function(personA, personB)
+      return completeList.sort(function(personA, personB) // native JS functions to sort arrays.. Google it :)
       {
         return personB.bakingSkills - personA.bakingSkills
       })
@@ -33,7 +33,7 @@ function sortList (completeList, sortCriteria)
     {
       // we sort the list by the mowTheLawn value
       // in descending order (big numbers first)
-      return completeList.sort(function(personA, personB)
+      return completeList.sort(function(personA, personB)  // native JS functions to sort arrays.. Google it :)
       {
         return personB.mowTheLawn - personA.mowTheLawn
       })
