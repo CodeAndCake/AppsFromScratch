@@ -13,7 +13,7 @@ function filterAndSortList(completeList, selectedOption) {
         var value = person[selectedOption];
         
         // typeof will check the the type of element
-        // eg. It check if the value is either number or boolean
+        // eg. It checks if the value is either number or boolean
         // Then if the value is the range of 1 - 5 assigned to person['bakingSkills'] 
         // It will check if the number is in between 4 to 5
         // See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof

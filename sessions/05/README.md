@@ -201,7 +201,7 @@ We will show you some tools and tricks to make the process of spotting mistakes 
 	- [ ] true 
 	- [ ] false 
 	
-	<!-- True. However we find the second easier to read and recommend using this convention: every CSS rule on a separate line -->    
+	<!-- True. It's down to you to choose which way you use. Whichever style you choose, be consistent so that it does not become an overhead for your own brain to process multiple styles in related pieces of code. -->    
 * The `#` symbol is a shortcut for
 
 	- [ ] `class`
