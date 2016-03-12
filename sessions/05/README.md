@@ -438,34 +438,34 @@ Without `return` we wouldn't know the answer!
 
 ### Arrays
 
-Two weeks ago, we created an empty list `peopleList[]` in our `app.js` file. This created an empty space for us to store the data of each person.
+[Two weeks ago](../sessions/03) we created an empty list `peopleList[]` in our `app.js` file, as an empty "box" for us to store the data of each person.
 
-In JavaScript, these lists are called `arrays`. You store data in `arrays` much like a numbered shopping list.  
+In JavaScript, these lists are called **arrays**. You store data in arrays much like a numbered shopping list.  
 
-For example, create an array in the console like this:
+For example, you can create an array like this:
 
 ```javascript
 var shoppingList = ['chilli', 'avocado', 'lime'];
 ``` 
 
-You can check what's in each position. Instead of starting with number 1, `arrays` automatically always start with 0.
+You can check what's in each position. Instead of starting with number 1, arrays always **start with 0**.
 
-Chilli is at position 0, avocado is position 1 and lime is at position 2.
+`chilli` is at position 0, `avocado` is position 1 and `lime` is at position 2.
 
  Written like this: 
 
-`shoppingList[0]` the value at position 0 in `shoppingList` is chilli. 
+`shoppingList[0]` the value at position 0 in `shoppingList` is `chilli`. 
 
-`shoppingList[1]` the value at position 1 is avocado.
+`shoppingList[1]` the value at position 1 is `avocado`.
 
-`shoppingList[2]` the value at position 2 is lime.
+`shoppingList[2]` the value at position 2 is `lime`.
 
 <!--   ARRAY GRAPHIC   -->
 ![alt text](assets/arrays.png "Arrays")
 
-Arrays have some handy features such as the `length` property - it returns the length of the list.
+Arrays have some handy features such as the `length` property, which returns the length of the list.
 
-Check how many things are in your array like this:
+You can check how many things are in your array like this:
 
 ```javascript
 console.log(shoppingList.length);
@@ -473,9 +473,7 @@ console.log(shoppingList.length);
 
 ### Loops
 
-`Loops` are essential for our app to work!
-
-Have you ever played an album on loop? The first song plays, then the next, then the next until you reach the last song and it starts all over again.
+Have you ever played an album *on loop*? The first song plays, then the next, then the next until you reach the last song and it starts all over again.
 
 If you think of this like code:
 
@@ -485,9 +483,13 @@ If you think of this like code:
 
 * The **data** used are the songs
 
-In your app, you will sift through, filter and sort out every set of data in your database. You'll `loop` through the entire database and use functions (or sets of instructions and actions) to do things with that data. 
+Loops are essential for our apps to work!
+
+In your app, you will sift through, filter and sort out every set of data in your database. You'll **loop through** the entire database and use *functions* (or sets of instructions and actions) to do things with that data. 
 
 This saves you rewriting your functions for every single person, place, or artist in your database.
+
+[![](assets/loops.png)](http://s.codepen.io/baddeo/debug/NGjJjd)
 
 <!--  LOOP INTERACTIVE DEMONSTRATION  -->
 
