@@ -338,9 +338,30 @@ http://tonyfreed.com/blog/top_javascript_interview_question_2015
 
 # TODO
 
-- [ ] take JS out of head and into body
 - [ ] wrap everything in `<section id="home"> </section>`
 - [ ] create another section for `details`
+
+	```html
+	<section id="detail">
+
+     <a id="back">Back</a>
+
+     <div id="person">
+       <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+       <h2>
+         Yuki
+       </h2>
+       <p>
+         I like coding and coffee
+       </p>
+       <a class="contactButton">Contact Yuki</a>
+     </div>
+   </section>
+   ```
+
+- [ ] take JS out of `head` and paste it into `body`
+- [ ] add `value` attributes to `option` elements
+
 
 <!-- LUNCH! -->
 
