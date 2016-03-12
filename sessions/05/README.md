@@ -146,7 +146,7 @@ We will show you some tools and tricks to make the process of spotting mistakes 
 
 ### CSS
 
-1. Where is best to put styling instructions? 
+1. Where is best to put CSS? 
 
 	- [ ] `<link rel="stylesheet" href="path/to/your-style.css">`
 	- [ ] `<p style="color:red;">This bloody text</p>`
@@ -302,7 +302,32 @@ We will show you some tools and tricks to make the process of spotting mistakes 
 	areYouAnAdult( 18 );
 	```
 	
-	<!-- It will return "yes" -->	
+	<!-- It will return "yes" -->
+* Where is better to put JavaScript `<script src="example.js"></script>` in your HTML?
+
+	- [ ] inside the `head`
+	
+		```html
+		...
+		<head>
+			...
+			<script src="example.js"></script>
+		</head>
+		<body>
+			...	
+		```
+		
+	- [ ] at the end of the `body`
+	
+		```html
+		...
+		<body>
+			...	
+			<script src="example.js"></script>
+		</body>	
+		```
+	
+	<!-- Both are fine, however end of body is recommended, because your JS may need the body (with all its content) to be loaded first, and then it can execute properly -->	
 
 <!-- 
 
@@ -310,6 +335,14 @@ Inspirations  for the JS quiz
 https://www.khanacademy.org/computing/computer-programming/html-css-js/html-css-js-intro/e/quiz--javascript-recap 
 http://tonyfreed.com/blog/top_javascript_interview_question_2015
 -->
+
+# TODO
+
+- [ ] take JS out of head and into body
+- [ ] wrap everything in `<section id="home"> </section>`
+- [ ] create another section for `details`
+
+<!-- LUNCH! -->
 
 
 #  A couple of programming essentials
