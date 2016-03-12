@@ -76,7 +76,7 @@ We will show you some tools and tricks to make the process of spotting mistakes 
 	- [ ] false
 	
 	<!-- False. The current and last version of HTML is 5, and since then the numbering system has been dropped so there won't be any HTML6, just like there isn't an English4, English5 etc. HTML is a living, constantly evolving language-->
-* EVERY HTML **element** has an opening **tag** (eg: `<a href="http://example.com">`) and a closing **tag** (eg: `</a>`)
+* EVERY HTML **element** has an **opening tag** (eg: `<a href="http://example.com">`) and a **closing tag** (eg: `</a>`)
 
 	```html
 	<a href="http://example.com"> Click me! </a>   
@@ -320,21 +320,11 @@ Functions are sets of instructions, packaged nicely for us to use over an over.
 
 Functions make code **reusable**. 
 
-<!--
-For instance, you could make a function to teach a *robot* how to `drink` something. The steps required to perform a drinking task remain the same, no matter what the robot is drinking.
-
-```javascript
-robot.drink("tea");
-robot.drink("water");
-robot.drink("coffee");
-``` 
--->
-
 Remember, you use functions of sorts everyday to do simple tasks. For instance, to make tea!
 
 A function for making tea might look like this (not actual JS, just the logical steps)
 
-```
+```js
 function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {   
 	1. check for teabags of whichTea type   
 	2. fill the kettle   
@@ -348,7 +338,7 @@ function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {
 ```
  
 It would be exhausting for us to have to say out loud all of those individual steps every time we wanted to ask someone for a cup of tea!
-
+<!--
 Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many pieces of data.
 
 We can *declare* a function like this to do that job
@@ -365,7 +355,7 @@ function checkForPears (objectToCheck) {
 
 We have packaged our instructions into a function, which means we don't have to type out all that code every time we want to search through variables. 
 
-<!--All we need to type is this:-->
+All we need to type is this:
 
 ```javascript
 var myFavouriteFruit = "orange";
@@ -373,37 +363,38 @@ checkForPears(myFavouriteFruit);
 ```
 
 Because we have no `pear` in `myFavouriteFruit`, the Console will log `No pears in here, better luck next time!`.
+-->
 
 So, to use a function you must
 
 1. *declare* it: give it a **name** and teach the computer all the **steps** required to perform it
 
 	```javascript
-	function checkForPears (objectToCheck) {
-		if (objectToCheck == "pear") {
-			console.log("There's a pear in here!")
+	function areYouAnAdult (age) {
+		var answer;
+		if (age < 18) {
+		 	answer = "no";
 		} else {
-			console.log("No pears in here, better luck next time!")
-		};
-	}
+		 	answer = "yes";
+		} 
+		return answer;
+	};
 	```
 2. *call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
 
 	```javascript
-	checkForPears("orange");
+	areYouAnAdult(16);
 	```
 	
 In between *round brackets* `()` we can pass one or more *variables* to the function.
 	
 ```javascript
-checkForPears("banana");
-checkForPears("coconut");
-checkForPears("plum");
-var lastFruitInTheFridge = "kiwi";
-checkForPears(lastFruitInTheFridge);
+areYouAnAdult(18);
+areYouAnAdult(23);
+areYouAnAdult(21);
 ```
 	
-The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `objectToCheck`.
+The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `age`.
 
 Variables inside a function are very useful, because they make the function **reusable**.
 
@@ -422,7 +413,7 @@ It's `fruit`, a [variable](#variables) which lives inside the `checkForPears` fu
 There's another powerful thing we can do with functions: we can use them to take in some values, *compute* them, and then *return* a new value.
 
 ```js
-function areYouAnAdult(age) {
+function areYouAnAdult (age) {
 	var answer;
 	if (age < 18) {
 	 	answer = "no";
@@ -444,7 +435,6 @@ areYouAnAdult(23); // returns "yes"
 ```
 
 Without `return` we wouldn't know the answer!
-
 
 ### Arrays
 
