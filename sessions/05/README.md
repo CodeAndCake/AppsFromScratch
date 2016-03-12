@@ -387,7 +387,7 @@ We're going to use that `img`, `h2` and `p` in our `#details` section. Copy the 
 <section id="details">
 
    <div id="person">
-     <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
+     <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832">
      <h2>
        Yuki
      </h2>
