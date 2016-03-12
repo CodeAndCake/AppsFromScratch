@@ -543,73 +543,91 @@ In your app, you will sift through, filter and sort out every set of data in you
 
 This saves you rewriting your functions for every single person, place, or artist in your database.
 
+Click on the image below to open an interactive explanation of a loop, which you can find at `s.codepen.io/baddeo/debug/NGjJjd`
+
 [![](assets/loops.png)](http://s.codepen.io/baddeo/debug/NGjJjd)
-
-<!--  LOOP INTERACTIVE DEMONSTRATION  -->
-
 
 #### jQuery
 
-jQuery is a useful library of prewritten functions (sets of isntructions and actions).
+jQuery is a useful library of prewritten *functions* (sets of isntructions and actions).
 
 Many common functions are nicely packaged in jQuery to save us time!
 
 For your app, you'll need to know a couple of things:
 
-* You can use jQuery to select parts of your HTML
+* You can use jQuery to **select** parts of your HTML
 * You can use jQuery to perform `functions` on those selected parts
 
 Using jQuery in your code can look like this:
 
 ![alt text](assets/jQuery.png "jQuery")
 
-In order to use jQuery we must load it in our HTML document. Remember how you loaded Firebase in your HTML document `head`? Using `<script></script>` tags - we need to load jQuery in the same way.
+In order to use jQuery we must load it in our HTML document. Remember how you loaded Firebase? Using `<script src=" ... "></script>` tags we need to load jQuery in the same way.
 
-In the document `<head>` under 
+At the end of the document `body` add a `script` like this
 
-
-# Code recap
-
-## What have you done so far?
-
-1. In your index.html file, you created the structure of your app's interface
-2. You've styled that interface using CSS. You targeted specific html elements by giving them `classes` `.` and `ids` `#`
-3. In the app.js file, you created a new Firebase database
-```javascript
-var database = new Firebase('https://appsfromscratch.firebaseio.com/demo-app')
-```
-4. Created an empty `array` (or list)
-```javascript
-var peopleList = [] // an empty list, for now 
-```
-5. Loaded each `person`'s data within the database into the array `peopleList[]` 
-```javascript
-// load data
-database.on('child_added', function(person) 
-{
-  var personData = person.val() // this is Firebase val()
-  peopleList.push(personData) // "push" is JavaScript's lingo for "add to a list"
-})
-// see the manual https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
-```
-
-Remember, that last step uses some Firebase functions: 
-
-* `on()` is the Firebase listener that says ***when** something happens (an **event** like a click) then perform an action* 
-
-* `val()`is a Firebase function that collects the data you've stored inside each `person`. In our case, the data was `likesPets`, `bakingSkills`, `bodyStrength` and so on...
-
-It also uses a JavaScript function:
-
-* `push()` adds whatever is passed through the brackets () into an `array`.
-
-Didn't we use `push()` to save data into our database? 
-
-Yes! We checked the Firebase manual to see which functions they created to make saving data into their databases easier. It just so happens they also use `push()`. You used that Firebase function to save data into the database : `database.push(person)`
+```html
+		...
+		<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+	</body>
+</html>	
+``` 
 
 
-## Let's continue!
+# Back to your app
 
+### What have you done so far?
+
+* In your `index.html` file, you structured your app's interface
+
+* You styled that interface using CSS. You targeted specific HTML elements using `class` and `id`
+
+	HTML | CSS
+	---- | ---
+	`class` | `.`
+	```html <p class="question"> ... </p>``` | ```css .question { ... } ```
+	`id` | `#`
+	```html <p id="firstQuestion"> ... </p>``` | ```css #firstQuestion { ... } ```
+	
+* In `app.js` you created a new Firebase database
+
+	```javascript
+	var database = new Firebase('https://appsfromscratch.firebaseio.com/demo-app')
+	```
+
+* Then an empty `array` (or list)
+
+	```javascript
+	var peopleList = [] // an empty list, for now 
+	```
+
+* Loaded each `person`'s data within the database into the array `peopleList[]` 
+
+	```javascript
+	// load data
+	database.on('child_added', function(person) 
+	{
+  		var personData = person.val() // this is Firebase val()
+  		peopleList.push(personData) // "push" is JavaScript's lingo for "add to a list"
+	})
+	// see the docs https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
+	```
+
+	Remember, that last step uses some Firebase functions: 
+
+	* `on()` is the Firebase listener that says ***when** something happens (an **event** like a click) then perform an action* 
+
+	* `val()`is a Firebase function that collects the data you've stored inside each `person`. In our case, the data was `likesPets`, `bakingSkills`, `bodyStrength` and so on...
+
+	It also uses a *native* JavaScript function:
+
+	* `push()` adds whatever is passed through the brackets () into an `array`.
+
+	Didn't we use `push()` to save data into our database? 
+
+	Yes! We checked the Firebase docs [firebase.com/docs/web](https://www.firebase.com/docs/web/guide) to see which functions they want us to use to save data using their service. It just so happens they also use `push()`. You used that Firebase function to save data into the database: `database.push(person)`
+
+## Let's move on!
 
 <!--### 1. Create an `html` object
 
@@ -640,27 +658,59 @@ In this object which we've named `html`, jQuery is used `$` to select HTML eleme
 
 <!--  HTML OBJECT GRAPHIC  -->
 
+Open your Thimble project.
 
-### 1. When a user clicks on the find button, what happens?
+### 1. Load jQuery
 
-Go to **LINK HERE** and copy the following code:
+Open `index.html`.
+
+Just before the **end** of the `body` add a `script` like this
+
+```html
+		...
+		<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+	</body>
+</html>	
+``` 
+
+Once jQuery is included, we can check if it's ready to for us to use.
+
+Open the Console <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd> and then type in `jQuery` and press Enter.
+
+If the Console doesn't spit out a red error, you're good to go!
+
+### 2. Hide the `#details` section by default
+
+When people open the app, we don't need them to see details about a person. Later we will write some JS code to display that `section` **when** people click on a result, but for now we want to **hide** that part of the HTML.
+
+In `app.js` write
+
+```js
+$('#details').hide();
+```  
+
+The line above does two things:
+
+1. `$('#details')`: **select** the element with `id=details`
+* Perform the `hide()` function on that selection
+
+### 3. When someone clicks on the `Find` button, what happens?
+
+Go to the [Copy-paste GDoc bit.ly/copyPasteCodeYourApp](https://bit.ly/copyPasteCodeYourApp) and copy the following code (you can find it under Day 5):
 
 ```javascript
-// define how our user interface (UI) elements behave
-// when someone clicks the Find button...
-$findButton.on('click', function()
-{
+$('button').on('click', function() {
+    
   // get user input
-  var selectedOption = $dropDown.val() // this is jQuery val()
-
+  var selectedOption = $('select').val(); // this is jQuery val()
+ 
   // filter people by user selection
-  var filteredList = filterList(peopleList, selectedOption)
-
-  // sort people by user selection
-  var sortedList = sortList(filteredList, selectedOption)
+  var resultsList = filterAndSortList(peopleList, selectedOption);
   
+  console.log(resultsList);
+
   // and show the results
-  showList(sortedList)
+  // showList(resultsList)
 })
 ```
 
@@ -668,46 +718,52 @@ $findButton.on('click', function()
 
 First the outer shell:
 ```javascript
-$findButton.on('click', function(){
+$('button').on('click', function(){
 ..............
 ..............
 })
 ``` 
 
-`$findButton` selects the find button.
+`$('button')` selects the `Find` button.
 
-`.on('click', function(){ ...........   })` says **when** the user **clicks** the selected element, perform this function. In our case, **when** the user **clicks** `findButton`, perform this function.
+`.on('click', function() { ........... })` says **when** the user **clicks** the selected element, perform this function. In our case, **when** the user **clicks** `Find`, perform this function.
 
 *Inside* the function:
 
 ```javascript
-  // get user input
-  var selectedOption = $dropDown.val() // this is jQuery val()
+// get user input
+var selectedOption = $('select').val(); // this is jQuery val()
 ```
-1. Select the `dropdown` with jQuery `$`
-2. Get the value of the clicked `option` (for example the option 'Look after my pet')
-3. Save that value in a variable `var` named `selectedOption`
 
+1. Select the `select` (HTML for dropdown) with jQuery `$`
+* Get the currently selected value (for example the `likesPets`) using the jQuery function `.val()`
+* Save that value in a `var` named `selectedOption`
 
 ```javascript
-   // filter people by user selection
-  var filteredList = filterList(peopleList, selectedOption)
-
-  // sort people by user selection
-  var sortedList = sortList(filteredList, selectedOption)
-  
-  // and show the results
-  showList(sortedList)
+// filter people by user selection
+var resultsList = filterAndSortList(peopleList, selectedOption);
 ```
-Using these 3 lines you: 
 
-1. **filter** the data to match the user's selection (leaving out results that don't match the user selection)
+1. Use the function `filterAndSortList` to filter and the list with all the people `peopleList` to match the user's selection
+* Store the filtered people in a `var` named `resultsList`
 
-	For example, if the selected option is `Keep my pet`, we will filter out all the people that don't like pets (ie `person.likePets = false`)
+You can find the function `filterAndSortList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/functions/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/functions/filter.js) (link also in the copy-paste doc).
+
+Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `filter.js` in your app.
+
+<!--
+**filter** the data to match the user's selection (leaving out results that don't match the user selection)
+
+2. For example, if the selected option is `Keep my pet`, we will filter out all the people that don't like pets (ie `person.likePets = false`)
 * **sort** the filtered data into order - small to big, or big to small. 
 
-<!--the highest criteria match comes first (think Google search - most relevant results come up higher in the search results)-->
+the highest criteria match comes first (think Google search - most relevant results come up higher in the search results)
 	For example, if the selected option is `Move my piano`, we will sort the people based on their body strength (ie `person.bodyStrength = 5`)
+	-->
+
+
+# TODO
+
 * **display** the filtered and sorted data
 
 There's something missing, right?
