@@ -3,7 +3,7 @@ var databaseURL = 'https://appsfromscratch.firebaseio.com/demo-app'
 
 var database = new Firebase(databaseURL);
 
-var peopleList = []; // an empty list, for now 
+var peopleList = []; // an empty list, for now
 
 // load data, see the Firebase manual https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
 database.on('child_added', function(child){
@@ -21,15 +21,15 @@ $('#details').hide();
 
 
 $('button').on('click', function(){
-    
+
   console.log(peopleList);
   // get user input
   var selectedOption = $('select').val() // this is jQuery val()
 
   console.log(peopleList);
- 
+
   // filter people by user selection
-  var resultsList = filterAndSortList(peopleList, selectedOption);
+  var resultsList = filterAndSortList(peopleList, selectedOption, [3, 4, 5]);
 
   // and show the results
   showList(resultsList)
@@ -38,7 +38,7 @@ $('button').on('click', function(){
 
 
 $('#back').on('click', function(){
-    
+
   $('#home').show();
   $('#details').hide();
 
@@ -57,7 +57,7 @@ $('#back').on('click', function(){
 
 // DATA
 var database = new Firebase('https://appsfromscratch.firebaseio.com/demo-app')
-var peopleList = [] // an empty list, for now   
+var peopleList = [] // an empty list, for now
 
 // INTERFACE
 // we can select interface elements using jQuery ($ is a shortcut for jQuery)
@@ -93,11 +93,11 @@ var html = {
 // METHOD
 
 // load data
-database.on('child_added', function(person) 
+database.on('child_added', function(person)
 {
   var personData = person.val() // this is Firebase val()
   // "push" is JavaScript's lingo for "add to a list"
-  peopleList.push(personData) 
+  peopleList.push(personData)
 })
 // see the manual https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
 
@@ -113,7 +113,7 @@ $findButton.on('click', function()
 
   // sort people by user selection
   var sortedList = sortList(filteredList, selectedOption)
-  
+
   // and show the results
   showList(sortedList)
 })
@@ -122,7 +122,7 @@ $findButton.on('click', function()
 $searchInput.on('keypress keyup', function()
 {
   // let's capture the text from the input box
-  // store it in the userInput variable	
+  // store it in the userInput variable
   var text = $searchInput.val()
 
   if (text == '')
@@ -132,9 +132,9 @@ $searchInput.on('keypress keyup', function()
   else
   {
     var searchResults = searchList(peopleList, text)
-    // var searchResults = searchListByYesOrNo(peopleList, text) 
+    // var searchResults = searchListByYesOrNo(peopleList, text)
     // console.log(searchResults)
-    // finally, we spit out the searchResults 
+    // finally, we spit out the searchResults
     // using the showList function
     // so that users can see
     showList(searchResults)
@@ -145,10 +145,10 @@ $searchInput.on('keypress keyup', function()
 $backButton.on('click', function()
 {
   // remove the class="profile" to slide the whole thing back to the search page
-  $pageWrapper.removeClass('profile') 
+  $pageWrapper.removeClass('profile')
 })
 
-function showList (list) 
+function showList (list)
 {
   // update HTML
   $totalFound.html(makeTotalFoundHTML(list))
@@ -161,7 +161,7 @@ function showList (list)
     var person = list[personId]
     showProfile(person)
   })
-  
+
   // and finally, show the results
   // add class="active" to $results, so that it will show (see pageSearch.css
   $results.addClass('active')
@@ -172,7 +172,7 @@ function showProfile (person)
   var personHTML = makePersonHTML(person)
 
   $person.html(personHTML)
-  
+
   // we add class="profile" to make the whole thing slide to the left and display the profile page
   $pageWrapper.addClass('profile')
 }*/
