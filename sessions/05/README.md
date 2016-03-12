@@ -811,17 +811,18 @@ $('button').on('click', function() {
   console.log(resultsList);
 
   // and show the results
-  // showList(resultsList)
+  showList(resultsList)
 })
 ```
 
 #### Let's break it down
 
-First the outer shell:
+##### First the outer shell
+
 ```javascript
-$('button').on('click', function(){
-..............
-..............
+$('button').on('click', function() {
+	..............
+	..............
 })
 ``` 
 
@@ -829,7 +830,9 @@ $('button').on('click', function(){
 
 `.on('click', function() { ........... })` says **when** the user **clicks** the selected element, perform this function. In our case, **when** the user **clicks** `Find`, perform this function.
 
-*Inside* the function:
+##### *Inside* the function
+
+###### What option did the user pick?
 
 ```javascript
 // get user input
@@ -840,17 +843,21 @@ var selectedOption = $('select').val(); // this is jQuery val()
 * Get the currently selected value (for example the `likesPets`) using the jQuery function `.val()`
 * Save that value in a `var` named `selectedOption`
 
+###### Pick people according to the selected option
+
 ```javascript
 // filter people by user selection
 var resultsList = filterAndSortList(peopleList, selectedOption);
 ```
 
-1. Use the function `filterAndSortList` to filter and the list with all the people `peopleList` to match the user's selection
+1. Use the function `filterAndSortList` to filter and sort the list with all the people `peopleList` to match the user's selection `selectedOption`
 * Store the filtered people in a `var` named `resultsList`
 
-You can find the function `filterAndSortList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/functions/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/functions/filter.js) (link also in the copy-paste doc).
+You can find the function `filterAndSortList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js) (link also in the copy-paste doc).
 
 Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `filter.js` in your app.
+
+In `filter.js` paste the whole `filterAndSortList` function from GitHub.
 
 <!--
 **filter** the data to match the user's selection (leaving out results that don't match the user selection)
@@ -860,11 +867,7 @@ Create a new file in your Thimble project, call it `filter.js` (or whatever you 
 
 the highest criteria match comes first (think Google search - most relevant results come up higher in the search results)
 	For example, if the selected option is `Move my piano`, we will sort the people based on their body strength (ie `person.bodyStrength = 5`)
-	-->
-
-
-# TODO
-
+	
 * **display** the filtered and sorted data
 
 There's something missing, right?
@@ -876,17 +879,25 @@ Yes! Each of those 3 lines of code contains a function which we must declare, ot
 
 You'll need to create some new JavaScript files 
 
-Right-click under your files in the left sidebar of your Thimble project. Create a `New Folder` and call it `js`. Now right-click on the javaScript folder and create a `New Folder` inside it called `functions`. Right-click on app.js and `Move To` the `js` file.
+Right-click under your files in the left sidebar of your Thimble project. Create a `New Folder` and call it `js`. Now right-click on the javaScript folder and create a `New Folder` inside it called `functions`. Right-click on app.js and `Move To` the `js` file.-->
 
-Inside the functions folder, create 3 `New File`s:
-* filter.js - go to this link **LINK HERE**, copy all the code and paste into your filter.js file
-* sort.js - go to this link **LINK HERE**, copy all the code and paste into your sort.js file
-* show.js - go to this link **LINK HERE**, copy all the code and paste into your show.js file<!-- NEED TO CHECK IF IS OK - showList and showProfile in one file -->
+###### Display the results
+
+```js
+showList(resultsList);
+```
+
+In the line above we are using the function `showList` to spit out the results in the HTML interface.
+
+You can find it at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js) (link also in the copy-paste doc).
+
+Create a new file in your Thimble project, call it `show.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `show.js` in your app.
+
+In `show.js` paste the whole JS code from GitHub.
 
 
 
 
-## Your turn!
 
 
 
