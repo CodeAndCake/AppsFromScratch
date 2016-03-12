@@ -17,7 +17,7 @@ database.on('child_added', function(child){
 
 
 // hide the detail page by default
-$('#detail').hide();
+$('#details').hide();
 
 
 $('button').on('click', function(){
@@ -34,39 +34,13 @@ $('button').on('click', function(){
   // and show the results
   showList(resultsList)
 
-
 });
-
-function showList (list) 
-{
-  // update HTML
-  $('ul').html( makeListHTML(list) ); // html is a jQuery function 
-
-  // add behaviour to the list items
-  $('li').on('click', function()
-  {
-    var personId = $(this).attr('id')
-    var person = list[personId]
-    showProfile(person)
-  })
-}
-
-function showProfile (person)
-{
-  var personHTML = makePersonHTML(person)
-
-  $('#person').html(personHTML)
-  
-  $('#home').hide();
-  $('#detail').show();
-}
 
 
 $('#back').on('click', function(){
     
-   $('#home').show();
-  $('#detail').hide();
-
+  $('#home').show();
+  $('#details').hide();
 
 });
 

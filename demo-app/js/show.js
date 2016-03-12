@@ -1,13 +1,26 @@
-/*function makeTotalFoundHTML (list)
-{
-  var total = list.length
-  if (total == 0) return 'No result found'
-  else if (total == 1) return '1 person found'
-  else return total + ' people found'
-}*/
+function showList (list) {
+  // update HTML
+  $('ul').html( makeListHTML(list) ); // html is a jQuery function 
 
-function makeListHTML (list) 
-{
+  // add behaviour to the list items
+  $('li').on('click', function()
+  {
+    var personId = $(this).attr('id')
+    var person = list[personId]
+    showProfile(person)
+  })
+}
+
+function showProfile (person) {
+  var personHTML = makePersonHTML(person)
+
+  $('#person').html(personHTML)
+  
+  $('#home').hide();
+  $('#details').show();
+}
+
+function makeListHTML (list) {
   var html = '' // empty for now, we'll add HTML as we loop through the list 
   var total = list.length
 
@@ -27,8 +40,7 @@ function makeListHTML (list)
   return html
 }
 
-function makeListItemHTML (person, index)
-{
+function makeListItemHTML (person, index) {
   /*
     This function creates some nice HTML around the person's data
 
@@ -47,8 +59,7 @@ function makeListItemHTML (person, index)
   return li        
 }
 
-function makePersonHTML (person)
-{
+function makePersonHTML (person) {
   /*
     This function creates some nice HTML around the person's data
 
