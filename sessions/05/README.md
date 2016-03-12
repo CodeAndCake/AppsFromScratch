@@ -685,10 +685,10 @@ At the end of the document `body` add a `script` like this
 
 	HTML | CSS
 	---- | ---
-	`class` | `.`
-	```html <p class="question"> ... </p>``` | ```css .question { ... } ```
-	`id` | `#`
-	```html <p id="firstQuestion"> ... </p>``` | ```css #firstQuestion { ... } ```
+	class | .
+	 <p class="question"> ... </p> |  .question { ... }
+	id | #
+	<p id="firstQuestion"> ... </p> | #firstQuestion { ... }
 	
 * In `app.js` you created a new Firebase database
 
@@ -716,7 +716,7 @@ At the end of the document `body` add a `script` like this
 
 	Remember, that last step uses some Firebase functions: 
 
-	* `on()` is the Firebase listener that says ***when** something happens (an **event** like a click) then perform an action* 
+	* `on()` is the Firebase listener that says **when** something happens (an **event** like a click) then perform an action 
 
 	* `val()`is a Firebase function that collects the data you've stored inside each `person`. In our case, the data was `likesPets`, `bakingSkills`, `bodyStrength` and so on...
 
@@ -726,38 +726,9 @@ At the end of the document `body` add a `script` like this
 
 	Didn't we use `push()` to save data into our database? 
 
-	Yes! We checked the Firebase docs [firebase.com/docs/web](https://www.firebase.com/docs/web/guide) to see which functions they want us to use to save data using their service. It just so happens they also use `push()`. You used that Firebase function to save data into the database: `database.push(person)`
+	Yes! We checked the Firebase docs [firebase.com/docs/web](https://www.firebase.com/docs/web/guide) to see which functions they want us to use to save data using their service. It just so happens they also call it `push()`. You used that Firebase function to save data into the database: `database.push(person)`
 
 ## Let's move on!
-
-<!--### 1. Create an `html` object
-
-First, prepare a JavaScript object which selects all the HTML elements. This will make it easier to display data in your HTML. 
-
-Go to **LINK HERE** and copy the following code:
-
-```javaScript
-// First let's store all the interface elements we need from HTML in an object
-// We are using jQuery ($) to select stuff from HTML
-var html = {
-  pageWrapper: $('article'),
-  pageSearch: $('#pageSearch'),
-  searchInput: $('#pageSearch input[type=search]'),
-  findButton: $('#pageSearch button'),
-  dropDown: $('#pageSearch select'),
-  results: $('#pageSearch .results'),
-  totalFound: $('#pageSearch .results .total'),
-  resultsList: $('#pageSearch .results ul'),
-  pageProfile: $('#pageProfile'),
-  backButton: $('#pageProfile .back'),
-  person: $('#pageProfile .person')
-};
-```
-Paste it into app.js under the `peopleList[]` array.
-
-In this object which we've named `html`, jQuery is used `$` to select HTML elements from your interface by `class` and `id`.-->
-
-<!--  HTML OBJECT GRAPHIC  -->
 
 Open your Thimble project.
 
@@ -770,6 +741,8 @@ Just before the **end** of the `body` add a `script` like this
 ```html
 		...
 		<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+		<!-- Make sure jQuery is loaded before app.js-->
+		<script src="js/app.js"></script>
 	</body>
 </html>	
 ``` 
@@ -789,6 +762,8 @@ In `app.js` write
 ```js
 $('#details').hide();
 ```  
+
+![alt text](assets/jQuery.png "jQuery")
 
 The line above does two things:
 
@@ -811,7 +786,7 @@ $('button').on('click', function() {
   console.log(resultsList);
 
   // and show the results
-  showList(resultsList)
+  showList(resultsList);
 })
 ```
 
@@ -839,9 +814,10 @@ $('button').on('click', function() {
 var selectedOption = $('select').val(); // this is jQuery val()
 ```
 
-1. Select the `select` (HTML for dropdown) with jQuery `$`
+1. Create a `var` named `selectedOption`
+* `$('select')`: select the `select` (HTML for dropdown) with jQuery `$`
 * Get the currently selected value (for example the `likesPets`) using the jQuery function `.val()`
-* Save that value in a `var` named `selectedOption`
+* Save that value in `selectedOption`
 
 ###### Pick people according to the selected option
 
@@ -850,36 +826,15 @@ var selectedOption = $('select').val(); // this is jQuery val()
 var resultsList = filterAndSortList(peopleList, selectedOption);
 ```
 
-1. Use the function `filterAndSortList` to filter and sort the list with all the people `peopleList` to match the user's selection `selectedOption`
-* Store the filtered people in a `var` named `resultsList`
+1. Create a `var` named `resultsList` 
+* Use the function `filterAndSortList` to filter and sort `peopleList` (the list with all the people) so that it matches the user 's selection (`selectedOption`)
+* Store the filtered people in `resultsList`
 
 You can find the function `filterAndSortList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js) (link also in the copy-paste doc).
 
 Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `filter.js` in your app.
 
 In `filter.js` paste the whole `filterAndSortList` function from GitHub.
-
-<!--
-**filter** the data to match the user's selection (leaving out results that don't match the user selection)
-
-2. For example, if the selected option is `Keep my pet`, we will filter out all the people that don't like pets (ie `person.likePets = false`)
-* **sort** the filtered data into order - small to big, or big to small. 
-
-the highest criteria match comes first (think Google search - most relevant results come up higher in the search results)
-	For example, if the selected option is `Move my piano`, we will sort the people based on their body strength (ie `person.bodyStrength = 5`)
-	
-* **display** the filtered and sorted data
-
-There's something missing, right?
-
-
-### 2. Filter, sort and display
-
-Yes! Each of those 3 lines of code contains a function which we must declare, otherwise nothing will happen when the user clicks on the `findButton`.
-
-You'll need to create some new JavaScript files 
-
-Right-click under your files in the left sidebar of your Thimble project. Create a `New Folder` and call it `js`. Now right-click on the javaScript folder and create a `New Folder` inside it called `functions`. Right-click on app.js and `Move To` the `js` file.-->
 
 ###### Display the results
 
@@ -895,7 +850,18 @@ Create a new file in your Thimble project, call it `show.js` (or whatever you li
 
 In `show.js` paste the whole JS code from GitHub.
 
+### 4. When someone clicks on the `Back` button, what happens?
 
+```js
+$('#back').on('click', function(){
+    
+  $('#home').show();
+  $('#details').hide();
+
+});
+```
+
+See if you can integrate the code above (you can copy it from the in the copy-paste doc) in your `app.js`.
 
 
 
