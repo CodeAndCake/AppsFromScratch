@@ -742,7 +742,7 @@ Just before the **end** of the `body` add a `script` like this
 		...
 		<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
 		<!-- Make sure jQuery is loaded before app.js-->
-		<script src="js/app.js"></script>
+		<script src="app.js"></script>
 	</body>
 </html>	
 ``` 
@@ -765,10 +765,10 @@ $('#details').hide();
 
 ![alt text](assets/jQuery.png "jQuery")
 
-The line above does two things:
+> The line above does two things:
 
-1. `$('#details')`: **select** the element with `id=details`
-* Perform the `hide()` function on that selection
+> 1. `$('#details')`: **select** the element with `id=details`
+> * Perform the `hide()` function on that selection
 
 ### 3. When someone clicks on the `Find` button, what happens?
 
