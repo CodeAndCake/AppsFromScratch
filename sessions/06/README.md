@@ -1,8 +1,31 @@
 ### Plan
 
-- build your own database
-- remix the demo-app & code your own app
+- [ ] **Build your own database**
 
+	10-15 minutes A few pointers on how to do it. How do you want to filter that data? What is the UX? 
+	
+	Talk about ranking and "data design" (see https://github.com/RavensbourneWebMedia/Web-development-workshop/blob/2015/sessions/week-15.md#data-design-principles)
+
+- [ ] Matteo to build a Thimble hackable Firebase form, based on this https://github.com/macek/jquery-serialize-object and http://jsfiddle.net/sxGtM/3/
+
+	So students can customise it to their own data, change the Firebase URL and then start submitting objects
+
+- [ ] **Remix** the demo-app & code your own app
+
+	Add this code to make it look like a proper app on your phone
+	
+	`viewport` and icons
+
+	Add it to your home screen!
+	
+- [ ] Evaluation form (15 minutes)
+
+- [ ] Possibly volunteering people for focus group 	
+- [ ] [Resources](#resources) to continue your app-making journey
+
+- [ ] [Celebrate](#celebrations)! :cake:
+
+- [ ] What else have they achieved? Go through the 5 days again	
 
 
 # Coding and app-making for beginners 
@@ -12,7 +35,7 @@
 
 
 
-
+<!--
 1. [Code](#code) the `details` screen
 * [Pitch](#pitch) your ideas and prototypes
 * [Resources](#resources) to continue your app-making journey
@@ -166,7 +189,7 @@ Use **examples** and **stories** from your experience. They will make your point
 * Tell us the **story** of your user
 
 ![](assets/story.png)
-
+-->
 
 # Resources
 
@@ -243,69 +266,49 @@ Use **examples** and **stories** from your experience. They will make your point
 	> What not to do!
 	
 
-# 15 things you've achieved in 24 hours!
+# Things you achieved in 24 hours!
 
+1. Analysed the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
 
-1. Unpacked the **design process**: iterative, collaborative
+* Produced initial **wireframes** by sketching
 
-2. Discussed examples of **good design patterns** applicaple to user interfaces within apps and many other digital content
+* **HTML** - created a Web app
 
-3. Analysed the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
+* **CSS** - styled your own page
 
-4. Applied this knowledge to your own ideas, learning how to **develop and structure your designs** 
+* The principles of **JavaScript and jQuery**, and even understanding *most* of it :)
 
-5. Identified your **user**
+* Linked **database data** to your app
 
-6. Identified a **problem** for your user
+* Used the Firebase **API**, understanding database design
 
-7. Researched **existing products** to better inform your ideas
+* Learned to search for solutions online
+ 
+* Debug your code
 
-8. Produced initial **wireframes** by sketching
+* Good practices for effective coding: copy-paste, comments  
 
-9. Produced more in depth, detailed wireframes using **digital mock-up tools**
-
-10. Familiarised yourself with and understood the role of the **three key technologies** of the web:
-	- Learned the basics of **HTML** and created your first interactive page
-	- Learned the basics of **CSS** and styled your first page
-	- Survived an introduction to **Javascript and JQuery!**, experiencing the core components of Javascript and understanding *most* of it!
-
-11. Linked **spreadsheet data** to your code to produce the beginnings of a usable prototype
-
-12. Familiarised yourselves with **APIs**, understanding their role in app design and function
-
-13. **Presented your ideas** to the team and integrated their constructive feedback into your work
-
-14. Assessed other team members ideas and **provided constructive feedback**
-	- Able to analyse ideas and identify gaps in the user experience
-
-15. Overseen the whole process of app prototyping whilst creating **proof-of-concept prototypes** for Web applications
-
-
-**...Job well done!**
-
-
-# Let's celebrate!
+### Well done!
 
 And remember...
 
-1. Googling problems is not *cheating*
-	
-	> Google is your friend
-2. Copy-pasting code is not *cheating*
+1. Searching for problems online is not *cheating*
+* Copy-pasting code is not *cheating*
 
-	> Good coders type, great coders copy-paste
-4. Iterate and collaborate
-   
-   > Try again (and again) until it works and ask for feedback
-5. **It's OK**. You're not going to break anything
+	> Great coders copy-paste
+* **It's OK**. You're not going to break anything.
+
+	> Embrace your mistakes. Debug them :)
+
+### Keep moving forward in your learning journey!
 
 
-# Keep moving forward in your learning journey!
-
+## One last thing
 
 We need your **feedback**, it will hugely help us improve this course!
 
-### [tinyurl.com/o8qknkg](http://tinyurl.com/o8qknkg)
+[tinyurl.com/o8qknkg](http://tinyurl.com/o8qknkg)
+
 
 
 ### License
