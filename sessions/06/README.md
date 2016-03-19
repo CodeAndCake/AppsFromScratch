@@ -276,26 +276,26 @@ Scroll down to around line 43.
 
 `makeListItemHTML` is the function which populates the results list:
 
-	```js
-	function makeListItemHTML (person, index) {
-  		/*
-    		This function creates some nice HTML around the person's data
+```js
+function makeListItemHTML (person, index) {
+	/*
+ 		This function creates some nice HTML around the person's data
 
-    		Return something like this:
+ 		Return something like this:
 
-    		<li>
-      		<h2>Aimee</h2>
-    		</li>
-  		*/
+ 		<li>
+   		<h2>Aimee</h2>
+ 		</li>
+	*/
 
-  		// li = List Item
-  		var li  = '<li id="' + index + '">' 
-  		+ '<h2>' + person.name + '</h2>' 
-  		+ '</li>'        
+	// li = List Item
+	var li  = '<li id="' + index + '">' 
+	+ '<h2>' + person.name + '</h2>' 
+	+ '</li>'        
 
-  		return li        
-	}
-	```
+	return li        
+}
+```
 
 This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
 
