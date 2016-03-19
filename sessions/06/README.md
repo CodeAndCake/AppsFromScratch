@@ -237,117 +237,11 @@ This is a Thimble project which uses an HTML `form` to *push* data to Firebase. 
 	Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
 
 
-
-
-
-<!--
-1. [Code](#code) the `details` screen
-* [Pitch](#pitch) your ideas and prototypes
-* [Resources](#resources) to continue your app-making journey
-* [Celebrate](#celebrations)! :cake:
-
-
-# Code!
-
-**GOAL** To code the `details` screen, where users can view more info about a person (or destination, tool etc.) and then *contact* the person or *go back* to the `main` screen.
-
-![](assets/details.gif)
-
-1. [Fork this pen](http://codepen.io/baddeo/full/JYpgwL)!
-* Take a look at the **HTML** and notice the new structure:
-	```html
-	<div id="page_slider">
-  		<div id="page1">
-  			... all your current HTML here
-  		</div>
-  		<div id="page2">
-  			...
-  		</div>
-	</div> 
-	```
-	
-	`#page1` is the initial screen users will interact with
-	
-	`#page2` is where you are going to display details about a person / mentor / tool etc.
-	
-	`#page_slider` **wraps** `#page1` and `#page2`
-* The *sliding* effect is a **CSS** trick:
-
-	```css
-	#page_slider {
-  		width: 200%;
-  		transition: margin-left .2s ease-out;
-	}
-	
-	#page_slider.details_view {
-  		margin-left: -100%;
-	}
-	```
-	
-	`#page_slider` (aka the *wrapper*) is set to be `200%` wide, so that it can accommodate 2 "pages". 
-	
-	When we want to display the details page `#page2`, we can use **JavaScript** to add the class `details_view`, which sets the `margin-left` to -100%, effectively sliding the wrapper half-way to the left.
-* Add new data to the **spreadsheet** (aka the *database*) so that each row has a `picture` URL, and some `description`.
-
-	For example:
-	
-	* `name` > `Yuki`
-	* `image` > `http://cdn.themill.com/media/00000010245.jpg`
-	* `description` > `Expert baker and food writer` 
-* In **JS**, there are some functions you will need to hack:
-	
-	In `function getPeopleList`:
-		
-	Find the line where the `person` object is filled with data from the spreadsheet 
-	```js
-	person.name = row.gsx$name.$t
-	// add the line below to add the image data to the person
-	person.image = row.gsx$image.$t
-	// and do the same for the description
-	```
-* In **JS**, `function displayList`:
-		
-	Find and **delete** the lines where `li` is created and appended to `listContainer` 
-	```js
-	var li = '<li>' + person.name + '</li>'
-    listContainer.append(li)
-    ```
-	
-	Add the lines below
-	```js
-	var listItem = $(getListItem(person))
-
-     // when someone clicks on the list item..
-     // execute the function onListItemClick
-     // and "bind" it to the current person
-     // otherwise it would display the wrong person's data
-     listItem.on('click', onListItemClick.bind(this, person))
-
-     // append = add at the end..
-     listContainer.append(listItem)
-    ``` 
-* In **JS**, *copy-paste* the following functions from our pen into your pen, at the bottom of the JS panel
-       
-	* `function getListItem`
-	* `function onListItemClick`
-	* `function getDetails`
-	* `function displayDetails`
-* In **JS**, *copy-paste* the code below at the bottom of the JS panel
-	
-	```js
-	$('#back').on('click', function()
-	{
-	   $('#page_slider').removeClass('details_view') 
-	})
-	```
-	
--->
-
 # Displaying data
 
 Once you've created your own database and *pushed* data to it, you'll need to customise the code you already have to display your new data.
 
-## Remix your project
+### Remix your project
 
 So you don't lose your previous work:
 
@@ -355,10 +249,16 @@ So you don't lose your previous work:
 * Preview it 
 * Press the `Remix` button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
 
-## Customise your code
+### Customise your code
 
-Go to the function `show.js`.
+1. In your remixed project, open `app.js` and change `databaseURL` to your own database URL. 
 
+	This will instruct the app to load data from your own Firebase.
+* In `index.html` change the `option` elements to reflect your data. 
+
+	Make sure the `value` attributes match the property names you are using in Firebase. 
+
+<!--
 Take a look at the code, can you spot the parts you need to change?
 
 Your data might not include people... what if you're storing places or items?
@@ -366,37 +266,51 @@ Your data might not include people... what if you're storing places or items?
 Sift through the code and change `person` to whatever your objects are.
 
 Remember to also change `personId` , `personHTML` and `makePersonHTML`!
+-->
 
-## Change the display
+### Change the display
 
-Scroll down to around line 43 in `show.js`. This is the code which determines what is displayed in the list of results:
+Go to the function `show.js`.
+
+Scroll down to around line 43. 
+
+`makeListItemHTML` is the function which populates the results list:
+
+	```js
+	function makeListItemHTML (person, index) {
+  		/*
+    		This function creates some nice HTML around the person's data
+
+    		Return something like this:
+
+    		<li>
+      		<h2>Aimee</h2>
+    		</li>
+  		*/
+
+  		// li = List Item
+  		var li  = '<li id="' + index + '">' 
+  		+ '<h2>' + person.name + '</h2>' 
+  		+ '</li>'        
+
+  		return li        
+	}
+	```
+
+This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
+
+As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
+
+If you want to add an `img` for instance, then you can tweak the lines where `li` is stringed together: 
 
 ```js
-function makeListItemHTML (person, index) {
-  /*
-    This function creates some nice HTML around the person's data
-
-    Return something like this:
-
-    <li>
-      <h2>Aimee</h2>
-    </li>
-  */
-
-  // li = List Item
-  var li  = '<li id="' + index + '">' 
-  + '<h2>' + person.name + '</h2>' 
-  + '</li>'        
-
-  return li        
-}
-```
-
-This function takes in the JavaScript object `person`
-If you want to add an image, then 
-
+var li  = '<li id="' + index + '">' 
++ '<img src="' + person.image + '">' 
++ '<h2>' + person.name + '</h2>' 
++ '</li>'    
+```  		
 	
-## Finishing touches
+### Finishing touches
 
 Copy and paste this code into the `head` of your HTML document under the `title` element. You can find it in the copy-paste document:
 
