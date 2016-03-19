@@ -226,6 +226,23 @@ Go to Firebase, log in and *create a new app* (which really means create a *new 
 * Once your new app is ready (it will take a few seconds) it will appear next to the greyed-out box, click on its URL to open it
 
 	![](assets/new-firebase-04.jpg)
+
+# Displaying data
+
+Once you've created your database and pushed data, you'll need to customise the code you already have to display your new data.
+
+So you don't lose your previous work, save your project, publish, preview it and then press the **remix** button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
+
+## Customise your code
+
+Go to the function `show.js`.
+
+Take a look at the code, can you spot the parts you need to change?
+
+Your data might not include people... what if you're storing places or items?
+
+Sift through the code and change `person` to whatever your objects are. 
+
 	
 #  Finishing touches
 
