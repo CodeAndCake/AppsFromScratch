@@ -231,6 +231,8 @@ Go to Firebase, log in and *create a new app* (which really means create a *new 
 
 Once you've created your database and pushed data, you'll need to customise the code you already have to display your new data.
 
+## Remix your project
+
 So you don't lose your previous work, save your project, publish, preview it and then press the **remix** button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
 
 ## Customise your code
@@ -241,7 +243,37 @@ Take a look at the code, can you spot the parts you need to change?
 
 Your data might not include people... what if you're storing places or items?
 
-Sift through the code and change `person` to whatever your objects are. 
+Sift through the code and change `person` to whatever your objects are.
+
+Remember to also change `personId` , `personHTML` and `makePersonHTML`!
+
+## Change the display
+
+Scroll down to around line 43 in `show.js`. This is the code which determines what is displayed in the list of results:
+
+```js
+function makeListItemHTML (person, index) {
+  /*
+    This function creates some nice HTML around the person's data
+
+    Return something like this:
+
+    <li>
+      <h2>Aimee</h2>
+    </li>
+  */
+
+  // li = List Item
+  var li  = '<li id="' + index + '">' 
+  + '<h2>' + person.name + '</h2>' 
+  + '</li>'        
+
+  return li        
+}
+```
+
+This function takes in the JavaScript object `person`
+If you want to add an image, then 
 
 	
 #  Finishing touches
