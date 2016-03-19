@@ -54,8 +54,8 @@ function filterAndSortList(completeList, selectedOption, criterias) {
         	if(criterias != undefined){
 
                 // yet another Array method.
-                // It will return the first founded item inside the array
-        		var founded = criterias.find(function(criteria){
+                // It will return the first found item inside the array
+        		var found = criterias.find(function(criteria){
 
         			if(value == criteria){
 
@@ -69,8 +69,8 @@ function filterAndSortList(completeList, selectedOption, criterias) {
 
                 });
 
-                // returns true if there was an item founded meeting the criterias
-                return founded != undefined;
+                // returns true if there was an item found meeting the criterias
+                return found != undefined;
 
         	}else{
 
