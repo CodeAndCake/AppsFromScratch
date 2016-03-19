@@ -1,4 +1,4 @@
-### Plan
+<!--### Plan
 
 - [ ] **Build your own database**
 
@@ -25,7 +25,7 @@
 
 - [ ] [Celebrate](#celebrations)! :cake:
 
-- [ ] What else have they achieved? Go through the 5 days again	
+- [ ] What else have they achieved? Go through the 5 days again	 -->
 
 
 # Coding and app-making for beginners 
@@ -48,7 +48,7 @@
 
 This is the last day of the course. To continue your learning journey, we'll share with you some hand-picked **resources and links** to cool stuff on the Web.
 
-You have done so well! Let's celebrate your achievements. :cake:
+You have done so well! Let's celebrate your achievements :tada:
 
 
 # Build your own database
@@ -82,14 +82,6 @@ Also known as [1NF](http://en.wikipedia.org/wiki/First_normal_form) (first norma
 This way you can take specific bits of data and spit them out wherever and however you want in your app.
 
 Also, you could do things like `calculate the average age of our people`.
-
-<!--#### Do not overdo 1NF
-
-| Regional code | Area code | Phone number | 
-| ------ | ---    | --- |
-| +44 | 02 | 123456578 |
-
-Is it really necessary to break a phone number down that much?-->
 
 ### 2. Break it into multiple *dimensions*
 
@@ -227,6 +219,22 @@ Go to Firebase, log in and *create a new app* (which really means create a *new 
 
 	![](assets/new-firebase-04.jpg)
 	
+### Push data to your new Firebase
+
+Go to [bit.ly/firebasePusher](http://bit.ly/firebasePusher) and click `Remix`.
+
+This is a Thimble project which uses an HTML `form` to *push* data to Firebase. In order to make it work with your own Firebase database, you need to make a couple of changes:
+
+1. Change `databaseURL` to your own Firebase URL
+
+	![](assets/databaseURL.png)
+* Tweak the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
+
+	```html
+	<input name="CHANGE_THIS" ...>
+	```
+
+	Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
 
 
 
