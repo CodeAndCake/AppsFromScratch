@@ -1,4 +1,4 @@
-### Plan
+<!--### Plan
 
 - [ ] **Build your own database**
 
@@ -25,7 +25,7 @@
 
 - [ ] [Celebrate](#celebrations)! :cake:
 
-- [ ] What else have they achieved? Go through the 5 days again	
+- [ ] What else have they achieved? Go through the 5 days again	 -->
 
 
 # Coding and app-making for beginners 
@@ -48,7 +48,7 @@
 
 This is the last day of the course. To continue your learning journey, we'll share with you some hand-picked **resources and links** to cool stuff on the Web.
 
-You have done so well! Let's celebrate your achievements. :cake:
+You have done so well! Let's celebrate your achievements :tada:
 
 
 # Build your own database
@@ -82,14 +82,6 @@ Also known as [1NF](http://en.wikipedia.org/wiki/First_normal_form) (first norma
 This way you can take specific bits of data and spit them out wherever and however you want in your app.
 
 Also, you could do things like `calculate the average age of our people`.
-
-<!--#### Do not overdo 1NF
-
-| Regional code | Area code | Phone number | 
-| ------ | ---    | --- |
-| +44 | 02 | 123456578 |
-
-Is it really necessary to break a phone number down that much?-->
 
 ### 2. Break it into multiple *dimensions*
 
@@ -226,14 +218,142 @@ Go to Firebase, log in and *create a new app* (which really means create a *new 
 * Once your new app is ready (it will take a few seconds) it will appear next to the greyed-out box, click on its URL to open it
 
 	![](assets/new-firebase-04.jpg)
+	
+### Push data to your new Firebase
+
+Go to [bit.ly/firebasePusher](http://bit.ly/firebasePusher) and click `Remix`.
+
+This is a Thimble project which uses an HTML `form` to *push* data to Firebase. In order to make it work with your own Firebase database, you need to make a couple of changes:
+
+1. Change `databaseURL` to your own Firebase URL
+
+	![](assets/databaseURL.png)
+* Tweak the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
+
+	```html
+	<input name="CHANGE_THIS" ...>
+	```
+
+	Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
+
+
+
+
+
+<!--
+1. [Code](#code) the `details` screen
+* [Pitch](#pitch) your ideas and prototypes
+* [Resources](#resources) to continue your app-making journey
+* [Celebrate](#celebrations)! :cake:
+
+
+# Code!
+
+**GOAL** To code the `details` screen, where users can view more info about a person (or destination, tool etc.) and then *contact* the person or *go back* to the `main` screen.
+
+![](assets/details.gif)
+
+1. [Fork this pen](http://codepen.io/baddeo/full/JYpgwL)!
+* Take a look at the **HTML** and notice the new structure:
+	```html
+	<div id="page_slider">
+  		<div id="page1">
+  			... all your current HTML here
+  		</div>
+  		<div id="page2">
+  			...
+  		</div>
+	</div> 
+	```
+	
+	`#page1` is the initial screen users will interact with
+	
+	`#page2` is where you are going to display details about a person / mentor / tool etc.
+	
+	`#page_slider` **wraps** `#page1` and `#page2`
+* The *sliding* effect is a **CSS** trick:
+
+	```css
+	#page_slider {
+  		width: 200%;
+  		transition: margin-left .2s ease-out;
+	}
+	
+	#page_slider.details_view {
+  		margin-left: -100%;
+	}
+	```
+	
+	`#page_slider` (aka the *wrapper*) is set to be `200%` wide, so that it can accommodate 2 "pages". 
+	
+	When we want to display the details page `#page2`, we can use **JavaScript** to add the class `details_view`, which sets the `margin-left` to -100%, effectively sliding the wrapper half-way to the left.
+* Add new data to the **spreadsheet** (aka the *database*) so that each row has a `picture` URL, and some `description`.
+
+	For example:
+	
+	* `name` > `Yuki`
+	* `image` > `http://cdn.themill.com/media/00000010245.jpg`
+	* `description` > `Expert baker and food writer` 
+* In **JS**, there are some functions you will need to hack:
+	
+	In `function getPeopleList`:
+		
+	Find the line where the `person` object is filled with data from the spreadsheet 
+	```js
+	person.name = row.gsx$name.$t
+	// add the line below to add the image data to the person
+	person.image = row.gsx$image.$t
+	// and do the same for the description
+	```
+* In **JS**, `function displayList`:
+		
+	Find and **delete** the lines where `li` is created and appended to `listContainer` 
+	```js
+	var li = '<li>' + person.name + '</li>'
+    listContainer.append(li)
+    ```
+	
+	Add the lines below
+	```js
+	var listItem = $(getListItem(person))
+
+     // when someone clicks on the list item..
+     // execute the function onListItemClick
+     // and "bind" it to the current person
+     // otherwise it would display the wrong person's data
+     listItem.on('click', onListItemClick.bind(this, person))
+
+     // append = add at the end..
+     listContainer.append(listItem)
+    ``` 
+* In **JS**, *copy-paste* the following functions from our pen into your pen, at the bottom of the JS panel
+       
+	* `function getListItem`
+	* `function onListItemClick`
+	* `function getDetails`
+	* `function displayDetails`
+* In **JS**, *copy-paste* the code below at the bottom of the JS panel
+	
+	```js
+	$('#back').on('click', function()
+	{
+	   $('#page_slider').removeClass('details_view') 
+	})
+	```
+	
+-->
 
 # Displaying data
 
-Once you've created your database and pushed data, you'll need to customise the code you already have to display your new data.
+Once you've created your own database and *pushed* data to it, you'll need to customise the code you already have to display your new data.
 
 ## Remix your project
 
-So you don't lose your previous work, save your project, publish, preview it and then press the **remix** button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
+So you don't lose your previous work:
+
+1. Publish your project publish
+* Preview it 
+* Press the `Remix` button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
 
 ## Customise your code
 
@@ -276,7 +396,7 @@ This function takes in the JavaScript object `person`
 If you want to add an image, then 
 
 	
-#  Finishing touches
+## Finishing touches
 
 Copy and paste this code into the `head` of your HTML document under the `title` element. You can find it in the copy-paste document:
 
@@ -291,6 +411,7 @@ Copy and paste this code into the `head` of your HTML document under the `title`
 ``` 
 
 This code ensures your app will display well on mobile. Be sure to change the `link` `href="  "` to the url of whatever image you'd like to use for your app icon. The image should be square shaped for the best display.
+
 
 # Resources
 
