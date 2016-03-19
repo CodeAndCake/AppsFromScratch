@@ -32,6 +32,26 @@
 
 ## Day 6
 
+[Last week](../05) you experienced hands-on what it's like to be a coder:
+
+* Integrating **code libraries**, like jQuery and Firebase JS, and reading their **docs** to learn how to use them 
+* **Copy-pasting** existing code into your project
+* **Adapting** pasted code to your app (changing *variable* names, tweaking *functions* etc).  
+* Using the JS Console to spot mistakes and test solutions (aka **debugging**)
+
+**Today** you can solidify what you have learned so far and apply it to your own app idea:
+
+1. Learn how to **design your database**, depending on how you want users to interact with your data.
+* Populate **your own Firebase database** with testing data 
+* **Remix** the *demo* app we've been working on so far (create a clone of it, so that you can keep the original as a reference, and the copy as a new playground): **code your own app** idea
+* Make it look like a proper app on your phone and add it to your home screen. Then go and brag about it with your family and friends :)
+
+This is the last day of the course. To continue your learning journey, we'll share with you some hand-picked **resources and links** to cool stuff on the Web.
+
+You have done so well! Let's celebrate your achievements. :cake:
+
+
+
 
 
 
