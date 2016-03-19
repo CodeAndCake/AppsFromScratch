@@ -17,9 +17,9 @@
  *
  * var selectedOption = "bakingSkills";
  *
- * var criterias = [3, 4, 5];
+ * var criteria = [3, 4, 5];
  *
- * filterAndSortList(completeList, selectedOption, criterias);
+ * filterAndSortList(completeList, selectedOption, criteria);
  *
  */
 
@@ -29,7 +29,7 @@
  * @param  {Array} - optional
  * @return {Array}
  */
-function filterAndSortList(completeList, selectedOption, criterias) {
+function filterAndSortList(completeList, selectedOption, criteria) {
 
 	// Using Array method filter function to iterate throught and store the matched items into the filteredList
 	// if the function inside returns true, it will store into filteredList
@@ -51,13 +51,13 @@ function filterAndSortList(completeList, selectedOption, criterias) {
 
         if (typeof value == 'number' || typeof value == 'string') {
 
-        	if(criterias != undefined){
+        	if(criteria != undefined){
 
                 // yet another Array method.
                 // It will return the first found item inside the array
-        		var found = criterias.find(function(criteria){
+        		var found = criteria.find(function(singleCriteria){
 
-        			if(value == criteria){
+        			if(value == singleCriteria){
 
         				return true;
 
@@ -69,7 +69,7 @@ function filterAndSortList(completeList, selectedOption, criterias) {
 
                 });
 
-                // returns true if there was an item found meeting the criterias
+                // returns true if there was an item found meeting the criteria
                 return found != undefined;
 
         	}else{
