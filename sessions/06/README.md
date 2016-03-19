@@ -51,6 +51,150 @@ This is the last day of the course. To continue your learning journey, we'll sha
 You have done so well! Let's celebrate your achievements. :cake:
 
 
+# Build your own database
+
+Good apps need good data.
+
+This doesn't mean a lot of data, but rather **well structured** data.
+
+A good database doesn't look like a *bucket* full of unstructured data. Instead, a good database structures its data is organised so that it's easy (and quick) to search through heaps of objects and pick just the ones you want.
+
+Let's look at three general principles of database design, and then you'll apply those to your own database.
+
+## Database design principles
+
+### 1. Break your data into *logical pieces*
+
+Also known as [1NF](http://en.wikipedia.org/wiki/First_normal_form) (first normal form). 
+    
+#### Bad example
+     
+| Person | 
+| ------ |
+| Danny Base 21 |
+
+#### Better example
+
+| Name | Surname | Age | 
+| ---- | ------- | --- |
+| Danny | Base | 21 |
+
+This way you can take specific bits of data and spit them out wherever and however you want in your app.
+
+Also, you could do things like `calculate the average age of our people`.
+
+<!--#### Do not overdo 1NF
+
+| Regional code | Area code | Phone number | 
+| ------ | ---    | --- |
+| +44 | 02 | 123456578 |
+
+Is it really necessary to break a phone number down that much?-->
+
+### 2. Break it into multiple *dimensions*
+
+Using arrays.
+
+#### Bad example
+
+| Recipe name | Ingredients | Method |
+| ----------- | ----------- | ------ |
+| Banana bread | 1 banana <br>1 cup of flour <br>pinch of salt | 1. Mix dry ingredients <br>2. Mash the banana <br>3. Mix it all together <br>4. Bake it for 30 minutes | 
+| Avocado on toast | 1 avocado <br>2 slices of bread <br>squeeze of lemon | 1. Toast bread <br>2. Scoop out avocado <br>3. Spread avocado on toast <br>4. Squeeze lemon on top | 
+
+#### Better example
+
+<table>
+    <tr>
+        <th>Recipe name</th>
+        <th>Ingredients</th>
+        <th>Method</th>
+    </tr>
+    <tr>
+        <td>Banana bread</td>
+        <td>
+            <table>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>banana</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>cup</td>
+                    <td>flour</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>pinch</td>
+                    <td>salt</td>
+                </tr>
+            </table>    
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mix dry ingredients</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mash the banana</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mix it all together</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bake it for 30 minutes</td>
+                </tr>
+            </table>    
+        </td>
+    </tr>
+</table>
+
+### 3. Use numbers for *ranking*
+
+Computers are extremely good at maths. For a computer,  computing numbers is a piece of cake. Yet computing natural languages (such as English) is something that even the most sophisticated machines still struggle with (think of Siri, for example).
+
+What's the trick then, if you want your app to be able to tell you `who are the best bakers in my area` for example? You **rank** people according to their baking skills.
+
+#### Bad example
+     
+| Name | Surname | Baking skills | 
+| ---- | ------- | ------------- |
+| Danny | Base | Excellent |
+| Jordan | Scripts | Amazing |
+
+#### Better example
+
+| Name | Surname | Baking skills (0-5) | 
+| ---- | ------- | ------------- |
+| Danny | Base | 4 |
+| Jordan | Scripts | 3 |
+
+If you want to rank data objects by **relevance** to a certain concept / keyword, use numbers.
+
+| Name | Surname | Comedy | Sci-fi | Western
+| ---- | ------- | ------ | ------ | -------
+| Quentin | Tarantino | 2 | 0 | 3
+| Martin | Scorsese | 3 | 0 | 1
+| Stanley | Kubrick | 0 | 3 | 0
+| Sofia | Coppola | 3 | 0 | 0
+
+
+
+
 
 
 
