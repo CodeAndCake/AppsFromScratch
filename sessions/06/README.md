@@ -341,60 +341,45 @@ This is a Thimble project which uses an HTML `form` to *push* data to Firebase. 
 	})
 	```
 	
-
-# Pitch!
-
-Pitch your idea and show your prototype!
-
-You can use Google Slides, or [slides.com](http://slides.com), to put together a quick presentation.
-
-### Presentation tips
-
-#### **FACT** 
-
-Generally, people remember **2-3 ideas** from a talk. Which ones you want them to remember? 
-
-#### **PLANNING** 
-
-Don't try to explain everything. Pick out 2-3 **key ideas** and explain them in the simplest way you can. 
-
-#### **INTRO** 
-
-Explain the *background* of your talk and give a quick *summary* of what you're going to talk about. People will pay more attention if they have a sense of what's coming next.
-
-#### **SLIDES** are not a necessity. 
-
-Ask yourself: is a slideshow the most effective way to communicate this? **How else** could I get this point across?
-	
-For instance, asking your audience a few *open* questions, getting them to play a game, break them out into small groups to discuss a scenario..
-
-#### **SLIDES AGAIN**	 
-
-If you *must* use slides, then:
-	
-* One **point** per slide.
-	
-* Don't cram long texts in your slides. Keep them down to a few *keywords* and one image or two..
-
-#### **DELIVERY** 
-
-Don't read out slides. 
-
-It's distracting both for you and for your audience.
-
-#### **TOP TIP** 
-
-Use **examples** and **stories** from your experience. They will make your points more **relatable**: more interesting to listen to and easier to learn.
-
-### Your turn
-
-* Mention *market* and *business opportunities*  
-* Mention *competitors*
-* Talk about *customer research* (remember [interviews](../03/README.md#who-are-your-users)?)
-* Tell us the **story** of your user
-
-![](assets/story.png)
 -->
+
+# Displaying data
+
+Once you've created your own database and *pushed* data to it, you'll need to customise the code you already have to display your new data.
+
+So you don't lose your previous work:
+
+1. Publish your project publish
+* Preview it 
+* Press the `Remix` button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
+
+## Customise your code
+
+Go to the function `show.js`.
+
+Take a look at the code, can you spot the parts you need to change?
+
+Your data might not include people... what if you're storing places or items?
+
+Sift through the code and change `person` to whatever your objects are. 
+
+	
+## Finishing touches
+
+Copy and paste this code into the `head` of your HTML document under the `title` element. You can find it in the copy-paste document:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Enable fullscreen Mode -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Icon for home screen -->
+<link rel="apple-touch-icon" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
+<link rel="icon" sizes="296x296" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
+``` 
+
+This code ensures your app will display well on mobile. Be sure to change the `link` `href="  "` to the url of whatever image you'd like to use for your app icon. The image should be square shaped for the best display.
+
 
 # Resources
 
@@ -405,6 +390,10 @@ Use **examples** and **stories** from your experience. They will make your point
 * [Dash](https://dash.generalassemb.ly/)
 
 	> Free online courses to get you going in HTML, CSS and a little JavaScript
+
+* [CodeWars](http://www.codewars.com/about)
+
+	> Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
 	
 * [CSS-Tricks](https://css-tricks.com/)
 
@@ -434,9 +423,6 @@ Use **examples** and **stories** from your experience. They will make your point
 
 	> Teardowns of major apps - a great reference for designing your interfaces
 	
-* [CodeWars](http://www.codewars.com/about)
-
-	> Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
 	
 * [HackDesign](https://hackdesign.org/lessons)
 
@@ -489,9 +475,9 @@ Use **examples** and **stories** from your experience. They will make your point
 
 * Learned to search for solutions online
  
-* Debug your code
+* Debugged your code
 
-* Good practices for effective coding: copy-paste, comments  
+* Applied good practices for effective coding: copy-paste, comments  
 
 ### Well done!
 
