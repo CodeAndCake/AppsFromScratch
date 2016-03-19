@@ -192,8 +192,41 @@ If you want to rank data objects by **relevance** to a certain concept / keyword
 | Stanley | Kubrick | 0 | 3 | 0
 | Sofia | Coppola | 3 | 0 | 0
 
+## Your turn!
 
+Starting from you app idea, consider:
 
+* What is the **data unit**? 
+	
+	For example, in our demo app the *data unit* is a person and in the database we're storing people's profiles. 
+	
+	If you're making a cooking app, the *data unit* would be a recipe.  
+
+* What pieces of data will your *data unit* feature? 
+
+	For example, in our demo app for each person we're storing `name`, `blurb`, `profile picture`, `likesPets`, `bakingSkills` etc. 
+	
+* Which data pieces will be used to **rank, filter & sort**? 
+	
+	For example `likesPets` helps us filter data for the *I'd like someone to keep my pet* option, `bakingSkills` helps us filter data for the *I'd like someone to bake a cake* option, etc.
+
+**Make a list** of all the data pieces for your data unit on paper.
+
+Go to Firebase, log in and *create a new app* (which really means create a *new database*).
+
+1. Hover over the greyed-out box in the top-left corner
+
+	![](assets/new-firebase-01.jpg)
+* Give your *app* a unique name	
+
+	![](assets/new-firebase-02.jpg)
+* Click on `CREATE NEW APP`	
+
+	![](assets/new-firebase-03.jpg)
+* Once your new app is ready (it will take a few seconds) it will appear next to the greyed-out box, click on its URL to open it
+
+	![](assets/new-firebase-04.jpg)
+	
 
 
 
