@@ -329,52 +329,51 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 # Resources
 
-* [Codecademy](https://www.codecademy.com/)
+* [Codecademy codecademy.com](https://www.codecademy.com/)
 	
 	> Free online courses to learn just about any coding language you like!
 
-* [Dash](https://dash.generalassemb.ly/)
+* [Dash dash.generalassemb.ly](https://dash.generalassemb.ly/)
 
 	> Free online courses to get you going in HTML, CSS and a little JavaScript
 
-* [CodeWars](http://www.codewars.com/about)
+* [CodeWars codewars.com](http://www.codewars.com/about)
 
 	> Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
 	
-* [CSS-Tricks](https://css-tricks.com/)
+* [CSS-Tricks css-tricks.com](https://css-tricks.com/)
 
 	> Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
 	
-* [Smashing Magazine](http://www.smashingmagazine.com/)
+* [Smashing Magazine smashingmagazine.com](http://www.smashingmagazine.com/)
 
 	> Online magazine focused on coding and web development, covering techniques, coding languages, mobile, design, graphics and WordPress
 	
-* [Creative Bloq](http://www.creativebloq.com/)
+* [Creative Bloq creativebloq.com](http://www.creativebloq.com/)
 	
 	> Online magazine providing inspiration for graphic design, web design, 3D art and more
 
-* [Niice](https://niice.co/)
+* [Niice niice.co](https://niice.co/)
 
-	> A design search engine, drawing results from [Behance](https://www.behance.net/), [Dribble](https://dribbble.com/) and [Designspiration](http://designspiration.net/). Great if you're in need of some design inspiration!
+	> A design search engine, drawing results from [Behance behance.net](https://www.behance.net/), [Dribble dribbble.com](https://dribbble.com/) and [Designspiration designspiration.net](http://designspiration.net/). Great if you're in need of some design inspiration!
 	
-* [Panda App](https://usepanda.com/app/#/)
+* [Panda App usepanda.com](https://usepanda.com/app/#/)
 
-	> Another great source of inspiration pulling results from various sources like [DesigneNnews](https://www.designernews.co/), [Dribble](https://dribbble.com/), [Behance](https://www.behance.net/) and [SiteInspire](http://www.siteinspire.com/)
+	> Another great source of inspiration pulling results from various sources like [DesignerNews designernews.co](https://www.designernews.co/), [Dribble dribbble.com](https://dribbble.com/), [Behance behance.net](https://www.behance.net/) and [SiteInspire siteinspire.com](http://www.siteinspire.com/)
 
-* [GoodUI](http://goodui.org/)
+* [GoodUI goodui.org](http://goodui.org/)
 
 	> Extensive list of good design patterns for user interfaces
 	
-* [UserOnboard](https://www.useronboard.com/)
+* [UserOnboard useronboard.com](https://www.useronboard.com/)
 
-	> Teardowns of major apps - a great reference for designing your interfaces
+	> Teardowns of major apps - a great reference for designing your interfaces	
 	
-	
-* [HackDesign](https://hackdesign.org/lessons)
+* [HackDesign hackdesign.org](https://hackdesign.org/lessons)
 
 	> Learn how to design digital products, with lessons spanning from typography to UX (user experience).
 	
-* [Noun Project](https://thenounproject.com)
+* [Noun Project thenounproject.com](https://thenounproject.com)
 
 	> Huge database of beautiful icons to use in your app
 	
@@ -386,19 +385,19 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 	> Great tool to design your colour palettes
 	
-* [JS for cats](http://jsforcats.com/)
+* [JS for cats jsforcats.com](http://jsforcats.com/)
 
 	> Introduction to JavaScript..."So easy your human companion could do it too!" :scream_cat:
 	
-* [Random User Generator](https://randomuser.me/)
+* [Random User Generator randomuser.me](https://randomuser.me/)
 
 	> Random users for you to populate your app prototypes
 	
-* [Pttrns](http://pttrns.com/)
+* [Pttrns pttrns.com](http://pttrns.com/)
 
 	> See how other mobile designers solve UX problems for things like calculators, calendars, search and more
 	
-* [WTF Mobile Web](http://wtfmobileweb.com/)
+* [WTF Mobile Web wtfmobileweb.com](http://wtfmobileweb.com/)
 
 	> What not to do!
 	
@@ -444,8 +443,7 @@ And remember...
 
 We need your **feedback**, it will hugely help us improve this course!
 
-[tinyurl.com/o8qknkg](http://tinyurl.com/o8qknkg)
-
+[tinyurl.com/zcpnyjj](http://tinyurl.com/zcpnyjj)
 
 
 ### License
