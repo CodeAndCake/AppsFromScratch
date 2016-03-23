@@ -1,6 +1,11 @@
 function showList (list) {
+
+  var $ul = $('ul'); // tell jQuery to select the ul (Unordered List)
+
+  if ($ul.length == 0) console.error('You are missing a <ul></ul> in your index.html');
+
   // update HTML
-  $('ul').html( makeListHTML(list) ); // html is a jQuery function 
+  $ul.html( makeListHTML(list) ); // html is a jQuery function 
 
   // add behaviour to the list items
   $('li').on('click', function()
