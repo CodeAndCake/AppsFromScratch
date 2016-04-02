@@ -253,11 +253,22 @@ So you don't lose your previous work:
 
 1. In your remixed project, open `app.js` and change `databaseURL` to your own database URL. 
 
-	This will instruct the app to load data from your own Firebase.
+	> This will instruct the app to load data from your own Firebase.
 * In `index.html` change the `option` elements to reflect your data. 
 
 	Make sure the `value` attributes match the property names you are using in Firebase. 
-
+	
+	> For example, the `bakingSkills` in the HTML dropdown below **must** match the `bakingSkills` property stored in Firebase, letter by letter, and it's case sensitive.
+	
+	> ```html
+	<select>
+		<option value="bakingSkills">Bake a cake</option>
+		...
+	</select>
+	```
+	
+	> ![](assets/firebase-person.png)
+	
 <!--
 Take a look at the code, can you spot the parts you need to change?
 
@@ -297,9 +308,9 @@ function makeListItemHTML (person, index) {
 }
 ```
 
-This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
+> This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
 
-As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
+> As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
 
 If you want to add an `img` for instance, then you can tweak the lines where `li` is stringed together: 
 
@@ -329,77 +340,87 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 # Resources
 
+### Code
+
 * [Codecademy codecademy.com](https://www.codecademy.com/)
 	
-	> Free online courses to learn just about any coding language you like!
+	Free online courses to learn just about any coding language you like!
 
 * [Dash dash.generalassemb.ly](https://dash.generalassemb.ly/)
 
-	> Free online courses to get you going in HTML, CSS and a little JavaScript
+	Free online courses to get you going in HTML, CSS and a little JavaScript
 
 * [CodeWars codewars.com](http://www.codewars.com/about)
 
-	> Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
+	Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
 	
 * [CSS-Tricks css-tricks.com](https://css-tricks.com/)
 
-	> Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
-	
-* [Smashing Magazine smashingmagazine.com](http://www.smashingmagazine.com/)
-
-	> Online magazine focused on coding and web development, covering techniques, coding languages, mobile, design, graphics and WordPress
-	
-* [Creative Bloq creativebloq.com](http://www.creativebloq.com/)
-	
-	> Online magazine providing inspiration for graphic design, web design, 3D art and more
-
-* [Niice niice.co](https://niice.co/)
-
-	> A design search engine, drawing results from [Behance behance.net](https://www.behance.net/), [Dribble dribbble.com](https://dribbble.com/) and [Designspiration designspiration.net](http://designspiration.net/). Great if you're in need of some design inspiration!
-	
-* [Panda App usepanda.com](https://usepanda.com/app/#/)
-
-	> Another great source of inspiration pulling results from various sources like [DesignerNews designernews.co](https://www.designernews.co/), [Dribble dribbble.com](https://dribbble.com/), [Behance behance.net](https://www.behance.net/) and [SiteInspire siteinspire.com](http://www.siteinspire.com/)
-
-* [GoodUI goodui.org](http://goodui.org/)
-
-	> Extensive list of good design patterns for user interfaces
-	
-* [UserOnboard useronboard.com](https://www.useronboard.com/)
-
-	> Teardowns of major apps - a great reference for designing your interfaces	
-	
-* [HackDesign hackdesign.org](https://hackdesign.org/lessons)
-
-	> Learn how to design digital products, with lessons spanning from typography to UX (user experience).
-	
-* [Noun Project thenounproject.com](https://thenounproject.com)
-
-	> Huge database of beautiful icons to use in your app
-	
-* [Colour Contrast check](http://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)
-
-	> Tool to check the readability of your colours, ensuring they're easy on the eyes
-	
-* [Abobe Color CC](https://color.adobe.com/create/color-wheel/)
-
-	> Great tool to design your colour palettes
+	Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
 	
 * [JS for cats jsforcats.com](http://jsforcats.com/)
 
-	> Introduction to JavaScript..."So easy your human companion could do it too!" :scream_cat:
+	Introduction to JavaScript..."So easy your human companion could do it too!" :scream_cat:
+	
+* [CSS Diner jsforcats.com](http://jsforcats.com/)
+
+	A little game to help you learn CSS selectors. Type in the correct selector to complete each level. 
+	
+### Inspiration
+	
+* [Smashing Magazine smashingmagazine.com](http://www.smashingmagazine.com/)
+
+	Online magazine focused on coding and web development, covering techniques, languages, mobile, design, graphics and more
+	
+* [Creative Bloq creativebloq.com](http://www.creativebloq.com/)
+	
+	Online magazine providing inspiration for graphic design, web design, 3D art and more
+
+* [Niice niice.co](https://niice.co/)
+
+	A design search engine, drawing results from [Behance behance.net](https://www.behance.net/), [Dribble dribbble.com](https://dribbble.com/) and [Designspiration designspiration.net](http://designspiration.net/). Great if you're in need of some design inspiration!
+	
+* [Panda App usepanda.com](https://usepanda.com/app/#/)
+
+	Another great source of inspiration pulling results from various sources like [DesignerNews designernews.co](https://www.designernews.co/), [Dribble dribbble.com](https://dribbble.com/), [Behance behance.net](https://www.behance.net/) and [SiteInspire siteinspire.com](http://www.siteinspire.com/)
+
+### Design
+
+* [GoodUI goodui.org](http://goodui.org/)
+
+	Extensive list of good design patterns for user interfaces
+	
+* [UserOnboard useronboard.com](https://www.useronboard.com/)
+
+	Teardowns of major apps - a great reference for designing your interfaces	
+	
+* [HackDesign hackdesign.org](https://hackdesign.org/lessons)
+
+	Learn how to design digital products, with lessons spanning from typography to UX (user experience).
+	
+* [Noun Project thenounproject.com](https://thenounproject.com)
+
+	Huge database of beautiful icons to use in your app
+	
+* [Colour Contrast check](http://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)
+
+	Tool to check the readability of your colours, ensuring they're easy on the eyes
+	
+* [Abobe Color CC](https://color.adobe.com/create/color-wheel/)
+
+	Great tool to design your colour palettes
 	
 * [Random User Generator randomuser.me](https://randomuser.me/)
 
-	> Random users for you to populate your app prototypes
+	Random users for you to populate your app prototypes
 	
 * [Pttrns pttrns.com](http://pttrns.com/)
 
-	> See how other mobile designers solve UX problems for things like calculators, calendars, search and more
+	See how other mobile designers solve UX problems for things like calculators, calendars, search and more
 	
 * [WTF Mobile Web wtfmobileweb.com](http://wtfmobileweb.com/)
 
-	> What not to do!
+	What not to do!
 	
 
 # Things you achieved in 24 hours!
@@ -429,12 +450,12 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 And remember...
 
 1. Searching for problems online is not *cheating*
-* Copy-pasting code is not *cheating*
+* Copy-pasting code is not *cheating*. 
 
-	> Great coders copy-paste
+	Great coders copy-paste.
 * **It's OK**. You're not going to break anything.
 
-	> Embrace your mistakes. Debug them :)
+	Embrace your mistakes. Debug them :)
 
 ### Keep moving forward in your learning journey!
 
