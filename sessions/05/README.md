@@ -783,7 +783,7 @@ $('#details').hide();
 
 > The line above does two things:
 
-> 1. `$('#details')`: **select** the element with `id=details`
+> 1. `$('#details')`: **select** the element with `id="details"`
 > * Perform the `hide()` function on that selection
 
 ### 3. When someone clicks on the `Find` button, what happens?
@@ -817,35 +817,33 @@ $('button').on('click', function() {
 })
 ``` 
 
+> 1. `$('button')` selects the `Find` button.
+> 2. `.on('click', function() { ... })` says **when** the user **clicks** the selected element, perform this function. In our case, **when** the user **clicks** `Find`, perform this function.
 
-`$('button')` selects the `Find` button.
+> Now *inside* the function...
 
-`.on('click', function() { ........... })` says **when** the user **clicks** the selected element, perform this function. In our case, **when** the user **clicks** `Find`, perform this function.
+> What option did the user pick?
 
-##### *Inside* the function
-
-###### What option did the user pick?
-
-```javascript
+> ```javascript
 // get user input
 var selectedOption = $('select').val(); // this is jQuery val()
 ```
 
-1. Create a `var` named `selectedOption`
-* `$('select')`: select the `select` (HTML for dropdown) with jQuery `$`
-* Get the currently selected value (for example the `likesPets`) using the jQuery function `.val()`
-* Save that value in `selectedOption`
+> 1. Create a `var` named `selectedOption`
+> * `$('select')`: select the `select` (HTML for dropdown) with jQuery `$`
+> * Get the currently selected value (for example the `likesPets`) using the jQuery function `.val()`
+> * Save that value in `selectedOption`
 
-###### Pick people according to the selected option
+> Pick people according to the selected option
 
-```javascript
+> ```javascript
 // filter people by user selection
 var resultsList = filterAndSortList(peopleList, selectedOption);
 ```
 
-1. Create a `var` named `resultsList` 
-* Use the function `filterAndSortList` to filter and sort `peopleList` (the list with all the people) so that it matches the user 's selection (`selectedOption`)
-* Store the filtered people in `resultsList`
+> 1. Create a `var` named `resultsList` 
+> * Use the function `filterAndSortList` to filter and sort `peopleList` (the list with all the people) so that it matches the user 's selection (`selectedOption`)
+> * Store the filtered people in `resultsList`
 
 You can find the function `filterAndSortList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js) (link also in the copy-paste doc).
 
@@ -853,15 +851,15 @@ Create a new file in your Thimble project, call it `filter.js` (or whatever you 
 
 In `filter.js` paste the whole `filterAndSortList` function from GitHub.
 
-###### Display the results
+> Display the results
 
-```js
+> ```js
 showList(resultsList);
 ```
 
-In the line above we are using the function `showList` to spit out the results in the HTML interface.
+> In the line above we are using the function `showList` to spit out the results in the HTML interface.
 
-You can find it at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js) (link also in the copy-paste doc).
+You can find the function `showList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js) (link also in the copy-paste doc).
 
 Create a new file in your Thimble project, call it `show.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `show.js` in your app.
 
