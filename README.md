@@ -36,7 +36,7 @@ Join a group of determined, like-minded individuals to discuss, learn and make i
 
 **[Matteo](https://twitter.com/@baddeo)** is a senior lecturer for [Web Media at Ravensbourne](https://twitter.com/RaveWebMedia) with loads of experience building apps and educational games. He loves teaching and has near-infinite patience.
 
-**Yuki** is a self-taught JavaScript ninja and a senior developer at [The Mill](http://www.themill.com/). He has plenty of inspiring links and JS tricks to share.
+<!-- **Yuki** is a self-taught JavaScript ninja and a senior developer at [The Mill](http://www.themill.com/). He has plenty of inspiring links and JS tricks to share. -->
 
 **[Aimee](http://aimeemj.com)** makes websites and clothes. She was in your shoes a year ago, reads puzzled faces and knows when to slow down the pace.
 
