@@ -185,15 +185,20 @@ Idea for next session 1 presentation:
 
 ### What went well
 
-* 
+* People liked the idea of creating their own database.
+* Resources (coding tools, courses, design inspirations) were well received. Many intrigues by [Codewars](https://codewars.com)
 
 ### Areas for improvement
 
-*
+* People were a bit confused by the [Firebase Pusher](http://bit.ly/firebasePusher):
+
+	* No visual feedback when data got pushed
+	* > Is this part of my app now? 
 
 ### Action points	
 
-* 
+* Format print-outs with AM + PM
+* Write `Copy the code below` instead of `copy this code` (some people may copy bits from previous exercises otherwise)
    
    
 # General
