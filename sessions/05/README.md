@@ -54,6 +54,8 @@ Now that our database is ripe with data, we can **filter** that data in response
 
 Then you'll dive into JS, getting hands-on with **jQuery**. We will give you some pre-written code to copy-paste and integrate into your apps.
 
+### The *art* of `copy-paste`
+
 Today is about mastering **the art of copy-paste**. To become a good coder you don't need to "speak" JavaScript (or whatever other programming language). Instead, you should learn how to:
 
 1. **Search** for solutions online 
@@ -118,7 +120,17 @@ We will show you some tools and tricks to make the process of spotting mistakes 
 	
 	<!-- True. -->
 * A valid HTML document MUST have a `head` and a `body` elements wrapped in a `html` element
-	
+
+	```html
+	<!doctype html>
+	<html>
+		<head>
+		</head>
+		<body>
+		</body>
+	</html>
+	```
+		
 	- [ ] true 
 	- [ ] false
 	
@@ -217,11 +229,11 @@ We will show you some tools and tricks to make the process of spotting mistakes 
 	- [ ]  `:` colon	
 	
 	<!-- semi-colon -->
-* `style1.css` is loaded and applied before `style2.css`	
+* `myStyle.css` is loaded and applied before `yourStyle.css`	
 	```html
 	<head>
-    	<link href="style1.css" rel="stylesheet">
-    	<link href="style2.css" rel="stylesheet">
+    	<link href="myStyle.css" rel="stylesheet">
+    	<link href="yourStyle.css" rel="stylesheet">
 	</head> 
 	```		
 	 	
@@ -279,13 +291,13 @@ We will show you some tools and tricks to make the process of spotting mistakes 
 
 	```js
 	person.whisper = function ( message ) { 
-		console.log ( person.name + " says: " + message ); 
+		console.log ("Sshhh... " + message ); 
 	}
 	
 	person.whisper( "Keep calm and code on" );
 	```
 	
-	<!-- A message in the browser's JS Console (one of the most useful developer tools) saying: "Jo says: Keep calm and code on" -->
+	<!-- A message in the browser's JS Console (one of the most useful developer tools) saying: "Sshhh... Keep calm and code on" -->
 * What will this JS code produce?
 
 	```js
@@ -341,14 +353,16 @@ http://tonyfreed.com/blog/top_javascript_interview_question_2015
 <!--- [ ] wrap everything in `<section id="home"> </section>`
 - [ ] create another section for `details`-->
 
-### Sections
+<!--### Sections-->
 
-Your app prototype will have two screens:
+Your app prototype will have two sections:
 
-1. **Home** screen with dropdown menu, `Find` button and search results
-* **Details** screen for each item in the search results 
+1. **Home** section with dropdown menu, `Find` button and search results
+* **Details** section for each item in the search results 
 
-Let's finish off the home screen interface.
+### `#home`
+
+Let's finish off the home section interface.
 
 Wrap all the code you've written in your HTML `<body> </body>` tags inside a `<section> </section>`
 
@@ -374,6 +388,8 @@ Give the new `section` an `id="home"`
 	<!-- etc etc...-->
 </section>
 ``` 
+
+### `#details`
 
 Underneath the new `<section id="home"> ... </section>` create a new section `<section id="details"> ... </section>`
 
