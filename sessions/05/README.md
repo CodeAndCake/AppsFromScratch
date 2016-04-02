@@ -360,7 +360,7 @@ Your app prototype will have two sections:
 1. **Home** section with dropdown menu, `Find` button and search results
 * **Details** section for each item in the search results 
 
-### `#home`
+### The `#home` section
 
 Let's finish off the home section interface.
 
@@ -389,7 +389,7 @@ Give the new `section` an `id="home"`
 </section>
 ``` 
 
-### `#details`
+### The `#details` section
 
 Underneath the new `<section id="home"> ... </section>` create a new section `<section id="details"> ... </section>`
 
@@ -811,11 +811,11 @@ $('button').on('click', function() {
 > First the outer shell
 
 > 	```javascript
-	$('button').on('click', function() {
-		..............
-		..............
-	})
-	``` 
+$('button').on('click', function() {
+	...
+	...
+})
+``` 
 
 
 `$('button')` selects the `Find` button.
