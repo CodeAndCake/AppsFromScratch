@@ -538,7 +538,7 @@ Because we have no `pear` in `myFavouriteFruit`, the Console will log `No pears 
 
 So, to use a function you must
 
-1. *declare* it: give it a **name** and teach the computer all the **steps** required to perform it
+1. **declare** it: give it a **name** and teach the computer all the **steps** required to perform it
 
 	```javascript
 	function areYouAnAdult (age) {
@@ -551,7 +551,7 @@ So, to use a function you must
 		return answer;
 	};
 	```
-2. *call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
+2. **call** it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
 
 	```javascript
 	areYouAnAdult(16);
@@ -660,13 +660,13 @@ In your app, you will sift through, filter and sort out every set of data in you
 
 This saves you rewriting your functions for every single person, place, or artist in your database.
 
-Click on the image below to open an interactive explanation of a loop, which you can find at `s.codepen.io/baddeo/debug/NGjJjd`
+You can find an interactive explanation of a loop at `s.codepen.io/baddeo/debug/NGjJjd`
 
 [![](assets/loops.png)](http://s.codepen.io/baddeo/debug/NGjJjd)
 
 #### jQuery
 
-jQuery is a useful library of prewritten *functions* (sets of isntructions and actions).
+jQuery is a useful library of prewritten *functions* (sets of instructions and actions).
 
 Many common functions are nicely packaged in jQuery to save us time!
 
@@ -702,9 +702,9 @@ At the end of the document `body` add a `script` like this
 	HTML | CSS
 	---- | ---
 	class | .
-	 <p class="question"> ... </p> |  .question { ... }
+	`<p class="question"> ... </p>` |  .question { ... }
 	id | #
-	<p id="firstQuestion"> ... </p> | #firstQuestion { ... }
+	`<p id="firstQuestion"> ... </p>` | #firstQuestion { ... }
 	
 * In `app.js` you created a new Firebase database
 
@@ -773,7 +773,7 @@ If the Console doesn't spit out a red error, you're good to go!
 
 When people open the app, we don't need them to see details about a person. Later we will write some JS code to display that `section` **when** people click on a result, but for now we want to **hide** that part of the HTML.
 
-In `app.js` write
+At the bottom of `app.js` write
 
 ```js
 $('#details').hide();
@@ -806,16 +806,17 @@ $('button').on('click', function() {
 })
 ```
 
-#### Let's break it down
+> Let's break that code down
 
-##### First the outer shell
+> First the outer shell
 
-```javascript
-$('button').on('click', function() {
-	..............
-	..............
-})
-``` 
+> 	```javascript
+	$('button').on('click', function() {
+		..............
+		..............
+	})
+	``` 
+
 
 `$('button')` selects the `Find` button.
 
