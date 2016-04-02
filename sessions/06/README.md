@@ -279,6 +279,7 @@ Sift through the code and change `person` to whatever your objects are.
 Remember to also change `personId` , `personHTML` and `makePersonHTML`!
 -->
 
+
 ### Change the display
 
 Go to the function `show.js`.
