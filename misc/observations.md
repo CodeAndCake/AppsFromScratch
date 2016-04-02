@@ -103,10 +103,11 @@ Idea for next session 1 presentation:
 
 ### Action points	
 
-* Mozilla Thimble emails not sent! What to do in this scenario? 	- get students to export and email their projects to themselves JUST IN CASE (this is sorted now, see https://github.com/mozilla/login.webmaker.org/issues/374)
+* Mozilla Thimble emails not sent! What to do in this scenario? 	- get students to export and email their projects to themselves JUST IN CASE (this is sorted now, see https://github.com/mozilla/login.webmaker.org/issues/374) Have a **collective account**.
 * Swap UX research and HTML+CSS recap. 
 * Laptop trolley always **electrocutes** me when I bring it in and out of the lift.
 * Create a **shared document for sharing links**, a sort of copy-paste bin for coding demos (because you can't expect people to type in long URL like `github.com/CodeAndCake/AppsFromScratch/blob/v3/sessions/02/aimee.js`).
+* Make sure we add `script` tags at the end of the `body`
 		
 
 # Day 3
@@ -121,7 +122,6 @@ Idea for next session 1 presentation:
 * Discussion around app ideas - not clear what the purpose was and was too long which then lead into them working on their apps 
 * Clear distinctions between group discussion generating ideas and the brief - group discussion is for motivation and brainstorming
 * Working individually on the brief - make it clear
-
 
 ### Action points	
 
@@ -166,16 +166,20 @@ Idea for next session 1 presentation:
 
 ### What went well
 
-* 
+* Quiz went well, people had fun! Should have more of those (maybe shorter, max 30 minutes) to wake people up in the mornings. Possibly not the first day, when people don't know each other... but any other day should be good.
 
 ### Areas for improvement
 
-*
+* `ul` with pre-populated `li` was confusing (they didn't remember)
 
 ### Action points	
 
-* 	
-		
+* Engineer a **bug** so that they need to use the Console
+
+* `#` is <kbd>alt</kbd> + <kbd>3</kbd>	
+* Remind people that file names are **case sensitive**, e.g. `<script src="App.js"></script>`
+
+* > Work at your own pace, not behind nor ahead 		
 
 # Day 6
 
@@ -199,3 +203,5 @@ Next time, let's aim to finish the demo-app in 4 days and have 2 days to build t
 We could also do all the HTML and CSS first, and then introduce JS. Mixing them up seems a bit confusing.
 
 Maybe check out how to [structure data on Firebase](https://www.firebase.com/docs/web/guide/structuring-data.html) to make querying it easier?
+
+- [ ] Create collective accounts for Thimble and Firebase, to avoid lost password disasters
