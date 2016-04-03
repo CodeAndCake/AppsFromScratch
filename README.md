@@ -67,10 +67,10 @@ Working on hands-on briefs, you will learn the principles of programming and get
 
 Which day?	| What are we learning?
 ----------	| ---------------------
-[![](sessions/img/day-1.jpg)](sessions/01) | On the first day we discuss key concepts around apps (interface, logic, data) and start making with **HTML** & **CSS**.
+[![](sessions/img/day-1.jpg)](sessions/01) | On the first day we discuss key concepts around apps (interface, logic, data) and start coding with **HTML** & **CSS**.
 [![](sessions/img/day-2.jpg)](sessions/02) | We introduce the principles of **programming** and start playing with **JavaScript**.
-[![](sessions/img/day-3.jpg)](sessions/03) | Where to find **data** and how to use it. Your app's data has to be stored somewhere!
-[![](sessions/img/day-4.jpg)](sessions/04) | You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
+[![](sessions/img/day-3.jpg)](sessions/03) | Where to find **data** and how to use it programmaticaly. Your app's data has to be stored somewhere!
+[![](sessions/img/day-4.jpg)](sessions/04) | Use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
 [![](sessions/img/day-5.jpg)](sessions/05) | By this point you have a rough **app prototype**, which you can then hack to apply *your own* ideas and content.
 [![](sessions/img/day-6.jpg)](sessions/06) | Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
 
