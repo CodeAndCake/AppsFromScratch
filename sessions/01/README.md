@@ -1,12 +1,3 @@
-<!--
-
-- [x] !important manage expectations, eg: How long does it take to make an app (show some examples from apps we made, like MeBooks.. and then Pinboard.in)? This course is 3 days.. what can we do with this time?
-- [x] 4 blocks of tables for 4 teams (ish)
-- [x] smaller group discussions (with post-its and markers) and the "report" to the larger group
-- [ ] explain prototyping tools like Firebase
-
--->
-
 # Coding and app-making for beginners
 
 ## Day 1
@@ -18,6 +9,20 @@
 * [Your project brief](#your-brief)
 * [Workshop](#lets-code): HTML & CSS
 
+<!--
+
+Good morning :)
+
+It is a good morning isn't it?
+
+It is SO good to have you all here today!
+
+The fact that you got out of bed on a Saturday morning, to come here and learn to code, that's commitment, and we really admire that.
+
+We want this course to be a valuable learning experience for you all, and we want you to have as much fun learning as we have teaching!
+
+-->
+
 ### When is lunch?
 
 Research shows that people focus much better when they know what time they're going to eat...
@@ -26,11 +31,9 @@ So, we will have **lunch break** at around 1pm for 1 hour, aiming to wrap up by 
 
 ### Two words about ourselves
 
-- **Yuki**: studied art, started tinkering with code some 10 years ago, now develops software at [The Mill](http://www.themill.com) a post-production, visual effects and animation company. He's designing and building software that makes work easier and more efficient for the team.
+* **Matteo** studied graphic design. He also taught himself to code. He built social platforms and educational games for the BBC, Science Museum and now teaches at Ravensbourne.  
 
-- **Matteo** studied graphic design. He also taught himself to code. He built social platforms and educational games for the BBC, Science Museum and now teaches at Ravensbourne.  
-
-- **Aimee** studied fashion design, makes clothes and websites. She is the *jargon buster*, the bridge between beginners and professional coders.
+* **Aimee** studied fashion design, makes clothes and websites. She is the *jargon buster*, the bridge between beginners and professional coders.
 
 **No computer scientists**, we all learned code by ourselves through experimenting and tinkering. 
 
