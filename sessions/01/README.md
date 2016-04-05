@@ -88,10 +88,10 @@ Including notes from each session, exercises, sample code, presentations and lin
 When	| What	
 ---	| ----	
 ![](../img/day-1.jpg) | On the first day we discuss key concepts around apps (interface, logic, data) and start making with HTML & CSS.
-![](../img/day-2.jpg) | We work together to generate, spec out and test your app ideas. Then start programming with JavaScript.
-![](../img/day-3.jpg) | You'll apply your research to sketch out how your app looks and behaves on paper. Then you'll make digital wireframes.
-![](../img/day-4.jpg) | You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
-![](../img/day-5.jpg) | You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
+![](../img/day-2.jpg) | What exactly is programming anyway? We introduce the principles of programming, then start playing with JavaScript.
+![](../img/day-3.jpg) | Data! Where to find it and how to use it. Your app's data has to be stored somewhere!
+![](../img/day-4.jpg) | You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
+![](../img/day-5.jpg) | By this point you have a rough app prototype, which you can then hack to apply your own ideas and content.
 ![](../img/day-6.jpg) | Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
 
 
