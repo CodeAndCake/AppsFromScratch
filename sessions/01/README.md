@@ -320,7 +320,7 @@ It's good practice to build the **HTML** first, and then make it _stylish_ with 
 
 #### HTML basics
 
-HTML is a *markup* language, which you use to *mark content up*. 
+HTML is a *markup* language, which you use to *format your content*. 
 
 Essentially, you wrap content inside bits of code called tags.
 
@@ -342,7 +342,8 @@ For example, this is how you wrap a paragraph of text in `p` tags:
 
 Thimble created an HTML skeleton for you, containing the basic **building blocks**: `html`, `head` and `body` tags.
 
-Every HTML document, at the bare bones, needs to have this structure
+Every HTML document, at the bare bones, needs to have this structure.
+
 
 ```html
 <!doctype html>
@@ -356,6 +357,9 @@ Every HTML document, at the bare bones, needs to have this structure
 </html>	
 ```
 
+![](assets/HTML_doc_setup.jpg)
+
+
 #### Head
 
 In the `head` you can change the `title`.  
@@ -366,17 +370,66 @@ What you put in the `head` is not visible to the user.
 
 #### Body
 
-In the `body` you put all the interface elements that are visible to the user.
+In the `body` you will put all the **interface elements** that are visible to the user.
+
+
+# Let's start building
+
+#### Sections
+
+Inside the `body`, add in two `<section>` elements
+
+```html
+	<body>
+		<section></section>
+		<section></section>
+	</body>
+```
+
+
+#### Fancy logo
+
+![](assets/hipsterlogogenerator.png)
+
+It's important. We recommend https://www.hipsterlogogenerator.com/ for quick and easy hipster logos :)
+
+Take a couple of minutes to quickly make your own fancy logo.
+
+To place your logo in your HTML document create an `img` element inside the first `section`. `img` element doesn't need a closing tag (it's one of the exceptions to the general rule of closing tags).
+
+```html
+<section>
+	<img src=" ">
+</section>
+```
+
+Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files. In Thimble, you can upload your logo and put the name inside `src=" "`
+
+```html
+<section>
+	<img src="hipsterlogo.jpg">
+</section>
+```
+If you're taking an image from the web you need to use the link to the image alone. Right click on the image and Copy Link Address. Then paste it inside `src=" "` 
+
+```html
+<section>
+	<img src="http://placekitten.com/200/300">
+</section>
+```
+
 
 #### Headings
 
-Inside the body, add a **heading** (`h1`) and a **sub-heading** (`h2`). These will be the most important pieces of information of your app's main page.
+![](assets/headings.jpg)
+
+Inside the first `section`, add a **heading** (`h1`) and a **sub-heading** (`h2`). These will be the most important pieces of information of your app's main page.
 
 ```html
-<body>
+<section>
 	<h1>Your app name</h2>
 	<h2>What it does</h2>
-</body>
+</section>
 ```
 
 #### Paragraphs
@@ -384,14 +437,14 @@ Inside the body, add a **heading** (`h1`) and a **sub-heading** (`h2`). These wi
 Explain how your app works, and what you want people to do first.  
 
 ```html
-<body>
+<section>
 	...
 	<p>Swap skills and time with people in your community!</p>
   	<p>Just choose an activity to get started.</p>
-</body>
+</section>
 ```
 
-`p` is for *paragraph*, [ça va sans dire](https://en.wiktionary.org/wiki/%C3%A7a_va_sans_dire) :fr:
+`p` is for *paragraph*
 
 #### Dropdown
 
@@ -399,45 +452,55 @@ This is the first interactive element of your app.
 
 It's a set of `options` that people can choose from.
 
+Under your headings, add in a `<select>` element. Inside that, add in some `<option>` elements.
+
 ```html
-<body>
+<section>
 	...
 	<select>
     <option>Keep my pet</option>
     <option>Bake a cake</option>
     <option>Move my piano</option>
   </select>
-</body>
+</section>
 ```
 
 #### Button
 
-What do you think is the HTML code to make a button?
+Next you'll need a *find* or *search* button. What do you think is the HTML code to make a button?
 
 It's `<button>` :)
 
 ```html
-<body>
+<section>
 	...
 	<button>Find</button>
-</body>
+</section>
 ```
 
 #### Hyperlinks
 
+![](assets/links_inside_paragraphs.jpg)
+
 You can add **hyperlinks** to our content using the `a` element.
 	
 ```html
-<a href="http://example.com">the clickable text</a>
+<a href="http://example.com"> the clickable text </a>
 ```
 
 `a` is for *anchor* :anchor:
 
+Add in a little credit at the bottom of your page, just above the closing `</body>` tag.
+
+```html
+<p>Made with love by <a href="http://example.com"> Your Name</a></p>
+```
+
 ### Publish your project
 
-We're done with HTML for today!
 
 Now click `Publish` to see how your app looks so far. :+1:
+
 
 ### Style later
 
@@ -445,11 +508,13 @@ Now the fun part: **CSS**!
 
 There's a `link` in the `head` of your app which points to a CSS file called **style.css**. This is where you add your own styles.
 
+
 ```html
 <link rel="stylesheet" href="css/style.css">
 ```
 
 You can have more than just one CSS file, and we'll show you how it's good practice to work on several small files rather than one long document you may get lost into.
+
 
 #### CSS basics
 
@@ -465,7 +530,7 @@ selector
 }
 ```
 
-The part before the curly brackets `{` and `}` is the **selector**.
+The part before the curly brackets `{` and `}` is the **selector**. This ***selects* the element** from your HTML document.
 
 In CSS you can select multiple HTML elements in one go.
 
@@ -479,6 +544,10 @@ p
 ```
 
 CSS **properties** define how HTML elements are displayed.
+
+
+![](assets/css_layout.jpg)
+
 
 The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
 
