@@ -136,6 +136,16 @@ Learning a coding language is like **learning a new language**.
 
 **Today** you're going to learn **2 new languages**, but before we get into that...
 
+#### Good coders don't type - always copy-paste where possible!
+
+#### If you're not sure how to do something, get into the practice of Googling it! All the answers are out there. Being able to find them is a real skill that all coders continue to hone.
+
+#### Sometimes coding is hard. It's true.
+
+#### You don't need to understand everything right away, it will slowly make more and more sense as you look at it over time 
+
+#### You don't have to bust your brain to remember everything either! Give your brain a break!
+
 
 # What is an app?
 
