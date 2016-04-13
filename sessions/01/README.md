@@ -317,9 +317,13 @@ We're going to learn how to:
 
 ## Step by step
 
-> Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and sign up (it's free). 
+> Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in with these details:
+> * Email: codeyourapp@gmail.com
+> * Password: Letme1n! 
 
-> Then log in and click on `Start a project from scratch`.
+> Then click on `Start a project from scratch`.
+
+> Change the name of your project to your name. For now, everyone's projects will be stored in one account.
 
 
 ### Content first, style later!
