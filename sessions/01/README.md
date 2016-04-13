@@ -1,6 +1,6 @@
 # Coding and app-making for beginners
 
-## Day 1
+## Day 1 AM
 
 1. Welcome & introductions 
 * [The plan for this course](#what-is-the-plan)
@@ -516,7 +516,13 @@ You can add **hyperlinks** to our content using the `a` element.
 > Now click `Publish` to see how your app looks so far. :+1:
 
 
-### Style later
+# Coding and app-making for beginners
+
+
+## Day 1 PM
+
+
+### Styling
 
 Now the fun part: **CSS**!
 
