@@ -31,7 +31,7 @@ So, we will have **lunch break** at around 1pm for 1 hour, aiming to wrap up by 
 
 ### Two words about ourselves
 
-* **Matteo** studied graphic design. He also taught himself to code. He built social platforms and educational games for the BBC, Science Museum and now teaches at Ravensbourne.  
+* **Matteo** studied graphic design. He also taught himself to code. He built social platforms and educational games for the BBC, Science Museum and now teaches Web design and coding at Ravensbourne.  
 
 * **Aimee** studied fashion design, makes clothes and websites. She is the *jargon buster*, the bridge between beginners and professional coders.
 
