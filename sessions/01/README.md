@@ -13,11 +13,11 @@
 
 Good morning :)
 
-It is a good morning isn't it?
+It is a good morning, isn't it?
 
 It is SO good to have you all here today!
 
-The fact that you got out of bed on a Saturday morning, to come here and learn to code, that's commitment, and we really admire that.
+The fact that you got out of bed on a Saturday morning, to come here and learn to code, that's real commitment. And we really admire that.
 
 We want this course to be a valuable learning experience for you all, and we want you to have as much fun learning as we have teaching!
 
@@ -27,13 +27,17 @@ We want this course to be a valuable learning experience for you all, and we wan
 
 Research shows that people focus much better when they know what time they're going to eat...
 
-So, we will have **lunch break** at around 1pm for 1 hour, aiming to wrap up by 4pm.
+So `lunch <br>` will be at around **1pm** for 1 hour.
+
+We aim to wrap up by **4pm**.
 
 ### Two words about ourselves
 
 * **Matteo** studied graphic design. He also taught himself to code. He built social platforms and educational games for the BBC, Science Museum and now teaches Web design and coding at Ravensbourne.  
 
 * **Aimee** studied fashion design, makes clothes and websites. She is the *jargon buster*, the bridge between beginners and professional coders.
+
+	<!-- She never thought of herself as a technical person. -->
 
 **No computer scientists**, we learned code by ourselves through experimenting and tinkering. 
 
@@ -51,7 +55,7 @@ We'd like you to introduce yourself to your neighbour. Then we'll ask you to int
 
 <!--* What is your experience with coding so far?-->
 
-You can jot down the answers on post-its and we'll then stick them on the wall...
+<!--You can jot down the answers on post-its and we'll then stick them on the wall...-->
 
 <!-- make sure we ask questions to the people that are being introduced! -->
 
@@ -87,12 +91,13 @@ Including notes from each session, exercises, sample code, presentations and lin
 
 When	| What	
 ---	| ----	
-![](../img/day-1.jpg) | On the first day we discuss key concepts around apps (interface, logic, data) and start making with HTML & CSS.
-![](../img/day-2.jpg) | What exactly is programming anyway? We introduce the principles of programming, then start playing with JavaScript.
-![](../img/day-3.jpg) | Data! Where to find it and how to use it. Your app's data has to be stored somewhere!
+![](../img/day-1.jpg) | On the first day we discuss key concepts around apps (interface, logic, data) and start coding with **HTML** & **CSS**.
+![](../img/day-2.jpg) | We introduce the principles of **programming** and start playing with **JavaScript**.
+![](../img/day-3.jpg) | Where to find **data** and how to use it programmatically. Your app's data has to be stored somewhere!
 ![](../img/day-4.jpg) | You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
-![](../img/day-5.jpg) | By this point you have a rough app prototype, which you can then hack to apply your own ideas and content.
+![](../img/day-5.jpg) | By this point you have a rough **app prototype**, which you can then hack to apply *your own* ideas and content.
 ![](../img/day-6.jpg) | Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
+
 
 # What is **code**?
 
@@ -108,15 +113,15 @@ Code existed **before computers**.
 
 Code is about
 
-*   transmitting information
-*   giving instructions
-*   **communication**
+* transmitting information
+* giving instructions
+* **communication**
 
 If I want to talk to my **grandma**, I need to use Italian. To communicate with you, I use English. 
 
 To **talk to a computer**, we use...
 
-Code is **instructions** to a computer: extremely powerful, fundamentally thick.
+Code is **instructions** to a computer: extremely powerful yet fundamentally *thick*.
 
 ### How do you learn to code?
 
@@ -134,10 +139,7 @@ Learning a coding language is like **learning a new language**.
 
 Like natural languages, there's no *right* or *wrong* way to do it
 
-**Today** you're going to learn **2 new languages**, but before we get into that...
-
-
-
+**Today** you're going to learn **2 new languages**: HTML and CSS.
 
 
 # What is an app?
@@ -150,7 +152,6 @@ How do you explain what an app is to someone or something who's never seen/used 
 
 ### Your turn
 
-
 Pretending one of us is an *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
 
 If people answer with jargon, like *software* or *download*, then we ask them to explain those too to our *alien*.
@@ -159,12 +160,6 @@ If people answer with jargon, like *software* or *download*, then we ask them to
 * How do you **interact** with an app? Do you speak to it, do you shake it etc?
 * What are apps **made out of**?
 * **Who uses** apps? Why?
-
-<!--
-* Can you buy apps? Who sells them?
-* Would you download an app if you need it only once or twice?
--->
-
 
 ### What is an app, then?
 
@@ -182,6 +177,7 @@ Apps generally have a specific function, or a small set of functions. They are n
 
 This is *not* a good app. It is not **usable**, even though all the tools it features could be usable (and possibly useful) on their own.
 
+<!--
 ### **How long** does it take to make an **app**?
 
 This course is 24 hours long, ie **3 working days**.
@@ -195,36 +191,28 @@ The point of this course is to *introduce* you to the app-making **process** and
 
 This is an introductory course, inevitably there are parts of the process that we won't cover (such as how to market your app or package it for a specific market).
 
-<!-- In 3 days we may not get an app on the App Store, but don't lose heart! -->
-
 In 3 days you will **get started with coding** and by the end you will:
 
 * have a solid foundation to continue learning
 * have first-hand experience of the design and development process
 * feel confident speaking about your ideas with other designers, coders and product managers
+-->
 
-<!--### What apps do you use most? 
+## Key concepts
 
-And do you know what they have in common? Let us tell you...-->
-
-
-# Breaking down apps
-
-### Key concepts
-
-#### Interface
+### Interface
 
 The parts of the app you directly interact with (touch, read, click, speak to etc.)
 
 A good interface must be *usable* and should align to a user's *mental models* (how does s/he expect the interface to work). 
 
-#### Data
+### Data
 
 The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*). 
 
 Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location apps stream...
 
-#### Logic
+### Logic
 
 The **coded rules** that determine how the app interface reacts to your *inputs*, how it manipulates data and how it presents it to you (*output*).
 
@@ -512,22 +500,18 @@ You can add **hyperlinks** to our content using the `a` element.
 
 ### Publish your project
 
-
 > Now click `Publish` to see how your app looks so far. :+1:
 
 
 # Coding and app-making for beginners
 
-
 ## Day 1 PM
-
 
 ### Styling
 
 Now the fun part: **CSS**!
 
 There's a `link` in the `head` of your app which points to a CSS file called **style.css**. This is where you add your own styles.
-
 
 ```html
 <link rel="stylesheet" href="css/style.css">
