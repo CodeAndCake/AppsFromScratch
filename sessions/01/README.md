@@ -1,6 +1,6 @@
 # Coding and app-making for beginners
 
-## Day 1
+## Day 1 AM
 
 1. Welcome & introductions 
 * [The plan for this course](#what-is-the-plan)
@@ -35,7 +35,7 @@ So, we will have **lunch break** at around 1pm for 1 hour, aiming to wrap up by 
 
 * **Aimee** studied fashion design, makes clothes and websites. She is the *jargon buster*, the bridge between beginners and professional coders.
 
-**No computer scientists**, we all learned code by ourselves through experimenting and tinkering. 
+**No computer scientists**, we learned code by ourselves through experimenting and tinkering. 
 
 We want to show you that it's easy to get started and anyone can give it a go!
 
@@ -88,11 +88,56 @@ Including notes from each session, exercises, sample code, presentations and lin
 When	| What	
 ---	| ----	
 ![](../img/day-1.jpg) | On the first day we discuss key concepts around apps (interface, logic, data) and start making with HTML & CSS.
-![](../img/day-2.jpg) | We work together to generate, spec out and test your app ideas. Then start programming with JavaScript.
-![](../img/day-3.jpg) | You'll apply your research to sketch out how your app looks and behaves on paper. Then you'll make digital wireframes.
-![](../img/day-4.jpg) | You'll present your app designs and we'll review them together. Then get into the core concepts of programming.
-![](../img/day-5.jpg) | You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
+![](../img/day-2.jpg) | What exactly is programming anyway? We introduce the principles of programming, then start playing with JavaScript.
+![](../img/day-3.jpg) | Data! Where to find it and how to use it. Your app's data has to be stored somewhere!
+![](../img/day-4.jpg) | You will use JavaScript _libraries_ to speed up your development and learn how to troubleshoot your code, aka _debugging_.
+![](../img/day-5.jpg) | By this point you have a rough app prototype, which you can then hack to apply your own ideas and content.
 ![](../img/day-6.jpg) | Tweak your app prototype. Celebrate your achievements, and take away free resources to continue your learning journey.
+
+# What is **code**?
+
+Can you fill in the blanks?
+
+#### [...] code
+
+Think of words/phrases that end with `code`.
+
+<!-- *Morse code*, *post code*, *dress code*... -->
+
+Code existed **before computers**.
+
+Code is about
+
+*   transmitting information
+*   giving instructions
+*   **communication**
+
+If I want to talk to my **grandma**, I need to use Italian. To communicate with you, I use English. 
+
+To **talk to a computer**, we use...
+
+Code is **instructions** to a computer: extremely powerful, fundamentally thick.
+
+### How do you learn to code?
+
+Remember how you learned your first language as a child?
+
+You learned your first language by copying people around you, observing their reactions to your actions. 
+
+"If I say `mum` then that one person will respond. She also responds when I cry. She doesn't respond to other names, it seems."
+
+Learning a coding language is like **learning a new language**.
+
+* **Translating** your ideas into a language your computer understands
+
+* **Observing** how the computer responds to your inputs and adapting them until it works
+
+Like natural languages, there's no *right* or *wrong* way to do it
+
+**Today** you're going to learn **2 new languages**, but before we get into that...
+
+
+
 
 
 # What is an app?
@@ -105,26 +150,21 @@ How do you explain what an app is to someone or something who's never seen/used 
 
 ### Your turn
 
-Form small teams (max 4 people).
 
-Pretending one of you is the *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
+Pretending one of us is an *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
 
-If people answer with jargon, like *software* or *download*, then we ask them to explain those too to your *alien*.
+If people answer with jargon, like *software* or *download*, then we ask them to explain those too to our *alien*.
 
-* **Where** do you find apps?
 * What does an app **look like**?  
 * How do you **interact** with an app? Do you speak to it, do you shake it etc?
-* **Who makes** apps?
 * What are apps **made out of**?
 * **Who uses** apps? Why?
-* What are apps useful for? What can you do with apps? How do they **serve** people who use them?
-* **How often** do people use apps? 
 
 <!--
 * Can you buy apps? Who sells them?
 * Would you download an app if you need it only once or twice?
 -->
-After 10-15 minutes, we'll have a group conversation all together.
+
 
 ### What is an app, then?
 
@@ -210,7 +250,7 @@ No matter which data the app uses, its **logic** will be the same:
 
 Here's an initial sketch of how the app may look and work.
 
-[![](assets/demo-app-moqups.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
+[![](assets/monochrome_moqup.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
 
 ### Data
 
@@ -229,9 +269,15 @@ We'll also show you that you don't need to write all this code from scratch. The
 
 # Let's code
 
-> Good coders don't type. They **copy-paste**.
+A few tips before we start coding:
 
-Before we start coding, make sure you're familiar with the most important keyboard shortcuts for a good coder.
+* You don't need to understand everything right away, it will slowly make more and more sense as you look at it over time. 
+
+* You don't have to bust your brain to remember everything either! Give your brain a break!
+ 
+* If you're not sure how to do something, get into the practice of *googling* it! All the answers are out there. Being able to find them is a real skill that all coders continue to hone.
+
+* Good coders don't type - always copy-paste where possible!
 
 ### Copy
 
@@ -271,19 +317,23 @@ We're going to learn how to:
 
 ## Step by step
 
-Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and sign up (it's free). 
+> Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in with these details:
+> * Email: codeyourapp@gmail.com
+> * Password: Letme1n! 
 
-Then log in and click on `Start a project from scratch`.
+> Then click on `Start a project from scratch`.
 
-### Content first
+> Change the name of your project to your name. For now, everyone's projects will be stored in one account.
 
-> Content first, style later!
+
+### Content first, style later!
+
 
 It's good practice to build the **HTML** first, and then make it _stylish_ with CSS.
 
 #### HTML basics
 
-HTML is a *markup* language, which you use to *mark content up*. 
+HTML is a *markup* language, which you use to *format your content*. 
 
 Essentially, you wrap content inside bits of code called tags.
 
@@ -305,7 +355,8 @@ For example, this is how you wrap a paragraph of text in `p` tags:
 
 Thimble created an HTML skeleton for you, containing the basic **building blocks**: `html`, `head` and `body` tags.
 
-Every HTML document, at the bare bones, needs to have this structure
+Every HTML document, at the bare bones, needs to have this structure.
+
 
 ```html
 <!doctype html>
@@ -319,9 +370,12 @@ Every HTML document, at the bare bones, needs to have this structure
 </html>	
 ```
 
+![](assets/HTML_doc_setup.jpg)
+
+
 #### Head
 
-In the `head` you can change the `title`.  
+> In the `head` you can change the `title` by changing the text inbetween the `<title></title>` tags. 
 	
 Later, you'll add links to external resources like *stylesheets* and *meta* information.
 
@@ -329,32 +383,82 @@ What you put in the `head` is not visible to the user.
 
 #### Body
 
-In the `body` you put all the interface elements that are visible to the user.
+In the `body` you will put all the **interface elements** that are visible to the user.
+
+
+# Let's start building
+
+#### Sections
+
+> Inside the `body`, add in two `<section>` elements
+
+```html
+	<body>
+		<section></section>
+		<section></section>
+	</body>
+```
+
+
+#### Fancy logo
+
+![](assets/hipsterlogogenerator.png)
+
+It's important. We recommend https://www.hipsterlogogenerator.com/ for quick and easy hipster logos :)
+
+> Take a couple of minutes to quickly make your own fancy logo.
+
+> To place your logo in your HTML document create an `img` element inside the first `section`. `img` element doesn't need a closing tag (it's one of the exceptions to the general rule of closing tags).
+
+```html
+<section>
+	<img src=" ">
+</section>
+```
+
+> Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files. In Thimble, you can upload your logo and put the name inside `src=" "`
+
+```html
+<section>
+	<img src="hipsterlogo.jpg">
+</section>
+```
+> If you're taking an image from the web you need to use the link to the image alone. Right click on the image and Copy Link Address. Then paste it inside `src=" "` 
+
+```html
+<section>
+	<img src="http://placekitten.com/200/300">
+</section>
+```
+Don't worry just now if it's too big, we'll resize it later on.
+
 
 #### Headings
 
-Inside the body, add a **heading** (`h1`) and a **sub-heading** (`h2`). These will be the most important pieces of information of your app's main page.
+![](assets/headings.jpg)
+
+> Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
 
 ```html
-<body>
+<section>
 	<h1>Your app name</h2>
 	<h2>What it does</h2>
-</body>
+</section>
 ```
 
 #### Paragraphs
 
-Explain how your app works, and what you want people to do first.  
+> Explain how your app works, and what you want people to do first.  
 
 ```html
-<body>
+<section>
 	...
 	<p>Swap skills and time with people in your community!</p>
   	<p>Just choose an activity to get started.</p>
-</body>
+</section>
 ```
 
-`p` is for *paragraph*, [ça va sans dire](https://en.wiktionary.org/wiki/%C3%A7a_va_sans_dire) :fr:
+`p` is for *paragraph*
 
 #### Dropdown
 
@@ -362,57 +466,75 @@ This is the first interactive element of your app.
 
 It's a set of `options` that people can choose from.
 
+> Under your headings, add in a `<select>` element. Inside that, add in some `<option>` elements.
+
 ```html
-<body>
+<section>
 	...
 	<select>
     <option>Keep my pet</option>
     <option>Bake a cake</option>
     <option>Move my piano</option>
   </select>
-</body>
+</section>
 ```
 
 #### Button
 
-What do you think is the HTML code to make a button?
+> Next you'll need a *find* or *search* button. What do you think is the HTML code to make a button?
 
-It's `<button>` :)
+> It's `<button>` :)
 
 ```html
-<body>
+<section>
 	...
 	<button>Find</button>
-</body>
+</section>
 ```
 
 #### Hyperlinks
 
+![](assets/links_inside_paragraphs.jpg)
+
 You can add **hyperlinks** to our content using the `a` element.
 	
 ```html
-<a href="http://example.com">the clickable text</a>
+<a href="http://example.com"> the clickable text </a>
 ```
 
 `a` is for *anchor* :anchor:
 
+> Add in a little credit at the bottom of your page, just above the closing `</body>` tag.
+
+```html
+<p>Made with love by <a href="http://example.com"> Your Name</a></p>
+```
+
 ### Publish your project
 
-We're done with HTML for today!
 
-Now click `Publish` to see how your app looks so far. :+1:
+> Now click `Publish` to see how your app looks so far. :+1:
 
-### Style later
+
+# Coding and app-making for beginners
+
+
+## Day 1 PM
+
+
+### Styling
 
 Now the fun part: **CSS**!
 
 There's a `link` in the `head` of your app which points to a CSS file called **style.css**. This is where you add your own styles.
+
 
 ```html
 <link rel="stylesheet" href="css/style.css">
 ```
 
 You can have more than just one CSS file, and we'll show you how it's good practice to work on several small files rather than one long document you may get lost into.
+
 
 #### CSS basics
 
@@ -428,7 +550,7 @@ selector
 }
 ```
 
-The part before the curly brackets `{` and `}` is the **selector**.
+The part before the curly brackets `{` and `}` is the **selector**. This ***selects* the element** from your HTML document.
 
 In CSS you can select multiple HTML elements in one go.
 
@@ -442,6 +564,10 @@ p
 ```
 
 CSS **properties** define how HTML elements are displayed.
+
+
+![](assets/css_layout.jpg)
+
 
 The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
 
@@ -458,14 +584,14 @@ p
 
 #### Play around a bit
 
-Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
+> Let's spend the next 5-10 minutes getting familiar with CSS. It doesn't matter if your app looks a bit funny for now. Things you can do:
 
-* change the `color` of your `h1` or `h2` elements
-* align some elements to the `center` (*google* how to do it)
-* hide some elements
-* change the `background-color` of the whole page 
+> * change the `color` of your `h1` or `h2` elements
+> * align some elements to the `center` (*google* how to do it)
+> * hide some elements
+> * change the `background-color` of the whole page 
 
-What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
+> What else would you like to do? Try and *google* it first, then we can do it together (if it's not too whacky).
 
 #### Search for solutions! 
 
@@ -477,24 +603,24 @@ Part of learning to code and being a coder is searching for answers, every day. 
 
 Did you know, you can see the code which has created every site on the Web? You can use the **Web Inspector** to do this. It's like x-ray specs for websites.
 
-Go to a website (any website) and right-click anywhere on that page, then select `Inspect` (or `Inspect Element` in some browsers).
+> Go to a website (any website) and right-click anywhere on that page, then select `Inspect` (or `Inspect Element` in some browsers).
 
 On the **left panel** of the `Elements` tab you can see all the HTML code for the page you're inspecting. By clicking on an HTML element you'll reveal all the CSS applied to it, on the **right panel**.
 
 You can also play with this code and change the way your favourite websites look (but don't worry, your changes won't affect how other people are experiencing that site). :scream:
 
-Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
+> Go to a site you like, right-click > `Inspect` and then see if you can find which colours it uses.
 
 #### Fonts
 
 Text is the major carrier of information on an app, so it's good practice to start with **typography**, or *type setting*. That means defining how texts are going to look, which fonts your app is going to use, and the proportions between them in your app layout. 
 
-You can grab a free **font** from [Google Fonts](https://www.google.com/fonts): 
+> You can grab a free **font** from [Google Fonts](https://www.google.com/fonts): 
 
-1. Pick a typeface you like
-* Click on `Quick-use` (the button with an arrow pointing to the right).
-* Choose the font styles you want to use
-* Copy the `link` code for it and paste it in your app `head` in Thimble. 
+> 1. Pick a typeface you like
+> * Click on `Quick-use` (the button with an arrow pointing to the right).
+> * Choose the font styles you want to use
+> * Copy the `link` code for it and paste it in your app `head` in Thimble. 
 
 	Where? Before `style.css`
 
@@ -505,7 +631,7 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 		<link rel="stylesheet" href="css/style.css">
 	</head>	
 	```
-* In `style.css`, define the font for the `body` element (all other elements will inherit it). 
+> * In `style.css`, define the font for the `body` element (all other elements will inherit it). 
 
 	```css
 	body
@@ -514,7 +640,7 @@ You can grab a free **font** from [Google Fonts](https://www.google.com/fonts):
 	}
 	```
 	
-Then you can set more specific rules for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
+> Then you can set more specific rules for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
 	
 * `font-family` 
 * `font-size`
@@ -527,6 +653,8 @@ Then you can set more specific rules for headings, paragraphs and bold elements.
 * `text-decoration`
 * `text-transform`
 * `text-indent`	
+
+> `font-family`, `font-size` and `color` are a great place to start!
 	
 #### Background images
 
