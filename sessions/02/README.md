@@ -7,10 +7,13 @@
 Today we'll look at its **data** (using an online *database*) and the **JavaScript logic** that will glue together interface and data.
 
 1. [Workshop](#workshop): HTML & CSS recap.
-* [Group task](#ux-research): UX research.
 * [What is **programming**](#programming-vs-coding)?
-* Meet **JavaScript**. 
+* Meet **JavaScript** and jQuery. 
 
+
+<!-- * [Group task](#ux-research): UX research. -->
+
+<!-- No database today -->
 
 # Workshop
 
@@ -422,7 +425,7 @@ cat.drink(cat.favouriteDrink)
 You can add pretty much anything to objects, including functions.
 
 You can see how functions **make code reusable**. For instance, the action of *drinking* remains the same, no matter what you are drinking.
-
+<!--
 ### Let's interact with *Aimee*   
    
 The Console is where you can talk JavaScript with your browser.  
@@ -458,8 +461,11 @@ aimee.getVoices()
 
 aimee.speak("Io sono Aimee!", "Google italiano")
 ```
+-->
 
 Now that you're familiar with the basic building blocks of JS ([variables](#variables), [functions](#functions) and [objects](#objects)), keep in mind that the Console is the **most useful tool** when you develop JS code and you want to quickly test it. Every JS developer uses it, every day!
+
+<!--
 
 ### Meet the database
 
@@ -475,11 +481,11 @@ We're going to use a cloud-based real-time database service called [Firebase](ht
 
 Many companies use Firebase to rapidly prototype app ideas, without investing time and money on database infrastructure and software.
 
-<!-- (acquired by Google in 2014) -->
-
 Let's learn how Firebase works, before you integrate it into your app: using Chrome, go to [bit.ly/firebaseChat](https://d157rqmxrxj6ey.cloudfront.net/baddeo/31051/) and follow the instructions :)
 
 [![](assets/firebase-challenge.jpg)](https://d157rqmxrxj6ey.cloudfront.net/baddeo/31051/)
+
+-->
 
 <!-- Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>. -->
 
