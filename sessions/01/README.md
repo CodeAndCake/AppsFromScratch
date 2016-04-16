@@ -4,7 +4,8 @@
 
 1. Welcome & introductions 
 * [The plan for this course](#what-is-the-plan)
-* Group discussion: [what is an app?](#what-is-an-app)
+* [What is code?](#what-is-code****)
+* [What is an app?](#what-is-an-app)
 * [Key concepts](#key-concepts): interface, data and logic
 * [Your project brief](#your-brief)
 * [Workshop](#lets-code): HTML & CSS
@@ -81,7 +82,7 @@ We're not here to talk at you, but to work with you and we want you to **work to
 
 ### GitHub
 
-All the course material is here: 
+All the course material is on GitHub :octocat: 
 [**github.com/CodeAndCake/AppsFromScratch**](https://github.com/CodeAndCake/AppsFromScratch) 
 
 Including notes from each session, exercises, sample code, presentations and links to learn more!
@@ -127,7 +128,7 @@ Code is **instructions** to a computer: extremely powerful yet fundamentally *th
 
 Remember how you learned your first language as a child?
 
-You learned your first language by copying people around you, observing their reactions to your actions. 
+You learned your first language by **copying** people around you, **observing** their reactions to your actions. 
 
 "If I say `mum` then that one person will respond. She also responds when I cry. She doesn't respond to other names, it seems."
 
@@ -137,7 +138,7 @@ Learning a coding language is like **learning a new language**.
 
 * **Observing** how the computer responds to your inputs and adapting them until it works
 
-Like natural languages, there's no *right* or *wrong* way to do it
+Like natural languages, there's no *right* or *wrong* way to do it.
 
 **Today** you're going to learn **2 new languages**: HTML and CSS.
 
@@ -150,11 +151,13 @@ How do you explain what an app is to someone or something who's never seen/used 
 
 ![](assets/et.png)
 
+<!--
 ### Your turn
 
 Pretending one of us is an *alien*, let's ask some obvious questions and jot down some answers and key words on post-its. 
 
 If people answer with jargon, like *software* or *download*, then we ask them to explain those too to our *alien*.
+-->
 
 * What does an app **look like**?  
 * How do you **interact** with an app? Do you speak to it, do you shake it etc?
@@ -165,7 +168,7 @@ If people answer with jargon, like *software* or *download*, then we ask them to
 
 There is no clear-cut definition of *app*.
 
-For the sake of this course, we like to think of apps as **small digital tools** that are connected to the Web.
+For the sake of this course, we like to think of apps as small **digital tools** that are **connected** to the Web.
 
 To use an analogy, if a website is like a *book*, which you use to find and consume information, an app is closer to a *whisk*, which you use to make something with.
 
@@ -176,6 +179,8 @@ Apps generally have a specific function, or a small set of functions. They are n
 ![](assets/swiss-army-knife.png)
 
 This is *not* a good app. It is not **usable**, even though all the tools it features could be usable (and possibly useful) on their own.
+
+Good apps do **one thing**, and do it well.
 
 <!--
 ### **How long** does it take to make an **app**?
@@ -210,7 +215,7 @@ A good interface must be *usable* and should align to a user's *mental models* (
 
 The *fuel* of an app, the raw ingredients that the interface presents to you (more or less *cooked*). 
 
-Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location apps stream...
+Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location coordinates apps stream...
 
 ### Logic
 
@@ -223,7 +228,7 @@ Many `if this then that` blocks can build quite complex behaviours.
 
 # Your brief
 
-### Make an app that helps people sort through heaps of data to **find who/what they are looking for**.
+### Make an **app** that helps **people** sort through **data** to **find** who/what they are looking for.
 
 **The *who/what* is up to you**. People may be looking for other people in their community to do something together, or they may be looking for food recipes, places to go, books to read, films to watch.. 
 
@@ -240,32 +245,34 @@ Here's an initial sketch of how the app may look and work.
 
 [![](assets/monochrome_moqup.png)](https://app.moqups.com/aimeebethmj@gmail.com/424uOp4p55/view/page/a80b23701)
 
+This is what we're focusing on today.
+
+### Logic
+
+Next week we'll teach you how to use JavaScript to assign *behaviour* to your interface, coding logic like `if you click this button, then do XYZ`.
+
+We'll also show you that you don't need to write all this code from scratch. There are plenty of ready-made code *libraries* that you can use in your own project. No need to reinvent the wheel!
+
 ### Data
 
 We'll show you how to create structured data, aka a **database**. 
 
 No scary formula or data crunching though! 
 
-Later on you can change the data to make your app serve your own purposes.
-
-### Logic
-
-We'll teach you how to use JavaScript to assign *behaviour* to your interface, coding logic like `if you click this button, then do XYZ`.
-
-We'll also show you that you don't need to write all this code from scratch. There are plenty of ready-made code *libraries* that you can use in your own project. No need to reinvent the wheel!
+On week 5 and 6 you will change the data to make your app serve your own purposes.
 
 
 # Let's code
 
-A few tips before we start coding:
+A few **tips** before we start coding:
 
 * You don't need to understand everything right away, it will slowly make more and more sense as you look at it over time. 
 
-* You don't have to bust your brain to remember everything either! Give your brain a break!
+* You don't have to bust your brain to remember everything either! 
  
 * If you're not sure how to do something, get into the practice of *googling* it! All the answers are out there. Being able to find them is a real skill that all coders continue to hone.
 
-* Good coders don't type - always copy-paste where possible!
+* Good coders don't type - always **copy-paste** where possible!
 
 ### Copy
 
@@ -279,14 +286,13 @@ Mac <kbd>cmd</kbd> + <kbd>x</kbd>
 
 PC <kbd>ctrl</kbd> + <kbd>x</kbd>
 
-Very useful when you want to *move* one block of code from one place to another.
+Very useful when you want to **move** one block of code from one place to another.
 
 ### Paste
 
 Mac <kbd>cmd</kbd> + <kbd>v</kbd>
 
 PC <kbd>ctrl</kbd> + <kbd>v</kbd>
-
 
 ## HTML & CSS crash course
 
@@ -311,11 +317,9 @@ We're going to learn how to:
 
 > Then click on `Start a project from scratch`.
 
-> Change the name of your project to your name. For now, everyone's projects will be stored in one account.
-
+> Change the name of your project to **your name**. For now, everyone's projects will be stored in one account.
 
 ### Content first, style later!
-
 
 It's good practice to build the **HTML** first, and then make it _stylish_ with CSS.
 
@@ -345,7 +349,7 @@ Thimble created an HTML skeleton for you, containing the basic **building blocks
 
 Every HTML document, at the bare bones, needs to have this structure.
 
-
+<!--
 ```html
 <!doctype html>
 <html>
@@ -357,69 +361,73 @@ Every HTML document, at the bare bones, needs to have this structure.
 	</body>
 </html>	
 ```
+-->
 
 ![](assets/HTML_doc_setup.jpg)
 
-
 #### Head
 
-> In the `head` you can change the `title` by changing the text inbetween the `<title></title>` tags. 
-	
-Later, you'll add links to external resources like *stylesheets* and *meta* information.
+> In the `head` edit your app `title` by changing the text in between the `<title> ... </title>` tags. 
 
 What you put in the `head` is not visible to the user.
+
+Later, you'll add links to external resources like *stylesheets* and *meta* information.
 
 #### Body
 
 In the `body` you will put all the **interface elements** that are visible to the user.
 
 
-# Let's start building
+## Let's start building
 
 #### Sections
 
 > Inside the `body`, add in two `<section>` elements
 
-```html
-	<body>
-		<section></section>
-		<section></section>
-	</body>
+> ```html
+<body>
+	<section></section>
+	<section></section>
+</body>
 ```
-
 
 #### Fancy logo
 
 ![](assets/hipsterlogogenerator.png)
 
-It's important. We recommend https://www.hipsterlogogenerator.com/ for quick and easy hipster logos :)
+It's important. We recommend [hipsterlogogenerator.com](https://www.hipsterlogogenerator.com) for quick and easy hipster logos :)
 
 > Take a couple of minutes to quickly make your own fancy logo.
 
 > To place your logo in your HTML document create an `img` element inside the first `section`. `img` element doesn't need a closing tag (it's one of the exceptions to the general rule of closing tags).
 
-```html
+> ```html
 <section>
 	<img src=" ">
 </section>
 ```
 
-> Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files. In Thimble, you can upload your logo and put the name inside `src=" "`
+Every `img` requires a link - either a weblink to the image or the location of the image you're using in your files. 
 
-```html
+> In Thimble, upload your logo and put the name inside `src=" "`
+
+> ```html
 <section>
 	<img src="hipsterlogo.jpg">
 </section>
 ```
-> If you're taking an image from the web you need to use the link to the image alone. Right click on the image and Copy Link Address. Then paste it inside `src=" "` 
 
-```html
+If you're taking an image from the web you need to use the link to the image alone. 
+
+> Right-click on the image and `Copy Link Address`. Then paste it inside `src=" "` 
+
+> ```html
 <section>
 	<img src="http://placekitten.com/200/300">
 </section>
 ```
-Don't worry just now if it's too big, we'll resize it later on.
 
+Don't worry just now if it's too big, we'll resize it later on.
 
 #### Headings
 
@@ -427,8 +435,9 @@ Don't worry just now if it's too big, we'll resize it later on.
 
 > Inside the first `section`, add a **heading** `h1` and a **sub-heading** `h2`. These will be the most important pieces of information of your app's main page.
 
-```html
+> ```html
 <section>
+	...
 	<h1>Your app name</h2>
 	<h2>What it does</h2>
 </section>
@@ -436,9 +445,9 @@ Don't worry just now if it's too big, we'll resize it later on.
 
 #### Paragraphs
 
-> Explain how your app works, and what you want people to do first.  
+> Write a paragraph to explain how your app works, and what you want people to do first.  
 
-```html
+> ```html
 <section>
 	...
 	<p>Swap skills and time with people in your community!</p>
@@ -456,7 +465,7 @@ It's a set of `options` that people can choose from.
 
 > Under your headings, add in a `<select>` element. Inside that, add in some `<option>` elements.
 
-```html
+> ```html
 <section>
 	...
 	<select>
@@ -464,19 +473,21 @@ It's a set of `options` that people can choose from.
     <option>Bake a cake</option>
     <option>Move my piano</option>
   </select>
+  ...
 </section>
 ```
 
 #### Button
 
-> Next you'll need a *find* or *search* button. What do you think is the HTML code to make a button?
+> Next you'll need a `Find` or `Search` button. What do you think is the HTML code to make a button?
 
 > It's `<button>` :)
 
-```html
+> ```html
 <section>
 	...
 	<button>Find</button>
+	...
 </section>
 ```
 
@@ -494,8 +505,10 @@ You can add **hyperlinks** to our content using the `a` element.
 
 > Add in a little credit at the bottom of your page, just above the closing `</body>` tag.
 
-```html
-<p>Made with love by <a href="http://example.com"> Your Name</a></p>
+> ```html
+	...
+	<p>Made with love by <a href="http://example.com"> Your Name</a></p>
+</body>	
 ```
 
 ### Publish your project
@@ -509,7 +522,7 @@ You can add **hyperlinks** to our content using the `a` element.
 
 ### Styling
 
-Now the fun part: **CSS**!
+Now the stylish part: **CSS**!
 
 There's a `link` in the `head` of your app which points to a CSS file called **style.css**. This is where you add your own styles.
 
@@ -549,9 +562,7 @@ p
 
 CSS **properties** define how HTML elements are displayed.
 
-
 ![](assets/css_layout.jpg)
-
 
 The first bit is the property name, eg `color`, and the second bit is the value, eg `green`. They are separated by a `:` colon, and you MUST end each line of CSS with a `;` semicolon (for real, otherwise your browser will choke).
 
@@ -606,9 +617,9 @@ Text is the major carrier of information on an app, so it's good practice to sta
 > * Choose the font styles you want to use
 > * Copy the `link` code for it and paste it in your app `head` in Thimble. 
 
-	Where? Before `style.css`
+>	Where? Before `style.css`
 
-	```html
+>	```html
 	<head>
 		...
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
@@ -617,14 +628,16 @@ Text is the major carrier of information on an app, so it's good practice to sta
 	```
 > * In `style.css`, define the font for the `body` element (all other elements will inherit it). 
 
-	```css
+>	```css
 	body
 	{
 		font-family: 'Lato', sans-serif;
 	}
 	```
+
+We're using the font *Lato* as an example, but you can pick **whichever font** you like and change your CSS code accordingly. There are more than 700 fonts available on Google Fonts!
 	
-> Then you can set more specific rules for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
+Then you can set **more specific rules** for headings, paragraphs and bold elements. For instance, you could use a different font just for headings, as well as changing many other aspects of your typography:
 	
 * `font-family` 
 * `font-size`
@@ -644,14 +657,30 @@ Text is the major carrier of information on an app, so it's good practice to sta
 
 You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
 
-```css
+> In your `style.css` create a new `background-image` rule inside the `body`
+
+> ```css
 body
 {
-	background-image: url(http://example.com/image.jpg);
+	background-image: url(  );
 }
 ```
 
 You can upload your own image files to Thimble (if they're smaller than 3MB), or use images from the Web (provided they're licensed for re-use).
+
+For now, we'll use [unsplash.com](https://unsplash.com), where you can find beautiful, high-res pictures that are free to use for *whatever* purpose you want. Amazing! Read their [licence](https://unsplash.com/license) if you don't believe us :)
+
+> 1. Find an image you like on [unsplash.com](https://unsplash.com)
+> * Click on the `↓` (Download) button on the bottom-right corner of the picture. This will open a new browser tab showing your chosen picture only.
+> * **Copy** the address (URL) of that image. It starts with `https://images.unsplash.com` and it's quite long.
+> * **Paste** it in your `style.css` inside the `body` `background-image` rule like so
+
+> ```css
+body
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+}
+```
 
 By default background-images *tile*, but we want them to take up the whole available screen space, without losing their aspect ratio (no squashing). 
 
@@ -664,7 +693,7 @@ Add `background-size: cover;` to the `body` rule.
 ```css
 body
 {
-	background-image: url(http://example.com/image.jpg);
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
  	background-size: cover;
 }
 ```	
