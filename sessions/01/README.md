@@ -312,8 +312,8 @@ We're going to learn how to:
 ## Step by step
 
 > Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in with these details:
-> * Email: codeyourapp@gmail.com
-> * Password: Letme1n! 
+> * Email: `codeyourapp`
+> * Password: `Letme1n!` 
 
 > Then click on `Start a project from scratch`.
 
@@ -469,11 +469,11 @@ It's a set of `options` that people can choose from.
 <section>
 	...
 	<select>
-    <option>Keep my pet</option>
-    <option>Bake a cake</option>
-    <option>Move my piano</option>
-  </select>
-  ...
+		<option>Keep my pet</option>
+		<option>Bake a cake</option>
+		<option>Move my piano</option>
+	</select>
+	...
 </section>
 ```
 
