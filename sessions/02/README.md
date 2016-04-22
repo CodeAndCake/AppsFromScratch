@@ -114,7 +114,7 @@ Think of a group of people working together, eg to make a car, a newspaper, a we
    }  
    ```
 
-## Step by step
+# Let's code
 
 Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in. Then open your project from last week. 
 
@@ -122,7 +122,19 @@ Your app HTML structure is inside `index.html`.
 
 The CSS style is in another file `style.css` which is linked to the HTML with a `link` inside the `head` in `index.html`.
 
-<!-- 01#html--css-crash-course -->
+### Thinking inside the **box**
+
+Imagine that there is an **invisible box** around every HTML element. 
+
+Your browser likes to put code into boxes, boxes inside boxes inside boxes inside boxes...
+
+Each HTML box has:
+
+* `margin`
+* `border`
+* `padding`
+
+![](assets/box-model.gif)
 
 ### Styling interactive elements
 
@@ -130,9 +142,9 @@ The CSS style is in another file `style.css` which is linked to the HTML with a 
 
 To style your dropdown, you first need to know how it's called in HTML: `select`
 
-In `style.css` add a new CSS block
+> In `style.css` add a new CSS block
 
-```css
+> ```css
 select
 {
 	background-color: red; 
@@ -145,9 +157,9 @@ In Thimble, if you right-click on `red` and then `Quick Edit` a colour picker wi
 
 ![](assets/quick-edit.png)
 
-Remember how to change the **colour of texts**? It's `color` :us:
+> Remember how to change the **colour of texts**? It's `color` :us:
 
-```css
+> ```css
 select
 {
 	background-color: red; 
@@ -159,9 +171,9 @@ Last week you integrated a font from [Google Fonts](https://www.google.com/fonts
 
 The dropdown and buttons are still in the standard browser font.
 
-How do you **change the font** of your dropdown? It's `font-family`
+> How do you **change the font** of your dropdown? It's `font-family`
 
-```css
+> ```css
 select
 {
 	background-color: red; 
@@ -172,37 +184,40 @@ select
 
 Currently the dropdown looks too small and its text is not **comfortable to read**. How do you fix that?
 
-```css
+> ```css
 select
 {
 	...
-	font-size: 30px;
+	font-size: 200%;
 }
 ```
 
-Adjust the `font-size` to suit your app content.
+> Adjust the `font-size` to suit your app content.
 
 Btw `px` stands for *pixels*, which are the little dots that make up the screen. If you go close enough to your computer screen, you'll start seeing the pixels.
 
 #### Button
 
-Add a new CSS block that targets the `button` 
+> Add a new CSS block that targets the `button` 
 
-```css
+> ```css
 button
 {
 	border: none;
 	background-color: red; 
+	cursor: pointer;
 }
 ```
 
-Change the `color` to match your design. It's good practice to style all *interactive* interface elements the same **colour and prominent**.
+> Change the `color` to match your design. 
+
+It's good practice to style all *interactive* interface elements the same **colour and prominent**.
 
 Now you can apply some of the styles from the dropdown to the `button`. 
 
-How do you make **rounded corners**? With `border-radius`.
+> How do you make **rounded corners**? With `border-radius`.
 
-```css
+> ```css
 button
 {
 	...
@@ -212,7 +227,7 @@ button
 
 Nice. It looks a bit squished though. We can use `padding` to add some space between the button text and its border.
 
-```css
+> ```css
 button
 {
 	...
@@ -226,9 +241,9 @@ As an interactive element, a `button` should respond to user interactions, throu
 
 For example, when you roll over a button, it's good practice for it to change its appearance, acknowledging that *something is happening*.
 
-Add a new CSS block that targets the `hover` state of your `button` 
+> Add a new CSS block that targets the `hover` state of your `button` 
 
-```css
+> ```css
 button:hover
 {
 	color: black;
@@ -252,21 +267,6 @@ button
 
 `s` stands for seconds.
 
-### Thinking inside the **box**
-
-Imagine that there is an **invisible box** around every HTML element. 
-
-Your browser likes to put code into boxes, boxes inside boxes inside boxes inside boxes...
-
-Each HTML box has:
-
-* `margin`
-* `border`
-* `padding`
-
-![](assets/box-model.gif)
-
-Play around with those three CSS properties to tweak your app's layout!
 
 
 # UX research
@@ -298,8 +298,6 @@ At its core, the logic building block of an app is a statement that sounds like 
 Many `if this then that` blocks can build complex, seemingly *magic* behaviours.
 
 ### Your turn
-
-<!-- Competitor analysis -->
 
 Form small groups (max 4 people).
 
