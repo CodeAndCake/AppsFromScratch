@@ -307,6 +307,83 @@ It still looks *odd* on large screens though.
 `max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
 
 
+## Making a list
+
+So far your interface features **input** elements and some text. 
+
+What about the **output** elements? 
+
+<!--In other words, how your interface would display a **list of results** from the database.-->
+
+It's common practice to **mock up** interfaces with *fake data*, and then hook them up with *real data*.
+
+So, we will mock up a **list** of results (people in our *community skill-swap* app example) using HTML and CSS. In the next weeks we'll learn how to populate that list with real data using JS.
+
+> In `index.html` create an **u**nordered **l**ist `ul` under the `button`
+
+>	```html
+	<ul>
+	</ul>
+	```
+
+> Inside the `ul` create a **l**ist **i**tem `li`
+
+	```html
+	<ul>
+		<li></li>
+	</ul>
+	```
+
+Think about what you want your search results to display. For example we could have an image `img`, a heading `h2` and a short paragraph `p`.
+
+> Inside the `li` put some *placeholder* content. 
+
+>	```html
+	<ul>
+		<li>
+			<img src="http://api.randomuser.me/portraits/women/27.jpg">
+			<h2>Jo</h2>
+			<p>I like coding and coffee</p>
+		</li>
+		<li>
+			<img src="http://api.randomuser.me/portraits/men/33.jpg">
+			<h2>Mo</h2>
+			<p>I like cats and plants</p>
+		</li>
+	</ul>
+	```
+
+A couple of list items will give us an idea of how your interface will display search results.
+
+We can now **style** these. 
+
+For example, how can we remove the *bullet points* from the list?
+
+> In `style.css` select the list `ul` and define its style. 
+
+> ```css
+	ul
+	{
+		list-style: none;
+	}
+	``` 
+
+In CSS you can select elements **nested** inside other elements like this
+
+>	```css
+	li img
+	{
+		width: 50px;
+	}
+	```
+	
+The rule above will select all images `img` inside list items `li`.
+
+Confused? Let's play [CSS Diner](http://flukeout.github.io), an online game that teaches you CSS **selectors**! 
+	
+<!-- Remember, if you don't know how to style your element, Google may have the answers! -->
+
+
 # Coding vs programming 
 
 ### Do **coding** and **programming** mean the same thing?
