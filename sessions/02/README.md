@@ -44,7 +44,8 @@ Think of a group of people working together, eg to make a car, a newspaper, a we
 * Is this code HTML or CSS?
 
 	```css
-	a {
+	a 
+	{
 		color: orange;
 	}	
 	```
@@ -72,7 +73,8 @@ Think of a group of people working together, eg to make a car, a newspaper, a we
 * What does this code produce?
 
 	```css
-	a {
+	a 
+	{
 		background-color: orange;
 	}
 	```	
@@ -94,21 +96,24 @@ Think of a group of people working together, eg to make a car, a newspaper, a we
 * Why doesn't this CSS code work? 
 
 	```css
-   <p> { 
+   <p> 
+   { 
    	color: red; 
    }
    ```     
 * Why doesn't this CSS code turn my paragraphs red? 
 
 	```css
-	p { 
+	p 
+	{ 
 		colour: red; 
 	}      
 	```
 * Why doesn't this CSS code turn my paragraphs red? 
 
 	```css
-   p { 
+   p 
+   { 
     	font-size: 20px 
     	color: red;
    }  
@@ -122,7 +127,7 @@ Your app HTML structure is inside `index.html`.
 
 The CSS style is in another file `style.css` which is linked to the HTML with a `link` inside the `head` in `index.html`.
 
-### Thinking inside the **box**
+## Thinking inside the **box**
 
 Imagine that there is an **invisible box** around every HTML element. 
 
@@ -136,9 +141,9 @@ Each HTML box has:
 
 ![](assets/box-model.gif)
 
-### Styling interactive elements
+## Styling interactive elements
 
-#### Dropdown
+### Dropdown
 
 To style your dropdown, you first need to know how it's called in HTML: `select`
 
@@ -196,7 +201,7 @@ select
 
 Btw `px` stands for *pixels*, which are the little dots that make up the screen. If you go close enough to your computer screen, you'll start seeing the pixels.
 
-#### Button
+### Button
 
 > Add a new CSS block that targets the `button` 
 
@@ -256,9 +261,9 @@ Now when you roll over the button, its text will turn black.
 
 Currently the text colour flashes from the normal state to the `hover` state.
 
-You can make that transition smooth using the `transition` CSS property
+> You can make that transition smooth using the `transition` CSS property
 
-```css
+> ```css
 button
 {
 	transition: 0.6s;
@@ -267,9 +272,39 @@ button
 
 `s` stands for seconds.
 
+## Responsive design
 
+So far we've styled individual elements like `a`, `img`, `select` and `button`. It's time to look at the bigger picture. Our design has a couple of issues:
 
+1. Texts over the background image are not *legible*.
+* On large screens, your app looks *odd*. 
 
+To address these, we can add a semi-transparent background that will focus people's attention to where they should read and click.
+
+> Create a new CSS rule for `section` and give it a `background-color`.
+
+> ```css
+	section 
+	{
+		background: rgba(255,255,255,0.6);
+		padding: 50px;
+	}
+	```
+
+The CSS above will add a white semi-transparent background to the `section` and a `50px` padding around its content, making it all more *legible*.
+
+It still looks *odd* on large screens though.
+
+> ```css
+	section 
+	{
+		...
+		max-width: 500px;
+  		margin: auto;
+	}
+	```
+
+`max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
 
 
 # Coding vs programming 
