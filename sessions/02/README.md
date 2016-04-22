@@ -1,33 +1,118 @@
 # Coding and app-making for beginners 
 
-## Day 2
+## Day 2 AM
 
 [Last week](../01) we started building your app's **interface** with HTML and CSS. 
 
-Today we'll look at its **data** (using an online *database*) and the **JavaScript logic** that will glue together interface and data.
+**Today** we'll continue making with HTML and CSS. 
 
+Then we'll introduce the principles of **programming** and start playing with **JavaScript**.
+
+<!--
 1. [Workshop](#workshop): HTML & CSS recap.
 * [What is **programming**](#programming-vs-coding)?
 * Meet **JavaScript** and jQuery. 
-
+-->
 
 <!-- * [Group task](#ux-research): UX research. -->
 
 <!-- No database today -->
 
-# Workshop
 
-### HTML & CSS recap
+## HTML & CSS recap
 
 Different **languages**, separate [**concerns**](http://en.wikipedia.org/wiki/Separation_of_concerns#HTML.2C_CSS.2C_JavaScript).
 
 Think of a group of people working together, eg to make a car, a newspaper, a website, to provide education. What are the different *roles* and *concerns* of these people?
 
-##### 1. **HTML** → content and structure  
+##### **HTML** → content and structure  
 
-##### 2. **CSS** → style and design 
+##### **CSS** → style and design 
 
-##### 3. **JS** → data and logic
+<!--##### 3. **JS** → data and logic-->
+
+### Quiz time!
+
+1. Is this code HTML or CSS?
+
+	```html
+	<a href="http://example.com"> Click me! </a>
+	```
+	
+	- [ ] HTML
+	- [ ] CSS
+* Is this code HTML or CSS?
+
+	```css
+	a {
+		color: orange;
+	}	
+	```
+	
+	- [ ] HTML
+	- [ ] CSS		 
+* What does this code produce?
+
+	```html
+	<a href="http://example.com"> Click me! </a>
+	```
+	
+	- [ ] An apple
+	- [ ] A paragraph
+	- [ ] A hyperlink
+* Where in a `.html` document would you find this code?
+
+	```html
+	<link href="style.css" rel="stylesheet">
+	```
+	
+	- [ ] In the `gut`
+	- [ ] At the end of the `body`
+	- [ ] Inside the `head`	
+* What does this code produce?
+
+	```css
+	a {
+		background-color: orange;
+	}
+	```	
+	
+	- [ ] It turns every `a` orange
+	- [ ] It turns the text of `a` elements orange
+	- [ ] It turns the background of `a` elements orange
+	- [ ] It turns the border of `a` elements orange
+* What's wrong with this HTML code?
+
+	```html
+	<p Good morning coders!</p>
+	```
+* What's wrong with this HTML code?
+
+	```html
+	<p> Good morning coders!<p/>
+	```
+* Why doesn't this CSS code work? 
+
+	```css
+   <p> { 
+   	color: red; 
+   }
+   ```     
+* Why doesn't this CSS code turn my paragraphs red? 
+
+	```css
+	p { 
+		colour: red; 
+	}      
+	```
+* Why doesn't this CSS code turn my paragraphs red? 
+
+	```css
+   p { 
+    	font-size: 20px 
+    	color: red;
+   }  
+   ```
 
 ## Step by step
 
