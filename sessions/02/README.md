@@ -269,50 +269,7 @@ button
 
 
 
-# UX research
 
-Before you start designing your app, it's good practice to **analyse some existing apps** - your potential competitors. 
-
-This can help you understand your users and how other designers have tackled a problem. You can bet that those products have been tested over and over, so most likely you'll come across **useful ideas** to consider in your design.
-
-### Key concepts
-
-#### Interface
-
-The parts of the app you directly interact with (touch, read, click, speak to etc.)
-
-A good interface must be *usable* and should align to a user's *mental models* (how does s/he expect the interface to work). 
-
-#### Data
-
-The *fuel* of an app, the raw ingredients that the interface presents to you (**output**). 
-
-Data is also the information that you provide an app with: the username you type in, the pictures you upload, the geo-location apps stream etc (**input**).
-
-#### Logic
-
-The **coded rules** that determine how the app interface reacts to your *inputs*, how it manipulates data and what *output* it presents to you.
-
-At its core, the logic building block of an app is a statement that sounds like `if this, then that`, eg: `if you click on this button, the app will show you this section`.
-
-Many `if this then that` blocks can build complex, seemingly *magic* behaviours.
-
-### Your turn
-
-Form small groups (max 4 people).
-
-Choose one app that you are all familiar with and analyse it using this framework:
-
-1. What is the main **purpose** of the app?
-* **Who** is it for? Be specific, apps are not "for everyone".
-* **When** do people need this app? Be specific.
-* Looking at the app **interface**, list the *verbs* of the app, ie what **actions** does the app allow you to do. Think about possible verbs that are not part of the app, and why it may be that you're not allowed to perform those actions.
-* What **input** does the app require from you?  
-* Where does the app's **data** come from? Who creates it?
-* What does the app do with that data (ie what's the app **logic**)?
-* What **output** does the app produce?
-
-<!-- 10-15 minutes in groups, then 15-20 minutes review, and then it should zunch! -->
 
 
 # Coding vs programming 
