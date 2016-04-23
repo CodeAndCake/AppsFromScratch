@@ -384,9 +384,13 @@ Confused? Let's play [CSS Diner](http://flukeout.github.io), an online game that
 <!-- Remember, if you don't know how to style your element, Google may have the answers! -->
 
 
-# Coding vs programming 
+# Coding and app-making for beginners 
 
-### Do **coding** and **programming** mean the same thing?
+## Day 2 PM
+
+<!--## Coding vs programming -->
+
+## Do **coding** and **programming** mean the same thing?
 
 * *Coding*: writing code
 * *Programming*: designing a list of instructions to get something done (aka **algorithm**) and then coding such instructions
@@ -398,7 +402,7 @@ Confused? Let's play [CSS Diner](http://flukeout.github.io), an online game that
 
 #### Programming requires us to **think** in a certain way
 
-Before we learn how to *code* a program, we should learn how to *think* about problems and solutions.
+Before we learn how to *code* a program, we should learn how to *think* about problems and solutions. 
 
 #### **Computational thinking** 
 
@@ -453,15 +457,17 @@ Think about the [robot game](#robot-time): which variables, functions and logic 
 
 ### Programming languages
 
-Last week we learned how to build interfaces using **HTML** + **CSS**.
+So far we learned how to build interfaces using **HTML** + **CSS**.
+
+As you've seen your interface, despite being very stylish, doesn't do much (yet).
 
 To set things in motion, to have a truly interactive experience, we need another language: **JavaScript**.
 
-##### 1. **HTML** → content and structure  
+##### **HTML** → content and structure  
 
-##### 2. **CSS** → style and design 
+##### **CSS** → style and design 
 
-##### 3. **JS** → behaviour and logic
+##### **JS** → behaviour and logic
 
 HTML and CSS are coding languages.
 
