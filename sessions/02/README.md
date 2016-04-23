@@ -487,9 +487,9 @@ JavaScript is a programming language (together with PHP, Python, Ruby, Java and 
 
 We'll use the [**JavaScript Console**](http://webmasters.stackexchange.com/a/77337) to learn with a few basic JS tricks.
 
-Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>.
+> Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>.
 
-![](assets/console.png)
+> ![](assets/console.png)
 
 We don't normally write JS in the Console. Instead, we write our JS programs in a code editor like Thimble (or [Sublime](http://www.sublimetext.com), [Brackets](http://brackets.io) etc) and store them as `.js` files. 
 
@@ -619,7 +619,7 @@ Let's learn how Firebase works, before you integrate it into your app: using Chr
 <!-- Open your browser JavaScript Console by pressing <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd>. -->
 
 
-> Over the next week, play [JS for cats jsforcats.com](http://jsforcats.com/). 
+> Over the next week, play [JS for cats jsforcats.com](http://jsforcats.com/) 
 
 > It's an introduction to JavaScript "...so easy your human companion could do it too!" :scream_cat:
 
