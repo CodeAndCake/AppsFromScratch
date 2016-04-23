@@ -307,6 +307,10 @@ It still looks *odd* on large screens though.
 `max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
 
 
+# Coding and app-making for beginners 
+
+## Day 2 PM
+
 ## Making a list
 
 So far your interface features **input** elements and some text. 
@@ -380,15 +384,15 @@ In CSS you can select elements **nested** inside other elements like this
 The rule above will select all images `img` inside list items `li`.
 
 Confused? Let's play [CSS Diner](http://flukeout.github.io), an online game that teaches you CSS **selectors**! 
+
+> Go ahead and style the list and its components. 
 	
-<!-- Remember, if you don't know how to style your element, Google may have the answers! -->
+> Remember, if you don't know how to style something, Google may have the answers! 
+
+When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve. For example `css how to round the corners of a button`.
 
 
-# Coding and app-making for beginners 
-
-## Day 2 PM
-
-<!--## Coding vs programming -->
+# Coding vs programming
 
 ## Do **coding** and **programming** mean the same thing?
 
