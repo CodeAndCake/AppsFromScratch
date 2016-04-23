@@ -96,11 +96,11 @@ Think of a group of people working together, eg to make a car, a newspaper, a we
 * Why doesn't this CSS code work? 
 
 	```css
-   <p> 
-   { 
-   	color: red; 
-   }
-   ```     
+	<p>
+	{
+		color: red; 
+	}
+	```     
 * Why doesn't this CSS code turn my paragraphs red? 
 
 	```css
@@ -135,11 +135,13 @@ Your browser likes to put code into boxes, boxes inside boxes inside boxes insid
 
 Each HTML box has:
 
-* `margin`
+1. `margin` (outside)
 * `border`
-* `padding`
+* `padding` (inside)
 
 ![](assets/box-model.gif)
+
+<!-- You can use pesticide.io to demonstrate this -->
 
 ## Styling interactive elements
 
@@ -284,25 +286,25 @@ To address these, we can add a semi-transparent background that will focus peopl
 > Create a new CSS rule for `section` and give it a `background-color`.
 
 > ```css
-	section 
-	{
-		background: rgba(255,255,255,0.6);
-		padding: 20px;
-	}
-	```
+section 
+{
+	background: rgba(255,255,255,0.6);
+	padding: 20px;
+}
+```
 
 The CSS above will add a white semi-transparent background to the `section` and a `20px` padding around its content, making it all more *legible*.
 
 It still looks *odd* on large screens though.
 
 > ```css
-	section 
-	{
-		...
-		max-width: 500px;
-  		margin: auto;
-	}
-	```
+section 
+{
+	...
+	max-width: 500px;
+ 		margin: auto;
+}
+```
 
 `max-width` will limit the `section` width to maximum 500px (roughly the width of a smartphone) and `margin: auto;` will put it in the centre. 
 
@@ -383,13 +385,15 @@ li img
 	
 The rule above will select all images `img` inside list items `li`.
 
-Confused? Let's play [CSS Diner](http://flukeout.github.io), an online game that teaches you CSS **selectors**! 
+Confused? Play [CSS Diner flukeout.github.io](http://flukeout.github.io), an online game that teaches you **CSS selectors**! 
 
 > Go ahead and style the list and its components. 
 	
 > Remember, if you don't know how to style something, Google may have the answers! 
 
-When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve. For example `css how to round the corners of a button`.
+When you search for a solution online, it's good to start your *search query* with the coding language you're using, like `css`, followed by the problem you are trying to solve or the effect you are trying to achieve. 
+
+For example `css how to round the corners of a button`.
 
 
 # Coding vs programming
