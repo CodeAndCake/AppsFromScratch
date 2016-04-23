@@ -363,7 +363,7 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 	Introduction to JavaScript..."So easy your human companion could do it too!" :scream_cat:
 	
-* [CSS Diner jsforcats.com](http://jsforcats.com/)
+* [CSS Diner flukeout.github.io](http://flukeout.github.io)
 
 	A little game to help you learn CSS selectors. Type in the correct selector to complete each level. 
 	
