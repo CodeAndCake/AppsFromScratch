@@ -127,9 +127,9 @@ Your app HTML structure is inside `index.html`.
 
 The CSS style is in another file `style.css` which is linked to the HTML with a `link` inside the `head` in `index.html`.
 
-## Thinking inside the **box**
+### Thinking inside the **box**
 
-Imagine that there is an **invisible box** around every HTML element. 
+Imagine that there is an **invisible box** around *every* HTML element. 
 
 Your browser likes to put code into boxes, boxes inside boxes inside boxes inside boxes...
 
@@ -226,7 +226,7 @@ Now you can apply some of the styles from the dropdown to the `button`.
 button
 {
 	...
-	border-radius:10px;
+	border-radius: 10px;
 }
 ```
 
@@ -287,11 +287,11 @@ To address these, we can add a semi-transparent background that will focus peopl
 	section 
 	{
 		background: rgba(255,255,255,0.6);
-		padding: 50px;
+		padding: 20px;
 	}
 	```
 
-The CSS above will add a white semi-transparent background to the `section` and a `50px` padding around its content, making it all more *legible*.
+The CSS above will add a white semi-transparent background to the `section` and a `20px` padding around its content, making it all more *legible*.
 
 It still looks *odd* on large screens though.
 
@@ -325,37 +325,37 @@ So, we will mock up a **list** of results (people in our *community skill-swap* 
 
 > In `index.html` create an **u**nordered **l**ist `ul` under the `button`
 
->	```html
-	<ul>
-	</ul>
-	```
+> ```html
+<ul>
+</ul>
+```
 
 > Inside the `ul` create a **l**ist **i**tem `li`
 
-	```html
-	<ul>
-		<li></li>
-	</ul>
-	```
+> ```html
+<ul>
+	<li></li>
+</ul>
+```
 
 Think about what you want your search results to display. For example we could have an image `img`, a heading `h2` and a short paragraph `p`.
 
 > Inside the `li` put some *placeholder* content. 
 
 >	```html
-	<ul>
-		<li>
-			<img src="http://api.randomuser.me/portraits/women/27.jpg">
-			<h2>Jo</h2>
-			<p>I like coding and coffee</p>
-		</li>
-		<li>
-			<img src="http://api.randomuser.me/portraits/men/33.jpg">
-			<h2>Mo</h2>
-			<p>I like cats and plants</p>
-		</li>
-	</ul>
-	```
+<ul>
+	<li>
+		<img src="http://api.randomuser.me/portraits/women/27.jpg">
+		<h2>Jo</h2>
+		<p>I like coding and coffee</p>
+	</li>
+	<li>
+		<img src="http://api.randomuser.me/portraits/men/33.jpg">
+		<h2>Mo</h2>
+		<p>I like cats and plants</p>
+	</li>
+</ul>
+```
 
 A couple of list items will give us an idea of how your interface will display search results.
 
@@ -366,20 +366,20 @@ For example, how can we remove the *bullet points* from the list?
 > In `style.css` select the list `ul` and define its style. 
 
 > ```css
-	ul
-	{
-		list-style: none;
-	}
-	``` 
+ul
+{
+	list-style: none;
+}
+``` 
 
 In CSS you can select elements **nested** inside other elements like this
 
 >	```css
-	li img
-	{
-		width: 50px;
-	}
-	```
+li img
+{
+	width: 50px;
+}
+```
 	
 The rule above will select all images `img` inside list items `li`.
 
