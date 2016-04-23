@@ -657,10 +657,10 @@ Then you can set **more specific rules** for headings, paragraphs and bold eleme
 
 You can add images to your app via CSS. This is useful if you want to set different images for different screen sizes (eg: one for mobile, a different one for tablets) as well as fine-tuning how your images should display.
 
-> In your `style.css` create a new `background-image` rule inside the `body`
+> In your `style.css` create a new `background-image` rule for `html`
 
 > ```css
-body
+html
 {
 	background-image: url(  );
 }
@@ -676,7 +676,7 @@ For now, we'll use [unsplash.com](https://unsplash.com), where you can find beau
 > * **Paste** it in your `style.css` inside the `body` `background-image` rule like so
 
 > ```css
-body
+html
 {
 	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
 }
@@ -689,14 +689,26 @@ We can achieve that with `background-size`. This property can take various value
 * `contain` will scale the image so as to be as large as possible providing that it is **contained** within the background positioning area. 
 * `cover` instead, will scale the image, this time to be as large as possible so that the background positioning area is completely **covered** by the background image.
 
-Add `background-size: cover;` to the `body` rule.
-```css
-body
+> Add `background-size: cover;` to the `html` rule.
+
+> ```css
+html
 {
 	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
  	background-size: cover;
 }
 ```	
+
+Now the image *covers* the content of your app, ie the `body` but you have probably noticed that it doesn't cover the *whole browser window*. The last touch we can add to the background image, to make it cover the whole browser window is adding `background-attachment: fixed;`
+
+> ```css
+html
+{
+	background-image: url(https://images.unsplash.com/BLABLABLABLABLA);
+ 	background-size: cover;
+ 	background-attachment: fixed;
+}
+```  
 
 <!--
 
