@@ -1,4 +1,36 @@
-# Day 1
+# V4
+
+## Day 2
+
+### What went well
+
+* Quiz is always a winner. Not as much team work and competition as in previous courses, but people still found it valuable.
+
+### Areas for improvement
+
+* CSS: group shared rules
+
+	```css
+	button, select {
+	  font-family: "Lekton", sans-serif;
+	  font-size: 200%;
+	  display: block;
+	  margin: 0 auto;
+	  cursor: pointer;
+	}
+	```
+
+* Comma ≠ dot (eg: `rgba(0,0,0,0,2);` ≠  `rgba(0, 0, 0, 0.2);`
+
+	Could be a quiz question in a future quiz
+
+### Action points
+
+* On day 3, recap with nice graphs from day 1
+
+# V3
+
+## Day 1
 
 ### What went well
 
@@ -58,7 +90,7 @@ Idea for next session 1 presentation:
 * Zunch!	
 		
 
-# Day 2
+## Day 2
 
 ### What went well
 
@@ -110,7 +142,7 @@ Idea for next session 1 presentation:
 * Make sure we add `script` tags at the end of the `body`
 		
 
-# Day 3
+## Day 3
 
 ### What went well
 
@@ -129,7 +161,7 @@ Idea for next session 1 presentation:
 * Prepare faster
 		
 
-# Day 4
+## Day 4
 
 ### What went well
 
@@ -162,7 +194,7 @@ Idea for next session 1 presentation:
 * 	[Quiz time](https://github.com/RavensbourneWebMedia/Web-development-workshop/tree/2016/sessions/04#quiz-time) with Team A and Team 1
 		
 
-# Day 5
+## Day 5
 
 ### What went well
 
@@ -181,7 +213,7 @@ Idea for next session 1 presentation:
 
 * > Work at your own pace, not behind nor ahead 		
 
-# Day 6
+## Day 6
 
 ### What went well
 
