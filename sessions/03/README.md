@@ -85,17 +85,17 @@ To use a variable, we must
 ### How do you name variables? 
 
 * Variable names should be **clear and meaningful**: `fruit` is better than `f`
-* Variable names should begin with letters, `$` or `_` and only contain letters, numbers, `$` and `_`
+* Variable names must begin with letters, `$` or `_` and only contain letters, numbers, `$` and `_`
 * Variable names are **case sensitive**, which means that `myFruit` is different to `myfruit` or `MyFruit` or `MYFRUIT`
 * Variable names cannot have spaces, so you can use [*camel case*](http://en.wikipedia.org/wiki/CamelCase) for variables like `userTelephoneNumber`, which is easier to read than `usertelephonenumber`.
 
 ## Objects
 
-**Objects** are a special type of *variable*, which stores several pieces of information at once. 
+An **object** is a special type of *variable*, which stores several pieces of information at once. 
 
-It is useful to keep things organised.
+It is useful to keep things organised!
 
-To create an object, you *declare* a variable as usual with `var` followed by a name and `=`, and then you put a pair of *curly brackets*.
+To create an object, you *declare* a variable as usual with `var` followed by a name and `=` and then you put a pair of *curly brackets*.
 
 <!--
  to surround **key-value** property pairs:
@@ -126,7 +126,7 @@ person.bakingSkills = 5;
 
 An object is not useful unless we can look inside it and grab the *values* of its *properties*. 
 
-You can do that in two ways using *dot notation*, where you write the name of the variable, followed by a `.` and then the property name
+You can do that using *dot notation*, where you write the variable name followed by a `.` and then the property name
 
 `person.name`
 
@@ -134,18 +134,18 @@ You can do that in two ways using *dot notation*, where you write the name of th
 
 JavaScript is very good at comparing data. 
 
-Say we wanted to know whether `name` of a `person` was `Matteo`:
+Say we wanted to know whether the `name` of a `person` was `Matteo`:
 
 ```js
 person.name == "Matteo"
 ```
 
-In English, this would translate to: if value of `name` is equal to `Matteo`, then spit out `true`. And if not, spit out `false`.
+In English, this would translate to: if the value of `name` is equal to `Matteo`, then spit out `true`. And if not, spit out `false`.
 
 Notice this subtle but important difference:
 
 1. `=` is to **store** data
-*  `==` is to **check** if two things are the same
+*  `==` is to **check** if two values are the same
 
 ### If *this* then *that*
 	
@@ -153,13 +153,13 @@ You may want your app to do different things depending on the result of a compar
 
 ```javascript
 if (person.age < 18) {
-	alert("You are not technically an adult")
+	alert("You are not technically an adult");
 } else {
-	alert("But are you really an adult?")
-};
+	alert("But are you really an adult?");
+}
 ```
 		
-So, **if** the `age` property of `persons` is lower than `18` the browser will pop up an alert saying `You are not technically an adult`. Otherwise (aka **else**) if `age` is equal or bigger than `18`, the alert will say `But are you really an adult?`.
+So, **if** the `age` property of `person` is lower than `18` an alert will pop up, saying `You are not technically an adult`. Otherwise (aka **else**) if `age` is equal or bigger than `18`, the alert will say `But are you really an adult?`
 
 This is really handy for searching through databases. For instance, when you search for something on Google, they use lots of *if statements* to sort through all the millions of pages to find results that match your search words.
 
@@ -252,8 +252,8 @@ isAdult(person.age); // returns "yes" or "no", depending on what you have actual
 
 So, to use a function you must
 
-1. *Declare* it: give it a **name** and teach the computer all the **steps** required to perform it
-2. *Call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
+1. *Declare* it. Give it a **name** and teach the computer all the **steps** required to perform it
+2. *Call* it. Tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
 
 	In between *round brackets* `()` we can pass one or more *variables* to the function.
 
@@ -509,7 +509,7 @@ The JS code above, in plain English:
  
 At this point, we can use the Console to check if `peopleList` has been loaded with data.
 
-
+<!--
 # Recipe for apps
 
 By now, we all should have an idea of the *ingredients* we'll use to create our app prototypes:
@@ -534,6 +534,7 @@ With those *ingredients* in mind, come up with an app *recipe*!
 	* What pieces of information will your *data unit* feature? Which one of them will be used to filter & sort through heaps of data? 
 	
 		For example, in our demo app for each person we're storing `name`, `blurb`, `profile picture`, `likesPets` (which will help us filter data for the *I'd like someone to keep my pet* option), `bakingSkills` (which will help us filter data for the *I'd like someone to bake a cake* option) etc.
+-->
 	
 <!--
 # Wireframes
