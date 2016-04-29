@@ -42,27 +42,36 @@ But don't worry if it all seems a little blurry one week on...
 
 Let's look at some key *tools*, before we dig into your app code:
 
-1. [variables](#variables)
-* [objects](#objects)
-* the [Console](#console)
-* [if statements](#if-this-then-that)
-* [functions](#functions)
+1. [Variables](#variables)
+* [Objects](#objects)
+* [If statements](#if-this-then-that)
+* [Functions](#functions)
+* The [Console](#console)
 
-### Variables
 
-Variables are like *boxes* where you can store data. To create a variable, you write
+## Variables
+
+Variables are like *boxes* where you can store data. 
+
+To create a variable, you write
 
 ```javascript
 var
 ```
 		
-then give it a name and put something inside it
+then give it a **name** 
+
+```javascript
+var fruit
+```
+
+and put its **value** after the `=` sign
 
 ```javascript
 var fruit = "apple";
 ```
 
-Now your variable is called `fruit` and it has an `apple` inside it.
+Now your variable is called `fruit` and has an `apple` inside it.
 
 <!--
 #### How to use a variable
@@ -73,18 +82,23 @@ To use a variable, we must
 * *assign* it: give it a **value**
 -->
 
-#### How do we name variables? 
+### How do you name variables? 
 
 * Variable names should be **clear and meaningful**: `fruit` is better than `f`
 * Variable names should begin with letters, `$` or `_` and only contain letters, numbers, `$` and `_`
 * Variable names are **case sensitive**, which means that `myFruit` is different to `myfruit` or `MyFruit` or `MYFRUIT`
 * Variable names cannot have spaces, so you can use [*camel case*](http://en.wikipedia.org/wiki/CamelCase) for variables like `userTelephoneNumber`, which is easier to read than `usertelephonenumber`.
 
-### Objects
+## Objects
 
-**Objects** are a special type of *variable*, which stores several pieces of information at once. It is useful to keep things organised.
+**Objects** are a special type of *variable*, which stores several pieces of information at once. 
 
-To create an object, we *declare* a variable as usual, and then we use *curly brackets* to surround **key-value** property pairs:
+It is useful to keep things organised.
+
+To create an object, you *declare* a variable as usual with `var` followed by a name and `=`, and then you put a pair of *curly brackets*.
+
+<!--
+ to surround **key-value** property pairs:
 
 ```js
 var objectName = { 
@@ -93,76 +107,63 @@ var objectName = {
   ...
 };
 ```
-
-For example:
+-->
 
 ```js
-var cat = 
-{
-	name: "Bruno",
-	age: 2,
-	likesFish: true,
-	likesHugs: false
-}
+var person = {};
 ```
 
-#### How do we access objects?
+You can then add **properties** to the object like this
 
-An object is not useful unless we can look inside it and grab the values of its properties. 
-
-We can do that in two ways:
-
-1. using *dot notation*, where we write the name of the variable, followed by a `.` and then the property name
-
-	`cat.name`
-	
-2. using *bracket notation*, where we write the variable name, then *square brackets* with the property name in speech marks
-
-	`cat["name"]`
-
-#### How do we change objects?
-
-We can change the values of the object properties at any time during a program, using the *dot* or *bracket* notation.
-
-`cat.name = "Bob";`
-
-We can also add entirely new properties!
-
-`cat.colour = "brown";`
-
-### Comparing data
-
-JavaScript is particularly good at comparing data. Say we wanted to know whether there was a `pear` in our `fruit` variable:
-
-```javascript
-fruit == "pear"
+```js
+person.name = "Aimee";
+person.age = 17; // would you believe it?
+person.codingSkills = 3;
+person.bakingSkills = 5;
 ```
 
-In English, this would translate to: if the stuff inside `fruit` is equal to `pear`, then spit out `true`. And if not, spit out `false`.
+### How do you access objects?
+
+An object is not useful unless we can look inside it and grab the *values* of its *properties*. 
+
+You can do that in two ways using *dot notation*, where you write the name of the variable, followed by a `.` and then the property name
+
+`person.name`
+
+## Comparing data
+
+JavaScript is very good at comparing data. 
+
+Say we wanted to know whether `name` of a `person` was `Matteo`:
+
+```js
+person.name == "Matteo"
+```
+
+In English, this would translate to: if value of `name` is equal to `Matteo`, then spit out `true`. And if not, spit out `false`.
 
 Notice this subtle but important difference:
 
-1. `=` is to store data
-*  `==` is to check if two things are the same
-
+1. `=` is to **store** data
+*  `==` is to **check** if two things are the same
 
 ### If *this* then *that*
 	
-We may want our browser to do different things for us depending on the result of a comparison. For instance:
+You may want your app to do different things depending on the result of a comparison. For instance:
 
 ```javascript
-if (fruit == "pear") {
-	console.log("There's a pear in here!")
+if (person.age < 18) {
+	alert("You are not technically an adult")
 } else {
-	console.log("No pears in here, better luck next time!")
+	alert("But are you really an adult?")
 };
 ```
 		
-So, if our `fruit` variable has `pear` inside, the Console will say `There's a pear in here!`. But if there is no `pear` inside our `fruit` variable, it will say `No pears in here, better luck next time!`.
+So, **if** the `age` property of `persons` is lower than `18` the browser will pop up an alert saying `You are not technically an adult`. Otherwise (aka **else**) if `age` is equal or bigger than `18`, the alert will say `But are you really an adult?`.
 
 This is really handy for searching through databases. For instance, when you search for something on Google, they use lots of *if statements* to sort through all the millions of pages to find results that match your search words.
 
-### Functions
+## Functions
 	
 Functions are sets of instructions, packaged nicely for us to use over and over. 
 
@@ -178,9 +179,34 @@ robot.drink("coffee");
 ``` 
 -->
 
-Remember, you use functions of sorts everyday to do simple tasks. For instance, to make tea!
+Remember, you use functions of sorts everyday to do simple tasks. For instance, to *make tea*!
 
-A function for making tea might look like this (not actual JS, just the logical steps)
+A function for making tea might have these steps:
+
+1. Are there teabags? 
+
+	If not: exit the function. No tea this time :(
+	
+	Else: continue...
+* Fill the kettle with water (we assume there is a working kettle, and we have access to water)  
+* Turn the kettle on.
+* Is the water boiling? 
+	
+	If not: wait `X` seconds and then check again...
+	
+	Else: continue...
+* Get a clean cup (we assume there is one and it's in your reach)  
+* Put the teabag in the cup 
+* Pour `Y` ml of water in the cup.
+* Is the cup full?
+
+	If not: go to the previous step (that is, pour some more water)
+	
+	Else: proceed to the next step 
+* **Return** the tea!
+
+<!--
+ look like this (not actual JS, just the logical steps)
 
 ```
 function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {   
@@ -194,54 +220,44 @@ function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {
 	8. return the tea! 
 }
 ```
+-->
  
-It would be exhausting for us to have to say out loud all of those individual steps every time we wanted to ask someone for a cup of tea!
+It would be exhausting for us to explain all of those individual steps every time we wanted to ask someone for a cup of tea!
 
-Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many pieces of data.
+Likewise, if you want your app to perform a set of actions more than once, it makes sense to wrap those actions in a function. 
 
-We can *declare* a function like this to do that job
+For example, you can *declare* a function that checks the `age` of a person:
 
-```javascript
-function checkForPears (objectToCheck) {
-	if (objectToCheck == "pear") {
-		console.log("There's a pear in here!")
+```js
+function isAdult(age) {
+	var answer;
+	if (age < 18) {
+	 	answer = "no";
 	} else {
-		console.log("No pears in here, better luck next time!")
-	};
-}
+	 	answer = "yes";
+	} 
+	return answer;
+};
 ```
 
-We have packaged our instructions into a function, which means we don't have to type out all that code every time we want to search through variables. 
+The code above *explains* to your app how to check if someone is an adult.
 
-<!--All we need to type is this:-->
+You can then run that function on some actual data:
 
-```javascript
-var myFavouriteFruit = "orange";
-checkForPears(myFavouriteFruit);
+```js
+isAdult(16); // returns "no"
+isAdult(23); // returns "yes"
+isAdult(person.age); // returns "yes" or "no", depending on what you have actually stored in person.age
 ```
-
-Because we have no `pear` in `myFavouriteFruit`, the Console will log `No pears in here, better luck next time!`.
 
 So, to use a function you must
 
-1. *declare* it: give it a **name** and teach the computer all the **steps** required to perform it
+1. *Declare* it: give it a **name** and teach the computer all the **steps** required to perform it
+2. *Call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
 
-	```javascript
-	function checkForPears (objectToCheck) {
-		if (objectToCheck == "pear") {
-			console.log("There's a pear in here!")
-		} else {
-			console.log("No pears in here, better luck next time!")
-		};
-	}
-	```
-2. *call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
-
-	```javascript
-	checkForPears("apple");
-	```
 	In between *round brackets* `()` we can pass one or more *variables* to the function.
-	
+
+<!--	
 	If we call the `checkForPears()` function and pass through `"apple"` as our variable (in the `objectToCheck` spot), then JavaScript will execute the instructions placing `"apple"` wherever `objectToCheck` was. The process (although we can't see it happening) would be something like this:
 	
 	![](assets/functions_pear.jpg)
@@ -255,8 +271,9 @@ checkForPears("plum");
 var lastFruitInTheFridge = "kiwi";
 checkForPears(lastFruitInTheFridge);
 ```
-	
-The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `objectToCheck`.
+-->
+
+The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `age`.
 
 Variables inside a function are very useful, because they make the function **reusable**.
 
@@ -269,7 +286,7 @@ It's `fruit`, a [variable](#variables) which lives inside the `checkForPears` fu
 
 `I'm hungry` and `I need a nap` are called **arguments** ([don't argue, that's what they're called](http://programmers.stackexchange.com/questions/186293/why-are-actual-parameters-called-arguments)) and they are the actual values that we *pass* to a function.
 -->
-
+<!--
 #### What happens in a function, stays in a function
 
 There's another powerful thing we can do with functions: we can use them to take in some values, *compute* them, and then *return* a new value.
@@ -297,43 +314,43 @@ areYouAnAdult(23); // returns "yes"
 ```
 
 Without `return` we wouldn't know the answer!
-
+-->
 
 
 ### Functions in objects
 
-Objects can contain functions. Remember the `cat` object?
+Objects can contain functions! 
+
+Remember the `person` object?
 
 See how it might look with some functions inside.
 
 ```js
-var cat = 
-{
-	name: "Bruno",
-	age: 2,
-	likesFish: true,
-	likesHugs: false,
-	meow: function () { 
-		alert("MEOOOOOOW"); 
-	},
-	drink: function ( beverage ) { 
-		alert("I am drinking " + beverage); 
-	}
+person.isAdult = function() {
+	var answer;
+	if (this.age < 18) {
+	 	answer = "no";
+	} else {
+	 	answer = "yes";
+	} 
+	return answer;
 }
 ```
-
+<!--
 Which parts are the functions?
 
 What would happen if we wrote `cat.drink( water )`?
+-->
 
-
-### Console
+## Console
 
 [Last week](../02#meet-js) we played around with JS using the browser Console.
 
 We don't normally write JS in the Console. Instead, we write our JS programs in a code editor like Thimble (or [Sublime](http://www.sublimetext.com), [Brackets](http://brackets.io) etc) and store them as `.js` files. 
 
-The Console is an essential **testing tool** for people who write JavaScript. Why do we need it? Because JS is *invisible*.
+The Console is an essential **testing tool** for people who write JavaScript. 
+
+Why do we need it? Because **JS is invisible**.
 
 When we write HTML and CSS, we can see the results of our code rendered by the browser. 
 
@@ -343,16 +360,24 @@ When writing JS, it is very useful to check that our code is running properly, t
 
 Using the Console, we can make JS *visible*. In other words, we can get JS to leave some *traces* inside the Console.
 
-For example, we can use the Console to check what's inside our `fruit` variable by writing this...
+For example, you can use the Console to check what's inside your `person` object by writing this...
 
 ```javascript
-console.log(fruit);
+console.log( person );
 ```
 
-... which will display what's inside `fruit` inside the Console.
+... which will display everything that's inside `person` in the Console.
 
-Still puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly *what* the *error* is and *where* to find it. 
+![](assets/console.log-person.png)
 
+Click the `➤` next to `Object` to open the object up and see what's inside it.
+
+You could also check if the person is an adult
+```javascript
+console.log( person.isAdult() );
+```
+
+Puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly *what* the *error* is and *where* to find it! 
 
 
 # Back to the brief
