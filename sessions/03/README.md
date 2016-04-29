@@ -25,22 +25,22 @@ PM:
 
 # Coding and app-making for beginners 
 
-## Day 3
+## Day 3 AM
 
-[Last week](../02) you learned some **HTML and CSS**, styling your first screen with fancy buttons and dropdowns.
+[Last week](../02) you learned how to use **HTML and CSS** to style fancy buttons, dropdowns and lists.
 
-We also discussed *programming-vs-coding* and took a look at JavaScript (aka **JS**) for the first time. We used the JS **Console** to "speak" with our browser, introducing the building blocks of programming: *variables*, *functions* and *objects*.
+We also discussed *programming-vs-coding* and took a look at JavaScript (aka **JS**) for the first time. We used the JS **Console** to "speak" with our browsers, introducing the building blocks of programming: *variables*, *functions* and *logic*.
 
 But don't worry if it all seems a little blurry one week on...
 
 **Today** we'll start from those concepts, and put them into practice by connecting your app to an online **database**.
 
 
-# JavaScript recap
+# JavaScript essentials
 
 <!--JavaScript can look a little scary at first.--> 
 
-Let's remind ourselves of some key *tools*, before we dig into your app code:
+Let's look at some key *tools*, before we dig into your app code:
 
 1. [variables](#variables)
 * [objects](#objects)
@@ -50,19 +50,19 @@ Let's remind ourselves of some key *tools*, before we dig into your app code:
 
 ### Variables
 
-Variables are like *boxes* where we can store data. To create a variable, we write
+Variables are like *boxes* where you can store data. To create a variable, you write
 
 ```javascript
 var
 ```
 		
-Let's give it a name and put something inside it
+then give it a name and put something inside it
 
 ```javascript
 var fruit = "apple";
 ```
 
-Now our variable is called `fruit` and it has an `apple` inside it.
+Now your variable is called `fruit` and it has an `apple` inside it.
 
 <!--
 #### How to use a variable
@@ -82,7 +82,7 @@ To use a variable, we must
 
 ### Objects
 
-**Objects** are a special type of *variable*, useful to keep things organised.
+**Objects** are a special type of *variable*, which stores several pieces of information at once. It is useful to keep things organised.
 
 To create an object, we *declare* a variable as usual, and then we use *curly brackets* to surround **key-value** property pairs:
 
@@ -101,12 +101,8 @@ var cat =
 {
 	name: "Bruno",
 	age: 2,
-	meow: function () { 
-		alert("MEOOOOOOW"); 
-	},
-	drink: function ( beverage ) { 
-		alert("I am drinking " + beverage); 
-	}
+	likesFish: true,
+	likesHugs: false
 }
 ```
 
@@ -149,31 +145,6 @@ Notice this subtle but important difference:
 1. `=` is to store data
 *  `==` is to check if two things are the same
 
-### Console
-
-[Last week](../02#meet-js) we played around with JS using the browser Console.
-
-We don't normally write JS in the Console. Instead, we write our JS programs in a code editor like Thimble (or [Sublime](http://www.sublimetext.com), [Brackets](http://brackets.io) etc) and store them as `.js` files. 
-
-The Console is an essential **testing tool** for people who write JavaScript. Why do we need it? Because JS is *invisible*.
-
-When we write HTML and CSS, we can see the results of our code rendered by the browser. 
-
-**JS instead doesn't show up on the page**! It does a lot of stuff behind the scenes (like loading, sorting, storing and comparing data) which we can't see. 
-
-When writing JS, it is very useful to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
-
-Using the Console, we can make JS *visible*. In other words, we can get JS to leave some *traces* inside the Console.
-
-For example, we can use the Console to check what's inside our `fruit` variable by writing this...
-
-```javascript
-console.log(fruit);
-```
-
-... which will display what's inside `fruit` inside the Console.
-
-Still puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly *what* the *error* is and *where* to find it. 
 
 ### If *this* then *that*
 	
@@ -193,7 +164,7 @@ This is really handy for searching through databases. For instance, when you sea
 
 ### Functions
 	
-Functions are sets of instructions, packaged nicely for us to use over an over. 
+Functions are sets of instructions, packaged nicely for us to use over and over. 
 
 Functions make code **reusable**. 
 
@@ -218,8 +189,8 @@ function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {
 	3. boil the water   
 	4. get a clean cup   
 	5. put teabag in the cup 
-	6. if howMuchSugar is more than zero, and we have sugar, then add sugar to the cup
-	7. if howMuchMilk is more than zero, and we have milk, then add milk to the cup  
+	6. if howMuchSugar is more than zero, and we have sugar, then add howMuchSugar to the cup
+	7. if howMuchMilk is more than zero, and we have milk, then add howMuchMilk to the cup  
 	8. return the tea! 
 }
 ```
@@ -267,11 +238,16 @@ So, to use a function you must
 2. *call* it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
 
 	```javascript
-	checkForPears("orange");
+	checkForPears("apple");
 	```
+	In between *round brackets* `()` we can pass one or more *variables* to the function.
 	
-In between *round brackets* `()` we can pass one or more *variables* to the function.
+	If we call the `checkForPears()` function and pass through `"apple"` as our variable (in the `objectToCheck` spot), then JavaScript will execute the instructions placing `"apple"` wherever `objectToCheck` was. The process (although we can't see it happening) would be something like this:
 	
+	![](assets/functions_pear.jpg)
+	
+More examples:
+
 ```javascript
 checkForPears("banana");
 checkForPears("coconut");
@@ -321,6 +297,62 @@ areYouAnAdult(23); // returns "yes"
 ```
 
 Without `return` we wouldn't know the answer!
+
+
+
+### Functions in objects
+
+Objects can contain functions. Remember the `cat` object?
+
+See how it might look with some functions inside.
+
+```js
+var cat = 
+{
+	name: "Bruno",
+	age: 2,
+	likesFish: true,
+	likesHugs: false,
+	meow: function () { 
+		alert("MEOOOOOOW"); 
+	},
+	drink: function ( beverage ) { 
+		alert("I am drinking " + beverage); 
+	}
+}
+```
+
+Which parts are the functions?
+
+What would happen if we wrote `cat.drink( water )`?
+
+
+### Console
+
+[Last week](../02#meet-js) we played around with JS using the browser Console.
+
+We don't normally write JS in the Console. Instead, we write our JS programs in a code editor like Thimble (or [Sublime](http://www.sublimetext.com), [Brackets](http://brackets.io) etc) and store them as `.js` files. 
+
+The Console is an essential **testing tool** for people who write JavaScript. Why do we need it? Because JS is *invisible*.
+
+When we write HTML and CSS, we can see the results of our code rendered by the browser. 
+
+**JS instead doesn't show up on the page**! It does a lot of stuff behind the scenes (like loading, sorting, storing and comparing data) which we can't see. 
+
+When writing JS, it is very useful to check that our code is running properly, that it doesn't have errors, and that it has all the data it needs at the right time.
+
+Using the Console, we can make JS *visible*. In other words, we can get JS to leave some *traces* inside the Console.
+
+For example, we can use the Console to check what's inside our `fruit` variable by writing this...
+
+```javascript
+console.log(fruit);
+```
+
+... which will display what's inside `fruit` inside the Console.
+
+Still puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly *what* the *error* is and *where* to find it. 
+
 
 
 # Back to the brief
