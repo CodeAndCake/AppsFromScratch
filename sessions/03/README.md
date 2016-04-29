@@ -535,7 +535,7 @@ With those *ingredients* in mind, come up with an app *recipe*!
 	
 		For example, in our demo app for each person we're storing `name`, `blurb`, `profile picture`, `likesPets` (which will help us filter data for the *I'd like someone to keep my pet* option), `bakingSkills` (which will help us filter data for the *I'd like someone to bake a cake* option) etc.
 	
-
+<!--
 # Wireframes
 
 Before they write any code, designers and developers **visualise** their ideas through *wireframes*.
@@ -593,7 +593,7 @@ On the paper template, **wireframe three interfaces** and present them:
 You can download more wireframing templates from [Interface Sketch](http://www.interfacesketch.com).
 
 [![](http://www.interfacesketch.com/previews/generic-smartphones.png)](http://www.interfacesketch.com)
-
+-->
 
 
 ### License
