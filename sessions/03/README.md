@@ -103,7 +103,9 @@ An object is not useful unless we can look inside it and grab the *values* of it
 
 You can do that using *dot notation*, where you write the variable name followed by a `.` and then the property name
 
-`person.name`
+```js
+person.name
+```
 
 ## Comparing data
 
