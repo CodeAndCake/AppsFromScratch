@@ -1,28 +1,3 @@
-<!--
-
-### The plan!
-
-AM:
-
-- [x] JS recap, yay!
-- [x] JS demo: introduce `functions` and `if`, get people to use them in their Thimble apps
-- [x] 30 minutes **wake-up activity**: 4 volunteers thingy (see day 2 notes towards the end `Back to the brief`)
-- [ ] 1 hour **coding**: connect to DB & push data to it (repurpose v2)
-- [ ] early lunch if this is taking longer than 1 hour
-
-PM:
-
-- [x] 30 minutes **group discussions & wireframing**: how can we all use these components but have different apps that server different purposes? what is the **potential** for apps using these components?
-
-	* With these ingredients: dropdown, database, filter logic etc...
-	* Come up with an app *recipe*!
-	* **Wireframe two screens** and present them:
-	
-		1. How do you display the results coming back from the db (aka *search results section*)?
-		* When people click / tap on a result, what do you display (aka *single result section*)?
-
--->
-
 # Coding and app-making for beginners 
 
 ## Day 3 AM
@@ -380,16 +355,20 @@ console.log( person.isAdult() );
 Puzzled? Don't worry, you'll understand why the Console is useful the first time your JS code breaks, and the Console will tell you exactly *what* the *error* is and *where* to find it! 
 
 
-# Back to the brief
+# Coding and app-making for beginners 
 
-### Make an app that helps people sort through heaps of data to **find who/what they are looking for** 
+## Day 3 PM
+
+Back to the brief...
+
+### Make an **app** that helps people sort through **data** to **find who/what they are looking for** 
 
 <!--(eg: people in their community to do something together).-->
 
-Remember the [computational thinking](../02#computational-thinking) method?
+<!--Remember the [computational thinking](../02#computational-thinking) method?-->
 
-1. First we'll break down the brief into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
-* Once we have a good understanding of how our app will behave, we can **code** those algorithms.
+1. First we'll [break down the brief](#first-break-down-the-brief) into smaller chunks, *specifying* how each one could work. This process is what **designing algorithms** is about. 
+* Once we have a good understanding of how our app will behave, we can [**code** those algorithms](#then-code-the-algorithms).
 
 ## First: break down the brief
 
@@ -404,106 +383,163 @@ HTML and JS are siblings or colleagues (they are part of the same app) so they s
 
 Let's play out the app behaviour. 
 
-<!--Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?-->
-
-<!-- If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
+<!--Question: Should JS load data immediately or wait for user input? That is, should we wait for a shopping list or buy the whole store?
+ 
+If the dataset is small, we may as well load it all and then present only what users ask for. This way they won't have to wait.. -->
 
 1. **Load data** and store it in the app *memory*
 * Capture **user input**
 * **Filter and sort data** according to user choices
 * **Output** filtered+sorted data
 
+### But hang on... where is our *actual* database?
+
+We're going to use a cloud-based real-time **database** service called [Firebase](https://www.firebase.com). There are several other solutions, including building your own database, however we chose Firebase because of its performance, features and good documentation. 
+
+Many companies use Firebase to **rapidly prototype** app ideas, without investing time and money on database infrastructure and software.
+
+[![](assets/firebase.png)](https://www.firebase.com)
+
+> 1. Go to [firebase.com](https://www.firebase.com)
+> * Click `LOGIN`
+> * Click `Sign in with Google`
+> * Email: `codeyourapp@gmail.com` 
+> * Password: `L***e1n!` 
+> * Click on the `DEMO` app
+> 	![](assets/firebase-demo.png)
+
+So we have a database, but as you can see it's currently **empty**.
+
+Let's put some data into it!
+
+We prepared a little tool for the *data entry* job. We made it with Thimble, so that you can see its source code and *remix* it.
+
+> Go to [bit.ly/FirebasePusher](https://thimbleprojects.org/codeyourapp/60893/)
+
+> Fill the form with data about yourself, or a made-up person.
+
+> Click `Push it!` to send that data to our Firebase.  
+
+Firebase updates in real-time, so shortly after you hit `Push it!` a new *object* with all the data you entered, will pop up on our own database at [codeyourapp.firebaseio.com](https://codeyourapp.firebaseio.com) :zap:
 
 ## Then: code the algorithms
 
-Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in. Then open your project from last week. 
+Now that we have data in our Firebase database, we can load it into our app and do stuff with it!
 
-Create a new file and call it `app.js`.
+> Go to [thimble.mozilla.org](https://thimble.mozilla.org/) and log in. Then open your project from last week. 
+
+> Create a new file and call it `app.js`.
 
 Like with CSS, we need to tell `index.html` to load our JS file.
 
-In the `head` of `index.html`, add a `script` and point it to `app.js` like so:
+> At the end of `body` in `index.html`, add a `script` and point it to `app.js` like so:
 
-```html
-<head>
+> ```html
 	...
 	<script src="app.js"></script>
-</head>
+</body>
+</html>
 ```	
 
-Now that your JS file is connected to `index.html` you can write your JS code in `app.js`. The browser will read and execute it every time you load/refresh your app.
+Your JS file is connected to `index.html`! Now you can write your JS code in `app.js`. 
+
+The browser will read and execute `app.js` every time you load/refresh your app.
 
 <!-- Do a console.log first -->
 
 ### 1. Load data and store it in the app memory
 
-We're going to use a cloud-based real-time **database** service called [Firebase](https://www.firebase.com). There are several other solutions, including building your own database, however we chose Firebase because of its performance, features and good documentation. 
-
-Many companies use Firebase to rapidly prototype app ideas, without investing time and money on database infrastructure and software.
-
-#### *Where* is our data?
+*Where* is our data?
 	
-We need to know where to load data from, that is we need a **URL**. You can think of it as the address or phone number of your data.
+We need to know where to load data from, that is we need a **URL**. You can think of it as the *address* or *phone number* of your data.
 
-[appsfromscratch.firebaseio.com/demo-app](https://appsfromscratch.firebaseio.com/demo-app)
+[codeyourapp.firebaseio.com](https://codeyourapp.firebaseio.com)
 
-<!--
-> Heads up! We're using **public data** to make things simpler (avoiding authentication procedures, data security measure etc.) so make sure you don't add sensitive information to the database.
--->
+> In `app.js`, store the database URL as a *variable*:
 
-In `app.js`, you can store that URL as a *variable*:
-
-```javascript
-var databaseURL = 'https://appsfromscratch.firebaseio.com/demo-app'
+> ```js
+var databaseURL = 'https://codeyourapp.firebaseio.com';
 ```
 
-Your browser can do [many things out-of-the-box](https://developer.mozilla.org/en/docs/Web/API), for instance: giving you scarily accurate geolocation coordinates, playing audios and vides, doing maths, convert text into voices etc. Yet your browser doesn't know how Firebase works, because Firebase doesn't come pre-installed. 
+Your browser can do [many things out-of-the-box](https://developer.mozilla.org/en/docs/Web/API), for instance: giving you scarily accurate geolocation coordinates, playing audios and vides, doing maths, convert text into voices etc. 
 
-Before you can use Firebase in your app, you must **install the Firebase JS library**. Do that by adding the following `script` to the `head` in `index.html`, just before the `script` pointing to `app.js`
+Yet your browser doesn't know how Firebase works, because Firebase doesn't come pre-installed. 
 
-```html
-<head>
+> Before you can use Firebase in your app, you must **install the Firebase JS library**. Do that by adding the following `script` at the end of `body` in `index.html`, just before the other `script` which points to `app.js`
+
+> ```html
 	...
-	<script src="app.js"></script>
 	<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
-</head>
+	<script src="app.js"></script>
+</body>
+</html>
 ```
 
 Now that your browser knows what Firebase is and how it works, you can create a `database` *variable* as a new instance of `Firebase` and point it to our own `databaseURL`. 
 
-In `app.js`:
+> In `app.js`:
 
-```javascript
+> ```js
 var database = new Firebase(databaseURL);
 ```
 
-Then create another *variable* to store only the data you need in your app.
+We don't need to load the entire database in our app, but only data about *people*. We can think of *people* as a **list** of `person` objects.
 
-```javascript
+> Create a `peopleList` *variable* and set it as an empty list `[]`. 
+
+> ```js
 var peopleList = []; // an empty list, for now 
 ```
 
-Next you can instruct `database` to load data and store it in `peopleList`:
+The next step will be to load data from `database` and store a bunch of `person` objects in `peopleList`.
 
-```javascript
-// load data, see the Firebase manual https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
-database.on('child_added', function(child) 
+`database` is a Firebase *thing*, we haven't made so we don't know how to use it. What to do? **Read the manual!**
+
+The Firebase manuals (aka the *docs*) are online at [firebase.com/docs](https://www.firebase.com/docs/). We're looking for the `Web` manual, and a good place to start is the `Step by Step Guide` ([firebase.com/docs/web/guide](https://www.firebase.com/docs/web/guide)). 
+
+We're going to read how to *retrieve* data (point 4).
+
+[![](assets/firebase-child-added.png)](https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types)
+
+So, it looks like the function we're looking for is 
+
+```js
+on('child_added', doSomething);`
+```
+
+which is typically used to retrieve a *list* of items (in our case, a list of `person` objects).
+
+Let's try it out.
+
+> Call `on('child_added'` function from `database` to load a list of items and store each one in `peopleList`:
+
+> ```js
+database.on('child_added', function( firebaseObject ) 
 {
-	var personData = child.val() 
-  // "push" is JavaScript's lingo for "add to a list"
-  peopleList.push(personData) 
+	var person = firebaseObject.val(); 
+  	peopleList.push(person);
 })
 ```
+
+<!--
+// load data, see the Firebase manual https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
+
+// "push" is JavaScript's lingo for "add to a list"
+-->
 
 The JS code above, in plain English:
 
 * Hey database!
 
-* For each *child*, do the following steps:
+* For each *child* of `database`, do the following steps:
 
-	* Create a variable `personData` and store the value of `child` in it
-	*  Add `personData` to `peopleList`
-	* Repeat until you've gone through all the *children*
+	* Create a variable `person` 
+	
+	* Call the `.val()` function to extract the value from  `firebaseObject` and store inside `person`  
+	  
+	* Add `person` to `peopleList` (`push` is JavaScript's lingo for *add to a list*)
+	
+	* Repeat until you've looped through all the *children*
 
 * Thanks!
  
