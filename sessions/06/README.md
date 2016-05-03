@@ -367,6 +367,10 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 	A little game to help you learn CSS selectors. Type in the correct selector to complete each level. 
 	
+* [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
+
+	A set of web authoring and debugging tools built into Google Chrome. Use the DevTools to iterate, debug and profile your Web projects!
+	
 ### Inspiration
 	
 * [Smashing Magazine smashingmagazine.com](http://www.smashingmagazine.com/)
