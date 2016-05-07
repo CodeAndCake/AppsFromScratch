@@ -18,7 +18,6 @@ Then you'll start using **jQuery**, one of the most popular JS *libraries* (that
 But first, a little recap!
 
 
-
 # Quiz time!
 
 
@@ -675,7 +674,7 @@ The line above does two things:
 > Go to [bit.ly/copyPasteCodeYourApp](https://bit.ly/copyPasteCodeYourApp) and copy the following code (you can find it under Day 4):
 
 > ```javascript
-$('button')click( function() {
+$('button').click( function() {
   // get user input
   var selectedOption = $('select').val(); // this is jQuery val()
   // filter people by user selection
@@ -725,11 +724,16 @@ var resultsList = filterAndSortList(peopleList, selectedOption);
 * Use the function `filterAndSortList` to filter and sort `peopleList` (the list with all the people) so that it matches the user 's selection (`selectedOption`)
 * Store the filtered people in `resultsList`
 
-> You can find the function `filterAndSortList` at [github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/filter.js) (link also in the copy-paste GDoc).
+> Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then in `index.html` use a `script` to load `show.js` just before the one which loads `app.js`.
 
-> Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `filter.js` in your app.
+> ```html
+	...
+	<script src="filter.js"></script>
+	<script src="app.js"></script> 
+</body>
+```
 
-> In `filter.js` paste the whole JS code from GitHub.
+> In `filter.js` paste the whole JS code from [github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/filter.js) (link also in the copy-paste GDoc).
 
 Display the results
 
@@ -739,11 +743,17 @@ showList(resultsList);
 
 In the line above we are using the function `showList` to spit out the results in the HTML interface.
 
-> You can find the function `showList` at [github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/show.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/show.js) (link also in the copy-paste GDoc).
+> Create a new file in your Thimble project, call it `show.js` (or whatever you like) and then in `index.html` use a `script` to load `show.js` just before the one which loads `app.js`.
 
-> Create a new file in your Thimble project, call it `show.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `show.js` in your app.
+> ```html
+	...
+	<script src="filter.js"></script>
+	<script src="show.js"></script>
+	<script src="app.js"></script> 
+</body>
+```
 
-> In `show.js` paste the whole JS code from GitHub.
+> In `show.js` paste the whole JS code from [github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/show.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v4/demo-app/js/show.js) (link also in the copy-paste GDoc).
 
 ### 4. When someone clicks on the `Back` button, what happens?
 
