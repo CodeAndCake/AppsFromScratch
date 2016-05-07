@@ -676,15 +676,11 @@ The line above does two things:
 
 > ```javascript
 $('button')click( function() {
-    
   // get user input
   var selectedOption = $('select').val(); // this is jQuery val()
- 
   // filter people by user selection
   var resultsList = filterAndSortList(peopleList, selectedOption);
-  
   console.log(resultsList);
-
   // and show the results
   showList(resultsList);
 })
