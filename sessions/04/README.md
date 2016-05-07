@@ -163,13 +163,18 @@ How do you make it easier to read your code and spot such mistakes?
 
 Compare the two examples of HTML below. Which is easier to read?
 
-1. ```html
-		<body>
+Example A:
+
+```html
+	<body>
 <h1>Short title</h1>
 <p>In this example, we have a relatively long paragraph. With longer content inside our element, we want to make it as easy as possible to differentiate between our code and our content. If we don't indent our code, you can see how it becomes harder to spot where our p element starts and where it ends.</p>
 	<p>Indentation is also useful to spot errors in our code such as missing brackets or unclosed tags.</p><p>A good practice is to have both the opening and closing tags of the element aligned, with the inner content indented on a new line.</p></body>
 ```
-* ```html
+
+Example B:
+
+```html
 <body>
 	<h1>Short title</h1>
 	<p>
