@@ -754,11 +754,9 @@ In the line above we are using the function `showList` to spit out the results i
 > See if you can integrate the code below (you can copy it from the copy-paste GDoc) in your `app.js`.
 
 > ```js
-$('#back').click( function(){
-    
+$('#back').click( function(){   
   $('#home').show();
   $('#details').hide();
-
 });
 ```
 
