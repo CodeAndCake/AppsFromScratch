@@ -751,7 +751,7 @@ In the line above we are using the function `showList` to spit out the results i
 
 ### 4. When someone clicks on the `Back` button, what happens?
 
-> See if you can integrate the code above (you can copy it from the the copy-paste GDoc) in your `app.js`.
+> See if you can integrate the code below (you can copy it from the copy-paste GDoc) in your `app.js`.
 
 > ```js
 $('#back').click( function(){
@@ -762,87 +762,6 @@ $('#back').click( function(){
 });
 ```
 
-
-
-<!--
-
-#### Creating HTML on demand
-
-One of the most common tasks you use JS for, is to **grab data** (from a database, from user inputs, from elsewhere on the Web...) and **inject it** somewhere in the HTML. 
-
-For example, an app like GMail uses JS to grab data from a mail server and inject it in the HTML page that displays your inbox. Facebook grabs data from your "friends" and injects it in your timeline.
-
-The *end-user* rarely sees *raw* data. Rather, they see data *wrapped* inside HTML.
-
-#### How to wrap data
-
-Imagine you want to greet users by name when they log in to your app.
-
-The HTML for that could be something like
-
-```html
-<p id="greeting">Good morning John!</p>
-```
-
-If you had only 1 user and we knew their name, then you could *hard-code* that name in your HTML. But in the more likely case that you have many users, you don't want to have a special page for each one of them!
-
-Instead, you can store the user name in a *variable*, and use JS to *inject* the variable in that greeting paragraph.
-
-```js
-var userName = user.get('name'); // imagine the user data comes from a database
-var greetingParagraph = $('#greeting');
-var greetingText = 'Good morning ' + userName + '!';
-greetingParagraph.text( greetingText );
-```
-
-Notice how we split the greeting text into 3 parts:
-
-1. `'Good morning '` is a non-variable bit
-*  `userName` is the *variable* part
-*  `'!'` is another non-variable bit at the end of the sentence
-
-To string these parts together into one sentence, we use `+` (this is technically called *string concatenation*):
-
-```js
-var greetingText = 'Good morning ' + userName + '!';
-```
-
-#### How to inject data
-
-To **change** the content of an HTML element selected with jQuery, you can use the `.text( )` function like we did above:
-
-```js
-greetingParagraph.text( greetingText );
-```
-
-What if you want to **add** something to an existing HTML element, without changing what's already there?
-
-In that case, you can use the `.append( )` jQuery function (which will add whatever you pass into the function *at the end* of the selected element) or the `.prepend( )` jQuery function (which will add whatever you pass into the function *at the beginning* of the selected element).
-
-For example, if you want to add a note about the weather to your greeting text, you could do it like this
-
-```js
-...
-var weather = 'sunny'; // imagine we got this data from a weather service like BBC Weather
-var weatherText = ' Today is going to be ' + weather;
-greetingParagraph.append( weatherText );
-```
--->
-
-<!--
-### Your turn
-
-In our demo app, we grab data from Firebase. 
-
-Your next **challenge** is to wrap that data inside `li` elements and then inject it in the `ul`.
-
-1. To use jQuery you need to load it into your HTML. Go to [jquery.com/download](http://jquery.com/download) and download **jQuery 2.x**. 
-* Check the `head` of your `index.html` to see how you can include the jQuery file in there. Hint: there are already two `.js` files in the `head`.
-* Using jQuery, select the `ul` (unordered list) and store it in a *variable*.
-* In the morning, you added some *placeholder* `li` (list item) elements inside the `ul`. Looking at each list item, which parts are *variable* and which are fixed? With that in mind, use JS to create list items with data from `database` in them.
-* *Append* the list items to `ul`.
-
--->
 
 
 
