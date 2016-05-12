@@ -133,14 +133,32 @@ Yuki:
 
 ## Day 5
 
-[Last week](../04) you tinkered with HTML & CSS and learned how to *upload* new data to Firebase via the JS Console.
+[Last week](../04) you:
 
-Now that our database is ripe with data, we can **filter** that data in response to user **inputs** and display it in the app **interface**.
+* learned how to give your HTML elements a `class` or `id` 
+* you then got really specific with your styling (not all paragraphs need to look exactly the same!) 
+* learned about code libraries like jQuery 
+* used jQuery to select a whole section of your HTML and hide it by default
+* got hands-on experience being a real coder, copying and pasting chunks of code into your projects
 
-**Today** we're going to start with a [quiz](#quiz-time) to recap HTML, CSS and JS. 
 
-Then you'll dive into JS, getting hands-on with **jQuery**. We will give you some pre-written code to copy-paste and integrate into your apps.
+<!--
+Now that our database is ripe with data, we can **filter** that data in response to user **inputs** and display it in the app **interface**.--> 
 
+So far you've successfully created an app template for yourself which you'll use as a base for your own ideas.
+
+**Today** we're going to start personalising your apps, you will:
+
+* jot down some ideas for apps 
+* create your own new Firebase
+* design and structure your data
+* hack the Firebase pusher and push data to your new database
+* and start adapting the functions to display exactly what you want
+
+That sounds like a lot!
+
+We'll take it slowly :)
+<!--
 ### The *art* of `copy-paste`
 
 Today is about mastering **the art of copy-paste**. To become a good coder you don't need to "speak" JavaScript (or whatever other programming language). Instead, you should learn how to:
@@ -153,817 +171,313 @@ Today is about mastering **the art of copy-paste**. To become a good coder you d
 When writing code, it's important to let go of any fear of making **mistakes**. Embrace mistakes, take them as an opportunity to learn. When something unexpected happens, try to avoid thinking `What have I done wrong?`. Instead ask yourself `Why did the computer not behave as I expected?`. Come up with a possible answer and then test it.
 
 We will show you some tools and tricks to make the process of spotting mistakes and testing solutions (aka **debugging**) very efficient.
-
-
-# Quiz time!
-
-### HTML
-
-1. The latest version of HTML is `HTML6` 
-
-	- [ ] true 
-	- [ ] false
-	
-	<!-- False. The current and last version of HTML is 5, and since then the numbering system has been dropped so there won't be any HTML6, just like there isn't an English4, English5 etc. HTML is a living, constantly evolving language-->
-* EVERY HTML **element** has an **opening tag** (eg: `<a href="http://example.com">`) and a **closing tag** (eg: `</a>`)
-
-	```html
-	<a href="http://example.com"> Click me! </a>   
-	```
-	
-	- [ ] true 
-	- [ ] false
-	
-	<!-- Almost true. Some elements like <img> and <input> don't need a closing tag, because they can't have any other element nested in them-->
-* All **attributes** for an HTML elements MUST go both in the opening and closing tags
-	
-	```html
-	<a href="http://example.com"> Click me! </a id="no-spaces-in-between"> 
-	```
-	
-	- [ ] true 
-	- [ ] false
-	
-	<!-- False. Attributes go only in the opening tag-->
-*  In an HTML document every `id` **attribute** MUST be unique
-	
-	```html
-    <p id="main-content">...</p>
-    <div id="main-content">...</div>
-    ```
-	
-	- [ ] true 
-	- [ ] false
-	
-	<!-- True. -->
-* An HTML **element** can have more than one `class`
-	
-	```html
-	<p class="highlight question">...</p>
-	```
-	
-	- [ ] true 
-	- [ ] false
-	
-	<!-- True. -->
-* A valid HTML document MUST have a `head` and a `body` elements wrapped in a `html` element
-
-	```html
-	<!doctype html>
-	<html>
-		<head>
-		</head>
-		<body>
-		</body>
-	</html>
-	```
-		
-	- [ ] true 
-	- [ ] false
-	
-	<!-- True. -->
-* What is wrong with this HTML code?
-	
-	```html
-	<p> class="highlight question" ...</p>
-	```
-	
-	<!-- Attributes, such as class="highlight question", must be inside the opening tag, so 
-	
-	<p class="highlight question"> 
-	-->
-* What is wrong with this HTML code?
-	
-	```html
-	<script> src="app.js" </script>
-	```
-	
-	<!-- Same as above. Attributes, such as src="app.js", must be inside the opening tag, so 
-	
-	<script src="app.js"> 
-	-->
-
-### CSS
-
-1. Where is best to put CSS? 
-
-	- [ ] `<link rel="stylesheet" href="path/to/your-style.css">`
-	- [ ] `<p style="color:red;">This bloody text</p>`
-	
-	<!-- Better to link to a <link> to a separate CSS document, to keep things tidy. Separation of concerns. -->
-* Every CSS file has to end in `.css`
-	
-	- [ ] true 
-	- [ ] false
-	
-	<!-- True. -->
-* What's wrong with this CSS code? 
-
-	```css
-   <p> { color: red; }
-   ```     
-   
-   <!-- You don't use angle brackets < and > in CSS, so
-   
-   p { color: red; } 
-   -->
-* What's wrong with this CSS code? 
-
-	```css
-	p { colour: red; }      
-	```
-	
-	<!-- International English (American) spelling, so
-   
-   p { color: red; } 
-   -->
-* What's wrong with this CSS code? 
-
-	```css
-    p { color red; }  
-    ```
-   
-   <!-- Missing colon between color and red, so
-   
-   p { color: red; } -->     
-* These two CSS declarations achieve the same effect       
-  
-  	```css
-  	p { color: red; }  
-	 
-	p 
-	{ 
-	 	color: red; 
-	}
-	```	
-   	
-	- [ ] true 
-	- [ ] false 
-	
-	<!-- True. It's down to you to choose which way you use. Whichever style you choose, be consistent so that it does not become an overhead for your own brain to process multiple styles in related pieces of code. -->    
-* The `#` symbol is a shortcut for
-
-	- [ ] `class`
-	- [ ] `element`
-	- [ ] `id`
-	
-	<!-- id -->
-* A CSS rule must be terminated by 
-
-	- [ ]  `.` period
-	- [ ]  `!` exclamation mark
-	- [ ]  `;` semi-colon
-	- [ ]  `:` colon	
-	
-	<!-- semi-colon -->
-* `myStyle.css` is loaded and applied before `yourStyle.css`	
-	```html
-	<head>
-    	<link href="myStyle.css" rel="stylesheet">
-    	<link href="yourStyle.css" rel="stylesheet">
-	</head> 
-	```		
-	 	
-	- [ ] true 
-	- [ ] false 
-	
-	<!-- True. The browser loads and applies CSS sequentially. So if you have CSS rules that apply to the same element, then the last one will take precedence. -->
-
-### JS
-
-1. *Java* and *JavaScript* are the same thing. 
-	 	
-	- [ ] true 
-	- [ ] false 
-	
-	<!-- False. They are two different programming languages. Java is the language behind Android (and many other things), JS is the "native" language of the Web.
-	Java and JavaScript are like "car" and "carpet".. similar words, different meanings. -->
-* What is wrong with this JS code?
-
-	```js
-	var userName = 'Jo";
-	```
-	
-	<!-- Quotation marks must match. You either use double or single quotes. So, 
-	
-	var userName = "Jo";
-	
-	or 
-	
-	var userName = 'Jo';
-	-->
-* What is wrong with this JS code?
-
-	```js
-	var person = { };
-	person name = 'Jo';
-	```
-	
-	<!-- Properties inside objects must be accessed via . (dot notation) so
-	
-	person.name = 'Jo';
- 	-->	
-* What will this JS code produce?
-
-	```js
-	person.drink = function ( beverage ) { 
-		alert ( "I am drinking " + beverage + "!" ); 
-	}
-	
-	person.drink( "coconut water" );
-	```
-	
-	<!-- An annoying pop-up saying "I am drinking coconut water!" -->
-* What will this JS code produce?
-
-	```js
-	person.whisper = function ( message ) { 
-		console.log ("Sshhh... " + message ); 
-	}
-	
-	person.whisper( "Keep calm and code on" );
-	```
-	
-	<!-- A message in the browser's JS Console (one of the most useful developer tools) saying: "Sshhh... Keep calm and code on" -->
-* What will this JS code produce?
-
-	```js
-	function areYouAnAdult ( age ) {
-   	var answer;
-    	if (age < 18) {
-     		answer = "no";
-    	} else {
-     		answer = "yes";
-    	} 
-    	return answer;
-	}
-	
-	areYouAnAdult( 18 );
-	```
-	
-	<!-- It will return "yes" -->
-* Where is better to put JavaScript `<script src="example.js"></script>` in your HTML?
-
-	- [ ] inside the `head`
-	
-		```html
-		...
-		<head>
-			...
-			<script src="example.js"></script>
-		</head>
-		<body>
-			...	
-		```
-		
-	- [ ] at the end of the `body`
-	
-		```html
-		...
-		<body>
-			...	
-			<script src="example.js"></script>
-		</body>	
-		```
-	
-	<!-- Both are fine, however end of body is recommended, because your JS may need the body (with all its content) to be loaded first, and then it can execute properly -->	
-
-<!-- 
-
-Inspirations  for the JS quiz
-https://www.khanacademy.org/computing/computer-programming/html-css-js/html-css-js-intro/e/quiz--javascript-recap 
-http://tonyfreed.com/blog/top_javascript_interview_question_2015
 -->
 
-# Let's code!
-
-<!--- [ ] wrap everything in `<section id="home"> </section>`
-- [ ] create another section for `details`-->
-
-<!--### Sections-->
-
-Your app prototype will have two sections:
-
-1. **Home** section with dropdown menu, `Find` button and search results
-* **Details** section for each item in the search results 
-
-### The `#home` section
-
-Let's finish off the home section interface.
-
-Wrap all the code you've written in your HTML `<body> </body>` tags inside a `<section> </section>`
-
-```html
-...
-<body>
-	<section>
-		<h1>I'd like someone to...<h1>
-		<select>
-		      <option>Bake a cake</option>
-		      <option>Move my furniture</option>
-		      <option>Keep my pet</option>
-		</select>
-		<!--etc etc...-->
-	</section>
-</body>
-```
-
-Give the new `section` an `id="home"`
-
-```html
-<section id="home">
-	<!-- etc etc...-->
-</section>
-``` 
-
-### The `#details` section
-
-Underneath the new `<section id="home"> ... </section>` create a new section `<section id="details"> ... </section>`
-
-Inside `<section id="details"> ... </section>` create a new `<div id="person"></div>`. This will be the *details* screen, where a selected person's profile will be displayed.
-
-Last week you created an unordered list `ul` with list items inside `li`. Within those we put an image `img`, heading 2 `h2` and a paragraph `p`.
-
-We're going to use that `img`, `h2` and `p` in our `#details` section. Copy the `img`, `h2` and `p` from the `li` you created last week and paste them inside `<div id="person"></div>`.
-
-```html
-<section id="details">
-
-   <div id="person">
-     <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832">
-     <h2>
-       Yuki
-     </h2>
-     <p>
-       I like coding and coffee
-     </p>
-   </div>
-   
-</section>
-```
-   
-Your users may want to move back and forth between the `#home` and `#details` screen. For that you'll need a `Back` button!
- 
-Add in `<a id="back">Back</a>` above `<div id="person">`.
- 
-Your users will also need a way to contact the person. Add in a contact button inside your `#person`: `<a class="contactButton">Contact Yuki</a>`
-
-Your `<section id="details"></section>`  will look something like this:
-
-```html
-<section id="details">
-
-    <a id="back">Back</a>
-
-    <div id="person">
-      <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832">
-      <h2>
-        Yuki
-      </h2>
-      <p>
-        I like coding and coffee
-      </p>
-      <a class="contactButton">Contact Yuki</a>
-    </div>
-</section>
-```
-
-### Values!
-
-Scroll back up to your `select` dropdown menu. In each opening `option` tag, add in `value=" "`
-
-```html
-<select>
-     <option value=" ">Bake a cake</option>
-     <option value=" ">Move my furniture</option>
-     <option value=" ">Keep my pet</option>
-</select>
-```
-
-The `value` attribute will contain the property which relates to the selected option - the exact spelling you use in your database. For example, if the user selects `Bake a cake`, the property which matches that need is `bakingSkills`.
-
-Make sure to double-check the database for the exact property names, otherwise your JS code will not work!
-
-```html
-<select>
-     <option value="bakingSkills">Bake a cake</option>
-     <option value="bodyStrength">Move my furniture</option>
-     <option value="likesPets">Keep my pet</option>
-</select>
-```
-
-### Move JS to the bottom of the document
-
-As we learned in the quiz, it's better to place your `<script></script>` elements at the end of `body`.
-
-**Cut** all the `script` elements out of the `head` and **paste** them at the end of `body`, like so
-
-```html
-		...
-		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
-    	<script src="app.js"></script>
-	</body>
-</html>	
-``` 
+# Your app
 
 
-<!-- LUNCH! -->
+Have a think about how you can hack the template we've made together.
+
+Remember the components:
+
+* Interface: dropdown search menu and find button
+* Data: we used people and ranked their skills, what could you replace people with?
+* Logic: only the people who ranked highly in the searched-for skill are shown in the results
+
+What app ideas could you bring to life using this same structure?
 
 
-#  A couple of programming essentials
+# Build your own database
 
-### Functions
+Good apps need good data.
+
+This doesn't mean a lot of data, but rather **well structured** data.
+
+A good database doesn't look like a *bucket* full of unstructured data. Instead, a good database is organised so that it's easy (and quick) to search through heaps of objects and pick just the ones you want.
+
+Let's look at three general principles of database design, and then you'll apply those to your own database.
+
+
+## Key database design principles
+
+### 1. Break your data into *logical pieces*
+
+<!--Also known as [1NF](http://en.wikipedia.org/wiki/First_normal_form) (first normal form).--> 
+    
+#### Bad example
+     
+| Person | 
+| ------ |
+| Danny Base 21 |
+
+#### Better example
+
+| Name | Surname | Age | 
+| ---- | ------- | --- |
+| Danny | Base | 21 |
+
+This way you can take specific bits of data and spit them out wherever and however you want in your app.
+
+Also, you could do things like `calculate the average age of our people`.
+
+<!--### 2. Break it into multiple *dimensions*
+
+Using arrays.
+
+#### Bad example
+
+| Recipe name | Ingredients | Method |
+| ----------- | ----------- | ------ |
+| Banana bread | 1 banana <br>1 cup of flour <br>pinch of salt | 1. Mix dry ingredients <br>2. Mash the banana <br>3. Mix it all together <br>4. Bake it for 30 minutes | 
+| Avocado on toast | 1 avocado <br>2 slices of bread <br>squeeze of lemon | 1. Toast bread <br>2. Scoop out avocado <br>3. Spread avocado on toast <br>4. Squeeze lemon on top | 
+
+#### Better example
+
+<table>
+    <tr>
+        <th>Recipe name</th>
+        <th>Ingredients</th>
+        <th>Method</th>
+    </tr>
+    <tr>
+        <td>Banana bread</td>
+        <td>
+            <table>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td>banana</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>cup</td>
+                    <td>flour</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>pinch</td>
+                    <td>salt</td>
+                </tr>
+            </table>    
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mix dry ingredients</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mash the banana</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mix it all together</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bake it for 30 minutes</td>
+                </tr>
+            </table>    
+        </td>
+    </tr>
+</table>-->
+
+### 2. Use numbers for *ranking*
+
+Computers are extremely good at maths. For a computer,  computing numbers is a piece of cake. Yet computing natural languages (such as English) is something that even the most sophisticated machines still struggle with (think of Siri, for example).
+
+What's the trick then, if you want your app to be able to tell you `who are the best bakers in my area` for example? You **rank** people according to their baking skills.
+
+#### Bad example
+     
+| Name | Surname | Baking skills | 
+| ---- | ------- | ------------- |
+| Danny | Base | Excellent |
+| Jordan | Scripts | Amazing |
+
+#### Better example
+
+| Name | Surname | Baking skills (0-5) | 
+| ---- | ------- | ------------- |
+| Danny | Base | 4 |
+| Jordan | Scripts | 3 |
+
+If you want to rank data objects by **relevance** to a certain concept / keyword, use numbers.
+
+| Name | Surname | Comedy | Sci-fi | Western
+| ---- | ------- | ------ | ------ | -------
+| Quentin | Tarantino | 2 | 0 | 3
+| Martin | Scorsese | 3 | 0 | 1
+| Stanley | Kubrick | 0 | 3 | 0
+| Sofia | Coppola | 3 | 0 | 0
+
+
+
+
+## Your turn!
+
+Starting from you app idea, consider:
+
+* What is the **data unit**? 
 	
-Functions are sets of instructions, packaged nicely for us to use over an over. 
+	For example, in our demo app the *data unit* is a person and in the database we're storing people's profiles. 
+	
+	If you're making a cooking app, the *data unit* would be a recipe.  
 
-Functions make code **reusable**. 
+* What pieces of data will your *data unit* feature? 
 
-Remember, you use functions of sorts everyday to do simple tasks. For instance, to make tea!
+	For example, in our demo app for each person we're storing `name`, `blurb`, `profile picture`, `likesPets`, `bakingSkills` etc. 
+	
+* Which data pieces will be used to **rank, filter & sort**? 
+	
+	For example `likesPets` helps us filter data for the *I'd like someone to keep my pet* option, `bakingSkills` helps us filter data for the *I'd like someone to bake a cake* option, etc.
 
-A function for making tea might look like this (not actual JS, just the logical steps)
+**Make a list** of all the data pieces for your data unit on paper.
+
+Go to Firebase, log in and *create a new app* (which really means create a *new database*).
+
+1. Hover over the greyed-out box in the top-left corner
+
+	![](assets/new-firebase-01.jpg)
+* Give your *app* a unique name	
+
+	![](assets/new-firebase-02.jpg)
+* Click on `CREATE NEW APP`	
+
+	![](assets/new-firebase-03.jpg)
+* Once your new app is ready (it will take a few seconds) it will appear next to the greyed-out box, click on its URL to open it
+
+	![](assets/new-firebase-04.jpg)
+	
+### Push data to your new Firebase
+
+Go to [bit.ly/firebasePusher](http://bit.ly/firebasePusher) and click `Remix`.
+
+This is a Thimble project which uses an HTML `form` to *push* data to Firebase. In order to make it work with your own Firebase database, you need to make a couple of changes:
+
+1. Change `databaseURL` to your own Firebase URL
+
+	![](assets/databaseURL.png)
+* Tweak the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
+
+	```html
+	<input name="CHANGE_THIS" ...>
+	```
+
+	Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
+
+
+# Displaying data
+
+Once you've created your own database and *pushed* data to it, you'll need to customise the code you already have to display your new data.
+
+### Remix your project
+
+So you don't lose your previous work:
+
+1. Publish your project publish
+* Preview it 
+* Press the `Remix` button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
+
+### Customise your code
+
+1. In your remixed project, open `app.js` and change `databaseURL` to your own database URL. 
+
+	> This will instruct the app to load data from your own Firebase.
+* In `index.html` change the `option` elements to reflect your data. 
+
+	Make sure the `value` attributes match the property names you are using in Firebase. 
+	
+	> For example, the `bakingSkills` in the HTML dropdown below **must** match the `bakingSkills` property stored in Firebase, letter by letter, and it's case sensitive.
+	
+	> ```html
+	<select>
+		<option value="bakingSkills">Bake a cake</option>
+		...
+	</select>
+	```
+	
+	> ![](assets/firebase-person.png)
+	
+<!--
+Take a look at the code, can you spot the parts you need to change?
+
+Your data might not include people... what if you're storing places or items?
+
+Sift through the code and change `person` to whatever your objects are.
+
+Remember to also change `personId` , `personHTML` and `makePersonHTML`!
+-->
+
+
+### Change the display
+
+Go to the function `show.js`.
+
+Scroll down to around line 43. 
+
+`makeListItemHTML` is the function which populates the results list:
 
 ```js
-function makeTea ( whichTea, howMuchSugar, howMuchMilk ) {   
-	1. check for teabags of whichTea type   
-	2. fill the kettle   
-	3. boil the water   
-	4. get a clean cup   
-	5. put teabag in the cup 
-	6. if howMuchSugar is more than zero, and we have sugar, then add sugar to the cup
-	7. if howMuchMilk is more than zero, and we have milk, then add milk to the cup  
-	8. return the tea! 
-}
-```
- 
-It would be exhausting for us to have to say out loud all of those individual steps every time we wanted to ask someone for a cup of tea!
-<!--
-Likewise, if we want to search through lots of variables to see if there's a `pear` inside, then we can use a function to carry out the repetitive task of going through many pieces of data.
+function makeListItemHTML (person, index) {
+	/*
+ 		This function creates some nice HTML around the person's data
 
-We can *declare* a function like this to do that job
+ 		Return something like this:
 
-```javascript
-function checkForPears (objectToCheck) {
-	if (objectToCheck == "pear") {
-		console.log("There's a pear in here!")
-	} else {
-		console.log("No pears in here, better luck next time!")
-	};
+ 		<li>
+   		<h2>Aimee</h2>
+ 		</li>
+	*/
+
+	// li = List Item
+	var li  = '<li id="' + index + '">' 
+	+ '<h2>' + person.name + '</h2>' 
+	+ '</li>'        
+
+	return li        
 }
 ```
 
-We have packaged our instructions into a function, which means we don't have to type out all that code every time we want to search through variables. 
+> This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
 
-All we need to type is this:
+> As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
 
-```javascript
-var myFavouriteFruit = "orange";
-checkForPears(myFavouriteFruit);
-```
-
-Because we have no `pear` in `myFavouriteFruit`, the Console will log `No pears in here, better luck next time!`.
--->
-
-So, to use a function you must
-
-1. **declare** it: give it a **name** and teach the computer all the **steps** required to perform it
-
-	```javascript
-	function areYouAnAdult (age) {
-		var answer;
-		if (age < 18) {
-		 	answer = "no";
-		} else {
-		 	answer = "yes";
-		} 
-		return answer;
-	};
-	```
-2. **call** it: tell the computer to **execute** the code inside the function, by writing its name followed by *round brackets* `()`	
-
-	```javascript
-	areYouAnAdult(16);
-	```
-	
-In between *round brackets* `()` we can pass one or more *variables* to the function.
-	
-```javascript
-areYouAnAdult(18);
-areYouAnAdult(23);
-areYouAnAdult(21);
-```
-	
-The variables we *pass* to a function in between *round brackets* `()` will be used inside the function as the temporary value for `age`.
-
-Variables inside a function are very useful, because they make the function **reusable**.
-
-<!--
-### Arguments
-
-`checkForPears` is a **reusable** function. What makes it **flexible**?
-
-It's `fruit`, a [variable](#variables) which lives inside the `checkForPears` function.
-
-`I'm hungry` and `I need a nap` are called **arguments** ([don't argue, that's what they're called](http://programmers.stackexchange.com/questions/186293/why-are-actual-parameters-called-arguments)) and they are the actual values that we *pass* to a function.
--->
-
-#### What happens in a function, stays in a function
-
-There's another powerful thing we can do with functions: we can use them to take in some values, *compute* them, and then *return* a new value.
+If you want to add an `img` for instance, then you can tweak the lines where `li` is stringed together: 
 
 ```js
-function areYouAnAdult (age) {
-	var answer;
-	if (age < 18) {
-	 	answer = "no";
-	} else {
-	 	answer = "yes";
-	} 
-	return answer;
-};
-```
+var li  = '<li id="' + index + '">' 
++ '<img src="' + person.image + '">' 
++ '<h2>' + person.name + '</h2>' 
++ '</li>'    
+```  		
+	
+### Finishing touches
 
-`return` does two things: 
-
-1. it gives a value back
-2. it immediately exits the function
-
-```js
-areYouAnAdult(16); // returns "no"
-areYouAnAdult(23); // returns "yes"
-```
-
-Without `return` we wouldn't know the answer!
-
-### Arrays
-
-[Two weeks ago](../sessions/03) we created an empty list `peopleList[]` in our `app.js` file, as an empty "box" for us to store the data of each person.
-
-In JavaScript, these lists are called **arrays**. You store data in arrays much like a numbered shopping list.  
-
-For example, you can create an array like this:
-
-```javascript
-var shoppingList = ['chilli', 'avocado', 'lime'];
-``` 
-
-You can check what's in each position. Instead of starting with number 1, arrays always **start with 0**.
-
-`chilli` is at position 0, `avocado` is position 1 and `lime` is at position 2.
-
- Written like this: 
-
-`shoppingList[0]` the value at position 0 in `shoppingList` is `chilli`. 
-
-`shoppingList[1]` the value at position 1 is `avocado`.
-
-`shoppingList[2]` the value at position 2 is `lime`.
-
-<!--   ARRAY GRAPHIC   -->
-![alt text](assets/arrays.png "Arrays")
-
-Arrays have some handy features such as the `length` property, which returns the length of the list.
-
-You can check how many things are in your array like this:
-
-```javascript
-console.log(shoppingList.length);
-```
-
-### Loops
-
-Have you ever played an album *on loop*? The first song plays, then the next, then the next until you reach the last song and it starts all over again.
-
-If you think of this like code:
-
-* The **instruction** or **function** is **play**
-
-* The **array** being looped through is the **album**
-
-* The **data** used are the songs
-
-Loops are essential for our apps to work!
-
-In your app, you will sift through, filter and sort out every set of data in your database. You'll **loop through** the entire database and use *functions* (or sets of instructions and actions) to do things with that data. 
-
-This saves you rewriting your functions for every single person, place, or artist in your database.
-
-You can find an interactive explanation of a loop at `s.codepen.io/baddeo/debug/NGjJjd`
-
-[![](assets/loops.png)](http://s.codepen.io/baddeo/debug/NGjJjd)
-
-#### jQuery
-
-jQuery is a useful library of prewritten *functions* (sets of instructions and actions).
-
-Many common functions are nicely packaged in jQuery to save us time!
-
-For your app, you'll need to know a couple of things:
-
-* You can use jQuery to **select** parts of your HTML
-* You can use jQuery to perform `functions` on those selected parts
-
-Using jQuery in your code can look like this:
-
-![alt text](assets/jQuery.png "jQuery")
-
-In order to use jQuery we must load it in our HTML document. Remember how you loaded Firebase? Using `<script src=" ... "></script>` tags we need to load jQuery in the same way.
-
-At the end of the document `body` add a `script` like this
+Copy and paste this code into the `head` of your HTML document under the `title` element. You can find it in the copy-paste document:
 
 ```html
-		...
-		<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
-	</body>
-</html>	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Enable fullscreen Mode -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Icon for home screen -->
+<link rel="apple-touch-icon" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
+<link rel="icon" sizes="296x296" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
 ``` 
 
+This code ensures your app will display well on mobile. Be sure to change the `link` `href="  "` to the url of whatever image you'd like to use for your app icon. The image should be square shaped for the best display.
 
-# Back to your app
-
-### What have you done so far?
-
-* In your `index.html` file, you structured your app's interface
-
-* You styled that interface using CSS. You targeted specific HTML elements using `class` and `id`
-
-	HTML | CSS
-	---- | ---
-	class | .
-	`<p class="question"> ... </p>` |  .question { ... }
-	id | #
-	`<p id="firstQuestion"> ... </p>` | #firstQuestion { ... }
-	
-* In `app.js` you created a new Firebase database
-
-	```javascript
-	var database = new Firebase('https://appsfromscratch.firebaseio.com/demo-app')
-	```
-
-* Then an empty `array` (or list)
-
-	```javascript
-	var peopleList = [] // an empty list, for now 
-	```
-
-* Loaded each `person`'s data within the database into the array `peopleList[]` 
-
-	```javascript
-	// load data
-	database.on('child_added', function(person) 
-	{
-  		var personData = person.val() // this is Firebase val()
-  		peopleList.push(personData) // "push" is JavaScript's lingo for "add to a list"
-	})
-	// see the docs https://www.firebase.com/docs/web/guide/retrieving-data.html#section-event-types
-	```
-
-	Remember, that last step uses some Firebase functions: 
-
-	* `on()` is the Firebase listener that says **when** something happens (an **event** like a click) then perform an action 
-
-	* `val()`is a Firebase function that collects the data you've stored inside each `person`. In our case, the data was `likesPets`, `bakingSkills`, `bodyStrength` and so on...
-
-	It also uses a *native* JavaScript function:
-
-	* `push()` adds whatever is passed through the brackets () into an `array`.
-
-	Didn't we use `push()` to save data into our database? 
-
-	Yes! We checked the Firebase docs [firebase.com/docs/web](https://www.firebase.com/docs/web/guide) to see which functions they want us to use to save data using their service. It just so happens they also call it `push()`. You used that Firebase function to save data into the database: `database.push(person)`
-
-## Let's move on!
-
-Open your Thimble project.
-
-### 1. Load jQuery
-
-Open `index.html`.
-
-Just before the **end** of the `body` add a `script` like this
-
-```html
-		...
-		<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
-		<!-- Make sure jQuery is loaded before app.js-->
-		<script src="app.js"></script>
-	</body>
-</html>	
-``` 
-
-Once jQuery is included, we can check if it's ready to for us to use.
-
-Open the Console <kbd>cmd</kbd> + <kbd>alt</kbd> + <kbd>J</kbd> and then type in `jQuery` and press Enter.
-
-If the Console doesn't spit out a red error, you're good to go!
-
-### 2. Hide the `#details` section by default
-
-When people open the app, we don't need them to see details about a person. Later we will write some JS code to display that `section` **when** people click on a result, but for now we want to **hide** that part of the HTML.
-
-At the bottom of `app.js` write
-
-```js
-$('#details').hide();
-```  
-
-![alt text](assets/jQuery.png "jQuery")
-
-> The line above does two things:
-
-> 1. `$('#details')`: **select** the element with `id="details"`
-> * Perform the `hide()` function on that selection
-
-### 3. When someone clicks on the `Find` button, what happens?
-
-Go to the [Copy-paste GDoc bit.ly/copyPasteCodeYourApp](https://bit.ly/copyPasteCodeYourApp) and copy the following code (you can find it under Day 5):
-
-```javascript
-$('button').on('click', function() {
-    
-  // get user input
-  var selectedOption = $('select').val(); // this is jQuery val()
- 
-  // filter people by user selection
-  var resultsList = filterAndSortList(peopleList, selectedOption);
-  
-  console.log(resultsList);
-
-  // and show the results
-  showList(resultsList);
-})
-```
-
-> Let's break that code down
-
-> First the outer shell
-
-> 	```javascript
-$('button').on('click', function() {
-	...
-	...
-})
-``` 
-
-> 1. `$('button')` selects the `Find` button.
-> 2. `.on('click', function() { ... })` says **when** the user **clicks** the selected element, perform this function. In our case, **when** the user **clicks** `Find`, perform this function.
-
-> Now *inside* the function...
-
-> What option did the user pick?
-
-> ```javascript
-// get user input
-var selectedOption = $('select').val(); // this is jQuery val()
-```
-
-> 1. Create a `var` named `selectedOption`
-> * `$('select')`: select the `select` (HTML for dropdown) with jQuery `$`
-> * Get the currently selected value (for example the `likesPets`) using the jQuery function `.val()`
-> * Save that value in `selectedOption`
-
-> Pick people according to the selected option
-
-> ```javascript
-// filter people by user selection
-var resultsList = filterAndSortList(peopleList, selectedOption);
-```
-
-> 1. Create a `var` named `resultsList` 
-> * Use the function `filterAndSortList` to filter and sort `peopleList` (the list with all the people) so that it matches the user 's selection (`selectedOption`)
-> * Store the filtered people in `resultsList`
-
-You can find the function `filterAndSortList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/filter.js) (link also in the copy-paste doc).
-
-Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `filter.js` in your app.
-
-In `filter.js` paste the whole `filterAndSortList` function from GitHub.
-
-> Display the results
-
-> ```js
-showList(resultsList);
-```
-
-> In the line above we are using the function `showList` to spit out the results in the HTML interface.
-
-You can find the function `showList` at [github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js](https://github.com/CodeAndCake/AppsFromScratch/blob/v3/demo-app/js/show.js) (link also in the copy-paste doc).
-
-Create a new file in your Thimble project, call it `show.js` (or whatever you like) and then at the end of `body` in `index.html` use a `script` to load `show.js` in your app.
-
-In `show.js` paste the whole JS code from GitHub.
-
-### 4. When someone clicks on the `Back` button, what happens?
-
-```js
-$('#back').on('click', function(){
-    
-  $('#home').show();
-  $('#details').hide();
-
-});
-```
-
-See if you can integrate the code above (you can copy it from the in the copy-paste doc) in your `app.js`.
 
 
 ### License
