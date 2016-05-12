@@ -1,5 +1,5 @@
-function showList (list) {
-
+function showList (list) 
+{
   var $ul = $('ul'); // tell jQuery to select the ul (Unordered List)
 
   if ($ul.length == 0) console.error('You are missing a <ul></ul> in your index.html');
@@ -10,42 +10,45 @@ function showList (list) {
   // add behaviour to the list items
   $('li').on('click', function()
   {
-    var personId = $(this).attr('id')
-    var person = list[personId]
-    showProfile(person)
+    var personId = $(this).attr('id');
+    var person = list[personId];
+    showProfile(person);
   })
 }
 
-function showProfile (person) {
-  var personHTML = makePersonHTML(person)
+function showProfile (person) 
+{
+  var personHTML = makePersonHTML(person);
 
-  $('#person').html(personHTML)
+  $('#person').html(personHTML);
   
   $('#home').hide();
   $('#details').show();
 }
 
-function makeListHTML (list) {
-  var html = '' // empty for now, we'll add HTML as we loop through the list 
-  var total = list.length
+function makeListHTML (list) 
+{
+  var html = ''; // empty for now, we'll add HTML as we loop through the list 
+  var total = list.length;
 
   // loop through list
-  var counter = 0
+  var counter = 0;
   while (counter < total) 
   {
-    var person = list[counter]
-    var li = makeListItemHTML(person, counter)
+    var person = list[counter];
+    var li = makeListItemHTML(person, counter);
     
     // add the list item to the html
-    html += li
+    html += li;
     
     // update the counter, to avoid infinite loops!
-    counter = counter + 1
+    counter = counter + 1;
   }
-  return html
+  return html;
 }
 
-function makeListItemHTML (person, index) {
+function makeListItemHTML (person, index) 
+{
   /*
     This function creates some nice HTML around the person's data
 
@@ -61,21 +64,22 @@ function makeListItemHTML (person, index) {
   + '<h2>' + person.name + '</h2>' 
   + '</li>'        
 
-  return li        
+  return li;        
 }
 
-function makePersonHTML (person) {
+function makePersonHTML (person) 
+{
   /*
     This function creates some nice HTML around the person's data
 
     Return something like this:
 
-    <h2>Yuki</h2>
-    <img src="http://cdn.themill.com/media/00000010245.jpg">
+    <h2>Matteo</h2>
+    <img src="https://ma.tteo.me/assets/surprise.png">
     <div class="about">
-        I make cakes for parties and special occasion. Contact me about your next cake!
+        I teach people aged 7 to 60+ how to be creative with code.
     </div>
-    <button id="submit">Message Yuki now</button>
+    <button id="submit">Message Matteo now</button>
   */
 
   var html = '<h2>' + person.name  + '</h2>' 
@@ -83,5 +87,5 @@ function makePersonHTML (person) {
   + '<div class="about">' + person.about + '</div>'
   + '<button id="message">Message ' + person.name + ' now</button>' 
 
-  return html        
+  return html;        
 }
