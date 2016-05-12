@@ -462,23 +462,6 @@ var li  = '<li id="' + index + '">'
 + '</li>'    
 ```  		
 
-<!--	
-### Finishing touches
-
-Copy and paste this code into the `head` of your HTML document under the `title` element. You can find it in the copy-paste document:
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<!-- Enable fullscreen Mode -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<!-- Icon for home screen -->
-<link rel="apple-touch-icon" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
-<link rel="icon" sizes="296x296" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
-``` 
-
-This code ensures your app will display well on mobile. Be sure to change the `link` `href="  "` to the url of whatever image you'd like to use for your app icon. The image should be square shaped for the best display.
--->
 
 ### License
 
