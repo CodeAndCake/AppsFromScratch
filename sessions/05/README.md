@@ -321,7 +321,17 @@ If you want to rank data objects by **relevance** to a certain concept / keyword
 | Stanley | Kubrick | 0 | 3 | 0
 | Sofia | Coppola | 3 | 0 | 0
 
+### 3. Use true or false
 
+For **yes or no** answers. This is useful for filtering out results.
+
+| Name | Surname | filmMaker| likesPets 
+| ---- | ------- | ------ | ------
+| Quentin | Tarantino | true | false 
+| Martin | Scorsese | true | true
+| Boris | Johnson | false | false
+
+For instance, it would be easy to filter only the film-makers using this data structure.
 
 
 ## Your turn!
@@ -331,8 +341,7 @@ Starting from you app idea, consider:
 * What is the **data unit**? 
 	
 	For example, in our demo app the *data unit* is a person and in the database we're storing people's profiles. 
-	
-	If you're making a cooking app, the *data unit* would be a recipe.  
+	 
 
 * What pieces of data will your *data unit* feature? 
 
@@ -361,20 +370,21 @@ Go to Firebase, log in and *create a new app* (which really means create a *new 
 	
 ### Push data to your new Firebase
 
-Go to [bit.ly/firebasePusher](http://bit.ly/firebasePusher) and click `Remix`.
+> Go to [bit.ly/FirebasePusher](http://bit.ly/FirebasePusher) and click `Remix`.
 
 This is a Thimble project which uses an HTML `form` to *push* data to Firebase. In order to make it work with your own Firebase database, you need to make a couple of changes:
 
-1. Change `databaseURL` to your own Firebase URL
+> Change `databaseURL` to your own Firebase URL
 
-	![](assets/databaseURL.png)
-* Tweak the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
+> ![](assets/databaseURL.png)
 
-	```html
-	<input name="CHANGE_THIS" ...>
-	```
+> Tweak the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
 
-	Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
+> ```html
+<input name="CHANGE_THIS" ...>
+```
+
+> Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
 
 
 # Displaying data
@@ -385,29 +395,30 @@ Once you've created your own database and *pushed* data to it, you'll need to cu
 
 So you don't lose your previous work:
 
-1. Publish your project publish
-* Preview it 
-* Press the `Remix` button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
+> 1. `Publish` your project
+> * Preview it 
+> * Press the `Remix` button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
 
 ### Customise your code
 
-1. In your remixed project, open `app.js` and change `databaseURL` to your own database URL. 
+> In your remixed project, open `app.js` and change `databaseURL` to your own database URL. 
 
-	> This will instruct the app to load data from your own Firebase.
-* In `index.html` change the `option` elements to reflect your data. 
+This will instruct the app to load data from your own Firebase.
 
-	Make sure the `value` attributes match the property names you are using in Firebase. 
+> In `index.html` change the `option` elements to reflect your data. 
+
+> Make sure the `value` attributes match the property names you are using in Firebase. 
 	
-	> For example, the `bakingSkills` in the HTML dropdown below **must** match the `bakingSkills` property stored in Firebase, letter by letter, and it's case sensitive.
+For example, the `bakingSkills` in the HTML dropdown below **must** match the `bakingSkills` property stored in Firebase, letter by letter, and it's case sensitive.
 	
-	> ```html
-	<select>
-		<option value="bakingSkills">Bake a cake</option>
-		...
-	</select>
-	```
-	
-	> ![](assets/firebase-person.png)
+```html
+<select>
+	<option value="bakingSkills">Bake a cake</option>
+	...
+</select>
+```
+
+![](assets/firebase-person.png)
 	
 <!--
 Take a look at the code, can you spot the parts you need to change?
@@ -422,46 +433,36 @@ Remember to also change `personId` , `personHTML` and `makePersonHTML`!
 
 ### Change the display
 
-Go to the function `show.js`.
+> Go to the function `show.js`.
 
-Scroll down to around line 43. 
+> Scroll down to  `makeListItemHTML`. This is the function which populates the results list:
 
-`makeListItemHTML` is the function which populates the results list:
-
-```js
-function makeListItemHTML (person, index) {
-	/*
- 		This function creates some nice HTML around the person's data
-
- 		Return something like this:
-
- 		<li>
-   		<h2>Aimee</h2>
- 		</li>
-	*/
-
+> ```js
+function makeListItemHTML (person, index) 
+{
+	...
 	// li = List Item
 	var li  = '<li id="' + index + '">' 
 	+ '<h2>' + person.name + '</h2>' 
 	+ '</li>'        
-
-	return li        
+	return li;
 }
 ```
 
-> This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
+This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
 
-> As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
+As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
 
-If you want to add an `img` for instance, then you can tweak the lines where `li` is stringed together: 
+> If you want to add an `img` for instance, then you can tweak the lines where `li` is stringed together: 
 
-```js
+> ```js
 var li  = '<li id="' + index + '">' 
 + '<img src="' + person.image + '">' 
 + '<h2>' + person.name + '</h2>' 
 + '</li>'    
 ```  		
-	
+
+<!--	
 ### Finishing touches
 
 Copy and paste this code into the `head` of your HTML document under the `title` element. You can find it in the copy-paste document:
@@ -477,8 +478,7 @@ Copy and paste this code into the `head` of your HTML document under the `title`
 ``` 
 
 This code ensures your app will display well on mobile. Be sure to change the `link` `href="  "` to the url of whatever image you'd like to use for your app icon. The image should be square shaped for the best display.
-
-
+-->
 
 ### License
 
