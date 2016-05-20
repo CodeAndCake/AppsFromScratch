@@ -220,27 +220,27 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 ### Code
 
-* [Codecademy codecademy.com](https://www.codecademy.com/)
+* [Codecademy](https://www.codecademy.com/) `codecademy.com`
 	
 	Free online courses to learn just about any coding language you like!
 
-* [Dash dash.generalassemb.ly](https://dash.generalassemb.ly/)
+* [Dash](https://dash.generalassemb.ly/) `dash.generalassemb.ly`
 
 	Free online courses to get you going in HTML, CSS and a little JavaScript
 
-* [CodeWars codewars.com](http://www.codewars.com/about)
+* [CodeWars](http://www.codewars.com/about) `codewars.com`
 
 	Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
 	
-* [CSS-Tricks css-tricks.com](https://css-tricks.com/)
+* [CSS-Tricks](https://css-tricks.com/) `css-tricks.com`
 
 	Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
 	
-* [JS for cats jsforcats.com](http://jsforcats.com/)
+* [JS for cats](http://jsforcats.com/) `jsforcats.com`
 
 	Introduction to JavaScript..."So easy your human companion could do it too!" :scream_cat:
 	
-* [CSS Diner flukeout.github.io](http://flukeout.github.io)
+* [CSS Diner](http://flukeout.github.io) `flukeout.github.io`
 
 	A little game to help you learn CSS selectors. Type in the correct selector to complete each level. 
 	
@@ -250,37 +250,36 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 	
 ### Inspiration
 	
-* [Smashing Magazine smashingmagazine.com](http://www.smashingmagazine.com/)
+* [Smashing Magazine](http://www.smashingmagazine.com/) `smashingmagazine.com`
 
 	Online magazine focused on coding and web development, covering techniques, languages, mobile, design, graphics and more
 	
-* [Creative Bloq creativebloq.com](http://www.creativebloq.com/)
+* [Creative Bloq](http://www.creativebloq.com/) `creativebloq.com`
 	
 	Online magazine providing inspiration for graphic design, web design, 3D art and more
 
-* [Niice niice.co](https://niice.co/)
+* [Niice](https://niice.co/) `niice.co`
 
 	A design search engine, drawing results from [Behance behance.net](https://www.behance.net/), [Dribble dribbble.com](https://dribbble.com/) and [Designspiration designspiration.net](http://designspiration.net/). Great if you're in need of some design inspiration!
 	
-* [Panda App usepanda.com](https://usepanda.com/app/#/)
+* [Panda App](https://usepanda.com/app/#/) `usepanda.com`
 
-	Another great source of inspiration pulling results from various sources like [DesignerNews designernews.co](https://www.designernews.co/), [Dribble dribbble.com](https://dribbble.com/), [Behance behance.net](https://www.behance.net/) and [SiteInspire siteinspire.com](http://www.siteinspire.com/)
+	Another great source of inspiration pulling results from various sources like [DesignerNews](https://www.designernews.co/) `designernews.co`, [Dribble](https://dribbble.com/) `dribbble.com`, [Behance](https://www.behance.net/) `behance.net` and [SiteInspire](http://www.siteinspire.com/) `siteinspire.com`
 
 ### Design
 
-* [GoodUI goodui.org](http://goodui.org/)
+* [GoodUI](http://goodui.org/) `goodui.org`
 
 	Extensive list of good design patterns for user interfaces
 	
-* [UserOnboard useronboard.com](https://www.useronboard.com/)
+* [UserOnboard](https://www.useronboard.com/) `useronboard.com`
 
 	Teardowns of major apps - a great reference for designing your interfaces	
-	
-* [HackDesign hackdesign.org](https://hackdesign.org/lessons)
+* [HackDesign](https://hackdesign.org/lessons) `hackdesign.org`
 
 	Learn how to design digital products, with lessons spanning from typography to UX (user experience).
 	
-* [Noun Project thenounproject.com](https://thenounproject.com)
+* [Noun Project](https://thenounproject.com) `thenounproject.com`
 
 	Huge database of beautiful icons to use in your app
 	
@@ -292,15 +291,15 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 	Great tool to design your colour palettes
 	
-* [Random User Generator randomuser.me](https://randomuser.me/)
+* [Random User Generator](https://randomuser.me/) `randomuser.me`
 
 	Random users for you to populate your app prototypes
 	
-* [Pttrns pttrns.com](http://pttrns.com/)
+* [Pttrns](http://pttrns.com/) `pttrns.com`
 
 	See how other mobile designers solve UX problems for things like calculators, calendars, search and more
 	
-* [WTF Mobile Web wtfmobileweb.com](http://wtfmobileweb.com/)
+* [WTF Mobile Web](http://wtfmobileweb.com/) `wtfmobileweb.com`
 
 	What not to do!
 
