@@ -114,7 +114,7 @@ If you want to rank data objects by **relevance** to a certain concept / keyword
 For **yes or no** answers.
 
 | Name | Surname | filmMaker| likesPets | likesEurope
-| ---- | ------- | ------ | ------ | 
+| ---- | ------- | -------- | --------- | -----------
 | Quentin | Tarantino | true | false | true
 | Martin | Scorsese | true | true | true
 | Boris | Johnson | false | false | false
@@ -155,7 +155,7 @@ You'd need to customise the Firebase Pusher form so that you have a **field** fo
 > ```html
 <input name="YOUR_VARIABLE_NAME" ...
 ```
-> * Then once you've adapted the form, you can use it to push the details about one course at a time to the database. You fill out the form and press the `Push it!` button!
+> Then once you've adapted the form, you can use it to push the details about one course at a time to the database. You fill out the form and press the `Push it!` button!
 
 > **INSIDER TIP** Don't push hundreds of data objects. Just push two or three to start with, then *test* your app and see if you need to re-structure your data, or add anything that you may have missed.
 
@@ -308,34 +308,26 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 # Things you achieved in 24 hours!
 
 1. Analysed the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*
-
 * Learned how to read and write **HTML** from scratch then created your interface
-
 * Learned how to use **CSS** to style your own page and made your interface beautiful!
-
 * Grasped the principles of **JavaScript and jQuery**
-
 * Used the Firebase **API**, understanding database design and creating your own database
-
 * Hacked a tool (Firebase Pusher) to send your own data to your database 
-
 * Linked **database data** to your own app
- 
 * **Debugged** your code
-
 * Applied good practices for effective coding: *copy-paste*, comments, searching for solutions online  
 
 ### Well done!
 
 And remember...
 
-1. Searching for problems online is not *cheating*
+1. **Searching** for problems online is not *cheating*
 * Copy-pasting code is not *cheating*. 
 
-	Great coders copy-paste.
+	Great coders **copy-paste**.
 * **It's OK**. You're not going to break anything.
 
-	Embrace your mistakes. Debug them :)
+	Embrace your mistakes. **Debug** them :)
 	
 
 ### Keep moving forward in your learning journey!
