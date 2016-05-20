@@ -28,7 +28,7 @@
 - [ ] What else have they achieved? Go through the 5 days again	 -->
 
 
-# Introduction to coding and app-making
+# Coding and app-making for beginners
 
 ## Day 6
 
