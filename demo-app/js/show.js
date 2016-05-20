@@ -8,7 +8,7 @@ function showList (list)
   $ul.html( makeListHTML(list) ); // html is a jQuery function 
 
   // add behaviour to the list items
-  $('li').on('click', function()
+  $('li').click( function()
   {
     var personId = $(this).attr('id');
     var person = list[personId];
