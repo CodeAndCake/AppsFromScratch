@@ -28,6 +28,16 @@
 
 * On day 3, recap with nice graphs from day 1
 
+
+## General
+
+* Functions like `makeListItemHTML` etc. could be made more generic, which means not using `person` but `dataObject` or so.
+
+* Move the functions that we want people to edit at the top of the `show.js`
+
+* Extend `filterAndSortList` so that it loops through every property in the database objects and looks for matches (`selectedOption == value`)
+
+
 # V3
 
 ## Day 1
