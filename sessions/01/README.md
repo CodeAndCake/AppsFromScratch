@@ -629,11 +629,11 @@ Text is the major carrier of information on an app, so it's good practice to sta
 > * In `style.css`, define the font for the `body` element (all other elements will inherit it). 
 
 >	```css
-	body
-	{
-		font-family: 'Lato', sans-serif;
-	}
-	```
+body
+{
+	font-family: 'Lato', sans-serif;
+}
+```
 
 We're using the font *Lato* as an example, but you can pick **whichever font** you like and change your CSS code accordingly. There are more than 700 fonts available on Google Fonts!
 	

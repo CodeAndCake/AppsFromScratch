@@ -690,7 +690,7 @@ Let's break that code down.
 First the outer shell:
 
 ```javascript
-$('button')click( function() {
+$('button').click( function() {
 	...
 	...
 })
@@ -724,7 +724,7 @@ var resultsList = filterAndSortList(peopleList, selectedOption);
 * Use the function `filterAndSortList` to filter and sort `peopleList` (the list with all the people) so that it matches the user 's selection (`selectedOption`)
 * Store the filtered people in `resultsList`
 
-> Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then in `index.html` use a `script` to load `show.js` just before the one which loads `app.js`.
+> Create a new file in your Thimble project, call it `filter.js` (or whatever you like) and then in `index.html` use a `script` to load `filter.js` just before the one which loads `app.js`.
 
 > ```html
 	...
