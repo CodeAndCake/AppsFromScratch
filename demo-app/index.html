@@ -2,7 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- Enable fullscreen Mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Icon for home screen -->
+    <link rel="apple-touch-icon" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
+    <link rel="icon" sizes="296x296" href="CHANGE THIS SO THAT IT POINTS TO AN IMAGE URL">
     <title>Community skills swap</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -13,10 +19,10 @@
       <!-- h1 is for the first heading -->
       <h1>I'd like someone to...</h1>
 
-      <!-- Yuki, please finish this dropdown-->
       <select>
         <option value="bakingSkills">Bake a cake</option>
         <option value="bodyStrength">Move my furniture</option>
+        <option value="codingSkills">Teach me to code</option>
         <option value="likesPets">Keep my pet</option>
       </select>
 
@@ -25,54 +31,33 @@
       </button>
 
       <ul>
-        <!-- <li>
-          <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
-          <h2>
-            Yuki
-          </h2>
-        </li>
-
-        <li>
-          <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
-          <h2>
-            Yuki
-          </h2>
-          
-        </li> -->
       </ul>
 
       <p>Swap skills or time with people in your area</p>
       <p>Just pick an option from the dropdown to get started</p>
       <p>
-        Made in London by Yuki, <a href="https://twitter.com/aimeebethmj">Aimee</a> and <a href="https://twitter.com/baddeo">Matteo</a>
+        Made in London by <a href="https://twitter.com/aimeebethmj">Aimee</a> and <a href="https://twitter.com/baddeo">Matteo</a>
       </p>
       
     </section>
       
       
     <section id="details">
-
       <a id="back">Back</a>
-
-      <div id="person">
-        <img class="profile-pic" src="https://avatars3.githubusercontent.com/u/11597832?v=3&s=400">
-        <h2>
-          Yuki
-        </h2>
-        <p>
-          I like coding and coffee
-        </p>
-        <a class="contactButton">Contact Yuki</a>
+      <div class="info">
       </div>
     </section>
 
-      
+    <!-- Install Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <!-- Install jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
+    <!-- Load our custom functions -->
     <script src="js/filter.js"></script>
     <script src="js/show.js"></script>
     
+    <!-- Load app.js, which binds everything together -->
     <script src="js/app.js"></script>
 
   </body>

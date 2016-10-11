@@ -28,44 +28,41 @@
 - [ ] What else have they achieved? Go through the 5 days again	 -->
 
 
-# Coding and app-making for beginners 
+# Coding and app-making for beginners
 
 ## Day 6
 
-[Last week](../05) you experienced hands-on what it's like to be a coder:
+This is the last day of the course! You've made it, great job!
+ 
 
-* Integrating **code libraries**, like jQuery and Firebase JS, and reading their **docs** to learn how to use them 
-* **Copy-pasting** existing code into your project
-* **Adapting** pasted code to your app (changing *variable* names, tweaking *functions* etc).  
-* Using the JS Console to spot mistakes and test solutions (aka **debugging**)
+[Last week](../05) you... 
 
-**Today** you can solidify what you have learned so far and apply it to your own app idea:
+* Created a new database and connected it to your app
+* Used the Firebase Pusher to send data to your new database
+* Some of you also started to tweak the functions in `show.js` to change the results display 
+* And many of you used the JS Console to spot mistakes and test solutions (aka **debugging**)
 
-1. Learn how to **design your database**, depending on how you want users to interact with your data.
-* Populate **your own Firebase database** with testing data 
-* **Remix** the *demo* app we've been working on so far (create a clone of it, so that you can keep the original as a reference, and the copy as a new playground): **code your own app** idea
+**Today** we're going to pull everything we've learned together:
+
+1. Recap how to **design your database**, depending on how you want users to interact with your data
+* Recap how to populate **your own Firebase database** with test-data using the Firebase Pusher
+* What do your functions do?
+* How can you tweak them to display the results exactly as you like?
 * Make it look like a proper app on your phone and add it to your home screen. Then go and brag about it with your family and friends :)
 
-This is the last day of the course. To continue your learning journey, we'll share with you some hand-picked **resources and links** to cool stuff on the Web.
+To continue your learning journey, we'll share with you some hand-picked **resources and links** to cool stuff on the Web.
 
 You have done so well! Let's celebrate your achievements :tada:
 
 
-# Build your own database
 
-Good apps need good data.
+# Recap
 
-This doesn't mean a lot of data, but rather **well structured** data.
+## Key database design principles
 
-A good database doesn't look like a *bucket* full of unstructured data. Instead, a good database structures its data is organised so that it's easy (and quick) to search through heaps of objects and pick just the ones you want.
+### 1. Break down your data into **logical pieces**
 
-Let's look at three general principles of database design, and then you'll apply those to your own database.
-
-## Database design principles
-
-### 1. Break your data into *logical pieces*
-
-Also known as [1NF](http://en.wikipedia.org/wiki/First_normal_form) (first normal form). 
+<!--Also known as [1NF](http://en.wikipedia.org/wiki/First_normal_form) (first normal form).--> 
     
 #### Bad example
      
@@ -83,83 +80,11 @@ This way you can take specific bits of data and spit them out wherever and howev
 
 Also, you could do things like `calculate the average age of our people`.
 
-### 2. Break it into multiple *dimensions*
+### 2. **Rank** with numbers
 
-Using arrays.
+Computers are extremely good at maths. For a computer, computing numbers is a piece of :cake: Yet computing natural languages (such as English) is something that even the most sophisticated machines still struggle with (think of Siri, for example).
 
-#### Bad example
-
-| Recipe name | Ingredients | Method |
-| ----------- | ----------- | ------ |
-| Banana bread | 1 banana <br>1 cup of flour <br>pinch of salt | 1. Mix dry ingredients <br>2. Mash the banana <br>3. Mix it all together <br>4. Bake it for 30 minutes | 
-| Avocado on toast | 1 avocado <br>2 slices of bread <br>squeeze of lemon | 1. Toast bread <br>2. Scoop out avocado <br>3. Spread avocado on toast <br>4. Squeeze lemon on top | 
-
-#### Better example
-
-<table>
-    <tr>
-        <th>Recipe name</th>
-        <th>Ingredients</th>
-        <th>Method</th>
-    </tr>
-    <tr>
-        <td>Banana bread</td>
-        <td>
-            <table>
-                <tr>
-                    <th>Quantity</th>
-                    <th>Unit</th>
-                    <th>Name</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td></td>
-                    <td>banana</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>cup</td>
-                    <td>flour</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>pinch</td>
-                    <td>salt</td>
-                </tr>
-            </table>    
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <th>Order</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Mix dry ingredients</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Mash the banana</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Mix it all together</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Bake it for 30 minutes</td>
-                </tr>
-            </table>    
-        </td>
-    </tr>
-</table>
-
-### 3. Use numbers for *ranking*
-
-Computers are extremely good at maths. For a computer,  computing numbers is a piece of cake. Yet computing natural languages (such as English) is something that even the most sophisticated machines still struggle with (think of Siri, for example).
-
-What's the trick then, if you want your app to be able to tell you `who are the best bakers in my area` for example? You **rank** people according to their baking skills.
+What's the trick then, if you want your app to be able to tell you `who are the best bakers in my area`? You **rank** people according to their baking skills.
 
 #### Bad example
      
@@ -173,156 +98,108 @@ What's the trick then, if you want your app to be able to tell you `who are the 
 | Name | Surname | Baking skills (0-5) | 
 | ---- | ------- | ------------- |
 | Danny | Base | 4 |
-| Jordan | Scripts | 3 |
+| Jordan | Scripts | 2 |
 
-If you want to rank data objects by **relevance** to a certain concept / keyword, use numbers.
+If you want to rank data objects by **relevance** to a certain concept / keyword, also use numbers.
 
 | Name | Surname | Comedy | Sci-fi | Western
 | ---- | ------- | ------ | ------ | -------
 | Quentin | Tarantino | 2 | 0 | 3
 | Martin | Scorsese | 3 | 0 | 1
-| Stanley | Kubrick | 0 | 3 | 0
+| Stanley | Kubrick | 1 | 3 | 0
 | Sofia | Coppola | 3 | 0 | 0
 
-## Your turn!
+### 3. **Filter** with true or false
 
-Starting from you app idea, consider:
+For **yes or no** answers.
 
-* What is the **data unit**? 
-	
-	For example, in our demo app the *data unit* is a person and in the database we're storing people's profiles. 
-	
-	If you're making a cooking app, the *data unit* would be a recipe.  
+| Name | Surname | filmMaker| likesPets | likesEurope
+| ---- | ------- | -------- | --------- | -----------
+| Quentin | Tarantino | true | false | true
+| Martin | Scorsese | true | true | true
+| Boris | Johnson | false | false | false
 
-* What pieces of data will your *data unit* feature? 
+For instance, it would be easy to filter only the film-makers using this data structure.
 
-	For example, in our demo app for each person we're storing `name`, `blurb`, `profile picture`, `likesPets`, `bakingSkills` etc. 
-	
-* Which data pieces will be used to **rank, filter & sort**? 
-	
-	For example `likesPets` helps us filter data for the *I'd like someone to keep my pet* option, `bakingSkills` helps us filter data for the *I'd like someone to bake a cake* option, etc.
 
-**Make a list** of all the data pieces for your data unit on paper.
+## Hacking the Firebase Pusher
 
-Go to Firebase, log in and *create a new app* (which really means create a *new database*).
+[Firebase Pusher](https://thimbleprojects.org/codeyourapp/67950) is a tool which you can use to **push single data entries to your database**.
 
-1. Hover over the greyed-out box in the top-left corner
+You can find the original pusher `Firebase pusher ORIGINAL` under `Your projects` in Thimble. Make sure to `Remix` the project before making any changes. 
 
-	![](assets/new-firebase-01.jpg)
-* Give your *app* a unique name	
+### What is your *data unit*?
 
-	![](assets/new-firebase-02.jpg)
-* Click on `CREATE NEW APP`	
+For our demo app, which helps users find *people* to swap skills, the data unit is `person`. 
 
-	![](assets/new-firebase-03.jpg)
-* Once your new app is ready (it will take a few seconds) it will appear next to the greyed-out box, click on its URL to open it
+If your app helps users find *courses*, then your data unit is a `course`. If your app helps users look up *events*, then your data unit is an `event`. 
 
-	![](assets/new-firebase-04.jpg)
-	
-### Push data to your new Firebase
+The Firebase Pusher can be used to send one new data entry to the database at a time. You fill out the form with all the data unit details and press the `Push it!` button! You should see the new entry appear on your Firebase each time you do this.
 
-Go to [bit.ly/firebasePusher](http://bit.ly/firebasePusher) and click `Remix`.
+Your data unit will be quite different from the ones we've created for our demo app. So, you'll need to adapt this form to fit your data.
 
-This is a Thimble project which uses an HTML `form` to *push* data to Firebase. In order to make it work with your own Firebase database, you need to make a couple of changes:
+### Each data entry needs...
 
-1. Change `databaseURL` to your own Firebase URL
+Think about what information your users will want to get from your app. Put yourself in their :shoe: :high_heel: :mans_shoe: and use this to work out the information you'll need to store. 
 
-	![](assets/databaseURL.png)
-* Tweak the `input` elements so that they reflect your data structures. Make sure you change the `name` *attributes*, eg:
+For example, if you were looking for a *course*, you'd probably want to know the `name`, `subjectArea`, `startDate`, `endDate`, `startTime`, `endTime`, `price`, `place`, some `description` of what will be studied, maybe who the `teachers` are... and so on.
 
-	```html
-	<input name="CHANGE_THIS" ...>
-	```
+You'd need to customise the Firebase Pusher form so that you have a **field** for each piece of information you want to store inside that entry.
 
-	Add as many `input` elements as you need. You'll find some examples of common input types in the Thimble HTML code.
+> 1. In `app.js` change `databaseURL` so that it points to your own Firebase.
+> * In `index.html` edit the `form` by changing all the `name` attributes for your fields to reflect the data you want to store in Firebase. For instance, change 
+> ```html
+<input name="codingSkills" ...
+``` 
+> to 
+> ```html
+<input name="YOUR_VARIABLE_NAME" ...
+```
+> Then once you've adapted the form, you can use it to push the details about one course at a time to the database. You fill out the form and press the `Push it!` button!
+
+> **INSIDER TIP** Don't push hundreds of data objects. Just push two or three to start with, then *test* your app and see if you need to re-structure your data, or add anything that you may have missed.
 
 
 # Displaying data
 
 Once you've created your own database and *pushed* data to it, you'll need to customise the code you already have to display your new data.
 
-### Remix your project
-
-So you don't lose your previous work:
-
-1. Publish your project publish
-* Preview it 
-* Press the `Remix` button. This will make a copy of the project. Now you can tweak this code to fit your new data (without losing your first project).
-
-### Customise your code
-
-1. In your remixed project, open `app.js` and change `databaseURL` to your own database URL. 
-
-	> This will instruct the app to load data from your own Firebase.
-* In `index.html` change the `option` elements to reflect your data. 
-
-	Make sure the `value` attributes match the property names you are using in Firebase. 
-	
-	> For example, the `bakingSkills` in the HTML dropdown below **must** match the `bakingSkills` property stored in Firebase, letter by letter, and it's case sensitive.
-	
-	> ```html
-	<select>
-		<option value="bakingSkills">Bake a cake</option>
-		...
-	</select>
-	```
-	
-	> ![](assets/firebase-person.png)
-	
-<!--
-Take a look at the code, can you spot the parts you need to change?
-
-Your data might not include people... what if you're storing places or items?
-
-Sift through the code and change `person` to whatever your objects are.
-
-Remember to also change `personId` , `personHTML` and `makePersonHTML`!
--->
-
-
 ### Change the display
 
-Go to the function `show.js`.
+> Go to the function `show.js`.
 
-Scroll down to around line 43. 
+> Find the function `makeListItemHTML`, which populates the results list:
 
-`makeListItemHTML` is the function which populates the results list:
-
-```js
-function makeListItemHTML (person, index) {
-	/*
- 		This function creates some nice HTML around the person's data
-
- 		Return something like this:
-
- 		<li>
-   		<h2>Aimee</h2>
- 		</li>
-	*/
-
+> ```js
+function makeListItemHTML (person, index) 
+{
+	...
 	// li = List Item
 	var li  = '<li id="' + index + '">' 
 	+ '<h2>' + person.name + '</h2>' 
 	+ '</li>'        
-
 	return li        
 }
 ```
 
-> This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
+This function takes in the JavaScript object `person` and spits out an HTML list item `<li>...</li>`
 
-> As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
+As you can see, in `li` there are some **invariable bits** like `<li id="`, and some **variable bits** like `person.name` 
 
-If you want to add an `img` for instance, then you can tweak the lines where `li` is stringed together: 
+> If you want to add an `img` for instance, then you can tweak the lines where `li` is stringed together: 
 
-```js
+> ```js
 var li  = '<li id="' + index + '">' 
 + '<img src="' + person.image + '">' 
 + '<h2>' + person.name + '</h2>' 
 + '</li>'    
 ```  		
-	
+
+How	would you change the function that determines how `#details` is displayed? It's in the function `makePersonHTML`. 
+
 ### Finishing touches
+
+<!--Hiding the remix button?-->
 
 Copy and paste this code into the `head` of your HTML document under the `title` element. You can find it in the copy-paste document:
 
@@ -343,27 +220,27 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 ### Code
 
-* [Codecademy codecademy.com](https://www.codecademy.com/)
+* [Codecademy](https://www.codecademy.com/) `codecademy.com`
 	
 	Free online courses to learn just about any coding language you like!
 
-* [Dash dash.generalassemb.ly](https://dash.generalassemb.ly/)
+* [Dash](https://dash.generalassemb.ly/) `dash.generalassemb.ly`
 
 	Free online courses to get you going in HTML, CSS and a little JavaScript
 
-* [CodeWars codewars.com](http://www.codewars.com/about)
+* [CodeWars](http://www.codewars.com/about) `codewars.com`
 
 	Complete challenges in Javascript and improve your ranking! A fun resource for learning new tricks and comparing the many different ways to complete a task
 	
-* [CSS-Tricks css-tricks.com](https://css-tricks.com/)
+* [CSS-Tricks](https://css-tricks.com/) `css-tricks.com`
 
 	Fantastic resource for CSS, invaluable for beginners and experienced front-end designers alike!
 	
-* [JS for cats jsforcats.com](http://jsforcats.com/)
+* [JS for cats](http://jsforcats.com/) `jsforcats.com`
 
 	Introduction to JavaScript..."So easy your human companion could do it too!" :scream_cat:
 	
-* [CSS Diner flukeout.github.io](http://flukeout.github.io)
+* [CSS Diner](http://flukeout.github.io) `flukeout.github.io`
 
 	A little game to help you learn CSS selectors. Type in the correct selector to complete each level. 
 	
@@ -373,37 +250,36 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 	
 ### Inspiration
 	
-* [Smashing Magazine smashingmagazine.com](http://www.smashingmagazine.com/)
+* [Smashing Magazine](http://www.smashingmagazine.com/) `smashingmagazine.com`
 
 	Online magazine focused on coding and web development, covering techniques, languages, mobile, design, graphics and more
 	
-* [Creative Bloq creativebloq.com](http://www.creativebloq.com/)
+* [Creative Bloq](http://www.creativebloq.com/) `creativebloq.com`
 	
 	Online magazine providing inspiration for graphic design, web design, 3D art and more
 
-* [Niice niice.co](https://niice.co/)
+* [Niice](https://niice.co/) `niice.co`
 
 	A design search engine, drawing results from [Behance behance.net](https://www.behance.net/), [Dribble dribbble.com](https://dribbble.com/) and [Designspiration designspiration.net](http://designspiration.net/). Great if you're in need of some design inspiration!
 	
-* [Panda App usepanda.com](https://usepanda.com/app/#/)
+* [Panda App](https://usepanda.com/app/#/) `usepanda.com`
 
-	Another great source of inspiration pulling results from various sources like [DesignerNews designernews.co](https://www.designernews.co/), [Dribble dribbble.com](https://dribbble.com/), [Behance behance.net](https://www.behance.net/) and [SiteInspire siteinspire.com](http://www.siteinspire.com/)
+	Another great source of inspiration pulling results from various sources like [DesignerNews](https://www.designernews.co/) `designernews.co`, [Dribble](https://dribbble.com/) `dribbble.com`, [Behance](https://www.behance.net/) `behance.net` and [SiteInspire](http://www.siteinspire.com/) `siteinspire.com`
 
 ### Design
 
-* [GoodUI goodui.org](http://goodui.org/)
+* [GoodUI](http://goodui.org/) `goodui.org`
 
 	Extensive list of good design patterns for user interfaces
 	
-* [UserOnboard useronboard.com](https://www.useronboard.com/)
+* [UserOnboard](https://www.useronboard.com/) `useronboard.com`
 
 	Teardowns of major apps - a great reference for designing your interfaces	
-	
-* [HackDesign hackdesign.org](https://hackdesign.org/lessons)
+* [HackDesign](https://hackdesign.org/lessons) `hackdesign.org`
 
 	Learn how to design digital products, with lessons spanning from typography to UX (user experience).
 	
-* [Noun Project thenounproject.com](https://thenounproject.com)
+* [Noun Project](https://thenounproject.com) `thenounproject.com`
 
 	Huge database of beautiful icons to use in your app
 	
@@ -415,61 +291,52 @@ This code ensures your app will display well on mobile. Be sure to change the `l
 
 	Great tool to design your colour palettes
 	
-* [Random User Generator randomuser.me](https://randomuser.me/)
+* [Random User Generator](https://randomuser.me/) `randomuser.me`
 
 	Random users for you to populate your app prototypes
 	
-* [Pttrns pttrns.com](http://pttrns.com/)
+* [Pttrns](http://pttrns.com/) `pttrns.com`
 
 	See how other mobile designers solve UX problems for things like calculators, calendars, search and more
 	
-* [WTF Mobile Web wtfmobileweb.com](http://wtfmobileweb.com/)
+* [WTF Mobile Web](http://wtfmobileweb.com/) `wtfmobileweb.com`
 
 	What not to do!
-	
+
 
 # Things you achieved in 24 hours!
 
-1. Analysed the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*.
-
-* Produced initial **wireframes** by sketching
-
-* **HTML** - created a Web app
-
-* **CSS** - styled your own page
-
-* The principles of **JavaScript and jQuery**, and even understanding *most* of it :)
-
-* Linked **database data** to your app
-
-* Used the Firebase **API**, understanding database design
-
-* Learned to search for solutions online
- 
-* Debugged your code
-
-* Applied good practices for effective coding: copy-paste, comments  
+1. Analysed the **mechanics** of a Web application, breaking down its behaviour into *data*, *functions* and *logic*
+* Learned how to read and write **HTML** from scratch then created your interface
+* Learned how to use **CSS** to style your own page and made your interface beautiful!
+* Grasped the principles of **JavaScript and jQuery**
+* Used the Firebase **API**, understanding database design and creating your own database
+* Hacked a tool (Firebase Pusher) to send your own data to your database 
+* Linked **database data** to your own app
+* **Debugged** your code
+* Applied good practices for effective coding: *copy-paste*, comments, searching for solutions online  
 
 ### Well done!
 
 And remember...
 
-1. Searching for problems online is not *cheating*
+1. **Searching** for problems online is not *cheating*
 * Copy-pasting code is not *cheating*. 
 
-	Great coders copy-paste.
+	Great coders **copy-paste**.
 * **It's OK**. You're not going to break anything.
 
-	Embrace your mistakes. Debug them :)
+	Embrace your mistakes. **Debug** them :)
+	
 
 ### Keep moving forward in your learning journey!
 
 
 ## One last thing
 
-We need your **feedback**, it will hugely help us improve this course!
+We need your **feedback**. It will hugely help us improve this course!
 
-[tinyurl.com/zcpnyjj](http://tinyurl.com/zcpnyjj)
+[goo.gl/6rTAq0](https://goo.gl/6rTAq0)
 
 
 ### License
