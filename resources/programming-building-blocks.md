@@ -213,9 +213,9 @@ If you want to use geographical information about  your users, you can use the [
 APIs work a bit like a library: 
 
 1. You go to the library **API provider**
-* You get a library card **API key**
-* You borrow books **data** using your API key
-* If you don't play by the rules, the librarian will prevent you from getting more books.
+2. You get a library card **API key**
+3. You borrow books **data** using your API key
+4. If you don't play by the rules, the librarian will prevent you from getting more books.
 
 For companies, providing APIs is beneficial for:
 
@@ -373,7 +373,7 @@ There are four ingredients to a loop:
 
 4. Don't forget to **increment** the `counter` at the end of the loop, otherwise you'd get a dreaded **infinite loop** (and your browser would probably crash).
 
-[![](assets/choc.png)](http://s.codepen.io/yukik/debug/oXNaMo)
+[![](assets/choc.png)](https://s.codepen.io/baddeo/debug/NGjJjd/yYryLOgWjJJM)
 
 
 ## Templating
